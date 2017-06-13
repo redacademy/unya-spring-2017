@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying the native youth center page.
- * Template Name: Native Youth Center Page
+ *
  * @package RED_Starter_Theme
  */
 
