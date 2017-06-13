@@ -118,8 +118,7 @@ function register_news_post_type() {
 }
 add_action( 'init', 'register_news_post_type', 0 );
 
-<<<<<<< HEAD
-// --------- Success Story Custom Post Type ------------//
+
 
 function register_success_story_post_type() {
 
@@ -166,7 +165,7 @@ function register_success_story_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
@@ -223,7 +222,7 @@ function register_leader_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => false,		
+		'has_archive'           => false,
 		'exclude_from_search'   => true,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
@@ -232,5 +231,60 @@ function register_leader_post_type() {
 
 }
 add_action( 'init', 'register_leader_post_type', 0 );
-=======
->>>>>>> trying to fix conflict
+
+// Register Custom Post Type
+function register_opportunities_post_type() {
+
+	$labels = array(
+		'name'                  => 'Opportunities',
+		'singular_name'         => 'Opportunity',
+		'menu_name'             => 'Opportunity Types',
+		'name_admin_bar'        => 'Opportunity type',
+		'archives'              => 'Opportunity Archives',
+		'attributes'            => 'Opportunity Attributes',
+		'parent_item_colon'     => 'Opportunity Item:',
+		'all_items'             => 'All Opportunities',
+		'add_new_item'          => 'Add New Opportunity',
+		'add_new'               => 'Add New Opportunity',
+		'new_item'              => 'New Opportunity',
+		'edit_item'             => 'Edit Opportunity',
+		'update_item'           => 'Update Opportunity',
+		'view_item'             => 'View Opportunity',
+		'view_items'            => 'View Opportunities',
+		'search_items'          => 'Search Opportunity',
+		'not_found'             => 'Opportunity Not found',
+		'not_found_in_trash'    => 'Opportunity Not found in Trash',
+		'featured_image'        => 'Featured Image for Opportunity',
+		'set_featured_image'    => 'Set featured image for Opportunity',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into Opportunity',
+		'uploaded_to_this_item' => 'Uploaded to this Opportunity',
+		'items_list'            => 'Opportunities list',
+		'items_list_navigation' => 'Opportunities list navigation',
+		'filter_items_list'     => 'Filter Opportunities list',
+	);
+	$args = array(
+		'label'                 => 'Opportunity',
+		'description'           => 'Post type for volunteer and job opportunities',
+		'labels'                => $labels,
+		'supports'              => array( 'title', ),
+		'taxonomies'            => array( ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-businessman',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => false,
+		'exclude_from_search'   => true,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+	);
+	register_post_type( 'opportunities', $args );
+
+}
+add_action( 'init', 'register_opportunities_post_type', 0 );
