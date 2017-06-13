@@ -72,7 +72,7 @@ function opportunities_type_taxonomy() {
 	);
 	$args = array(
 		'labels'                     => $labels,
-		'hierarchical'               => false,
+		'hierarchical'               => true,
 		'public'                     => true,
 		'show_ui'                    => true,
 		'show_admin_column'          => true,
@@ -80,7 +80,7 @@ function opportunities_type_taxonomy() {
 		'show_tagcloud'              => true,
 		'rewrite'                    => false,
 	);
-	register_taxonomy( 'opportunity type', array( 'opportunities' ), $args );
+	register_taxonomy( 'opportunity_type', array( 'post' ), $args );
 
 }
 add_action( 'init', 'opportunities_type_taxonomy', 0 );
