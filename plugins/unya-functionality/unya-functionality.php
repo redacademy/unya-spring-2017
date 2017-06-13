@@ -2,7 +2,7 @@
  /**
  *
  * @package   UNYA Functionality
- * @author    Cory Hall, George, Jessica Dieuique, Jennifer Ta
+ * @author    Cory Hall, George Tetty, Jennifer Ta, Jessica Dieuique
  * @license   GPL-2.0+
  * @copyright 2017 The Best Group Ever
  *
