@@ -11,7 +11,7 @@ function register_program_post_type() {
 	$labels = array(
 		'name'                  => 'Programs',
 		'singular_name'         => 'Program',
-		'menu_name'             => 'Program Types',
+		'menu_name'             => 'Programs',
 		'name_admin_bar'        => 'Program Type',
 		'archives'              => 'Program Archives',
 		'attributes'            => 'Program Attributes',
@@ -56,7 +56,7 @@ function register_program_post_type() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'program_post_type', $args );
+	register_post_type( 'program', $args );
 
 }
 add_action( 'init', 'register_program_post_type', 0 );
