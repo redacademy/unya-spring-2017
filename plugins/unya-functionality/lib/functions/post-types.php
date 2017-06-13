@@ -174,3 +174,60 @@ function register_success_story_post_type() {
 
 }
 add_action( 'init', 'register_success_story_post_type', 0 );
+
+// Register Custom Post Type
+function register_leader_post_type() {
+
+	$labels = array(
+		'name'                  => 'Leaders',
+		'singular_name'         => 'Leader',
+		'menu_name'             => 'Leaders',
+		'name_admin_bar'        => 'Leaders',
+		'archives'              => 'Leaders Archive',
+		'attributes'            => 'Leader Attributes',
+		'parent_item_colon'     => 'Leader Item:',
+		'all_items'             => 'All Leaders',
+		'add_new_item'          => 'Add New Leader',
+		'add_new'               => 'Add New Leader',
+		'new_item'              => 'New Leader',
+		'edit_item'             => 'Edit Leader',
+		'update_item'           => 'Update Leader',
+		'view_item'             => 'View Leader',
+		'view_items'            => 'View Leaders',
+		'search_items'          => 'Search Leader',
+		'not_found'             => 'Leader Not found',
+		'not_found_in_trash'    => 'Leader Not found in Trash',
+		'featured_image'        => 'Profile image',
+		'set_featured_image'    => 'Set profile image',
+		'remove_featured_image' => 'Remove profile image',
+		'use_featured_image'    => 'Use as profile image',
+		'insert_into_item'      => 'Insert into Leader',
+		'uploaded_to_this_item' => 'Uploaded to this Leader',
+		'items_list'            => 'Leaders list',
+		'items_list_navigation' => 'Leaders list navigation',
+		'filter_items_list'     => 'Filter Leaders list',
+	);
+	$args = array(
+		'label'                 => 'Leader',
+		'description'           => 'Post Type for leadership',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', ),
+		'taxonomies'            => array(),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 20,
+		'menu_icon'             => 'dashicons-id-alt',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => false,		
+		'exclude_from_search'   => true,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+	);
+	register_post_type( 'leaders', $args );
+
+}
+add_action( 'init', 'register_leader_post_type', 0 );
