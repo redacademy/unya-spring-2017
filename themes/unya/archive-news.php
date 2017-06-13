@@ -1,7 +1,7 @@
 <?php
 /**
- * The template for displaying archive pages.
- *
+ * The template for displaying the news archive.
+ * Template Name: News Archive
  * @package RED_Starter_Theme
  */
 
