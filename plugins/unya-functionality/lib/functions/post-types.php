@@ -51,7 +51,7 @@ function register_program_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
@@ -108,7 +108,7 @@ function register_news_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
@@ -118,6 +118,7 @@ function register_news_post_type() {
 }
 add_action( 'init', 'register_news_post_type', 0 );
 
+<<<<<<< HEAD
 // --------- Success Story Custom Post Type ------------//
 
 function register_success_story_post_type() {
@@ -231,3 +232,5 @@ function register_leader_post_type() {
 
 }
 add_action( 'init', 'register_leader_post_type', 0 );
+=======
+>>>>>>> trying to fix conflict
