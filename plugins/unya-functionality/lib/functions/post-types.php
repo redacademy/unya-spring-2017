@@ -274,7 +274,7 @@ function register_opportunities_post_type() {
 		'public'                => true,
 		'show_ui'               => true,
 		'show_in_menu'          => true,
-		'menu_position'         => 5,
+		'menu_position'         => 10,
 		'menu_icon'             => 'dashicons-businessman',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
