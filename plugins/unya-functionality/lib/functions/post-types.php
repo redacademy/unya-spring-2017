@@ -61,6 +61,8 @@ function register_program_post_type() {
 }
 add_action( 'init', 'register_program_post_type', 0 );
 
+// ------- News Custom Post Type ---------//
+
 function register_news_post_type() {
 
 	$labels = array(
@@ -102,7 +104,7 @@ function register_news_post_type() {
 		'show_ui'               => true,
 		'show_in_menu'          => true,
 		'menu_position'         => 20,
-		'menu_icon'             => 'dashicons-universal-access-alt',
+		'menu_icon'             => 'dashicons-media-document',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
@@ -115,3 +117,60 @@ function register_news_post_type() {
 
 }
 add_action( 'init', 'register_news_post_type', 0 );
+
+// --------- Success Story Custom Post Type ------------//
+
+function register_success_story_post_type() {
+
+	$labels = array(
+		'name'                  => 'Success Stories',
+		'singular_name'         => 'Success Story',
+		'menu_name'             => 'Success Stories',
+		'name_admin_bar'        => 'Success Story Type',
+		'archives'              => 'Success Story Archives',
+		'attributes'            => 'Success Story Attributes',
+		'parent_item_colon'     => 'Success Story Parent Item:',
+		'all_items'             => 'All Success Stories',
+		'add_new_item'          => 'Add New Success Story',
+		'add_new'               => 'Add Success Story',
+		'new_item'              => 'New Success Story',
+		'edit_item'             => 'Edit Success Story',
+		'update_item'           => 'Update Success Story',
+		'view_item'             => 'View Success Story',
+		'view_items'            => 'View Success Stories',
+		'search_items'          => 'Search Success Story',
+		'not_found'             => 'Success Story Not found',
+		'not_found_in_trash'    => 'Success Story Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into Success Story',
+		'uploaded_to_this_item' => 'Uploaded to this Success Story',
+		'items_list'            => 'Success Stories list',
+		'items_list_navigation' => 'Success Stories list navigation',
+		'filter_items_list'     => 'Filter Success Stories list',
+	);
+	$args = array(
+		'label'                 => 'Success Story',
+		'description'           => 'Post type for Success Stories of Unya',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 20,
+		'menu_icon'             => 'dashicons-thumbs-up',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,		
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+	);
+	register_post_type( 'success_story', $args );
+
+}
+add_action( 'init', 'register_success_story_post_type', 0 );
