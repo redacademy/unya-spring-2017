@@ -38,7 +38,7 @@ function register_program_post_type() {
 		'filter_items_list'     => 'Filter Programs list',
 	);
 	$args = array(
-		'label'                 => 'Program',
+		'label'                 => 'Programs',
 		'description'           => 'Post type for programs available through UNYA',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', ),
