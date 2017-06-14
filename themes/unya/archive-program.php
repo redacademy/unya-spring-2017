@@ -18,7 +18,7 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-			<section>
+			<section id="calendar">
 				<h2>Calendar</h2>
 			</section>
 
