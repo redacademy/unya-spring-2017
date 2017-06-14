@@ -20,10 +20,16 @@ get_header(); ?>
 			<?php foreach ( $success_story as $post ) : setup_postdata( $post ); ?>
 				<h3><?php the_title(); ?></h3>
 				<img class="success-image" src="<?php echo CFS()->get( 'photo' ); ?>">			
-				<p><?php echo CFS()->get( 'first_half_of_story' ); ?></p>
-				
-		 	<?php endforeach; wp_reset_postdata(); ?> 
+				<p><?php echo CFS()->get( 'first_half_of_story' ); ?></p>				
+		  	<?php endforeach; wp_reset_postdata(); ?> 
       </div>
+
+    <h2>Testimonials</h2>
+		<p>What do youth say about us?</p>
+				<p><?php echo CFS()->get( 'testimonial_1' ); ?></p>				
+        <p><?php echo CFS()->get( 'testimonial_2' ); ?></p>	
+
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
