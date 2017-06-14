@@ -20,7 +20,7 @@ get_header(); ?>
 		</div>
 		<section class="vision" id="vision">
 			<div class="content-wrapper">
-				</h2>Vision</h2>
+				<h2>Vision</h2>
 				<p><?php echo esc_html( CFS()->get( 'vision' ) ); ?></p>
 			</div>
 		</section>
