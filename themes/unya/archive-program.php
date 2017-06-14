@@ -32,9 +32,8 @@ get_header(); ?>
 				<?php
 					$args = array(
 						'post_type' => 'program',
-						'taxonomy' => 'education',
-						'order' => 'DESC',
-						'post_per_page' => '10'
+						'program-type' => 'education',
+						'order' => 'DESC'
 					);
 					$programs = get_posts( $args );
 					foreach ( $programs as $post ) : setup_postdata( $post );
@@ -47,6 +46,67 @@ get_header(); ?>
 					</li>
 					<?php endforeach; ?>
 				</ul>
+
+				<h3>Personal Support</h3>
+				<ul>
+				<?php
+					$args = array(
+						'post_type' => 'program',
+						'program-type' => 'personal-support',
+						'order' => 'DESC'
+					);
+					$programs = get_posts( $args );
+					foreach ( $programs as $post ) : setup_postdata( $post );
+				?>
+					<li>
+						<?php if ( has_post_thumbnail() ) : ?>
+          		<?php the_post_thumbnail( 'medium' ); ?>
+        		<?php endif; ?>
+						<a href="<?php the_permalink() ?>"><h4><?php the_title(); ?></h4></a>
+					</li>
+					<?php endforeach; ?>
+				</ul>
+
+				<h3>Live-In Program</h3>
+				<ul>
+				<?php
+					$args = array(
+						'post_type' => 'program',
+						'program-type' => 'live-in',
+						'order' => 'DESC'
+					);
+					$programs = get_posts( $args );
+					foreach ( $programs as $post ) : setup_postdata( $post );
+				?>
+					<li>
+						<?php if ( has_post_thumbnail() ) : ?>
+          		<?php the_post_thumbnail( 'medium' ); ?>
+        		<?php endif; ?>
+						<a href="<?php the_permalink() ?>"><h4><?php the_title(); ?></h4></a>
+					</li>
+					<?php endforeach; ?>
+				</ul>
+
+				<h3>Sports and Recreation</h3>
+				<ul>
+				<?php
+					$args = array(
+						'post_type' => 'program',
+						'program-type' => 'sports',
+						'order' => 'DESC'
+					);
+					$programs = get_posts( $args );
+					foreach ( $programs as $post ) : setup_postdata( $post );
+				?>
+					<li>
+						<?php if ( has_post_thumbnail() ) : ?>
+          		<?php the_post_thumbnail( 'medium' ); ?>
+        		<?php endif; ?>
+						<a href="<?php the_permalink() ?>"><h4><?php the_title(); ?></h4></a>
+					</li>
+					<?php endforeach; ?>
+				</ul>
+				
 			</section>
 
 		<?php endif; ?>
