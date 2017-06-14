@@ -41,7 +41,7 @@ get_header(); ?>
 				<h2>Leadership</h2>
 				<h4>The UNYA Board exmplifies the leadership of our youth.</h4>
 				<ul>
-					<?php foreach ( $leaders as $leader ) : setup_postdata( $post ); ?>
+					<?php foreach ( $leaders as $post ) : setup_postdata( $post ); ?>
 						<li class="leader">
 							<div class="image-wrapper">
 								<?php if ( has_post_thumbnail() ) : ?>
