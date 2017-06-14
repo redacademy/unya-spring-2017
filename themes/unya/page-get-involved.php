@@ -2,8 +2,10 @@
 /**
  * The template for displaying all pages.
  *
- * @package RED_Starter_Theme
+ * @package UNYA_Theme
  */
+
+
 
 get_header(); ?>
 
@@ -31,16 +33,29 @@ get_header(); ?>
 	</section>
 	<section class="volunteer opportunities">
 		<h1> Volunteer Opportunities</h1>
-	</section>
-	<section class="opportunity-cta">
-		<p>please email INFO@UNYA.BC.CA for additional job opportunities, or to be added to our email list.</p>
-	</section>
 
-			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<?php endwhile; // End of the loop. ?>
+			<?php $args = array(
+								'post_per_page' => 10,
+								'post_type'=> 'opportunities',
+								'order'    => 'ASC',
+								'opportunity_type' => 'volunteer'
+						);
+						$volunteer_opportunities = get_posts( $args ); ?>
+
+		<div class=“content-wrapper”>
+			  <?php foreach ( $volunteer_opportunities as $post ) : setup_postdata( $post ); ?>
+                <h3><?php the_title(); ?></h3>
+                <p><?php echo CFS()->get( 'description' ); ?></p>
+                <p><?php echo CFS()->get( 'link' ); ?></p>
+             <?php endforeach; wp_reset_postdata(); ?>
+			</div>
+
+					</section>
+					<section class="opportunity-cta">
+						<p>please email INFO@UNYA.BC.CA for additional job opportunities, or to be added to our email list.</p>
+					</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
