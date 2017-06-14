@@ -1,21 +1,30 @@
 <?php
 /**
  * The template for displaying the impact page.
- * Template Name: Impact Page
+ * 
  * @package RED_Starter_Theme
  */
+ $args= array(
+     'post_type'=> 'success_story',
+     'posts_per_page'=> 8
+ );
+
+ $success_story = get_posts($args);
 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
-
+     
+		 <div class=“content-wrapper”>
+			<?php foreach ( $success_story as $post ) : setup_postdata( $post ); ?>
+				<h3><?php the_title(); ?></h3>
+				<p><img src="<?php echo CFS()->get( 'photo' ); ?>"></p>				
+				<p><?php echo CFS()->get( 'first_half_of_story' ); ?></p>
+				<p><?php echo CFS()->get( 'second_half_of_story' ); ?></p>
+				
+		 	<?php endforeach; wp_reset_postdata(); ?> 
+      </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
