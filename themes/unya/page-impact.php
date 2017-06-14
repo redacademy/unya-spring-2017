@@ -19,9 +19,8 @@ get_header(); ?>
 		 <div class=“content-wrapper”>
 			<?php foreach ( $success_story as $post ) : setup_postdata( $post ); ?>
 				<h3><?php the_title(); ?></h3>
-				<p><img src="<?php echo CFS()->get( 'photo' ); ?>"></p>				
+				<img class="success-image" src="<?php echo CFS()->get( 'photo' ); ?>">			
 				<p><?php echo CFS()->get( 'first_half_of_story' ); ?></p>
-				<p><?php echo CFS()->get( 'second_half_of_story' ); ?></p>
 				
 		 	<?php endforeach; wp_reset_postdata(); ?> 
       </div>
