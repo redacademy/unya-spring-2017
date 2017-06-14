@@ -25,16 +25,31 @@ get_header(); ?>
 			</a>
 		</div>
 	</section>
-	<section class="employment opportunities">
+		<section class="employment opportunities">
+		<h1>Employment Opportunities</h1>
 		<p><span class="important-note">Important Note:</span> UNYA accepts complete applications for advertised positions only.
 		You must state clearly on your cover letter which position you are applying for. All applications must be sent in electronic
 		form, to the email address specified on the posting. Hard copies and unsolicited applications/resumes will not be reviewed,
 		but immediately destroyed.</p>
+
+			<?php $args = array(
+								'post_per_page' => 10,
+								'post_type'=> 'opportunities',
+								'order'    => 'ASC',
+								'opportunity_type' => 'employment'
+						);
+						$employment_opportunities = get_posts( $args ); ?>
+
+		<div class=“content-wrapper”>
+			  <?php foreach ( $employment_opportunities as $post ) : setup_postdata( $post ); ?>
+                <h3><?php the_title(); ?></h3>
+                <p><?php echo CFS()->get( 'description' ); ?></p>
+                <p><?php echo CFS()->get( 'link' ); ?></p>
+             <?php endforeach; wp_reset_postdata(); ?>
+			</div>
 	</section>
 	<section class="volunteer opportunities">
 		<h1> Volunteer Opportunities</h1>
-
-
 
 			<?php $args = array(
 								'post_per_page' => 10,
