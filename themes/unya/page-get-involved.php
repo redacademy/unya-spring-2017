@@ -5,15 +5,13 @@
  * @package UNYA_Theme
  */
 
-
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 	<section class="donation">
-		<h1>Donate</h1>
+		<h2>Donate</h2>
 		<div class="donation-registration">
 			<p>UNYA is a not-for-profit society registered with the Province and a
 			charitable organization 129836292 RR0001 registered with the Government of Canada.</p>
@@ -26,11 +24,26 @@ get_header(); ?>
 		</div>
 	</section>
 		<section class="employment opportunities">
-		<h1>Employment Opportunities</h1>
-		<p><span class="important-note">Important Note:</span> UNYA accepts complete applications for advertised positions only.
-		You must state clearly on your cover letter which position you are applying for. All applications must be sent in electronic
-		form, to the email address specified on the posting. Hard copies and unsolicited applications/resumes will not be reviewed,
-		but immediately destroyed.</p>
+		<h2>Employment Opportunities</h2>
+
+		<div class=“content-wrapper”>
+        <p><?php echo CFS()->get( 'employment_intro_paragraph' ); ?></p>
+		</div>
+				<ul class="employment-list-container">
+				<?php $employment_list = CFS()->get('why_work_for_unya'); ?>
+				<?php foreach ( $employment_list as $why_work_for_unya ) : ?>
+					<li class="employment-list">
+						<?php echo esc_html( $why_work_for_unya['why_work_for_unya_item'] ); ?>
+					</li>
+				<?php endforeach; ?></ul>
+
+
+		<div class="important-note-container">
+			<p><span class="important-note">Important Note:</span> UNYA accepts complete applications for advertised positions only.
+			You must state clearly on your cover letter which position you are applying for. All applications must be sent in electronic
+			form, to the email address specified on the posting. Hard copies and unsolicited applications/resumes will not be reviewed,
+			but immediately destroyed.</p>
+		</div>
 
 			<?php $args = array(
 								'post_per_page' => 10,
@@ -49,8 +62,7 @@ get_header(); ?>
 			</div>
 	</section>
 	<section class="volunteer opportunities">
-		<h1> Volunteer Opportunities</h1>
-
+		<h2> Volunteer Opportunities</h2>
 			<?php $args = array(
 								'post_per_page' => 10,
 								'post_type'=> 'opportunities',
@@ -75,5 +87,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<!--<?php get_sidebar(); ?>-->
 <?php get_footer(); ?>
