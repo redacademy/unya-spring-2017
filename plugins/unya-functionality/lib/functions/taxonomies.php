@@ -56,7 +56,7 @@ function opportunities_type_taxonomy() {
 		'parent_item'                => 'Parent Opportunity Type',
 		'parent_item_colon'          => 'Parent Opportunity Type:',
 		'new_item_name'              => 'New Opportunity_Type Name',
-		'add_new_item'               => 'Add New OpportunityType',
+		'add_new_item'               => 'Add New Opportunity Type',
 		'edit_item'                  => 'Edit Opportunity Type',
 		'update_item'                => 'Update Opportunity Type',
 		'view_item'                  => 'View Opportunity Type',
@@ -78,9 +78,8 @@ function opportunities_type_taxonomy() {
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
-		'rewrite'                    => false,
 	);
-	register_taxonomy( 'opportunity_type', array( 'post' ), $args );
+	register_taxonomy( 'opportunity_type', array( 'opportunities' ), $args );
 
 }
 add_action( 'init', 'opportunities_type_taxonomy', 0 );

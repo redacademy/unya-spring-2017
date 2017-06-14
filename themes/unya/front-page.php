@@ -12,9 +12,9 @@ get_header(); ?>
 
     <section class="about">
       <div class="home-container">
-        <h1>unya: where youth lead </h1>
+        <h1>UNYA: Where youth lead </h1>
         <p>The talented youth at UNYA are making an impact in our community. Learn about their successes.</p>
-        <h2>learn more</h2>
+        <h2>Learn more</h2>
       </div>
     </section>
     <section class="nyc">
@@ -22,7 +22,7 @@ get_header(); ?>
         <h1>Join us in making history</h1>
         <p>The Native Youth Center capital campaign will help us build a new hub for
         Vancouver's indigenous youth. Learn how you can contribute.</p>
-        <h1>Learn More</h1>
+        <h2>Learn More</h2>
       </div>
     </section>
     <section class="programs">
@@ -30,7 +30,7 @@ get_header(); ?>
         <h1>Programs at UNYA</h1>
         <p>What's your thing? At UNYA, there's something for everyone. Connect with us to
         learn more about the programs that UNYA can offer to you.</p>
-        <h1>Learn More</h1>
+        <h2>Learn More</h2>
       </div>
     </section>
     <section class="donation-cta">
