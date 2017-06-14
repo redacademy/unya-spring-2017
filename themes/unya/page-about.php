@@ -21,19 +21,19 @@ get_header(); ?>
 		<section class="vision" id="vision">
 			<div class="content-wrapper">
 				</h2>Vision</h2>
-				<p><?php echo CFS()->get( 'vision' ); ?></p>
+				<p><?php echo esc_html( CFS()->get( 'vision' ) ); ?></p>
 			</div>
 		</section>
 		<section class="mission" id="mission">
 			<div class="content-wrapper">
 				<h2>Mission</h2>
-				<p><?php echo CFS()->get( 'mission' ); ?></p>
+				<p><?php echo esc_html( CFS()->get( 'mission' ) ); ?></p>
 			</div>
 		</section>
 		<section class="brief-history" id="brief-history">
 			<div class="content-wrapper">
 				<h2>Brief History</h2>
-				<p><?php echo CFS()->get( 'brief_history' ); ?></p>
+				<p><?php echo esc_html( CFS()->get( 'brief_history' ) ); ?></p>
 			</div>
 		</section>
 		<section class="leadership" id="leadership">
@@ -49,9 +49,9 @@ get_header(); ?>
 								<?php endif; ?>
 							</div>
 							<div class="text-wrapper">
-								<p><?php echo CFS()->get( 'name' ); ?></p>
-								<p><?php echo CFS()->get( 'title' ); ?></p>
-								<p><?php echo CFS()->get( 'bio' ); ?></p>
+								<p><?php echo esc_html( CFS()->get( 'name' ) ); ?></p>
+								<p><?php echo esc_html( CFS()->get( 'title' ) ); ?></p>
+								<p><?php echo esc_html( CFS()->get( 'bio' ) ); ?></p>
 							</div>
 						</li>
 					<?php endforeach; wp_reset_postdata(); ?> 
@@ -69,9 +69,9 @@ get_header(); ?>
 						<li class="report-item">
 							<div class="image-wrapper"></div>
 							<div class="text-wrapper">
-								<p><?php echo $report['report_title']; ?></p>
-								<p><?php echo $report['report_description']; ?></p>
-								<p><?php echo $report['report_file']; ?></p>
+								<p><?php echo esc_html( $report['report_title'] ); ?></p>
+								<p><?php echo esc_html( $report['report_description'] ); ?></p>
+								<p><?php echo esc_html( $report['report_file'] ); ?></p>
 							</div>
 						</li>
 					<?php endforeach; ?>
