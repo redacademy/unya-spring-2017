@@ -295,9 +295,6 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-html {
-  font-size: 14px; }
-
 body,
 button,
 input,
@@ -338,7 +335,7 @@ h4 {
   font-size: 0.85714rem; }
   @media (min-width: 600px) {
     h4 {
-      font-size: 2.5714285714rem; } }
+      font-size: 1.7142857143rem; } }
 
 /* Copy */
 p {
@@ -388,8 +385,7 @@ big {
 --------------------------------------------------------------*/
 html {
   box-sizing: border-box;
-  font-size: 14px;
-  font-size: 1rem; }
+  font-size: 14px; }
 
 *,
 *:before,

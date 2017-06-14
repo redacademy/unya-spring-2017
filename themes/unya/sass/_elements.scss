@@ -4,7 +4,8 @@
 
 html {
 	box-sizing: border-box;
-	@include font-size(1);
+	// @include font-size(1);
+	font-size: 14px;
 }
 
 *,
