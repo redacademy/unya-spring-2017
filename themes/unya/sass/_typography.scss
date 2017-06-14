@@ -17,12 +17,50 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: $font__heading;
+	text-transform: uppercase;
+}
+
+h1 {
+	color: #FFF;
+	font-size: $heading__h1;
+
+	@include desktop {
+		font-size: 3.4285714286rem;
+	}
+}
+
+h2 {
+	color: #000;
+	font-size: $heading__h2;
+
+	@include desktop {
+		font-size: 2.5714285714rem;
+	}
+}
+
+h3 {
+	font-size: $heading__h3;
+
+	@include desktop {
+		font-size: 1.7142857143rem;
+	}
+}
+
+h4 {
+	font-size: $heading__h4;
+
+	@include desktop {
+		font-size: 2.5714285714rem;
+	}
 }
 
 /* Copy */
 
 p {
 	margin-bottom: $base__space-unit;
+	font-family: $font__main;
+	font-size: 1rem;
 }
 
 dfn, cite, em, i {
@@ -31,6 +69,7 @@ dfn, cite, em, i {
 
 blockquote {
 	margin: 0 $base__space-unit;
+	font-size: $quote;
 }
 
 address {

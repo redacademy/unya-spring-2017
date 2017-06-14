@@ -1,6 +1,6 @@
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
-	font-size: ($sizeValue * 16) * 1px;
+	font-size: ($sizeValue * 14) * 1px;
 	font-size: $sizeValue * 1rem;
 }
 
@@ -9,4 +9,18 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+@mixin desktop {
+	@media (min-width: $mobile__max-width) {
+		@content
+	}
+}
+
+@mixin pre-footer {
+	color: #FFF;
+	font-family: 'poppins';
+	font-size: 2.5714285714rem;
+	font-weight: bold;
+	line-height: 3.8571428571rem;
 }

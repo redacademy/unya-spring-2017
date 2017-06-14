@@ -5,7 +5,7 @@ $base__space-unit: 1.5rem;
 // Colors
 
 $color__background-body: #fff;
-$color__text-main: #404040;
+$color__text-main: #000;
 
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
@@ -15,14 +15,29 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: royalblue;
+$color__link: #4263AB;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
+$color__heading-blue: #00277E;
+$color__heading-red: #A70000;
+
+// Screen Width
+$mobile__max-width: 600px;
+
 // Typography
 
-$font__main: sans-serif;
+$font__main: 'worksans', sans-serif;
+$font__heading: 'poppins', sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+// note: mobile-first sizes
+$heading__h1: 2.5714285714rem;
+$heading__h2: 1.4285714286rem;
+$heading__h3: 1.1428571429rem;
+$heading__h4: 0.8571428571rem;
+
+$quote: 1rem;
