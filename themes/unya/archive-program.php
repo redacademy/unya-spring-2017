@@ -18,6 +18,14 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
+			<section>
+				<h2>Calendar</h2>
+			</section>
+
+			<section>
+				
+			</section>
+
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
