@@ -12,7 +12,15 @@
 }
 
 @mixin desktop {
-	@media(min-width: $mobile__max-width) {
+	@media (min-width: $mobile__max-width) {
 		@content
 	}
+}
+
+@mixin pre-footer {
+	color: #FFF;
+	font-family: 'poppins';
+	font-size: 2.5714285714rem;
+	font-weight: bold;
+	line-height: 3.8571428571rem;
 }
