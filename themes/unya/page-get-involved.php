@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 	<section class="donation">
-		<h3>Donate</h3>
+		<h2>Donate</h2>
 		<div class=“content-wrapper”>
 			<p><?php echo CFS()->get( 'donate_intro_paragraph' ); ?></p>
 		</div>
