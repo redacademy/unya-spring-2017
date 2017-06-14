@@ -41,7 +41,7 @@ get_header(); ?>
 				<h2>Leadership</h2>
 				<h4>The UNYA Board exmplifies the leadership of our youth.</h4>
 				<ul>
-					<?php foreach ( $leaders as $leader ) : setup_postdata( $leader ); ?>
+					<?php foreach ( $leaders as $leader ) : setup_postdata( $post ); ?>
 						<li class="leader">
 							<div class="image-wrapper">
 								<?php if ( has_post_thumbnail() ) : ?>
@@ -54,7 +54,7 @@ get_header(); ?>
 								<p><?php echo CFS()->get( 'bio' ); ?></p>
 							</div>
 						</li>
-					<?php endforeach; ?> 
+					<?php endforeach; wp_reset_postdata(); ?> 
 				
 				</ul>
 				
