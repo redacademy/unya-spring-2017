@@ -27,7 +27,7 @@ get_header(); ?>
 					<h2>Check out our programming</h2>
 					<p>Click on any program to learn more</p>
 				</header>
-				<h3>Education and Training</h3>
+				<h3 id="education">Education and Training</h3>
 				<ul>
 				<?php
 					$args = array(
@@ -47,7 +47,7 @@ get_header(); ?>
 					<?php endforeach; ?>
 				</ul>
 
-				<h3>Personal Support</h3>
+				<h3 id="personal">Personal Support</h3>
 				<ul>
 				<?php
 					$args = array(
@@ -67,7 +67,7 @@ get_header(); ?>
 					<?php endforeach; ?>
 				</ul>
 
-				<h3>Live-In Program</h3>
+				<h3 id="live-in">Live-In Program</h3>
 				<ul>
 				<?php
 					$args = array(
@@ -87,7 +87,7 @@ get_header(); ?>
 					<?php endforeach; ?>
 				</ul>
 
-				<h3>Sports and Recreation</h3>
+				<h3 id="sports">Sports and Recreation</h3>
 				<ul>
 				<?php
 					$args = array(
