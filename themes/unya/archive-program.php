@@ -22,24 +22,32 @@ get_header(); ?>
 				<h2>Calendar</h2>
 			</section>
 
-			<section>
-				
-			</section>
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
+			<section class="programs">
+				<header>
+					<h2>Check out our programming</h2>
+					<p>Click on any program to learn more</p>
+				</header>
+				<h3>Education and Training</h3>
+				<ul>
 				<?php
-					get_template_part( 'template-parts/content' );
+					$args = array(
+						'post_type' => 'program',
+						'taxonomy' => 'education',
+						'order' => 'DESC',
+						'post_per_page' => '10'
+					);
+					$programs = get_posts( $args );
+					foreach ( $programs as $post ) : setup_postdata( $post );
 				?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+					<li>
+						<?php if ( has_post_thumbnail() ) : ?>
+          		<?php the_post_thumbnail( 'medium' ); ?>
+        		<?php endif; ?>
+						<a href="<?php the_permalink() ?>"><h4><?php the_title(); ?></h4></a>
+					</li>
+					<?php endforeach; ?>
+				</ul>
+			</section>
 
 		<?php endif; ?>
 
