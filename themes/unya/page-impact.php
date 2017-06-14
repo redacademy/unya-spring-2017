@@ -2,7 +2,7 @@
 /**
  * The template for displaying the impact page.
  * 
- * @package RED_Starter_Theme
+ * @package UNYA_Theme
  */
  $args= array(
      'post_type'=> 'success_story',

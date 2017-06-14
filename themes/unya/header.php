@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package UNYA_Theme
  */
 
 ?><!DOCTYPE html>

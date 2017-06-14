@@ -1,8 +1,8 @@
 <?php
 /**
  * The template for displaying the news archive.
- * Template Name: News Archive
- * @package RED_Starter_Theme
+ *
+ * @package UNYA_Theme
  */
 
 get_header(); ?>

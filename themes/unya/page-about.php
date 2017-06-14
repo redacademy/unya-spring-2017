@@ -2,7 +2,7 @@
 /**
  * The template for displaying the about page.
  *
- * @package RED_Starter_Theme
+ * @package UNYA_Theme
  */
  $args= array(
      'post_type'=> 'leaders',

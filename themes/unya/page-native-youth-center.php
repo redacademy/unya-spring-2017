@@ -2,7 +2,7 @@
 /**
  * The template for displaying the native youth center page.
  *
- * @package RED_Starter_Theme
+ * @package UNYA_Theme
  */
 
 get_header(); ?>
