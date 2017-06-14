@@ -11,7 +11,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header class="program-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
@@ -28,7 +28,7 @@ get_header(); ?>
 					<p>Click on any program to learn more</p>
 				</header>
 				<h3 id="education">Education and Training</h3>
-				<ul>
+				<ul class="content-wrapper">
 				<?php
 					$args = array(
 						'post_type' => 'program',
@@ -48,7 +48,7 @@ get_header(); ?>
 				</ul>
 
 				<h3 id="personal">Personal Support</h3>
-				<ul>
+				<ul class="content-wrapper">
 				<?php
 					$args = array(
 						'post_type' => 'program',
@@ -68,7 +68,7 @@ get_header(); ?>
 				</ul>
 
 				<h3 id="live-in">Live-In Program</h3>
-				<ul>
+				<ul class="content-wrapper">
 				<?php
 					$args = array(
 						'post_type' => 'program',
@@ -88,7 +88,7 @@ get_header(); ?>
 				</ul>
 
 				<h3 id="sports">Sports and Recreation</h3>
-				<ul>
+				<ul class="content-wrapper">
 				<?php
 					$args = array(
 						'post_type' => 'program',
@@ -106,7 +106,10 @@ get_header(); ?>
 					</li>
 					<?php endforeach; ?>
 				</ul>
-				
+			</section>
+
+			<section>
+				<h2>Upcoming Events &amp; Activities</h2>
 			</section>
 
 		<?php endif; ?>
