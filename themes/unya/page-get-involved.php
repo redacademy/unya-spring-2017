@@ -12,20 +12,22 @@ get_header(); ?>
 
 	<section class="donation">
 		<h2>Donate</h2>
+		<div class=“content-wrapper”>
+			<p><?php echo CFS()->get( 'donate_intro_paragraph' ); ?></p>
+		</div>
 		<div class="donation-registration">
 			<p>UNYA is a not-for-profit society registered with the Province and a
 			charitable organization 129836292 RR0001 registered with the Government of Canada.</p>
 		</div>
 		<div class="donate-button">
-			<h1> MAKE YOUR DONATION ONLINE TODAY </h1>
+			<h2> MAKE YOUR DONATION ONLINE TODAY </h2>
 			<a href="https://www.canadahelps.org/en/charities/urban-native-youth-association/">
-			<h1> DONATE TODAY </h1>
+			<h3> DONATE TODAY </h3>
 			</a>
 		</div>
 	</section>
 		<section class="employment opportunities">
 		<h2>Employment Opportunities</h2>
-
 		<div class=“content-wrapper”>
         <p><?php echo CFS()->get( 'employment_intro_paragraph' ); ?></p>
 		</div>
@@ -87,5 +89,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<!--<?php get_sidebar(); ?>-->
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
