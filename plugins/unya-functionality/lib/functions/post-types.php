@@ -211,7 +211,7 @@ function register_leader_post_type() {
 		'label'                 => 'Leader',
 		'description'           => 'Post Type for leadership',
 		'labels'                => $labels,
-		'supports'              => array( 'editor', 'thumbnail', ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', ),
 		'taxonomies'            => array(),
 		'hierarchical'          => false,
 		'public'                => true,
