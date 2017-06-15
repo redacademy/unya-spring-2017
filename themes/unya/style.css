@@ -668,7 +668,7 @@ a {
 --------------------------------------------------------------*/
 /* Posts and pages */
 .content-wrapper {
-  width: 80%; }
+  width: 85%; }
 
 .sticky {
   display: block; }
@@ -768,3 +768,12 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/* Native Youth Centre */
+.page-id-76 section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.page-id-76 ul {
+  list-style: none; }
