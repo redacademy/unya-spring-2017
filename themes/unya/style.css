@@ -776,4 +776,18 @@ object {
       justify-content: center; }
 
 .page-id-76 ul {
+  margin: 0;
+  padding: 0;
   list-style: none; }
+
+.page-id-76 .timeline-item {
+  display: -ms-flexbox;
+  display: flex; }
+
+.page-id-76 .year-wrapper {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%; }
+
+.page-id-76 .description-wrapper {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%; }
