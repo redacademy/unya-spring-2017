@@ -586,11 +586,6 @@ a {
         display: block; } }
     .main-navigation .menu-primary-menu-container .menu-item {
       padding: 0.5rem 1.5rem; }
-  .main-navigation .menu-toggle {
-    display: block; }
-    @media (min-width: 600px) {
-      .main-navigation .menu-toggle {
-        display: none; } }
 
 /* Small menu. */
 .menu-toggle,
@@ -647,6 +642,21 @@ a {
     @media (min-width: 600px) {
       .site-header .donate {
         display: block; } }
+    .site-header .donate .menu-toggle {
+      display: block; }
+      @media (min-width: 600px) {
+        .site-header .donate .menu-toggle {
+          display: none; } }
+
+.site-header.expanded .main-navigation .menu-primary-menu-container {
+  display: block; }
+  .site-header.expanded .main-navigation .menu-primary-menu-container .menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -841,7 +851,7 @@ object {
   height: 350px; }
 
 .programs {
-  background-image: linear-gradient(to bottom, rgba(66, 99, 171, 0.7) 0%, rgba(66, 99, 171, 0.7) 100%), url("../../assets/images/jack.png");
+  background-image: linear-gradient(to bottom, rgba(66, 99, 171, 0.7) 0%, rgba(66, 99, 171, 0.7) 100%), url("../../assets/images/jackpic.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 350px; }

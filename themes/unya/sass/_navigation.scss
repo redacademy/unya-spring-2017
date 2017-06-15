@@ -106,12 +106,6 @@ a {
 
 		}
 	}
-	.menu-toggle {
-		display: block;
-		@include desktop {
-			display: none;
-		}
-	}
 }
 
 /* Small menu. */
@@ -172,7 +166,25 @@ a {
 		@include desktop {
 			display: block;
 		}
-
+		.menu-toggle {
+			display: block;
+			@include desktop {
+				display: none;
+			}
+		}
 	}
 	
+}
+
+.site-header.expanded {
+	.main-navigation {
+		.menu-primary-menu-container{
+			display: block;
+			.menu {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
 }
