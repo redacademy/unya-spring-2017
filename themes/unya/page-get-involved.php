@@ -39,11 +39,9 @@ get_header(); ?>
 						<?php echo esc_html( $why_work_for_unya['why_work_for_unya_item'] ); ?>
 					</li>
 				<?php endforeach; ?></ul>
-
-
 		<div class="important-note-container">
 			<p class="important-note-paragraph">
-			<span class="fa fa-info" aria-hidden="true"></span>
+			<span class="fa fa-info fa-3x" aria-hidden="true"></span>
 			<span class="important-note">Important Note:</span> UNYA accepts complete applications for advertised positions only.
 			You must state clearly on your cover letter which position you are applying for. All applications must be sent in electronic
 			form, to the email address specified on the posting. Hard copies and unsolicited applications/resumes will not be reviewed,
