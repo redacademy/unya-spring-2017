@@ -35,6 +35,7 @@ a {
 	font-size: $heading__h3;
 	text-transform: uppercase;
 	display: none;
+	align-self: center;
 	@include desktop {
 		display: block;	
 	}
@@ -102,6 +103,13 @@ a {
 	}
 	.menu-item {
 		padding: 0.5rem 1.5rem;
+		width: 100%;
+		border-bottom: 1px solid $color__blue-medium;
+		text-align: center;
+		@include desktop {
+			border: none;
+			width: auto;
+		}
 
 	}
 	
@@ -113,7 +121,7 @@ a {
 	display: block;
 }
 
-@media screen and (min-width: 768px) {
+@include desktop {
 	.menu-toggle {
 		display: none;
 	}
@@ -165,17 +173,13 @@ a {
 		@include desktop {
 			display: block;
 		}
-		.menu-toggle {
-			display: block;
-			@include desktop {
-				display: none;
-			}
-		}
+		
 	}
 	
 }
 
 .site-header.expanded {
+	background: $color__blue-medium;
 	flex-wrap: wrap;
 	.site-branding {
 		background: url('../../assets/images/Logo-White.png') no-repeat center;
@@ -192,5 +196,21 @@ a {
 				align-items: center;
 			}
 		}
+	}
+	#main-nav-toggle {
+		background: url('../../assets/images/menu-close.svg') no-repeat center;
+		background-size: contain;
+	}
+}
+
+#main-nav-toggle {
+	display: block;
+	background: url('../../assets/images/menu-toggle.svg') no-repeat center;
+	background-size: contain;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	@include desktop {
+		display: none;
 	}
 }
