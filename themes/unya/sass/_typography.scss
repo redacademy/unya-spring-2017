@@ -24,9 +24,11 @@ h1 {
 	color: #FFF;
 	font-size: $heading__h1;
 	text-transform: uppercase;
+	margin-top: 0;
 
 	@include desktop {
 		font-size: 3.4285714286rem;
+
 	}
 }
 
@@ -41,6 +43,8 @@ h2 {
 
 h3 {
 	font-size: $heading__h3;
+	color:#fff;
+
 
 	@include desktop {
 		font-size: 1.7142857143rem;
