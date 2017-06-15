@@ -13,7 +13,7 @@ get_header(); ?>
 	<section class="donation">
 		<h2>Donate</h2>
 		<div class=“content-wrapper”>
-			<p><?php echo CFS()->get( 'donate_intro_paragraph' ); ?></p>
+			<p><?php echo CFS()->get( 'donation_intro_paragraph' ); ?></p>
 		</div>
 		<div class="donation-registration">
 			<p>UNYA is a not-for-profit society registered with the Province and a
@@ -26,12 +26,12 @@ get_header(); ?>
 			</a>
 		</div>
 	</section>
-		<section class="employment opportunities">
+		<section class="opportunities">
 		<h2>Employment Opportunities</h2>
 		<div class=“content-wrapper”>
         <p><?php echo CFS()->get( 'employment_intro_paragraph' ); ?></p>
 		</div>
-			<p>Why work for UNYA? </p>
+		<p> Why work for UNYA? </p>
 				<ul class="employment-list-container">
 				<?php $employment_list = CFS()->get('why_work_for_unya'); ?>
 				<?php foreach ( $employment_list as $why_work_for_unya ) : ?>
@@ -42,11 +42,13 @@ get_header(); ?>
 
 
 		<div class="important-note-container">
-			<p><span class="fa fa-info" aria-hidden="true"></span>
+			<p class="important-note-paragraph">
+			<span class="fa fa-info" aria-hidden="true"></span>
 			<span class="important-note">Important Note:</span> UNYA accepts complete applications for advertised positions only.
 			You must state clearly on your cover letter which position you are applying for. All applications must be sent in electronic
 			form, to the email address specified on the posting. Hard copies and unsolicited applications/resumes will not be reviewed,
-			but immediately destroyed.</p>
+			but immediately destroyed.
+			</p>
 		</div>
 
 			<?php $args = array(
@@ -65,7 +67,7 @@ get_header(); ?>
              <?php endforeach; wp_reset_postdata(); ?>
 			</div>
 	</section>
-	<section class="volunteer opportunities">
+	<section class="opportunities">
 		<h2> Volunteer Opportunities</h2>
 			<?php $args = array(
 								'post_per_page' => 10,
