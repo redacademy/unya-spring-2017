@@ -21,6 +21,7 @@ function unya_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'unya_body_classes' );
 
+// Change program slug to 'programs'
 function change_programs_archive_slug ( $args, $post_type ) {
     if ( 'program' === $post_type ) {
         $args['rewrite']['slug'] = 'programs';
