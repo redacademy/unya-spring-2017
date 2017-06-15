@@ -28,7 +28,7 @@ get_header(); ?>
 				</div>
 			</section>
 			<section class="planning" id="planning">
-				<header>
+				<header class="section-heading">
 					<h2 class="content-wrapper">Planning and Development</h2>
 					<h4 class="content-wrapper">Timeline of the development of the Native Youth Center.</h4>					
 				</header>
