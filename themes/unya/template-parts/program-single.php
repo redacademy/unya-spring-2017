@@ -31,7 +31,7 @@
 					<?php $i++;
 				endforeach; ?>
 		<h3>How To Get Involved</h3>
-		<p><?php echo wpautop( esc_html( CFS()->get( 'get_involved' ) ) ); ?></p>
+		<p class="content-wrapper"><?php echo wpautop( esc_html( CFS()->get( 'get_involved' ) ) ); ?></p>
 		<ul class="image-slider">
 			<?php foreach ( $images as $image ) : ?>
 				<li><img src="<?php echo $image['image']; ?>"></li>
