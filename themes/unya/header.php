@@ -24,13 +24,11 @@
 				<div class="site-branding">
 					<div class="logo"><a href=<?php echo esc_url( home_url()) ?> rel="home"><h1 class="site-title">UNYA</h1></a></div>
 				</div><!-- .site-branding -->
-				<div class="navigation-wrapper">
-					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					</nav><!-- #site-navigation -->
-					<button class="donate">Donate</button>
-				</div>
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</nav><!-- #site-navigation -->
+				<button class="donate">Donate</button>
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

@@ -28,9 +28,9 @@ a {
 
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	display: flex;
+	width: auto;
+	align-items: center;
 
 	ul {
 		display: none;
@@ -129,4 +129,11 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+
+.site-header {
+	display: flex;
+	justify-content: space-around;
+	width: 100vw;
+	
 }

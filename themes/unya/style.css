@@ -521,9 +521,11 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  -ms-flex-align: center;
+      align-items: center; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -583,6 +585,13 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.site-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100vw; }
 
 /*--------------------------------------------------------------
 # Accessibility
