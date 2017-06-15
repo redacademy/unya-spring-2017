@@ -308,12 +308,12 @@ textarea {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "poppins", sans-serif;
-  text-transform: uppercase; }
+  font-family: "poppins", sans-serif; }
 
 h1 {
   color: #FFF;
-  font-size: 2.57143rem; }
+  font-size: 2.57143rem;
+  text-transform: uppercase; }
   @media (min-width: 600px) {
     h1 {
       font-size: 3.4285714286rem; } }
@@ -394,6 +394,7 @@ html {
   box-sizing: inherit; }
 
 body {
+  width: 100%;
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
 
@@ -657,6 +658,9 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.content-wrapper {
+  width: 80%; }
+
 .sticky {
   display: block; }
 

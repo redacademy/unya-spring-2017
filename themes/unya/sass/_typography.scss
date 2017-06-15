@@ -18,12 +18,12 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-family: $font__heading;
-	text-transform: uppercase;
 }
 
 h1 {
 	color: #FFF;
 	font-size: $heading__h1;
+	text-transform: uppercase;
 
 	@include desktop {
 		font-size: 3.4285714286rem;
