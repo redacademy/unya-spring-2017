@@ -19,7 +19,8 @@ get_header(); ?>
       <header class="page-header">
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
+		<?php /* Start the Loop */ ?>
+			<section class="news" id="news">
 		 		<div class=“content-wrapper”>
 		 			<ul class="news-articles">
 					 	<?php foreach ( $news as $post ) : setup_postdata( $post ); ?>
@@ -34,9 +35,10 @@ get_header(); ?>
 						<?php endforeach; wp_reset_postdata(); ?> 
 					</ul>
 			  </div>
-
-
-
+      </section>
+ 
+      <section class="media-inquiries" id="media-queries">
+      </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
