@@ -34,6 +34,10 @@ a {
 	font-family: $font__main;
 	font-size: $heading__h3;
 	text-transform: uppercase;
+	display: none;
+	@include desktop {
+		display: block;	
+	}
 
 	ul {
 		display: none;
@@ -96,16 +100,11 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
-	.menu-primary-menu-container {
-		display: none;
-		@include desktop {
-			display: block;
-		}
-		.menu-item {
-			padding: 0.5rem 1.5rem;
+	.menu-item {
+		padding: 0.5rem 1.5rem;
 
-		}
 	}
+	
 }
 
 /* Small menu. */
@@ -177,9 +176,16 @@ a {
 }
 
 .site-header.expanded {
+	flex-wrap: wrap;
+	.site-branding {
+		background: url('../../assets/images/Logo-White.png') no-repeat center;
+		background-size: contain;
+	}
 	.main-navigation {
+		display: block;
+		flex-basis: 100%;
+		background: #fff;
 		.menu-primary-menu-container{
-			display: block;
 			.menu {
 				display: flex;
 				flex-direction: column;

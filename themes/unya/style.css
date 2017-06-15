@@ -551,7 +551,11 @@ a {
       align-items: center;
   font-family: "worksans", sans-serif;
   font-size: 1.14286rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: none; }
+  @media (min-width: 600px) {
+    .main-navigation {
+      display: block; } }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -581,13 +585,8 @@ a {
   .main-navigation a {
     display: block;
     text-decoration: none; }
-  .main-navigation .menu-primary-menu-container {
-    display: none; }
-    @media (min-width: 600px) {
-      .main-navigation .menu-primary-menu-container {
-        display: block; } }
-    .main-navigation .menu-primary-menu-container .menu-item {
-      padding: 0.5rem 1.5rem; }
+  .main-navigation .menu-item {
+    padding: 0.5rem 1.5rem; }
 
 /* Small menu. */
 .menu-toggle,
@@ -650,15 +649,24 @@ a {
         .site-header .donate .menu-toggle {
           display: none; } }
 
-.site-header.expanded .main-navigation .menu-primary-menu-container {
-  display: block; }
-  .site-header.expanded .main-navigation .menu-primary-menu-container .menu {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center; }
+.site-header.expanded {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .site-header.expanded .site-branding {
+    background: url("../../assets/images/Logo-White.png") no-repeat center;
+    background-size: contain; }
+  .site-header.expanded .main-navigation {
+    display: block;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    background: #fff; }
+    .site-header.expanded .main-navigation .menu-primary-menu-container .menu {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center; }
 
 /*--------------------------------------------------------------
 # Accessibility
