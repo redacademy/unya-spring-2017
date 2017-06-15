@@ -97,9 +97,19 @@ a {
 	.current_page_ancestor > a {
 	}
 	.menu-primary-menu-container {
+		display: none;
+		@include desktop {
+			display: block;
+		}
 		.menu-item {
 			padding: 0.5rem 1.5rem;
 
+		}
+	}
+	.menu-toggle {
+		display: block;
+		@include desktop {
+			display: none;
 		}
 	}
 }
@@ -150,6 +160,7 @@ a {
 		background-size: contain;
 	}
 	.donate {
+		display: none;
 		padding: 0.5rem;
 		align-self: center;
 		background: $color__heading-red;
@@ -158,6 +169,9 @@ a {
 		text-decoration: none;
 		font-family: $font__main;
 		text-transform: uppercase;
+		@include desktop {
+			display: block;
+		}
 
 	}
 	

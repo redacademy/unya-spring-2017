@@ -579,8 +579,18 @@ a {
   .main-navigation a {
     display: block;
     text-decoration: none; }
-  .main-navigation .menu-primary-menu-container .menu-item {
-    padding: 0.5rem 1.5rem; }
+  .main-navigation .menu-primary-menu-container {
+    display: none; }
+    @media (min-width: 600px) {
+      .main-navigation .menu-primary-menu-container {
+        display: block; } }
+    .main-navigation .menu-primary-menu-container .menu-item {
+      padding: 0.5rem 1.5rem; }
+  .main-navigation .menu-toggle {
+    display: block; }
+    @media (min-width: 600px) {
+      .main-navigation .menu-toggle {
+        display: none; } }
 
 /* Small menu. */
 .menu-toggle,
@@ -623,6 +633,7 @@ a {
     background: url("../../assets/images/RED_UNYA_UI_LogoDesign_Assets_V1-1.png") no-repeat center;
     background-size: contain; }
   .site-header .donate {
+    display: none;
     padding: 0.5rem;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -633,6 +644,9 @@ a {
     text-decoration: none;
     font-family: "worksans", sans-serif;
     text-transform: uppercase; }
+    @media (min-width: 600px) {
+      .site-header .donate {
+        display: block; } }
 
 /*--------------------------------------------------------------
 # Accessibility
