@@ -690,6 +690,9 @@ a {
 .content-wrapper {
   width: 85%; }
 
+.section-heading {
+  width: 100%; }
+
 .sticky {
   display: block; }
 
@@ -810,8 +813,10 @@ object {
 .page-id-76 section {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
 
 .page-id-76 ul {
   margin: 0;

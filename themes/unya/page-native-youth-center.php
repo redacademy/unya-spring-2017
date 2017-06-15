@@ -20,15 +20,19 @@ get_header(); ?>
 			
 			</div>
 			<section class="vision" id="vision">
-				<div class="content-wrapper">
+				<header class="section-heading">
 					<h2>Vision</h2>
+				</header>
+				<div class="content-wrapper">
 					<p><?php echo esc_html( CFS()->get( 'vision' ) ); ?></p>
 				</div>
 			</section>
 			<section class="planning" id="planning">
+				<header>
+					<h2 class="content-wrapper">Planning and Development</h2>
+					<h4 class="content-wrapper">Timeline of the development of the Native Youth Center.</h4>					
+				</header>
 				<div class="content-wrapper">
-					<h2>Planning and Development</h2>
-					<h4>Timeline of the development of the Native Youth Center.</h4>
 					<ul>
 						<?php $timeline = CFS()->get( 'timeline' ); ?>
 						<?php foreach ( $timeline as $timeline_item ) : ?>
@@ -48,6 +52,9 @@ get_header(); ?>
 
 			</section>
 			<section class="partners" id="partners">
+				<header class="section-heading">
+					<h2 class="content-wrapper">Partners</h2>
+				</header>
 				<div class="content-wrapper">
 					<ul>
 						<?php $partners = CFS()->get( 'partners' ); ?>
@@ -60,10 +67,10 @@ get_header(); ?>
 				</div>
 			</section>
 			<section class="ways-to-help" id="ways-to-help">
-				<div class="heading">
+				<div class="section-heading">
 					<h2>Ways to Help</h2>
 				</div>
-				<div class="content">
+				<div class="content-wrapper">
 					<h4>The Need</h4>
 					<p><?php echo esc_html( CFS()->get( 'the_need' ) ); ?></p>
 					<h4>We Need Your Help</h4>
