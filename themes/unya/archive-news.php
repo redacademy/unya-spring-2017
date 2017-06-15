@@ -5,6 +5,11 @@
  * @package UNYA_Theme
  */
 
+$args= array(
+     'post_type'=> 'news',
+     'posts_per_page'=> 8
+ );
+
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -20,21 +25,17 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+		 <div class=“content-wrapper”>
+			<?php foreach ( $news as $post ) : setup_postdata( $post ); ?>
+				<h3><?php the_title(); ?></h3>
+				<img class="news-image" src="<?php echo CFS()->get( 'article_photo' ); ?>">			
+				<p><?php echo CFS()->get( 'article_text' ); ?></p>				
+				<p><?php echo CFS()->get( 'article_date' ); ?></p>		
+				<p><?php echo CFS()->get( 'article_url' ); ?></p>						
+		  	<?php endforeach; wp_reset_postdata(); ?> 
+      </div>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
 
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
