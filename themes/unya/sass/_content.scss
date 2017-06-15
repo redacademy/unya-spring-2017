@@ -2,6 +2,15 @@
 # Content
 --------------------------------------------------------------*/
 
+// To center the content on the page
+.page-id-37, .page-id-76 {
+  section {
+    display: flex;
+    align-items: center;
+    flex-direction: column
+  }
+}
+
 /* Posts and pages */
 
 .content-wrapper {

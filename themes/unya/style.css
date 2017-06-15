@@ -731,6 +731,14 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.page-id-37 section, .page-id-76 section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
 /* Posts and pages */
 .content-wrapper {
   width: 85%; }
@@ -860,19 +868,15 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/* About page */
 /* Native Youth Centre */
-.page-id-76 section {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.page-id-76 ul {
+.page-id-76 .planning ul {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+.page-id-76 .planning-timeline {
+  display: none; }
 
 .page-id-76 .timeline-item {
   display: -ms-flexbox;

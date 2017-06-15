@@ -4,18 +4,21 @@
 
 /* Front page */
 
+/* About page */
+
 /* Native Youth Centre */
 .page-id-76 {
-  section {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+
+  .planning {  
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
   }
 
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  .planning-timeline {
+    display: none;
   }
 
   .timeline-item {
