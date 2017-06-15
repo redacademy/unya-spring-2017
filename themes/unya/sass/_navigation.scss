@@ -31,6 +31,9 @@ a {
 	display: flex;
 	width: auto;
 	align-items: center;
+	font-family: $font__main;
+	font-size: $heading__h3;
+	text-transform: uppercase;
 
 	ul {
 		display: none;
@@ -93,6 +96,12 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
+	.menu-primary-menu-container {
+		.menu-item {
+			padding: 0.5rem 1.5rem;
+
+		}
+	}
 }
 
 /* Small menu. */
@@ -133,7 +142,23 @@ a {
 
 .site-header {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	width: 100vw;
+	.site-branding {
+		padding: 4rem;
+		background: url('../../assets/images/RED_UNYA_UI_LogoDesign_Assets_V1-1.png') no-repeat center;
+		background-size: contain;
+	}
+	.donate {
+		padding: 0.5rem;
+		align-self: center;
+		background: $color__heading-red;
+		border-radius: 15%;
+		color: #fff;
+		text-decoration: none;
+		font-family: $font__main;
+		text-transform: uppercase;
+
+	}
 	
 }
