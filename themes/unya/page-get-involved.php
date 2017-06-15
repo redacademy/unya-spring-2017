@@ -31,6 +31,7 @@ get_header(); ?>
 		<div class=“content-wrapper”>
         <p><?php echo CFS()->get( 'employment_intro_paragraph' ); ?></p>
 		</div>
+			<p>Why work for UNYA? </p>
 				<ul class="employment-list-container">
 				<?php $employment_list = CFS()->get('why_work_for_unya'); ?>
 				<?php foreach ( $employment_list as $why_work_for_unya ) : ?>
@@ -41,7 +42,8 @@ get_header(); ?>
 
 
 		<div class="important-note-container">
-			<p><span class="important-note">Important Note:</span> UNYA accepts complete applications for advertised positions only.
+			<p><span class="fa fa-info" aria-hidden="true"></span>
+			<span class="important-note">Important Note:</span> UNYA accepts complete applications for advertised positions only.
 			You must state clearly on your cover letter which position you are applying for. All applications must be sent in electronic
 			form, to the email address specified on the posting. Hard copies and unsolicited applications/resumes will not be reviewed,
 			but immediately destroyed.</p>
