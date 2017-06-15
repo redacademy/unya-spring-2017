@@ -9,10 +9,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="header-wrapper">
+			<header class="header-wrapper">
 				<h1>Native Youth Centre | Capital Campaign</h1>
 				<p class="header-subtext">Building a hub for confidence, leadership and reconciliation.</p>
-			</div>
+			</header>
 			<div>
 				<p class="header-subtext">We have a goal of $10 Million. Help us get a little closer today.</p>
 			</div>

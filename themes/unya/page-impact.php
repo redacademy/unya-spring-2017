@@ -15,28 +15,40 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-     
-	<?php /* Start the Loop */ ?>
+
+		<header class="header-wrapper">
+				<h1>Impact</h1>
+		</header>
+
+		<?php /* Start the Loop */ ?>
 	  <section class="success-stories" id="success-stories">
 	  	<div class=“content-wrapper”>
+				<h2>Success Story</h2>
+				<p>Learn more about the talented youth at UNYA, and the successes we celebrate.</p>
 		 	 	<?php foreach ( $success_story as $post ) : setup_postdata( $post ); ?>
-				  <h3><?php the_title(); ?></h3>
+				  <h3>Youth Feature - <?php the_title(); ?></h3>
 				 	<img class="success-image" src="<?php echo CFS()->get( 'photo' ); ?>">			
-				 	<p><?php echo CFS()->get( 'first_half_of_story' ); ?></p>				
+				 	<p><?php echo CFS()->get( 'first_half_of_story' ); ?></p>
+					<a href="<?php the_permalink() ?>"><p>Read more about <?php the_title(); ?></p></a>
 		    <?php endforeach; wp_reset_postdata(); ?> 
       </div>
     </section>
 	
-  <section class="statistics" id="statistics">
-	
-	</section>
+		<section class="statistics" id="statistics">
+				<h2>Impacts</h2>
+		</section>
   
-	<section class="testimonials" id="testimonials">
-    <h2>Testimonials</h2>
-		<p>What do youth say about us?</p>
-		<p><?php echo CFS()->get( 'testimonial_1' ); ?></p>				
-    <p><?php echo CFS()->get( 'testimonial_2' ); ?></p>	
-  </section>
+		<section class="testimonials" id="testimonials">
+			<h2>Testimonials</h2>
+			<p>What do youth say about us?</p>
+			<p><?php echo CFS()->get( 'testimonial_1' ); ?></p>
+			<p><?php echo CFS()->get( 'testimonial_2' ); ?></p>	
+		</section>
+
+		<section class="pre-footer">
+			<p>Inspired by what you see? Find your fit at UNYA.</p>
+			<button class="fit-button">Find Your Fit</button>
+		</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
