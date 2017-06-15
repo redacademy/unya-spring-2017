@@ -12,7 +12,7 @@
 				<div class="site-info">
 
 					<div class="newsletter-sign-up">
-						<h2> Sign up for our updates!</h2>
+						<p> Sign up for our updates!</p>
 						<p> Yes, please add me to the mailing list.</p>
 						<p> sign up</p>
 					</div>

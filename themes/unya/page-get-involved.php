@@ -10,7 +10,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-	<section class="donation">
+	<section class="donation" id="donate">
+
 		<h2>Donate</h2>
 		<div class=“content-wrapper”>
 			<p><?php echo CFS()->get( 'donation_intro_paragraph' ); ?></p>
@@ -26,7 +27,7 @@ get_header(); ?>
 			</a>
 		</div>
 	</section>
-		<section class="opportunities">
+		<section class="opportunities" id="employment">
 		<h2>Employment Opportunities</h2>
 		<div class=“content-wrapper”>
         <p><?php echo CFS()->get( 'employment_intro_paragraph' ); ?></p>
@@ -52,7 +53,6 @@ get_header(); ?>
 			<?php $args = array(
 								'post_per_page' => 10,
 								'post_type'=> 'opportunities',
-								'order'    => 'ASC',
 								'opportunity_type' => 'employment'
 						);
 						$employment_opportunities = get_posts( $args ); ?>
@@ -65,7 +65,7 @@ get_header(); ?>
              <?php endforeach; wp_reset_postdata(); ?>
 			</div>
 	</section>
-	<section class="opportunities">
+	<section class="opportunities" id="volunteer">
 		<h2> Volunteer Opportunities</h2>
 			<?php $args = array(
 								'post_per_page' => 10,
@@ -85,7 +85,7 @@ get_header(); ?>
 
 					</section>
 					<section class="opportunity-cta">
-						<p>please email INFO@UNYA.BC.CA for additional job opportunities, or to be added to our email list.</p>
+						<h5>please email INFO@UNYA.BC.CA for additional job opportunities, or to be added to our email list.</h5>
 					</section>
 
 		</main><!-- #main -->
