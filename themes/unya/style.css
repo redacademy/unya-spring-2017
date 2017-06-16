@@ -404,6 +404,12 @@ mark, ins {
 big {
   font-size: 125%; }
 
+.nyc .content-wrapper h2 {
+  margin: 0px; }
+
+.programs .content-wrapper h2 {
+  margin: 0px; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -963,7 +969,8 @@ object {
         flex-basis: 30%; }
   .page-id-37 .leader .text-wrapper {
     -ms-flex-preferred-size: 60%;
-        flex-basis: 60%; }
+        flex-basis: 60%;
+    font-size: 0.8571428571rem; }
   .page-id-37 .leader .leader-name {
     color: #2C2C2C;
     font-weight: bold; }
