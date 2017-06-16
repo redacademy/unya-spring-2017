@@ -946,14 +946,30 @@ object {
 
 /* Get Involved page */
 .donation-registration {
-  background-color: rgba(167, 0, 0, 0.7); }
+  background-color: rgba(167, 0, 0, 0.7);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .donation-call {
   width: 100%;
-  background-color: #A70000; }
+  background-color: #A70000;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center; }
+  .donation-call .content-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column; }
   .donation-call .donate-button {
     height: 3.5714285714rem;
-    width: 32%;
+    padding: 1rem;
     background-color: #D13434;
     border-radius: 10px;
     font-weight: normal;

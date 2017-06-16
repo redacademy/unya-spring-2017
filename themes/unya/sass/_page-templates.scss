@@ -35,15 +35,26 @@
 
 .donation-registration {
   background-color: rgba(167,0,0,0.7);
+  display: flex;
+  justify-content: center;
 }
 
 .donation-call {
   width: 100%;
   background-color: $color__red-dark;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
   .donate-button {
     height: 3.5714285714rem;
-    width: 32%;
+    padding: 1rem;
     background-color: $color__red-medium;
     border-radius: 10px;
     font-weight: normal;
