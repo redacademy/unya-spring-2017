@@ -1078,6 +1078,8 @@ object {
 .site-footer .newsletter-sign-up {
   -ms-flex-order: 1;
       order: 1; }
+  .site-footer .newsletter-sign-up .display-form {
+    position: absolute; }
 
 .site-footer .social-links {
   -ms-flex-order: 3;
