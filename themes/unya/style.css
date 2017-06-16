@@ -717,6 +717,12 @@ a {
     #main-nav-toggle {
       display: none; } }
 
+#accordion .accordion-label {
+  background: #4263AB !important;
+  color: #fff !important;
+  margin: 0 !important;
+  border-bottom: 1px solid #aaa !important; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

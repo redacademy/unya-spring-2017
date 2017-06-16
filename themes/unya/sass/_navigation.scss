@@ -214,3 +214,14 @@ a {
 		display: none;
 	}
 }
+
+#accordion {
+	.accordion-label {
+		background: $color__blue-medium !important;
+		color: #fff !important;
+		margin: 0 !important;
+		border-bottom: 1px solid #aaa !important;
+
+	}
+}
+
