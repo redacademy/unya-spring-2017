@@ -10,20 +10,19 @@
 		</div><!-- #content -->
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-
 					<div class="newsletter-sign-up">
-						<p> Sign up for our updates!</p>
-						<p> Yes, please add me to the mailing list.</p>
-						<p> sign up</p>
+						<h4>Sign up for our updates!</h4>
+						<p>Yes, please add me to the mailing list.</p>
+						<p>Sign up</p>
 					</div>
 					<div class="social-links">
-						<h2>Get Social </h2>
+						<h4>Get Social </h4>
 						<a class="social-media-links facebook" href="https://www.facebook.com/urbannativeyouthassociation/"><span class="fa fa-facebook-square fa-3x" aria-hidden="true"></span></a>
 						<a class="social-media-links twitter" href="https://twitter.com/unyanews?lang=en"><span class="fa fa-twitter-square fa-3x" aria-hidden="true"></span></a>
 						<a class="social-media-links instagram" href="https://www.instagram.com/explore/locations/296509320/"><span class="fa fa-instagram fa-3x" aria-hidden="true"></span></a>
 					</div>
 					<div class="contact-us">
-						<h2>Contact Us </h2>
+						<h4>Contact Us </h4>
 						<p>Urban Native Youth Association</p>
 						<p>1630 Hastings Street East </p>
 						<p>604-254-7732</p>
