@@ -12,7 +12,7 @@
 }
 
 @mixin desktop {
-	@media (min-width: $mobile__max-width) {
+	@media (min-width: $desktop__min-width) {
 		@content
 	}
 }
