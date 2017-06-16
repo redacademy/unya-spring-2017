@@ -17,12 +17,12 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<header class="header-wrapper">
-				<h1>Impact</h1>
+			<h1>Impact</h1>
 		</header>
 
 		<?php /* Start the Loop */ ?>
 	  <section class="success-stories" id="success-stories">
-	  	<div class=“content-wrapper”>
+	  	<div class="content-wrapper">
 				<h2>Success Story</h2>
 				<p>Learn more about the talented youth at UNYA, and the successes we celebrate.</p>
 		 	 	<?php foreach ( $success_story as $post ) : setup_postdata( $post ); ?>
@@ -35,14 +35,17 @@ get_header(); ?>
     </section>
 	
 		<section class="statistics" id="statistics">
-				<h2>Impacts</h2>
+			<h2 class="content-wrapper">Impacts</h2>
+			<!-- Insert image here -->
 		</section>
   
 		<section class="testimonials" id="testimonials">
-			<h2>Testimonials</h2>
-			<p>What do youth say about us?</p>
-			<p><?php echo CFS()->get( 'testimonial_1' ); ?></p>
-			<p><?php echo CFS()->get( 'testimonial_2' ); ?></p>	
+			<div class="content-wrapper">
+				<h2>Testimonials</h2>
+				<p>What do youth say about us?</p>
+				<p><?php echo CFS()->get( 'testimonial_1' ); ?></p>
+				<p><?php echo CFS()->get( 'testimonial_2' ); ?></p>	
+			</div>
 		</section>
 
 		<section class="pre-footer">
