@@ -110,3 +110,41 @@ object {
 		background-repeat:no-repeat;
 		height:350px;
 }
+
+.success-image{
+	width:150px;
+	height: 150px;
+	border-radius: 50%;
+	@include desktop{
+		border-radius:0%;
+		height:250px;
+		width:250px;
+	}
+}
+.sbi_photo{
+	border-radius: 10%;
+}
+
+
+.polygon-container{
+  	height:350px;
+  width:100%;
+  background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
+    url("../../assets/images/girl.png");
+  -webkit-clip-path: polygon( 0% 100%, 100% 100%, 100% 0%, 0 25%);
+	p{
+		margin: 175px auto;
+		
+	}
+}
+
+.rectangle-container{
+  	height:350px;
+  width:100%;
+  background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
+    url("../../assets/images/jack.png");
+	p{
+		margin: 175px auto;
+		
+	}
+}

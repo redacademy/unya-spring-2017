@@ -9,10 +9,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="header-wrapper">
+			<header class="header-wrapper">
 				<h1>Native Youth Centre | Capital Campaign</h1>
 				<p class="header-subtext">Building a hub for confidence, leadership and reconciliation.</p>
-			</div>
+			</header>
 			<div>
 				<p class="header-subtext">We have a goal of $10 Million. Help us get a little closer today.</p>
 			</div>
@@ -30,7 +30,7 @@ get_header(); ?>
 			<section class="planning" id="planning">
 				<header class="section-heading">
 					<h2 class="content-wrapper">Planning and Development</h2>
-					<h4 class="planning-timeline">Timeline of the development of the Native Youth Center.</h4>					
+					<h4 class="planning-timeline hidden-mobile">Timeline of the development of the Native Youth Center.</h4>					
 				</header>
 				<div class="content-wrapper">
 					<ul>

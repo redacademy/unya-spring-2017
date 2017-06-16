@@ -1,10 +1,51 @@
 /*--------------------------------------------------------------
 # Page Templates
---------------------------------------------------------------*/
+--------------------------------------------------------------
 
 /* Front page */
 
 /* About page */
+.page-id-37 {
+
+  .vision {
+
+    h3 {
+      color: $color__grey-dark;
+    }
+  }
+
+  .mission {
+    background: rgba(74,74,74,0.7);
+    color: #FFF;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .leader {
+    display: flex;
+    justify-content: space-between;
+
+    .image-wrapper {
+      flex-basis: 30%;
+    }
+
+    .text-wrapper {
+      flex-basis: 60%;
+      font-size: 0.8571428571rem;
+    }
+
+    .leader-name {
+      color: $color__grey-dark;
+      font-weight: bold;
+    }
+
+  }
+
+}
 
 /* Native Youth Centre */
 .page-id-76 {
@@ -17,10 +58,6 @@
     }
   }
 
-  .planning-timeline {
-    display: none;
-  }
-
   .timeline-item {
     display: flex;
   }
@@ -29,8 +66,67 @@
     flex-basis: 20%;
   }
 
+  .timeline-year {
+    font-family: $font__heading;
+    font-weight: bold;
+  }
+
   .description-wrapper {
     flex-basis: 80%;
   }
 
+}
+
+/* Get Involved page */
+
+.donation-registration {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(167,0,0,0.7);
+  color: #FFF;
+}
+
+.donation-call {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: $color__red-dark;
+  color: #FFF;
+  
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .donate-button {
+    height: 3.5714285714rem;
+    padding: 1rem;
+    background-color: $color__red-medium;
+    border-radius: 10px;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+}
+
+.opportunities {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
+
+.single-opportunity {
+  border-top: 1px solid $color__blue-medium;
+  
+  h3 {
+    display: flex;
+    color: #000;
+    font-family: $font__main;
+    font-size: 1rem;
+    font-weight: 500;
+  }
 }

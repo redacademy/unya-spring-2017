@@ -65,6 +65,7 @@ p {
 	margin-bottom: $base__space-unit;
 	font-family: $font__main;
 	font-size: 1rem;
+	font-weight: normal;
 }
 
 dfn, cite, em, i {
@@ -108,4 +109,20 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+// i added these to remove the white space on the front page, dunno if you wanna move them or not -Cory
+.nyc{
+	.content-wrapper{
+		h2{
+			margin:0px;
+		}
+	}
+}
+.programs{
+	.content-wrapper{
+		h2{
+			margin:0px;
+		}
+	}
 }

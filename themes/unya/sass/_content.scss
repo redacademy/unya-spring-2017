@@ -3,12 +3,34 @@
 --------------------------------------------------------------*/
 
 // To center the content on the page
-.page-id-37, .page-id-76 {
+.page-id-37, .page-id-76, .page-id-171, .page-id-99 {
   section {
     display: flex;
     align-items: center;
     flex-direction: column
   }
+}
+
+// Hidden on mobile view
+.hidden-mobile {
+	display: none;
+
+	@include desktop {
+		display: initial;
+	}
+
+}
+
+// Hidden on desktop view
+.hidden-desktop {
+
+	@include desktop {
+		display: none;
+	}
+}
+
+.capitalize {
+	text-transform: uppercase;
 }
 
 /* Posts and pages */

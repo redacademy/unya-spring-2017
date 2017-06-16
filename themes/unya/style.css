@@ -364,7 +364,8 @@ h4 {
 p {
   margin-bottom: 1.5rem;
   font-family: "worksans", sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-weight: normal; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -402,6 +403,12 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+.nyc .content-wrapper h2 {
+  margin: 0px; }
+
+.programs .content-wrapper h2 {
+  margin: 0px; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -760,13 +767,26 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.page-id-37 section, .page-id-76 section {
+.page-id-37 section, .page-id-76 section, .page-id-171 section, .page-id-99 section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-direction: column;
       flex-direction: column; }
+
+.hidden-mobile {
+  display: none; }
+  @media (min-width: 600px) {
+    .hidden-mobile {
+      display: initial; } }
+
+@media (min-width: 600px) {
+  .hidden-desktop {
+    display: none; } }
+
+.capitalize {
+  text-transform: uppercase; }
 
 /* Posts and pages */
 .content-wrapper {
@@ -893,19 +913,73 @@ object {
   background-repeat: no-repeat;
   height: 350px; }
 
+.success-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; }
+  @media (min-width: 600px) {
+    .success-image {
+      border-radius: 0%;
+      height: 250px;
+      width: 250px; } }
+
+.sbi_photo {
+  border-radius: 10%; }
+
+.polygon-container {
+  height: 350px;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(74, 74, 74, 0.7) 0%, rgba(74, 74, 74, 0.7) 100%), url("../../assets/images/girl.png");
+  -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%); }
+  .polygon-container p {
+    margin: 175px auto; }
+
+.rectangle-container {
+  height: 350px;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(74, 74, 74, 0.7) 0%, rgba(74, 74, 74, 0.7) 100%), url("../../assets/images/jack.png"); }
+  .rectangle-container p {
+    margin: 175px auto; }
+
 /*--------------------------------------------------------------
 # Page Templates
---------------------------------------------------------------*/
+--------------------------------------------------------------
+
 /* Front page */
 /* About page */
+.page-id-37 .vision h3 {
+  color: #2C2C2C; }
+
+.page-id-37 .mission {
+  background: rgba(74, 74, 74, 0.7);
+  color: #FFF; }
+
+.page-id-37 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.page-id-37 .leader {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .page-id-37 .leader .image-wrapper {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%; }
+  .page-id-37 .leader .text-wrapper {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    font-size: 0.8571428571rem; }
+  .page-id-37 .leader .leader-name {
+    color: #2C2C2C;
+    font-weight: bold; }
+
 /* Native Youth Centre */
 .page-id-76 .planning ul {
   margin: 0;
   padding: 0;
   list-style: none; }
-
-.page-id-76 .planning-timeline {
-  display: none; }
 
 .page-id-76 .timeline-item {
   display: -ms-flexbox;
@@ -915,6 +989,58 @@ object {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%; }
 
+.page-id-76 .timeline-year {
+  font-family: "poppins", sans-serif;
+  font-weight: bold; }
+
 .page-id-76 .description-wrapper {
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%; }
+
+/* Get Involved page */
+.donation-registration {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: rgba(167, 0, 0, 0.7);
+  color: #FFF; }
+
+.donation-call {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center;
+  background-color: #A70000;
+  color: #FFF; }
+  .donation-call .content-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .donation-call .donate-button {
+    height: 3.5714285714rem;
+    padding: 1rem;
+    background-color: #D13434;
+    border-radius: 10px;
+    font-weight: normal;
+    text-decoration: none; }
+
+.opportunities ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.single-opportunity {
+  border-top: 1px solid #4263AB; }
+  .single-opportunity h3 {
+    display: -ms-flexbox;
+    display: flex;
+    color: #000;
+    font-family: "worksans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500; }
