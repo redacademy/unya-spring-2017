@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-    <h1>UNYA</h1>
+    <h1 class="hidden-mobile hidden-desktop">UNYA</h1>
 
     <section class="about">
       <div class="content-wrapper">

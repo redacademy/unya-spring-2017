@@ -376,11 +376,34 @@ mark, ins {
 big {
   font-size: 125%; }
 
-.nyc .content-wrapper h2 {
-  margin: 0px; }
+.about .content-wrapper {
+  padding: 50px; }
+  .about .content-wrapper h2 {
+    color: white;
+    margin: 0px; }
+  .about .content-wrapper p {
+    color: white; }
 
-.programs .content-wrapper h2 {
-  margin: 0px; }
+.nyc .content-wrapper {
+  padding-top: 50px; }
+  .nyc .content-wrapper h2 {
+    margin: 0px;
+    text-align: right;
+    color: white; }
+  .nyc .content-wrapper p {
+    margin-left: 50px;
+    text-align: right;
+    color: white; }
+  .nyc .content-wrapper h3 {
+    text-align: right; }
+
+.programs .content-wrapper {
+  padding: 50px; }
+  .programs .content-wrapper h2 {
+    margin: 0px;
+    color: white; }
+  .programs .content-wrapper p {
+    color: white; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -666,6 +689,12 @@ a {
     #main-nav-toggle {
       display: none; } }
 
+#accordion .accordion-label {
+  background: #4263AB !important;
+  color: #fff !important;
+  margin: 0 !important;
+  border-bottom: 1px solid #aaa !important; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -886,8 +915,8 @@ object {
   height: 350px; }
 
 .success-image {
-  width: 150px;
-  height: 150px;
+  width: 165px;
+  height: 165px;
   border-radius: 50%; }
   @media (min-width: 600px) {
     .success-image {
