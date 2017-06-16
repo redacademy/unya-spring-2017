@@ -636,9 +636,11 @@ a {
       justify-content: space-between;
   width: 100vw; }
   .site-header .site-branding {
-    padding: 4rem;
+    padding: 1rem;
     background: url("../../assets/images/RED_UNYA_UI_LogoDesign_Assets_V1-1.png") no-repeat center;
     background-size: contain; }
+    .site-header .site-branding a {
+      padding: 4rem; }
   .site-header .donate {
     display: none;
     padding: 0.5rem;
