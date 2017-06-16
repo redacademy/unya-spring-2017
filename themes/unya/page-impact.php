@@ -40,12 +40,16 @@ get_header(); ?>
 		</section>
   
 		<section class="testimonials" id="testimonials">
-			<div class="content-wrapper">
-				<h2>Testimonials</h2>
-				<p>What do youth say about us?</p>
-				<p><?php echo CFS()->get( 'testimonial_1' ); ?></p>
-				<p><?php echo CFS()->get( 'testimonial_2' ); ?></p>	
-			</div>
+				<h2 class="content-wrapper">Testimonials</h2>
+				<p class="content-wrapper">What do youth say about us?</p>
+			  
+			    <div class="polygon-container">
+				    <p class="content-wrapper"><?php echo CFS()->get( 'testimonial_1' ); ?></p>
+				  </div>
+       
+
+			<div class="rectangle-container">	<p class="content-wrapper"><?php echo CFS()->get( 'testimonial_2' ); ?></p></div>	
+			
 		</section>
 
 		<section class="pre-footer">
