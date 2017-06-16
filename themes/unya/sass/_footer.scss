@@ -14,8 +14,14 @@
       text-transform: uppercase;
     }
   }
+
   .newsletter-sign-up {
     order: 1;
+
+    .display-form {
+      position: absolute;
+    }
+
   }
 
   .social-links {

@@ -7,11 +7,11 @@
  * @package UNYA_Theme
  */
 
-if ( ! function_exists( 'red_starter_setup' ) ) :
+if ( ! function_exists( 'unya_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */
-function red_starter_setup() {
+function unya_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
@@ -83,13 +83,13 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function red_starter_scripts() {
-	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'unya-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'jquery-ui-css', '//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css' );
 	wp_enqueue_script( 'jquery-ui-accordion', 'jquery-ui-accordion' , array('jquery'), false, true );
 	wp_enqueue_script( 'font-awesome-cdn','https://use.fontawesome.com/828c02da95.js');
-	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'unya-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	wp_enqueue_script( 'navigation-toggle', get_template_directory_uri() . '/build/js/navigation-toggle.min.js' , array('jquery', 'jquery-ui-accordion'), false, true );
-
+	wp_enqueue_script( 'subscription-form', get_template_directory_uri() . '/build/js/subscription-form.min.js' , array('jquery'), false, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
