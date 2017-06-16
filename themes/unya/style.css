@@ -404,11 +404,33 @@ mark, ins {
 big {
   font-size: 125%; }
 
-.nyc .content-wrapper h2 {
-  margin: 0px; }
+.about .content-wrapper {
+  padding: 50px; }
+  .about .content-wrapper h2 {
+    color: white;
+    margin: 0px; }
+  .about .content-wrapper p {
+    color: white; }
 
-.programs .content-wrapper h2 {
-  margin: 0px; }
+.nyc .content-wrapper {
+  padding-top: 50px; }
+  .nyc .content-wrapper h2 {
+    margin: 0px;
+    text-align: right;
+    color: white; }
+  .nyc .content-wrapper p {
+    text-align: right;
+    color: white; }
+  .nyc .content-wrapper h3 {
+    text-align: right; }
+
+.programs .content-wrapper {
+  padding: 50px; }
+  .programs .content-wrapper h2 {
+    margin: 0px;
+    color: white; }
+  .programs .content-wrapper p {
+    color: white; }
 
 /*--------------------------------------------------------------
 # Elements

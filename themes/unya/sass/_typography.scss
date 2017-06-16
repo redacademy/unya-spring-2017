@@ -112,17 +112,46 @@ big {
 }
 
 // i added these to remove the white space on the front page, dunno if you wanna move them or not -Cory
-.nyc{
+
+.about{
 	.content-wrapper{
-		h2{
+			padding:50px;
+		h2{		
+			color:white;
 			margin:0px;
 		}
+		p{
+				 color:white;
+	  }
 	}
 }
-.programs{
+.nyc{
 	.content-wrapper{
+			padding-top:50px;
 		h2{
 			margin:0px;
+			text-align: right;
+		  color:white;
+			 }
+     p{
+			text-align: right;
+			color:white;
+			 }
+		 h3{
+			text-align: right;
+			 }
 		}
+	}
+
+.programs{
+	.content-wrapper{
+			padding:50px;
+		h2{
+			margin:0px;
+		  color:white;
+		 }
+     p{
+			color:white;
+		 }	 
 	}
 }
