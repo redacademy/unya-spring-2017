@@ -224,13 +224,6 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'worksans';
-  src: url("../../assets/fonts/worksans-black-webfont.eot");
-  src: url("../../assets/fonts/worksans-black-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/worksans-black-webfont.woff2") format("woff2"), url("../../assets/fonts/worksans-black-webfont.woff") format("woff"), url("../../assets/fonts/worksans-black-webfont.ttf") format("truetype"), url("../../assets/fonts/worksans-black-webfont.svg#work_sansblack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'worksans';
   src: url("../../assets/fonts/worksans-bold-webfont.eot");
   src: url("../../assets/fonts/worksans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/worksans-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/worksans-bold-webfont.woff") format("woff"), url("../../assets/fonts/worksans-bold-webfont.ttf") format("truetype"), url("../../assets/fonts/worksans-bold-webfont.svg#work_sansbold") format("svg");
   font-weight: bold;
@@ -241,20 +234,6 @@ th {
   src: url("../../assets/fonts/worksans-extrabold-webfont.eot");
   src: url("../../assets/fonts/worksans-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/worksans-extrabold-webfont.woff2") format("woff2"), url("../../assets/fonts/worksans-extrabold-webfont.woff") format("woff"), url("../../assets/fonts/worksans-extrabold-webfont.ttf") format("truetype"), url("../../assets/fonts/worksans-extrabold-webfont.svg#work_sansextrabold") format("svg");
   font-weight: bolder;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'worksans';
-  src: url("../../assets/fonts/worksans-extralight-webfont.eot");
-  src: url("../../assets/fonts/worksans-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/worksans-extralight-webfont.woff2") format("woff2"), url("../../assets/fonts/worksans-extralight-webfont.woff") format("woff"), url("../../assets/fonts/worksans-extralight-webfont.ttf") format("truetype"), url("../../assets/fonts/worksans-extralight-webfont.svg#work_sansextralight") format("svg");
-  font-weight: lighter;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'worksans';
-  src: url("../../assets/fonts/worksans-light-webfont.eot");
-  src: url("../../assets/fonts/worksans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/worksans-light-webfont.woff2") format("woff2"), url("../../assets/fonts/worksans-light-webfont.woff") format("woff"), url("../../assets/fonts/worksans-light-webfont.ttf") format("truetype"), url("../../assets/fonts/worksans-light-webfont.svg#work_sanslight") format("svg");
-  font-weight: light;
   font-style: normal; }
 
 @font-face {
@@ -276,13 +255,6 @@ th {
   src: url("../../assets/fonts/worksans-semibold-webfont.eot");
   src: url("../../assets/fonts/worksans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/worksans-semibold-webfont.woff2") format("woff2"), url("../../assets/fonts/worksans-semibold-webfont.woff") format("woff"), url("../../assets/fonts/worksans-semibold-webfont.ttf") format("truetype"), url("../../assets/fonts/worksans-semibold-webfont.svg#work_sanssemibold") format("svg");
   font-weight: 600;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'worksans';
-  src: url("../../assets/fonts/worksans-thin-webfont.eot");
-  src: url("../../assets/fonts/worksans-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/worksans-thin-webfont.woff2") format("woff2"), url("../../assets/fonts/worksans-thin-webfont.woff") format("woff"), url("../../assets/fonts/worksans-thin-webfont.ttf") format("truetype"), url("../../assets/fonts/worksans-thin-webfont.svg#work_sansthin") format("svg");
-  font-weight: light;
   font-style: normal; }
 
 @font-face {
