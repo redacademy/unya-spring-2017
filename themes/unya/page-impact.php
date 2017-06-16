@@ -27,7 +27,7 @@ get_header(); ?>
 				<p>Learn more about the talented youth at UNYA, and the successes we celebrate.</p>
 		 	 	<?php foreach ( $success_story as $post ) : setup_postdata( $post ); ?>
 				  <h3 class="hidden-mobile">Youth Feature - <?php the_title(); ?></h3>
-				 <a href="<?php the_permalink() ?>"><img class="success-image" src="<?php echo CFS()->get( 'photo' ); ?>" cover></a>			
+				  <a href="<?php the_permalink() ?>"><img class="success-image" src="<?php echo CFS()->get( 'photo' ); ?>" cover></a>			
 				 	<p class="hidden-mobile"><?php echo CFS()->get( 'first_half_of_story' ); ?></p>
 					<a class="hidden-mobile" href="<?php the_permalink() ?>"><p class="hidden-mobile">Read more about <?php the_title(); ?></p></a>
 		    <?php endforeach; wp_reset_postdata(); ?> 
