@@ -897,7 +897,7 @@ object {
   display: block; }
 
 .about {
-  background: linear-gradient(to bottom, rgba(74, 74, 74, 0.7) 0%, rgba(74, 74, 74, 0.7) 100%), url("../../assets/images/cedarwalk.png");
+  background: linear-gradient(to bottom, rgba(74, 74, 74, 0.7) 0%, rgba(74, 74, 74, 0.7) 100%), url("../../assets/images/cedarwalk-min.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 350px; }
