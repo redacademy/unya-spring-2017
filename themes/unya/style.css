@@ -907,6 +907,19 @@ object {
   background-repeat: no-repeat;
   height: 350px; }
 
+.success-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; }
+  @media (min-width: 600px) {
+    .success-image {
+      border-radius: 0%;
+      height: 250px;
+      width: 250px; } }
+
+.sbi_photo {
+  border-radius: 10%; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------
