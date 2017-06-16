@@ -19,9 +19,9 @@ get_header(); ?>
 			<h1>About UNYA</h1>
 		</div>
 		<section class="vision" id="vision">
-				<header class="section-heading">
-					<h2>Vision &amp; Mission</h2>
-				</header>
+			<header class="section-heading">
+				<h2>Vision &amp; Mission</h2>
+			</header>
 			<div class="content-wrapper">
 				<h3>Vision</h3>
 				<p><?php echo esc_html( CFS()->get( 'vision' ) ); ?></p>
@@ -34,18 +34,18 @@ get_header(); ?>
 			</div>
 		</section>
 		<section class="brief-history" id="brief-history">
-				<header class="section-heading">
-					<h2>History</h2>
-				</header>
+			<header class="section-heading">
+				<h2>History</h2>
+			</header>
 			<div class="content-wrapper">
-				<h3 class="history">Brief History</h3>
+				<h2 class="hidden-mobile">Brief History</h2>
 				<p><?php echo esc_html( CFS()->get( 'brief_history' ) ); ?></p>
 			</div>
 		</section>
 		<section class="leadership" id="leadership">
-				<header class="section-heading">
-					<h2>Leadership</h2>
-				</header>
+			<header class="section-heading">
+				<h2>Leadership</h2>
+			</header>
 			<div class="content-wrapper">
 				<h4 class="hidden-mobile">The UNYA Board exmplifies the leadership of our youth.</h4>
 				<ul>
@@ -57,7 +57,7 @@ get_header(); ?>
 								<?php endif; ?>
 							</div>
 							<div class="text-wrapper">
-								<p><?php echo esc_html( CFS()->get( 'name' ) ); ?></p>
+								<p class="leader-name"><?php echo esc_html( CFS()->get( 'name' ) ); ?></p>
 								<p><?php echo esc_html( CFS()->get( 'title' ) ); ?></p>
 								<p class="hidden-mobile"><?php echo esc_html( CFS()->get( 'bio' ) ); ?></p>
 							</div>

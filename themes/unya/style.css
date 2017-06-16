@@ -926,9 +926,32 @@ object {
 
 /* Front page */
 /* About page */
-.mission {
-  background-color: rgba(74, 74, 74, 0.7);
+.page-id-37 .vision h3 {
+  color: #2C2C2C; }
+
+.page-id-37 .mission {
+  background: rgba(74, 74, 74, 0.7);
   color: #FFF; }
+
+.page-id-37 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.page-id-37 .leader {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .page-id-37 .leader .image-wrapper {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%; }
+  .page-id-37 .leader .text-wrapper {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%; }
+  .page-id-37 .leader .leader-name {
+    color: #2C2C2C;
+    font-weight: bold; }
 
 /* Native Youth Centre */
 .page-id-76 .planning ul {
