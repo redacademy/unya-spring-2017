@@ -1,13 +1,13 @@
 (function($) {
   $(function () {
     if (window.innerWidth <= 600) {
-      $('#accordion').accordion();
+      $('#accordion').accordion({heightStyle: 'content'});
     } 
     $(window).resize(function() {
       if (window.innerWidth > 600) {
         $('#accordion').accordion('destroy');
       } else if (window.innerWidth <= 600) {
-        $('#accordion').accordion();
+        $('#accordion').accordion({heightStyle: 'content'});
 
       }
     });
