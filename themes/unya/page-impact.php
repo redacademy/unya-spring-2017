@@ -23,7 +23,7 @@ get_header(); ?>
 		<?php /* Start the Loop */ ?>
 	  <section class="success-stories" id="success-stories">
 	  	<div class="content-wrapper">
-				<h2>Success Story</h2>
+				<h2>Success Stories</h2>
 				<p>Learn more about the talented youth at UNYA, and the successes we celebrate.</p>
 		 	 	<?php foreach ( $success_story as $post ) : setup_postdata( $post ); ?>
 				  <h3 class="hidden-mobile">Youth Feature - <?php the_title(); ?></h3>
