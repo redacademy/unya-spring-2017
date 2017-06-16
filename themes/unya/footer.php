@@ -12,8 +12,7 @@
 				<div class="site-info">
 					<div class="newsletter-sign-up">
 						<h4>Sign up for our updates!</h4>
-						<p>Yes, please add me to the mailing list.</p>
-						<p>Sign up</p>
+						<?php echo do_shortcode( '[contact-form-7 id="240" title="Email Subscribe"]' ); ?>
 					</div>
 					<div class="social-links">
 						<h4>Get Social </h4>
