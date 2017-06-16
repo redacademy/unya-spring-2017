@@ -12,7 +12,10 @@
 				<div class="site-info">
 					<div class="newsletter-sign-up">
 						<h4>Sign up for our updates!</h4>
-						<?php echo do_shortcode( '[contact-form-7 id="240" title="Email Subscribe"]' ); ?>
+						<button class="hidden-desktop"><h4>Sign up for our updates!</h4></button>
+						<div class="subscription-form">
+							<?php echo do_shortcode( '[contact-form-7 id="240" title="Email Subscription"]' ); ?>
+						</div>
 					</div>
 					<div class="social-links">
 						<h4>Get Social </h4>
@@ -22,10 +25,10 @@
 					</div>
 					<div class="contact-us">
 						<h4>Contact Us </h4>
-						<p>Urban Native Youth Association</p>
-						<p>1630 Hastings Street East </p>
+						<p class="hidden-mobile">Urban Native Youth Association</p>
+						<p>1630 Hastings Street East</p>
 						<p>604-254-7732</p>
-						<p>info@unya.bc.ca</p>
+						<a href="mailto:info@unya.bc.ca"><p>info@unya.bc.ca</p></a>
 					</div>
 
 			</div><!-- .site-info -->
