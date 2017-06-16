@@ -1056,3 +1056,38 @@ object {
     font-family: "worksans", sans-serif;
     font-size: 1rem;
     font-weight: 500; }
+
+.site-footer .site-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  background: #4263AB;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media (min-width: 600px) {
+    .site-footer .site-info {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
+  .site-footer .site-info .sign-up-btn {
+    text-transform: uppercase; }
+
+.site-footer .newsletter-sign-up {
+  -ms-flex-order: 1;
+      order: 1; }
+
+.site-footer .social-links {
+  -ms-flex-order: 3;
+      order: 3; }
+  @media (min-width: 600px) {
+    .site-footer .social-links {
+      -ms-flex-order: 2;
+          order: 2; } }
+
+.site-footer .contact-us {
+  -ms-flex-order: 2;
+      order: 2; }
+  @media (min-width: 600px) {
+    .site-footer .contact-us {
+      -ms-flex-order: 3;
+          order: 3; } }

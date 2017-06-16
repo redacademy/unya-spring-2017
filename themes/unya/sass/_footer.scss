@@ -1,0 +1,37 @@
+.site-footer {
+
+  .site-info {
+    display: flex;
+    align-items: center;
+    background: $color__blue-medium;
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+    }
+
+    .sign-up-btn {
+      text-transform: uppercase;
+    }
+  }
+  .newsletter-sign-up {
+    order: 1;
+  }
+
+  .social-links {
+    order: 3;
+
+    @include desktop {
+      order: 2;
+    }
+  }
+
+  .contact-us {
+    order: 2;
+
+    @include desktop {
+      order: 3;
+    }
+  }
+
+}
