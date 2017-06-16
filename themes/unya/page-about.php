@@ -47,7 +47,7 @@ get_header(); ?>
 					<h2>Leadership</h2>
 				</header>
 			<div class="content-wrapper">
-				<h4>The UNYA Board exmplifies the leadership of our youth.</h4>
+				<h4 class="hidden-mobile">The UNYA Board exmplifies the leadership of our youth.</h4>
 				<ul>
 					<?php foreach ( $leaders as $post ) : setup_postdata( $post ); ?>
 						<li class="leader">
@@ -59,7 +59,7 @@ get_header(); ?>
 							<div class="text-wrapper">
 								<p><?php echo esc_html( CFS()->get( 'name' ) ); ?></p>
 								<p><?php echo esc_html( CFS()->get( 'title' ) ); ?></p>
-								<p><?php echo esc_html( CFS()->get( 'bio' ) ); ?></p>
+								<p class="hidden-mobile"><?php echo esc_html( CFS()->get( 'bio' ) ); ?></p>
 							</div>
 						</li>
 					<?php endforeach; wp_reset_postdata(); ?>
