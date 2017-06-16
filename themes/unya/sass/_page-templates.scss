@@ -17,10 +17,6 @@
     }
   }
 
-  .planning-timeline {
-    display: none;
-  }
-
   .timeline-item {
     display: flex;
   }
@@ -33,4 +29,45 @@
     flex-basis: 80%;
   }
 
+}
+
+/* Get Involved page */
+
+.donation-registration {
+  background-color: rgba(167,0,0,0.7);
+}
+
+.donation-call {
+  width: 100%;
+  background-color: $color__red-dark;
+
+  .donate-button {
+    height: 3.5714285714rem;
+    width: 32%;
+    background-color: $color__red-medium;
+    border-radius: 10px;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+}
+
+.opportunities {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
+
+.single-opportunity {
+  border-top: 1px solid $color__blue-medium;
+  
+  h3 {
+    display: flex;
+    color: #000;
+    font-family: $font__main;
+    font-size: 1rem;
+    font-weight: 600;
+  }
 }

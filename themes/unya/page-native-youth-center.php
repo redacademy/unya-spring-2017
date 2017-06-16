@@ -30,7 +30,7 @@ get_header(); ?>
 			<section class="planning" id="planning">
 				<header class="section-heading">
 					<h2 class="content-wrapper">Planning and Development</h2>
-					<h4 class="planning-timeline">Timeline of the development of the Native Youth Center.</h4>					
+					<h4 class="planning-timeline hidden-mobile">Timeline of the development of the Native Youth Center.</h4>					
 				</header>
 				<div class="content-wrapper">
 					<ul>

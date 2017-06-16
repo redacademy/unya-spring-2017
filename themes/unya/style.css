@@ -364,7 +364,8 @@ h4 {
 p {
   margin-bottom: 1.5rem;
   font-family: "worksans", sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-weight: normal; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -760,13 +761,26 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.page-id-37 section, .page-id-76 section, .page-id-171 section {
+.page-id-37 section, .page-id-76 section, .page-id-171 section, .page-id-99 section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-direction: column;
       flex-direction: column; }
+
+.hidden-mobile {
+  display: none; }
+  @media (min-width: 600px) {
+    .hidden-mobile {
+      display: initial; } }
+
+@media (min-width: 600px) {
+  .hidden-desktop {
+    display: none; } }
+
+.capitalize {
+  text-transform: uppercase; }
 
 /* Posts and pages */
 .content-wrapper {
@@ -905,9 +919,6 @@ object {
   padding: 0;
   list-style: none; }
 
-.page-id-76 .planning-timeline {
-  display: none; }
-
 .page-id-76 .timeline-item {
   display: -ms-flexbox;
   display: flex; }
@@ -919,3 +930,33 @@ object {
 .page-id-76 .description-wrapper {
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%; }
+
+/* Get Involved page */
+.donation-registration {
+  background-color: rgba(167, 0, 0, 0.7); }
+
+.donation-call {
+  width: 100%;
+  background-color: #A70000; }
+  .donation-call .donate-button {
+    height: 3.5714285714rem;
+    width: 32%;
+    background-color: #D13434;
+    border-radius: 10px;
+    font-weight: normal;
+    text-decoration: none; }
+
+.opportunities ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.single-opportunity {
+  border-top: 1px solid #4263AB; }
+  .single-opportunity h3 {
+    display: -ms-flexbox;
+    display: flex;
+    color: #000;
+    font-family: "worksans", sans-serif;
+    font-size: 1rem;
+    font-weight: 600; }
