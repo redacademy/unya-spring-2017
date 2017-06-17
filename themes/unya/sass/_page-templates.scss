@@ -157,14 +157,56 @@
 
   li {
     height: 7.8571428571rem;
+    margin-bottom: 0.5rem;
     flex-basis: 49%;
+    overflow: hidden;
     text-align: center;
 
-    
-
-    .program-name {
-      position: absolute;
+    a {
+      position: relative;
+      display: block;
     }
 
+    .wp-post-image {
+      position: relative;
+      z-index: -1;
+      max-width: 110%;
+      width: auto;
+      height: auto;
+    }
+
+    .program-name {
+      left: 15%;
+      top: 0;
+      width: 70%;
+      padding-top: 1rem;
+      position: absolute;
+      color: #FFF;
+    }
+
+  }
+}
+
+.education-list {
+  li {
+    background: linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%);
+  }
+}
+
+.personal-list {
+  li {
+    background: linear-gradient(to bottom,rgba(167,0,0,0.7) 0%, rgba(167,0,0,0.7) 100%);
+  }
+}
+
+.live-in-list {
+  li {
+    background: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%);
+  }
+}
+
+.sports-list {
+  li {
+    background: linear-gradient(to bottom,rgba(181,167,0,0.7) 0%, rgba(181,167,0,0.7) 100%);
   }
 }

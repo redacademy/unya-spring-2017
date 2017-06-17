@@ -7,7 +7,7 @@
 				<div class="section-heading">
 					<h3 class="content-wrapper" id="education">Education &amp; Training</h3>
 				</div>
-				<ul class="programs-list">
+				<ul class="programs-list education-list">
 				<?php
 					$args = array(
 						'post_type' => 'program',
@@ -31,7 +31,7 @@
 				<div class="section-heading">
 					<h3 class="content-wrapper" id="personal">Personal Support</h3>
 				</div>
-				<ul class="programs-list">
+				<ul class="programs-list personal-list">
 				<?php
 					$args = array(
 						'post_type' => 'program',
@@ -55,7 +55,7 @@
 				<div class="section-heading">
 					<h3 class="content-wrapper" id="live-in">Live-In Program</h3>
 				</div>
-				<ul class="programs-list">
+				<ul class="programs-list live-in-list">
 				<?php
 					$args = array(
 						'post_type' => 'program',
@@ -77,9 +77,9 @@
 				</ul>
 
 				<div class="section-heading">
-					<h3 id="sports">Sports and Recreation</h3>
+					<h3 class="content-wrapper" id="sports">Sports and Recreation</h3>
 				</div>
-				<ul class="programs-list">
+				<ul class="programs-list sports-list">
 				<?php
 					$args = array(
 						'post_type' => 'program',
