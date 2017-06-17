@@ -15,6 +15,7 @@
 		<a href="<?php echo esc_html( CFS()->get( 'program_brochure' ) ); ?>"><i class="fa fa-file-o" aria-hidden="true"></i> <?php the_title(); ?> Program Brochure</a>
 
 		<div class="program-body">
+			<!-- content to be reordered in desktop -->
 			<div class="program-activities">
 				<h3>Program Activities</h3>
 				<ul>
@@ -27,7 +28,7 @@
 			</div>
 
 			<?php $images = CFS()->get( 'program_image_slider' ); ?>
-			<?php 
+			<?php // to only grab the first 2 images
 				$i = 0;
 				foreach ( $images as $image ) : 
 					if ($i == 3) break;
