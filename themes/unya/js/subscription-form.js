@@ -3,7 +3,6 @@
 
     var $btn = $('.sign-up-btn');
     var $form = $('.subscription-form');
-    // var $closeBtn = $('.close-form');
 
     $btn.on('click', function(event) {
       event.preventDefault();

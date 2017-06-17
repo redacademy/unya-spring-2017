@@ -1084,17 +1084,17 @@ object {
     position: absolute;
     height: 100%;
     width: 100%; }
-  .site-footer .newsletter-sign-up .subscription-form {
-    background: #FFF; }
   .site-footer .newsletter-sign-up .wpcf7-form {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    background: #FFF; }
     .site-footer .newsletter-sign-up .wpcf7-form .close-form {
-      width: 100%; }
+      width: 100%;
+      background: #FFF; }
 
 .site-footer .social-links {
   -ms-flex-order: 3;
