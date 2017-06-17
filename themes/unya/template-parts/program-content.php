@@ -1,11 +1,13 @@
 <!-- Insert into Program Archive -->
-      <section>
-				<header class="programs">
+      <section class="program-section">
+				<header class="programs hidden-mobile">
 					<h2>Check out our programming</h2>
 					<p>Click on any program to learn more</p>
 				</header>
-				<h3 id="education">Education and Training</h3>
-				<ul class="content-wrapper">
+				<div class="section-heading">
+					<h3 class="content-wrapper" id="education">Education &amp; Training</h3>
+				</div>
+				<ul class="programs-list">
 				<?php
 					$args = array(
 						'post_type' => 'program',
@@ -16,16 +18,20 @@
 					foreach ( $programs as $post ) : setup_postdata( $post );
 				?>
 					<li>
+						<a href="<?php the_permalink() ?>">
 						<?php if ( has_post_thumbnail() ) : ?>
           		<?php the_post_thumbnail( 'medium' ); ?>
         		<?php endif; ?>
-						<a href="<?php the_permalink() ?>"><h4><?php the_title(); ?></h4></a>
+						<h4 class="program-name"><?php the_title(); ?></h4>
+						</a>
 					</li>
 					<?php endforeach; ?>
 				</ul>
 
-				<h3 id="personal">Personal Support</h3>
-				<ul class="content-wrapper">
+				<div class="section-heading">
+					<h3 class="content-wrapper" id="personal">Personal Support</h3>
+				</div>
+				<ul class="programs-list">
 				<?php
 					$args = array(
 						'post_type' => 'program',
@@ -36,16 +42,20 @@
 					foreach ( $programs as $post ) : setup_postdata( $post );
 				?>
 					<li>
+						<a href="<?php the_permalink() ?>">
 						<?php if ( has_post_thumbnail() ) : ?>
           		<?php the_post_thumbnail( 'medium' ); ?>
         		<?php endif; ?>
-						<a href="<?php the_permalink() ?>"><h4><?php the_title(); ?></h4></a>
+						<h4 class="program-name"><?php the_title(); ?></h4>
+						</a>
 					</li>
 					<?php endforeach; ?>
 				</ul>
 
-				<h3 id="live-in">Live-In Program</h3>
-				<ul class="content-wrapper">
+				<div class="section-heading">
+					<h3 class="content-wrapper" id="live-in">Live-In Program</h3>
+				</div>
+				<ul class="programs-list">
 				<?php
 					$args = array(
 						'post_type' => 'program',
@@ -56,16 +66,20 @@
 					foreach ( $programs as $post ) : setup_postdata( $post );
 				?>
 					<li>
+						<a href="<?php the_permalink() ?>">
 						<?php if ( has_post_thumbnail() ) : ?>
           		<?php the_post_thumbnail( 'medium' ); ?>
         		<?php endif; ?>
-						<a href="<?php the_permalink() ?>"><h4><?php the_title(); ?></h4></a>
+						<h4 class="program-name"><?php the_title(); ?></h4>
+						</a>
 					</li>
 					<?php endforeach; ?>
 				</ul>
 
-				<h3 id="sports">Sports and Recreation</h3>
-				<ul class="content-wrapper">
+				<div class="section-heading">
+					<h3 id="sports">Sports and Recreation</h3>
+				</div>
+				<ul class="programs-list">
 				<?php
 					$args = array(
 						'post_type' => 'program',
@@ -76,10 +90,12 @@
 					foreach ( $programs as $post ) : setup_postdata( $post );
 				?>
 					<li>
+						<a href="<?php the_permalink() ?>">
 						<?php if ( has_post_thumbnail() ) : ?>
           		<?php the_post_thumbnail( 'medium' ); ?>
         		<?php endif; ?>
-						<a href="<?php the_permalink() ?>"><h4><?php the_title(); ?></h4></a>
+						<h4 class="program-name"><?php the_title(); ?></h4>
+						</a>
 					</li>
 					<?php endforeach; ?>
 				</ul>

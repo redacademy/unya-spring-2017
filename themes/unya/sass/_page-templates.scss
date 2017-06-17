@@ -139,3 +139,32 @@
     font-weight: 500;
   }
 }
+
+/* Programs Archive */
+.program-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.programs-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+
+  li {
+    height: 7.8571428571rem;
+    flex-basis: 49%;
+    text-align: center;
+
+    
+
+    .program-name {
+      position: absolute;
+    }
+
+  }
+}
