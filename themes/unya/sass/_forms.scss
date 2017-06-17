@@ -12,6 +12,20 @@
 	color: $color__grey-dark;
 }
 
+div.wpcf7-response-output, div.wpcf7-validation-errors {
+	display: none !important;
+}
+
+span.wpcf7-not-valid-tip {
+	display: none;
+}
+
+// form style if submission is invalid
+input[aria-invalid="true"] {
+	border-color: red;
+	background-color: rgba(153,0,0,0.3);
+}
+
 /* Buttons */
 
 button,
