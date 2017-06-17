@@ -141,6 +141,7 @@
 }
 
 /* Programs Archive */
+
 .program-section {
   display: flex;
   flex-direction: column;
@@ -208,5 +209,15 @@
 .sports-list {
   li {
     background: linear-gradient(to bottom,rgba(181,167,0,0.7) 0%, rgba(181,167,0,0.7) 100%);
+  }
+}
+
+/* Single Program page */
+
+.single-program {
+  .site-main {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
   }
 }

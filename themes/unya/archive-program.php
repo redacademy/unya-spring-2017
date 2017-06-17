@@ -24,10 +24,6 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/program', 'content' ); ?>
 
-			<section>
-				<h2>Upcoming Events &amp; Activities</h2>
-			</section>
-
 		<?php endif; ?>
 
 		</main><!-- #main -->
