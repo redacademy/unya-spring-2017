@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     background: $color__blue-medium;
+    color: #FFF;
     flex-direction: column;
 
     @include desktop {
@@ -19,24 +20,24 @@
   .newsletter-sign-up {
     order: 1;
     width: 100%;
+    text-align: center;
 
-    .display-form {
-      // displays subscription form on mobile
+    // displays subscription form on mobile
+    .display-form { 
       position: absolute;
       height: 100%;
       width: 100%;
     }
 
-    .wpcf7-form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: #FFF;
-      
-      .close-form {
-        width: 100%;
-        background: #FFF;
-        text-align: right;
+    	// button to close subscription form
+    .close-form {
+      width: 100%;
+      background-color: #FFF;
+      color: $color__blue-dark;
+      text-align: right;
+
+      .fa-times {
+        padding-right: 1rem;
       }
     }
 

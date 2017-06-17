@@ -5,6 +5,7 @@ $base__space-unit: 1.5rem;
 // Colors
 
 $color__blue-medium: #4263AB;
+$color__blue-dark: #00277E;
 $color__red-medium: #D13434;
 $color__red-dark: #A70000;
 $color__grey-dark: #2C2C2C; //fonts
@@ -39,7 +40,6 @@ $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
-
 // note: mobile-first sizes
 $heading__h1: 2.5714285714rem;
 $heading__h2: 1.4285714286rem;
@@ -48,3 +48,6 @@ $heading__h4: 0.8571428571rem;
 
 $quote: 1rem;
 
+// forms
+$form__blue-border: 1.5px solid #00277E;
+$form__border-radius: 10px;
