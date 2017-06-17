@@ -1061,6 +1061,7 @@ object {
     font-weight: 500; }
 
 .site-footer .site-info {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -1077,9 +1078,23 @@ object {
 
 .site-footer .newsletter-sign-up {
   -ms-flex-order: 1;
-      order: 1; }
+      order: 1;
+  width: 100%; }
   .site-footer .newsletter-sign-up .display-form {
-    position: absolute; }
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+  .site-footer .newsletter-sign-up .subscription-form {
+    background: #FFF; }
+  .site-footer .newsletter-sign-up .wpcf7-form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
+    .site-footer .newsletter-sign-up .wpcf7-form .close-form {
+      width: 100%; }
 
 .site-footer .social-links {
   -ms-flex-order: 3;

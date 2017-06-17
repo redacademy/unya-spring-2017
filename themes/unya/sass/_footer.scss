@@ -1,6 +1,7 @@
 .site-footer {
 
   .site-info {
+    position: relative;
     display: flex;
     align-items: center;
     background: $color__blue-medium;
@@ -17,9 +18,25 @@
 
   .newsletter-sign-up {
     order: 1;
+    width: 100%;
 
     .display-form {
+      // displays subscription form on mobile
       position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+
+    .wpcf7-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #FFF;
+      
+      .close-form {
+        width: 100%;
+        background: #FFF;
+      }
     }
 
   }
