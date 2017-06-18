@@ -1,12 +1,13 @@
 .site-footer {
 
-  .site-info {
+  .footer-container {
     position: relative;
     display: flex;
     align-items: center;
     background: $color__blue-medium;
     color: #FFF;
     flex-direction: column;
+    padding: 1rem 0rem;
 
     @include desktop {
       flex-direction: row;
@@ -23,12 +24,21 @@
     text-align: center;
 
     // displays subscription form on mobile
-    .display-form { 
+    .display-form {
       position: absolute;
       height: 100%;
       width: 100%;
     }
-
+    button.hidden-desktop, .sign-up-btn {
+      width:55%;
+      height:40px;
+      h4{
+        font-family:$font__main;
+        font-weight:normal;
+        font-size: 1rem;
+        margin:0;
+      }
+    }
     	// button to close subscription form
     .close-form {
       width: 100%;
@@ -45,7 +55,11 @@
 
   .social-links {
     order: 3;
+    a{
+      color:#FFF;
+      padding: 1rem;
 
+    }
     @include desktop {
       order: 2;
     }
@@ -53,10 +67,20 @@
 
   .contact-us {
     order: 2;
-
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    padding:1rem 0rem;
+    p{
+      color:#FFF;
+      padding: 0;
+      margin: 0;
+      font-family:$font__main;
+      font-style: normal;
+      font-weight: normal;
+    }
     @include desktop {
       order: 3;
     }
   }
-
 }
