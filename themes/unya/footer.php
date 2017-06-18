@@ -6,13 +6,12 @@
  */
 
 ?>
-
 		</div><!-- #content -->
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
 					<div class="footer-container">
 						<div class="newsletter-sign-up">
-							<h4 class="hidden-mobile">Sign up for our updates</h4>
+							<h4 class="hidden-mobile">Sign up for our updates!</h4>
 							<button class="hidden-desktop sign-up-btn"><h4>Sign up for updates</h4></button>
 							<div class="subscription-form hidden-mobile">
 								<div class="close-form"></div>
@@ -21,9 +20,9 @@
 						</div>
 						<div class="social-links">
 							<h4 class="hidden-mobile">Get Social </h4>
-							<a class="social-media-links facebook" href="https://www.facebook.com/urbannativeyouthassociation/"><span class="fa fa-facebook-square fa-3x" aria-hidden="true"></span></a>
-							<a class="social-media-links twitter" href="https://twitter.com/unyanews?lang=en"><span class="fa fa-twitter-square fa-3x" aria-hidden="true"></span></a>
-							<a class="social-media-links instagram" href="https://www.instagram.com/explore/locations/296509320/"><span class="fa fa-instagram fa-3x" aria-hidden="true"></span></a>
+							<a class="social-media-links facebook" href="https://www.facebook.com/urbannativeyouthassociation/"><span class="fa fa-facebook-square fa-4x" aria-hidden="true"></span></a>
+							<a class="social-media-links twitter" href="https://twitter.com/unyanews?lang=en"><span class="fa fa-twitter-square fa-4x" aria-hidden="true"></span></a>
+							<a class="social-media-links instagram" href="https://www.instagram.com/explore/locations/296509320/"><span class="fa fa-instagram fa-4x" aria-hidden="true"></span></a>
 						</div>
 						<div class="contact-us">
 							<h4 class="hidden-mobile">Contact Us</h4>

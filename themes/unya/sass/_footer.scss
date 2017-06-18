@@ -9,27 +9,32 @@
     color: #FFF;
     flex-direction: column;
     padding: 1.14rem 0rem;
-
     @include desktop {
       flex-direction: row;
+      background-color:$color__background-body;
+      h4{
+        color:$color__blue-dark;
+        font-family:$font__main;
+        font-weight: normal;
+      }
     }
-
     .sign-up-btn {
       text-transform: uppercase;
-    }
-  }
+     }
+   }
 
   .newsletter-sign-up {
     order: 1;
     width: 100%;
     text-align: center;
-
+    @include desktop{
+      min-width:33%;
+    }
     // displays subscription form on mobile
     .display-form {
       position: absolute;
-      height: 100%;
       width: 100%;
-    }
+      }
     button.hidden-desktop, .sign-up-btn {
       width:200px;
       height:20%;
@@ -57,13 +62,26 @@
 
   .social-links {
     order: 3;
+    display: flex;
+    @include desktop{
+    border-left: 2px solid $color__blue-dark;
+    border-right:2px solid $color__blue-dark;
+    min-width:33%;
+    display: flex;
+    flex-wrap:wrap;
+      h4.hidden-mobile{
+        width:100%;
+      }
+    }
     a{
       color:#FFF;
       padding: 1rem;
+      color:#FFF;
 
-    }
-    @include desktop {
+      @include desktop {
       order: 2;
+      color:$color__blue-dark;
+      }
     }
   }
 
@@ -73,6 +91,10 @@
     flex-direction: column;
     text-align:center;
     padding:1rem 0rem;
+    @include desktop {
+    order: 3;
+    min-width:33%;
+      }
     p{
       color:#FFF;
       padding: 0;
@@ -81,9 +103,10 @@
       font-style: normal;
       font-weight: normal;
       font-size:$heading__h4;
-    }
-    @include desktop {
+      @include desktop {
       order: 3;
+      color:black;
+      }
     }
   }
 }

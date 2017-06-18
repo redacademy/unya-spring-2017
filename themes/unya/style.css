@@ -1151,7 +1151,12 @@ object {
     @media (min-width: 600px) {
       .site-footer .footer-container {
         -ms-flex-direction: row;
-            flex-direction: row; } }
+            flex-direction: row;
+        background-color: #fff; }
+        .site-footer .footer-container h4 {
+          color: #00277E;
+          font-family: "worksans", sans-serif;
+          font-weight: normal; } }
     .site-footer .footer-container .sign-up-btn {
       text-transform: uppercase; }
   .site-footer .newsletter-sign-up {
@@ -1159,9 +1164,11 @@ object {
         order: 1;
     width: 100%;
     text-align: center; }
+    @media (min-width: 600px) {
+      .site-footer .newsletter-sign-up {
+        min-width: 33%; } }
     .site-footer .newsletter-sign-up .display-form {
       position: absolute;
-      height: 100%;
       width: 100%; }
     .site-footer .newsletter-sign-up button.hidden-desktop, .site-footer .newsletter-sign-up .sign-up-btn {
       width: 200px;
@@ -1182,14 +1189,29 @@ object {
         padding-right: 1rem; }
   .site-footer .social-links {
     -ms-flex-order: 3;
-        order: 3; }
-    .site-footer .social-links a {
-      color: #FFF;
-      padding: 1rem; }
+        order: 3;
+    display: -ms-flexbox;
+    display: flex; }
     @media (min-width: 600px) {
       .site-footer .social-links {
-        -ms-flex-order: 2;
-            order: 2; } }
+        border-left: 2px solid #00277E;
+        border-right: 2px solid #00277E;
+        min-width: 33%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .site-footer .social-links h4.hidden-mobile {
+          width: 100%; } }
+    .site-footer .social-links a {
+      color: #FFF;
+      padding: 1rem;
+      color: #FFF; }
+      @media (min-width: 600px) {
+        .site-footer .social-links a {
+          -ms-flex-order: 2;
+              order: 2;
+          color: #00277E; } }
   .site-footer .contact-us {
     -ms-flex-order: 2;
         order: 2;
@@ -1199,6 +1221,11 @@ object {
         flex-direction: column;
     text-align: center;
     padding: 1rem 0rem; }
+    @media (min-width: 600px) {
+      .site-footer .contact-us {
+        -ms-flex-order: 3;
+            order: 3;
+        min-width: 33%; } }
     .site-footer .contact-us p {
       color: #FFF;
       padding: 0;
@@ -1207,7 +1234,8 @@ object {
       font-style: normal;
       font-weight: normal;
       font-size: 0.85714rem; }
-    @media (min-width: 600px) {
-      .site-footer .contact-us {
-        -ms-flex-order: 3;
-            order: 3; } }
+      @media (min-width: 600px) {
+        .site-footer .contact-us p {
+          -ms-flex-order: 3;
+              order: 3;
+          color: black; } }
