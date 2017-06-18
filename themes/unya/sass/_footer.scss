@@ -8,7 +8,7 @@
     background: $color__blue-medium;
     color: #FFF;
     flex-direction: column;
-    padding: 1rem 0rem;
+    padding: 1.14rem 0rem;
 
     @include desktop {
       flex-direction: row;
@@ -31,9 +31,9 @@
       width: 100%;
     }
     button.hidden-desktop, .sign-up-btn {
-      width:75%;
+      width:200px;
       height:20%;
-      margin-top:37px;
+      margin-top:13px;
       padding:13px 0px;
       h4{
         font-family:$font__main;
