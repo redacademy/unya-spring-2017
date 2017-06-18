@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-	color: #000;
+	color: $color__grey-dark;
 	font-size: $heading__h2;
 
 	@include desktop {

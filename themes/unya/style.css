@@ -1134,6 +1134,24 @@ object {
   background: linear-gradient(to bottom, rgba(181, 167, 0, 0.7) 0%, rgba(181, 167, 0, 0.7) 100%); }
 
 /* Single Program page */
+.single-program .program-body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .single-program .program-body .program-activities {
+    -ms-flex-order: 2;
+        order: 2; }
+  .single-program .program-body .program-image:nth-child(1) {
+    -ms-flex-order: 1;
+        order: 1; }
+  .single-program .program-body .program-image:nth-child(2) {
+    -ms-flex-order: 3;
+        order: 3; }
+  .single-program .program-body .program-involvement {
+    -ms-flex-order: 4;
+        order: 4; }
+
 .site-footer {
   min-width: 320px;
   min-height: 210px; }

@@ -220,4 +220,26 @@
     // flex-direction: column;
     // align-items: center;
   }
+
+  .program-body {
+    display: flex;
+    flex-direction: column;
+
+    .program-activities {
+      order: 2;
+    }
+    
+    .program-image:nth-child(1) {
+      order: 1;
+    }
+
+    .program-image:nth-child(2) {
+      order: 3;
+    }
+
+    .program-involvement {
+      order: 4;
+    }
+
+  }
 }
