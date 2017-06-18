@@ -1178,6 +1178,11 @@ object {
     -ms-flex-order: 4;
         order: 4; }
 
+/* News archive */
+.news-articles {
+  margin: 0;
+  padding: 0; }
+
 .site-footer {
   min-width: 320px;
   min-height: 210px; }
