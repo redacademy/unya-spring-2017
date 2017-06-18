@@ -8,16 +8,15 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php the_title( '<h2 class="program-title">', '</h2>' ); ?>
-
 	<div class="program-content content-wrapper">
+		<?php the_title( '<h2 class="program-title">', '</h2>' ); ?>		
 		<p><?php echo wpautop( esc_html( CFS()->get( 'program_details' ) ) ); ?></p>
-		<a href="<?php echo esc_html( CFS()->get( 'program_brochure' ) ); ?>"><i class="fa fa-file-o" aria-hidden="true"></i> <?php the_title(); ?> Program Brochure</a>
+		<a href="<?php echo esc_html( CFS()->get( 'program_brochure' ) ); ?>"><i class="fa fa-file-o" aria-hidden="true"></i> <?php the_title(); ?> Program Brochure (PDF)</a>
 	</div>
 
 	<!-- content to be reordered in desktop -->
 	<div class="program-body">
-		<div class="program-activities">
+		<div class="program-activities content-wrapper">
 			<h3>Program Activities</h3>
 			<ul>
 			<?php	
@@ -38,7 +37,7 @@
 		<?php $i++;
 			endforeach; ?>
 
-		<div class="program-involvement">
+		<div class="program-involvement content-wrapper">
 			<h3>How To Get Involved</h3>
 			<p class="content-wrapper"><?php echo wpautop( esc_html( CFS()->get( 'get_involved' ) ) ); ?></p>
 		</div>
