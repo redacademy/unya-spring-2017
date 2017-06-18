@@ -12,8 +12,8 @@
 				<div class="site-info">
 					<div class="footer-container">
 						<div class="newsletter-sign-up">
-							<h4 class="hidden-mobile">Sign up for our updates!</h4>
-							<button class="hidden-desktop sign-up-btn"><h4>Sign up for updates!</h4></button>
+							<h4 class="hidden-mobile">Sign up for our updates</h4>
+							<button class="hidden-desktop sign-up-btn"><h4>Sign up for updates</h4></button>
 							<div class="subscription-form hidden-mobile">
 								<div class="close-form"></div>
 								<?php echo do_shortcode( '[contact-form-7 id="240" title="Email Subscription"]' ); ?>
