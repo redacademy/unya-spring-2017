@@ -321,7 +321,7 @@ h2 {
 
 h3 {
   font-size: 1.14286rem;
-  color: #fff; }
+  color: #2C2C2C; }
   @media (min-width: 600px) {
     h3 {
       font-size: 1.7142857143rem; } }
@@ -1080,7 +1080,6 @@ object {
   .single-opportunity h3 {
     display: -ms-flexbox;
     display: flex;
-    color: #000;
     font-family: "worksans", sans-serif;
     font-size: 1rem;
     font-weight: 500; }

@@ -35,7 +35,7 @@ get_header(); ?>
 		</section>
 		<section class="opportunities" id="employment">
 			<header class="section-heading">
-				<h2>Vision</h2>
+				<h2 class="hidden-desktop">Employment</h2>
 			</header>
 			<div class="content-wrapper">
 				<h2 class="hidden-mobile">Employment Opportunities</h2>				
@@ -73,12 +73,12 @@ get_header(); ?>
 					<p class="hidden-mobile"><?php echo CFS()->get( 'description' ); ?></p>
 					<p><?php echo CFS()->get( 'link' ); ?></p>
 				</li>
-				<?php endforeach; wp_reset_postdata(); ?>				
+				<?php endforeach; wp_reset_postdata(); ?>
 			</ul>
 		</section>
 		<section class="opportunities" id="volunteer">
 			<header class="section-heading">
-				<h2>Volunteer</h2>
+				<h2 class="hidden-desktop">Volunteer</h2>
 			</header>
 			<?php $args = array(
 								'post_per_page' => 10,
