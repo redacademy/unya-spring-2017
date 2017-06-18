@@ -34,6 +34,7 @@ input[type="reset"],
 input[type="submit"] {
 	border: $form__blue-border;
 	border-radius: $form__border-radius;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
 	background: $color__blue-dark;
 	color: #FFF;
 	@include font-size(1);

@@ -495,6 +495,7 @@ input[type="reset"],
 input[type="submit"] {
   border: 1.5px solid #00277E;
   border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   background: #00277E;
   color: #FFF;
   font-size: 14px;
@@ -1041,13 +1042,14 @@ object {
 
 .donation-call {
   width: 100%;
+  padding: 1rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  text-align: center;
   background-color: #A70000;
-  color: #FFF; }
+  color: #FFF;
+  text-align: center; }
   .donation-call .content-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -1055,13 +1057,18 @@ object {
         align-items: center;
     -ms-flex-direction: column;
         flex-direction: column; }
+  .donation-call h3 {
+    margin: 1rem 0;
+    font-weight: 400; }
+  .donation-call a {
+    text-decoration: none; }
   .donation-call .donate-button {
     height: 3.5714285714rem;
-    padding: 1rem;
+    margin: 1rem 0;
+    padding: 1rem 3rem;
     background-color: #D13434;
     border-radius: 10px;
-    font-weight: normal;
-    text-decoration: none; }
+    font-weight: normal; }
 
 .opportunities ul {
   padding: 0;
