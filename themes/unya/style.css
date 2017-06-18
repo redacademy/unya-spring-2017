@@ -1076,13 +1076,15 @@ object {
   list-style: none; }
 
 .single-opportunity {
+  display: -ms-flexbox;
+  display: flex;
   border-top: 1px solid #4263AB; }
   .single-opportunity h3 {
-    display: -ms-flexbox;
-    display: flex;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
     font-family: "worksans", sans-serif;
     font-size: 1rem;
-    font-weight: 500; }
+    font-weight: 600; }
 
 /* Programs Archive */
 .program-section {

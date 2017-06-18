@@ -141,13 +141,14 @@
 }
 
 .single-opportunity {
+  display: flex;
   border-top: 1px solid $color__blue-medium;
   
   h3 {
-    display: flex;
+    flex-basis: 70%; // value to change once link text is resolved
     font-family: $font__main;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
   }
 }
 
