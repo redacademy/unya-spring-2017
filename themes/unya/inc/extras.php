@@ -83,12 +83,16 @@ function hero_banners() {
     background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
     url({$aboutpolygon});
 }
+
 .mission{
     background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
     url({$aboutrectangle});
 }
 
-";
+.donation-registration {
+  background-image: linear-gradient(to bottom,rgba(167,0,0,0.7) 0%, rgba(167,0,0,0.7) 100%),
+    url({$getinvolvedrectangle});
+}";
 
     wp_add_inline_style( 'custom-style', $custom_css );
 }

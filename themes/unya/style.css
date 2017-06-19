@@ -975,16 +975,17 @@ object {
   .vision p {
     width: 350px;
     color: white;
-    margin: 70px auto; }
+    margin: 70px 0%; }
 
 .mission {
-  height: 350px;
+  height: 325px;
   width: 100%;
   background-size: cover;
   background-attachment: bottom; }
   .mission p {
-    width: 350px;
-    margin: 70px 10%;
+    text-align: right;
+    width: 325px;
+    margin: 30px 15%;
     color: white; }
 
 /*--------------------------------------------------------------
@@ -1046,7 +1047,6 @@ object {
 .donation-registration {
   height: 350px;
   width: 100%;
-  background-image: linear-gradient(to bottom, rgba(167, 0, 0, 0.7) 0%, rgba(167, 0, 0, 0.7) 100%), url("../../assets/images/cedarwalk-min.png");
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
   background-size: cover;
   background-attachment: bottom; }

@@ -156,17 +156,18 @@ object {
 p{
 		width:350px;
 		color:white;
-		margin: 70px auto;
+		margin: 70px 0%;
 	}
 }
 .mission{
-  height:350px;
+  height:325px;
   width:100%;
 	background-size: cover;
 	background-attachment: bottom;
 	p{
-		width:350px;
-		margin: 70px 10%;
+		text-align: right;
+		width:325px;
+		margin: 30px 15%;
 		color:white;
 	}
 }
