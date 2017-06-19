@@ -75,6 +75,10 @@ get_header(); ?>
 					<div class="content-wrapper">
 						<h4>The Need</h4>
 						<p><?php echo esc_html( CFS()->get( 'the_need' ) ); ?></p>
+					</div>
+						<div class="nyc-banner">
+				    </div>
+					<div class="content-wrapper">
 						<h4>We Need Your Help</h4>
 						<p><?php echo esc_html( CFS()->get( 'we_need_your_help' ) ); ?></p>
 						<h5>Donate Funds</h5>

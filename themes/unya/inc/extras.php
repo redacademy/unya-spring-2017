@@ -52,6 +52,8 @@ function hero_banners() {
 		$rectangle = CFS()->get( 'rectangle_banner' );
         $aboutpolygon = CFS()->get( 'about_angled_banner' );
 		$aboutrectangle = CFS()->get( 'about_rectangle_banner' );
+        $getinvolvedpolygon = CFS()->get( 'get_involved_angled_banner' );
+        $nativeyouthcenterbanner = CFS()->get( 'nyc_rectangle_banner' );
         $custom_css = "
                 			
 .about{
@@ -79,14 +81,19 @@ function hero_banners() {
     url({$rectangle});
 }
 
-.vision{ 
+.nyc-banner{ 
     background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
-    url({$aboutpolygon});
+    url({$nativeyouthcenterbanner});
 }
 
 .mission{
     background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
     url({$aboutrectangle});
+}
+
+.donation-registration{
+    background-image: linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
+    url({$getinvolvedpolygon});
 }";
 
     wp_add_inline_style( 'custom-style', $custom_css );

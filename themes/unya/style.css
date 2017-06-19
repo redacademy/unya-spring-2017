@@ -957,23 +957,34 @@ object {
     margin: 175px 10%;
     color: white; }
 
-.vision {
-  height: 350px;
-  width: 100%;
-  -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
-  background-size: cover;
-  background-attachment: bottom; }
-  .vision p {
-    width: 350px;
-    color: white;
-    margin: 70px 0%; }
-
 .mission {
   height: 325px;
   width: 100%;
   background-size: cover;
   background-attachment: bottom; }
   .mission p {
+    text-align: right;
+    width: 325px;
+    margin: 30px 15%;
+    color: white; }
+
+.donation-registration {
+  height: 350px;
+  width: 100%;
+  -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
+  background-size: cover;
+  background-attachment: bottom; }
+  .donation-registration p {
+    width: 350px;
+    color: white;
+    margin: 70px 0%; }
+
+.nyc-banner {
+  height: 325px;
+  width: 100%;
+  background-size: cover;
+  background-attachment: bottom; }
+  .nyc-banner p {
     text-align: right;
     width: 325px;
     margin: 30px 15%;
