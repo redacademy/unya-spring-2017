@@ -49,11 +49,11 @@ get_header(); ?>
 			</section>
 			<h2 class="accordion-label">Leadership</h2>
 			<section class="leadership" id="leadership">
-				<header class="section-heading">
-					<h2>Leadership</h2>
+				<header class="section-heading hidden-mobile">
+					<h2 class="hidden-mobile">Leadership</h2>
+					<h4 class="hidden-mobile">The UNYA Board exmplifies the leadership of our youth.</h4>
 				</header>
 				<div class="content-wrapper">
-					<h4 class="hidden-mobile">The UNYA Board exmplifies the leadership of our youth.</h4>
 					<ul>
 						<?php foreach ( $leaders as $post ) : setup_postdata( $post ); ?>
 							<li class="leader">

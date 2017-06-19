@@ -1008,23 +1008,36 @@ object {
 
 .page-id-37 ul {
   margin: 0;
-  padding: 0;
+  padding: 1.8571428571rem 0;
   list-style: none; }
 
 .page-id-37 .leader {
+  margin: 0.6428571429rem 0;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
   .page-id-37 .leader .image-wrapper {
     -ms-flex-preferred-size: 30%;
-        flex-basis: 30%; }
+        flex-basis: 30%;
+    height: 5.7rem;
+    width: 5.7rem;
+    overflow: hidden;
+    border-radius: 50%; }
+    .page-id-37 .leader .image-wrapper img {
+      max-width: none;
+      height: 100%;
+      min-width: 100%;
+      width: auto; }
   .page-id-37 .leader .text-wrapper {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
     font-size: 0.8571428571rem; }
+    .page-id-37 .leader .text-wrapper p {
+      margin: 0.5rem 0; }
   .page-id-37 .leader .leader-name {
     color: #2C2C2C;
+    font-size: 1.1428571429rem;
     font-weight: bold; }
 
 /* Native Youth Centre */

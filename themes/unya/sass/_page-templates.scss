@@ -20,25 +20,42 @@
 
   ul {
     margin: 0;
-    padding: 0;
+    padding: 1.8571428571rem 0;
     list-style: none;
   }
 
   .leader {
+    margin: 0.6428571429rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     .image-wrapper {
       flex-basis: 30%;
+      height: 5.7rem;
+      width: 5.7rem;
+      overflow: hidden;
+      border-radius: 50%;
+      
+      img {
+        max-width: none;
+        height: 100%;
+        min-width: 100%;
+        width: auto;
+      }
     }
 
     .text-wrapper {
       flex-basis: 60%;
       font-size: 0.8571428571rem;
+
+      p {
+        margin: 0.5rem 0;
+      }
     }
 
     .leader-name {
       color: $color__grey-dark;
+      font-size: 1.1428571429rem;
       font-weight: bold;
     }
 
