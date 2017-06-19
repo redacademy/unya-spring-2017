@@ -930,17 +930,8 @@ object {
 .sbi_photo {
   border-radius: 10%; }
 
-.about {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 350px; }
-
-.nyc {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 350px; }
-
-.programs {
+.about, .nyc, .programs {
+  background-attachment: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 350px; }

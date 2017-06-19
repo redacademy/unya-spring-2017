@@ -104,31 +104,20 @@ object {
 }
 
 
-.about{
+.about, .nyc, .programs{
+  	background-attachment: center;
 		background-size: cover;
 		background-repeat:no-repeat;
 		height:350px;
 	}
 
-.nyc{	
-		background-size: cover;
-		background-repeat:no-repeat;		
-		height:350px;
-}
-
-.programs{
-		background-size: cover;
-		background-repeat:no-repeat;
-		height:350px;
-       }
-	.impact-polygon{
+.impact-polygon{
   height:350px;
   width:100%;
   -webkit-clip-path: polygon( 0% 100%, 100% 100%, 100% 0%, 0 25%);
 	background-size: cover;
 	background-attachment: bottom;
-
-	p{
+p{
 		width:250px;
 		margin: 175px 50%;
 		color:white;
@@ -140,7 +129,7 @@ object {
   width:100%;
 	background-size: cover;
 	background-attachment: bottom;
-	p{
+p{
 		width:250px;
 		margin: 175px 10%;
 		color:white;
@@ -164,7 +153,7 @@ p{
   width:100%;
 	background-size: cover;
 	background-attachment: bottom;
-	p{
+p{
 		text-align: right;
 		width:325px;
 		margin: 30px 15%;

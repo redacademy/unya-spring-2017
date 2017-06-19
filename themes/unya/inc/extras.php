@@ -55,7 +55,7 @@ function hero_banners() {
         $custom_css = "
                 			
 .about{
-	background: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
+	background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
     url({$first});
 }
 
@@ -87,11 +87,6 @@ function hero_banners() {
 .mission{
     background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
     url({$aboutrectangle});
-}
-
-.donation-registration {
-  background-image: linear-gradient(to bottom,rgba(167,0,0,0.7) 0%, rgba(167,0,0,0.7) 100%),
-    url({$getinvolvedrectangle});
 }";
 
     wp_add_inline_style( 'custom-style', $custom_css );
