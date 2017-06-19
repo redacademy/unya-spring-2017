@@ -40,7 +40,7 @@ add_filter( 'get_the_archive_title', function ( $title ) {
 
 // Front Page Hero Banners //
 
-function front_heros() {
+function hero_banners() {
     wp_enqueue_style(
         'custom-style',
         get_template_directory_uri() . '/build/css/style.min.css'
@@ -55,7 +55,7 @@ function front_heros() {
 .about{
 	background: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
     url({$first});
-	}
+}
 
 .nyc{	
 	background-image:linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
@@ -65,7 +65,7 @@ function front_heros() {
 .programs{
 	background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url({$third});
-       }
+}
 
 .polygon-container{ 
     background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
@@ -79,4 +79,4 @@ function front_heros() {
 
     wp_add_inline_style( 'custom-style', $custom_css );
 }
-add_action( 'wp_enqueue_scripts', 'front_heros' );
+add_action( 'wp_enqueue_scripts', 'hero_banners' );
