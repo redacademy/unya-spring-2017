@@ -228,3 +228,7 @@ a {
 	}
 }
 
+//remove extra padding from content
+.ui-accordion .ui-accordion-content {
+	padding:  0;
+}

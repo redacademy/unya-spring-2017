@@ -716,6 +716,9 @@ a {
   margin: 0 !important;
   border-bottom: 1px solid #aaa !important; }
 
+.ui-accordion .ui-accordion-content {
+  padding: 0; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
