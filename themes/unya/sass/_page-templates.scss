@@ -2,7 +2,10 @@
 # Page Templates
 --------------------------------------------------------------
 
-/* Front page */
+/* All pages */
+.header-wrapper, .page-header {
+  height: 25rem;
+}
 
 /* About page */
 .page-id-37 {
