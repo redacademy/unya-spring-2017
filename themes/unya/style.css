@@ -337,7 +337,8 @@ p {
   margin-bottom: 1.5rem;
   font-family: "worksans", sans-serif;
   font-size: 1rem;
-  font-weight: normal; }
+  font-weight: normal;
+  line-height: 1.4285714286rem; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -998,7 +999,16 @@ object {
 # Page Templates
 --------------------------------------------------------------
 
-/* Front page */
+/* All pages */
+.header-wrapper, .page-header {
+  height: 4.2142857143rem; }
+  @media (min-width: 600px) {
+    .header-wrapper, .page-header {
+      height: 25rem;
+      width: 100%;
+      background-size: cover;
+      background-attachment: center; } }
+
 /* About page */
 .page-id-37 .vision h3 {
   color: #2C2C2C; }
