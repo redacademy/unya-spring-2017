@@ -25,7 +25,7 @@ get_header(); ?>
 
 		<?php /* Start the Loop */ ?>
 			<section class="news" id="news">
-				<h2>News</h2>
+				<h2 class="news-title">News</h2>
 				<ul class="news-articles">
 					<?php foreach ( $news as $post ) : setup_postdata( $post ); ?>
 						<li class="news-single">

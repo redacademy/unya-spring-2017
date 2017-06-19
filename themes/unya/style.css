@@ -943,8 +943,9 @@ object {
   background-size: cover;
   background-attachment: bottom; }
   .impact-polygon p {
-    width: 250px;
-    margin: 175px 50%;
+    text-align: right;
+    width: 70%;
+    margin: 175px 20%;
     color: white; }
 
 .rectangle-container {
@@ -953,20 +954,20 @@ object {
   background-size: cover;
   background-attachment: bottom; }
   .rectangle-container p {
-    width: 250px;
+    width: 70%;
     margin: 175px 10%;
     color: white; }
 
 .mission {
-  height: 325px;
+  height: 350px;
   width: 100%;
+  -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
   background-size: cover;
   background-attachment: bottom; }
   .mission p {
-    text-align: right;
-    width: 325px;
-    margin: 30px 15%;
-    color: white; }
+    width: 80%;
+    color: white;
+    margin: 70px auto; }
 
 .donation-registration {
   height: 350px;
@@ -975,7 +976,7 @@ object {
   background-size: cover;
   background-attachment: bottom; }
   .donation-registration p {
-    width: 350px;
+    width: 80%;
     color: white;
     margin: 70px 0%; }
 
@@ -986,7 +987,7 @@ object {
   background-attachment: bottom; }
   .nyc-banner p {
     text-align: right;
-    width: 325px;
+    width: 80%;
     margin: 30px 15%;
     color: white; }
 

@@ -17,7 +17,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<header class="header-wrapper">
-			<h1>Impact</h1>
+			<h1 class="impact-title">Impact</h1>
 		</header>
 
 		<?php /* Start the Loop */ ?>

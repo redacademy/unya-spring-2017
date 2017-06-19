@@ -49,11 +49,17 @@ function hero_banners() {
 		$second = CFS()->get( 'second_banner_pic' );
 	    $third = CFS()->get( 'third_banner_pic' ); 
 		$impactpolygon = CFS()->get( 'impact_angled_banner' );
-		$rectangle = CFS()->get( 'rectangle_banner' );
+		$rectangle = CFS()->get( 'rectangular_banner' );
         $aboutpolygon = CFS()->get( 'about_angled_banner' );
 		$aboutrectangle = CFS()->get( 'about_rectangle_banner' );
         $getinvolvedpolygon = CFS()->get( 'get_involved_angled_banner' );
         $nativeyouthcenterbanner = CFS()->get( 'nyc_rectangle_banner' );
+        $abouttitle = CFS()->get( 'title-banner-about' );
+        $impacttitle = CFS()->get( 'title-banner-impact' );
+        $nyctitle = CFS()->get( 'title-banner-nyc' );
+        $getinvolvedtitle = CFS()->get( 'title-banner-get-involved' );
+        $programtitle = CFS()->get( 'title-banner-about' );
+
         $custom_css = "
                 			
 .about{
@@ -87,14 +93,43 @@ function hero_banners() {
 }
 
 .mission{
-    background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
+    background-image: linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url({$aboutrectangle});
 }
 
 .donation-registration{
     background-image: linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
     url({$getinvolvedpolygon});
-}";
+}
+	
+    @include desktop{
+
+.page-title{
+    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+    url({$programtitle});
+    }
+
+.news-title{
+    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+    url({$newstitle});
+    }    
+
+.about-title{
+    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+    url({$abouttitle});
+    }  
+
+.nyc-title{
+    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+    url({$nyctitle});
+    }      
+
+.impact-title{
+    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+    url({$impacttitle});
+    }     
+} 
+";
 
     wp_add_inline_style( 'custom-style', $custom_css );
 }
