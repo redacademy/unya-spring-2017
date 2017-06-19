@@ -16,8 +16,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<header class="header-wrapper">
-			<h1 class="impact-title">Impact</h1>
+		<header class="header-wrapper impact-title">
+			<h1>Impact</h1>
 		</header>
 
 		<?php /* Start the Loop */ ?>

@@ -102,34 +102,29 @@ function hero_banners() {
     url({$getinvolvedpolygon});
 }
 	
-    @include desktop{
-
-.page-title{
-    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
-    url({$programtitle});
-    }
-
-.news-title{
-    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
-    url({$newstitle});
-    }    
-
+   
 .about-title{
     background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url({$abouttitle});
     }  
-
-.nyc-title{
-    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
-    url({$nyctitle});
-    }      
-
 .impact-title{
     background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url({$impacttitle});
-    }     
-} 
-";
+    }   
+.nyc-title{
+    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+    url({$nyctitle});
+    } 
+
+.get-involved-title{
+    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+    url({$getinvolvedtitle});
+    }
+
+.programs-title{
+    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+    url({$programtitle});
+    }";
 
     wp_add_inline_style( 'custom-style', $custom_css );
 }
