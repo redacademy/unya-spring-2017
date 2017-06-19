@@ -4,7 +4,10 @@
 
 /* All pages */
 .header-wrapper, .page-header {
-  height: 25rem;
+  
+  @include desktop {
+    height: 25rem;
+  }
 }
 
 /* About page */
