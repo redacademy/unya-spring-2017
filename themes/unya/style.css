@@ -998,7 +998,11 @@ object {
 # Page Templates
 --------------------------------------------------------------
 
-/* Front page */
+/* All pages */
+@media (min-width: 600px) {
+  .header-wrapper, .page-header {
+    height: 25rem; } }
+
 /* About page */
 .page-id-37 .vision h3 {
   color: #2C2C2C; }

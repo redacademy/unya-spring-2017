@@ -54,12 +54,12 @@ function hero_banners() {
 		$aboutrectangle = CFS()->get( 'about_rectangle_banner' );
         $getinvolvedpolygon = CFS()->get( 'get_involved_angled_banner' );
         $nativeyouthcenterbanner = CFS()->get( 'nyc_rectangle_banner' );
-        $abouttitle = CFS()->get( 'title-banner-about' );
+        $abouttitle = CFS()->get( 'title_banner_about' );
         $impacttitle = CFS()->get( 'title_banner_impact' );
-        $nyctitle = CFS()->get( 'title-banner-nyc' );
-        $getinvolvedtitle = CFS()->get( 'title-banner-get-involved' );
-        $programtitle = CFS()->get( 'title-banner-programs' );
-        $newstitle = CFS()->get( 'title-banner-news' );
+        $nyctitle = CFS()->get( 'title_banner_nyc' );
+        $getinvolvedtitle = CFS()->get( 'title_banner_get_involved' );
+        $programtitle = CFS()->get( 'title_banner_programs' );
+        $newstitle = CFS()->get( 'title_banner_news' );
         
         $custom_css = "
                 			
@@ -103,7 +103,7 @@ function hero_banners() {
     url('$getinvolvedpolygon');
 }
 	
-   
+
 .about-title{
     background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url('$abouttitle');
