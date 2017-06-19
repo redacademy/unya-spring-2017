@@ -10,7 +10,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<header class="header-wrapper">
-			<h1>Impact</h1>
+			<h1 class="get-involved-title">Get Involved</h1>
 		</header>
 		<div class="accordion" id="accordion">
 			<h2 class="accordion-label">Donate</h2>
@@ -40,7 +40,7 @@ get_header(); ?>
 					<h2 class="hidden-desktop">Employment</h2>
 				</header>
 				<div class="content-wrapper">
-					<h2 class="hidden-mobile">Employment Opportunities</h2>				
+					<h2 class="hidden-mobile">Employment Opportunities</h2>
 					<p><?php echo CFS()->get( 'employment_intro_paragraph' ); ?></p>
 				</div>
 				<div class="hidden-mobile">

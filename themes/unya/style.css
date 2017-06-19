@@ -1256,7 +1256,7 @@ object {
         font-size: 1rem;
         margin: 0; }
     .site-footer .newsletter-sign-up .close-form {
-      width: 100%;
+      width: 85%;
       background-color: #FFF;
       color: #00277E;
       text-align: right; }
@@ -1267,6 +1267,11 @@ object {
         order: 3;
     display: -ms-flexbox;
     display: flex; }
+    .site-footer .social-links a {
+      color: #FFF;
+      padding: 1rem;
+      color: #FFF;
+      font-size: 3rem; }
     @media (min-width: 600px) {
       .site-footer .social-links {
         border-left: 2px solid #00277E;
@@ -1277,16 +1282,18 @@ object {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
         .site-footer .social-links h4.hidden-mobile {
-          width: 100%; } }
-    .site-footer .social-links a {
-      color: #FFF;
-      padding: 1rem;
-      color: #FFF; }
-      @media (min-width: 600px) {
+          width: 100%; }
+        .site-footer .social-links .social-links-container {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          width: 100%; }
         .site-footer .social-links a {
+          font-size: 4rem;
+          color: #00277E;
           -ms-flex-order: 2;
-              order: 2;
-          color: #00277E; } }
+              order: 2; } }
   .site-footer .contact-us {
     -ms-flex-order: 2;
         order: 2;

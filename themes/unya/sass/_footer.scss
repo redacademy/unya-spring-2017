@@ -48,7 +48,7 @@
     }
     	// button to close subscription form
     .close-form {
-      width: 100%;
+      width: 85%;
       background-color: #FFF;
       color: $color__blue-dark;
       text-align: right;
@@ -62,6 +62,12 @@
   .social-links {
     order: 3;
     display: flex;
+    a{
+      color:#FFF;
+      padding: 1rem;
+      color:#FFF;
+      font-size:3rem;
+    }
     @include desktop{
     border-left: 2px solid $color__blue-dark;
     border-right:2px solid $color__blue-dark;
@@ -71,19 +77,18 @@
       h4.hidden-mobile{
         width:100%;
       }
-    }
-    a{
-      color:#FFF;
-      padding: 1rem;
-      color:#FFF;
-
-      @include desktop {
-      order: 2;
+      .social-links-container{
+        display: flex;
+        justify-content:center;
+        width:100%;
+      }
+      a{
+      font-size:4rem;
       color:$color__blue-dark;
+      order:2;
       }
     }
   }
-
   .contact-us {
     order: 2;
     display: flex;
