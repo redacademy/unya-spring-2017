@@ -113,7 +113,7 @@ function hero_banners() {
     url('$impacttitle');
     }   
 .nyc-title{
-    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+    background-image:  linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
     url('$nyctitle');
     } 
 
