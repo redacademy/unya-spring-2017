@@ -43,7 +43,7 @@ get_header(); ?>
 				<h2 class="content-wrapper">Testimonials</h2>
 				<p class="content-wrapper">What do youth say about us?</p>
 			  
-			    <div class="polygon-container">
+			    <div class="impact-polygon">
 				    <p class="content-wrapper"><?php echo CFS()->get( 'testimonial_1' ); ?></p>
 				  </div>
        

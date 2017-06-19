@@ -20,11 +20,11 @@ get_header(); ?>
 		</div>
 		<div class="accordion" id="accordion">
 			<h2 class="accordion-label">Vision &amp; Mission</h2>
-			<div>
-				<section class="vision" id="vision">
+			<div>			
 					<header class="section-heading">
 						<h2>Vision &amp; Mission</h2>
 					</header>
+				<section class="vision" id="vision">
 					<div class="content-wrapper">
 						<h3>Vision</h3>
 						<p><?php echo esc_html( CFS()->get( 'vision' ) ); ?></p>

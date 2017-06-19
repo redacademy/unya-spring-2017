@@ -945,13 +945,13 @@ object {
   background-repeat: no-repeat;
   height: 350px; }
 
-.polygon-container {
+.impact-polygon {
   height: 350px;
   width: 100%;
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
   background-size: cover;
   background-attachment: bottom; }
-  .polygon-container p {
+  .impact-polygon p {
     width: 250px;
     margin: 175px 50%;
     color: white; }
@@ -966,6 +966,27 @@ object {
     margin: 175px 10%;
     color: white; }
 
+.vision {
+  height: 350px;
+  width: 100%;
+  -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
+  background-size: cover;
+  background-attachment: bottom; }
+  .vision p {
+    width: 350px;
+    color: white;
+    margin: 70px auto; }
+
+.mission {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-attachment: bottom; }
+  .mission p {
+    width: 350px;
+    margin: 70px 10%;
+    color: white; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------
@@ -976,7 +997,6 @@ object {
   color: #2C2C2C; }
 
 .page-id-37 .mission {
-  background: rgba(74, 74, 74, 0.7);
   color: #FFF; }
 
 .page-id-37 ul {
