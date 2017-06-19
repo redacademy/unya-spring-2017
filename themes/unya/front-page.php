@@ -45,7 +45,7 @@ get_header(); ?>
       <div class="content-wrapper">
 
         <h2>Get social with #UNYAwhat</h2>
-        <?php echo do_shortcode("[instagram-feed num=6 cols=2]"); ?>
+        <?php echo do_shortcode("[instagram-feed]"); ?>
 
         <!--<?php get_post(); ?>-->
 
