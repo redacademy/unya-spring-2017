@@ -1185,7 +1185,7 @@ object {
       display: block; }
     .programs-list li .wp-post-image {
       position: relative;
-      z-index: -1;
+      z-index: 0;
       max-width: 110%;
       width: auto;
       height: auto; }
@@ -1197,8 +1197,10 @@ object {
       position: absolute;
       color: #FFF; }
 
-.education-list li {
-  background: linear-gradient(to bottom, rgba(66, 99, 171, 0.7) 0%, rgba(66, 99, 171, 0.7) 100%); }
+.education-list li a .wp-post-image::after {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(66, 99, 171, 0.7) 0%, rgba(66, 99, 171, 0.7) 100%); }
 
 .personal-list li {
   background: linear-gradient(to bottom, rgba(167, 0, 0, 0.7) 0%, rgba(167, 0, 0, 0.7) 100%); }

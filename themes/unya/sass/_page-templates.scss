@@ -275,7 +275,7 @@
 
     .wp-post-image {
       position: relative;
-      z-index: -1;
+      z-index: 0;
       max-width: 110%;
       width: auto;
       height: auto;
@@ -295,7 +295,11 @@
 
 .education-list {
   li {
-    background: linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%);
+    a .wp-post-image::after {
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%);
+    }
   }
 }
 
