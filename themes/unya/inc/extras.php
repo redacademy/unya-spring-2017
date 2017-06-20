@@ -54,12 +54,13 @@ function hero_banners() {
 		$aboutrectangle = CFS()->get( 'about_rectangle_banner' );
         $getinvolvedpolygon = CFS()->get( 'get_involved_angled_banner' );
         $nativeyouthcenterbanner = CFS()->get( 'nyc_rectangle_banner' );
-        $abouttitle = CFS()->get( 'title-banner-about' );
+        $abouttitle = CFS()->get( 'title_banner_about' );
         $impacttitle = CFS()->get( 'title_banner_impact' );
-        $nyctitle = CFS()->get( 'title-banner-nyc' );
-        $getinvolvedtitle = CFS()->get( 'title-banner-get-involved' );
-        $programtitle = CFS()->get( 'title-banner-programs' );
-
+        $nyctitle = CFS()->get( 'title_banner_nyc' );
+        $getinvolvedtitle = CFS()->get( 'title_banner_get_involved' );
+        $programtitle = CFS()->get( 'title_banner_programs' );
+        $newstitle = CFS()->get( 'title_banner_news' );
+        
         $custom_css = "
                 			
 .about{
@@ -102,7 +103,7 @@ function hero_banners() {
     url('$getinvolvedpolygon');
 }
 	
-   
+
 .about-title{
     background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url('$abouttitle');
@@ -112,7 +113,7 @@ function hero_banners() {
     url('$impacttitle');
     }   
 .nyc-title{
-    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+    background-image:  linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
     url('$nyctitle');
     } 
 
@@ -124,7 +125,13 @@ function hero_banners() {
 .programs-title{
     background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url('$programtitle');
-    }";
+    }
+    
+ .news-title{
+    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+    url('$newstitle');
+    } 
+    ";
 
     wp_add_inline_style( 'custom-style', $custom_css );
 }

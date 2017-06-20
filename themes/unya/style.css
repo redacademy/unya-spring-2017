@@ -1000,6 +1000,7 @@ object {
 --------------------------------------------------------------
 
 /* All pages */
+<<<<<<< HEAD
 .header-wrapper, .page-header {
   height: 4.2142857143rem; }
   @media (min-width: 600px) {
@@ -1008,6 +1009,11 @@ object {
       width: 100%;
       background-size: cover;
       background-attachment: center; } }
+=======
+@media (min-width: 600px) {
+  .header-wrapper, .page-header {
+    height: 25rem; } }
+>>>>>>> c72fb02c467f6267dd7e48cae14dd4be91279182
 
 /* About page */
 .page-id-37 .vision h3 {

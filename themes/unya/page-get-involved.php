@@ -9,8 +9,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<header class="header-wrapper">
-			<h1 class="get-involved-title">Get Involved</h1>
+		<header class="header-wrapper get-involved-title">
+			<h1>Get Involved</h1>
 		</header>
 		<div class="accordion" id="accordion">
 			<h2 class="accordion-label">Donate</h2>
