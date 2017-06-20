@@ -10,7 +10,7 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
 					<div class="footer-container">
-							<div class="newsletter-sign-up">
+							<div class="newsletter-sign-up footer-flex">
 								<h4 class="hidden-mobile">Sign up for our updates!</h4>
 								<button class="hidden-desktop sign-up-btn"><h4>Sign up for updates</h4></button>
 								<div class="subscription-form hidden-mobile">
@@ -18,7 +18,7 @@
 								<div class="close-form"></div>
 							</div>
 						</div>
-						<div class="social-links">
+						<div class="social-links footer-flex">
 							<h4 class="hidden-mobile">Get Social </h4>
 							<div class="social-links-container">
 								<a class="social-media-links facebook" href="https://www.facebook.com/urbannativeyouthassociation/"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
@@ -26,7 +26,7 @@
 								<a class="social-media-links instagram" href="https://www.instagram.com/explore/locations/296509320/"><span class="fa fa-instagram" aria-hidden="true"></span></a>
 							</div>
 						</div>
-						<div class="contact-us">
+						<div class="contact-us footer-flex">
 							<h4 class="hidden-mobile">Contact Us</h4>
 							<p class="hidden-mobile">Urban Native Youth Association</p>
 							<p>1630 Hastings Street East</p>

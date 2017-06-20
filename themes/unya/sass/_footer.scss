@@ -1,16 +1,25 @@
 .site-footer {
   min-width:320px;
   min-height:210px;
+
   .footer-container {
     position: relative;
     display: flex;
-    align-items: center;
+    flex-flow: row nowrap;
+    align-content: stretch;
+   // align-items: center;
     background: $color__blue-medium;
     color: #FFF;
     flex-direction: column;
     padding: 1.14rem 0rem;
+
+    .footer-flex{
+      flex:1 1 auto;
+      width:480px;
+      align-items:center;
+    }
     @include desktop {
-      flex-direction: row;
+      flex-flow: row nowrap;
       background-color:$color__background-body;
       h4{
         color:$color__blue-dark;
@@ -21,6 +30,10 @@
     .sign-up-btn {
       text-transform: uppercase;
      }
+   }// .footer-container
+
+   .wpcf7-form-control{
+     max-width:85%;
    }
   .newsletter-sign-up {
     order: 1;
@@ -72,8 +85,8 @@
     border-left: 2px solid $color__blue-dark;
     border-right:2px solid $color__blue-dark;
     min-width:33%;
-    display: flex;
-    flex-wrap:wrap;
+    // display: flex;
+    // flex-wrap:wrap;
       h4.hidden-mobile{
         width:100%;
       }

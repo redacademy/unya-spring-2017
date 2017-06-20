@@ -1248,17 +1248,25 @@ object {
     position: relative;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
     background: #4263AB;
     color: #FFF;
     -ms-flex-direction: column;
         flex-direction: column;
     padding: 1.14rem 0rem; }
+    .site-footer .footer-container .footer-flex {
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+      width: 480px;
+      -ms-flex-align: center;
+          align-items: center; }
     @media (min-width: 600px) {
       .site-footer .footer-container {
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
         background-color: #fff; }
         .site-footer .footer-container h4 {
           color: #00277E;
@@ -1266,6 +1274,8 @@ object {
           font-weight: normal; } }
     .site-footer .footer-container .sign-up-btn {
       text-transform: uppercase; }
+  .site-footer .wpcf7-form-control {
+    max-width: 85%; }
   .site-footer .newsletter-sign-up {
     -ms-flex-order: 1;
         order: 1;
@@ -1308,11 +1318,7 @@ object {
       .site-footer .social-links {
         border-left: 2px solid #00277E;
         border-right: 2px solid #00277E;
-        min-width: 33%;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+        min-width: 33%; }
         .site-footer .social-links h4.hidden-mobile {
           width: 100%; }
         .site-footer .social-links .social-links-container {
