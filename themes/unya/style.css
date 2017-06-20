@@ -947,16 +947,10 @@ object {
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
   background-size: cover;
   background-position: center; }
-  @media (min-width: 600px) {
-    .impact-polygon {
-      height: 550px; } }
 
 .rectangle-container {
   background-size: cover;
   background-position: center; }
-  @media (min-width: 600px) {
-    .rectangle-container {
-      height: 550px; } }
 
 .mission {
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
