@@ -37,23 +37,24 @@
     order: 1;
     width: 100%;
     text-align: center;
+    button.hidden-desktop, .sign-up-btn {
+      width:230px;
+      height:50px;
+      margin:15px 0px;
+        h4{
+        font-family:$font__heading;
+        font-weight:normal;
+        font-size: 1rem;
+        margin:0;
+        }
+       }// button to close subscription form
     @include desktop{
       text-align:left;
       display: flex;
       justify-content: flex-start;
       flex-direction: row;
       flex-wrap:wrap;
-      button.hidden-desktop, .sign-up-btn {
-      width:200px;
-      height:20%;
-      margin-top:13px;
-        h4{
-        font-family:$font__main;
-        font-weight:normal;
-        font-size: 1rem;
-        margin:0;
-        }
-       }// button to close subscription form
+
     .close-form {
       background-color: #FFF;
       color: $color__blue-dark;
@@ -71,12 +72,11 @@
     order: 3;
     display: flex;
     justify-content:center;
-    text-align: left;
     a{
       color:#FFF;
-      padding: 1rem;
+      padding: 1.2rem;
       color:#FFF;
-      font-size:3rem;
+      font-size:3.5rem;
     }
     @include desktop{
     border-left: 2px solid $color__blue-dark;
@@ -84,6 +84,7 @@
     min-width:33%;
     display: flex;
     flex-wrap:wrap;
+    text-align: left;
       h4.hidden-mobile{
         width:100%;
         margin:0;
