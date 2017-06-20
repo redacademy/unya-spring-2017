@@ -941,59 +941,27 @@ object {
   height: 350px; }
 
 .impact-polygon {
-  height: 350px;
-  width: 100%;
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
   background-size: cover;
   background-attachment: bottom; }
-  .impact-polygon p {
-    text-align: right;
-    width: 70%;
-    margin: 175px 20%;
-    color: white; }
 
 .rectangle-container {
-  height: 350px;
-  width: 100%;
   background-size: cover;
   background-attachment: bottom; }
-  .rectangle-container p {
-    width: 70%;
-    margin: 175px 10%;
-    color: white; }
 
 .mission {
-  height: 350px;
-  width: 100%;
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
   background-size: cover;
   background-attachment: bottom; }
-  .mission p {
-    width: 80%;
-    color: white;
-    margin: 70px auto; }
 
 .donation-registration {
-  height: 350px;
-  width: 100%;
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
   background-size: cover;
   background-attachment: bottom; }
-  .donation-registration p {
-    width: 80%;
-    color: white;
-    margin: 70px 0%; }
 
 .nyc-banner {
-  height: 325px;
-  width: 100%;
   background-size: cover;
   background-attachment: bottom; }
-  .nyc-banner p {
-    text-align: right;
-    width: 80%;
-    margin: 30px 15%;
-    color: white; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -1014,7 +982,12 @@ object {
   color: #2C2C2C; }
 
 .page-id-37 .mission {
+  height: 350px;
+  width: 100%;
   color: #FFF; }
+  .page-id-37 .mission p {
+    width: 80%;
+    margin: 70px auto; }
 
 .page-id-37 ul {
   margin: 0;
@@ -1060,7 +1033,24 @@ object {
     margin: 175px 20%;
     color: white; }
 
+.rectangle-container {
+  height: 350px;
+  width: 100%; }
+  .rectangle-container p {
+    width: 70%;
+    margin: 175px 10%;
+    color: white; }
+
 /* Native Youth Centre */
+.page-id-76 .nyc-banner {
+  height: 325px;
+  width: 100%; }
+  .page-id-76 .nyc-banner p {
+    text-align: right;
+    width: 80%;
+    margin: 30px 15%;
+    color: white; }
+
 .page-id-76 .planning ul {
   margin: 0;
   padding: 0;
@@ -1085,10 +1075,7 @@ object {
 /* Get Involved page */
 .donation-registration {
   height: 350px;
-  width: 100%;
-  -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
-  background-size: cover;
-  background-attachment: bottom; }
+  width: 100%; }
   .donation-registration p {
     width: 250px;
     margin: 175px auto;
