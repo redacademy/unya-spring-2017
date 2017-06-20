@@ -10,9 +10,34 @@
     height: 25rem;
     width: 100%;
     background-size: cover;
-    background-attachment: bottom;
+    background-position: center;
+    h1{
+      padding-top:250px;
+      margin-bottom:0;
+    }
   }
 }
+
+.header-wrapper-nyc{
+  height: 4.2142857143rem;
+  background-image: none;
+  @include desktop {
+    height: 25rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    h1{
+      padding-top:200px;
+      margin-bottom:0;
+    }
+    p{
+      color:white;
+      margin-top:0;
+      font-size:30px;
+    }
+  }
+}
+
 
 /* About page */
 .page-id-37 {

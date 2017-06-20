@@ -105,11 +105,14 @@ object {
 
 
 .about, .nyc, .programs{
-  	background-attachment: center;
-		background-size: cover;
-		background-repeat:no-repeat;
-		height:350px;
-	}
+  background-position: center;
+	background-size: cover;
+	background-repeat:no-repeat;
+	height:350px;
+@include desktop{
+	height:700px;
+	 }
+}
 
 .impact-polygon{
   -webkit-clip-path: polygon( 0% 100%, 100% 100%, 100% 0%, 0 25%);

@@ -935,10 +935,13 @@ object {
   border-radius: 10%; }
 
 .about, .nyc, .programs {
-  background-attachment: center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 350px; }
+  @media (min-width: 600px) {
+    .about, .nyc, .programs {
+      height: 700px; } }
 
 .impact-polygon {
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
@@ -976,7 +979,27 @@ object {
       height: 25rem;
       width: 100%;
       background-size: cover;
-      background-attachment: bottom; } }
+      background-position: center; }
+      .header-wrapper h1, .page-header h1 {
+        padding-top: 250px;
+        margin-bottom: 0; } }
+
+.header-wrapper-nyc {
+  height: 4.2142857143rem;
+  background-image: none; }
+  @media (min-width: 600px) {
+    .header-wrapper-nyc {
+      height: 25rem;
+      width: 100%;
+      background-size: cover;
+      background-position: center; }
+      .header-wrapper-nyc h1 {
+        padding-top: 200px;
+        margin-bottom: 0; }
+      .header-wrapper-nyc p {
+        color: white;
+        margin-top: 0;
+        font-size: 30px; } }
 
 /* About page */
 .page-id-37 .vision h3 {

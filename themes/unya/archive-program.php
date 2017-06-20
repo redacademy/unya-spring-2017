@@ -11,7 +11,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<div class="program-header programs-title">
+			<div class="program-header programs-title page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
@@ -20,7 +20,7 @@ get_header(); ?>
 
 			<section id="calendar">
 				<h2>Calendar</h2>
-				<?php echo do_shortcode('[calendar id="250"]'); ?>
+				<?php echo do_shortcode("[calendar id='250']"); ?>
 			</section>
 
 			<?php get_template_part( 'template-parts/program', 'content' ); ?>
