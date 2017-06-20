@@ -30,11 +30,13 @@ function change_programs_archive_slug ( $args, $post_type ) {
 }
 add_filter( 'register_post_type_args', 'change_programs_archive_slug', 10, 2 );
 
-// Change the title of the Programs Archive page
+// Change the title of the Programs archive and News archive page
 add_filter( 'get_the_archive_title', function ( $title ) {
     if( is_post_type_archive('program') ) {
     	$title = 'Programs for Youth';
-		} 
+	} elseif (  is_post_type_archive('news') ) {
+        $title = 'UNYA in the News';
+    }
 		return $title;
 });
 
