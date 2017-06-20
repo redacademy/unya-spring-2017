@@ -1318,7 +1318,11 @@ object {
       .site-footer .social-links {
         border-left: 2px solid #00277E;
         border-right: 2px solid #00277E;
-        min-width: 33%; }
+        min-width: 33%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
         .site-footer .social-links h4.hidden-mobile {
           width: 100%; }
         .site-footer .social-links .social-links-container {

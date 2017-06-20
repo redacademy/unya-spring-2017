@@ -1,7 +1,6 @@
 .site-footer {
   min-width:320px;
   min-height:210px;
-
   .footer-container {
     position: relative;
     display: flex;
@@ -85,8 +84,8 @@
     border-left: 2px solid $color__blue-dark;
     border-right:2px solid $color__blue-dark;
     min-width:33%;
-    // display: flex;
-    // flex-wrap:wrap;
+    display: flex;
+    flex-wrap:wrap;
       h4.hidden-mobile{
         width:100%;
       }
