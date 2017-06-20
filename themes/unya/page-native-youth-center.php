@@ -50,7 +50,7 @@ get_header(); ?>
 							<?php endforeach; ?> 	
 						</ul>	
 					</div>
-					<?php echo $GLOBALS['wp_embed']->autoembed(esc_html(CFS()->get('featured_video'))) ?>
+					<div><?php echo $GLOBALS['wp_embed']->autoembed(esc_html(CFS()->get('featured_video'))) ?></div>
 				</section>
 				<h2 class="accordion-label hidden-desktop">Partners</h2>
 				<section class="partners" id="partners">

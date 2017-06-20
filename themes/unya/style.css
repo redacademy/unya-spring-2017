@@ -595,9 +595,11 @@ a {
       .main-navigation ul ul ul {
         left: -999rem;
         top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
+      .main-navigation ul ul li {
+        background: #fff; }
+        .main-navigation ul ul li:hover > ul,
+        .main-navigation ul ul li.focus > ul {
+          left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
     .main-navigation ul li:hover > ul,
@@ -679,8 +681,12 @@ a {
 
 .site-header.expanded {
   background: #4263AB;
+  position: absolute;
+  left: 0;
+  right: 0;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  height: 70vh; }
   .site-header.expanded .site-branding {
     background: url("../../assets/images/Logo-White.png") no-repeat center;
     background-size: contain; }
@@ -688,7 +694,8 @@ a {
     display: block;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    background: #fff; }
+    background: #fff;
+    height: 80%; }
     .site-header.expanded .main-navigation .menu-primary-menu-container .menu {
       display: -ms-flexbox;
       display: flex;
@@ -696,9 +703,23 @@ a {
           flex-direction: column;
       -ms-flex-align: center;
           align-items: center; }
+      .site-header.expanded .main-navigation .menu-primary-menu-container .menu li {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center; }
+      .site-header.expanded .main-navigation .menu-primary-menu-container .menu li:hover > ul {
+        display: block; }
   .site-header.expanded #main-nav-toggle {
     background: url("../../assets/images/menu-close.svg") no-repeat center;
     background-size: contain; }
+
+.site-footer.expanded {
+  position: absolute;
+  height: 30vh;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 #main-nav-toggle {
   display: block;

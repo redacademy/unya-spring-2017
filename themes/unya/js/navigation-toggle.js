@@ -14,12 +14,17 @@
           heightStyle: 'content',
           icons: { 'header': 'ui-icon-caret-1-s', 'activeHeader': 'ui-icon-caret-1-n' }
         });
-
       }
     });
     $('.menu-toggle').on('click', function(event) {
       event.preventDefault();
       $('.site-header').toggleClass('expanded');
-    })
-  });
+      $('.site-footer').toggleClass('expanded');
+      })
+    });
+    $('.menu-item-has-children a').on('click', function(event) {
+      event.preventDefault();
+    });
+    
+
 })(jQuery);
