@@ -90,11 +90,11 @@ object {
 
 
 .success-image{
-	width:165px;
-	height: 165px;
+	width:40vw;
+	height:40vw;
 	border-radius: 50%;
 	@include desktop{
-		border-radius:0%;
+		border-radius:50%;
 		height:250px;
 		width:250px;
 	}
@@ -117,27 +117,36 @@ object {
 .impact-polygon{
   -webkit-clip-path: polygon( 0% 100%, 100% 100%, 100% 0%, 0 25%);
 	background-size: cover;
-	background-attachment: bottom;
+	background-position: center;
 }
 
 .rectangle-container{
 	background-size: cover;
-	background-attachment: bottom;
+	background-position: center;
 }
 
 .mission {
   -webkit-clip-path: polygon( 0% 100%, 100% 100%, 100% 0%, 0 25%);
 	background-size: cover;
-	background-attachment: bottom;
+	background-position: center;
 }
 
 .donation-registration{	
   -webkit-clip-path: polygon( 0% 100%, 100% 100%, 100% 0%, 0 25%);
 	background-size: cover;
-	background-attachment: bottom;
+	background-position: center;
 }
 
 .nyc-banner {
 	background-size: cover;
-	background-attachment: bottom;
+	background-position: center;
+}
+
+.single-story{
+	display:flex;
+  flex-flow: row nowrap;
+}
+
+.success-content{
+	width:60%;
 }
