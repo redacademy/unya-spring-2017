@@ -981,6 +981,7 @@ object {
       background-size: cover;
       background-position: center; }
       .header-wrapper h1, .page-header h1 {
+        padding-left: 50px;
         padding-top: 250px;
         margin-bottom: 0; } }
 
@@ -994,9 +995,11 @@ object {
       background-size: cover;
       background-position: center; }
       .header-wrapper-nyc h1 {
+        padding-left: 50px;
         padding-top: 200px;
         margin-bottom: 0; }
       .header-wrapper-nyc p {
+        padding-left: 50px;
         color: white;
         margin-top: 0;
         font-size: 30px; } }

@@ -67,47 +67,38 @@ function hero_banners() {
 	background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
     url('$first');
 }
-
 .nyc{	
 	background-image: linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
     url('$second');
 }
-
 .programs{
 	background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url('$third');
 }
-
 .impact-polygon{ 
     background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
     url('$impactpolygon');
 }
-
 .rectangle-container{
     background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
     url('$rectangle');
 }
-
 .nyc-banner{ 
     background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
     url('$nativeyouthcenterbanner');
 }
-
 .mission{
     background-image: linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url('$aboutrectangle');
 }
-
 .donation-registration{
     background-image: linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
     url('$getinvolvedpolygon');
 }
-	
-
 .about-title{
     background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url('$abouttitle');
-    }  
+}  
 .impact-title{
     background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url('$impacttitle');
@@ -116,17 +107,14 @@ function hero_banners() {
     background-image:  linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
     url('$nyctitle');
 } 
-
 .get-involved-title{
     background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url('$getinvolvedtitle');
 }
-
 .programs-title{
     background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url('$programtitle');
-}
-    
+}  
  .news-title{
     background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url('$newstitle');
