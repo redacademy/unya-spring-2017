@@ -1275,13 +1275,14 @@ object {
     -ms-flex-direction: column;
         flex-direction: column;
     padding: 1.14rem 0rem;
-    text-align: center;
-    margin: 0 10%; }
+    width: 100%;
+    text-align: center; }
     @media (min-width: 600px) {
       .site-footer .footer-container {
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-        background-color: #fff; }
+        background-color: #fff;
+        margin: 0 10%; }
         .site-footer .footer-container h4 {
           color: #00277E;
           font-family: "worksans", sans-serif;
@@ -1364,13 +1365,6 @@ object {
   .site-footer .contact-us {
     -ms-flex-order: 2;
         order: 2;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    text-align: left;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     .site-footer .contact-us p {
@@ -1384,7 +1378,14 @@ object {
     @media (min-width: 600px) {
       .site-footer .contact-us {
         -ms-flex-order: 3;
-            order: 3; }
+            order: 3;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        text-align: left;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
         .site-footer .contact-us h4.hidden-mobile {
           width: 100%;
           margin: 0; }
