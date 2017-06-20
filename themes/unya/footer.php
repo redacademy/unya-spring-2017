@@ -28,10 +28,14 @@
 						</div>
 						<div class="contact-us footer-flex">
 							<h4 class="hidden-mobile">Contact Us</h4>
-							<p class="hidden-mobile">Urban Native Youth Association</p>
-							<p>1630 Hastings Street East</p>
-							<p>604-254-7732</p>
-							<a href="mailto:info@unya.bc.ca"><p>info@unya.bc.ca</p></a>
+							<div class="contact-details">
+								<p class="hidden-mobile">Urban Native Youth Association</p>
+								<p>1630 Hastings Street East</p>
+							</div>
+							<div class="contact-details">
+								<p>604-254-7732</p>
+								<a href="mailto:info@unya.bc.ca"><p>info@unya.bc.ca</p></a>
+							</div>
 						</div>
 				</div>
 

@@ -11,12 +11,8 @@
     color: #FFF;
     flex-direction: column;
     padding: 1.14rem 0rem;
+    text-align:center;
 
-    .footer-flex{
-      flex:1 1 auto;
-      width:480px;
-      align-items:center;
-    }
     @include desktop {
       flex-flow: row nowrap;
       background-color:$color__background-body;
@@ -25,6 +21,11 @@
         font-family:$font__main;
         font-weight: normal;
       }
+      .footer-flex{
+      flex:1 1 auto;
+      width:480px;
+      align-items:center;
+    }
     }
     .sign-up-btn {
       text-transform: uppercase;
@@ -70,9 +71,11 @@
       }
     }
   }
+//section 2 of footer
   .social-links {
     order: 3;
     display: flex;
+    justify-content:center;
     a{
       color:#FFF;
       padding: 1rem;
@@ -101,11 +104,11 @@
       }
     }
   }
+  //Section 3 of footer
   .contact-us {
     order: 2;
     display: flex;
     flex-direction: column;
-    text-align:center;
     p{
       color:#FFF;
       padding: 0;
@@ -115,16 +118,22 @@
       font-weight: normal;
       font-size:$heading__h4;
       }
-    @include desktop {
+      @include desktop {
       order: 3;
       h4.hidden-mobile{
       width:100%;
       margin:0;
-      p{
-      order: 3;
-      color:black;
       }
+      .contact-details{
+        width:100%;
+        padding: 1rem 0;
+        text-align: left;
+        a, p{
+        order: 3;
+        color:black;
+        } //closing p
+      } //closing include desktop
+    } // closing contact us
     }
   }
-  }
-}
+

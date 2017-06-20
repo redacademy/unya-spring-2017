@@ -1248,13 +1248,8 @@ object {
     color: #FFF;
     -ms-flex-direction: column;
         flex-direction: column;
-    padding: 1.14rem 0rem; }
-    .site-footer .footer-container .footer-flex {
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-      width: 480px;
-      -ms-flex-align: center;
-          align-items: center; }
+    padding: 1.14rem 0rem;
+    text-align: center; }
     @media (min-width: 600px) {
       .site-footer .footer-container {
         -ms-flex-flow: row nowrap;
@@ -1263,7 +1258,13 @@ object {
         .site-footer .footer-container h4 {
           color: #00277E;
           font-family: "worksans", sans-serif;
-          font-weight: normal; } }
+          font-weight: normal; }
+        .site-footer .footer-container .footer-flex {
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto;
+          width: 480px;
+          -ms-flex-align: center;
+              align-items: center; } }
     .site-footer .footer-container .sign-up-btn {
       text-transform: uppercase; }
   .site-footer .wpcf7-form-control {
@@ -1300,7 +1301,9 @@ object {
     -ms-flex-order: 3;
         order: 3;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
     .site-footer .social-links a {
       color: #FFF;
       padding: 1rem;
@@ -1335,8 +1338,7 @@ object {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
-        flex-direction: column;
-    text-align: center; }
+        flex-direction: column; }
     .site-footer .contact-us p {
       color: #FFF;
       padding: 0;
@@ -1352,7 +1354,11 @@ object {
         .site-footer .contact-us h4.hidden-mobile {
           width: 100%;
           margin: 0; }
-          .site-footer .contact-us h4.hidden-mobile p {
+        .site-footer .contact-us .contact-details {
+          width: 100%;
+          padding: 1rem 0;
+          text-align: left; }
+          .site-footer .contact-us .contact-details a, .site-footer .contact-us .contact-details p {
             -ms-flex-order: 3;
                 order: 3;
             color: black; } }
