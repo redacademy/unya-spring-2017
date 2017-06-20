@@ -20,7 +20,7 @@ get_header(); ?>
 			
 			</div>
 			<div class="accordion" id="accordion">
-				<h2 class="accordion-label">Vision</h2>
+				<h2 class="accordion-label hidden-desktop">Vision</h2>
 				<section class="vision" id="vision">
 					<header class="section-heading">
 						<h2>Vision</h2>
@@ -29,7 +29,7 @@ get_header(); ?>
 						<p><?php echo esc_html( CFS()->get( 'vision' ) ); ?></p>
 					</div>
 				</section>
-				<h2 class="accordion-label">Planning</h2>
+				<h2 class="accordion-label hidden-desktop">Planning</h2>
 				<section class="planning" id="planning">
 					<header class="section-heading">
 						<h2 class="content-wrapper">Planning and Development</h2>
@@ -51,7 +51,7 @@ get_header(); ?>
 						</ul>	
 					</div>
 				</section>
-				<h2 class="accordion-label">Partners</h2>
+				<h2 class="accordion-label hidden-desktop">Partners</h2>
 				<section class="partners" id="partners">
 					<header class="section-heading">
 						<h2 class="content-wrapper">Partners</h2>
@@ -67,7 +67,7 @@ get_header(); ?>
 						</ul>	
 					</div>
 				</section>
-				<h2 class="accordion-label">How to Help</h2>
+				<h2 class="accordion-label hidden-desktop">How to Help</h2>
 				<section class="ways-to-help" id="ways-to-help">
 					<div class="section-heading">
 						<h2>Ways to Help</h2>

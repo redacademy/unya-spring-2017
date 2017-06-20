@@ -5,7 +5,7 @@
 					<p>Click on any program to learn more</p>
 				</header>
 				<div class="accordion" id="accordion">
-					<h2 class="accordion-label">Education &amp; Training</h2>
+					<h2 class="accordion-label hidden-desktop">Education &amp; Training</h2>
 					<div>
 						<div class="section-heading">
 							<h3 class="content-wrapper" id="education">Education &amp; Training</h3>
@@ -31,7 +31,7 @@
 							<?php endforeach; ?>
 						</ul>
 					</div>
-					<h2 class="accordion-label">Personal Support</h2>
+					<h2 class="accordion-label hidden-desktop">Personal Support</h2>
 					<div>
 						<div class="section-heading">
 							<h3 class="content-wrapper" id="personal">Personal Support</h3>
@@ -57,7 +57,7 @@
 							<?php endforeach; ?>
 						</ul>
 					</div>
-					<h2 class="accordion-label">Live-In Programs</h2>
+					<h2 class="accordion-label hidden-desktop">Live-In Programs</h2>
 					<div>
 						<div class="section-heading">
 							<h3 class="content-wrapper" id="live-in">Live-In Program</h3>
@@ -83,7 +83,7 @@
 							<?php endforeach; ?>
 						</ul>
 					</div>
-					<h2 class="accordion-label">Sports and Recreation</h2>
+					<h2 class="accordion-label hidden-desktop">Sports and Recreation</h2>
 					<div>
 						<div class="section-heading">
 							<h3 class="content-wrapper" id="sports">Sports and Recreation</h3>

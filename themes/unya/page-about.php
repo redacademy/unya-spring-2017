@@ -19,7 +19,7 @@ get_header(); ?>
 			<h1>About UNYA</h1>
 		</div>
 		<div class="accordion" id="accordion">
-			<h2 class="accordion-label">Vision &amp; Mission</h2>
+			<h2 class="accordion-label hidden-desktop">Vision &amp; Mission</h2>
 			<div>			
 					<header class="section-heading">
 						<h2>Vision &amp; Mission</h2>
@@ -37,7 +37,7 @@ get_header(); ?>
 					</div>
 				</section>
 			</div>
-			<h2 class="accordion-label">History</h2>
+			<h2 class="accordion-label hidden-desktop">History</h2>
 			<section class="brief-history" id="brief-history">
 				<header class="section-heading">
 					<h2>History</h2>
@@ -47,7 +47,7 @@ get_header(); ?>
 					<p><?php echo esc_html( CFS()->get( 'brief_history' ) ); ?></p>
 				</div>
 			</section>
-			<h2 class="accordion-label">Leadership</h2>
+			<h2 class="accordion-label hidden-desktop">Leadership</h2>
 			<section class="leadership" id="leadership">
 				<header class="section-heading hidden-mobile">
 					<h2 class="hidden-mobile">Leadership</h2>
@@ -73,7 +73,7 @@ get_header(); ?>
 					
 				</div>
 			</section>
-			<h2 class="accordion-label">Reports</h2>
+			<h2 class="accordion-label hidden-desktop">Reports</h2>
 			<section class="reports" id="reports">
 					<header class="section-heading">
 						<h2>Reports</h2>
@@ -94,7 +94,7 @@ get_header(); ?>
 					</ul>
 				</div>
 			</section>
-			<h2 class="accordion-label">Find Us</h2>
+			<h2 class="accordion-label hidden-desktop">Find Us</h2>
 			<section>
 					<header class="section-heading">
 						<h2>Find Us</h2>
