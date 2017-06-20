@@ -112,65 +112,29 @@ object {
 	}
 
 .impact-polygon{
-  height:350px;
-  width:100%;
   -webkit-clip-path: polygon( 0% 100%, 100% 100%, 100% 0%, 0 25%);
 	background-size: cover;
 	background-attachment: bottom;
-p{
-	  text-align:right;
-		width:70%;
-		margin: 175px 20%;
-		color:white;
-	}
 }
 
 .rectangle-container{
-  height:350px;
-  width:100%;
 	background-size: cover;
 	background-attachment: bottom;
-p{
-		width:70%;
-		margin: 175px 10%;
-		color:white;
-	}
 }
 
-
-.mission{	
-  height:350px;
-  width:100%;
+.mission {
   -webkit-clip-path: polygon( 0% 100%, 100% 100%, 100% 0%, 0 25%);
 	background-size: cover;
 	background-attachment: bottom;
-p{
-		width:80%;
-		color:white;
-		margin: 70px auto;
-	}
 }
+
 .donation-registration{	
-  height:350px;
-  width:100%;
   -webkit-clip-path: polygon( 0% 100%, 100% 100%, 100% 0%, 0 25%);
 	background-size: cover;
 	background-attachment: bottom;
-p{
-		width:80%;
-		color:white;
-		margin: 70px 0%;
-	}
 }
-.nyc-banner{
-  height:325px;
-  width:100%;
+
+.nyc-banner {
 	background-size: cover;
 	background-attachment: bottom;
-p{
-		text-align: right;
-		width:80%;
-		margin: 30px 15%;
-		color:white;
-	}
 }
