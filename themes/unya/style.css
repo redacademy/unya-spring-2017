@@ -969,13 +969,14 @@ object {
 
 /* All pages */
 .header-wrapper, .page-header {
-  height: 4.2142857143rem; }
+  height: 4.2142857143rem;
+  background-image: none; }
   @media (min-width: 600px) {
     .header-wrapper, .page-header {
       height: 25rem;
       width: 100%;
       background-size: cover;
-      background-attachment: center; } }
+      background-attachment: bottom; } }
 
 /* About page */
 .page-id-37 .vision h3 {
