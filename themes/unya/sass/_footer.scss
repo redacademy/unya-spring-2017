@@ -70,7 +70,6 @@
       }
     }
   }
-
   .social-links {
     order: 3;
     display: flex;
@@ -88,6 +87,7 @@
     flex-wrap:wrap;
       h4.hidden-mobile{
         width:100%;
+        margin:0;
       }
       .social-links-container{
         display: flex;
@@ -106,11 +106,6 @@
     display: flex;
     flex-direction: column;
     text-align:center;
-    padding:1rem 0rem;
-    @include desktop {
-    order: 3;
-    min-width:33%;
-      }
     p{
       color:#FFF;
       padding: 0;
@@ -119,10 +114,17 @@
       font-style: normal;
       font-weight: normal;
       font-size:$heading__h4;
-      @include desktop {
+      }
+    @include desktop {
+      order: 3;
+      h4.hidden-mobile{
+      width:100%;
+      margin:0;
+      p{
       order: 3;
       color:black;
       }
     }
+  }
   }
 }

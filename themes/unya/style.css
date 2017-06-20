@@ -1000,7 +1000,6 @@ object {
 --------------------------------------------------------------
 
 /* All pages */
-<<<<<<< HEAD
 .header-wrapper, .page-header {
   height: 4.2142857143rem; }
   @media (min-width: 600px) {
@@ -1009,11 +1008,6 @@ object {
       width: 100%;
       background-size: cover;
       background-attachment: center; } }
-=======
-@media (min-width: 600px) {
-  .header-wrapper, .page-header {
-    height: 25rem; } }
->>>>>>> c72fb02c467f6267dd7e48cae14dd4be91279182
 
 /* About page */
 .page-id-37 .vision h3 {
@@ -1055,6 +1049,16 @@ object {
     color: #2C2C2C;
     font-size: 1.1428571429rem;
     font-weight: bold; }
+
+/* Impact page */
+.impact-polygon {
+  height: 350px;
+  width: 100%; }
+  .impact-polygon p {
+    text-align: right;
+    width: 70%;
+    margin: 175px 20%;
+    color: white; }
 
 /* Native Youth Centre */
 .page-id-76 .planning ul {
@@ -1324,7 +1328,8 @@ object {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
         .site-footer .social-links h4.hidden-mobile {
-          width: 100%; }
+          width: 100%;
+          margin: 0; }
         .site-footer .social-links .social-links-container {
           display: -ms-flexbox;
           display: flex;
@@ -1343,13 +1348,7 @@ object {
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    text-align: center;
-    padding: 1rem 0rem; }
-    @media (min-width: 600px) {
-      .site-footer .contact-us {
-        -ms-flex-order: 3;
-            order: 3;
-        min-width: 33%; } }
+    text-align: center; }
     .site-footer .contact-us p {
       color: #FFF;
       padding: 0;
@@ -1358,8 +1357,14 @@ object {
       font-style: normal;
       font-weight: normal;
       font-size: 0.85714rem; }
-      @media (min-width: 600px) {
-        .site-footer .contact-us p {
-          -ms-flex-order: 3;
-              order: 3;
-          color: black; } }
+    @media (min-width: 600px) {
+      .site-footer .contact-us {
+        -ms-flex-order: 3;
+            order: 3; }
+        .site-footer .contact-us h4.hidden-mobile {
+          width: 100%;
+          margin: 0; }
+          .site-footer .contact-us h4.hidden-mobile p {
+            -ms-flex-order: 3;
+                order: 3;
+            color: black; } }
