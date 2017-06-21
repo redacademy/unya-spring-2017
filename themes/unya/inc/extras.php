@@ -126,6 +126,33 @@ function hero_banners() {
 }
 add_action( 'wp_enqueue_scripts', 'hero_banners' );
 
+
+//Custom Login Logo//
+
+function unya_login() {
+     echo '<style type="text/css">                                                                   
+        #login h1 a { background:url('.get_stylesheet_directory_uri().'/assets/images/RED_UNYA_UI_LogoDesign_Assets_V1-1.png) no-repeat;
+				background-size:100% auto; height:90px; width:320px;                          
+     </style>';
+}
+add_action('login_head', 'unya_login');
+function unya_login_logo_url( $url ){
+	return home_url();
+}
+add_filter('login_headerurl', 'unya_login_logo_url');
+function unya_login_title(){
+	return 'UNYA';
+}
+add_filter('login_headertitle', 'unya_login_title');
+
+
+
+
+
+
+
+
+
 // create list of sub-menu items
 /* Returns all child nav_menu_items under a specific parent
 *
