@@ -159,16 +159,12 @@ object {
   height: 700px;
   overflow: hidden;
   position: relative;
-  z-index:1;
+
   img {
     left: 100%;
     position: absolute;
     top: 100%;
   }
-}
-.carousel-gradient::after{
-	z-index:2;
-	background-image:linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%);
 }
 
 .fancy-carousel__images-wrapper,
