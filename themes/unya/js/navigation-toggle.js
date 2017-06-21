@@ -23,16 +23,19 @@
       })
     });
     $('.menu-gradient').hide();
-    $('.menu-item-has-children > a').on('click', function(event) {
-      event.preventDefault();
-      $(this).parent().addClass('expanded');
-      $('.menu-gradient').show();
-      $(this).blur(function () {
-        $(this).parent().removeClass('expanded');
-        $('.menu-gradient').hide();
-      });
+    if (window.innerWidth <= 600) {
+      $('.menu-item-has-children > a').on('click', function(event) {
+        event.preventDefault();
+        $(this).parent().addClass('expanded');
+        $('.menu-gradient').show();
+        $(this).blur(function () {
+          $(this).parent().removeClass('expanded');
+          $('.menu-gradient').hide();
+        });
 
-    });
+      });
+    }
+    
     
 
 })(jQuery);
