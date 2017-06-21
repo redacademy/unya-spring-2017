@@ -1386,7 +1386,7 @@ object {
 
 .site-footer {
   min-width: 320px;
-  min-height: 210px; }
+  max-height: 210px; }
   .site-footer .footer-container {
     position: relative;
     display: -ms-flexbox;
@@ -1407,17 +1407,21 @@ object {
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
         background-color: #fff;
-        margin: 0 10%; }
+        margin: 0;
+        padding: 0 85px; }
         .site-footer .footer-container h4 {
           color: #00277E;
           font-family: "worksans", sans-serif;
-          font-weight: normal; }
+          font-weight: normal;
+          margin: 0; }
         .site-footer .footer-container .footer-flex {
           -ms-flex: 1 1 auto;
               flex: 1 1 auto;
           width: 480px;
           -ms-flex-align: center;
-              align-items: center; } }
+              align-items: center;
+          padding: 0 30px;
+          margin: 0; } }
     .site-footer .footer-container .sign-up-btn {
       text-transform: uppercase; }
   .site-footer .newsletter-sign-up {
@@ -1434,106 +1438,140 @@ object {
         font-weight: normal;
         font-size: 1rem;
         margin: 0; }
-    .site-footer .newsletter-sign-up .subscription-form {
-      position: relative; }
-      @media (min-width: 600px) {
-        .site-footer .newsletter-sign-up .subscription-form {
-          position: static; } }
-      .site-footer .newsletter-sign-up .subscription-form .close-form {
-        background-color: #fff;
-        color: #00277E;
-        text-align: right;
-        position: absolute;
-        top: 0;
-        right: 0; }
-        @media (min-width: 600px) {
-          .site-footer .newsletter-sign-up .subscription-form .close-form {
-            visibility: hidden; } }
-        .site-footer .newsletter-sign-up .subscription-form .close-form .fa-times {
-          padding-right: 1rem;
-          color: #00277E; }
     @media (min-width: 600px) {
       .site-footer .newsletter-sign-up {
-        text-align: left;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-        -ms-flex-direction: row;
-            flex-direction: row;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; } }
-  .site-footer .social-links {
-    -ms-flex-order: 3;
-        order: 3;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center; }
-    .site-footer .social-links a {
-      color: #FFF;
-      padding: 1.2rem;
-      color: #FFF;
-      font-size: 3.5rem; }
-    @media (min-width: 600px) {
-      .site-footer .social-links {
-        border-left: 2px solid #00277E;
-        border-right: 2px solid #00277E;
-        min-width: 33%;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
         text-align: left; }
-        .site-footer .social-links h4.hidden-mobile {
-          width: 100%;
+        .site-footer .newsletter-sign-up .wpcf7-list-item {
           margin: 0; }
-        .site-footer .social-links .social-links-container {
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: center;
-              justify-content: center;
-          width: 100%; }
-        .site-footer .social-links a {
-          font-size: 4rem;
-          color: #00277E;
-          -ms-flex-order: 2;
-              order: 2; } }
-  .site-footer .contact-us {
-    -ms-flex-order: 2;
-        order: 2;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .site-footer .contact-us p {
-      color: #FFF;
-      padding: 0;
-      margin: 0;
-      font-family: "worksans", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 0.85714rem; }
+        .site-footer .newsletter-sign-up .wpcf7-form {
+          -ms-flex-align: left;
+              align-items: left;
+          width: 300px; }
+          .site-footer .newsletter-sign-up .wpcf7-form p {
+            width: 100%; }
+        .site-footer .newsletter-sign-up input[type=email] {
+          width: 100%;
+          height: 50px; }
+        .site-footer .newsletter-sign-up ::-webkit-input-placeholder {
+          padding-left: 30px; }
+        .site-footer .newsletter-sign-up :-ms-input-placeholder {
+          padding-left: 30px; }
+        .site-footer .newsletter-sign-up ::placeholder {
+          padding-left: 30px; } }
+    .site-footer .newsletter-sign-up input[type=checkbox] {
+      transform: scale(2, 2);
+      width: 20px; }
+    .site-footer .newsletter-sign-up input[type=submit] {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      width: 120px;
+      height: 40px;
+      text-transform: uppercase; }
+  .site-footer .subscription-form {
+    position: relative; }
     @media (min-width: 600px) {
-      .site-footer .contact-us {
-        -ms-flex-order: 3;
-            order: 3;
+      .site-footer .subscription-form {
+        position: static; } }
+    .site-footer .subscription-form .close-form {
+      background-color: #fff;
+      color: #00277E;
+      text-align: right;
+      position: absolute;
+      top: 0;
+      right: 0; }
+      @media (min-width: 600px) {
+        .site-footer .subscription-form .close-form {
+          visibility: hidden; } }
+      .site-footer .subscription-form .close-form .fa-times {
+        padding-right: 1rem;
+        color: #00277E; }
+  @media (min-width: 600px) {
+    .site-footer {
+      text-align: left;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+
+.social-links {
+  -ms-flex-order: 3;
+      order: 3;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .social-links a {
+    color: #FFF;
+    padding: 1.2rem;
+    color: #FFF;
+    font-size: 3.5rem; }
+  @media (min-width: 600px) {
+    .social-links {
+      border-left: 2px solid #00277E;
+      border-right: 2px solid #00277E;
+      min-width: 33%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      text-align: left;
+      -ms-flex-align: center;
+          align-items: center; }
+      .social-links h4.hidden-mobile {
+        width: 100%;
+        margin: 0; }
+      .social-links .social-links-container {
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-direction: column;
-            flex-direction: column;
-        text-align: left;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
-        .site-footer .contact-us h4.hidden-mobile {
-          width: 100%;
-          margin: 0; }
-        .site-footer .contact-us .contact-details {
-          width: 100%;
-          padding: 1rem 0;
-          text-align: left; }
-          .site-footer .contact-us .contact-details a, .site-footer .contact-us .contact-details p {
-            -ms-flex-order: 3;
-                order: 3;
-            color: black; } }
-  .site-footer input[type=email] {
-    width: 100%;
-    height: 50px; }
+        -ms-flex-pack: center;
+            justify-content: center;
+        height: 100%;
+        width: 100%; }
+      .social-links a {
+        font-size: 4rem;
+        color: #00277E;
+        -ms-flex-order: 2;
+            order: 2;
+        height: 100px; } }
+
+.contact-us {
+  -ms-flex-order: 2;
+      order: 2;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .contact-us p {
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+    font-family: "worksans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.85714rem; }
+  @media (min-width: 600px) {
+    .contact-us {
+      -ms-flex-order: 3;
+          order: 3;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      text-align: left;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+      .contact-us h4.hidden-mobile {
+        width: 100%;
+        margin: 0; }
+      .contact-us .contact-details {
+        width: 100%;
+        padding: 1rem 0;
+        text-align: left; }
+        .contact-us .contact-details a, .contact-us .contact-details p {
+          -ms-flex-order: 3;
+              order: 3;
+          color: black; } }

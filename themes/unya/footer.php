@@ -13,7 +13,7 @@
 							<div class="newsletter-sign-up footer-flex">
 								<h4 class="hidden-mobile">Sign up for our updates!</h4>
 								<button class="hidden-desktop sign-up-btn"><h4>Sign up for updates</h4></button>
-								<div class="subscription-form hidden-mobile">
+							<div class="subscription-form hidden-mobile">
 								<?php echo do_shortcode( '[contact-form-7 id="240" title="Email Subscription"]' ); ?>
 								<div class="close-form hidden-desktop"></div>
 							</div>
