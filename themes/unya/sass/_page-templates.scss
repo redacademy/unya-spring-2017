@@ -67,12 +67,14 @@
 	  }
   }
 
-  ul {
-    margin: 0;
-    padding: 1.8571428571rem 0;
-    list-style: none;
+  .content-area {
+    ul {
+        margin: 0;
+        padding: 1.8571428571rem 0;
+        list-style: none;
+    }
   }
-
+  
   .leader {
     margin: 0.6428571429rem 0;
     display: flex;

@@ -842,11 +842,25 @@ a {
 --------------------------------------------------------------*/
 #secondary .menu-primary-menu-container {
   position: absolute;
-  left: 0;
-  top: 0; }
+  left: 0; }
 
 .fixed-sidebar {
   position: fixed; }
+
+.sidebar-menu-container {
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: white; }
+  .sidebar-menu-container .menu-item a {
+    padding: 0.7142857143rem; }
+    .sidebar-menu-container .menu-item a a {
+      text-decoration: none;
+      text-transform: uppercase; }
 
 .widget {
   margin: 0 0 1.5rem;
@@ -1116,7 +1130,7 @@ object {
     width: 80%;
     margin: 70px auto; }
 
-.page-id-37 ul {
+.page-id-37 .content-area ul {
   margin: 0;
   padding: 1.8571428571rem 0;
   list-style: none; }

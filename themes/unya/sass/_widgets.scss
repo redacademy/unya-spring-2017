@@ -5,11 +5,30 @@
 #secondary .menu-primary-menu-container {
 	position: absolute;
 	left: 0;
-	top: 0;
+	// top: 0;
 }
 
 .fixed-sidebar {
 	position: fixed;
+}
+
+.sidebar-menu-container {
+  padding: 0;
+	display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+	background: white;
+
+	.menu-item a {
+		padding: 0.7142857143rem;
+		
+		a {
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+	}
+
 }
 
 .widget {
