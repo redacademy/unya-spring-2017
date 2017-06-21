@@ -1374,6 +1374,7 @@ footer {
   -ms-flex-direction: column;
       flex-direction: column;
   padding: 0rem;
+  margin: 0;
   width: 100%;
   text-align: center; }
   @media (min-width: 600px) {
@@ -1408,11 +1409,26 @@ footer {
     -ms-flex-order: 1;
         order: 1;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
     footer .newsletter-sign-up button.sign-up-btn {
       width: 230px;
       height: 50px;
       margin: 15px 0px; }
+      footer .newsletter-sign-up button.sign-up-btn h4 {
+        font-size: 1rem;
+        font-family: "poppins", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: uppercase;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        margin: 0; }
     @media (min-width: 600px) {
       footer .newsletter-sign-up {
         text-align: left;
@@ -1481,7 +1497,9 @@ footer {
       -ms-flex-pack: start;
           justify-content: flex-start;
       -ms-flex-direction: row;
-          flex-direction: row; } }
+          flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
 
 .social-links {
   -ms-flex-order: 3;
@@ -1492,7 +1510,7 @@ footer {
       justify-content: center; }
   .social-links a {
     color: #FFF;
-    padding: 1.2rem;
+    padding: 0 1.2rem;
     color: #FFF;
     font-size: 3.5rem; }
   @media (min-width: 600px) {
