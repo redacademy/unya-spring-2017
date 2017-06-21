@@ -38,6 +38,8 @@
   
     $('.current-menu-item .sub-menu .menu-item a').click(function(event) {
       event.preventDefault();
+      $('.site-header').removeClass('expanded');
+      $('.site-footer').removeClass('expanded');
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
