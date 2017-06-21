@@ -154,3 +154,16 @@ object {
 
 //Image Carousel Stuff
 
+.image-carousel{
+	height:700px;
+	
+}
+.image-carousel:nth-child(n){
+	order:2
+}
+.image-carousel:nth-child(2n){
+	order:1
+}
+.image-carousel:nth-child(3n){
+	order:3
+}
