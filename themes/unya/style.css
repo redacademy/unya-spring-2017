@@ -1346,97 +1346,106 @@ object {
   margin: 0;
   padding: 0; }
 
-.site-footer {
+footer {
   min-width: 320px;
-  max-height: 210px; }
-  .site-footer .footer-container {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row nowrap;
-        flex-flow: row nowrap;
-    -ms-flex-line-pack: stretch;
-        align-content: stretch;
-    background: #4263AB;
-    color: #FFF;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    padding: 1.14rem 0rem;
-    width: 100%;
-    text-align: center; }
-    @media (min-width: 600px) {
-      .site-footer .footer-container {
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-        background-color: #fff;
-        margin: 0;
-        padding: 0 85px; }
-        .site-footer .footer-container h4 {
-          color: #00277E;
-          font-family: "worksans", sans-serif;
-          font-weight: normal;
-          margin: 0; }
-        .site-footer .footer-container .footer-flex {
-          -ms-flex: 1 1 auto;
-              flex: 1 1 auto;
-          width: 480px;
-          -ms-flex-align: center;
-              align-items: center;
-          padding: 0 30px;
-          margin: 0; } }
-    .site-footer .footer-container .sign-up-btn {
-      text-transform: uppercase; }
-  .site-footer .newsletter-sign-up {
+  max-height: 300px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  background: #4263AB;
+  color: #FFF;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 0rem;
+  width: 100%;
+  text-align: center; }
+  @media (min-width: 600px) {
+    footer {
+      background-color: #fff;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: 500px; }
+      footer h4 {
+        color: #00277E;
+        font-family: "worksans", sans-serif;
+        font-weight: normal;
+        margin: 0; }
+      footer .footer-flex {
+        padding: 20px;
+        min-width: 400px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-flow: column 1 1;
+            flex-flow: column 1 1;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; }
+        footer .footer-flex.social-links {
+          -ms-flex-pack: stretch;
+              justify-content: stretch;
+          -ms-flex-align: left;
+              align-items: left; } }
+  footer .newsletter-sign-up {
     -ms-flex-order: 1;
         order: 1;
     width: 100%;
     text-align: center; }
-    .site-footer .newsletter-sign-up button.sign-up-btn {
+    footer .newsletter-sign-up button.sign-up-btn {
       width: 230px;
       height: 50px;
       margin: 15px 0px; }
-      .site-footer .newsletter-sign-up button.sign-up-btn h4 {
-        font-family: "poppins", sans-serif;
-        font-weight: normal;
-        font-size: 1rem;
-        margin: 0; }
     @media (min-width: 600px) {
-      .site-footer .newsletter-sign-up {
-        text-align: left; }
-        .site-footer .newsletter-sign-up .wpcf7-list-item {
-          margin: 0; }
-        .site-footer .newsletter-sign-up .wpcf7-form {
-          -ms-flex-align: left;
-              align-items: left;
-          width: 300px; }
-          .site-footer .newsletter-sign-up .wpcf7-form p {
-            width: 100%; }
-        .site-footer .newsletter-sign-up input[type=email] {
-          width: 100%;
-          height: 50px; }
-        .site-footer .newsletter-sign-up ::-webkit-input-placeholder {
-          padding-left: 30px; }
-        .site-footer .newsletter-sign-up :-ms-input-placeholder {
-          padding-left: 30px; }
-        .site-footer .newsletter-sign-up ::placeholder {
-          padding-left: 30px; } }
-    .site-footer .newsletter-sign-up input[type=checkbox] {
-      transform: scale(2, 2);
-      width: 20px; }
-    .site-footer .newsletter-sign-up input[type=submit] {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      width: 120px;
-      height: 40px;
-      text-transform: uppercase; }
-  .site-footer .subscription-form {
-    position: relative; }
-    @media (min-width: 600px) {
-      .site-footer .subscription-form {
-        position: static; } }
-    .site-footer .subscription-form .close-form {
+      footer .newsletter-sign-up {
+        text-align: left;
+        width: 36.3%; }
+        footer .newsletter-sign-up .subscription-form {
+          height: 100%; }
+          footer .newsletter-sign-up .subscription-form .wpcf7-list-item {
+            margin: 0; }
+          footer .newsletter-sign-up .subscription-form .wpcf7-form {
+            -ms-flex-align: left;
+                align-items: left;
+            width: 290px; }
+            footer .newsletter-sign-up .subscription-form .wpcf7-form p {
+              width: 100%;
+              margin: 1rem 0; }
+          footer .newsletter-sign-up .subscription-form input[type=email] {
+            width: 100%;
+            height: 50px;
+            position: relative; }
+          footer .newsletter-sign-up .subscription-form ::-webkit-input-placeholder {
+            padding-left: 50px; }
+          footer .newsletter-sign-up .subscription-form :-ms-input-placeholder {
+            padding-left: 50px; }
+          footer .newsletter-sign-up .subscription-form ::placeholder {
+            padding-left: 50px; }
+          footer .newsletter-sign-up .subscription-form .email-field::after {
+            content: '\f003';
+            font-family: 'FontAwesome';
+            font-size: 18px;
+            position: absolute;
+            top: 0;
+            left: 10px;
+            color: #4263AB; }
+        footer .newsletter-sign-up input[type=checkbox] {
+          transform: scale(2, 2);
+          width: 20px; }
+        footer .newsletter-sign-up input[type=submit] {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          width: 120px;
+          height: 40px;
+          text-transform: uppercase; }
+          footer .newsletter-sign-up input[type=submit] p {
+            margin: 0;
+            padding: 0; } }
+    footer .newsletter-sign-up .close-form {
       background-color: #fff;
       color: #00277E;
       text-align: right;
@@ -1444,22 +1453,20 @@ object {
       top: 0;
       right: 0; }
       @media (min-width: 600px) {
-        .site-footer .subscription-form .close-form {
+        footer .newsletter-sign-up .close-form {
           visibility: hidden; } }
-      .site-footer .subscription-form .close-form .fa-times {
+      footer .newsletter-sign-up .close-form .fa-times {
         padding-right: 1rem;
         color: #00277E; }
   @media (min-width: 600px) {
-    .site-footer {
+    footer {
       text-align: left;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: start;
           justify-content: flex-start;
       -ms-flex-direction: row;
-          flex-direction: row;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; } }
+          flex-direction: row; } }
 
 .social-links {
   -ms-flex-order: 3;
@@ -1476,26 +1483,13 @@ object {
   @media (min-width: 600px) {
     .social-links {
       border-left: 2px solid #00277E;
-      border-right: 2px solid #00277E;
-      min-width: 33%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      text-align: left;
-      -ms-flex-align: center;
-          align-items: center; }
-      .social-links h4.hidden-mobile {
-        width: 100%;
-        margin: 0; }
-      .social-links .social-links-container {
+      border-right: 2px solid #00277E; }
+      .social-links .social-media-links-wrapper {
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-pack: center;
-            justify-content: center;
-        height: 100%;
-        width: 100%; }
+        padding-top: 2rem; }
       .social-links a {
+        display: block;
         font-size: 4rem;
         color: #00277E;
         -ms-flex-order: 2;
@@ -1525,7 +1519,8 @@ object {
           flex-direction: column;
       text-align: left;
       -ms-flex-pack: start;
-          justify-content: flex-start; }
+          justify-content: flex-start;
+      width: 34.3%; }
       .contact-us h4.hidden-mobile {
         width: 100%;
         margin: 0; }
