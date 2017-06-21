@@ -15,10 +15,16 @@ get_header(); ?>
 			</header>
 			<div>
 				<p class="header-subtext">We have a goal of $10 Million. Help us get a little closer today.</p>
-			</div>
-			<div class="image-slider">
-			
-			</div>
+			</div>			
+<div class="carousel-gradient">
+  <section id='fancy-carousel'>
+   <?php $images = CFS()->get( 'nyc_image_slider' ); ?>
+    <?php foreach ( $images as $image ) : ?>
+	  	<img src="<?php echo $image['image']; ?>">
+	  <?php endforeach; ?>
+  </section>
+</div
+			<section class="container">
 			<div class="accordion" id="accordion">
 				<h2 class="accordion-label hidden-desktop">Vision</h2>
 				<section class="vision" id="vision">
