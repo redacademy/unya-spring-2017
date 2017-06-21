@@ -62,7 +62,7 @@ function hero_banners() {
         $getinvolvedtitle = CFS()->get( 'title_banner_get_involved' );
         $programtitle = CFS()->get( 'title_banner_programs' );
         $newstitle = CFS()->get( 'title_banner_news' );
-        
+
         $custom_css = "
                 			
 .about{
@@ -126,7 +126,6 @@ function hero_banners() {
 }
 add_action( 'wp_enqueue_scripts', 'hero_banners' );
 
-
 //Custom Login Logo//
 
 function unya_login() {
@@ -144,14 +143,6 @@ function unya_login_title(){
 	return 'UNYA';
 }
 add_filter('login_headertitle', 'unya_login_title');
-
-
-
-
-
-
-
-
 
 // create list of sub-menu items
 /* Returns all child nav_menu_items under a specific parent
