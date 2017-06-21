@@ -113,6 +113,13 @@ a {
 			border: none;
 			width: auto;
 		}
+		.sub-menu {
+			.menu-item {
+				@include desktop {
+					text-align: left;
+				}
+			}
+		}
 
 	}
 	
@@ -285,4 +292,14 @@ a {
 //remove extra padding from content
 .ui-accordion .ui-accordion-content {
 	padding:  0;
+}
+.menu-item-has-children {
+	.sub-menu {
+		.menu-item {
+			width: 100vw;
+			@include desktop {
+				width: auto;
+			}
+		}
+	}
 }
