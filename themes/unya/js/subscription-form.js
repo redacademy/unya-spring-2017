@@ -16,7 +16,7 @@
 
     // hides form when close button is clicked
     $('.close-form').on('click', function() {
-      $btn.css('display', 'initial');
+      $btn.css('display', 'none');
       $('.newsletter-sign-up').css('position', 'static');
       $subscribeArea.removeClass('display-form').addClass('hidden-mobile');
       $('.close-form').empty();
