@@ -406,6 +406,12 @@ big {
   .programs .content-wrapper p {
     color: white; }
 
+.header-subtext {
+  line-height: 1.5;
+  color: #A70000;
+  text-align: center;
+  font-size: 36px; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -1019,69 +1025,6 @@ object {
 
 .success-content {
   width: 60%; }
-
-.fancy-carousel--active {
-  background-color: #49708a;
-  height: 700px;
-  overflow: hidden;
-  position: relative; }
-  .fancy-carousel--active img {
-    left: 100%;
-    position: absolute;
-    top: 100%; }
-
-.fancy-carousel__images-wrapper,
-.fancy-carousel__controls-wrapper {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0; }
-
-.fancy-carousel__images-wrapper {
-  background-position: 50% 50%;
-  background-size: cover;
-  opacity: 1;
-  transition: opacity 0.25s; }
-  .fancy-carousel__images-wrapper.fade-out {
-    opacity: 0; }
-
-.fancy-carousel__prev-arrow,
-.fancy-carousel__next-arrow {
-  background-color: black;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 30px;
-  opacity: 0.35;
-  position: absolute;
-  top: 50%;
-  transition: opacity 0.25s;
-  transform: translateY(-50%);
-  width: 30px; }
-  .fancy-carousel__prev-arrow:hover,
-  .fancy-carousel__next-arrow:hover {
-    opacity: 0.55; }
-  .fancy-carousel__prev-arrow::before,
-  .fancy-carousel__next-arrow::before {
-    border-bottom: 3px solid white;
-    border-left: 3px solid white;
-    content: '';
-    display: block;
-    height: 10px;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    width: 10px; }
-
-.fancy-carousel__prev-arrow {
-  left: 5px; }
-  .fancy-carousel__prev-arrow::before {
-    transform: translateY(-50%) translateX(-30%) rotate(45deg); }
-
-.fancy-carousel__next-arrow {
-  right: 5px; }
-  .fancy-carousel__next-arrow::before {
-    transform: translateY(-50%) translateX(-60%) rotate(225deg); }
 
 /*--------------------------------------------------------------
 # Page Templates

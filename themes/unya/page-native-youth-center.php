@@ -11,19 +11,21 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<header class="header-wrapper-nyc nyc-title">
 				<h1>Native Youth Centre | Capital Campaign</h1>
-				<p class="header-subtext">Building a hub for confidence, leadership and reconciliation.</p>
+				<p>Building a hub for confidence, leadership and reconciliation.</p>
 			</header>
 			<div>
 				<p class="header-subtext">We have a goal of $10 Million. Help us get a little closer today.</p>
 			</div>			
-<div class="carousel-gradient">
-  <section id='fancy-carousel'>
-   <?php $images = CFS()->get( 'nyc_image_slider' ); ?>
+
+<div class="image-carousel">
+
+    <?php $images = CFS()->get( 'nyc_image_slider' ); ?>
     <?php foreach ( $images as $image ) : ?>
-	  	<img src="<?php echo $image['image']; ?>">
+	  <div><img src="<?php echo $image['image']; ?>"></div>
 	  <?php endforeach; ?>
-  </section>
-</div
+
+</div>						            
+
 			<section class="container">
 			<div class="accordion" id="accordion">
 				<h2 class="accordion-label hidden-desktop">Vision</h2>
