@@ -50,9 +50,11 @@ a {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
-			top: $base__space-unit;
+			top: $base__space-unit + 1.3rem;
 			left: -999rem;
 			z-index: 99999;
+			margin: 0;
+			padding: 0;
 
 			ul {
 				left: -999rem;
@@ -189,6 +191,7 @@ a {
 	right: 0;
 	flex-wrap: wrap;
 	height: 70vh;
+	z-index: 299;
 	.site-branding {
 		background: url('../../assets/images/Logo-White.png') no-repeat center;
 		background-size: contain;
@@ -203,6 +206,27 @@ a {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				.menu-item-has-children.expanded {
+					background: $color__blue-dark;
+					z-index: 302;
+					a {
+						color: #fff;
+						&:visited {
+							color: #fff;
+						}
+					}
+					.sub-menu {
+						.menu-item {
+							width: 100vw;
+						}
+						a {
+							color: $color__blue-dark;
+							&:visited {
+								color: $color__blue-dark;
+							}
+						}
+					}
+				}
 				li {
 					display: flex;
 					justify-content: center;
@@ -225,6 +249,15 @@ a {
 	bottom: 0;
 	left: 0;
 	right: 0;
+	z-index: 298;
+}
+
+.menu-gradient {
+	background: rgba(255,255,255,0.6);
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	z-index: 301;
 }
 
 #main-nav-toggle {

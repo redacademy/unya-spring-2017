@@ -589,9 +589,11 @@ a {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 1.5rem;
+      top: 2.8rem;
       left: -999rem;
-      z-index: 99999; }
+      z-index: 99999;
+      margin: 0;
+      padding: 0; }
       .main-navigation ul ul ul {
         left: -999rem;
         top: 0; }
@@ -686,7 +688,8 @@ a {
   right: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 70vh; }
+  height: 70vh;
+  z-index: 299; }
   .site-header.expanded .site-branding {
     background: url("../../assets/images/Logo-White.png") no-repeat center;
     background-size: contain; }
@@ -703,6 +706,19 @@ a {
           flex-direction: column;
       -ms-flex-align: center;
           align-items: center; }
+      .site-header.expanded .main-navigation .menu-primary-menu-container .menu .menu-item-has-children.expanded {
+        background: #00277E;
+        z-index: 302; }
+        .site-header.expanded .main-navigation .menu-primary-menu-container .menu .menu-item-has-children.expanded a {
+          color: #fff; }
+          .site-header.expanded .main-navigation .menu-primary-menu-container .menu .menu-item-has-children.expanded a:visited {
+            color: #fff; }
+        .site-header.expanded .main-navigation .menu-primary-menu-container .menu .menu-item-has-children.expanded .sub-menu .menu-item {
+          width: 100vw; }
+        .site-header.expanded .main-navigation .menu-primary-menu-container .menu .menu-item-has-children.expanded .sub-menu a {
+          color: #00277E; }
+          .site-header.expanded .main-navigation .menu-primary-menu-container .menu .menu-item-has-children.expanded .sub-menu a:visited {
+            color: #00277E; }
       .site-header.expanded .main-navigation .menu-primary-menu-container .menu li {
         display: -ms-flexbox;
         display: flex;
@@ -719,7 +735,15 @@ a {
   height: 30vh;
   bottom: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  z-index: 298; }
+
+.menu-gradient {
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 301; }
 
 #main-nav-toggle {
   display: block;
