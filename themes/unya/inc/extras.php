@@ -144,31 +144,7 @@ function unya_login_title(){
 }
 add_filter('login_headertitle', 'unya_login_title');
 
-// create list of sub-menu items
-/* Returns all child nav_menu_items under a specific parent
-*
-* @param int the parent nav_menu_item ID
-* @param array nav_menu_items
-* @param bool gives all children or direct children only
-* @return array returns filtered array of nav_menu_items
-*/
-
-// function get_nav_menu_item_children( $parent_id, $nav_menu_items, $depth = true ) {
-//     $nav_menu_item_list = array();
-
-//     foreach ( (array) $nav_menu_items as $nav_menu_item ) {
-//         if ( $nav_menu_item->menu_item_parent == $parent_id ) {
-//             $nav_menu_item_list[] = $nav_menu_item;
-//             if ( $depth ) {
-//                 if ( $children = get_nav_menu_item_children( $nav_menu_item->ID, $nav_menu_items ) )
-//                 $nav_menu_item_list = array_merge( $nav_menu_item_list, $children );
-//             }
-//         }
-//     }
-//     return $nav_menu_item_list;
-// }
-
-add_filter('wp_nav_menu_objects', 'filter_nav_menu_list', 10, 2);
+// filter menu items for sidebar
 
 function filter_nav_menu_list($sorted_menu_objects, $args) {
 
@@ -178,14 +154,11 @@ function filter_nav_menu_list($sorted_menu_objects, $args) {
 
     $parent_id = get_the_ID(); // get page ID
     $children_menu_list = array(); // empty array for new menu objects
-// echo $parent_id;
-
     $menu_parent_ID = 0;
 
     foreach ( $sorted_menu_objects as $menu_object ) {
         if ( $menu_object->object_id == $parent_id ) {
             $menu_parent_ID = $menu_object->ID;
-            echo $menu_parent_ID;
         }
     }
 
@@ -195,5 +168,6 @@ function filter_nav_menu_list($sorted_menu_objects, $args) {
         }
     }
     return $children_menu_list;
-
 }
+
+add_filter('wp_nav_menu_objects', 'filter_nav_menu_list', 10, 2);
