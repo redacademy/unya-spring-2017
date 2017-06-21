@@ -1093,13 +1093,18 @@ object {
   background-image: none; }
   @media (min-width: 600px) {
     .header-wrapper, .page-header {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
       height: 25rem;
       width: 100%;
       background-size: cover;
       background-position: center; }
       .header-wrapper h1, .page-header h1 {
         padding-left: 50px;
-        padding-top: 250px;
         margin-bottom: 0; } }
 
 .header-wrapper-nyc {
@@ -1107,13 +1112,18 @@ object {
   background-image: none; }
   @media (min-width: 600px) {
     .header-wrapper-nyc {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
       height: 25rem;
       width: 100%;
       background-size: cover;
       background-position: center; }
       .header-wrapper-nyc h1 {
         padding-left: 50px;
-        padding-top: 200px;
         margin-bottom: 0; }
       .header-wrapper-nyc p {
         padding-left: 50px;
