@@ -17,7 +17,7 @@
     $(document).scroll(function() {
       var $position = $(this).scrollTop();
       
-      if ($('.sidebar-nav-menu').length) {
+      if ($sidebarArea.length) {
         fixSidebar($position);
       }
 

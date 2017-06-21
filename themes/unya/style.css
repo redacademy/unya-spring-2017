@@ -840,6 +840,14 @@ a {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+#secondary .menu-primary-menu-container {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.fixed-sidebar {
+  position: fixed; }
+
 .widget {
   margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }
