@@ -1,5 +1,6 @@
 (function($) {
 $('.image-carousel').slick({
+  arrows: true,
   dots: true,
   infinite: true,
   speed: 300,
@@ -7,10 +8,17 @@ $('.image-carousel').slick({
   slidesToScroll: 1,
    fade: true,
   cssEase: 'linear'
-  
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  
+}),
+
+
+$('.logo-carousel').slick({
+  infinite: true,
+  dots:true,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 1
 });
+	
+
+
 })(jQuery);

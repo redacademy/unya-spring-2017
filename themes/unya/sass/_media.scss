@@ -155,15 +155,16 @@ object {
 //Image Carousel Stuff
 
 .image-carousel{
+	margin:0 auto;
 	height:700px;
-	
+	width:90%;
 }
-.image-carousel:nth-child(n){
-	order:2
+
+.logo-carousel{
+	margin:0 auto;
+	height:300px;
+	width:90vw;
 }
-.image-carousel:nth-child(2n){
-	order:1
-}
-.image-carousel:nth-child(3n){
-	order:3
+.partner{
+	margin: auto auto;
 }

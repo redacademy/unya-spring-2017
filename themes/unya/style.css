@@ -1036,19 +1036,17 @@ object {
   width: 60%; }
 
 .image-carousel {
-  height: 700px; }
+  margin: 0 auto;
+  height: 700px;
+  width: 90%; }
 
-.image-carousel:nth-child(n) {
-  -ms-flex-order: 2;
-      order: 2; }
+.logo-carousel {
+  margin: 0 auto;
+  height: 300px;
+  width: 90vw; }
 
-.image-carousel:nth-child(2n) {
-  -ms-flex-order: 1;
-      order: 1; }
-
-.image-carousel:nth-child(3n) {
-  -ms-flex-order: 3;
-      order: 3; }
+.partner {
+  margin: auto auto; }
 
 /*--------------------------------------------------------------
 # Page Templates
