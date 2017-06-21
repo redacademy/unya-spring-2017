@@ -19,10 +19,11 @@
 		print_r($nav_menu_items);
 		echo '</pre>';
 
-		wp_nav_menu( array( 'theme_location' => 'sidebar', 'menu_class'=>'sidebar-menu-container', 'menu_id'=>'sidebar-menu', 'walker'=>new Selective_Walker() ) );
-	// $parent_id = get_the_ID();
-	// $nav_menu_items = 
+		wp_nav_menu( array( 
+			'theme_location' => 'primary', 
+			'sub_menu' => true, 
+			'menu_class'=>'sidebar-menu-container', 
+			'menu_id'=>'sidebar-menu' ) );
 
-	// get_nav_menu_item_children( $parent_id, $nav_menu_items, $depth = true )
 	?>
 </div><!-- #secondary -->
