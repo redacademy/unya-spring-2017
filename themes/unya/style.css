@@ -772,6 +772,7 @@ a {
   border-bottom: 1px solid #aaa !important; }
   @media (min-width: 600px) {
     #accordion .accordion-label {
+      border: none !important;
       background: transparent !important;
       color: transparent !important; } }
 
