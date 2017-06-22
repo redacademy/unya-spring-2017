@@ -13,7 +13,7 @@ get_header(); ?>
 			<h1>Get Involved</h1>
 		</header>
 		<div class="accordion" id="accordion">
-			<h2 class="accordion-label hidden-desktop" id="donate">Donate</h2>
+			<h2 class="accordion-label" id="donate">Donate</h2>
 			<section class="donation">
 				<header class="section-heading">
 					<h2>Donate</h2>
@@ -34,7 +34,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</section>
-			<h2 class="accordion-label hidden-desktop" id="employment">Employment</h2>
+			<h2 class="accordion-label" id="employment">Employment</h2>
 			<section class="opportunities">
 				<header class="section-heading">
 					<h2 class="hidden-desktop">Employment</h2>
@@ -78,7 +78,7 @@ get_header(); ?>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</ul>
 			</section>
-			<h2 class="accordion-label hidden-desktop" id="volunteer">Volunteer</h2>
+			<h2 class="accordion-label" id="volunteer">Volunteer</h2>
 			<section class="opportunities">
 				<header class="section-heading">
 					<h2 class="hidden-desktop">Volunteer</h2>

@@ -41,7 +41,8 @@
       $('.site-header').removeClass('expanded');
       $('.site-footer').removeClass('expanded');
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      target = target.length ? target : $('[id=' + this.hash.slice(1) +']');
+      target.click();
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
