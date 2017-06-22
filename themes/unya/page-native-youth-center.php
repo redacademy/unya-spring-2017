@@ -21,7 +21,7 @@ get_header(); ?>
 
     <?php $images = CFS()->get( 'nyc_image_slider' ); ?>
     <?php foreach ( $images as $image ) : ?>
-	  <div class="nyc-slide" style='background-size: cover;
+	  <div class="nyc-slide" style='background-size: cover; background-position:top;
 		  background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%), 
 		  url(<?php echo $image['image']; ?>)';>
 		</div>
