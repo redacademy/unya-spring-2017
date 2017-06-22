@@ -848,6 +848,7 @@ a {
   position: fixed; }
 
 .sidebar-menu-container {
+  margin: 0;
   padding: 0;
   display: -ms-flexbox;
   display: flex;
@@ -855,10 +856,11 @@ a {
       flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: white; }
-  .sidebar-menu-container .menu-item a {
+  background: white;
+  list-style: none; }
+  .sidebar-menu-container .menu-item {
     padding: 0.7142857143rem; }
-    .sidebar-menu-container .menu-item a a {
+    .sidebar-menu-container .menu-item a {
       text-decoration: none;
       text-transform: uppercase; }
 
