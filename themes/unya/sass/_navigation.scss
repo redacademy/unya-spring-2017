@@ -54,6 +54,10 @@ a {
 			z-index: 99999;
 			margin: 0;
 			padding: 0;
+			transform: translateX(-50%);
+			@include desktop {
+				transform: none;
+			}
 
 			ul {
 				left: -999rem;
