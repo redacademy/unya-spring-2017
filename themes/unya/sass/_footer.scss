@@ -29,6 +29,9 @@ footer{
       align-items: center;
       flex-flow: column 1 1;
       flex-wrap:nowrap;
+      h4{
+        text-align:left;
+      }
       &.social-links{
         justify-content:stretch;
         align-items:left;
@@ -45,15 +48,14 @@ footer{
     .subscription-form{
       width:100%;
     }
+    
       button.sign-up-btn {
       width:230px;
       height:50px;
       margin:15px 0px;
-
       @include desktop {
-        display: none;
+        display:none!important;
       }
-
       h4{
       font-size: 1rem;
       font-family: $font__heading;
@@ -74,10 +76,11 @@ footer{
       justify-content: center;
       .wpcf7-list-item{
         margin:0;
+        padding-left:4px;
       }
       .wpcf7-form {
         align-items: left;
-        width:290px;
+        width:295px;
         p{
           width:100%;
           margin:1rem 0;
@@ -158,10 +161,12 @@ footer{
     .social-media-links-wrapper {
       display: flex;
       padding-top:2rem;
+      width:100%;
+      justify-content:center;
       }
       a{
       display:block;
-      font-size:4rem;
+      font-size:5rem;
       color:$color__blue-dark;
       order:2;
       height: 100px;
