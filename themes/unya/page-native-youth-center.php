@@ -55,7 +55,7 @@ get_header(); ?>
 										<p class="timeline-year"><?php echo esc_html( $timeline_item['year']); ?></p>
 									</div>
 									<div class="description-wrapper">
-										<p><?php echo esc_html( $timeline_item['description'] ); ?></p>
+										<p><?php echo wp_kses( $timeline_item['description'],array('br') ); ?></p>
 									</div>
 								</li>
 							<?php endforeach; ?> 	
@@ -92,16 +92,16 @@ get_header(); ?>
 				    </div>
 					<div class="content-wrapper">
 						<h4>We Need Your Help</h4>
-						<p><?php echo esc_html( CFS()->get( 'we_need_your_help' ) ); ?></p>
+						<p><?php echo wp_kses( CFS()->get( 'we_need_your_help' ),array('br') ); ?></p>
 						<h5>Donate Funds</h5>
-						<p><?php echo esc_html( CFS()->get( 'donate_funds' ) ); ?></p>
+						<p><?php echo wp_kses( CFS()->get( 'donate_funds' ),array('br') ); ?></p>
 						<img src="<?php echo esc_url( CFS()->get( 'ways_to_help_image' ) ); ?>" alt="image of ways to help">
 						<h5>Donate Materials and Supplies</h5>
-						<p><?php echo esc_html( CFS()->get( 'donate_materials_and_supplies' ) ); ?></p>
+						<p><?php echo wp_kses( CFS()->get( 'donate_materials_and_supplies' ),array('br') ); ?></p>
 						<h5>Other Ways to Help</h5>
-						<p><?php echo esc_html( CFS()->get( 'other_ways_to_help' ) ); ?></p>
+						<p><?php echo wp_kses( CFS()->get( 'other_ways_to_help' ),array('br') ); ?></p>
 						<h5>How Will Your Donations be Recognized?</h5>
-						<p><?php echo esc_html( CFS()->get( 'how_will_your_donations_be_recognized' ) ); ?></p>
+						<p><?php echo wp_kses( CFS()->get( 'how_will_your_donations_be_recognized' ),array('br') ); ?></p>
 					</div>
 				</section>
 			</div>

@@ -22,7 +22,7 @@
 			<?php	
 				$activities = CFS()->get( 'program_activities' );
 				foreach ( $activities as $activity ) : ?>
-				<li><?php echo $activity['program_activity']; ?></li>
+				<li><?php echo wp_kses($activity['program_activity'],array('br') ); ?></li>
 				<?php endforeach; ?>
 			</ul>
 		</div>

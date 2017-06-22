@@ -24,13 +24,13 @@ get_header(); ?>
 				<section class="vision">
 					<div class="content-wrapper">
 						<h3>Vision</h3>
-						<p><?php echo esc_html( CFS()->get( 'vision' ) ); ?></p>
+						<p><?php echo wp_kses( CFS()->get( 'vision' ),array('br') ); ?></p>
 					</div>
 				</section>
 				<section class="mission" id="mission">
 					<div class="content-wrapper">
 						<h3>Mission</h3>
-						<p><?php echo esc_html( CFS()->get( 'mission' ) ); ?></p>
+						<p><?php echo wp_kses( CFS()->get( 'mission' ),array('br') ); ?></p>
 					</div>
 				</section>
 			</div>
@@ -41,7 +41,7 @@ get_header(); ?>
 				</header>
 				<div class="content-wrapper">
 					<h2 class="hidden-mobile">Brief History</h2>
-					<p><?php echo esc_html( CFS()->get( 'brief_history' ) ); ?></p>
+					<p><?php echo wp_kses( CFS()->get( 'brief_history' ),array('br') ); ?></p>
 				</div>
 			</section>
 			<h2 class="accordion-label" id="leadership">Leadership</h2>
@@ -62,7 +62,7 @@ get_header(); ?>
 								<div class="text-wrapper">
 									<p class="leader-name"><?php echo esc_html( CFS()->get( 'name' ) ); ?></p>
 									<p><?php echo esc_html( CFS()->get( 'title' ) ); ?></p>
-									<p class="hidden-mobile"><?php echo esc_html( CFS()->get( 'bio' ) ); ?></p>
+									<p class="hidden-mobile"><?php echo wp_kses( CFS()->get( 'bio' ),array('br') ); ?></p>
 								</div>
 							</li>
 						<?php endforeach; wp_reset_postdata(); ?>
