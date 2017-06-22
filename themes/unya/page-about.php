@@ -19,12 +19,9 @@ get_header(); ?>
 			<h1>About UNYA</h1>
 		</div>
 		<div class="accordion" id="accordion">
-			<h2 class="accordion-label hidden-desktop">Vision &amp; Mission</h2>
+			<h2 class="accordion-label" id="vision">Vision &amp; Mission</h2>
 			<div>			
-					<header class="section-heading">
-						<h2>Vision &amp; Mission</h2>
-					</header>
-				<section class="vision" id="vision">
+				<section class="vision">
 					<div class="content-wrapper">
 						<h3>Vision</h3>
 						<p><?php echo esc_html( CFS()->get( 'vision' ) ); ?></p>
@@ -37,8 +34,8 @@ get_header(); ?>
 					</div>
 				</section>
 			</div>
-			<h2 class="accordion-label hidden-desktop">History</h2>
-			<section class="brief-history" id="brief-history">
+			<h2 class="accordion-label" id="brief-history">History</h2>
+			<section class="brief-history">
 				<header class="section-heading">
 					<h2>History</h2>
 				</header>
@@ -47,8 +44,8 @@ get_header(); ?>
 					<p><?php echo esc_html( CFS()->get( 'brief_history' ) ); ?></p>
 				</div>
 			</section>
-			<h2 class="accordion-label hidden-desktop">Leadership</h2>
-			<section class="leadership" id="leadership">
+			<h2 class="accordion-label" id="leadership">Leadership</h2>
+			<section class="leadership">
 				<header class="section-heading hidden-mobile">
 					<h2 class="hidden-mobile">Leadership</h2>
 					<h4 class="hidden-mobile">The UNYA Board exmplifies the leadership of our youth.</h4>
@@ -73,8 +70,8 @@ get_header(); ?>
 					
 				</div>
 			</section>
-			<h2 class="accordion-label hidden-desktop">Reports</h2>
-			<section class="reports" id="reports">
+			<h2 class="accordion-label" id="reports">Reports</h2>
+			<section class="reports">
 					<header class="section-heading">
 						<h2>Reports</h2>
 					</header>
@@ -94,7 +91,7 @@ get_header(); ?>
 					</ul>
 				</div>
 			</section>
-			<h2 class="accordion-label hidden-desktop">Find Us</h2>
+			<h2 class="accordion-label" id="find-us">Find Us</h2>
 			<section>
 					<header class="section-heading">
 						<h2>Find Us</h2>

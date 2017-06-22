@@ -770,6 +770,10 @@ a {
   color: #fff !important;
   margin: 0 !important;
   border-bottom: 1px solid #aaa !important; }
+  @media (min-width: 600px) {
+    #accordion .accordion-label {
+      background: transparent !important;
+      color: transparent !important; } }
 
 .ui-accordion .ui-accordion-content {
   padding: 0; }

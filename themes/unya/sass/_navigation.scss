@@ -285,6 +285,10 @@ a {
 		color: #fff !important;
 		margin: 0 !important;
 		border-bottom: 1px solid #aaa !important;
+		@include desktop {
+			background: transparent !important; 
+			color: transparent !important;
+		}
 
 	}
 }

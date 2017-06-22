@@ -5,10 +5,10 @@
 					<p>Click on any program to learn more</p>
 				</header>
 				<div class="accordion" id="accordion">
-					<h2 class="accordion-label hidden-desktop">Education &amp; Training</h2>
+					<h2 class="accordion-label" id="education">Education &amp; Training</h2>
 					<div>
 						<div class="section-heading">
-							<h3 class="content-wrapper" id="education">Education &amp; Training</h3>
+							<h3 class="content-wrapper">Education &amp; Training</h3>
 						</div>
 						<ul class="programs-list education-list">
 						<?php
@@ -31,10 +31,10 @@
 							<?php endforeach; ?>
 						</ul>
 					</div>
-					<h2 class="accordion-label hidden-desktop">Personal Support</h2>
+					<h2 class="accordion-label" id="personal">Personal Support</h2>
 					<div>
 						<div class="section-heading">
-							<h3 class="content-wrapper" id="personal">Personal Support</h3>
+							<h3 class="content-wrapper">Personal Support</h3>
 						</div>
 						<ul class="programs-list personal-list">
 						<?php
@@ -57,10 +57,10 @@
 							<?php endforeach; ?>
 						</ul>
 					</div>
-					<h2 class="accordion-label hidden-desktop">Live-In Programs</h2>
+					<h2 class="accordion-label" id="live-in">Live-In Programs</h2>
 					<div>
 						<div class="section-heading">
-							<h3 class="content-wrapper" id="live-in">Live-In Program</h3>
+							<h3 class="content-wrapper">Live-In Program</h3>
 						</div>
 						<ul class="programs-list live-in-list">
 						<?php
@@ -83,10 +83,10 @@
 							<?php endforeach; ?>
 						</ul>
 					</div>
-					<h2 class="accordion-label hidden-desktop">Sports and Recreation</h2>
+					<h2 class="accordion-label" id="sports">Sports and Recreation</h2>
 					<div>
 						<div class="section-heading">
-							<h3 class="content-wrapper" id="sports">Sports and Recreation</h3>
+							<h3 class="content-wrapper">Sports and Recreation</h3>
 						</div>
 						<ul class="programs-list sports-list">
 						<?php

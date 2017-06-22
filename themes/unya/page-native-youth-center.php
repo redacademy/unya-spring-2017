@@ -31,8 +31,8 @@ get_header(); ?>
 
 			<section class="container">
 			<div class="accordion" id="accordion">
-				<h2 class="accordion-label hidden-desktop">Vision</h2>
-				<section class="vision" id="vision">
+				<h2 class="accordion-label"  id="vision">Vision</h2>
+				<section class="vision">
 					<header class="section-heading">
 						<h2>Vision</h2>
 					</header>
@@ -40,8 +40,8 @@ get_header(); ?>
 						<p><?php echo esc_html( CFS()->get( 'vision' ) ); ?></p>
 					</div>
 				</section>
-				<h2 class="accordion-label hidden-desktop">Planning</h2>
-				<section class="planning" id="planning">
+				<h2 class="accordion-label" id="planning">Planning</h2>
+				<section class="planning">
 					<header class="section-heading">
 						<h2 class="content-wrapper">Planning and Development</h2>
 						<h4 class="planning-timeline hidden-mobile">Timeline of the development of the Native Youth Center.</h4>					
@@ -63,8 +63,8 @@ get_header(); ?>
 					</div>
 					<div><?php echo $GLOBALS['wp_embed']->autoembed(esc_html(CFS()->get('featured_video'))) ?></div>
 				</section>
-				<h2 class="accordion-label hidden-desktop">Partners</h2>
-				<section class="partners" id="partners">
+				<h2 class="accordion-label" id="partners">Partners</h2>
+				<section class="partners">
 					<header class="section-heading">
 						<h2 class="content-wrapper">Partners</h2>
 					</header>
@@ -79,8 +79,8 @@ get_header(); ?>
 					</ul>	
 					
 				
-				<h2 class="accordion-label hidden-desktop">How to Help</h2>
-				<section class="ways-to-help" id="ways-to-help">
+				<h2 class="accordion-label" id="ways-to-help">How to Help</h2>
+				<section class="ways-to-help">
 					<div class="section-heading">
 						<h2>Ways to Help</h2>
 					</div>
