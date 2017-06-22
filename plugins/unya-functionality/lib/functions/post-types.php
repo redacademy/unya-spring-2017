@@ -6,7 +6,7 @@
  */
 
 // Register Custom Post Type
-function register_program_post_type() {
+function unya_register_program_post_type() {
 
 	$labels = array(
 		'name'                  => 'Programs',
@@ -59,11 +59,11 @@ function register_program_post_type() {
 	register_post_type( 'program', $args );
 
 }
-add_action( 'init', 'register_program_post_type', 0 );
+add_action( 'init', 'unya_register_program_post_type', 0 );
 
 // ------- News Custom Post Type ---------//
 
-function register_news_post_type() {
+function unya_register_news_post_type() {
 
 	$labels = array(
 		'name'                  => 'News',
@@ -116,11 +116,11 @@ function register_news_post_type() {
 	register_post_type( 'news', $args );
 
 }
-add_action( 'init', 'register_news_post_type', 0 );
+add_action( 'init', 'unya_register_news_post_type', 0 );
 
 
 
-function register_success_story_post_type() {
+function unya_register_success_story_post_type() {
 
 	$labels = array(
 		'name'                  => 'Success Stories',
@@ -173,10 +173,10 @@ function register_success_story_post_type() {
 	register_post_type( 'success_story', $args );
 
 }
-add_action( 'init', 'register_success_story_post_type', 0 );
+add_action( 'init', 'unya_register_success_story_post_type', 0 );
 
 // Register Custom Post Type
-function register_leader_post_type() {
+function unya_register_leader_post_type() {
 
 	$labels = array(
 		'name'                  => 'Leaders',
@@ -230,10 +230,10 @@ function register_leader_post_type() {
 	register_post_type( 'leaders', $args );
 
 }
-add_action( 'init', 'register_leader_post_type', 0 );
+add_action( 'init', 'unya_register_leader_post_type', 0 );
 
 // Register Custom Post Type
-function register_opportunities_post_type() {
+function unya_register_opportunities_post_type() {
 
 	$labels = array(
 		'name'                  => 'Opportunities',
@@ -287,4 +287,4 @@ function register_opportunities_post_type() {
 	register_post_type( 'opportunities', $args );
 
 }
-add_action( 'init', 'register_opportunities_post_type', 0 );
+add_action( 'init', 'unya_register_opportunities_post_type', 0 );
