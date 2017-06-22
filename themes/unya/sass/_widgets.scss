@@ -1,11 +1,10 @@
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-
+/* Sidebar nav menu */
 #secondary .menu-primary-menu-container {
 	position: absolute;
 	left: 0;
-	// top: 0;
 }
 
 .fixed-sidebar {
@@ -16,6 +15,8 @@
 .sidebar-menu-container {
 	margin: 0;
   padding: 0;
+	width: 15.714285714rem;
+
 	display: flex;
   flex-direction: column;
   justify-content: space-around;

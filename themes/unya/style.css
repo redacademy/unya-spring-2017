@@ -840,6 +840,7 @@ a {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+/* Sidebar nav menu */
 #secondary .menu-primary-menu-container {
   position: absolute;
   left: 0; }
@@ -851,6 +852,7 @@ a {
 .sidebar-menu-container {
   margin: 0;
   padding: 0;
+  width: 15.714285714rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -909,7 +911,8 @@ a {
   width: 85%; }
   @media (min-width: 600px) {
     .content-wrapper {
-      margin-left: 15.714285714rem; } }
+      width: 100%;
+      padding: 0 15.714285714rem 0 17.428571429rem; } }
 
 .section-heading {
   width: 100%;
