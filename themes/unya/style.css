@@ -598,11 +598,7 @@ a {
       left: -999rem;
       z-index: 99999;
       margin: 0;
-      padding: 0;
-      transform: translateX(-59%); }
-      @media (min-width: 600px) {
-        .main-navigation ul ul {
-          transform: none; } }
+      padding: 0; }
       .main-navigation ul ul ul {
         left: -999rem;
         top: 0; }
