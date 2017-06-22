@@ -1459,7 +1459,11 @@ footer {
         text-align: left;
         width: 36.3%; }
         footer .newsletter-sign-up .subscription-form {
-          height: 100%; }
+          height: 100%;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center; }
           footer .newsletter-sign-up .subscription-form .wpcf7-list-item {
             margin: 0; }
           footer .newsletter-sign-up .subscription-form .wpcf7-form {
