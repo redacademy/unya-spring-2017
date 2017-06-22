@@ -27,13 +27,13 @@
 			</ul>
 		</div>
 
-		<?php $images = CFS()->get( 'program_image_slider' ); ?>
+		<?php $program_images = CFS()->get( 'program_image_slider' ); ?>
 		<?php // to only grab the first 2 images
 			$i = 0;
-			foreach ( $images as $image ) : 
+			foreach ( $program_images as $program_image ) : 
 				if ($i == 3) break;
 		?>
-		<div class="program-image"><img src="<?php echo $image['image']; ?>"></div>
+		<div class="program-image"><img src="<?php echo $program_image['program_image']; ?>"></div>
 		<?php $i++;
 			endforeach; ?>
 
@@ -43,10 +43,16 @@
 		</div>
 	</div>
 
-	<ul class="image-slider hidden-mobile">
-		<?php foreach ( $images as $image ) : ?>
-		<li><img src="<?php echo $image['image']; ?>"></li>
-		<?php endforeach; ?>
-	</ul><!--image slider-->
+	<div class="image-carousel hidden-mobile">
+
+    <?php $program_images = CFS()->get( 'program_image_slider' ); ?>
+    <?php foreach ( $program_images as $program_image ) : ?>
+	  <div style='background-size: cover;
+		  background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%), 
+		  url(<?php echo $program_image['program_image']; ?>)';>
+		</div>
+	  <?php endforeach; ?>
+
+</image-carousel>	
 
 </article><!-- #post-## -->

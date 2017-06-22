@@ -24,14 +24,6 @@ get_header(); ?>
 
 		<?php endwhile; // End of the loop. ?>
 
-<div class="image-carousel">
-    <?php $images = CFS()->get( '	program_image_slider' ); ?>
-    <?php foreach ( $images as $image ) : ?>
-	  <img src="<?php echo $image['image']; ?>">
-	
-	  <?php endforeach; ?>
-	  
-</div>	
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
