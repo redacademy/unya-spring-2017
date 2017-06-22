@@ -96,6 +96,7 @@ get_header(); ?>
 					<header class="section-heading">
 						<h2>Find Us</h2>
 					</header>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.750787591413!2d-123.07398588392066!3d49.28111927933116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867116afb8d639%3A0x7a96b21dcbe66682!2sUrban+Native+Youth+Association!5e0!3m2!1sen!2sca!4v1498158291523" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</section>
 		</div>
 		<div class="pre-footer">
