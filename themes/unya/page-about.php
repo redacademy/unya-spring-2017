@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area about-content">
 		<main id="main" class="site-main" role="main">
 		<div class="header-wrapper about-title">
 			<h1>About UNYA</h1>

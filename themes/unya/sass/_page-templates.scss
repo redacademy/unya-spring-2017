@@ -3,7 +3,7 @@
 --------------------------------------------------------------
 
 /* All pages */
-.header-wrapper, .page-header {
+.header-wrapper {
   height: 4.2142857143rem;
   background-image: none;
 
@@ -23,7 +23,7 @@
 }
 
 /* About page */
-.page-id-37 {
+.about-content {
 
   .vision {
 
@@ -58,15 +58,15 @@
 
     .image-wrapper {
       flex-basis: 30%;
-      height: 5.7rem;
+      height: 13rem;
       width: 5.7rem;
       overflow: hidden;
       border-radius: 50%;
       
       img {
-        max-width: none;
-        height: 100%;
-        min-width: 100%;
+        max-height: 100%;
+        height: auto;
+        max-width: 100%;
         width: auto;
       }
     }
@@ -135,8 +135,7 @@
   }
 }
 
-
-.page-id-76 {
+.nyc-content {
 
   .nyc-banner {
     height:23.214285714rem;

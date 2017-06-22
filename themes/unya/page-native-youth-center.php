@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area nyc-content">
 		<main id="main" class="site-main" role="main">
 			<header class="header-wrapper header-wrapper-nyc nyc-title">
 				<h1>Native Youth Centre <span class="hidden-mobile">| Capital Campaign</span></h1>
@@ -15,19 +15,17 @@ get_header(); ?>
 			</header>
 			<div>
 				<p class="header-subtext">We have a goal of $10 Million. Help us get a little closer today.</p>
-			</div>			
+			</div>
 
-<div class="image-carousel hidden-mobile">
-
-    <?php $images = CFS()->get( 'nyc_image_slider' ); ?>
-    <?php foreach ( $images as $image ) : ?>
-	  <div class="nyc-slide" style='background-size: cover; background-position:top;
-		  background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%), 
-		  url(<?php echo $image['image']; ?>)';>
-		</div>
-	  <?php endforeach; ?>
-
-</div>
+			<div class="image-carousel hidden-mobile">
+				<?php $images = CFS()->get( 'nyc_image_slider' ); ?>
+				<?php foreach ( $images as $image ) : ?>
+				<div class="nyc-slide" style='background-size: cover; background-position:top;
+					background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%), 
+					url(<?php echo $image['image']; ?>)';>
+				</div>
+	  	<?php endforeach; ?>
+			</div><!--End image carousel -->
 
 			<section class="container">
 			<div class="accordion" id="accordion">
