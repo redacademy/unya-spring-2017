@@ -86,7 +86,7 @@ get_header(); ?>
 					</div>
 					<div class="content-wrapper">
 						<h4>The Need</h4>
-						<p><?php echo esc_html( CFS()->get( 'the_need' ) ); ?></p>
+						<p><?php echo wp_kses( CFS()->get( 'the_need' ),array('br') ); ?></p>
 					</div>
 						<div class="nyc-banner">
 				    </div>

@@ -20,6 +20,7 @@
       event.preventDefault();
       $('.site-header').toggleClass('expanded');
       $('.site-footer').toggleClass('expanded');
+      $('.site-content').toggleClass('collapsed');
       })
     });
     $('.menu-gradient').hide();
@@ -40,6 +41,7 @@
       event.preventDefault();
       $('.site-header').removeClass('expanded');
       $('.site-footer').removeClass('expanded');
+      $('.site-content').removeClass('collapsed');
       var target = $(this.hash);
       target = target.length ? target : $('[id=' + this.hash.slice(1) +']');
       target.click();

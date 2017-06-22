@@ -784,6 +784,10 @@ a {
     .menu-item-has-children .sub-menu .menu-item {
       width: auto; } }
 
+.site-content.collapsed {
+  height: 0;
+  overflow: hidden; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

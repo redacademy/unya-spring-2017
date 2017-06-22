@@ -308,3 +308,8 @@ a {
 		}
 	}
 }
+
+.site-content.collapsed {
+	height: 0;
+	overflow: hidden;
+}
