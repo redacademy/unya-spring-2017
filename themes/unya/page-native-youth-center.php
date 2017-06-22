@@ -68,7 +68,6 @@ get_header(); ?>
 					<header class="section-heading">
 						<h2 class="content-wrapper">Partners</h2>
 					</header>
-				</section>
 					<ul class="logo-carousel">
 						<?php $partners = CFS()->get( 'partners' ); ?>
 						<?php foreach ( $partners as $partner ) : ?>
@@ -77,8 +76,7 @@ get_header(); ?>
 							</li>
 						<?php endforeach; ?> 	
 					</ul>	
-					
-				
+				</section>
 				<h2 class="accordion-label" id="ways-to-help">How to Help</h2>
 				<section class="ways-to-help">
 					<div class="section-heading">
