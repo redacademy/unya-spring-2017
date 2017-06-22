@@ -6,10 +6,12 @@
     var $sidebarMenu = $('#secondary .menu-primary-menu-container');
     var $sidebarArea = $('.sidebar-nav-menu');
     var $menuItem = $('.sidebar-menu-container .menu-item a');
-    var $archiveHeader = $('.page-header').offset().top + $('.header-wrapper').height();
-    var $siteHeader = $('.header-wrapper-nyc').offset().top + $('.header-wrapper').height();
+    // var $archiveHeader = $('.page-header').offset().top + $('.header-wrapper').height();
+    // var $siteHeader = $('.header-wrapper-nyc').offset().top + $('.header-wrapper-nyc').height();
 
     $sidebarMenu.css('top', $bottomOfHeader);
+    // $sidebarMenu.css('top', $siteHeader);
+    // console.log($siteHeader);
 
     function fixSidebar(position) {
       if (position > $bottomOfHeader) {
@@ -19,26 +21,27 @@
         $sidebarMenu.css('position', 'absolute');
         $sidebarMenu.css('top', $bottomOfHeader);
       }
-      if (position > $archiveHeader) {
-        $sidebarMenu.css('position', 'fixed');
-        $sidebarMenu.css('top', '0');
-      } else {
-        $sidebarMenu.css('position', 'absolute');
-        $sidebarMenu.css('top', $archiveHeader);
-      }
-      if (position > $siteHeader) {
-        $sidebarMenu.css('position', 'fixed');
-        $sidebarMenu.css('top', '0');
-      } else {
-        $sidebarMenu.css('position', 'absolute');
-        $sidebarMenu.css('top', $siteHeader);
-      }
+      // if ( $('.post-type-archive').length && position > $archiveHeader) {
+      //   $sidebarMenu.css('position', 'fixed');
+      //   $sidebarMenu.css('top', '0');
+      // } else {
+      //   $sidebarMenu.css('position', 'absolute');
+      //   $sidebarMenu.css('top', $archiveHeader);
+      // }
+      // if (position > $siteHeader) {
+      //   $sidebarMenu.css('position', 'fixed');
+      //   $sidebarMenu.css('top', '0');
+      // } else {
+      //   $sidebarMenu.css('position', 'absolute');
+      //   $sidebarMenu.css('top', $siteHeader);
+      // }
     }
 
     $(document).scroll(function() {
       var $position = $(this).scrollTop();
 
       if ($sidebarArea.length) {
+        console.log('test');
         fixSidebar($position);
       }
 

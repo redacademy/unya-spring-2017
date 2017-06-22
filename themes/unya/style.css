@@ -1118,30 +1118,6 @@ object {
         padding-left: 50px;
         margin-bottom: 0; } }
 
-.header-wrapper-nyc {
-  height: 4.2142857143rem;
-  background-image: none; }
-  @media (min-width: 600px) {
-    .header-wrapper-nyc {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-      height: 25rem;
-      width: 100%;
-      background-size: cover;
-      background-position: center; }
-      .header-wrapper-nyc h1 {
-        padding-left: 50px;
-        margin-bottom: 0; }
-      .header-wrapper-nyc p {
-        padding-left: 50px;
-        color: white;
-        margin-top: 0;
-        font-size: 30px; } }
-
 /* About page */
 .page-id-37 .vision h3 {
   color: #2C2C2C; }
@@ -1213,8 +1189,15 @@ object {
       height: 550px; } }
 
 /* Native Youth Centre */
+@media (min-width: 600px) {
+  .header-wrapper-nyc p {
+    padding-left: 3.5714285714rem;
+    color: white;
+    margin-top: 0;
+    font-size: 2.1428571429rem; } }
+
 .page-id-76 .nyc-banner {
-  height: 325px;
+  height: 23.214285714rem;
   width: 100%; }
   .page-id-76 .nyc-banner p {
     text-align: right;

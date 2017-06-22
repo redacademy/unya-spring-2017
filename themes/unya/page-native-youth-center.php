@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<header class="header-wrapper-nyc nyc-title">
+			<header class="header-wrapper header-wrapper-nyc nyc-title">
 				<h1>Native Youth Centre | Capital Campaign</h1>
 				<p>Building a hub for confidence, leadership and reconciliation.</p>
 			</header>
@@ -27,7 +27,7 @@ get_header(); ?>
 		</div>
 	  <?php endforeach; ?>
 
-</div>						            
+</div>
 
 			<section class="container">
 			<div class="accordion" id="accordion">
@@ -115,4 +115,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
