@@ -157,7 +157,7 @@ object {
 .image-carousel{
 	margin:0 auto;
 	height:700px;
-	width:90%;
+	width:90vw;
 }
 
 .logo-carousel{
@@ -166,5 +166,7 @@ object {
 	width:90vw;
 }
 .partner{
-	margin: auto auto;
+	img{
+	  margin: auto auto;
+  }
 }

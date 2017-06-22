@@ -16,7 +16,18 @@ $('.logo-carousel').slick({
   dots:true,
   speed: 300,
   slidesToShow: 2,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    }
+  ]
 });
 	
 
