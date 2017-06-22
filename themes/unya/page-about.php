@@ -84,7 +84,7 @@ get_header(); ?>
 								<div class="text-wrapper">
 									<p><?php echo esc_html( $report['report_title'] ); ?></p>
 									<p><?php echo esc_html( $report['report_description'] ); ?></p>
-									<p><?php echo esc_html( $report['report_file'] ); ?></p>
+									<a href="<?php echo esc_html( $report['report_file_link'] ); ?>">Download report [PDF] &rarr;</a>
 								</div>
 							</li>
 						<?php endforeach; ?>
