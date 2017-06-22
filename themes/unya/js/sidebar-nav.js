@@ -6,6 +6,8 @@
     var $sidebarMenu = $('#secondary .menu-primary-menu-container');
     var $sidebarArea = $('.sidebar-nav-menu');
     var $menuItem = $('.sidebar-menu-container .menu-item a');
+    var $archiveHeader = $('.page-header').offset().top + $('.header-wrapper').height();
+    var $siteHeader = $('.header-wrapper-nyc').offset().top + $('.header-wrapper').height();
 
     $sidebarMenu.css('top', $bottomOfHeader);
 
@@ -16,6 +18,20 @@
       } else {
         $sidebarMenu.css('position', 'absolute');
         $sidebarMenu.css('top', $bottomOfHeader);
+      }
+      if (position > $archiveHeader) {
+        $sidebarMenu.css('position', 'fixed');
+        $sidebarMenu.css('top', '0');
+      } else {
+        $sidebarMenu.css('position', 'absolute');
+        $sidebarMenu.css('top', $archiveHeader);
+      }
+      if (position > $siteHeader) {
+        $sidebarMenu.css('position', 'fixed');
+        $sidebarMenu.css('top', '0');
+      } else {
+        $sidebarMenu.css('position', 'absolute');
+        $sidebarMenu.css('top', $siteHeader);
       }
     }
 
