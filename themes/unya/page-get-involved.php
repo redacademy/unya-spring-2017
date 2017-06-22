@@ -73,7 +73,7 @@ get_header(); ?>
 					<li class="single-opportunity">
 						<h3><?php the_title(); ?></h3>
 						<p class="hidden-mobile"><?php echo CFS()->get( 'description' ); ?></p>
-						<p><?php echo CFS()->get( 'link' ); ?></p>
+						<a href="<?php echo CFS()->get( 'link' ); ?>"LearnMore</a>
 					</li>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</ul>
