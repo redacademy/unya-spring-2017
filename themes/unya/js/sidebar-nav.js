@@ -10,11 +10,15 @@
 
     $sidebarMenu.css('top', $bottomOfHeader);
     // $sidebarMenu.css('top', $siteHeader);
-    // console.log($siteHeader);
 
     //on window resize moves sidebar
+    $(window).resize(function() {
+      $bottomOfHeader = $('.header-wrapper').offset().top + $('.header-wrapper').height();
+      $sidebarMenu.removeAttr('style').css('top', $bottomOfHeader);
+    });
 
     function fixSidebar(position) {
+      $bottomOfHeader = $('.header-wrapper').offset().top + $('.header-wrapper').height();
       if (position > $bottomOfHeader) {
         $sidebarMenu.css('position', 'fixed');
         $sidebarMenu.css('top', '0');
