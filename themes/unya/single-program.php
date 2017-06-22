@@ -23,7 +23,16 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/program', 'single' ); ?>
 
 		<?php endwhile; // End of the loop. ?>
+<div class="image-carousel">
 
+    <?php $images = CFS()->get( '	program_image_slider' ); ?>
+    <?php foreach ( $images as $image ) : ?>
+	  <img src="<?php echo $image['image']; ?>">
+		  
+		</div>
+	  <?php endforeach; ?>
+
+</div>	
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
