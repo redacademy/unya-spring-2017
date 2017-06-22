@@ -80,7 +80,7 @@ get_header(); ?>
 					<ul>
 						<?php foreach ( $reports as $report ): ?>
 							<li class="report-item">
-								<div class="image-wrapper"></div>
+								<div class="image-wrapper"><i class="fa fa-file-o" aria-hidden="true"></i></div>
 								<div class="text-wrapper">
 									<p><?php echo esc_html( $report['report_title'] ); ?></p>
 									<p><?php echo esc_html( $report['report_description'] ); ?></p>
