@@ -1074,13 +1074,11 @@ object {
 .success-content {
   width: 60%; }
 
-.image-carousel {
-  height: 300px; }
-  @media (min-width: 600px) {
-    .image-carousel {
-      margin: 0 auto;
-      height: 700px;
-      width: 90vw; } }
+@media (min-width: 600px) {
+  .image-carousel, .nyc-slide {
+    margin: 0 auto;
+    height: 700px;
+    width: 90vw; } }
 
 .logo-carousel {
   margin: 0 auto;

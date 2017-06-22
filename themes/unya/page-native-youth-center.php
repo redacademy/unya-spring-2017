@@ -17,11 +17,11 @@ get_header(); ?>
 				<p class="header-subtext">We have a goal of $10 Million. Help us get a little closer today.</p>
 			</div>			
 
-<div class="image-carousel">
+<div class="image-carousel hidden-mobile">
 
     <?php $images = CFS()->get( 'nyc_image_slider' ); ?>
     <?php foreach ( $images as $image ) : ?>
-	  <div style='background-size: cover;
+	  <div class="nyc-slide" style='background-size: cover;
 		  background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%), 
 		  url(<?php echo $image['image']; ?>)';>
 		</div>

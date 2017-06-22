@@ -48,8 +48,7 @@
     <?php $program_images = CFS()->get( 'program_image_slider' ); ?>
     <?php foreach ( $program_images as $program_image ) : ?>
 	  <div style='background-size: cover;
-		  background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%), 
-		  url(<?php echo $program_image['program_image']; ?>)';>
+		  background-image: url(<?php echo $program_image['program_image']; ?>)';>
 		</div>
 	  <?php endforeach; ?>
 
