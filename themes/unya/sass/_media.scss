@@ -155,17 +155,20 @@ object {
 //Image Carousel Stuff
 
 .image-carousel{
+	height:300px;
+	@include desktop{
 	margin:0 auto;
 	height:700px;
 	width:90vw;
 }
-
+}
 .logo-carousel{
 	margin:0 auto;
 	height:300px;
 	width:90vw;
 }
 .partner{
+	margin: auto auto;
 	img{
 	  margin: auto auto;
   }

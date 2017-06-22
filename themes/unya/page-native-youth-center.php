@@ -65,15 +65,15 @@ get_header(); ?>
 					<header class="section-heading">
 						<h2 class="content-wrapper">Partners</h2>
 					</header>
-					</section>
-						<ul class="logo-carousel">
-							<?php $partners = CFS()->get( 'partners' ); ?>
-							<?php foreach ( $partners as $partner ) : ?>
-								<li class="partner">
-								<img src="<?php echo ( $partner['partner_logo'] ); ?>">
-								</li>
-							<?php endforeach; ?> 	
-						</ul>	
+				</section>
+					<ul class="logo-carousel">
+						<?php $partners = CFS()->get( 'partners' ); ?>
+						<?php foreach ( $partners as $partner ) : ?>
+							<li class="partner">
+							  <img src="<?php echo ( $partner['partner_logo'] ); ?>">
+							</li>
+						<?php endforeach; ?> 	
+					</ul>	
 					
 				
 				<h2 class="accordion-label hidden-desktop">How to Help</h2>
