@@ -12,6 +12,8 @@
     // $sidebarMenu.css('top', $siteHeader);
     // console.log($siteHeader);
 
+    //on window resize moves sidebar
+
     function fixSidebar(position) {
       if (position > $bottomOfHeader) {
         $sidebarMenu.css('position', 'fixed');
