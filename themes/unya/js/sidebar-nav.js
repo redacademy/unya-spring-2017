@@ -34,7 +34,6 @@
 
       var $menuLink = $(this.hash);
       $menuItem = $menuLink.length ? $menuLink : $('[name=' + this.hash.slice(1) +']');
-      
       if ($menuItem.length) {
         $('html, body').animate({
           scrollTop: $menuLink.offset().top
