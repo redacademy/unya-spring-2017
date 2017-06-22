@@ -11,6 +11,7 @@ footer{
   margin:0;
   width:100%;
   text-align:center;
+
   @include desktop{
     background-color:$color__background-body;
     display: flex;
@@ -42,10 +43,17 @@ footer{
     text-align: center;
     display:flex;
     justify-content:center;
+    .subscription-form{
+        width:100%;
+      }
       button.sign-up-btn {
       width:230px;
       height:50px;
       margin:15px 0px;
+      @include desktop {
+        display: none;
+      }
+
       h4{
       font-size: 1rem;
       font-family: $font__heading;

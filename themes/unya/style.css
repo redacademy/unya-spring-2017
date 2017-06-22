@@ -1434,10 +1434,15 @@ footer {
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
+    footer .newsletter-sign-up .subscription-form {
+      width: 100%; }
     footer .newsletter-sign-up button.sign-up-btn {
       width: 230px;
       height: 50px;
       margin: 15px 0px; }
+      @media (min-width: 600px) {
+        footer .newsletter-sign-up button.sign-up-btn {
+          display: none; } }
       footer .newsletter-sign-up button.sign-up-btn h4 {
         font-size: 1rem;
         font-family: "poppins", sans-serif;
