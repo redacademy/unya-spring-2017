@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<header class="header-wrapper header-wrapper-nyc nyc-title">
 				<h1>Native Youth Centre | Capital Campaign</h1>
-				<p>Building a hub for confidence, leadership and reconciliation.</p>
+				<p class="hidden-mobile">Building a hub for confidence, leadership and reconciliation.</p>
 			</header>
 			<div>
 				<p class="header-subtext">We have a goal of $10 Million. Help us get a little closer today.</p>
