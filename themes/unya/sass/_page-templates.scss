@@ -381,7 +381,11 @@
 
 /* News archive */
 
-.news-articles {
-  margin: 0;
-  padding: 0;
+.news-single{
+  display:flex;
+  flex-flow:row nowrap;
+  height:100px;
+}
+.news-image{
+  width:100px;
 }

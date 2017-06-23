@@ -1435,9 +1435,15 @@ object {
         order: 4; }
 
 /* News archive */
-.news-articles {
-  margin: 0;
-  padding: 0; }
+.news-single {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  height: 100px; }
+
+.news-image {
+  width: 100px; }
 
 footer {
   min-width: 320px;
