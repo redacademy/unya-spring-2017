@@ -87,8 +87,6 @@ object {
 	display: block;
 }
 
-
-
 .success-image{
 	width:38vw;
 	height:38vw;
@@ -103,15 +101,15 @@ object {
 	border-radius: 10%;
 }
 
-
 .about, .nyc, .programs{
   background-position: center;
 	background-size: cover;
 	background-repeat:no-repeat;
 	height:350px;
-@include desktop{
-	height:700px;
-	 }
+
+	@include desktop{
+		height:700px;
+		}
 }
 
 .impact-polygon{

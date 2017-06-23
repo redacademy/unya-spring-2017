@@ -2,14 +2,21 @@
   $(function () {
 
     // sidebar positioning on scroll
-    var $bottomOfHeader = $('.header-wrapper').offset().top + $('.header-wrapper').height();
+    var $bottomOfHeader = $('.sidebar-start').offset().top + $('.sidebar-start').height();
     var $sidebarMenu = $('#secondary .menu-primary-menu-container');
     var $sidebarArea = $('.sidebar-nav-menu');
     var $menuItem = $('.sidebar-menu-container .menu-item a');
 
     $sidebarMenu.css('top', $bottomOfHeader);
 
+    //on window resize moves sidebar
+    $(window).resize(function() {
+      $bottomOfHeader = $('.sidebar-start').offset().top + $('.sidebar-start').height();
+      $sidebarMenu.removeAttr('style').css('top', $bottomOfHeader);
+    });
+
     function fixSidebar(position) {
+      $bottomOfHeader = $('.sidebar-start').offset().top + $('.sidebar-start').height();
       if (position > $bottomOfHeader) {
         $sidebarMenu.css('position', 'fixed');
         $sidebarMenu.css('top', '0');

@@ -16,7 +16,7 @@ get_header(); ?>
       <div class="content-wrapper">
         <h2>UNYA: Where Youth lead </h2>
         <p>The talented youth at UNYA are making an impact in our community. Learn about their successes.</p>
-        <a href="<?php echo get_page_link(37); ?>"><h3>Learn more <span class="fa fa-angle-right hidden-desktop" aria-hidden="true"></span></h3></a>
+        <a href="about"><h3>Learn more <span class="fa fa-angle-right hidden-desktop" aria-hidden="true"></span></h3></a>
       </div>
     </section>
     <section class="nyc">
@@ -24,7 +24,7 @@ get_header(); ?>
         <h2>Join us in making history</h2>
         <p>The Native Youth Center capital campaign will help us build a new hub for
         Vancouver's indigenous youth. Learn how you can contribute.</p>
-        <a href="<?php echo get_page_link(76); ?>"><h3>Learn More <span class="fa fa-angle-right hidden-desktop" aria-hidden="true"></span></h3></a>
+        <a href="native-youth-center"><h3>Learn More <span class="fa fa-angle-right hidden-desktop" aria-hidden="true"></span></h3></a>
       </div>
     </section>
     <section class="programs">

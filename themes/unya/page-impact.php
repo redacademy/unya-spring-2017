@@ -16,7 +16,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<header class="header-wrapper impact-title">
+		<header class="header-wrapper impact-title sidebar-start">
 			<h1>Impact</h1>
 		</header>
 
@@ -30,7 +30,7 @@ get_header(); ?>
 				<a href="<?php the_permalink() ?>"><img class="success-image" src="<?php echo CFS()->get( 'photo' ); ?>" cover></a>			
 				<div class="success-content">
 				  <h3 class="hidden-mobile">Youth Feature - <?php the_title(); ?></h3>
-					<p class="hidden-mobile"><?php echo CFS()->get( 'first_half_of_story' ); ?></p>
+					<p class="hidden-mobile"><?php echo wp_kses(CFS()->get( 'first_half_of_story' ),array('br') ); ?></p>
 					<a class="hidden-mobile" href="<?php the_permalink() ?>"><p class="hidden-mobile">Read more about <?php the_title(); ?></p></a>
 	      </div>
 			</single-story>
@@ -48,7 +48,7 @@ get_header(); ?>
 				<p class="content-wrapper">What do youth say about us?</p>
 			  
 			    <div class="impact-polygon">
-				    <p class="content-wrapper"><?php echo CFS()->get( 'testimonial_1' ); ?></p>
+				    <p class="content-wrapper"><?php echo wp_kses(CFS()->get( 'testimonial_1' ),array('br')); ?></p>
 				  </div>
        
 

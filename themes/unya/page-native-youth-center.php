@@ -7,27 +7,25 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area nyc-content">
 		<main id="main" class="site-main" role="main">
-			<header class="header-wrapper-nyc nyc-title">
-				<h1>Native Youth Centre | Capital Campaign</h1>
-				<p>Building a hub for confidence, leadership and reconciliation.</p>
+			<header class="header-wrapper header-wrapper-nyc nyc-title">
+				<h1>Native Youth Centre <span class="hidden-mobile">| Capital Campaign</span></h1>
+				<p class="hidden-mobile">Building a hub for confidence, leadership and reconciliation.</p>
 			</header>
 			<div>
 				<p class="header-subtext">We have a goal of $10 Million. Help us get a little closer today.</p>
-			</div>			
+			</div>
 
-<div class="image-carousel hidden-mobile">
-
-    <?php $images = CFS()->get( 'nyc_image_slider' ); ?>
-    <?php foreach ( $images as $image ) : ?>
-	  <div class="nyc-slide" style='background-size: cover;
-		  background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%), 
-		  url(<?php echo $image['image']; ?>)';>
-		</div>
-	  <?php endforeach; ?>
-
-</div>						            
+			<div class="image-carousel hidden-mobile">
+				<?php $images = CFS()->get( 'nyc_image_slider' ); ?>
+				<?php foreach ( $images as $image ) : ?>
+				<div class="nyc-slide sidebar-start" style='background-size: cover; background-position:top;
+					background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%), 
+					url(<?php echo $image['image']; ?>)';>
+				</div>
+	  	<?php endforeach; ?>
+			</div><!--End image carousel -->
 
 			<section class="container">
 			<div class="accordion" id="accordion">
@@ -55,7 +53,7 @@ get_header(); ?>
 										<p class="timeline-year"><?php echo esc_html( $timeline_item['year']); ?></p>
 									</div>
 									<div class="description-wrapper">
-										<p><?php echo esc_html( $timeline_item['description'] ); ?></p>
+										<p><?php echo wp_kses( $timeline_item['description'],array('br') ); ?></p>
 									</div>
 								</li>
 							<?php endforeach; ?> 	
@@ -68,7 +66,6 @@ get_header(); ?>
 					<header class="section-heading">
 						<h2 class="content-wrapper">Partners</h2>
 					</header>
-				</section>
 					<ul class="logo-carousel">
 						<?php $partners = CFS()->get( 'partners' ); ?>
 						<?php foreach ( $partners as $partner ) : ?>
@@ -77,8 +74,7 @@ get_header(); ?>
 							</li>
 						<?php endforeach; ?> 	
 					</ul>	
-					
-				
+				</section>
 				<h2 class="accordion-label" id="ways-to-help">How to Help</h2>
 				<section class="ways-to-help">
 					<div class="section-heading">
@@ -86,22 +82,22 @@ get_header(); ?>
 					</div>
 					<div class="content-wrapper">
 						<h4>The Need</h4>
-						<p><?php echo esc_html( CFS()->get( 'the_need' ) ); ?></p>
+						<p><?php echo wp_kses( CFS()->get( 'the_need' ),array('br') ); ?></p>
 					</div>
 						<div class="nyc-banner">
 				    </div>
 					<div class="content-wrapper">
 						<h4>We Need Your Help</h4>
-						<p><?php echo esc_html( CFS()->get( 'we_need_your_help' ) ); ?></p>
+						<p><?php echo wp_kses( CFS()->get( 'we_need_your_help' ),array('br') ); ?></p>
 						<h5>Donate Funds</h5>
-						<p><?php echo esc_html( CFS()->get( 'donate_funds' ) ); ?></p>
+						<p><?php echo wp_kses( CFS()->get( 'donate_funds' ),array('br') ); ?></p>
 						<img src="<?php echo esc_url( CFS()->get( 'ways_to_help_image' ) ); ?>" alt="image of ways to help">
 						<h5>Donate Materials and Supplies</h5>
-						<p><?php echo esc_html( CFS()->get( 'donate_materials_and_supplies' ) ); ?></p>
+						<p><?php echo wp_kses( CFS()->get( 'donate_materials_and_supplies' ),array('br') ); ?></p>
 						<h5>Other Ways to Help</h5>
-						<p><?php echo esc_html( CFS()->get( 'other_ways_to_help' ) ); ?></p>
+						<p><?php echo wp_kses( CFS()->get( 'other_ways_to_help' ),array('br') ); ?></p>
 						<h5>How Will Your Donations be Recognized?</h5>
-						<p><?php echo esc_html( CFS()->get( 'how_will_your_donations_be_recognized' ) ); ?></p>
+						<p><?php echo wp_kses( CFS()->get( 'how_will_your_donations_be_recognized' ),array('br') ); ?></p>
 					</div>
 				</section>
 			</div>
@@ -115,4 +111,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

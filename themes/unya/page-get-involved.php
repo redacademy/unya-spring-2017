@@ -9,7 +9,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<header class="header-wrapper get-involved-title">
+		<header class="header-wrapper get-involved-title sidebar-start">
 			<h1>Get Involved</h1>
 		</header>
 		<div class="accordion" id="accordion">
@@ -19,7 +19,7 @@ get_header(); ?>
 					<h2>Donate</h2>
 				</header>
 				<div class="content-wrapper">
-					<p><?php echo CFS()->get( 'donation_intro_paragraph' ); ?></p>
+					<p><?php echo wp_kses(CFS()->get( 'donation_intro_paragraph' ),array('br') ); ?></p>
 				</div>
 				<div class="donation-registration">
 					<p class="content-wrapper">UNYA is a not-for-profit society registered with the Province and a charitable organization 129836292 RR0001 registered with the Government of Canada.</p>
@@ -41,7 +41,7 @@ get_header(); ?>
 				</header>
 				<div class="content-wrapper">
 					<h2 class="hidden-mobile">Employment Opportunities</h2>
-					<p><?php echo CFS()->get( 'employment_intro_paragraph' ); ?></p>
+					<p><?php echo wp_kses(CFS()->get( 'employment_intro_paragraph' ),array('br') ); ?></p>
 				</div>
 				<div class="hidden-mobile">
 					<p>Why work for UNYA?</p>
@@ -49,7 +49,7 @@ get_header(); ?>
 						<?php $employment_list = CFS()->get('why_work_for_unya'); ?>
 						<?php foreach ( $employment_list as $why_work_for_unya ) : ?>
 						<li class="employment-list">
-							<?php echo esc_html( $why_work_for_unya['why_work_for_unya_item'] ); ?>
+							<?php echo wp_kses( $why_work_for_unya['why_work_for_unya_item'],array('br')  ); ?>
 						</li>
 						<?php endforeach; ?>
 					</ul>
@@ -72,8 +72,10 @@ get_header(); ?>
 					<?php foreach ( $employment_opportunities as $post ) : setup_postdata( $post ); ?>
 					<li class="single-opportunity">
 						<h3><?php the_title(); ?></h3>
+
 						<p class="hidden-mobile"><?php echo CFS()->get( 'description' ); ?></p>
 						<a href="<?php echo CFS()->get( 'link' ); ?>" target="_blank">Learn More</a>
+
 					</li>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</ul>
@@ -99,6 +101,7 @@ get_header(); ?>
 							<h3><?php the_title(); ?></h3>
 							<p class="hidden-mobile"><?php echo CFS()->get( 'description' ); ?></p>
 							<a href="<?php echo CFS()->get( 'link' ); ?>" target="_blank">Learn More</a>
+
 					</li>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</div>

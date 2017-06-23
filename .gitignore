@@ -29,6 +29,7 @@ access_log
 # ========================================================== #
 plugins/*
 !plugins/unya-functionality/
+!plugins/hide-default-posts/
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #

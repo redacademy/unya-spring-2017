@@ -22,13 +22,13 @@ function unya_body_classes( $classes ) {
 add_filter( 'body_class', 'unya_body_classes' );
 
 // Change program slug to 'programs'
-function change_programs_archive_slug ( $args, $post_type ) {
+function unya_change_programs_archive_slug ( $args, $post_type ) {
     if ( 'program' === $post_type ) {
         $args['rewrite']['slug'] = 'programs';
     }
     return $args;
 }
-add_filter( 'register_post_type_args', 'change_programs_archive_slug', 10, 2 );
+add_filter( 'register_post_type_args', 'unya_change_programs_archive_slug', 10, 2 );
 
 // Change the title of the Programs archive and News archive page
 add_filter( 'get_the_archive_title', function ( $title ) {
@@ -42,7 +42,7 @@ add_filter( 'get_the_archive_title', function ( $title ) {
 
 // CFS for Hero Banners //
 
-function hero_banners() {
+function unya_hero_banners() {
     wp_enqueue_style(
         'custom-style',
         get_template_directory_uri() . '/build/css/style.min.css'
@@ -124,7 +124,7 @@ function hero_banners() {
 
     wp_add_inline_style( 'custom-style', $custom_css );
 }
-add_action( 'wp_enqueue_scripts', 'hero_banners' );
+add_action( 'wp_enqueue_scripts', 'unya_hero_banners' );
 
 //Custom Login Logo//
 
@@ -146,7 +146,7 @@ add_filter('login_headertitle', 'unya_login_title');
 
 // filter menu items for sidebar
 
-function filter_nav_menu_list($sorted_menu_objects, $args) {
+function unya_filter_nav_menu_list($sorted_menu_objects, $args) {
 
     if ( $args->menu_id == 'primary-menu' ) {
         return $sorted_menu_objects;
@@ -155,10 +155,18 @@ function filter_nav_menu_list($sorted_menu_objects, $args) {
     $parent_id = get_the_ID(); // get page ID
     $children_menu_list = array(); // empty array for new menu objects
     $menu_parent_ID = 0;
+    $archive_name = get_post_type( get_the_ID() );
 
     foreach ( $sorted_menu_objects as $menu_object ) {
-        if ( $menu_object->object_id == $parent_id ) {
+        if ( !is_archive() && $menu_object->object_id == $parent_id ) {
             $menu_parent_ID = $menu_object->ID;
+            break;
+        } elseif ( $archive_name == 'program' && $menu_object->post_name == 'programs' ) {
+            $menu_parent_ID = $menu_object->ID;
+            break;
+        } elseif ( $archive_name == 'news' &&  $menu_object->post_name == 'news') {
+            $menu_parent_ID = $menu_object->ID;
+            break;
         }
     }
 
@@ -170,4 +178,4 @@ function filter_nav_menu_list($sorted_menu_objects, $args) {
     return $children_menu_list;
 }
 
-add_filter('wp_nav_menu_objects', 'filter_nav_menu_list', 10, 2);
+add_filter('wp_nav_menu_objects', 'unya_filter_nav_menu_list', 10, 2);

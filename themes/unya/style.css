@@ -638,7 +638,6 @@ a {
     padding-left: 0; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
       position: absolute;
       top: 2.8rem;
       left: -999rem;
@@ -829,6 +828,10 @@ a {
   @media (min-width: 600px) {
     .menu-item-has-children .sub-menu .menu-item {
       width: auto; } }
+
+.site-content.collapsed {
+  height: 0;
+  overflow: hidden; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1145,11 +1148,11 @@ object {
 --------------------------------------------------------------
 
 /* All pages */
-.header-wrapper, .page-header {
+.header-wrapper {
   height: 4.2142857143rem;
   background-image: none; }
   @media (min-width: 600px) {
-    .header-wrapper, .page-header {
+    .header-wrapper {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
@@ -1160,76 +1163,50 @@ object {
       width: 100%;
       background-size: cover;
       background-position: center; }
-      .header-wrapper h1, .page-header h1 {
+      .header-wrapper h1 {
         padding-left: 50px;
         margin-bottom: 0; } }
 
-.header-wrapper-nyc {
-  height: 4.2142857143rem;
-  background-image: none; }
-  @media (min-width: 600px) {
-    .header-wrapper-nyc {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-      height: 25rem;
-      width: 100%;
-      background-size: cover;
-      background-position: center; }
-      .header-wrapper-nyc h1 {
-        padding-left: 50px;
-        margin-bottom: 0; }
-      .header-wrapper-nyc p {
-        padding-left: 50px;
-        color: white;
-        margin-top: 0;
-        font-size: 30px; } }
-
 /* About page */
-.page-id-37 .vision h3 {
+.about-content .vision h3 {
   color: #2C2C2C; }
 
-.page-id-37 .mission {
+.about-content .mission {
   height: 350px;
   width: 100%;
   color: #FFF; }
-  .page-id-37 .mission p {
+  .about-content .mission p {
     width: 80%;
     margin: 70px auto; }
 
-.page-id-37 .content-area ul {
+.about-content .content-area ul {
   margin: 0;
   padding: 1.8571428571rem 0;
   list-style: none; }
 
-.page-id-37 .leader {
+.about-content .leader {
   margin: 0.6428571429rem 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-  .page-id-37 .leader .image-wrapper {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+  .about-content .leader .image-wrapper {
     height: 5.7rem;
     width: 5.7rem;
     overflow: hidden;
     border-radius: 50%; }
-    .page-id-37 .leader .image-wrapper img {
-      max-width: none;
-      height: 100%;
-      min-width: 100%;
+    .about-content .leader .image-wrapper img {
+      max-height: 100%;
+      height: auto;
+      max-width: 100%;
       width: auto; }
-  .page-id-37 .leader .text-wrapper {
+  .about-content .leader .text-wrapper {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
     font-size: 0.8571428571rem; }
-    .page-id-37 .leader .text-wrapper p {
+    .about-content .leader .text-wrapper p {
       margin: 0.5rem 0; }
-  .page-id-37 .leader .leader-name {
+  .about-content .leader .leader-name {
     color: #2C2C2C;
     font-size: 1.1428571429rem;
     font-weight: bold; }
@@ -1259,33 +1236,40 @@ object {
       height: 550px; } }
 
 /* Native Youth Centre */
-.page-id-76 .nyc-banner {
-  height: 325px;
+@media (min-width: 600px) {
+  .header-wrapper-nyc p {
+    padding-left: 3.5714285714rem;
+    color: white;
+    margin-top: 0;
+    font-size: 2.1428571429rem; } }
+
+.nyc-content .nyc-banner {
+  height: 23.214285714rem;
   width: 100%; }
-  .page-id-76 .nyc-banner p {
+  .nyc-content .nyc-banner p {
     text-align: right;
     width: 80%;
     margin: 30px 15%;
     color: white; }
 
-.page-id-76 .planning ul {
+.nyc-content .planning ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-.page-id-76 .timeline-item {
+.nyc-content .timeline-item {
   display: -ms-flexbox;
   display: flex; }
 
-.page-id-76 .year-wrapper {
+.nyc-content .year-wrapper {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%; }
 
-.page-id-76 .timeline-year {
+.nyc-content .timeline-year {
   font-family: "poppins", sans-serif;
   font-weight: bold; }
 
-.page-id-76 .description-wrapper {
+.nyc-content .description-wrapper {
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%; }
 

@@ -6,7 +6,7 @@
  */
 
 // Register Custom Taxonomy
-function register_program_type_taxonomy() {
+function unya_register_program_type_taxonomy() {
 
 	$labels = array(
 		'name'                       => 'Program Types',
@@ -32,7 +32,7 @@ function register_program_type_taxonomy() {
 	);
 	$args = array(
 		'labels'                     => $labels,
-		'hierarchical'               => false,
+		'hierarchical'               => true,
 		'public'                     => true,
 		'show_ui'                    => true,
 		'show_admin_column'          => true,
@@ -42,11 +42,11 @@ function register_program_type_taxonomy() {
 	register_taxonomy( 'program-type', array( 'program' ), $args );
 
 }
-add_action( 'init', 'register_program_type_taxonomy', 0 );
+add_action( 'init', 'unya_register_program_type_taxonomy', 0 );
 
 
 // Register Custom Taxonomy
-function opportunities_type_taxonomy() {
+function unya_opportunities_type_taxonomy() {
 
 	$labels = array(
 		'name'                       => 'Opportunity Types',
@@ -82,4 +82,4 @@ function opportunities_type_taxonomy() {
 	register_taxonomy( 'opportunity_type', array( 'opportunities' ), $args );
 
 }
-add_action( 'init', 'opportunities_type_taxonomy', 0 );
+add_action( 'init', 'unya_opportunities_type_taxonomy', 0 );
