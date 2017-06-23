@@ -29,15 +29,13 @@
 			<li class="menu-item-archive menu-success-title"><p><?php echo $term ?></p></li>
 			<?php foreach ($program_posts as $program_post):?>
 				<li class="menu-item-archive success-items">
-					<a href="<?php echo get_permalink($program_post->ID); ?>">
-					<p><?php echo $program_post->post_title; ?></p>
+					<a href="<?php echo get_permalink($program_post->ID); ?>"><i class="fa fa-long-arrow-right" aria-hidden="true"></i><p><?php echo $program_post->post_title; ?></p>
 					</a>
 				</li>
-			<?php endforeach; ?>
-<!--
-		// echo '<li class="menu-item-archive"><a href="' . get_site_url() . '/impact/#statistics">Statistics</a></li>';
-		// echo '<li class="menu-item-archive"><a href="' . get_site_url() . '/impact/#testimonials">Testimonials</a></li>';-->
-	
+			<?php endforeach;
+
+		echo '<li class="menu-item-archive"><a href="' . get_site_url() . '/programs/#calendar">Calendar</a></li>';
+		?>
 		</ul>
 	</div>
 </div><!-- #secondary -->
