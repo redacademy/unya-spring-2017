@@ -895,10 +895,10 @@ a {
   border-radius: 0 0 10px 0;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
   list-style: none; }
-  .sidebar-menu-container .menu-item, .sidebar-menu-container .menu-item-main {
+  .sidebar-menu-container .menu-item, .sidebar-menu-container .menu-item-archive {
     padding: 0.7142857143rem;
     border-top: 1px solid #4263AB; }
-    .sidebar-menu-container .menu-item a, .sidebar-menu-container .menu-item-main a {
+    .sidebar-menu-container .menu-item a, .sidebar-menu-container .menu-item-archive a {
       text-decoration: none;
       text-transform: uppercase; }
   .sidebar-menu-container .menu-item:first-child {

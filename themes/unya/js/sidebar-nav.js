@@ -28,7 +28,6 @@
 
     $(document).scroll(function() {
       var $position = $(this).scrollTop();
-
       if ($sidebarArea.length) {
         fixSidebar($position);
       }
@@ -36,19 +35,19 @@
     });
 
     // Smooth scrolling to anchors on the page
-    $menuItem.on('click', function(event) {
+      $menuItem.on('click', function(event) {
       event.preventDefault();
 
-      var $menuLink = $(this.hash);
-      $menuItem = $menuLink.length ? $menuLink : $('[name=' + this.hash.slice(1) +']');
-      if ($menuItem.length) {
-        $('html, body').animate({
-          scrollTop: $menuLink.offset().top
-        }, 500);
-        return false;
-      }
+        var $menuLink = $(this.hash);
+        $menuItem = $menuLink.length ? $menuLink : $('[name=' + this.hash.slice(1) +']');
+        if ($menuItem.length) {
+          $('html, body').animate({
+            scrollTop: $menuLink.offset().top
+          }, 500);
+          return false;
+        }
 
-    });
+      });
 
   });
 
