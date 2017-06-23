@@ -47,9 +47,12 @@ footer{
     justify-content:center;
     .subscription-form{
       width:100%;
+      background-color:#fff;
     }
-
-      button.sign-up-btn {
+    abbr{
+      display:none;
+    }
+      button.sign-up-btn{
       width:230px;
       height:50px;
       margin:15px 0px;
@@ -74,35 +77,6 @@ footer{
       height:100%;
       display:flex;
       justify-content: center;
-      .wpcf7-list-item{
-        margin:0;
-        padding-left:4px;
-      }
-      .wpcf7-form {
-        align-items: left;
-        width:295px;
-        p{
-          width:100%;
-          margin:1rem 0;
-        }
-      }
-      input[type=email]{
-        width: 100%;
-        height:50px;
-        position:relative;
-        }
-        ::placeholder{
-          padding-left:50px;
-        }
-        .email-field::after{
-          content:'\f003';
-          font-family:'FontAwesome';
-          font-size:18px;
-          position:absolute;
-          top:0;
-          left:10px;
-          color: #4263AB;
-        }
       }
       input[type=checkbox]{
         transform: scale(2,2);
@@ -130,7 +104,7 @@ footer{
       @include desktop{
         visibility:hidden;
         }
-    .fa-times {
+    i.fa fa-times {
       padding-right: 1rem;
       color:$color__blue-dark;
         }
