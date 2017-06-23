@@ -6,10 +6,8 @@
     var $sidebarMenu = $('#secondary .menu-primary-menu-container');
     var $sidebarArea = $('.sidebar-nav-menu');
     var $menuItem = $('.sidebar-menu-container .menu-item a');
-    // var $siteHeader = $('.sidebar-start-nyc').offset().top + $('.sidebar-start-nyc').height();
 
     $sidebarMenu.css('top', $bottomOfHeader);
-    // $sidebarMenu.css('top', $siteHeader);
 
     //on window resize moves sidebar
     $(window).resize(function() {
@@ -26,13 +24,6 @@
         $sidebarMenu.css('position', 'absolute');
         $sidebarMenu.css('top', $bottomOfHeader);
       }
-      // if (position > $siteHeader) {
-      //   $sidebarMenu.css('position', 'fixed');
-      //   $sidebarMenu.css('top', '0');
-      // } else {
-      //   $sidebarMenu.css('position', 'absolute');
-      //   $sidebarMenu.css('top', $siteHeader);
-      // }
     }
 
     $(document).scroll(function() {
