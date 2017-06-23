@@ -15,7 +15,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area about-content">
 		<main id="main" class="site-main" role="main">
-		<div class="header-wrapper about-title">
+		<div class="header-wrapper about-title sidebar-start">
 			<h1>About UNYA</h1>
 		</div>
 		<div class="accordion" id="accordion">
