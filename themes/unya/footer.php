@@ -20,9 +20,9 @@
 						<div class="social-links footer-flex">
 							<h4 class="hidden-mobile">Get Social </h4>
 							<div class="social-media-links-wrapper">
-								<a class="social-media-links facebook" href="https://www.facebook.com/urbannativeyouthassociation/"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
-								<a class="social-media-links twitter" href="https://twitter.com/unyanews?lang=en"><span class="fa fa-twitter-square" aria-hidden="true"></span></a>
-								<a class="social-media-links instagram" href="https://www.instagram.com/explore/locations/296509320/"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+								<a class="social-media-links facebook" href="https://www.facebook.com/urbannativeyouthassociation/" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
+								<a class="social-media-links twitter" href="https://twitter.com/unyanews?lang=en" target="_blank"><span class="fa fa-twitter-square" aria-hidden="true"></span></a>
+								<a class="social-media-links instagram" href="https://www.instagram.com/explore/locations/296509320/" target="_blank"><span class="fa fa-instagram" aria-hidden="true"></span></a>
 							</div>
 						</div>
 						<div class="contact-us footer-flex">
