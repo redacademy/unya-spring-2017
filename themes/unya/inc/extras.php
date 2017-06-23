@@ -155,10 +155,18 @@ function unya_filter_nav_menu_list($sorted_menu_objects, $args) {
     $parent_id = get_the_ID(); // get page ID
     $children_menu_list = array(); // empty array for new menu objects
     $menu_parent_ID = 0;
+    $archive_name = get_post_type( get_the_ID() );
 
     foreach ( $sorted_menu_objects as $menu_object ) {
-        if ( $menu_object->object_id == $parent_id ) {
+        if ( !is_archive() && $menu_object->object_id == $parent_id ) {
             $menu_parent_ID = $menu_object->ID;
+            break;
+        } elseif ( $archive_name == 'program' && $menu_object->post_name == 'programs' ) {
+            $menu_parent_ID = $menu_object->ID;
+            break;
+        } elseif ( $archive_name == 'news' &&  $menu_object->post_name == 'news') {
+            $menu_parent_ID = $menu_object->ID;
+            break;
         }
     }
 
