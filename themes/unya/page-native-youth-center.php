@@ -15,6 +15,7 @@ get_header(); ?>
 			</header>
 			<div>
 				<p class="header-subtext">We have a goal of $10 Million. Help us get a little closer today.</p>
+<<<<<<< HEAD
 			</div>
 
 			<div class="image-carousel hidden-mobile">
@@ -26,6 +27,20 @@ get_header(); ?>
 				</div>
 	  	<?php endforeach; ?>
 			</div><!--End image carousel -->
+=======
+			</div>			
+
+  <div class="image-carousel hidden-mobile">
+
+    <?php $images = CFS()->get( 'nyc_image_slider' ); ?>
+    <?php foreach ( $images as $image ) : ?>
+	  <div class="nyc-slide" 
+		  style='background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%), 
+		  url(<?php echo $image['image']; ?>)';>
+		</div>
+	  <?php endforeach; ?>
+</div>
+>>>>>>> switched news page back to original loop
 
 			<section class="container">
 			<div class="accordion" id="accordion">

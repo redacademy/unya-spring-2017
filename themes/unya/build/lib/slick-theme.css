@@ -36,7 +36,7 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: black;
     border: none;
     outline: none;
     background: transparent;
@@ -121,7 +121,7 @@
 
 .slick-dots
 {
-    position: absolute;
+    position: static;
     bottom: -25px;
 
     display: block;
@@ -191,7 +191,7 @@
     content: '•';
     text-align: center;
 
-    opacity: .25;
+    opacity: .75;
     color: black;
 
     -webkit-font-smoothing: antialiased;
