@@ -24,5 +24,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar('success'); ?>
 <?php get_footer(); ?>
