@@ -517,7 +517,6 @@ input[type="submit"] {
   input[type="submit"]:focus {
     border-color: #aaa #bbb #bbb; }
 
-/* Fields */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -560,9 +559,6 @@ input[type=email] {
   padding-left: 10px;
   color: black; }
 
-label {
-  display: none; }
-
 i.fa.fa-times::before {
   font-size: 20px;
   padding: 15px; }
@@ -577,6 +573,14 @@ i.fa.fa-times::before {
   background-size: 24px;
   border-color: form__blue-border;
   padding-left: 40px; }
+
+input[type=checkbox] {
+  transform: scale(2, 2);
+  width: 20px; }
+
+.ctct-form-wrapper .ctct-input-container label {
+  color: black;
+  font-size: 12px; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -1537,21 +1541,7 @@ footer {
           display: -ms-flexbox;
           display: flex;
           -ms-flex-pack: center;
-              justify-content: center; }
-        footer .newsletter-sign-up input[type=checkbox] {
-          transform: scale(2, 2);
-          width: 20px; }
-        footer .newsletter-sign-up input[type=submit] {
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: center;
-              justify-content: center;
-          width: 120px;
-          height: 40px;
-          text-transform: uppercase; }
-          footer .newsletter-sign-up input[type=submit] p {
-            margin: 0;
-            padding: 0; } }
+              justify-content: center; } }
     footer .newsletter-sign-up .close-form {
       background-color: #fff;
       color: #00277E;
@@ -1562,9 +1552,6 @@ footer {
       @media (min-width: 600px) {
         footer .newsletter-sign-up .close-form {
           visibility: hidden; } }
-      footer .newsletter-sign-up .close-form i.fa fa-times {
-        padding-right: 1rem;
-        color: #00277E; }
   @media (min-width: 600px) {
     footer {
       text-align: left;

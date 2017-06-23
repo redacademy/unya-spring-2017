@@ -7,7 +7,6 @@
 .ctct-form-wrapper{
 	height:160px;
 }
-
 .ctct-form-field-submit{
 	display:flex;
 	justify-content:center;
@@ -16,7 +15,6 @@
 div.ctct-disclosure {
 	display: none !important;
 }
-
 button,
 input[type="button"],
 input[type="reset"],
@@ -40,9 +38,6 @@ input[type="submit"] {
 		border-color: #aaa #bbb #bbb;
 	}
 }
-
-/* Fields */
-
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -55,12 +50,10 @@ textarea {
 	border-radius: $form__border-radius;
 	width:300px;
 	height:40px;
-
 	&:focus {
 		color: #111;
 	}
 }
-
  input[type=email]{
 	width: 70%;
 	height:50px;
@@ -74,15 +67,10 @@ textarea {
 		padding-left:10px;
 		color:black;
 		}
-		label{
-			display:none;
-		}
-
 	i.fa.fa-times::before{
 		font-size:20px;
 		padding:15px;
 	}
-
 .ctct-form-wrapper input[type="text"],
 .ctct-form-wrapper input[type="email"],
 .ctct-form-wrapper input[type="password"],
@@ -93,4 +81,14 @@ textarea {
     background-size: 24px;
     border-color: form__blue-border;
     padding-left: 40px;
+}
+
+input[type=checkbox]{
+	transform: scale(2,2);
+	width:20px;
+	}
+
+.ctct-form-wrapper .ctct-input-container label {
+    color: black;
+    font-size: 12px;
 }

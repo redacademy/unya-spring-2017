@@ -78,21 +78,6 @@ footer{
       display:flex;
       justify-content: center;
       }
-      input[type=checkbox]{
-        transform: scale(2,2);
-        width:20px;
-        }
-      input[type=submit]{
-        display: flex;
-        justify-content: center;
-        width:120px;
-        height:40px;
-        text-transform:uppercase;
-        p{
-          margin:0;
-          padding:0;
-          }
-        }
       }
     .close-form {
       background-color: #fff;
@@ -103,10 +88,6 @@ footer{
       right:0;
       @include desktop{
         visibility:hidden;
-        }
-    i.fa fa-times {
-      padding-right: 1rem;
-      color:$color__blue-dark;
         }
       }// close .close-form
     } // close .subscription-form
