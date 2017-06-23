@@ -11,6 +11,7 @@
 							<div class="newsletter-sign-up footer-flex">
 								<h4 class="hidden-mobile">Sign up for our updates!</h4>
 								<button class="hidden-desktop sign-up-btn"><h4>Sign up for updates</h4></button>
+
 								<div class="subscription-form hidden-mobile">
 								<?php echo do_shortcode( '	[ctct form="273"]' ); ?>
 								<div class="close-form"></div>
