@@ -16,7 +16,7 @@
 	// echo '</pre>';
 
 		wp_nav_menu( array( 
-			'theme_location' => 'primary', 
+			'theme_location' => 'primary',
 			'sub_menu' => true, 
 			'menu_class'=>'sidebar-menu-container', 
 			'menu_id'=>'sidebar-menu' ) 

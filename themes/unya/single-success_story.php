@@ -10,6 +10,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<header class="header-wrapper impact-title sidebar-start">
+			<h1>Success Stories</h1>
+		</header>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 		  <div class="content-wrapper">
