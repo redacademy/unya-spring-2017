@@ -11,30 +11,32 @@
 	<div class="menu-primary-menu-container">
 		<ul class="sidebar-menu-container">
 		<?php
-
-		$term = get_query_var( 'program-type' );
-		echo $term;
-
-			$program_types = get_terms(array (
-				'taxonomy'  => 'program-type',
-				'hide_empty'=> false
-				));
-				// $terms = wp_get_post_terms( $post->ID, 'program-type');
-				// $term = $terms[0];
-				// echo '<li class="menu-item-archive menu-success-title"><p>' . print_r($term->name) .'</p></li>';
-			if ( !empty($program_types) && !is_wp_error($program_types) ):
+			$terms = wp_get_post_terms( $post->ID, 'program-type');
+			$term = $terms[0]->name;
+			$termID = $terms[0]->term_taxonomy_id;
+			
+			$program_posts = get_posts(array(
+    		'post_type' => 'program',
+    		'tax_query' => array(
+        	array(
+					'taxonomy' => 'program-type',
+					'field' => 'term_id',
+					'terms' => $termID)
+    		))
+			);
+			// var_dump($program_posts);
 		?>
-		<?php foreach ($program_types as $program_type):?>
-			<li class="menu-item-archive success-items">
-				<a href="<?php echo get_term_link($program_types) ?>">
-				<p><?php echo $program_types->name; ?></p>
-				</a>
-			</li>
-		<?php endforeach; ?>
-		<?php endif;
-
+			<li class="menu-item-archive menu-success-title"><p><?php echo $term ?></p></li>
+			<?php foreach ($program_posts as $program_post):?>
+				<li class="menu-item-archive success-items">
+					<a href="<?php echo get_permalink($program_post->ID); ?>">
+					<p><?php echo $program_post->post_title; ?></p>
+					</a>
+				</li>
+			<?php endforeach; ?>
+<!--
 		// echo '<li class="menu-item-archive"><a href="' . get_site_url() . '/impact/#statistics">Statistics</a></li>';
-		// echo '<li class="menu-item-archive"><a href="' . get_site_url() . '/impact/#testimonials">Testimonials</a></li>'; ?>
+		// echo '<li class="menu-item-archive"><a href="' . get_site_url() . '/impact/#testimonials">Testimonials</a></li>';-->
 	
 		</ul>
 	</div>

@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<header>
+		<header class="header-wrapper sidebar-start">
 			<?php 
 				$terms = wp_get_post_terms( $post->ID, 'program-type');
 				$term = $terms[0];
