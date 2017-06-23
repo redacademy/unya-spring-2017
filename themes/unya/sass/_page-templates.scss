@@ -384,8 +384,22 @@
 .news-single{
   display:flex;
   flex-flow:row nowrap;
-  height:100px;
+  height:120px;
+  padding-bottom:20px;
 }
 .news-image{
-  width:100px;
+  width:120px;
+}
+
+.news-headline{
+  font-size:14px;
+  margin:0;
+  a{
+    color:#2C2C2C;
+    text-decoration: none;
+  }
+}
+
+.news-details{
+  height:120px;
 }

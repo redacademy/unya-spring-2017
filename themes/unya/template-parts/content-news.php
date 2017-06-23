@@ -19,12 +19,12 @@
 						<li class="news-single">
 							<img class="news-image" src="<?php echo CFS()->get( 'article_photo' ); ?>">
 							<div class="news-details">
-								<h3 class="hidden-mobile"><?php the_title();?></h3>
-								<p class="hidden-desktop"><?php echo custom_field_excerpt(); ?></p>
+								<h3 class="news-headline"><a href="<?php echo CFS()->get( 'article_url' ); ?>"><?php the_title();?></a></h3>
+								<div class="hidden-desktop"><?php echo custom_field_excerpt(); ?></div>
                 <p class="hidden-mobile"><?php echo CFS()->get( 'article_text' ); ?></p>
 								<p class="hidden-mobile"><?php echo CFS()->get( 'article_date' ); ?></p>
-								<p><?php echo CFS()->get( 'article_url' ); ?></p>
-							</div>
+								<span class="news-url hidden-mobile"><?php echo CFS()->get( 'article_url' ); ?></span>
+							</news-details>
 						</li>
 				
 </article><!-- #post-## -->
