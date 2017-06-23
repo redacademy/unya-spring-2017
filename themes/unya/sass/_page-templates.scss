@@ -386,6 +386,9 @@
   flex-flow:row nowrap;
   height:120px;
   padding-bottom:20px;
+	@include desktop{
+    height:327px;
+  }
 }
 .news-image{
   width:120px;

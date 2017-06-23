@@ -1440,6 +1440,9 @@ object {
       flex-flow: row nowrap;
   height: 120px;
   padding-bottom: 20px; }
+  @media (min-width: 600px) {
+    .news-single {
+      height: 327px; } }
 
 .news-image {
   width: 120px; }

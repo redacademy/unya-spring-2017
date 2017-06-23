@@ -15,16 +15,18 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 	</header><!-- .entry-header -->
-  	
-						<li class="news-single">
-							<img class="news-image" src="<?php echo CFS()->get( 'article_photo' ); ?>">
-							<div class="news-details">
-								<h3 class="news-headline"><a href="<?php echo CFS()->get( 'article_url' ); ?>"><?php the_title();?></a></h3>
-								<div class="hidden-desktop"><?php echo custom_field_excerpt(); ?></div>
-                <p class="hidden-mobile"><?php echo CFS()->get( 'article_text' ); ?></p>
-								<p class="hidden-mobile"><?php echo CFS()->get( 'article_date' ); ?></p>
-								<span class="news-url hidden-mobile"><?php echo CFS()->get( 'article_url' ); ?></span>
-							</news-details>
-						</li>
-				
-</article><!-- #post-## -->
+  	<ul class="news-articles">
+			<li class="news-single">
+        <div class="news-title-block">
+          <p class="hidden-mobile"><?php echo CFS()->get( 'article_date' ); ?></p>
+					<img class="news-image" src="<?php echo CFS()->get( 'article_photo' ); ?>">
+			    <h3 class="news-headline"><a href="<?php echo CFS()->get( 'article_url' ); ?>"><?php the_title();?></a></h3>
+        </div>
+        <div class="news-details">								
+			 		<div class="hidden-desktop"><?php echo custom_field_excerpt(); ?></div>
+          <p class="hidden-mobile"><?php echo CFS()->get( 'article_text' ); ?></p>							
+			  	<span class="news-url hidden-mobile"><a href="<?php echo CFS()->get( 'article_url' ); ?>">Read More</a></span>
+				</news-details>
+			</li>
+	  </ul>		
+  </article><!-- #post-## -->
