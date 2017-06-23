@@ -17,18 +17,6 @@ div.ctct-disclosure {
 	display: none !important;
 }
 
-span.wpcf7-not-valid-tip {
-	display: none;
-}
-
-// form style if submission is invalid
-input[aria-invalid="true"] {
-	border-color: red;
-	background-color: rgba(153,0,0,0.3);
-}
-
-/* Buttons */
-
 button,
 input[type="button"],
 input[type="reset"],
@@ -47,7 +35,6 @@ input[type="submit"] {
 	&:hover {
 		border-color: #ccc #bbb #aaa;
 	}
-
 	&:active,
 	&:focus {
 		border-color: #aaa #bbb #bbb;
@@ -74,50 +61,36 @@ textarea {
 	}
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-	padding: 3px;
-}
-
-textarea {
-	padding-left: 3px;
-	width: 100%;
-}
-
  input[type=email]{
-        width: 80%;
-        height:50px;
-        position:relative;
-				padding-left:50px;
-				@include desktop{
-				width:100%;
-				}
- 			}
-        ::placeholder{
-          padding-left:10px;
-        }
-				label{
-					display:none;
-				}
-				.ctct-form-field{
-					display: flex;
-					justify-content:Center;
-					padding-top:20px;
+	width: 70%;
+	height:50px;
+	position:relative;
+	padding-left:50px;
+	@include desktop{
+	width:100%;
+		}
+	}
+	::placeholder{
+		padding-left:10px;
+		color:black;
+		}
+		label{
+			display:none;
+		}
 
-				}
-        .ctct-form-field-email::after{
-          content:'\f003';
-          font-family:'FontAwesome';
-          font-size:18px;
-          position:absolute;
-          top: 55px;
-          left: 115px;
-          color: #4263AB;
-        }
-			i.fa.fa-times::before{
-				font-size:20px;
-				padding:15px;
-			}
+	i.fa.fa-times::before{
+		font-size:20px;
+		padding:15px;
+	}
+
+.ctct-form-wrapper input[type="text"],
+.ctct-form-wrapper input[type="email"],
+.ctct-form-wrapper input[type="password"],
+.ctct-form-wrapper input[type="tel"],
+.ctct-form-wrapper input[type="number"]{
+    background:  url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Envelope_font_awesome.svg/512px-Envelope_font_awesome.svg.png) no-repeat;
+    background-position: 8px 50%;
+    background-size: 24px;
+    border-color: form__blue-border;
+    padding-left: 40px;
+}
