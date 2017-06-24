@@ -1,0 +1,5 @@
+.desktop-calendar {
+  @include desktop {
+    display: flex;
+  }
+}

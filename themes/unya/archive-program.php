@@ -20,7 +20,12 @@ get_header(); ?>
 
 			<section id="calendar">
 				<h2>Calendar</h2>
-				<?php echo do_shortcode("[calendar id=250]"); ?>
+				<div class="hidden-desktop content-wrapper mobile-calendar">
+					<?php echo do_shortcode("[calendar id=274]"); ?>
+				</div>
+				<div class="hidden-mobile content-wrapper desktop-calendar">
+					<?php echo do_shortcode("[calendar id=268]"); ?>
+				</div>
 			</section>
 
 			<?php get_template_part( 'template-parts/program', 'content' ); ?>
