@@ -24,7 +24,6 @@
 					'terms' => $termID)
     		))
 			);
-			// var_dump($program_posts);
 		?>
 			<li class="menu-item-archive menu-success-title"><p><?php echo $term ?></p></li>
 			<?php foreach ($program_posts as $program_post):?>
@@ -34,7 +33,7 @@
 				</li>
 			<?php endforeach;
 
-		echo '<li class="menu-item-archive"><a href="' . get_site_url() . '/programs/#calendar">Calendar</a></li>';
+		echo '<li class="menu-item-archive"><a href="' . get_site_url() . '/programs/#calendar">Back to Programs</a></li>';
 		?>
 		</ul>
 	</div>
