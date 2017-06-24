@@ -737,7 +737,8 @@ a {
   z-index: 299; }
   .site-header.expanded .site-branding {
     background: url("../../assets/images/Logo-White.png") no-repeat center;
-    background-size: contain; }
+    background-size: contain;
+    height: 3.5rem; }
   .site-header.expanded .main-navigation {
     display: block;
     -ms-flex-preferred-size: 100%;
@@ -773,7 +774,8 @@ a {
         display: block; }
   .site-header.expanded #main-nav-toggle {
     background: url("../../assets/images/menu-close.svg") no-repeat center;
-    background-size: contain; }
+    background-size: contain;
+    height: 3.5rem; }
 
 .site-footer.expanded {
   position: absolute;
