@@ -537,10 +537,11 @@ textarea {
     color: #111; }
 
 input[type=email] {
-  width: 70%;
+  width: 85%;
   height: 50px;
   position: relative;
-  padding-left: 50px; }
+  padding-left: 50px;
+  margin-top: 15px; }
   @media (min-width: 600px) {
     input[type=email] {
       width: 100%; } }
