@@ -24,8 +24,9 @@ input[type="submit"] {
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
 	background: $color__blue-dark;
 	color: #FFF;
-	width:130px;
-	height:50px;
+	@include font-size(0.75);
+	line-height: 1;
+	padding: .6rem 1rem .4rem;
 
 	&:hover {
 		border-color: #ccc #bbb #aaa;
@@ -89,6 +90,7 @@ input[type=checkbox]{
 	display:flex;
 	justify-content:center;
 	align-items:center;
+	padding-left:10px;
 }
 .ctct-form-wrapper .ctct-input-container label {
 	color: black;
