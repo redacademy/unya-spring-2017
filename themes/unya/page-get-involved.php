@@ -72,7 +72,7 @@ get_header(); ?>
 						<h3><?php the_title(); ?></h3>
 
 						<p class="hidden-mobile"><?php echo CFS()->get( 'description' ); ?></p>
-						<a href="<?php echo CFS()->get( 'link' ); ?>" target="_blank">Learn More</a>
+						<a href="<?php echo CFS()->get( 'link' ); ?>" target="_blank"><span class="hidden-mobile">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span><span class="hidden-desktop"><i class="fa fa-angle-right"></i></span></a>
 
 					</li>
 					<?php endforeach; wp_reset_postdata(); ?>
@@ -99,8 +99,7 @@ get_header(); ?>
 						<li class="single-opportunity">
 							<h3><?php the_title(); ?></h3>
 							<p class="hidden-mobile"><?php echo CFS()->get( 'description' ); ?></p>
-							<a href="<?php echo CFS()->get( 'link' ); ?>" target="_blank">Learn More</a>
-
+							<a href="<?php echo CFS()->get( 'link' ); ?>" target="_blank"><span class="hidden-mobile">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span><span class="hidden-desktop"><i class="fa fa-angle-right"></i></span></a>
 					</li>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</div>
