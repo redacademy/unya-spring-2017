@@ -1482,7 +1482,7 @@ object {
 
 .news-headline {
   font-size: 14px;
-  margin: 0; }
+  margin: auto auto; }
   .news-headline a {
     color: #2C2C2C;
     text-decoration: none; }
