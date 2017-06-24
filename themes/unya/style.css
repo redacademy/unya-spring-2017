@@ -595,9 +595,9 @@ input[type=checkbox] {
 a {
   color: #4263AB; }
   a:visited {
-    color: purple; }
+    color: #4263AB; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #00277E; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -706,7 +706,7 @@ a {
     background: url("../../assets/images/RED_UNYA_UI_LogoDesign_Assets_V1-1.png") no-repeat center;
     background-size: contain; }
     .site-header .site-branding a {
-      padding: 4rem; }
+      padding: 1rem 4rem; }
   .site-header .donate {
     display: none;
     padding: 0.5rem;
@@ -770,8 +770,7 @@ a {
         display: block; }
   .site-header.expanded #main-nav-toggle {
     background: url("../../assets/images/menu-close.svg") no-repeat center;
-    background-size: contain;
-    padding: 0; }
+    background-size: contain; }
 
 .site-footer.expanded {
   position: absolute;
