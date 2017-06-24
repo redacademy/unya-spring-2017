@@ -53,10 +53,11 @@ textarea {
 	}
 }
  input[type=email]{
-	width: 70%;
+	width: 85%;
 	height:50px;
 	position:relative;
 	padding-left:50px;
+	margin-top:15px;
 	@include desktop{
 	width:100%;
 		}
