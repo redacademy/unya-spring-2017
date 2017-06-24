@@ -804,16 +804,20 @@ a {
     #main-nav-toggle {
       display: none; } }
 
-#accordion .accordion-label {
-  background: #4263AB !important;
-  color: #fff !important;
-  margin: 0 !important;
-  border-bottom: 1px solid #aaa !important; }
-  @media (min-width: 600px) {
-    #accordion .accordion-label {
-      border: none !important;
-      background: transparent !important;
-      color: transparent !important; } }
+#accordion {
+  width: 100%; }
+  #accordion .accordion-label {
+    background: #4263AB !important;
+    color: #fff !important;
+    margin: 0 !important;
+    border-bottom: 1px solid #aaa !important; }
+    #accordion .accordion-label:focus {
+      outline: 0; }
+    @media (min-width: 600px) {
+      #accordion .accordion-label {
+        border: none !important;
+        background: transparent !important;
+        color: transparent !important; } }
 
 .ui-accordion .ui-accordion-content {
   padding: 0; }
@@ -1485,7 +1489,7 @@ object {
 
 .news-headline {
   font-size: 14px;
-  margin: 0; }
+  margin: auto auto; }
   .news-headline a {
     color: #2C2C2C;
     text-decoration: none; }
