@@ -475,8 +475,18 @@ table {
 # Forms
 --------------------------------------------------------------*/
 /* Subscription Form (in footer) */
+.ctct-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
 .ctct-form-wrapper {
-  height: 160px; }
+  height: 160px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .ctct-form-field-submit {
   display: -ms-flexbox;
@@ -487,6 +497,9 @@ table {
 
 div.ctct-disclosure {
   display: none !important; }
+
+.ctct-form-field-checkbox {
+  margin-bottom: 30px; }
 
 button,
 input[type="button"],
@@ -536,15 +549,23 @@ textarea {
   textarea:focus {
     color: #111; }
 
-input[type=email] {
-  width: 85%;
-  height: 50px;
-  position: relative;
-  padding-left: 50px;
-  margin-top: 15px; }
-  @media (min-width: 600px) {
-    input[type=email] {
-      width: 100%; } }
+.ctct-form-field-email {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
+  .ctct-form-field-email label {
+    display: none; }
+  .ctct-form-field-email input[type=email] {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    padding-left: 50px;
+    margin-top: 15px; }
+    @media (min-width: 600px) {
+      .ctct-form-field-email input[type=email] {
+        width: 100%; } }
+
 
 ::-webkit-input-placeholder {
   padding-left: 10px;
@@ -560,7 +581,7 @@ input[type=email] {
 
 i.fa.fa-times::before {
   font-size: 20px;
-  padding: 15px; }
+  padding-right: 40px; }
 
 .ctct-form-wrapper input[type="text"],
 .ctct-form-wrapper input[type="email"],
@@ -580,17 +601,25 @@ input[type=checkbox] {
 .ctct-input-container {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   -ms-flex-align: center;
       align-items: center;
-  padding-left: 10px; }
+  padding-left: 10px;
+  margin-top: 50px; }
 
 .ctct-form-wrapper .ctct-input-container label {
   color: black;
-  font-family: 'worksans';
+  font-family: "worksans", sans-serif;
   font-size: 1rem;
   padding-left: 10px; }
+
+input[type=submit] {
+  font-family: "worksans", sans-serif;
+  font-size: 14px;
+  width: 130px;
+  height: 50px;
+  margin: 20px; }
 
 /*--------------------------------------------------------------
 # Navigation

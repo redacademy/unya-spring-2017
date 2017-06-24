@@ -4,8 +4,14 @@
 
 /* Subscription Form (in footer) */
 
+.ctct-form{
+	display:flex;
+	flex-direction:column;
+}
 .ctct-form-wrapper{
 	height:160px;
+	display:flex;
+	justify-content:center;
 }
 .ctct-form-field-submit{
 	display:flex;
@@ -15,6 +21,10 @@
 div.ctct-disclosure {
 	display: none !important;
 }
+.ctct-form-field-checkbox{
+	margin-bottom:30px;
+}
+
 button,
 input[type="button"],
 input[type="reset"],
@@ -36,6 +46,7 @@ input[type="submit"] {
 		border-color: #aaa #bbb #bbb;
 	}
 }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -52,14 +63,22 @@ textarea {
 		color: #111;
 	}
 }
- input[type=email]{
-	width: 85%;
-	height:50px;
-	position:relative;
-	padding-left:50px;
-	margin-top:15px;
-	@include desktop{
-	width:100%;
+
+.ctct-form-field-email{
+	display:flex;
+	justify-content: flex-start;
+		label{
+		display:none;
+		}
+	input[type=email]{
+		width: 100%;
+		height:50px;
+		position:relative;
+		padding-left:50px;
+		margin-top:15px;
+		@include desktop{
+		width:100%;
+			}
 		}
 	}
 	::placeholder{
@@ -68,7 +87,7 @@ textarea {
 		}
 	i.fa.fa-times::before{
 		font-size:20px;
-		padding:15px;
+		padding-right:40px;
 	}
 .ctct-form-wrapper input[type="text"],
 .ctct-form-wrapper input[type="email"],
@@ -81,7 +100,6 @@ textarea {
     border-color: form__blue-border;
     padding-left: 40px;
 }
-
 input[type=checkbox]{
 	transform: scale(2,2);
 	width:20px;
@@ -89,13 +107,22 @@ input[type=checkbox]{
 
 .ctct-input-container{
 	display:flex;
-	justify-content:center;
+	justify-content:flex-start;
 	align-items:center;
 	padding-left:10px;
+	margin-top:50px;
 }
 .ctct-form-wrapper .ctct-input-container label {
 	color: black;
-	font-family:'worksans';
+	font-family:$font__main;
 	font-size:1rem;
 	padding-left:10px;
+}
+
+input[type=submit]{
+	font-family:$font__main;
+	font-size:14px;
+	width:130px;
+	height:50px;
+	margin:20px;
 }
