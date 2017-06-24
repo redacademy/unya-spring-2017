@@ -34,18 +34,16 @@ get_header(); ?>
 					</div>
 				</div>
 			</section>
+
 			<h2 class="accordion-label" id="employment">Employment</h2>
 			<section class="opportunities">
-				<header class="section-heading">
-					<h2 class="hidden-desktop">Employment</h2>
-				</header>
 				<div class="content-wrapper">
 					<h2 class="hidden-mobile">Employment Opportunities</h2>
 					<p><?php echo wp_kses(CFS()->get( 'employment_intro_paragraph' ),array('br') ); ?></p>
 				</div>
-				<div class="hidden-mobile">
+				<div class="hidden-mobile content-wrapper">
 					<p>Why work for UNYA?</p>
-					<ul class="employment-list-container content-wrapper">
+					<ul class="employment-list-container">
 						<?php $employment_list = CFS()->get('why_work_for_unya'); ?>
 						<?php foreach ( $employment_list as $why_work_for_unya ) : ?>
 						<li class="employment-list">
@@ -54,7 +52,7 @@ get_header(); ?>
 						<?php endforeach; ?>
 					</ul>
 				</div><!--End Why work for UNYA section -->
-				<div class="important-note-container hidden-mobile">
+				<div class="important-note-container hidden-mobile content-wrapper">
 					<p class="important-note-paragraph">
 						<span class="fa fa-info fa-3x" aria-hidden="true"></span>
 						<span class="important-note">Important Note:</span> UNYA accepts complete applications for advertised positions only. You must state clearly on your cover letter which position you are applying for. All applications must be sent in electronic form, to the email address specified on the posting. Hard copies and unsolicited applications/resumes will not be reviewed, but immediately destroyed.
@@ -80,6 +78,7 @@ get_header(); ?>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</ul>
 			</section>
+
 			<h2 class="accordion-label" id="volunteer">Volunteer</h2>
 			<section class="opportunities">
 				<header class="section-heading">
