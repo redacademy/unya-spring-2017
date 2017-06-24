@@ -26,9 +26,6 @@ input[type="submit"] {
 	color: #FFF;
 	width:130px;
 	height:50px;
-	@include font-size(1);
-	line-height: 1;
-	padding: .6rem 1rem .4rem;
 
 	&:hover {
 		border-color: #ccc #bbb #aaa;
@@ -88,7 +85,14 @@ input[type=checkbox]{
 	width:20px;
 	}
 
+.ctct-input-container{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
 .ctct-form-wrapper .ctct-input-container label {
-    color: black;
-    font-size: 12px;
+	color: black;
+	font-family:'worksans';
+	font-size:1rem;
+	padding-left:10px;
 }

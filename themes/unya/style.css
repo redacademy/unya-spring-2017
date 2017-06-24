@@ -498,11 +498,7 @@ input[type="submit"] {
   background: #00277E;
   color: #FFF;
   width: 130px;
-  height: 50px;
-  font-size: 14px;
-  font-size: 1rem;
-  line-height: 1;
-  padding: .6rem 1rem .4rem; }
+  height: 50px; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -578,9 +574,19 @@ input[type=checkbox] {
   transform: scale(2, 2);
   width: 20px; }
 
+.ctct-input-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
 .ctct-form-wrapper .ctct-input-container label {
   color: black;
-  font-size: 12px; }
+  font-family: 'worksans';
+  font-size: 1rem;
+  padding-left: 10px; }
 
 /*--------------------------------------------------------------
 # Navigation
