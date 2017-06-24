@@ -25,8 +25,35 @@
 		border-top: 1px solid $color__blue-medium;
 		
 		a {
+			color: $color__blue-medium;
 			text-decoration: none;
 			text-transform: uppercase;
+		}
+
+		p, .fa-long-arrow-right {
+			color: $color__blue-medium;
+			margin: 0;
+		}
+
+		&:hover {
+			background-color: $color__sidebar-nav;
+			color: #FFF;
+			
+			p, .fa-long-arrow-right {
+				color: #FFF;
+			}
+
+			a {
+				color: #FFF;
+			}
+		}
+
+		&:last-child {
+			border-radius: 0 0 10px 0;
+			
+			&:hover {
+				border-radius: 0 0 10px 0;
+			}
 		}
 	}
 
@@ -34,7 +61,7 @@
 		border-top: none;
 	}
 
-	.menu-success-title {
+	.menu-title-archive {
 		background-color: $color__sidebar-nav;
 
 		p {
@@ -43,9 +70,10 @@
 			font-size: 1.1428571429rem;
 			text-transform: uppercase;
 		}
+		
 	}
 
-	.success-items {
+	.archive-items {
 		border-top: none;
 
 		.fa-long-arrow-right {

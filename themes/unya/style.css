@@ -910,25 +910,40 @@ a {
     padding: 0.7142857143rem;
     border-top: 1px solid #4263AB; }
     .sidebar-menu-container .menu-item a, .sidebar-menu-container .menu-item-archive a {
+      color: #4263AB;
       text-decoration: none;
       text-transform: uppercase; }
+    .sidebar-menu-container .menu-item p, .sidebar-menu-container .menu-item .fa-long-arrow-right, .sidebar-menu-container .menu-item-archive p, .sidebar-menu-container .menu-item-archive .fa-long-arrow-right {
+      color: #4263AB;
+      margin: 0; }
+    .sidebar-menu-container .menu-item:hover, .sidebar-menu-container .menu-item-archive:hover {
+      background-color: #4263AC;
+      color: #FFF; }
+      .sidebar-menu-container .menu-item:hover p, .sidebar-menu-container .menu-item:hover .fa-long-arrow-right, .sidebar-menu-container .menu-item-archive:hover p, .sidebar-menu-container .menu-item-archive:hover .fa-long-arrow-right {
+        color: #FFF; }
+      .sidebar-menu-container .menu-item:hover a, .sidebar-menu-container .menu-item-archive:hover a {
+        color: #FFF; }
+    .sidebar-menu-container .menu-item:last-child, .sidebar-menu-container .menu-item-archive:last-child {
+      border-radius: 0 0 10px 0; }
+      .sidebar-menu-container .menu-item:last-child:hover, .sidebar-menu-container .menu-item-archive:last-child:hover {
+        border-radius: 0 0 10px 0; }
   .sidebar-menu-container .menu-item:first-child {
     border-top: none; }
-  .sidebar-menu-container .menu-success-title {
+  .sidebar-menu-container .menu-title-archive {
     background-color: #4263AC; }
-    .sidebar-menu-container .menu-success-title p {
+    .sidebar-menu-container .menu-title-archive p {
       margin: 0;
       color: #FFF;
       font-size: 1.1428571429rem;
       text-transform: uppercase; }
-  .sidebar-menu-container .success-items {
+  .sidebar-menu-container .archive-items {
     border-top: none; }
-    .sidebar-menu-container .success-items .fa-long-arrow-right {
+    .sidebar-menu-container .archive-items .fa-long-arrow-right {
       width: 8%;
       vertical-align: top;
       padding-top: 2.01px;
       font-size: 0.8571428571rem; }
-    .sidebar-menu-container .success-items p {
+    .sidebar-menu-container .archive-items p {
       width: 90%;
       margin: 0;
       display: inline-block;

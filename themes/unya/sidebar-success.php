@@ -17,12 +17,12 @@
 	));
 
 		echo '<ul class="sidebar-menu-container">';
-		echo '<li class="menu-item-archive menu-success-title"><p>Success Stories</p></li>';
+		echo '<li class="menu-item-archive menu-title-archive"><p>Success Stories</p></li>';
 
 		while ( $query->have_posts() ) {
 			$query->the_post();
 
-			echo '<li class="menu-item-archive success-items">';
+			echo '<li class="menu-item-archive archive-items">';
 			echo '<a href="' . get_the_permalink() . '"><i class="fa fa-long-arrow-right" aria-hidden="true"></i><p>' . get_the_title() . '\'s story</p></a>';
 			echo	'</li>';
 		}
