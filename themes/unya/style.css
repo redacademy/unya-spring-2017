@@ -1712,7 +1712,7 @@ object {
 .nyc .content-wrapper a, .about .content-wrapper a, .programs .content-wrapper a {
   text-decoration: none; }
   .nyc .content-wrapper a h3, .about .content-wrapper a h3, .programs .content-wrapper a h3 {
-    padding-top: 20px;
+    padding-top: 18px;
     font-size: 18px;
     text-align: center;
     color: white;
