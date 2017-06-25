@@ -1,3 +1,17 @@
+.mobile-calendar {
+  .simcal-day-label {
+    border-bottom: 1px solid $color__blue-dark!important;
+    color: white!important;
+  }
+
+  .simcal-event-start:before {
+    content: "\f017";
+    font-family: "FontAwesome";
+  }
+
+
+}
+
 .desktop-calendar {
   @include desktop {
     display: flex;
