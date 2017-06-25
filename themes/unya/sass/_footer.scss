@@ -48,6 +48,7 @@ footer{
     .subscription-form{
       width:100%;
       background-color:#fff;
+      height:250px;
     }
     abbr{
       display:none;
@@ -86,6 +87,10 @@ footer{
       position: absolute;
       top:0;
       right:0;
+      i.fa.fa-times:before{
+        padding-right: 50px;
+        font-size:25px;
+      }
       @include desktop{
         visibility:hidden;
         }

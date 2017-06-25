@@ -37,6 +37,7 @@ get_header(); ?>
 					</header>
 					<div class="content-wrapper">
 						<p><?php echo esc_html( CFS()->get( 'vision' ) ); ?></p>
+						<a href= "<?php echo esc_url( CFS()->get( 'vision_file' ) ); ?>">Download Our Campaign Materials Here (PDF)</a>
 					</div>
 				</section>
 				<h2 class="accordion-label" id="planning">Planning</h2>

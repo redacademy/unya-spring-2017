@@ -3,10 +3,10 @@
 --------------------------------------------------------------*/
 
 /* Subscription Form (in footer) */
-
 .ctct-form{
 	display:flex;
 	flex-direction:column;
+	margin-top:20px;
 }
 .ctct-form-wrapper{
 	height:160px;
@@ -85,10 +85,7 @@ textarea {
 		padding-left:10px;
 		color:black;
 		}
-	i.fa.fa-times::before{
-		font-size:20px;
-		padding-right:40px;
-	}
+
 .ctct-form-wrapper input[type="text"],
 .ctct-form-wrapper input[type="email"],
 .ctct-form-wrapper input[type="password"],
@@ -110,13 +107,15 @@ input[type=checkbox]{
 	justify-content:flex-start;
 	align-items:center;
 	padding-left:10px;
-	margin-top:50px;
 }
-.ctct-form-wrapper .ctct-input-container label {
-	color: black;
-	font-family:$font__main;
-	font-size:1rem;
-	padding-left:10px;
+.ctct-form-wrapper{
+	height:100%;
+	.ctct-input-container label {
+		color: black;
+		font-family:$font__main;
+		font-size:1rem;
+		padding-left:10px;
+		}
 }
 
 input[type=submit]{
