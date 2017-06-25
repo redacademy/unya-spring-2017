@@ -116,6 +116,24 @@ function unya_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'unya_scripts' );
 
+function unya_page_template_redirect()
+{
+    if( is_singular('news') )
+    {
+        wp_redirect( home_url('/news') );
+        exit();
+    } else if( is_singular('opportunities') )
+    {
+        wp_redirect( home_url('/get-involved') );
+        exit();
+    } else if( is_singular('calendar') )
+    {
+        wp_redirect( home_url() );
+        exit();
+    }
+}
+add_action( 'template_redirect', 'unya_page_template_redirect' );
+
 /**
  * Custom template tags for this theme.
  */
