@@ -93,6 +93,35 @@
 
 }
 
+// style for Native Youth Center only
+.page-id-76 .sidebar-menu-container {
+
+	.menu-item {
+		border-top: 1px solid $color__red-medium;
+		
+		a {
+			color: $color__red-medium;
+		}
+
+		p {
+			color: $color__red-medium;
+		}
+
+		&:hover {
+			background-color: $color__red-medium;
+			
+			p, a {
+				color: #FFF;
+			}
+		}
+	}
+
+	.menu-item:first-child {
+		border-top: none;
+	}
+
+}
+
 .widget {
 	margin: 0 0 $base__space-unit;
 
