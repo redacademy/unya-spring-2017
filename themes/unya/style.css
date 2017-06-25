@@ -845,7 +845,8 @@ a {
       #accordion .accordion-label {
         border: none !important;
         background: transparent !important;
-        color: transparent !important; } }
+        color: transparent !important;
+        height: 0 !important; } }
 
 .ui-accordion .ui-accordion-content {
   padding: 0; }
@@ -1767,3 +1768,7 @@ footer {
   .desktop-calendar {
     display: -ms-flexbox;
     display: flex; } }
+
+.desktop-calendar .simcal-day-label {
+  background: #4263AB;
+  color: white; }
