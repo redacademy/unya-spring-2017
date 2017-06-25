@@ -549,7 +549,11 @@ textarea {
   textarea:focus {
     color: #111; }
 
-
+.ctct-form-field-email {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
   .ctct-form-field-email label {
     display: none; }
   .ctct-form-field-email input[type=email] {
@@ -558,7 +562,9 @@ textarea {
     position: relative;
     padding-left: 50px;
     margin-top: 15px; }
-
+    @media (min-width: 600px) {
+      .ctct-form-field-email input[type=email] {
+        width: 100%; } }
 
 ::-webkit-input-placeholder {
   padding-left: 10px;
@@ -1756,3 +1762,20 @@ footer {
   .desktop-calendar {
     display: -ms-flexbox;
     display: flex; } }
+
+.desktop-calendar .simcal-day-label {
+  background: #4263AB !important;
+  color: white !important; }
+
+.desktop-calendar .simcal-day-has-events .simcal-day-label {
+  background-color: #00277E !important;
+  color: #FFF !important; }
+
+.desktop-calendar .simcal-day-has-events .simcal-event-title {
+  font-size: 0.85714rem !important; }
+
+.desktop-calendar .simcal-present div {
+  border: 1px solid #e1ce01 !important; }
+
+.desktop-calendar .simcal-present .simcal-day-label {
+  background: #e1ce01 !important; }

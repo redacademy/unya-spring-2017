@@ -4,13 +4,26 @@
   }
 
   .simcal-day-label {
-    background: #4263AB;
-    color: white;
+    background: #4263AB!important;
+    color: white!important;
   }
 
   .simcal-day-has-events {
     .simcal-day-label {
-      
+      background-color: $color__blue-dark!important;
+      color: #FFF!important;
+    }
+    .simcal-event-title {
+      font-size: 0.8571428571rem!important;
+    }
+  }
+
+  .simcal-present {
+    div {
+      border: 1px solid $color__yellow!important;
+    }
+    .simcal-day-label {
+      background: $color__yellow!important;
     }
   }
 }
