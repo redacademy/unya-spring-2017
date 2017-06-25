@@ -28,7 +28,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
-				<a href="#" class="donate">Donate</a>
+				<a href="https://www.canadahelps.org/en/charities/urban-native-youth-association/" class="donate">Donate</a>
 				<div class="menu-gradient"></div>
 			</header><!-- #masthead -->
 
