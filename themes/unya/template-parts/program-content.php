@@ -34,7 +34,7 @@
 					</div>
 					<h2 class="accordion-label" id="personal">Personal Support</h2>
 					<div>
-						<div class="section-heading">
+						<div class="section-heading hidden-mobile">
 							<h3 class="content-wrapper">Personal Support</h3>
 						</div>
 						<ul class="programs-list personal-list">

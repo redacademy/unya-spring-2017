@@ -2,10 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .section-heading {
+    display: none;
+
+    @include desktop {
+      display: initial;
+    }
+  }
 }
 
 .programs-list {
-  margin: 0;
+  margin: 0.5rem 0 0 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -41,10 +49,13 @@
     .program-name {
       left: 15%;
       top: 0;
-      width: 70%;
       padding-top: 1rem;
       position: absolute;
+      width: 70%;
+      
       color: #FFF;
+      font-family: $font__main;
+      font-size: 1rem;
       z-index: 2;
     }
 
