@@ -1490,34 +1490,68 @@ object {
 
 /* News archive */
 .news-single {
+  width: 100vw;
+  border-bottom: 2px solid lightgray;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
-  height: 120px;
-  padding-bottom: 20px; }
+  height: 100px;
+  margin-bottom: 10px; }
   @media (min-width: 600px) {
     .news-single {
-      height: 327px; } }
+      width: auto;
+      height: 327px;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
 
 .news-title-block {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row; }
+  @media (min-width: 600px) {
+    .news-title-block {
+      width: 45%; } }
+
+.news-details {
+  height: 100px; }
+  @media (min-width: 600px) {
+    .news-details {
+      width: 45%; } }
 
 .news-image {
-  width: 120px; }
+  width: 100px; }
+  @media (min-width: 600px) {
+    .news-image {
+      width: 100%; } }
 
 .news-headline {
+<<<<<<< HEAD
   font-size: 14px;
   margin: auto auto; }
+=======
+  font-size: 16px;
+  margin: 0 auto; }
+>>>>>>> styled news page desktop view Nth child works!
   .news-headline a {
     color: #2C2C2C;
     text-decoration: none; }
 
-.news-details {
-  height: 120px; }
+.news-articles {
+  margin: 0;
+  padding: 0; }
+  @media (min-width: 600px) {
+    .news-articles .news-single:nth-child(even) {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap; }
+    .news-articles .news-single:nth-child(odd) {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row-reverse nowrap;
+          flex-flow: row-reverse nowrap; } }
 
 .prefooter {
   background: #00277E; }
