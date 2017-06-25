@@ -22,6 +22,7 @@
 						?>
 							<li>
 								<a href="<?php the_permalink() ?>">
+								<div class="gradient"></div>
 								<?php if ( has_post_thumbnail() ) : ?>
 									<?php the_post_thumbnail( 'medium' ); ?>
 								<?php endif; ?>
@@ -48,6 +49,7 @@
 						?>
 							<li>
 								<a href="<?php the_permalink() ?>">
+								<div class="gradient"></div>
 								<?php if ( has_post_thumbnail() ) : ?>
 									<?php the_post_thumbnail( 'medium' ); ?>
 								<?php endif; ?>
@@ -74,6 +76,7 @@
 						?>
 							<li>
 								<a href="<?php the_permalink() ?>">
+								<div class="gradient"></div>
 								<?php if ( has_post_thumbnail() ) : ?>
 									<?php the_post_thumbnail( 'medium' ); ?>
 								<?php endif; ?>
@@ -100,6 +103,7 @@
 						?>
 							<li>
 								<a href="<?php the_permalink() ?>">
+								<div class="gradient"></div>
 								<?php if ( has_post_thumbnail() ) : ?>
 									<?php the_post_thumbnail( 'medium' ); ?>
 								<?php endif; ?>

@@ -1,0 +1,134 @@
+.program-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.programs-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+
+  li {
+    height: 7.8571428571rem;
+    margin-bottom: 0.5rem;
+    flex-basis: 49%;
+    overflow: hidden;
+    text-align: center;
+
+    a {
+      position: relative;
+      display: block;
+    }
+
+    .gradient {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .wp-post-image {
+      position: relative;
+      max-width: 110%;
+      width: auto;
+      height: auto;
+    }
+
+    .program-name {
+      left: 15%;
+      top: 0;
+      width: 70%;
+      padding-top: 1rem;
+      position: absolute;
+      color: #FFF;
+      z-index: 2;
+    }
+
+  }
+}
+
+.education-list {
+  .gradient {
+    background-image: linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%);
+  }
+}
+
+.personal-list {
+  .gradient {
+    background: linear-gradient(to bottom,rgba(167,0,0,0.7) 0%, rgba(167,0,0,0.7) 100%);
+  }
+}
+
+.live-in-list {
+  .gradient {
+    background: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%);
+  }
+}
+
+.sports-list {
+  .gradient {
+    background: linear-gradient(to bottom,rgba(181,167,0,0.7) 0%, rgba(181,167,0,0.7) 100%);
+  }
+}
+
+/* Single Program page */
+
+.single-program {
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-content a {
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .program-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      color: $color__grey-dark;
+    }
+
+    .program-activities {
+      order: 2;
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    
+    .program-image {
+      background: rgba(74,74,74,0.7);
+      overflow: hidden;
+      height: 12.071428571rem;
+
+      img {
+        z-index: -1;
+        position: relative;
+      }
+    }
+
+    .program-image:nth-child(1) {
+      order: 1;
+    }
+
+    .program-image:nth-child(2) {
+      order: 3;
+    }
+
+    .program-involvement {
+      order: 4;
+    }
+
+  }
+}
