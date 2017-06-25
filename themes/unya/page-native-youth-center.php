@@ -107,7 +107,7 @@ get_header(); ?>
 			</div>
 			<div class="pre-footer">
 				<p class="pre-footer-text">Like what you see? Make your donation online today</p>
-				<button class="donate">Donate Today</button>
+				<a href="https://www.canadahelps.org/en/charities/urban-native-youth-association/"><button class="donate">Donate Today</button></a>
 			</div>
 
 

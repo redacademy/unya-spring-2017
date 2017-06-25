@@ -1709,20 +1709,6 @@ object {
     #sb_instagram {
       margin: 0 auto; } }
 
-.nyc .content-wrapper a, .about .content-wrapper a, .programs .content-wrapper a {
-  text-decoration: none; }
-  .nyc .content-wrapper a h3, .about .content-wrapper a h3, .programs .content-wrapper a h3 {
-    padding-top: 18px;
-    font-size: 18px;
-    text-align: center;
-    color: white;
-    width: 180px;
-    height: 60px;
-    border-radius: 10px;
-    background-color: #D13434;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
-    font-weight: light; }
-
 footer {
   min-width: 320px;
   max-height: 300px;
