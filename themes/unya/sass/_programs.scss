@@ -12,6 +12,19 @@
   }
 }
 
+.program-checkout {
+  width: 100%;
+  background: $color__blue-dark;
+
+  h2 {
+    padding-left: 2.2em; //to match accordion heading
+    color: white;
+    font-size: 1.4285714286rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
 .programs-list {
   margin: 0.5rem 0 0 0;
   padding: 0;

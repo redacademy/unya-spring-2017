@@ -1,8 +1,8 @@
 <!-- Insert into Program Archive -->
 <section class="program-section" >
-	<header class="programs hidden-mobile">
+	<header class="program-checkout">
 		<h2>Check out our programming</h2>
-		<p>Click on any program to learn more</p>
+		<p class="hidden-mobile">Click on any program to learn more</p>
 	</header>
 	<div class="accordion" id="accordion">
 		<h2 class="accordion-label" id="education">Education &amp; Training</h2>
