@@ -356,23 +356,21 @@
 
     @include desktop {
       padding: 0 15.714285714rem 0 17.428571429rem;
+      width: 100%;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
+
+      .content-wrapper {
+        width: 100%;
+        padding: 0;
+      }
     }
 
     h3 {
       color: $color__grey-dark;
     }
 
-    .program-activities {
-      // order: 2;
-
-      ul {
-        margin: 0;
-        padding: 0;
-      }
-    }
-    
     .program-image {
       background: rgba(74,74,74,0.7);
       overflow: hidden;
@@ -382,6 +380,33 @@
         z-index: -1;
         position: relative;
       }
+
+      @include desktop {
+        height: 100%;
+        flex-basis: 48%;
+        background: none;
+
+        img {
+          border-radius: 0 0 0 90px;
+        }
+      }
+    }
+
+    .program-activities {
+
+      ul {
+        margin: 0;
+        padding: 0 1rem;
+      }
+
+      li {
+        padding: 0.5rem 0;
+      }
+
+      @include desktop {
+        flex-basis: 48%;
+      }
+
     }
 
     .program-involvement {
