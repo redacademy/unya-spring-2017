@@ -479,7 +479,8 @@ table {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  margin-top: 20px; }
 
 .ctct-form-wrapper {
   height: 160px;
@@ -578,10 +579,6 @@ textarea {
   padding-left: 10px;
   color: black; }
 
-i.fa.fa-times::before {
-  font-size: 20px;
-  padding-right: 40px; }
-
 .ctct-form-wrapper input[type="text"],
 .ctct-form-wrapper input[type="email"],
 .ctct-form-wrapper input[type="password"],
@@ -604,14 +601,15 @@ input[type=checkbox] {
       justify-content: flex-start;
   -ms-flex-align: center;
       align-items: center;
-  padding-left: 10px;
-  margin-top: 50px; }
-
-.ctct-form-wrapper .ctct-input-container label {
-  color: black;
-  font-family: "worksans", sans-serif;
-  font-size: 1rem;
   padding-left: 10px; }
+
+.ctct-form-wrapper {
+  height: 100%; }
+  .ctct-form-wrapper .ctct-input-container label {
+    color: black;
+    font-family: "worksans", sans-serif;
+    font-size: 1rem;
+    padding-left: 10px; }
 
 input[type=submit] {
   font-family: "worksans", sans-serif;
@@ -845,7 +843,8 @@ a {
       #accordion .accordion-label {
         border: none !important;
         background: transparent !important;
-        color: transparent !important; } }
+        color: transparent !important;
+        height: 0 !important; } }
 
 .ui-accordion .ui-accordion-content {
   padding: 0; }
@@ -862,6 +861,11 @@ a {
 
 .ui-icon {
   background-image: url("../../assets/images/icons.png") !important; }
+
+.logo-carousel {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1497,7 +1501,6 @@ object {
 /* News archive */
 .news-single {
   width: 100vw;
-  border-bottom: 2px solid lightgray;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row nowrap;
@@ -1509,7 +1512,8 @@ object {
       width: auto;
       height: 327px;
       -ms-flex-pack: justify;
-          justify-content: space-between; } }
+          justify-content: space-between;
+      margin-top: 50px; } }
 
 .news-title-block {
   display: -ms-flexbox;
@@ -1518,19 +1522,32 @@ object {
       flex-direction: row; }
   @media (min-width: 600px) {
     .news-title-block {
-      width: 45%; } }
+      width: 50%;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+      height: 327px; } }
 
 .news-details {
+  border-bottom: 2px solid lightgray;
   height: 100px; }
   @media (min-width: 600px) {
     .news-details {
-      width: 45%; } }
+      width: 49%;
+      height: 327px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
 
 .news-image {
   width: 100px; }
   @media (min-width: 600px) {
     .news-image {
-      width: 100%; } }
+      width: 100%;
+      height: 227px;
+      object-fit: cover; } }
 
 .news-headline {
   font-size: 16px;
@@ -1538,6 +1555,39 @@ object {
   .news-headline a {
     color: #2C2C2C;
     text-decoration: none; }
+  @media (min-width: 600px) {
+    .news-headline {
+      width: 75%;
+      height: 100px;
+      background: #4263AB; }
+      .news-headline a {
+        margin: auto auto;
+        color: white;
+        font-size: 20px; } }
+
+.news-date {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 100px;
+  width: 25%;
+  margin: 0 auto;
+  background: #4263AB;
+  border-right: 3px solid white;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 30px; }
+
+.news-body {
+  font-size: 14px;
+  font-family: "worksans"; }
+
+.news-url {
+  padding: 20px; }
 
 .news-articles {
   margin: 0;
@@ -1548,13 +1598,24 @@ object {
       display: flex;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap; }
+      .news-articles .news-single:nth-child(even) .news-details {
+        border-right: 1px solid lightgray;
+        border-radius: 0 0 20px 0; }
+      .news-articles .news-single:nth-child(even) img {
+        border-radius: 0 0 0 40px; }
     .news-articles .news-single:nth-child(odd) {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-flow: row-reverse nowrap;
-          flex-flow: row-reverse nowrap; } }
+          flex-flow: row-reverse nowrap; }
+      .news-articles .news-single:nth-child(odd) .news-details {
+        border-left: 1px solid lightgray;
+        border-radius: 0 0 0 20px; }
+      .news-articles .news-single:nth-child(odd) img {
+        border-radius: 0 0 40px 0; } }
 
 .prefooter {
+  margin-top: 50px;
   background: #00277E; }
   .prefooter h2, .prefooter p {
     color: white; }
@@ -1637,7 +1698,8 @@ footer {
         justify-content: center; }
     footer .newsletter-sign-up .subscription-form {
       width: 100%;
-      background-color: #fff; }
+      background-color: #fff;
+      height: 250px; }
     footer .newsletter-sign-up abbr {
       display: none; }
     footer .newsletter-sign-up button.sign-up-btn {
@@ -1675,6 +1737,9 @@ footer {
       position: absolute;
       top: 0;
       right: 0; }
+      footer .newsletter-sign-up .close-form i.fa.fa-times:before {
+        padding-right: 50px;
+        font-size: 25px; }
       @media (min-width: 600px) {
         footer .newsletter-sign-up .close-form {
           visibility: hidden; } }
@@ -1764,18 +1829,5 @@ footer {
     display: flex; } }
 
 .desktop-calendar .simcal-day-label {
-  background: #4263AB !important;
-  color: white !important; }
-
-.desktop-calendar .simcal-day-has-events .simcal-day-label {
-  background-color: #00277E !important;
-  color: #FFF !important; }
-
-.desktop-calendar .simcal-day-has-events .simcal-event-title {
-  font-size: 0.85714rem !important; }
-
-.desktop-calendar .simcal-present div {
-  border: 1px solid #e1ce01 !important; }
-
-.desktop-calendar .simcal-present .simcal-day-label {
-  background: #e1ce01 !important; }
+  background: #4263AB;
+  color: white; }
