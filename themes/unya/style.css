@@ -385,7 +385,7 @@ big {
   font-size: 125%; }
 
 .about .content-wrapper {
-  padding: 50px; }
+  padding: 200px; }
   .about .content-wrapper h2 {
     color: white;
     margin: 0px; }
@@ -393,7 +393,7 @@ big {
     color: white; }
 
 .nyc .content-wrapper {
-  padding-top: 50px; }
+  padding-top: 200px; }
   .nyc .content-wrapper h2 {
     margin: 0px;
     text-align: right;
@@ -402,11 +402,11 @@ big {
     margin-left: 50px;
     text-align: right;
     color: white; }
-  .nyc .content-wrapper h3 {
+  .nyc .content-wrapper a {
     text-align: right; }
 
 .programs .content-wrapper {
-  padding: 50px; }
+  padding: 200px; }
   .programs .content-wrapper h2 {
     margin: 0px;
     color: white; }
@@ -1708,6 +1708,20 @@ object {
   @media (min-width: 600px) {
     #sb_instagram {
       margin: 0 auto; } }
+
+.nyc .content-wrapper a, .about .content-wrapper a, .programs .content-wrapper a {
+  text-decoration: none; }
+  .nyc .content-wrapper a h3, .about .content-wrapper a h3, .programs .content-wrapper a h3 {
+    padding-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #D13434;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    font-weight: light; }
 
 footer {
   min-width: 320px;
