@@ -1924,7 +1924,7 @@ footer {
   font-family: "FontAwesome"; }
 
 .mobile-calendar .simcal-calendar-head {
-  padding: .5em .5em .5em .7em;
+  padding: 0.7142857143rem .5em .5em .7em;
   background: #4263AB;
   text-transform: uppercase; }
   .mobile-calendar .simcal-calendar-head .simcal-current h3 {
@@ -1963,14 +1963,14 @@ footer {
   color: white !important; }
 
 .desktop-calendar .simcal-day-has-events .simcal-day-label {
-  background-color: #00277E !important;
+  background: #4263AB !important;
   color: #FFF !important; }
 
 .desktop-calendar .simcal-day-has-events .simcal-event-title {
   font-size: 0.85714rem !important; }
 
 .desktop-calendar .simcal-present div {
-  border: 1px solid #e1ce01 !important; }
+  border: 1px solid #00277E !important; }
 
 .desktop-calendar .simcal-present .simcal-day-label {
-  background: #e1ce01 !important; }
+  background-color: #00277E !important; }

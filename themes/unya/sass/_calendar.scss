@@ -54,7 +54,7 @@
 
   .simcal-day-has-events {
     .simcal-day-label {
-      background-color: $color__blue-dark!important;
+      background: #4263AB!important;
       color: #FFF!important;
     }
     .simcal-event-title {
@@ -64,10 +64,11 @@
 
   .simcal-present {
     div {
-      border: 1px solid $color__yellow!important;
+      border: 1px solid $color__blue-dark!important;
     }
     .simcal-day-label {
-      background: $color__yellow!important;
+      background-color: $color__blue-dark!important;
     }
   }
+
 }
