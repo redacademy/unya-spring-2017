@@ -1555,8 +1555,6 @@ object {
   @media (min-width: 600px) {
     .news-title-block {
       width: 50%;
-      -ms-flex-preferred-size: 0;
-          flex-basis: 0;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
       height: 327px; } }

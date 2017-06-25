@@ -402,7 +402,6 @@
   flex-direction: row;
   @include desktop{
     width:50%;
-    flex-basis:0;
     flex-flow:row wrap;
     height:327px;
   }
