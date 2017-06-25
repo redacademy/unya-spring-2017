@@ -1545,7 +1545,7 @@ object {
       height: 327px;
       -ms-flex-pack: justify;
           justify-content: space-between;
-      margin-top: 50px; } }
+      margin-top: 40px; } }
 
 .news-title-block {
   display: -ms-flexbox;
@@ -1555,6 +1555,8 @@ object {
   @media (min-width: 600px) {
     .news-title-block {
       width: 50%;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
       height: 327px; } }
@@ -1564,12 +1566,15 @@ object {
   height: 100px; }
   @media (min-width: 600px) {
     .news-details {
-      width: 49%;
+      -ms-flex-preferred-size: content;
+          flex-basis: content;
+      width: 50%;
       height: 327px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column;
+      padding: 30px;
       -ms-flex-pack: justify;
           justify-content: space-between; } }
 
@@ -1598,21 +1603,24 @@ object {
         font-size: 20px; } }
 
 .news-date {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  height: 100px;
-  width: 25%;
-  margin: 0 auto;
-  background: #4263AB;
-  border-right: 3px solid white;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 30px; }
+  display: none; }
+  @media (min-width: 600px) {
+    .news-date {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      height: 100px;
+      width: 25%;
+      margin: 0 auto;
+      background: #4263AB;
+      border-right: 3px solid white;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 30px; } }
 
 .news-body {
   font-size: 14px;
@@ -1646,6 +1654,7 @@ object {
       .news-articles .news-single:nth-child(odd) img {
         border-radius: 0 0 40px 0; } }
 
+<<<<<<< HEAD
 .pre-footer {
   background: #00277E;
   height: 175px; }
@@ -1666,6 +1675,18 @@ object {
   font-size: 1.14286rem;
   font-weight: normal;
   font-style: normal; }
+=======
+.prefooter {
+  height: 395px;
+  margin-top: 50px;
+  background: #00277E; }
+  .prefooter h2 {
+    color: white;
+    padding-top: 30px; }
+  .prefooter p {
+    color: white;
+    font-size: 20px; }
+>>>>>>> news page pretty much done
 
 .prefooter-contact-info {
   display: -ms-flexbox;

@@ -394,7 +394,7 @@
     width:auto;
     height:327px;
     justify-content: space-between;
-    margin-top:50px;
+    margin-top:40px;
   }
 }
 .news-title-block{
@@ -402,6 +402,7 @@
   flex-direction: row;
   @include desktop{
     width:50%;
+    flex-basis:0;
     flex-flow:row wrap;
     height:327px;
   }
@@ -411,10 +412,12 @@
   border-bottom: 2px solid lightgray;
   height:100px;
   @include desktop{
-    width:49%;
+    flex-basis:content;
+    width:50%;
     height:327px;
     display:flex;
     flex-direction: column;
+    padding:30px;
     justify-content: space-between
   }
 }
@@ -448,6 +451,8 @@
 }
 
 .news-date{
+  display:none;
+  @include desktop{
   display:flex;
   align-items: center;
   justify-content: center;
@@ -460,14 +465,18 @@
   font-size:24px;
   font-weight: bold;
   padding:30px;
+  }
 }
+
 .news-body{
   font-size:14px;
   font-family:"worksans"
 }
+
 .news-url{
  padding:20px;
 }
+
 .news-articles{
   margin:0;
   padding:0;
@@ -482,8 +491,13 @@
       img{
         border-radius:0 0 0 40px;
       }
+<<<<<<< HEAD
     }
 
+=======
+    }//close nth child (even)
+  
+>>>>>>> news page pretty much done
     .news-single:nth-child(odd) {
       display:flex;
       flex-flow:row-reverse nowrap;
@@ -493,6 +507,7 @@
       }
       img{
         border-radius:0 0 40px 0;
+<<<<<<< HEAD
       }
   }
   }
@@ -510,6 +525,27 @@
     width:262px;
     text-align:center;
 
+=======
+      } 
+    }//close nth child (odd)
+  } //close desktop media query
+}//close .news-articles
+
+
+//pre footer
+
+.prefooter{
+  height:395px;
+  margin-top: 50px;
+  background:#00277E;  
+  h2{
+   color:white;
+   padding-top:30px;
+  } 
+  p{
+   color:white;
+   font-size:20px;
+>>>>>>> news page pretty much done
   }
 }
 
