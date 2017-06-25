@@ -1654,16 +1654,16 @@ object {
       .news-articles .news-single:nth-child(odd) img {
         border-radius: 0 0 40px 0; } }
 
-<<<<<<< HEAD
-.pre-footer {
-  background: #00277E;
-  height: 175px; }
-  .pre-footer h2, .pre-footer p {
+.prefooter {
+  height: 395px;
+  margin-top: 50px;
+  background: #00277E; }
+  .prefooter h2 {
     color: white;
-    font-family: "worksans", sans-serif;
-    font-size: 1.14286rem;
-    width: 262px;
-    text-align: center; }
+    padding-top: 30px; }
+  .prefooter p {
+    color: white;
+    font-size: 20px; }
 
 .pre-footer button {
   background-color: #4263AB; }
@@ -1675,18 +1675,6 @@ object {
   font-size: 1.14286rem;
   font-weight: normal;
   font-style: normal; }
-=======
-.prefooter {
-  height: 395px;
-  margin-top: 50px;
-  background: #00277E; }
-  .prefooter h2 {
-    color: white;
-    padding-top: 30px; }
-  .prefooter p {
-    color: white;
-    font-size: 20px; }
->>>>>>> news page pretty much done
 
 .prefooter-contact-info {
   display: -ms-flexbox;

@@ -491,14 +491,10 @@
       img{
         border-radius:0 0 0 40px;
       }
-<<<<<<< HEAD
     }
-
-=======
-    }//close nth child (even)
   
->>>>>>> news page pretty much done
-    .news-single:nth-child(odd) {
+  
+      .news-single:nth-child(odd) {
       display:flex;
       flex-flow:row-reverse nowrap;
       .news-details{
@@ -507,32 +503,14 @@
       }
       img{
         border-radius:0 0 40px 0;
-<<<<<<< HEAD
+      
       }
-  }
+    }
   }
 }
 
 
-.pre-footer{
-  // margin-top: 50px;
-  background:#00277E;
-  height:175px;
-  h2, p{
-    color:white;
-    font-family:$font__main;
-    font-size:$heading__h3;
-    width:262px;
-    text-align:center;
 
-=======
-      } 
-    }//close nth child (odd)
-  } //close desktop media query
-}//close .news-articles
-
-
-//pre footer
 
 .prefooter{
   height:395px;
@@ -545,7 +523,6 @@
   p{
    color:white;
    font-size:20px;
->>>>>>> news page pretty much done
   }
 }
 
