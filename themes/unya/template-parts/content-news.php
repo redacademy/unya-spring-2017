@@ -22,6 +22,9 @@
         <div class="news-details">								
 			 		<div class="hidden-mobile hidden-desktop"><?php echo custom_field_excerpt(); ?></div>
           <p class="hidden-mobile news-body"><?php echo CFS()->get( 'article_text' ); ?></p>							
-			  	<span class="news-url hidden-mobile"><a href="<?php echo CFS()->get( 'article_url' ); ?>">Read More</a></span>
+			  	<span class="news-url hidden-mobile"><a href="<?php echo CFS()->get( 'article_url' ); ?>">Read More
+					  <i class="fa fa-arrow-right" aria-hidden="true">
+						</i></a>
+					</span>
 				</news-details>
 			</li>

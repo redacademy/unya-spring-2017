@@ -400,6 +400,7 @@
 .news-title-block{
   display:flex;
   flex-direction: row;
+  order:1;
   @include desktop{
     width:50%;
     flex-flow:row wrap;
@@ -410,6 +411,7 @@
 .news-details{
   border-bottom: 2px solid lightgray;
   height:100px;
+  order:2;
   @include desktop{
     flex-basis:content;
     width:50%;
@@ -474,6 +476,11 @@
 
 .news-url{
  padding:20px;
+ a{
+   color:#4263AB;
+   font-size: 20px;
+   text-decoration: none;
+ }
 }
 
 .news-articles{
@@ -552,5 +559,12 @@
   flex-direction: column;
   @include desktop{
     padding-right:12rem;
+  }
+}
+
+#sb_instagram{
+  margin-right:0;
+  @include desktop{
+    margin: 0 auto;
   }
 }
