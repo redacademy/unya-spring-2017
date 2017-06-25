@@ -2,4 +2,15 @@
   @include desktop {
     display: flex;
   }
+
+  .simcal-day-label {
+    background: #4263AB;
+    color: white;
+  }
+
+  .simcal-day-has-events {
+    .simcal-day-label {
+      
+    }
+  }
 }
