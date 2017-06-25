@@ -479,7 +479,8 @@ table {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  margin-top: 20px; }
 
 .ctct-form-wrapper {
   height: 160px;
@@ -578,10 +579,6 @@ textarea {
   padding-left: 10px;
   color: black; }
 
-i.fa.fa-times::before {
-  font-size: 20px;
-  padding-right: 40px; }
-
 .ctct-form-wrapper input[type="text"],
 .ctct-form-wrapper input[type="email"],
 .ctct-form-wrapper input[type="password"],
@@ -604,14 +601,15 @@ input[type=checkbox] {
       justify-content: flex-start;
   -ms-flex-align: center;
       align-items: center;
-  padding-left: 10px;
-  margin-top: 50px; }
-
-.ctct-form-wrapper .ctct-input-container label {
-  color: black;
-  font-family: "worksans", sans-serif;
-  font-size: 1rem;
   padding-left: 10px; }
+
+.ctct-form-wrapper {
+  height: 100%; }
+  .ctct-form-wrapper .ctct-input-container label {
+    color: black;
+    font-family: "worksans", sans-serif;
+    font-size: 1rem;
+    padding-left: 10px; }
 
 input[type=submit] {
   font-family: "worksans", sans-serif;
@@ -1700,7 +1698,8 @@ footer {
         justify-content: center; }
     footer .newsletter-sign-up .subscription-form {
       width: 100%;
-      background-color: #fff; }
+      background-color: #fff;
+      height: 250px; }
     footer .newsletter-sign-up abbr {
       display: none; }
     footer .newsletter-sign-up button.sign-up-btn {
@@ -1738,6 +1737,9 @@ footer {
       position: absolute;
       top: 0;
       right: 0; }
+      footer .newsletter-sign-up .close-form i.fa.fa-times:before {
+        padding-right: 50px;
+        font-size: 25px; }
       @media (min-width: 600px) {
         footer .newsletter-sign-up .close-form {
           visibility: hidden; } }
