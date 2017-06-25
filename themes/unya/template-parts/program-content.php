@@ -27,7 +27,7 @@
 						<?php the_post_thumbnail( 'medium' ); ?>
 					<?php endif; ?>
 					<h4 class="program-name"><?php the_title(); ?></h4>
-					<img class="hidden-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/education-program.png">
+					<img class="hidden-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/education-program.svg">
 					</a>
 				</li>
 				<?php endforeach; ?>
