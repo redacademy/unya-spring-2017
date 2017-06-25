@@ -549,7 +549,11 @@ textarea {
   textarea:focus {
     color: #111; }
 
-
+.ctct-form-field-email {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
   .ctct-form-field-email label {
     display: none; }
   .ctct-form-field-email input[type=email] {
@@ -558,7 +562,9 @@ textarea {
     position: relative;
     padding-left: 50px;
     margin-top: 15px; }
-
+    @media (min-width: 600px) {
+      .ctct-form-field-email input[type=email] {
+        width: 100%; } }
 
 ::-webkit-input-placeholder {
   padding-left: 10px;
@@ -856,6 +862,11 @@ a {
 
 .ui-icon {
   background-image: url("../../assets/images/icons.png") !important; }
+
+.logo-carousel {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0; }
 
 /*--------------------------------------------------------------
 # Accessibility
