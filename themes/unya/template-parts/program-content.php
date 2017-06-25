@@ -7,7 +7,7 @@
 	<div class="accordion" id="accordion">
 		<h2 class="accordion-label" id="education">Education &amp; Training</h2>
 		<div>
-			<div class="section-heading">
+			<div class="section-heading education-heading">
 				<h3 class="content-wrapper">Education &amp; Training</h3>
 			</div>
 			<ul class="programs-list education-list">
@@ -35,7 +35,7 @@
 		</div>
 		<h2 class="accordion-label" id="personal">Personal Support</h2>
 		<div>
-			<div class="section-heading hidden-mobile">
+			<div class="section-heading personal-heading">
 				<h3 class="content-wrapper">Personal Support</h3>
 			</div>
 			<ul class="programs-list personal-list">
@@ -55,7 +55,7 @@
 						<?php the_post_thumbnail( 'medium' ); ?>
 					<?php endif; ?>
 					<h4 class="program-name"><?php the_title(); ?></h4>
-					<img class="hidden-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/support-program.png">
+					<img class="hidden-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/support-program.svg">
 					</a>
 				</li>
 				<?php endforeach; ?>
@@ -63,7 +63,7 @@
 		</div>
 		<h2 class="accordion-label" id="live-in">Live-In Programs</h2>
 		<div>
-			<div class="section-heading">
+			<div class="section-heading live-in-heading">
 				<h3 class="content-wrapper">Live-In Program</h3>
 			</div>
 			<ul class="programs-list live-in-list">
@@ -83,7 +83,7 @@
 						<?php the_post_thumbnail( 'medium' ); ?>
 					<?php endif; ?>
 					<h4 class="program-name"><?php the_title(); ?></h4>
-					<img class="hidden-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/live-in-program.png">
+					<img class="hidden-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/live-in-program.svg">
 					</a>
 				</li>
 				<?php endforeach; ?>
@@ -91,7 +91,7 @@
 		</div>
 		<h2 class="accordion-label" id="sports">Sports and Recreation</h2>
 		<div>
-			<div class="section-heading">
+			<div class="section-heading sports-heading">
 				<h3 class="content-wrapper">Sports and Recreation</h3>
 			</div>
 			<ul class="programs-list sports-list">
@@ -111,7 +111,7 @@
 						<?php the_post_thumbnail( 'medium' ); ?>
 					<?php endif; ?>
 					<h4 class="program-name"><?php the_title(); ?></h4>
-					<img class="hidden-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/sports-program.png">
+					<img class="hidden-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/sports-program.svg">
 					</a>
 				</li>
 				<?php endforeach; ?>

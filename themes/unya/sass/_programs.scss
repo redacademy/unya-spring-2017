@@ -9,6 +9,14 @@
     @include desktop {
       display: initial;
     }
+
+    h3 {
+      color: #FFF;
+      margin: 0;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
   }
 }
 
@@ -22,7 +30,24 @@
     font-size: 1.4285714286rem;
     font-weight: 500;
     text-transform: uppercase;
+
+    @include desktop {
+      margin: 0;
+      padding: 0;
+      font-size: 3.4285714286rem;
+      font-weight: 600;
+    }
   }
+
+  p {
+    font-size: 1.7142857143rem;
+    color: white;
+  }
+
+  @include desktop {
+    padding: 3.5714285714rem 15.714285714rem 3.5714285714rem 17.428571429rem; //content-wrapper
+  }
+
 }
 
 .programs-list {
@@ -92,6 +117,10 @@
       z-index: 2;
 
       @include desktop {
+        height: 91px;
+        margin: 0;
+        padding: 1rem;
+        width: 80%;
         font-size: 1.4285714286rem;
       }
     }
@@ -101,6 +130,10 @@
       z-index: 3;
     }
   }
+}
+
+.education-heading h3 {
+  background: $color__blue-medium;
 }
 
 .education-list {
@@ -133,9 +166,6 @@
         top: auto;
         bottom: 0;
         right: 0;
-        height: 91px;
-        width: 80%;
-        margin: 0;
         background: $color__blue-dark;
       }
     }
@@ -143,16 +173,59 @@
 
 }
 
+.personal-heading h3 {
+  background: $color__red-medium;
+}
+
 .personal-list {
+
+  li {
+    @include desktop {
+      border-radius: 0 90px 0 0;
+    }
+  }
+
   .gradient {
     background: linear-gradient(to bottom,rgba(167,0,0,0.7) 0%, rgba(167,0,0,0.7) 100%);
+
+    @include desktop {
+      background: rgba(234,153,152,0.7);
+
+      &:hover {
+        background: linear-gradient(to bottom,rgba(167,0,0,0.7) 0%, rgba(167,0,0,0.7) 100%);
+      }
+    }
   }
+
+  .program-logo {
+    top: 0;
+    right: 0;
+  }
+
+  li {
+    .program-name {
+      @include desktop {
+        top: 0;
+        left: 0;
+        right: auto;
+        background: $color__red-dark;
+      }
+    }
+  }
+}
+
+.live-in-heading h3 {
+  background: $color__grey-dark;
 }
 
 .live-in-list {
   .gradient {
     background: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%);
   }
+}
+
+.sports-heading h3 {
+  background: $color__yellow-dark;
 }
 
 .sports-list {
