@@ -1,4 +1,4 @@
-footer{
+footer {
   min-width:320px;
   max-height:300px;
   position: relative;
@@ -11,41 +11,42 @@ footer{
   margin:0;
   width:100%;
   text-align:center;
-  @include desktop{
+  @include desktop {
     background-color:$color__background-body;
     display: flex !important;
     width:100%;
     height:500px;
-    h4{
-    color:$color__blue-dark;
-    font-family:$font__main;
-    font-weight: normal;
-    margin:0;
+    h4 {
+      color:$color__blue-dark;
+      font-family:$font__main;
+      font-weight: normal;
+      margin:0;
     }
-    .footer-flex{
+    .footer-flex {
       padding:20px;
       min-width: 400px;
       display: flex;
       align-items: center;
       flex-flow: column 1 1;
       flex-wrap:nowrap;
-      h4{
+      h4 {
         text-align:left;
       }
-      &.social-links{
+      &.social-links {
         justify-content:stretch;
         align-items:left;
       }
-    }
-  }
-//section 1 of footer
-  .newsletter-sign-up {
+    }//footer-flex
+  }//closes include desktop
+
+//sign up form section
+.newsletter-sign-up {
     order: 1;
     width: 100%;
     text-align: center;
     display:flex;
     justify-content:center;
-    .subscription-form{
+    .subscription-form {
       width:100%;
       background-color:#fff;
       height:250px;
@@ -53,14 +54,14 @@ footer{
     abbr{
       display:none;
     }
-      button.sign-up-btn{
-      width:230px;
-      height:50px;
-      margin:15px 0px;
-      @include desktop {
-        display:none!important;
-      }
-      h4{
+    button.sign-up-btn {
+    width:230px;
+    height:50px;
+    margin:15px 0px;
+    @include desktop {
+      display:none!important;
+    }
+      h4 {
       font-size: 1rem;
       font-family: $font__heading;
       font-style: normal;
@@ -70,16 +71,16 @@ footer{
       align-items:center;
       margin:0;
       }
-    }
-    @include desktop{
-    text-align:left;
-    width: 36.3%;
-    .subscription-form{
-      height:100%;
-      display:flex;
-      justify-content: center;
+    } //closes button.sign-up-btn
+    @include desktop {
+      text-align:left;
+      width: 36.3%;
+      .subscription-form {
+        height:100%;
+        display:flex;
+        justify-content: center;
       }
-      }
+    } //closes desktop
     .close-form {
       background-color: #fff;
       color: $color__blue-dark;
@@ -94,8 +95,7 @@ footer{
       @include desktop{
         visibility:hidden;
         }
-      }// close .close-form
-    } // close .subscription-form
+      } // close .close-form
     @include desktop{
       text-align:left;
       display: flex;
@@ -103,41 +103,43 @@ footer{
       flex-direction: row;
       flex-wrap:nowrap;
       } // close desktop
-  } //close newsletter sign nav-up:
-//section 2 of footer
+    } //close newsletter sign nav-up:
+
+//social media links section
   .social-links {
     order: 3;
     display: flex;
     justify-content:center;
-    a{
+    a {
       color:#FFF;
       padding: 0 1.2rem;
       color:#FFF;
       font-size:3.5rem;
     }
-    @include desktop{
-    border-left: 2px solid $color__blue-dark;
-    border-right:2px solid $color__blue-dark;
-    .social-media-links-wrapper {
-      display: flex;
-      padding-top:2rem;
-      width:100%;
-      justify-content:center;
+    @include desktop {
+      border-left: 2px solid $color__blue-dark;
+      border-right:2px solid $color__blue-dark;
+      .social-media-links-wrapper {
+        display: flex;
+        padding-top:2rem;
+        width:100%;
+        justify-content:center;
       }
-      a{
-      display:block;
-      font-size:5rem;
-      color:$color__blue-dark;
-      order:2;
-      height: 100px;
+      a {
+        display:block;
+        font-size:5rem;
+        color:$color__blue-dark;
+        order:2;
+        height: 100px;
       }
-    }
-  }
-  //Section 3 of footer
+    } //closes desktop
+  } // close .social-links
+
+// business contact information
   .contact-us {
     order: 2;
     flex-wrap:wrap;
-    p{
+    p {
       color:#FFF;
       padding: 0;
       margin: 0;
@@ -145,7 +147,7 @@ footer{
       font-style: normal;
       font-weight: normal;
       font-size:$heading__h4;
-      }
+    }
       @include desktop {
       order: 3;
       display: flex;
@@ -162,10 +164,11 @@ footer{
         padding: 1rem 0;
         text-align: left;
         a, p{
-        order: 3;
-        color:black;
-        } //closing p
+          order: 3;
+          color:black;
+          } //closing p
+        } //closing contact-details
       } //closing include desktop
     } // closing contact us
-  }
+}//closing footer
 

@@ -6,6 +6,9 @@
 .header-wrapper {
   height: 4.2142857143rem;
   background-image: none;
+  background-color:$color__heading-blue;
+  display: flex;
+  align-items: center;
 
 @include desktop {
   display:flex;
@@ -36,7 +39,7 @@
     height:350px;
     width:100%;
     color: #FFF;
-    
+
     p{
       width:80%;
       margin: 70px auto;
@@ -50,7 +53,7 @@
         list-style: none;
     }
   }
-  
+
   .leader {
     margin: 0.6428571429rem 0;
     display: flex;
@@ -61,7 +64,7 @@
       width: 5.7rem;
       overflow: hidden;
       border-radius: 50%;
-      
+
       img {
         max-height: 100%;
         height: auto;
@@ -122,7 +125,7 @@
 
 /* Native Youth Centre */
 .header-wrapper-nyc {
-  
+
   @include desktop {
 
     p{
@@ -139,7 +142,7 @@
   .nyc-banner {
     height:23.214285714rem;
     width:100%;
-    
+
     p {
       text-align: right;
       width:80%;
@@ -148,7 +151,7 @@
     }
   }
 
-  .planning {  
+  .planning {
     ul {
       margin: 0;
       padding: 0;
@@ -236,7 +239,7 @@
 .single-opportunity {
   display: flex;
   border-top: 1px solid $color__blue-medium;
-  
+
   h3 {
     flex-basis: 70%; // value to change once link text is resolved
     font-family: $font__main;
@@ -352,7 +355,7 @@
         padding: 0;
       }
     }
-    
+
     .program-image {
       background: rgba(74,74,74,0.7);
       overflow: hidden;
@@ -435,7 +438,7 @@
    @include desktop{
      width:75%;
      height:100px;
-     background:#4263AB;    
+     background:#4263AB;
      a{
        margin:auto auto;
        color:white;
@@ -480,29 +483,47 @@
         border-radius:0 0 0 40px;
       }
     }
-  
+
     .news-single:nth-child(odd) {
       display:flex;
-      flex-flow:row-reverse nowrap; 
+      flex-flow:row-reverse nowrap;
       .news-details{
           border-left: 1px solid lightgray;
           border-radius:0 0 0 20px;
-      } 
+      }
       img{
         border-radius:0 0 40px 0;
-      } 
+      }
   }
   }
 }
 
 
-
-.prefooter{
-  margin-top: 50px;
-  background:#00277E;  
+.pre-footer{
+  // margin-top: 50px;
+  background:#00277E;
+  height:175px;
   h2, p{
     color:white;
+    font-family:$font__main;
+    font-size:$heading__h3;
+    width:262px;
+    text-align:center;
+
   }
+}
+
+.pre-footer button{
+  background-color:#4263AB;
+}
+
+.fit-button{
+  height: 50px;
+  width: 150px;
+  font-family: $font__heading;
+  font-size: $heading__h3;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .prefooter-contact-info{
