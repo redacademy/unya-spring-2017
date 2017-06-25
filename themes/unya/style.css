@@ -1923,12 +1923,34 @@ footer {
   content: "\f017";
   font-family: "FontAwesome"; }
 
+.mobile-calendar .simcal-calendar-head {
+  padding: .5em .5em .5em .7em;
+  background: #4263AB;
+  text-transform: uppercase; }
+  .mobile-calendar .simcal-calendar-head .simcal-current h3 {
+    color: white;
+    font-size: 1.42857rem;
+    font-weight: 500; }
+  .mobile-calendar .simcal-calendar-head .simcal-nav-button {
+    color: #FFF;
+    font-size: 2rem; }
+
 .mobile-calendar .simcal-day-label {
-  border-bottom: 1px solid #00277E !important;
-  color: white !important; }
+  display: none; }
+
+.mobile-calendar .simcal-event-start-date {
+  display: none; }
+  .mobile-calendar .simcal-event-start-date:after {
+    display: none; }
 
 .mobile-calendar .simcal-event-start:before {
+  padding-right: 0.5rem;
   content: "\f017";
+  font-family: "FontAwesome"; }
+
+.mobile-calendar .simcal-event-address:before {
+  padding-right: 0.5rem;
+  content: "\f041";
   font-family: "FontAwesome"; }
 
 @media (min-width: 600px) {
