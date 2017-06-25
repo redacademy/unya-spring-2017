@@ -1660,8 +1660,8 @@ footer {
   @media (min-width: 600px) {
     footer {
       background-color: #fff;
-      display: -ms-flexbox;
-      display: flex;
+      display: -ms-flexbox !important;
+      display: flex !important;
       width: 100%;
       height: 500px; }
       footer h4 {
