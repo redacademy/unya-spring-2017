@@ -299,15 +299,54 @@
 /* Single Program page */
 
 .single-program {
+  .header-wrapper {
+    padding-top: 0.714286rem;
+    background: $color__blue-dark;
+
+    h1 {
+      font-size: 1.7142857143rem;
+      width: 85%;
+      margin: 0 auto;
+
+      @include desktop {
+        padding-left: 50px;
+        margin-bottom: 0;
+        width: 100%;
+        font-size: 3.4285714286rem;
+      }
+    }
+
+    @include desktop {
+      padding: 0;
+      background:
+        linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+        url('../../assets/images/julie.png') center / cover no-repeat;
+      }
+  }
+  
   article {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .program-content a {
-    font-weight: 600;
-    text-decoration: none;
+  .program-content {
+
+    p {
+      @include desktop {
+        font-size: 1.4285714286rem;
+        line-height: 2.2857142857rem;
+      }
+    }
+
+    a {
+      font-weight: 600;
+      text-decoration: none;
+
+      @include desktop {
+        font-size: 1.4285714286rem;
+      }
+    }
   }
 
   .program-body {
@@ -315,12 +354,18 @@
     flex-direction: column;
     align-items: center;
 
+    @include desktop {
+      padding: 0 15.714285714rem 0 17.428571429rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
     h3 {
       color: $color__grey-dark;
     }
 
     .program-activities {
-      order: 2;
+      // order: 2;
 
       ul {
         margin: 0;
@@ -339,16 +384,8 @@
       }
     }
 
-    .program-image:nth-child(1) {
-      order: 1;
-    }
-
-    .program-image:nth-child(2) {
-      order: 3;
-    }
-
     .program-involvement {
-      order: 4;
+      // order: 4;
     }
 
   }

@@ -14,11 +14,10 @@
 		<a href="<?php echo esc_html( CFS()->get( 'program_brochure' ) ); ?>"><i class="fa fa-file-o" aria-hidden="true"></i> <?php the_title(); ?> Program Brochure (PDF)</a>
 	</div>
 
-	<?php if ( has_post_thumbnail() ) : ?>
-		<div class="program-image"><?php the_post_thumbnail( 'large' ); ?></div>
-	<?php endif; ?>
-
 	<div class="program-body">
+		<?php if ( has_post_thumbnail() ) : ?>
+			<div class="program-image"><?php the_post_thumbnail( 'large' ); ?></div>
+		<?php endif; ?>
 		<div class="program-activities content-wrapper">
 			<h3>Program Activities</h3>
 			<ul>
