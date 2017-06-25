@@ -1923,6 +1923,14 @@ footer {
   content: "\f017";
   font-family: "FontAwesome"; }
 
+.mobile-calendar .simcal-day-label {
+  border-bottom: 1px solid #00277E !important;
+  color: white !important; }
+
+.mobile-calendar .simcal-event-start:before {
+  content: "\f017";
+  font-family: "FontAwesome"; }
+
 @media (min-width: 600px) {
   .desktop-calendar {
     display: -ms-flexbox;
