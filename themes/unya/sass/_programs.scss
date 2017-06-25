@@ -20,12 +20,22 @@
   justify-content: space-between;
   list-style: none;
 
+  @include desktop {
+    width: 100%;
+    padding: 0 15.714285714rem 0 17.428571429rem;
+  }
+
   li {
     height: 7.8571428571rem;
     margin-bottom: 0.5rem;
     flex-basis: 49%;
     overflow: hidden;
     text-align: center;
+
+    @include desktop {
+      margin-bottom: 1.7142857143rem;
+      flex-basis: 48.5%;
+    }
 
     a {
       position: relative;
