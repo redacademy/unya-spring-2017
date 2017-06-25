@@ -9,13 +9,16 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+    <div class="news-header news-title header-wrapper sidebar-start">
+			<h1>UNYA In The News</h1>
+    </div>
 			<div class="content-wrapper">
 			<?php /* Start the Loop */ ?>
-		<ul class="news-articles">
-			<?php while ( have_posts() ) : the_post(); ?>
-				  <?php get_template_part( 'template-parts/content-news' );?>
-			    <?php endwhile; ?>
-				</ul>
+		    <ul class="news-articles">
+			    <?php while ( have_posts() ) : the_post(); ?>
+				    <?php get_template_part( 'template-parts/content-news' );?>
+		      <?php endwhile; ?>
+		    </ul>
 			</div>
 		<div class="prefooter">
 			<div class="content-wrapper">

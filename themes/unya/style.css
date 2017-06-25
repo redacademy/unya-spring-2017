@@ -475,8 +475,18 @@ table {
 # Forms
 --------------------------------------------------------------*/
 /* Subscription Form (in footer) */
+.ctct-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
 .ctct-form-wrapper {
-  height: 160px; }
+  height: 160px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .ctct-form-field-submit {
   display: -ms-flexbox;
@@ -487,6 +497,9 @@ table {
 
 div.ctct-disclosure {
   display: none !important; }
+
+.ctct-form-field-checkbox {
+  margin-bottom: 30px; }
 
 button,
 input[type="button"],
@@ -536,15 +549,16 @@ textarea {
   textarea:focus {
     color: #111; }
 
-input[type=email] {
-  width: 85%;
-  height: 50px;
-  position: relative;
-  padding-left: 50px;
-  margin-top: 15px; }
-  @media (min-width: 600px) {
-    input[type=email] {
-      width: 100%; } }
+
+  .ctct-form-field-email label {
+    display: none; }
+  .ctct-form-field-email input[type=email] {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    padding-left: 50px;
+    margin-top: 15px; }
+
 
 ::-webkit-input-placeholder {
   padding-left: 10px;
@@ -560,7 +574,7 @@ input[type=email] {
 
 i.fa.fa-times::before {
   font-size: 20px;
-  padding: 15px; }
+  padding-right: 40px; }
 
 .ctct-form-wrapper input[type="text"],
 .ctct-form-wrapper input[type="email"],
@@ -580,17 +594,25 @@ input[type=checkbox] {
 .ctct-input-container {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   -ms-flex-align: center;
       align-items: center;
-  padding-left: 10px; }
+  padding-left: 10px;
+  margin-top: 50px; }
 
 .ctct-form-wrapper .ctct-input-container label {
   color: black;
-  font-family: 'worksans';
+  font-family: "worksans", sans-serif;
   font-size: 1rem;
   padding-left: 10px; }
+
+input[type=submit] {
+  font-family: "worksans", sans-serif;
+  font-size: 14px;
+  width: 130px;
+  height: 50px;
+  margin: 20px; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -804,16 +826,20 @@ a {
     #main-nav-toggle {
       display: none; } }
 
-#accordion .accordion-label {
-  background: #4263AB !important;
-  color: #fff !important;
-  margin: 0 !important;
-  border-bottom: 1px solid #aaa !important; }
-  @media (min-width: 600px) {
-    #accordion .accordion-label {
-      border: none !important;
-      background: transparent !important;
-      color: transparent !important; } }
+#accordion {
+  width: 100%; }
+  #accordion .accordion-label {
+    background: #4263AB !important;
+    color: #fff !important;
+    margin: 0 !important;
+    border-bottom: 1px solid #aaa !important; }
+    #accordion .accordion-label:focus {
+      outline: 0; }
+    @media (min-width: 600px) {
+      #accordion .accordion-label {
+        border: none !important;
+        background: transparent !important;
+        color: transparent !important; } }
 
 .ui-accordion .ui-accordion-content {
   padding: 0; }
@@ -827,6 +853,9 @@ a {
 .site-content.collapsed {
   height: 0;
   overflow: hidden; }
+
+.ui-icon {
+  background-image: url("../../assets/images/icons.png") !important; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1461,34 +1490,63 @@ object {
 
 /* News archive */
 .news-single {
+  width: 100vw;
+  border-bottom: 2px solid lightgray;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
-  height: 120px;
-  padding-bottom: 20px; }
+  height: 100px;
+  margin-bottom: 10px; }
   @media (min-width: 600px) {
     .news-single {
-      height: 327px; } }
+      width: auto;
+      height: 327px;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
 
 .news-title-block {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row; }
+  @media (min-width: 600px) {
+    .news-title-block {
+      width: 45%; } }
+
+.news-details {
+  height: 100px; }
+  @media (min-width: 600px) {
+    .news-details {
+      width: 45%; } }
 
 .news-image {
-  width: 120px; }
+  width: 100px; }
+  @media (min-width: 600px) {
+    .news-image {
+      width: 100%; } }
 
 .news-headline {
-  font-size: 14px;
-  margin: auto auto; }
+  font-size: 16px;
+  margin: 0 auto; }
   .news-headline a {
     color: #2C2C2C;
     text-decoration: none; }
 
-.news-details {
-  height: 120px; }
+.news-articles {
+  margin: 0;
+  padding: 0; }
+  @media (min-width: 600px) {
+    .news-articles .news-single:nth-child(even) {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap; }
+    .news-articles .news-single:nth-child(odd) {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row-reverse nowrap;
+          flex-flow: row-reverse nowrap; } }
 
 .prefooter {
   background: #00277E; }
