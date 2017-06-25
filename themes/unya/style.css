@@ -1,7 +1,7 @@
 /*!
 Theme Name: UNYA Theme
 Theme URI: http://underscores.me/
-Author: Cory Hall, George Tetty, Jennifer Ta, Jessica Dieuique
+Author: Cory Hall, George Tettey, Jennifer Ta, Jessica Dieuique
 Author URI: http://www.redacademy.com
 Description: A WordPress theme for UNYA.
 Version: 1.0.0
@@ -675,6 +675,10 @@ a {
         top: 0; }
       .main-navigation ul ul li {
         background: #fff; }
+        .main-navigation ul ul li:hover {
+          background: #4263AB; }
+          .main-navigation ul ul li:hover a {
+            color: #fff; }
         .main-navigation ul ul li:hover > ul,
         .main-navigation ul ul li.focus > ul {
           left: 100%; }
@@ -818,6 +822,8 @@ a {
   left: 0;
   right: 0;
   z-index: 298; }
+  .site-footer.expanded .subscription-form.display-form {
+    height: 30vh; }
 
 .menu-gradient {
   background: rgba(255, 255, 255, 0.6);
@@ -843,6 +849,8 @@ a {
     background: #4263AB !important;
     color: #fff !important;
     margin: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
     border-bottom: 1px solid #aaa !important; }
     #accordion .accordion-label:focus {
       outline: 0; }
@@ -852,6 +860,9 @@ a {
         background: transparent !important;
         color: transparent !important;
         height: 0 !important; } }
+  #accordion .ui-accordion-content-active {
+    border-radius: 0 !important;
+    border: none !important; }
 
 .ui-accordion .ui-accordion-content {
   padding: 0; }
@@ -873,6 +884,15 @@ a {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-padding-start: 0; }
+
+#accordion #personal {
+  background: #D13434 !important; }
+
+#accordion #live-in {
+  background: #2C2C2C !important; }
+
+#accordion #sports {
+  background: #e1ce01 !important; }
 
 /*--------------------------------------------------------------
 # Accessibility
