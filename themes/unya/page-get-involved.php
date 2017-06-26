@@ -42,7 +42,7 @@ get_header(); ?>
 					<p><?php echo wp_kses(CFS()->get( 'employment_intro_paragraph' ),array('br') ); ?></p>
 				</div>
 				<div class="hidden-mobile content-wrapper">
-					<p>Why work for UNYA?</p>
+					<p class="bold-subheading">Why work for UNYA?</p>
 					<ul class="employment-list-container">
 						<?php $employment_list = CFS()->get('why_work_for_unya'); ?>
 						<?php foreach ( $employment_list as $why_work_for_unya ) : ?>
@@ -53,10 +53,10 @@ get_header(); ?>
 					</ul>
 				</div><!--End Why work for UNYA section -->
 				<div class="important-note-container hidden-mobile content-wrapper">
-					<p class="important-note-paragraph">
+					<div class="important-note-paragraph">
 						<span class="fa fa-info fa-3x" aria-hidden="true"></span>
-						<span class="important-note">Important Note:</span> UNYA accepts complete applications for advertised positions only. You must state clearly on your cover letter which position you are applying for. All applications must be sent in electronic form, to the email address specified on the posting. Hard copies and unsolicited applications/resumes will not be reviewed, but immediately destroyed.
-					</p>
+						<p><span class="bold-subheading">Important Note:</span> UNYA accepts complete applications for advertised positions only. You must state clearly on your cover letter which position you are applying for. All applications must be sent in electronic form, to the email address specified on the posting. Hard copies and unsolicited applications/resumes will not be reviewed, but immediately destroyed.</p>
+					</div>
 				</div><!-- Section hidden in mobile -->
 
 				<?php $args = array(
@@ -66,7 +66,7 @@ get_header(); ?>
 							);
 							$employment_opportunities = get_posts( $args ); ?>
 
-				<ul class="content-wrapper">
+				<ul class="opportunity-list content-wrapper">
 					<?php foreach ( $employment_opportunities as $post ) : setup_postdata( $post ); ?>
 					<li class="single-opportunity">
 						<h3><?php the_title(); ?></h3>

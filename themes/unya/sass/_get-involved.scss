@@ -1,5 +1,14 @@
 /* Get Involved page */
 
+// style for main text
+.donation p {
+  @include desktop {
+    font-family: $font__heading;
+    font-size: 1.7142857143rem;
+    line-height: 2.5714285714rem;
+  }
+}
+
 .donation-registration {
   height: 25rem;
   width: 100%;
@@ -7,6 +16,13 @@
 	p {
 		margin: 12.5rem auto;
 		color:white;
+    line-height: 2.5714285714rem;
+
+    @include desktop {
+      padding-left: 52.428571429rem;
+      padding-top: 4rem;
+    }
+    
 	}
 }
 
@@ -20,16 +36,31 @@
   color: #FFF;
   text-align: center;
 
+  @include desktop {
+    padding: 4.2857142857rem 0;
+  }
+
   .content-wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-around;
+
+    @include desktop {
+      padding: 0 8.6428571429rem 0 17.428571429rem;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   h3 {
     margin: 1rem 0;
     font-weight: 400;
     color: #FFF;
+
+    @include desktop {
+      font-size: 2.5714285714rem;
+    }
   }
 
   a {
@@ -45,15 +76,56 @@
     border-radius: 10px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
     font-weight: normal;
+
+    &:hover {
+      background-color: $color__red-dark;
+    }
+
+    @include desktop {
+      padding: 1rem 1.5rem 3.1rem 1.5rem;
+      font-size: 1.5714285714rem;
+    }
   }
 
 }
 
-.opportunities {
-  ul {
-    padding: 0;
+.employment-list-container {
+  margin: 0;
+  padding-left: 1.5rem;
+  line-height: 2.2857142857rem;
+}
+
+.bold-subheading {
+  font-weight: 600;
+}
+
+.important-note-paragraph {
+  margin: 3.5714285714rem 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+
+  border-radius: 5px;
+  background-color: $color__blue-light;
+  box-shadow: 1px 2px 5px 0;
+  color: white;
+
+  .fa-info {
+    flex-basis: 32%;
+  }
+
+  p {
     margin: 0;
-    list-style: none;
+  }
+}
+
+.opportunity-list {
+  padding: 0;
+  margin: 0 0 1rem 0;
+  list-style: none;
+
+  @include desktop {
+    padding: $content-wrapper-desktop;
   }
 }
 
@@ -62,7 +134,7 @@
   border-top: 1px solid $color__blue-medium;
   justify-content: space-between;
   padding: 0 0.2rem;
-  
+
   h3 {
     flex-basis: 70%; // value to change once link text is resolved
     font-family: $font__main;

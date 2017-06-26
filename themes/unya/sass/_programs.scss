@@ -132,7 +132,7 @@
 
   @include desktop {
     width: 100%;
-    padding: 0 15.714285714rem 0 17.428571429rem;
+    padding: $content-wrapper-desktop;
   }
 
   li {
@@ -427,7 +427,7 @@
     align-items: center;
 
     @include desktop {
-      padding: 0 15.714285714rem 0 17.428571429rem;
+      padding: $content-wrapper-desktop;
       width: 100%;
       flex-direction: row;
       flex-wrap: wrap;
@@ -479,10 +479,6 @@
         flex-basis: 48%;
       }
 
-    }
-
-    .program-involvement {
-      // order: 4;
     }
 
   }
