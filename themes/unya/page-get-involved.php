@@ -16,7 +16,7 @@ get_header(); ?>
 			<h2 class="accordion-label" id="donate">Donate</h2>
 			<section class="donation">
 				<header class="section-heading">
-					<h2>Donate</h2>
+					<h2 class="hidden-mobile">Donate</h2>
 				</header>
 				<div class="content-wrapper">
 					<p><?php echo wp_kses(CFS()->get( 'donation_intro_paragraph' ),array('br') ); ?></p>
