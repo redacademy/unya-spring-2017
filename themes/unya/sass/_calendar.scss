@@ -1,11 +1,42 @@
 .mobile-calendar {
+  .simcal-calendar-head {
+    padding: 0.7142857143rem .5em .5em .7em;
+    background: $color__blue-medium;
+    text-transform: uppercase;
+
+    .simcal-current h3 {
+      color: white;
+      font-size: 1.42857rem;
+      font-weight: 500;
+    }
+
+    .simcal-nav-button {
+      color: #FFF;
+      font-size: 2rem;
+    }
+  }
+  
   .simcal-day-label {
-    border-bottom: 1px solid $color__blue-dark!important;
-    color: white!important;
+    display: none;
+  }
+
+  .simcal-event-start-date {
+    display: none;
+
+    &:after {
+      display: none;
+    }
   }
 
   .simcal-event-start:before {
+    padding-right: 0.5rem;
     content: "\f017";
+    font-family: "FontAwesome";
+  }
+
+  .simcal-event-address:before {
+    padding-right: 0.5rem;
+    content: "\f041";
     font-family: "FontAwesome";
   }
 
@@ -23,7 +54,7 @@
 
   .simcal-day-has-events {
     .simcal-day-label {
-      background-color: $color__blue-dark!important;
+      background: #4263AB!important;
       color: #FFF!important;
     }
     .simcal-event-title {
@@ -33,10 +64,11 @@
 
   .simcal-present {
     div {
-      border: 1px solid $color__yellow!important;
+      border: 1px solid $color__blue-dark!important;
     }
     .simcal-day-label {
-      background: $color__yellow!important;
+      background-color: $color__blue-dark!important;
     }
   }
+
 }

@@ -69,7 +69,7 @@ get_header(); ?>
 						<h2 class="content-wrapper">Partners</h2>
 					</header>
 					<div class="content-wrapper">
-						<ul class="logo-carousel">
+						<ul class="content-wrapper logo-carousel">
 							<?php $partners = CFS()->get( 'partners' ); ?>
 							<?php foreach ( $partners as $partner ) : ?>
 								<li class="partner">
@@ -95,7 +95,7 @@ get_header(); ?>
 						<p><?php echo wp_kses( CFS()->get( 'we_need_your_help' ),array('br') ); ?></p>
 						<h5>Donate Funds</h5>
 						<p><?php echo wp_kses( CFS()->get( 'donate_funds' ),array('br') ); ?></p>
-						<img src="<?php echo esc_url( CFS()->get( 'ways_to_help_image' ) ); ?>" alt="image of ways to help">
+							<img src="<?php echo esc_url( CFS()->get( 'ways_to_help_image' ) ); ?>" alt="image of ways to help">
 						<h5>Donate Materials and Supplies</h5>
 						<p><?php echo wp_kses( CFS()->get( 'donate_materials_and_supplies' ),array('br') ); ?></p>
 						<h5>Other Ways to Help</h5>
@@ -107,7 +107,8 @@ get_header(); ?>
 			</div>
 			<div class="pre-footer">
 				<p class="pre-footer-text">Like what you see? Make your donation online today</p>
-				<button class="donate">Donate Today</button>
+				<a href="https://www.canadahelps.org/en/charities/urban-native-youth-association/">
+				  <button class="donate">Donate Today</button></a>
 			</div>
 
 

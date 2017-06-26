@@ -33,14 +33,17 @@ get_header(); ?>
 					<p class="hidden-mobile"><?php echo wp_kses(CFS()->get( 'first_half_of_story' ),array('br') ); ?></p>
 					<a class="hidden-mobile" href="<?php the_permalink() ?>"><p class="hidden-mobile">Read more about <?php the_title(); ?></p></a>
 	      </div>
-			</single-story>
+			</section>
 		  <?php endforeach; wp_reset_postdata(); ?> 
     </div>
   </section>
 	
 		<section class="statistics" id="statistics">
-			<h2 class="content-wrapper">Impacts</h2>
-			<!-- Insert image here -->
+			<h2 class="impact-head content-wrapper">Impacts</h2>
+		  <span class="infographics content-wrapper">
+			  <img class="infographic-1" src="<?php echo esc_url( CFS()->get( 'infographic_2' ) ); ?>">
+			  <img class="infographic-2 hidden-mobile" src="<?php echo esc_url( CFS()->get( 'infographic_1' ) ); ?>">
+		  </span>	
 		</section>
   
 		<section class="testimonials" id="testimonials">

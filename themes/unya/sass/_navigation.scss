@@ -63,6 +63,12 @@ a {
 
 			li {
 				background: #fff;
+				&:hover {
+					background: $color__blue-medium;
+					a {
+						color: #fff;
+					}
+				}
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
@@ -259,6 +265,9 @@ a {
 	left: 0;
 	right: 0;
 	z-index: 298;
+	.subscription-form.display-form{
+		height: 30vh;
+	}
 }
 
 .menu-gradient {
@@ -287,6 +296,8 @@ a {
 		background: $color__blue-medium !important;
 		color: #fff !important;
 		margin: 0 !important;
+		border-radius: 0 !important;
+		border: none !important;
 		border-bottom: 1px solid #aaa !important;
 		&:focus {
 			outline: 0;
@@ -298,6 +309,10 @@ a {
 			height: 0 !important;
 		}
 
+	}
+	.ui-accordion-content-active {
+		border-radius: 0 !important;
+		border: none !important;
 	}
 }
 
@@ -329,4 +344,16 @@ a {
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
 	-webkit-padding-start: 0;
+}
+
+#accordion #personal {
+	background: $color__red-medium !important;
+}
+
+#accordion #live-in {
+	background: $color__grey-dark !important;
+}
+
+#accordion #sports {
+	background: $color__yellow !important;
 }

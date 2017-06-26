@@ -87,16 +87,7 @@ object {
 	display: block;
 }
 
-.success-image{
-	width:38vw;
-	height:38vw;
-	border-radius: 50%;
-	@include desktop{
-		border-radius:50%;
-		height:250px;
-		width:250px;
-	}
-}
+
 .sbi_photo{
 	border-radius: 10%;
 }
@@ -140,14 +131,7 @@ object {
 	background-position: center;
 }
 
-.single-story{
-	display:flex;
-  flex-flow: row nowrap;
-}
 
-.success-content{
-	width:60%;
-}
 
 
 //Image Carousel Stuff
@@ -163,7 +147,7 @@ object {
 .logo-carousel{
 	margin:0 auto;
 	height:300px;
-	width:90vw;
+	padding:0;
 }
 .partner{
 	margin: auto auto;
