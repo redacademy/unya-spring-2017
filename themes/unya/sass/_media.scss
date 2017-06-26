@@ -107,11 +107,21 @@ object {
   -webkit-clip-path: polygon( 0% 100%, 100% 100%, 100% 0%, 0 25%);
 	background-size: cover;
 	background-position: center;
+	p{
+		@include desktop{
+			font-size:24px;
+		}
+	}
 }
 
 .rectangle-container{
 	background-size: cover;
 	background-position: center;
+	p{
+		@include desktop{
+			font-size:24px;
+		}
+	}
 }
 
 .mission {

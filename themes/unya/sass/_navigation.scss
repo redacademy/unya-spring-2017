@@ -183,8 +183,8 @@ a {
 		display: none;
 		padding: 0.5rem;
 		align-self: center;
-		background: $color__heading-red;
-		border-radius: 15%;
+		background: $color__red-medium;
+		border-radius: 10px;
 		color: #fff;
 		text-decoration: none;
 		font-family: $font__main;
@@ -387,9 +387,11 @@ a {
 		flex-direction: column;
 		h2 {
 			color: #fff;
+			margin-bottom: 0;
 		}
 		h4 {
 			margin-left: 15.7rem;
+			margin-top: 0;
 		}
 	}
 	ul {
@@ -450,9 +452,11 @@ a {
 		flex-direction: column;
 		h2 {
 			text-align: left;
+			margin-bottom: 0;
 		}
 		h4 {
 			margin-left: 15.7rem;
+			margin-top: 0;
 		}
 	}
 }
