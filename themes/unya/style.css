@@ -1627,21 +1627,6 @@ object {
       .news-articles .news-single:nth-child(odd) img {
         border-radius: 0 0 40px 0; } }
 
-<<<<<<< HEAD
-.pre-footer {
-  background: #00277E;
-  height: 175px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .pre-footer h2, .pre-footer p {
-    color: white;
-    font-family: "worksans", sans-serif;
-    font-size: 1.14286rem;
-    width: 240px;
-    text-align: center; }
-=======
 .prefooter {
   height: 395px;
   margin-top: 50px;
@@ -1652,7 +1637,6 @@ object {
   .prefooter p {
     color: white;
     font-size: 20px; }
->>>>>>> 8d352c1928097748a1fefa3629b05be813892437
 
 .pre-footer button {
   background-color: #4263AB; }

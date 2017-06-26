@@ -192,7 +192,7 @@
 	border-radius: 50%;
 	@include desktop{
 		border-radius:50%;
-		height:250px;
+		height:250px;   
 		width:250px;
     
 	}
@@ -473,20 +473,9 @@
   }
 }
 
-<<<<<<< HEAD
-.pre-footer{
-  // margin-top: 50px;
-  background:#00277E;
-  height:175px;
-  display:flex;
-  justify-content:center;
-  h2, p{
-    color:white;
-    font-family:$font__main;
-    font-size:$heading__h3;
-    width:240px;
-    text-align:center;
-=======
+
+
+
 .prefooter{
   height:395px;
   margin-top: 50px;
@@ -498,7 +487,7 @@
   p{
    color:white;
    font-size:20px;
->>>>>>> 8d352c1928097748a1fefa3629b05be813892437
+
   }
 }
 
