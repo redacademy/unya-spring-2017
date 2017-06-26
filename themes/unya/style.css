@@ -961,6 +961,16 @@ a {
 .brief-history {
   padding: 4rem 0 4rem 0; }
 
+.planning .section-heading {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .planning .section-heading h2 {
+    text-align: left; }
+  .planning .section-heading h4 {
+    margin-left: 15.7rem; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

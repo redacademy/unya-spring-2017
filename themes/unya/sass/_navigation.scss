@@ -443,3 +443,16 @@ a {
 .brief-history {
 	padding: 4rem 0 4rem 0;
 }
+
+.planning {
+	.section-heading {
+		display: flex;
+		flex-direction: column;
+		h2 {
+			text-align: left;
+		}
+		h4 {
+			margin-left: 15.7rem;
+		}
+	}
+}

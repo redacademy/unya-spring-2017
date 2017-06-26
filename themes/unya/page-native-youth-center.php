@@ -43,7 +43,7 @@ get_header(); ?>
 				<h2 class="accordion-label" id="planning">Planning</h2>
 				<section class="planning">
 					<header class="section-heading">
-						<h2 class="content-wrapper">Planning and Development</h2>
+						<h2>Planning and Development</h2>
 						<h4 class="planning-timeline hidden-mobile">Timeline of the development of the Native Youth Center.</h4>					
 					</header>
 					<div class="content-wrapper">
