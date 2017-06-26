@@ -1,7 +1,6 @@
 <?php
 /**
  * The template for displaying the programs archive.
- * Template Name: archive-programs
  * @package UNYA_Theme
  */
 

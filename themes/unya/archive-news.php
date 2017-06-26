@@ -1,7 +1,6 @@
 <?php
 /**
  * The template for displaying archive pages.
- * Template Name: archive-news
  * @package UNYA_Theme
  */
 
