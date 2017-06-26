@@ -642,7 +642,8 @@ a {
       left: -999rem;
       z-index: 99999;
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      border-bottom-left-radius: 10px; }
       .main-navigation ul ul ul {
         left: -999rem;
         top: 0; }
@@ -677,7 +678,8 @@ a {
         width: auto; } }
     @media (min-width: 800px) {
       .main-navigation .menu-item .sub-menu .menu-item {
-        text-align: left; } }
+        text-align: left;
+        border-bottom: 1px solid #4263AB; } }
 
 /* Small menu. */
 .menu-toggle,
@@ -726,6 +728,7 @@ a {
       padding: 1rem 4rem; }
   .site-header .donate {
     display: none;
+    margin-right: 1rem;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;

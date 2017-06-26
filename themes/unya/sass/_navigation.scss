@@ -54,6 +54,7 @@ a {
 			z-index: 99999;
 			margin: 0;
 			padding: 0;
+			border-bottom-left-radius: 10px;
 			
 
 			ul {
@@ -123,6 +124,7 @@ a {
 			.menu-item {
 				@include desktop {
 					text-align: left;
+					border-bottom: 1px solid $color__blue-medium;
 				}
 			}
 		}
@@ -184,6 +186,7 @@ a {
 	}
 	.donate {
 		display: none;
+		margin-right: 1rem;
 		padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 		align-self: center;
 		background: $color__red-medium;
