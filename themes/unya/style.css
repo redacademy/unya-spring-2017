@@ -2463,3 +2463,8 @@ footer {
     @media (min-width: 600px) {
       .single-opportunity a {
         font-size: 1.4285714286rem; } }
+
+.site-main .error-404 {
+  background-image: url("../assets/images/404_background.jpg");
+  height: 961px;
+  width: 100%; }
