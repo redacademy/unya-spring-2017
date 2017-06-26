@@ -76,7 +76,7 @@
       $bottomOfHeader = $('.sidebar-start').offset().top + $('.sidebar-start').height();
       if (position > $bottomOfHeader) {
         $sidebarMenu.css('position', 'fixed');
-        $sidebarMenu.css('top', '0');
+        $sidebarMenu.css('top', $('.site-header').height());
       } else {
         $sidebarMenu.css('position', 'absolute');
         $sidebarMenu.css('top', $bottomOfHeader);
