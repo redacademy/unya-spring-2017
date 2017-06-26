@@ -33,7 +33,7 @@ get_header(); ?>
 					<p class="hidden-mobile"><?php echo wp_kses(CFS()->get( 'first_half_of_story' ),array('br') ); ?></p>
 					<a class="hidden-mobile" href="<?php the_permalink() ?>"><p class="hidden-mobile">Read more about <?php the_title(); ?></p></a>
 	      </div>
-			</single-story>
+			</section>
 		  <?php endforeach; wp_reset_postdata(); ?> 
     </div>
   </section>

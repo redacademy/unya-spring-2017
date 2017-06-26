@@ -1164,16 +1164,6 @@ object {
 .gallery-caption {
   display: block; }
 
-.success-image {
-  width: 38vw;
-  height: 38vw;
-  border-radius: 50%; }
-  @media (min-width: 600px) {
-    .success-image {
-      border-radius: 50%;
-      height: 250px;
-      width: 250px; } }
-
 .sbi_photo {
   border-radius: 10%; }
 
@@ -1208,15 +1198,6 @@ object {
 .nyc-banner {
   background-size: cover;
   background-position: center; }
-
-.single-story {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap; }
-
-.success-content {
-  width: 60%; }
 
 @media (min-width: 600px) {
   .image-carousel, .nyc-slide {
@@ -1312,6 +1293,28 @@ object {
     font-weight: bold; }
 
 /* Impact page */
+.single-story {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap; }
+
+.success-content {
+  width: 60%; }
+
+.success-image {
+  width: 38vw;
+  height: 38vw;
+  border-radius: 50%; }
+  @media (min-width: 600px) {
+    .success-image {
+      border-radius: 50%;
+      height: 250px;
+      width: 250px; }
+      .success-image a {
+        width: 40%; } }
+
 .impact-polygon {
   height: 350px;
   width: 100%; }

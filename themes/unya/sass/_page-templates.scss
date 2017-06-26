@@ -94,6 +94,28 @@
 
 /* Impact page */
 
+.single-story{
+  width:100%;
+	display:flex;
+  flex-flow: row nowrap;
+}
+.success-content{
+  width:60%;
+}
+.success-image{
+	width:38vw;
+	height:38vw;
+	border-radius: 50%;
+	@include desktop{
+		border-radius:50%;
+		height:250px;
+		width:250px;
+    a{
+      width:40%;
+    }
+	}
+}
+
 .impact-polygon{
   height:350px;
   width:100%;
