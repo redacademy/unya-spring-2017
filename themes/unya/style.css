@@ -894,6 +894,17 @@ a {
 #accordion #sports {
   background: #e1ce01 !important; }
 
+#accordion #donate {
+  background: #D13434 !important; }
+
+.ways-to-help {
+  background: #D13434;
+  color: #fff; }
+  .ways-to-help .section-heading {
+    background: #A70000; }
+    .ways-to-help .section-heading h2 {
+      color: #fff; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -1259,8 +1270,10 @@ object {
       background-size: cover;
       background-position: center; }
       .header-wrapper h1 {
-        padding-left: 50px;
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        padding-left: 8.7142857143rem;
+        width: 100%;
+        font-weight: 600; } }
 
 /* Front Page */
 .homepage-links {
@@ -1627,21 +1640,6 @@ object {
       .news-articles .news-single:nth-child(odd) img {
         border-radius: 0 0 40px 0; } }
 
-<<<<<<< HEAD
-.pre-footer {
-  background: #00277E;
-  height: 175px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .pre-footer h2, .pre-footer p {
-    color: white;
-    font-family: "worksans", sans-serif;
-    font-size: 1.14286rem;
-    width: 240px;
-    text-align: center; }
-=======
 .prefooter {
   height: 395px;
   margin-top: 50px;
@@ -1652,7 +1650,6 @@ object {
   .prefooter p {
     color: white;
     font-size: 20px; }
->>>>>>> 8d352c1928097748a1fefa3629b05be813892437
 
 .pre-footer button {
   background-color: #4263AB; }
