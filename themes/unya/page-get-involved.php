@@ -81,9 +81,6 @@ get_header(); ?>
 
 			<h2 class="accordion-label" id="volunteer">Volunteer</h2>
 			<section class="opportunities">
-				<header class="section-heading">
-					<h2 class="hidden-desktop">Volunteer</h2>
-				</header>
 				<?php $args = array(
 									'post_per_page' => 10,
 									'post_type'=> 'opportunities',

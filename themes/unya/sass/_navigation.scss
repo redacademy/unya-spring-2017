@@ -171,6 +171,9 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width: 100vw;
+	position: fixed;
+	background: #fff;
+	z-index: 50;
 	.site-branding {
 		padding: 1rem;
 		background: url('../../assets/images/RED_UNYA_UI_LogoDesign_Assets_V1-1.png') no-repeat center;
@@ -459,8 +462,4 @@ a {
 			margin-top: 0;
 		}
 	}
-}
-
-* {
-	transition: all 0.4s linear;
 }
