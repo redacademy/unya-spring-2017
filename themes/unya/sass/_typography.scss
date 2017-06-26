@@ -30,8 +30,7 @@ h1 {
 	font-weight:normal;
 	padding-left: 24px;
 	@include desktop {
-		font-size: 3.4285714286rem;
-
+		font-size: $desktop__h1;
 	}
 }
 
@@ -42,7 +41,7 @@ h2 {
 	font-style: normal;
 	font-weight: bold;
 	@include desktop {
-		font-size: 2.5714285714rem;
+		font-size: $desktop__h2;
 	}
 }
 
@@ -51,7 +50,7 @@ h3 {
 	color: $color__grey-dark;
 
 	@include desktop {
-		font-size: 1.7142857143rem;
+		font-size: $desktop__h3;
 	}
 }
 
@@ -59,7 +58,7 @@ h4 {
 	font-size: $heading__h4;
 
 	@include desktop {
-		font-size: 1.7142857143rem;
+		font-size: $desktop__h4;
 	}
 }
 
@@ -114,44 +113,6 @@ mark, ins {
 
 big {
 	font-size: 125%;
-}
-
-// To add to page templates
-
-.about, .nyc, .programs {
-	.content-wrapper{
-		h2{
-			color:white;
-			margin:0px;
-		}
-		p{
-			color:white;
-	  }
-	}
-}
-.nyc{
-	.content-wrapper{
-			padding-top:200px;
-		h2{
-			margin:0px;
-			text-align: right;
-			 }
-     p{
-			margin-left:50px;
-			text-align: right;
-			 }
-		 a{
-			text-align: right;
-			 }
-		}
-	}
-
-.programs{
-	.content-wrapper{
-		h2 {
-			margin: 0;
-		 }
-	}
 }
 
 .header-subtext{

@@ -314,7 +314,7 @@ h1 {
   padding-left: 24px; }
   @media (min-width: 600px) {
     h1 {
-      font-size: 3.4285714286rem; } }
+      font-size: 3.28571rem; } }
 
 h2 {
   color: #2C2C2C;
@@ -324,20 +324,20 @@ h2 {
   font-weight: bold; }
   @media (min-width: 600px) {
     h2 {
-      font-size: 2.5714285714rem; } }
+      font-size: 2.28571rem; } }
 
 h3 {
   font-size: 1.14286rem;
   color: #2C2C2C; }
   @media (min-width: 600px) {
     h3 {
-      font-size: 1.7142857143rem; } }
+      font-size: 1.71429rem; } }
 
 h4 {
   font-size: 0.85714rem; }
   @media (min-width: 600px) {
     h4 {
-      font-size: 1.7142857143rem; } }
+      font-size: 1.28571rem; } }
 
 /* Copy */
 p {
@@ -383,27 +383,6 @@ mark, ins {
 
 big {
   font-size: 125%; }
-
-.about .content-wrapper h2, .nyc .content-wrapper h2, .programs .content-wrapper h2 {
-  color: white;
-  margin: 0px; }
-
-.about .content-wrapper p, .nyc .content-wrapper p, .programs .content-wrapper p {
-  color: white; }
-
-.nyc .content-wrapper {
-  padding-top: 200px; }
-  .nyc .content-wrapper h2 {
-    margin: 0px;
-    text-align: right; }
-  .nyc .content-wrapper p {
-    margin-left: 50px;
-    text-align: right; }
-  .nyc .content-wrapper a {
-    text-align: right; }
-
-.programs .content-wrapper h2 {
-  margin: 0; }
 
 .header-subtext {
   line-height: 1.5;
@@ -1367,6 +1346,14 @@ object {
 
 .nyc {
   text-align: right; }
+  .nyc h2 {
+    margin: 0px;
+    text-align: right; }
+  .nyc p {
+    margin-left: 50px;
+    text-align: right; }
+  .nyc a {
+    text-align: right; }
 
 .about, .nyc, .programs {
   display: -ms-flexbox;
@@ -1376,10 +1363,17 @@ object {
   .about .content-wrapper, .nyc .content-wrapper, .programs .content-wrapper {
     padding-top: 4.9285714286rem; }
   .about h2, .nyc h2, .programs h2 {
+    margin: 0px;
+    color: #FFF;
     text-transform: uppercase; }
+  .about p, .nyc p, .programs p {
+    color: white; }
   @media (min-width: 600px) {
     .about p, .nyc p, .programs p {
       font-size: 1.1428571429rem; } }
+
+.programs .content-wrapper h2 {
+  margin: 0; }
 
 @media (min-width: 600px) {
   .about .content-wrapper, .programs .content-wrapper {

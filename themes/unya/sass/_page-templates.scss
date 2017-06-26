@@ -64,6 +64,18 @@
 
 .nyc {
   text-align: right;
+  
+  h2 {
+			margin:0px;
+			text-align: right;
+	}
+  p {
+  margin-left:50px;
+  text-align: right;
+  }
+  a {
+  text-align: right;
+  }
 }
 
 .about, .nyc, .programs {
@@ -71,11 +83,17 @@
   justify-content: center;
 
   .content-wrapper {
-    padding-top: 4.9285714286rem
+    padding-top: 4.9285714286rem;
   }
 
   h2 {
+		margin:0px;
+    color: #FFF;
     text-transform: uppercase;
+  }
+
+  p {
+    color:white;
   }
 
   @include desktop {
@@ -84,6 +102,14 @@
     }
   }
 
+}
+
+.programs{
+	.content-wrapper{
+		h2 {
+			margin: 0;
+		 }
+	}
 }
 
 @include desktop {
