@@ -53,7 +53,6 @@ function unya_hero_banners() {
 		$impactpolygon = CFS()->get( 'impact_angled_banner' );
 		$rectangle = CFS()->get( 'rectangular_banner' );
         $aboutpolygon = CFS()->get( 'about_angled_banner' );
-		$aboutrectangle = CFS()->get( 'about_rectangle_banner' );
         $getinvolvedpolygon = CFS()->get( 'get_involved_angled_banner' );
         $nativeyouthcenterbanner = CFS()->get( 'nyc_rectangle_banner' );
         $abouttitle = CFS()->get( 'title_banner_about' );
