@@ -888,9 +888,11 @@ a {
   -ms-flex-direction: column;
       flex-direction: column; }
   .leadership .section-heading h2 {
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 0; }
   .leadership .section-heading h4 {
-    margin-left: 15.7rem; }
+    margin-left: 15.7rem;
+    margin-top: 0; }
 
 .leadership ul {
   display: -ms-flexbox;
@@ -946,9 +948,11 @@ a {
   -ms-flex-direction: column;
       flex-direction: column; }
   .planning .section-heading h2 {
-    text-align: left; }
+    text-align: left;
+    margin-bottom: 0; }
   .planning .section-heading h4 {
-    margin-left: 15.7rem; }
+    margin-left: 15.7rem;
+    margin-top: 0; }
 
 /*--------------------------------------------------------------
 # Accessibility
