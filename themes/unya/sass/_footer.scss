@@ -16,6 +16,8 @@ footer {
     display: flex !important;
     width:100%;
     height:500px;
+    flex-direction:row;
+    padding:0 99px;
     h4 {
       color:$color__blue-dark;
       font-family:$font__main;
@@ -78,7 +80,7 @@ footer {
       .subscription-form {
         height:100%;
         display:flex;
-        justify-content: center;
+        justify-content: left;
       }
     } //closes desktop
     .close-form {
@@ -101,7 +103,7 @@ footer {
       display: flex;
       justify-content: flex-start;
       flex-direction: row;
-      flex-wrap:nowrap;
+      flex-wrap:wrap;
       } // close desktop
     } //close newsletter sign nav-up:
 
