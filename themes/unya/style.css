@@ -1293,15 +1293,27 @@ object {
     font-weight: bold; }
 
 /* Impact page */
-.single-story {
-  width: 100%;
+.success-stories .content-wrapper {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap; }
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
+  .success-stories .content-wrapper .single-story {
+    width: 50%;
+    display: inline-block; }
+    @media (min-width: 600px) {
+      .success-stories .content-wrapper .single-story {
+        margin-top: 30px;
+        width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+        .success-stories .content-wrapper .single-story a {
+          width: 30%; } }
 
 .success-content {
-  width: 60%; }
+  width: 70%; }
 
 .success-image {
   width: 38vw;
@@ -1311,9 +1323,20 @@ object {
     .success-image {
       border-radius: 50%;
       height: 250px;
-      width: 250px; }
-      .success-image a {
-        width: 40%; } }
+      width: 250px; } }
+
+.statistics {
+  background-color: #00277E;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
+  .statistics h2 {
+    width: 100%; }
+
+.infographic {
+  width: 48%;
+  display: inline; }
 
 .impact-polygon {
   height: 350px;
