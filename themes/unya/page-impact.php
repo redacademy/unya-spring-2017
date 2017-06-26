@@ -31,7 +31,8 @@ get_header(); ?>
 				<div class="success-content">
 				  <h3 class="hidden-mobile">Youth Feature - <?php the_title(); ?></h3>
 					<p class="hidden-mobile"><?php echo wp_kses(CFS()->get( 'first_half_of_story' ),array('br') ); ?></p>
-					<a class="hidden-mobile" href="<?php the_permalink() ?>"><p class="hidden-mobile">Read more about <?php the_title(); ?></p></a>
+					<a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>"><p class="hidden-mobile">Read more about <?php the_title(); ?><i class="fa fa-arrow-right" aria-hidden="true">
+						</i></p></a>
 	      </div>
 			</section>
 		  <?php endforeach; wp_reset_postdata(); ?> 

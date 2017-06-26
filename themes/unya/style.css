@@ -1449,6 +1449,9 @@ object {
         .success-stories .content-wrapper .single-story a {
           width: 30%; } }
 
+.impact-read-more {
+  display: block; }
+
 .success-content {
   width: 70%; }
 
@@ -1517,6 +1520,9 @@ object {
     .rectangle-container {
       height: 550px; } }
 
+.single-success-banner {
+  background-position: center; }
+
 .success-image-mobile {
   display: -ms-flexbox;
   display: flex;
@@ -1528,13 +1534,27 @@ object {
       align-content: center; }
   @media (min-width: 600px) {
     .success-image-mobile {
-      background-image: none; } }
+      display: none; } }
+
+.single-success-image {
+  width: 40%; }
 
 .success-exerpt {
   color: white;
   font-size: 16px;
   margin: auto auto;
-  font-weight: light; }
+  font-weight: light;
+  padding: 0 20px; }
+  @media (min-width: 600px) {
+    .success-exerpt {
+      color: #4263AB;
+      font-size: 36px; } }
+
+.success-image-exerpt {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap; }
 
 /* Native Youth Centre */
 @media (min-width: 600px) {
@@ -1567,8 +1587,7 @@ object {
       flex-basis: 20%; }
 
 .nyc-content .timeline-year {
-  font-family: "poppins", sans-serif;
-  font-weight: bold; }
+  font-family: "poppins", sans-serif; }
 
 .nyc-content .description-wrapper {
   -ms-flex-preferred-size: 80%;

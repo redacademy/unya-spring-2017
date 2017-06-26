@@ -185,7 +185,12 @@
     }
   }
 }
-  }}
+}}
+
+.impact-read-more{
+  display:block;
+}
+
 .success-content{
   width:70%;
 }
@@ -265,6 +270,9 @@
 
 // single success story
 
+.single-success-banner{
+  background-position: center;
+}
 .single-success-image{
 
 }
@@ -276,17 +284,28 @@
   background-position: center;
   align-content:center;
   @include desktop{
-    background-image:none;
+    display:none;
   }
+}
+.single-success-image{
+  width:40%;
 }
 .success-exerpt{
   color:white;
   font-size:16px;
   margin:auto auto;
   font-weight: light;
+  padding:0 20px;
+  @include desktop{
+    color:#4263AB;
+    font-size:36px;
+}
 }
 
-
+.success-image-exerpt{
+  display:flex;
+  flex-flow:row nowrap;
+}
 
 /* Native Youth Centre */
 .header-wrapper-nyc {
@@ -334,7 +353,6 @@
 
   .timeline-year {
     font-family: $font__heading;
-    font-weight: bold;
   }
 
   .description-wrapper {
