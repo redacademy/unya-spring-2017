@@ -29,7 +29,7 @@
 /* Front Page */
 .homepage-links {
   text-decoration: none;
-  
+
   h3 {
     text-transform: uppercase;
     color: white;
@@ -177,7 +177,7 @@
   width:100%;
 	display:flex;
   flex-direction: row;
-  a{ 
+  a{
     width:30%;
     }
   }
@@ -194,7 +194,7 @@
 		border-radius:50%;
 		height:250px;
 		width:250px;
-    
+
 	}
 }
 
@@ -456,8 +456,8 @@
         border-radius:0 0 0 40px;
       }
     }
-  
-  
+
+
       .news-single:nth-child(odd) {
       display:flex;
       flex-flow:row-reverse nowrap;
@@ -467,38 +467,23 @@
       }
       img{
         border-radius:0 0 40px 0;
-      
+
       }
     }
   }
 }
 
-<<<<<<< HEAD
-.pre-footer{
-  // margin-top: 50px;
-  background:#00277E;
-  height:175px;
-  display:flex;
-  justify-content:center;
-  h2, p{
-    color:white;
-    font-family:$font__main;
-    font-size:$heading__h3;
-    width:240px;
-    text-align:center;
-=======
 .prefooter{
   height:395px;
   margin-top: 50px;
-  background:#00277E;  
+  background:#00277E;
   h2{
    color:white;
    padding-top:30px;
-  } 
+  }
   p{
    color:white;
    font-size:20px;
->>>>>>> 8d352c1928097748a1fefa3629b05be813892437
   }
 }
 
