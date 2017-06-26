@@ -725,8 +725,8 @@ a {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    background: #A70000;
-    border-radius: 15%;
+    background: #D13434;
+    border-radius: 10px;
     color: #fff;
     text-decoration: none;
     font-family: "worksans", sans-serif;
