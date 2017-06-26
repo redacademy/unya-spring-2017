@@ -1993,6 +1993,9 @@ footer {
   content: "\f041";
   font-family: "FontAwesome"; }
 
+.desktop-calendar .post-edit-link {
+  display: none; }
+
 @media (min-width: 800px) {
   .desktop-calendar {
     display: -ms-flexbox;
@@ -2014,6 +2017,10 @@ footer {
 
 .desktop-calendar .simcal-present .simcal-day-label {
   background-color: #00277E !important; }
+
+@media (min-width: 800px) {
+  #calendar h2 {
+    margin-left: 17.428571429rem; } }
 
 .program-section {
   display: -ms-flexbox;
@@ -2320,6 +2327,7 @@ footer {
     line-height: 2.5714285714rem; } }
 
 .donation .section-heading h2 {
+  padding-top: 2rem;
   width: 100%; }
 
 .donation-registration {
