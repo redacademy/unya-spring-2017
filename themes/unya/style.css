@@ -1447,11 +1447,10 @@ object {
 .success-stories .content-wrapper {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: column;
-      flex-flow: column; }
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
   .success-stories .content-wrapper .single-story {
-    width: 50%;
-    display: inline-block; }
+    width: 48%; }
     @media (min-width: 800px) {
       .success-stories .content-wrapper .single-story {
         margin-top: 30px;
@@ -1494,19 +1493,24 @@ object {
       flex-flow: row nowrap; }
 
 .infographic-1 {
-  width: 100%; }
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto; }
   @media (min-width: 800px) {
     .infographic-1 {
       -ms-flex-align: left;
           align-items: left;
-      width: 50%;
-      height: inherit; } }
+      max-width: 50%;
+      max-height: 100%;
+      height: auto; } }
 
 .infographic-2 {
   -ms-flex-align: right;
       align-items: right;
-  width: 50%;
-  height: inherit; }
+  max-width: 50%;
+  max-height: 100%;
+  height: auto; }
 
 .impact-head {
   color: white; }
