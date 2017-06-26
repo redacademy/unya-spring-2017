@@ -101,7 +101,6 @@ function unya_scripts() {
 	wp_enqueue_script( 'unya-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	wp_enqueue_script( 'navigation-toggle', get_template_directory_uri() . '/build/js/navigation.min.js' , array('jquery', 'jquery-ui-accordion'), false, true );
 	wp_enqueue_script( 'subscription-form', get_template_directory_uri() . '/build/js/subscription-form.min.js' , array('jquery'), false, true );
-	wp_enqueue_script( 'sidebar-nav', get_template_directory_uri() . '/build/js/sidebar-nav.min.js' , array('jquery'), false, true );
   
 	if ( is_page( 'native-youth-center' ) || is_single()){
     wp_enqueue_style( 'slick', get_template_directory_uri() . '/build/lib/slick.css');
