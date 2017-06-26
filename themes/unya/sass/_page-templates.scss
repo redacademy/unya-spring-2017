@@ -197,7 +197,7 @@
 .success-stories{
   .content-wrapper{
     display:flex;
-    flex-flow:row wrap;
+    flex-flow:column;
 .single-story{
   width:50%;
   display:inline-block;
@@ -298,6 +298,7 @@
 
 .single-success-banner{
   background-position: center;
+  
 }
 .single-success-image{
 
@@ -324,13 +325,14 @@
   padding:0 20px;
   @include desktop{
     color:#4263AB;
-    font-size:36px;
+    font-size:24px;
 }
 }
 
 .success-image-exerpt{
   display:flex;
   flex-flow:row nowrap;
+  max-height:500px;
 }
 
 /* Native Youth Centre */

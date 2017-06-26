@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<header class="header-wrapper impact-title sidebar-start single-success-banner" style="background-image: linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
-    url(<?php echo CFS()->get( 'photo' ); ?>)";>>
+    url(<?php echo CFS()->get( 'photo' ); ?>)";>
 			<h1>Success Stories</h1>
 		</header>
 
