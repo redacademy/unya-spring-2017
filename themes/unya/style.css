@@ -1142,7 +1142,7 @@ a {
     width: 85%; }
     @media (min-width: 800px) {
       .section-heading h2 {
-        margin-left: 15.714285714rem; } }
+        margin-left: 17.428571429rem; } }
 
 .sticky {
   display: block; }
@@ -2320,7 +2320,6 @@ footer {
     line-height: 2.5714285714rem; } }
 
 .donation .section-heading h2 {
-  padding-left: 17.428571429rem;
   width: 100%; }
 
 .donation-registration {
