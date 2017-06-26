@@ -4,7 +4,7 @@
 .donation p {
   @include desktop {
     font-family: $font__heading;
-    font-size: 1.7142857143rem;
+    font-size: $desktop__main;
     line-height: 2.5714285714rem;
   }
 }
@@ -24,9 +24,10 @@
     line-height: 2.5714285714rem;
 
     @include desktop {
+      height: 100%;
       margin: 0;
       padding-left: 52.428571429rem;
-      padding-top: 4rem;
+      padding-top: 7rem;
     }
     
 	}
@@ -43,7 +44,7 @@
   text-align: center;
 
   @include desktop {
-    padding: 4.2857142857rem 0;
+    padding: 2.285714rem 0;
   }
 
   .content-wrapper {
@@ -65,7 +66,8 @@
     color: #FFF;
 
     @include desktop {
-      font-size: 2.5714285714rem;
+      font-size: 2.1428571429rem;
+      font-weight: 600;
     }
   }
 
@@ -101,7 +103,7 @@
   }
 
   p {
-    font-size: 1.4285714286rem;
+    font-size: $desktop__main;
     line-height: 2.2857142857rem;
   }
 }
@@ -109,7 +111,7 @@
 .employment-list-container {
   margin: 0;
   padding-left: 1.5rem;
-  font-size: 1.4285714286rem;
+  font-size: $desktop__main;
   line-height: 2.2857142857rem;
 }
 
@@ -119,7 +121,7 @@
 
 .important-note-paragraph {
   margin: 3.5714285714rem 0;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
 
@@ -134,7 +136,8 @@
 
   p {
     margin: 0;
-    font-size: 1.1428571429rem;
+    font-size: 1rem;
+    line-height: 1.7142857143rem; //24px
   }
 }
 
@@ -160,20 +163,18 @@
   }
 
   h3 {
-    flex-basis: 82%; // value to change once link text is resolved
+    flex-basis: 82%;
     font-family: $font__main;
-    font-size: 1rem;
+    font-size: $desktop__h4;
     font-weight: 600;
 
     @include desktop {
       margin: 0;
-      font-size: 1.7142857143rem;
     }
   }
 
   p {
     margin: 0;
-    font-size: 1.4285714286rem;
   }
 
   a {
@@ -190,7 +191,7 @@
     }
 
     @include desktop {
-     font-size: 1.4285714286rem;
+     font-size: $desktop__main;
     }
   }
 }

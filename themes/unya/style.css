@@ -2305,7 +2305,7 @@ footer {
 @media (min-width: 600px) {
   .donation p {
     font-family: "poppins", sans-serif;
-    font-size: 1.7142857143rem;
+    font-size: 1.14286rem;
     line-height: 2.5714285714rem; } }
 
 .donation .section-heading h2 {
@@ -2321,9 +2321,10 @@ footer {
     line-height: 2.5714285714rem; }
     @media (min-width: 600px) {
       .donation-registration p {
+        height: 100%;
         margin: 0;
         padding-left: 52.428571429rem;
-        padding-top: 4rem; } }
+        padding-top: 7rem; } }
 
 .donation-call {
   width: 100%;
@@ -2337,7 +2338,7 @@ footer {
   text-align: center; }
   @media (min-width: 600px) {
     .donation-call {
-      padding: 4.2857142857rem 0; } }
+      padding: 2.285714rem 0; } }
   .donation-call .content-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -2360,7 +2361,8 @@ footer {
     color: #FFF; }
     @media (min-width: 600px) {
       .donation-call h3 {
-        font-size: 2.5714285714rem; } }
+        font-size: 2.1428571429rem;
+        font-weight: 600; } }
   .donation-call a {
     text-decoration: none; }
   .donation-call .donate-button {
@@ -2383,13 +2385,13 @@ footer {
     margin-top: 5.3571428571rem; } }
 
 .opportunities p {
-  font-size: 1.4285714286rem;
+  font-size: 1.14286rem;
   line-height: 2.2857142857rem; }
 
 .employment-list-container {
   margin: 0;
   padding-left: 1.5rem;
-  font-size: 1.4285714286rem;
+  font-size: 1.14286rem;
   line-height: 2.2857142857rem; }
 
 .bold-subheading {
@@ -2397,7 +2399,7 @@ footer {
 
 .important-note-paragraph {
   margin: 3.5714285714rem 0;
-  padding: 1rem;
+  padding: 1.5rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -2411,7 +2413,8 @@ footer {
         flex-basis: 32%; }
   .important-note-paragraph p {
     margin: 0;
-    font-size: 1.1428571429rem; }
+    font-size: 1rem;
+    line-height: 1.7142857143rem; }
 
 .opportunity-list {
   padding: 0;
@@ -2437,15 +2440,13 @@ footer {
     -ms-flex-preferred-size: 82%;
         flex-basis: 82%;
     font-family: "worksans", sans-serif;
-    font-size: 1rem;
+    font-size: 1.28571rem;
     font-weight: 600; }
     @media (min-width: 600px) {
       .single-opportunity h3 {
-        margin: 0;
-        font-size: 1.7142857143rem; } }
+        margin: 0; } }
   .single-opportunity p {
-    margin: 0;
-    font-size: 1.4285714286rem; }
+    margin: 0; }
   .single-opportunity a {
     display: -ms-flexbox;
     display: flex;
@@ -2462,4 +2463,4 @@ footer {
       color: #4263AB; }
     @media (min-width: 600px) {
       .single-opportunity a {
-        font-size: 1.4285714286rem; } }
+        font-size: 1.14286rem; } }
