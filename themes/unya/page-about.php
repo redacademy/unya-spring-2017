@@ -36,9 +36,6 @@ get_header(); ?>
 			</div>
 			<h2 class="accordion-label" id="brief-history">History</h2>
 			<section class="brief-history">
-				<header class="section-heading">
-					<h2>History</h2>
-				</header>
 				<div class="content-wrapper">
 					<h2 class="hidden-mobile">Brief History</h2>
 					<p><?php echo wp_kses( CFS()->get( 'brief_history' ),array('br') ); ?></p>
@@ -92,7 +89,7 @@ get_header(); ?>
 				</div>
 			</section>
 			<h2 class="accordion-label" id="find-us">Find Us</h2>
-			<section>
+			<section class="find-us">
 					<header class="section-heading">
 						<h2>Find Us</h2>
 					</header>

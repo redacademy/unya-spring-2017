@@ -372,3 +372,74 @@ a {
 	background: $color__red-medium;
 	color: #fff;
 }
+.timeline-item {
+	.timeline-year {
+		font-size: 2.3rem;
+		padding-right: 1rem;
+	}
+}
+
+.leadership {
+	.section-heading {
+		background: $color__blue-dark;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		h2 {
+			color: #fff;
+		}
+		h4 {
+			margin-left: 15.7rem;
+		}
+	}
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		li {
+			flex-basis: 100%;
+			@include desktop {
+				flex-basis: 50%;
+			}
+		}
+	}
+}
+
+.reports {
+	.section-heading {
+		background: $color__grey-dark;
+		h2 {
+			color: #fff;
+		}
+	}
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		i {
+			font-size: 2.3rem;
+		}
+		.image-wrapper {
+			padding-top: 2rem;
+		}
+		li {
+			display: flex;
+			justify-content: space-around;
+			flex-basis: 100%;
+			@include desktop {
+				flex-basis: 50%;
+			}
+		}
+	}
+}
+
+.find-us {
+	.section-heading {
+		background: $color__red-medium;
+		h2 {
+			color: #fff;
+		} 
+	}
+}
+.brief-history {
+	padding: 4rem 0 4rem 0;
+}
