@@ -1254,10 +1254,16 @@ object {
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
   background-size: cover;
   background-position: center; }
+  @media (min-width: 800px) {
+    .impact-polygon p {
+      font-size: 24px; } }
 
 .rectangle-container {
   background-size: cover;
   background-position: center; }
+  @media (min-width: 800px) {
+    .rectangle-container p {
+      font-size: 24px; } }
 
 .mission {
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
@@ -1433,8 +1439,8 @@ object {
 .success-stories .content-wrapper {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap; }
+  -ms-flex-flow: column;
+      flex-flow: column; }
   .success-stories .content-wrapper .single-story {
     width: 50%;
     display: inline-block; }
@@ -1548,13 +1554,14 @@ object {
   @media (min-width: 800px) {
     .success-exerpt {
       color: #4263AB;
-      font-size: 36px; } }
+      font-size: 24px; } }
 
 .success-image-exerpt {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap; }
+      flex-flow: row nowrap;
+  max-height: 500px; }
 
 /* Native Youth Centre */
 @media (min-width: 800px) {
