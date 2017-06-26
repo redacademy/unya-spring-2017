@@ -18,8 +18,13 @@ get_header(); ?>
 		  <div class="content-wrapper">
         <h3 class="single-success-title">Youth Feature - <?php the_title(); ?></h3>
 			 	<p class="first-half"><?php echo CFS()->get( 'first_half_of_story' ); ?></p>
-				<img class="single-success-image" src="<?php echo CFS()->get( 'photo' ); ?>">			
-				<h5 class="exerpt"><?php echo CFS()->get( 'exerpt' ); ?></h5>
+				<img class="single-success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>">			
+			</div>
+				<div class="success-image-mobile hidden-desktop" style="background-image:  linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
+    url(<?php echo CFS()->get( 'photo' ); ?>)";>
+				<h5 class="success-exerpt"><?php echo CFS()->get( 'exerpt' ); ?></h5>
+				</div>
+			<div class="content-wrapper">
         <p class="second-half"><?php echo CFS()->get( 'second_half_of_story' ); ?></p>
       </div>
 		<?php endwhile; // End of the loop. ?>

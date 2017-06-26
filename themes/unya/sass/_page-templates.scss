@@ -129,15 +129,34 @@
 .statistics{
   background-color: #00277E;
   display:flex;
-  flex-flow:row wrap;
+  height:935px;
   h2{
     width:100%;
   }
 }
 
-.infographic{
-  width:48%;
-  display:inline;
+.infographics{
+  display:flex;
+  flex-flow: row nowrap;
+}
+
+.infographic-1{
+  width:100%;
+  @include desktop{
+    align-items: left;
+    width:50%;
+    height:inherit;
+  }
+}
+
+.infographic-2{
+  align-items: right;
+  width:50%;
+  height:inherit;
+}
+
+.impact-head{
+  color:white;
 }
 
 .impact-polygon{
@@ -168,6 +187,31 @@
 	height:550px;
   }
 }
+
+// single success story
+
+.single-success-image{
+
+}
+.success-image-mobile{
+  display:flex;
+  height:200px;
+  width:100vw;
+  background-size: cover;
+  background-position: center;
+  align-content:center;
+  @include desktop{
+    background-image:none;
+  }
+}
+.success-exerpt{
+  color:white;
+  font-size:16px;
+  margin:auto auto;
+  font-weight: light;
+}
+
+
 
 /* Native Youth Centre */
 .header-wrapper-nyc {

@@ -38,11 +38,12 @@ get_header(); ?>
     </div>
   </section>
 	
-		<section class="statistics content-wrapper" id="statistics">
-			<h2 class="impact-head">Impacts</h2>
-			<img class="infographic" src="<?php echo esc_url( CFS()->get( 'infographic_2' ) ); ?>">
-			<img class="infographic hidden-mobile" src="<?php echo esc_url( CFS()->get( 'infographic_1' ) ); ?>">
-			<!-- Insert image here -->
+		<section class="statistics" id="statistics">
+			<h2 class="impact-head content-wrapper">Impacts</h2>
+		  <span class="infographics content-wrapper">
+			  <img class="infographic-1" src="<?php echo esc_url( CFS()->get( 'infographic_2' ) ); ?>">
+			  <img class="infographic-2 hidden-mobile" src="<?php echo esc_url( CFS()->get( 'infographic_1' ) ); ?>">
+		  </span>	
 		</section>
   
 		<section class="testimonials" id="testimonials">
