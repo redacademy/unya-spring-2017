@@ -1259,8 +1259,10 @@ object {
       background-size: cover;
       background-position: center; }
       .header-wrapper h1 {
-        padding-left: 50px;
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        padding-left: 8.7142857143rem;
+        width: 100%;
+        font-weight: 600; } }
 
 /* Front Page */
 .homepage-links {
