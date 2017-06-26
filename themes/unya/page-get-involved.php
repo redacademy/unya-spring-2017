@@ -70,10 +70,10 @@ get_header(); ?>
 					<?php foreach ( $employment_opportunities as $post ) : setup_postdata( $post ); ?>
 					<li class="single-opportunity">
 						<h3><?php the_title(); ?></h3>
-
+						<a href="<?php echo CFS()->get( 'link' ); ?>" target="_blank">
+							<span class="hidden-mobile">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span><span class="hidden-desktop"><i class="fa fa-angle-right"></i></span>
+						</a>
 						<p class="hidden-mobile"><?php echo CFS()->get( 'description' ); ?></p>
-						<a href="<?php echo CFS()->get( 'link' ); ?>" target="_blank"><span class="hidden-mobile">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span><span class="hidden-desktop"><i class="fa fa-angle-right"></i></span></a>
-
 					</li>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</ul>
@@ -92,17 +92,16 @@ get_header(); ?>
 							);
 							$volunteer_opportunities = get_posts( $args ); ?>
 
-				<div class="content-wrapper">
-					<h2 class="hidden-mobile">Volunteer Oppportunities</h2>
-					<ul>
-					<?php foreach ( $volunteer_opportunities as $post ) : setup_postdata( $post ); ?>
-						<li class="single-opportunity">
-							<h3><?php the_title(); ?></h3>
-							<p class="hidden-mobile"><?php echo CFS()->get( 'description' ); ?></p>
-							<a href="<?php echo CFS()->get( 'link' ); ?>" target="_blank"><span class="hidden-mobile">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span><span class="hidden-desktop"><i class="fa fa-angle-right"></i></span></a>
-					</li>
-					<?php endforeach; wp_reset_postdata(); ?>
-				</div>
+				<h2 class="hidden-mobile content-wrapper">Volunteer Oppportunities</h2>
+				<ul class="opportunity-list content-wrapper">
+				<?php foreach ( $volunteer_opportunities as $post ) : setup_postdata( $post ); ?>
+					<li class="single-opportunity">
+						<h3><?php the_title(); ?></h3>
+						<a href="<?php echo CFS()->get( 'link' ); ?>" target="_blank"><span class="hidden-mobile">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span><span class="hidden-desktop"><i class="fa fa-angle-right"></i></span></a>
+						<p class="hidden-mobile"><?php echo CFS()->get( 'description' ); ?></p>
+				</li>
+				<?php endforeach; wp_reset_postdata(); ?>
+
 			</section>
 		</div>
 		<section class="opportunity-cta">

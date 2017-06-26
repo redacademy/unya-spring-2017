@@ -19,6 +19,7 @@
     line-height: 2.5714285714rem;
 
     @include desktop {
+      margin: 0;
       padding-left: 52.428571429rem;
       padding-top: 4rem;
     }
@@ -89,9 +90,21 @@
 
 }
 
+.opportunities {
+  @include desktop {
+    margin-top: 5.3571428571rem;
+  }
+
+  p {
+    font-size: 1.4285714286rem;
+    line-height: 2.2857142857rem;
+  }
+}
+
 .employment-list-container {
   margin: 0;
   padding-left: 1.5rem;
+  font-size: 1.4285714286rem;
   line-height: 2.2857142857rem;
 }
 
@@ -116,6 +129,7 @@
 
   p {
     margin: 0;
+    font-size: 1.1428571429rem;
   }
 }
 
@@ -135,23 +149,43 @@
   justify-content: space-between;
   padding: 0 0.2rem;
 
+  @include desktop {
+    flex-wrap: wrap;
+    padding: 1rem 0;
+  }
+
   h3 {
-    flex-basis: 70%; // value to change once link text is resolved
+    flex-basis: 82%; // value to change once link text is resolved
     font-family: $font__main;
     font-size: 1rem;
     font-weight: 600;
+
+    @include desktop {
+      margin: 0;
+      font-size: 1.7142857143rem;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.4285714286rem;
   }
 
   a {
     display: flex;
     align-items: center;
-    flex-basis: 20%;
+    flex-basis: 18%;
     justify-content: flex-end;
+    text-decoration: none;
 
     .fa-angle-right {
       font-weight: 900;
       font-size: 2rem;
       color: $color__blue-medium;
+    }
+
+    @include desktop {
+     font-size: 1.4285714286rem;
     }
   }
 }
