@@ -197,10 +197,9 @@
 .success-stories{
   .content-wrapper{
     display:flex;
-    flex-flow:column;
+    flex-flow:row wrap;
 .single-story{
-  width:50%;
-  display:inline-block;
+  width:48%;
   @include desktop{
   margin-top: 30px;
   width:100%;
@@ -247,18 +246,23 @@
 }
 
 .infographic-1{
-  width:100%;
+  width:auto;
+  max-width: 100%;
+  max-height:100%;
+  height:auto;
   @include desktop{
     align-items: left;
-    width:50%;
-    height:inherit;
+    max-width:50%;
+    max-height:100%;
+    height:auto;
   }
 }
 
 .infographic-2{
   align-items: right;
-  width:50%;
-  height:inherit;
+  max-width:50%;
+  max-height:100%;
+  height:auto;
 }
 
 .impact-head{

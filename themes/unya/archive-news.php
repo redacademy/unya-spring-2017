@@ -1,16 +1,16 @@
 <?php
 /**
  * The template for displaying archive pages.
- *
  * @package UNYA_Theme
  */
 
-get_header(); ?>
+get_header();  ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
     <div class="news-header news-title header-wrapper sidebar-start">
 			<h1>UNYA In The News</h1>
+			<?php echo CFS()->get( 'title_banner_news' ); ?>
     </div>
 			<div class="content-wrapper">
 			<?php /* Start the Loop */ ?>

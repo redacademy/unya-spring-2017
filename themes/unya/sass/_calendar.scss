@@ -43,6 +43,11 @@
 }
 
 .desktop-calendar {
+
+  .post-edit-link {
+    display: none;
+  }
+
   @include desktop {
     display: flex;
   }

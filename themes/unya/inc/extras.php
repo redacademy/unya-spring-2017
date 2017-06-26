@@ -11,6 +11,8 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
+
+
 function unya_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
@@ -53,7 +55,6 @@ function unya_hero_banners() {
 		$impactpolygon = CFS()->get( 'impact_angled_banner' );
 		$rectangle = CFS()->get( 'rectangular_banner' );
         $aboutpolygon = CFS()->get( 'about_angled_banner' );
-		$aboutrectangle = CFS()->get( 'about_rectangle_banner' );
         $getinvolvedpolygon = CFS()->get( 'get_involved_angled_banner' );
         $nativeyouthcenterbanner = CFS()->get( 'nyc_rectangle_banner' );
         $abouttitle = CFS()->get( 'title_banner_about' );
@@ -91,7 +92,7 @@ function unya_hero_banners() {
 }
 .mission{
     background-image: linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
-    url('$aboutrectangle');
+    url('$aboutpolygon');
 }
 .donation-registration{
     background-image: linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
