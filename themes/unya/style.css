@@ -457,8 +457,7 @@ table {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
-  margin-top: 20px; }
+      flex-direction: column; }
 
 .ctct-form-wrapper {
   height: 160px;
@@ -476,6 +475,9 @@ table {
 
 div.ctct-disclosure {
   display: none !important; }
+
+.ctct-button {
+  display: none; }
 
 .ctct-form-field-checkbox {
   margin-bottom: 30px; }
@@ -1780,7 +1782,7 @@ object {
     #sb_instagram {
       margin: 0 auto; } }
 
-footer {
+.site-footer {
   min-width: 320px;
   max-height: 300px;
   position: relative;
@@ -1797,23 +1799,25 @@ footer {
   width: 100%;
   text-align: center; }
   @media (min-width: 800px) {
-    footer {
-      background-color: #fff;
-      display: -ms-flexbox !important;
-      display: flex !important;
+    .site-footer {
+      padding: 0 7.0714285714rem;
       width: 100%;
       height: 500px;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      background-color: #fff;
       -ms-flex-direction: row;
-          flex-direction: row;
-      padding: 0 99px; }
-      footer h4 {
+          flex-direction: row; }
+      .site-footer h4 {
         color: #00277E;
         font-family: "worksans", sans-serif;
-        font-weight: normal;
+        font-size: 1.5714285714rem;
+        font-weight: 500;
         margin: 0; }
-      footer .footer-flex {
+      .site-footer .footer-flex {
         padding: 20px;
-        min-width: 400px;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
@@ -1822,14 +1826,14 @@ footer {
             flex-flow: column 1 1;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap; }
-        footer .footer-flex h4 {
+        .site-footer .footer-flex h4 {
           text-align: left; }
-        footer .footer-flex.social-links {
+        .site-footer .footer-flex.social-links {
           -ms-flex-pack: stretch;
               justify-content: stretch;
           -ms-flex-align: left;
               align-items: left; } }
-  footer .newsletter-sign-up {
+  .site-footer .newsletter-sign-up {
     -ms-flex-order: 1;
         order: 1;
     width: 100%;
@@ -1838,20 +1842,19 @@ footer {
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
-    footer .newsletter-sign-up .subscription-form {
+    .site-footer .newsletter-sign-up .subscription-form {
       width: 100%;
-      background-color: #fff;
-      height: 250px; }
-    footer .newsletter-sign-up abbr {
+      background-color: #fff; }
+    .site-footer .newsletter-sign-up abbr {
       display: none; }
-    footer .newsletter-sign-up button.sign-up-btn {
+    .site-footer .newsletter-sign-up button.sign-up-btn {
       width: 230px;
       height: 50px;
       margin: 15px 0px; }
       @media (min-width: 800px) {
-        footer .newsletter-sign-up button.sign-up-btn {
+        .site-footer .newsletter-sign-up button.sign-up-btn {
           display: none !important; } }
-      footer .newsletter-sign-up button.sign-up-btn h4 {
+      .site-footer .newsletter-sign-up button.sign-up-btn h4 {
         font-size: 1rem;
         font-family: "poppins", sans-serif;
         font-style: normal;
@@ -1863,30 +1866,29 @@ footer {
             align-items: center;
         margin: 0; }
     @media (min-width: 800px) {
-      footer .newsletter-sign-up {
+      .site-footer .newsletter-sign-up {
         text-align: left;
         width: 36.3%; }
-        footer .newsletter-sign-up .subscription-form {
-          height: 100%;
+        .site-footer .newsletter-sign-up .subscription-form {
           display: -ms-flexbox;
           display: flex;
           -ms-flex-pack: left;
               justify-content: left; } }
-    footer .newsletter-sign-up .close-form {
+    .site-footer .newsletter-sign-up .close-form {
       background-color: #fff;
       color: #00277E;
       text-align: right;
       position: absolute;
       top: 0;
       right: 0; }
-      footer .newsletter-sign-up .close-form i.fa.fa-times:before {
+      .site-footer .newsletter-sign-up .close-form i.fa.fa-times:before {
         padding-right: 50px;
         font-size: 25px; }
       @media (min-width: 800px) {
-        footer .newsletter-sign-up .close-form {
-          visibility: hidden; } }
+        .site-footer .newsletter-sign-up .close-form {
+          display: none; } }
     @media (min-width: 800px) {
-      footer .newsletter-sign-up {
+      .site-footer .newsletter-sign-up {
         text-align: left;
         display: -ms-flexbox;
         display: flex;
@@ -1896,42 +1898,42 @@ footer {
             flex-direction: row;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
-  footer .social-links {
+  .site-footer .social-links {
     -ms-flex-order: 3;
         order: 3;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
-    footer .social-links a {
+    .site-footer .social-links a {
       color: #FFF;
       padding: 0 1.2rem;
       color: #FFF;
       font-size: 3.5rem; }
     @media (min-width: 800px) {
-      footer .social-links {
+      .site-footer .social-links {
         border-left: 2px solid #00277E;
         border-right: 2px solid #00277E; }
-        footer .social-links .social-media-links-wrapper {
+        .site-footer .social-links .social-media-links-wrapper {
           display: -ms-flexbox;
           display: flex;
           padding-top: 2rem;
           width: 100%;
           -ms-flex-pack: center;
               justify-content: center; }
-        footer .social-links a {
+        .site-footer .social-links a {
           display: block;
           font-size: 5rem;
           color: #00277E;
           -ms-flex-order: 2;
               order: 2;
           height: 100px; } }
-  footer .contact-us {
+  .site-footer .contact-us {
     -ms-flex-order: 2;
         order: 2;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    footer .contact-us p {
+    .site-footer .contact-us p {
       color: #FFF;
       padding: 0;
       margin: 0;
@@ -1940,7 +1942,7 @@ footer {
       font-weight: normal;
       font-size: 0.85714rem; }
     @media (min-width: 800px) {
-      footer .contact-us {
+      .site-footer .contact-us {
         -ms-flex-order: 3;
             order: 3;
         display: -ms-flexbox;
@@ -1951,17 +1953,18 @@ footer {
         -ms-flex-pack: start;
             justify-content: flex-start;
         width: 34.3%; }
-        footer .contact-us h4.hidden-mobile {
+        .site-footer .contact-us h4.hidden-mobile {
           width: 100%;
           margin: 0; }
-        footer .contact-us .contact-details {
+        .site-footer .contact-us .contact-details {
           width: 100%;
           padding: 1rem 0;
           text-align: left; }
-          footer .contact-us .contact-details a, footer .contact-us .contact-details p {
+          .site-footer .contact-us .contact-details a, .site-footer .contact-us .contact-details p {
             -ms-flex-order: 3;
                 order: 3;
-            color: black; } }
+            color: black;
+            font-size: 1rem; } }
 
 .mobile-calendar .simcal-calendar-head {
   padding: 0.7142857143rem .5em .5em .7em;

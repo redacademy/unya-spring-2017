@@ -6,7 +6,7 @@
 .ctct-form{
 	display:flex;
 	flex-direction:column;
-	margin-top:20px;
+	// margin-top:20px;
 }
 .ctct-form-wrapper{
 	height:160px;
@@ -16,11 +16,16 @@
 .ctct-form-field-submit{
 	display:flex;
 	justify-content:left;
-	min-width:320px;
+	min-width: 320px;
 }
 div.ctct-disclosure {
 	display: none !important;
 }
+
+.ctct-button {
+	display: none;
+}
+
 .ctct-form-field-checkbox{
 	margin-bottom:30px;
 }
