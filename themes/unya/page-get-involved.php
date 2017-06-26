@@ -22,7 +22,7 @@ get_header(); ?>
 					<p><?php echo wp_kses(CFS()->get( 'donation_intro_paragraph' ),array('br') ); ?></p>
 				</div>
 				<div class="donation-registration">
-					<p class="content-wrapper">UNYA is a not-for-profit society registered with the Province and a charitable organization 129836292 RR0001 registered with the Government of Canada.</p>
+					<p class="content-wrapper"><?php echo wp_kses(CFS()->get( 'donation_registration' ),array('br') ); ?></p>
 				</div>
 				<div class="donation-call">
 					<div class="content-wrapper">
