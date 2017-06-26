@@ -357,3 +357,18 @@ a {
 #accordion #sports {
 	background: $color__yellow !important;
 }
+
+#accordion #donate {
+	background: $color__red-medium !important;
+}
+
+.ways-to-help {
+	.section-heading {
+		background: $color__red-dark;
+		h2 {
+			color: #fff;
+		}
+	}
+	background: $color__red-medium;
+	color: #fff;
+}

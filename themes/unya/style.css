@@ -894,6 +894,17 @@ a {
 #accordion #sports {
   background: #e1ce01 !important; }
 
+#accordion #donate {
+  background: #D13434 !important; }
+
+.ways-to-help {
+  background: #D13434;
+  color: #fff; }
+  .ways-to-help .section-heading {
+    background: #A70000; }
+    .ways-to-help .section-heading h2 {
+      color: #fff; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
