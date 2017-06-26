@@ -384,34 +384,26 @@ mark, ins {
 big {
   font-size: 125%; }
 
-.about .content-wrapper {
-  padding: 200px; }
-  .about .content-wrapper h2 {
-    color: white;
-    margin: 0px; }
-  .about .content-wrapper p {
-    color: white; }
+.about .content-wrapper h2, .nyc .content-wrapper h2, .programs .content-wrapper h2 {
+  color: white;
+  margin: 0px; }
+
+.about .content-wrapper p, .nyc .content-wrapper p, .programs .content-wrapper p {
+  color: white; }
 
 .nyc .content-wrapper {
   padding-top: 200px; }
   .nyc .content-wrapper h2 {
     margin: 0px;
-    text-align: right;
-    color: white; }
+    text-align: right; }
   .nyc .content-wrapper p {
     margin-left: 50px;
-    text-align: right;
-    color: white; }
+    text-align: right; }
   .nyc .content-wrapper a {
     text-align: right; }
 
-.programs .content-wrapper {
-  padding: 200px; }
-  .programs .content-wrapper h2 {
-    margin: 0px;
-    color: white; }
-  .programs .content-wrapper p {
-    color: white; }
+.programs .content-wrapper h2 {
+  margin: 0; }
 
 .header-subtext {
   line-height: 1.5;

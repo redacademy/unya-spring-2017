@@ -116,17 +116,16 @@ big {
 	font-size: 125%;
 }
 
-// i added these to remove the white space on the front page and general typography styling, dunno if you wanna move them or not -Cory
+// To add to page templates
 
-.about{
+.about, .nyc, .programs {
 	.content-wrapper{
-			padding:200px;
 		h2{
 			color:white;
 			margin:0px;
 		}
 		p{
-				 color:white;
+			color:white;
 	  }
 	}
 }
@@ -136,12 +135,10 @@ big {
 		h2{
 			margin:0px;
 			text-align: right;
-		  color:white;
 			 }
      p{
 			margin-left:50px;
 			text-align: right;
-			color:white;
 			 }
 		 a{
 			text-align: right;
@@ -151,13 +148,8 @@ big {
 
 .programs{
 	.content-wrapper{
-			padding:200px;
-		h2{
-			margin:0px;
-		  color:white;
-		 }
-     p{
-			color:white;
+		h2 {
+			margin: 0;
 		 }
 	}
 }

@@ -35,10 +35,12 @@ get_header(); ?>
         <a  class="homepage-links" href="<?php echo get_post_type_archive_link( 'program' ) ?>"><h3>Learn More <span class="fa fa-angle-right" aria-hidden="true"></span></h3></a>
       </div>
     </section>
-    <section class="donation-cta">
+    <section class="donation-call">
       <div class="content-wrapper">
-        <h2>Make your donation online today</h2>
-        <h3>Donate Today </h3>
+				<h3 class="capitalize hidden-mobile">Make your donation online today</h3>
+        <a href="https://www.canadahelps.org/en/charities/urban-native-youth-association/">
+					<h3 class="capitalize donate-button">Donate today</h3>
+				</a>
       </div>
     </section>
     <section class="instagram-images">
