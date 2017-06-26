@@ -2474,15 +2474,11 @@ footer {
       color: #4263AB; }
     @media (min-width: 800px) {
       .single-opportunity a {
-<<<<<<< HEAD
         font-size: 1.14286rem; } }
-=======
-        font-size: 1.4285714286rem; } }
 
 .error404 .site-main .error-404 {
   background: linear-gradient(to bottom, rgba(66, 99, 171, 0.7) 0%, rgba(66, 99, 171, 0.7) 100%), url("../../assets/images/404_background.jpg") bottom center no-repeat;
   height: 961px;
-<<<<<<< HEAD
   width: 100%;
   padding: 385px 41px; }
   .error404 .site-main .error-404 h1 {
@@ -2491,8 +2487,12 @@ footer {
     font-family: "worksans", sans-serif; }
   .error404 .site-main .error-404 p {
     color: #fff;
+    margin-top: 0px;
     margin-bottom: 45px;
-    font-size: 16px; }
+    font-size: 16px;
+    font-family: "worksans", sans-serif;
+    font-style: normal;
+    font-weight: normal; }
 
 .error404 a.button {
   background-color: #D13434;
@@ -2503,7 +2503,3 @@ footer {
   border-radius: 10px;
   text-transform: uppercase;
   font-size: 18px; }
-=======
-  width: 100%; }
->>>>>>> fea8e9b33876e7b6d90c4b09911ffdac771f68e6
->>>>>>> 5de02e2c8c61cd23201381d2b23bb0af97da2524
