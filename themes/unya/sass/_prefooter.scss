@@ -1,8 +1,10 @@
-Pre-footers//
-.fit{
+
+.fit-button{
   background:#00277E;
   a{
     background-color:#4263AB;
+    display:flex;
+    justify-content:center;
   }
 }
 .donation-button{
@@ -23,6 +25,7 @@ section.pre-footer{
   @include desktop{
   justify-content:space-between;
   flex-direction:row;
+  padding:45px 120px;
   }
   p{
    font-size:$heading__h3;
@@ -39,6 +42,7 @@ section.pre-footer{
     font-family:$font__heading;
     text-align:left;
     line-height:54px;
+    width:70%;
       span.line-break{
         display:block;
         width:100%;
@@ -53,10 +57,6 @@ section.pre-footer{
     color:white;
     font-weight:normal;
     font-size:20px;
-    @include desktop{
-      margin:45px 120px;
-      padding:15px 25px;
-    }
   }
 }
 
