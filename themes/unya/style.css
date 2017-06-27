@@ -1487,7 +1487,9 @@ object {
   display: flex;
   height: 935px; }
   .statistics h2 {
-    width: 100%; }
+    width: 100%;
+    padding: 20px 29px;
+    margin: 0px; }
 
 .infographics {
   display: -ms-flexbox;
@@ -1747,9 +1749,18 @@ object {
 
 section.pre-footer {
   height: 175px;
-  background: #00277E; }
+  background: #00277E;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
   section.pre-footer p {
     color: white;
+    font-size: 1.14286rem;
     font-style: normal;
     font-weight: normal;
     margin: 25px 29px;

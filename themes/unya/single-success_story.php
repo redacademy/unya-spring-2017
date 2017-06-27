@@ -20,7 +20,7 @@ get_header(); ?>
         <h2 class="single-success-title">Youth Feature - <?php the_title(); ?></h3>
 			 	<p class="first-half"><?php echo CFS()->get( 'first_half_of_story' ); ?></p>
 				<span class="success-image-exerpt">
-				  <img class="single-success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>">			
+				  <img class="single-success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>">
 				  <h3 class="success-exerpt hidden-mobile"><?php echo CFS()->get( 'exerpt' ); ?></h5>
 			  </span>
 			</div>
@@ -32,6 +32,7 @@ get_header(); ?>
           <p class="second-half"><?php echo CFS()->get( 'second_half_of_story' ); ?></p>
         </div>
 		  <?php endwhile; // End of the loop. ?>
+			<?php get_template_part( 'template-parts/prefooter', 'fit' ); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -237,6 +237,8 @@
   height:935px;
   h2{
     width:100%;
+    padding:20px 29px;
+    margin:0px;
   }
 }
 
@@ -525,11 +527,19 @@
     }
   }
 }
+
+//Pre-footers//
+
 section.pre-footer{
   height:175px;
   background:#00277E;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
   p{
    color:white;
+   font-size:$heading__h3;
    font-style:normal;
    font-weight:normal;
    margin:25px 29px;
@@ -537,7 +547,6 @@ section.pre-footer{
    padding: 0 25px;
   }
 }
-
 .pre-footer button{
   background-color:#4263AB;
 }
