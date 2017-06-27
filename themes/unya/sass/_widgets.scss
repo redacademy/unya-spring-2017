@@ -135,3 +135,17 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+/* Instagram plugin */
+.instagram-images {
+	display: flex;
+  justify-content: center;
+
+	.instagram-heading {
+		text-align: center;
+		
+		@include desktop {
+			font-size: $desktop__h2;
+		}
+	}
+}

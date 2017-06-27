@@ -45,12 +45,10 @@ get_header(); ?>
     </section>
     <section class="instagram-images">
       <div class="content-wrapper">
-
-        <h2>Get social with #UNYAwhat</h2>
+        <h2 class="instagram-heading"><span class="capitalize">Get social with</span> #UNYAwhat</h2>
         <div class="hidden-desktop"><?php echo do_shortcode("[instagram-feed num=6 cols=2]"); ?></div>
         <div class="hidden-mobile"><?php echo do_shortcode("[instagram-feed num=12 cols=4]"); ?></div>
         <!--<?php get_post(); ?>-->
-
       </div>
     </section>
 <?php get_footer(); ?>
