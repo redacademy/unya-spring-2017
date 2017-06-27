@@ -222,8 +222,6 @@
   }
 }
 
-
-
 .success-content{
   width:70%;
 }
@@ -233,6 +231,7 @@
 	width:38vw;
 	height:38vw;
 	border-radius: 50%;
+  
   h3{
     color:white;
     text-align: center;
@@ -241,11 +240,12 @@
     font-size:14px;
     font-weight:bold;
   }
-	@include desktop{
-		border-radius:50%;
-		height:250px;
-		width:250px;
-
+	
+  @include desktop{
+    max-height: none;
+    max-width: none;
+    height: 100%;
+    width: 100%;
 	}
 }
 

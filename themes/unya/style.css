@@ -1607,9 +1607,10 @@ object {
     font-weight: bold; }
   @media (min-width: 800px) {
     .success-image {
-      border-radius: 50%;
-      height: 250px;
-      width: 250px; } }
+      max-height: none;
+      max-width: none;
+      height: 100%;
+      width: 100%; } }
 
 .statistics {
   background-color: #00277E;
