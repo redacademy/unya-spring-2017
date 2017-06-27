@@ -982,10 +982,11 @@ a {
   -ms-flex-direction: column;
       flex-direction: column; }
   .planning .section-heading h2 {
+    width: 600px;
     text-align: left;
     margin-bottom: 0; }
   .planning .section-heading h4 {
-    margin-left: 15.7rem;
+    padding: 0 15.71429rem 0 17.42857rem;
     margin-top: 0; }
 
 /*--------------------------------------------------------------

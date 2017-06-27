@@ -496,11 +496,12 @@ a {
 		display: flex;
 		flex-direction: column;
 		h2 {
+			width:600px;
 			text-align: left;
 			margin-bottom: 0;
 		}
 		h4 {
-			margin-left: 15.7rem;
+			padding: $content-wrapper-desktop;
 			margin-top: 0;
 		}
 	}
