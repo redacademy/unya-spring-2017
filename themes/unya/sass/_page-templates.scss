@@ -425,6 +425,10 @@
 
 /* News archive */
 
+ .news-title{
+    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+    url('../../assets/images/jack-min.png');
+}
 .news-single{
   width:100vw;
   display:flex;

@@ -114,17 +114,6 @@ function unya_hero_banners() {
 .get-involved-title{
     background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url('$getinvolvedtitle');
-}
-.programs-title{
-    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
-    url('$programtitle');
-}  
- .news-title{
-    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
-    url('$newstitle');
-}
- .success-image-mobile{
-     background-image: url('$singlestorypic');
 }";
 
     wp_add_inline_style( 'custom-style', $custom_css );
