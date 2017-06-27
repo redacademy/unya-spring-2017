@@ -1880,8 +1880,7 @@ object {
         margin: 0; }
     @media (min-width: 800px) {
       .site-footer .newsletter-sign-up {
-        text-align: left;
-        width: 36.3%; }
+        text-align: left; }
         .site-footer .newsletter-sign-up .subscription-form {
           display: -ms-flexbox;
           display: flex;
@@ -2520,7 +2519,6 @@ object {
     font-family: "worksans", sans-serif;
     font-weight: normal;
     color: #fff;
-<<<<<<< HEAD
     width: 218px; }
   .site-main .error-404 p {
     color: #fff;
@@ -2557,21 +2555,3 @@ object {
         padding: 22px 18px;
         border-radius: 10px;
         font-size: 18px; } }
-=======
-    margin-top: 0px;
-    margin-bottom: 45px;
-    font-size: 16px;
-    font-family: "worksans", sans-serif;
-    font-style: normal;
-    font-weight: normal; }
-
-.error404 a.button {
-  background-color: #D13434;
-  text-decoration: none;
-  color: #fff;
-  font-family: "poppins", sans-serif;
-  padding: 22px 18px;
-  border-radius: 10px;
-  text-transform: uppercase;
-  font-size: 18px; }
->>>>>>> 19554394897d3c52bafca1f69a0daf2c7081d95c
