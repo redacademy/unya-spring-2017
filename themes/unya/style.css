@@ -753,7 +753,7 @@ a {
   right: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 65%;
+  height: 60%;
   z-index: 299; }
   .site-header.expanded .site-branding {
     background: url("../../assets/images/Logo-White.png") no-repeat center;
@@ -799,11 +799,13 @@ a {
 
 .site-footer.expanded {
   position: absolute;
-  height: 35%;
+  height: 40%;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 298; }
+  .site-footer.expanded a {
+    text-decoration: none; }
   .site-footer.expanded .subscription-form.display-form {
     height: 30vh; }
 
