@@ -25,13 +25,7 @@ get_header(); ?>
 					<p class="content-wrapper"><?php echo wp_kses(CFS()->get( 'donation_registration' ),array('br') ); ?></p>
 				</div>
 				<div class="donation-call">
-					<div class="content-wrapper">
-						<h3 class="capitalize hidden-mobile">Make your donation online today</h3>
-						<h3 class="hidden-desktop">Inspired by what you see? Support us to help us grow.</h3>
-						<a href="https://www.canadahelps.org/en/charities/urban-native-youth-association/">
-						<h3 class="capitalize donate-button">Donate today</h3>
-						</a>
-					</div>
+					<?php get_template_part( 'template-parts/prefooter', 'donation' ); ?>
 				</div>
 			</section>
 
@@ -101,8 +95,8 @@ get_header(); ?>
 
 			</section>
 		</div>
-		<section class="opportunity-cta">
-			<h5>Please email <span="capitalize">info@unya.bc.ca</span> for additional job opportunities, or to be added to our email list.</h5>
+		<section class="hidden-mobile opportunity-cta">
+			<h5 class="hidden-mobile">Please email <span="capitalize">info@unya.bc.ca</span> for additional job opportunities, or to be added to our email list.</h5>
 		</section>
 
 		</main><!-- #main -->
