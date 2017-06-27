@@ -459,29 +459,32 @@
      width:75%;
      height:100px;
      background:#4263AB;
+     display: flex;
+     align-items: center;
+     padding: 1rem;
+
      a{
        margin:auto auto;
        color:white;
-       font-size: 20px;
      }
    }
 }
 
 .news-date{
   display:none;
+
   @include desktop{
   display:flex;
-  align-items: center;
-  justify-content: center;
   height:100px;
   width:25%;
   margin:0 auto;
   background:#4263AB;
   border-right:3px solid white;
   color:white;
-  font-size:24px;
+  font-size:20px;
   font-weight: bold;
   padding:30px;
+  text-align: center;
   }
 }
 

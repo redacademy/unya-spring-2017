@@ -1699,11 +1699,15 @@ object {
     .news-headline {
       width: 75%;
       height: 100px;
-      background: #4263AB; }
+      background: #4263AB;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      padding: 1rem; }
       .news-headline a {
         margin: auto auto;
-        color: white;
-        font-size: 20px; } }
+        color: white; } }
 
 .news-date {
   display: none; }
@@ -1711,19 +1715,16 @@ object {
     .news-date {
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-align: center;
-          align-items: center;
-      -ms-flex-pack: center;
-          justify-content: center;
       height: 100px;
       width: 25%;
       margin: 0 auto;
       background: #4263AB;
       border-right: 3px solid white;
       color: white;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: bold;
-      padding: 30px; } }
+      padding: 30px;
+      text-align: center; } }
 
 .news-body {
   font-size: 14px;
