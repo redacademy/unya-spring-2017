@@ -17,6 +17,7 @@
 			
 			$program_posts = get_posts(array(
     		'post_type' => 'program',
+				'posts_per_page' => 10,
     		'tax_query' => array(
         	array(
 					'taxonomy' => 'program-type',

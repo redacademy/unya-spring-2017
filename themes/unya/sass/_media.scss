@@ -146,12 +146,17 @@ object {
 
 //Image Carousel Stuff
 
-.image-carousel, .nyc-slide{
+.image-carousel, .nyc-slide {
 	@include desktop{
 	margin:0 auto;
 	height:700px;
 	width:90vw;
   }
+}
+
+.nyc-slide {
+	background-size: cover;
+	background-position:top;
 }
 
 .logo-carousel{
@@ -164,9 +169,4 @@ object {
 	img{
 	  margin: auto auto;
   }
-}
-
-.nyc-slide{
-	background-size: cover;
-	background-position:top;
 }

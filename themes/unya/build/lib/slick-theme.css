@@ -8,7 +8,7 @@
 /* Icons */
 @font-face
 {
-    font-family: 'slick';
+    font-family: 'FontAwesome';
     font-weight: normal;
     font-style: normal;
 
@@ -33,7 +33,8 @@
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
-
+    box-shadow: none;
+    border-radius: 0;
     cursor: pointer;
 
     color: black;
@@ -41,6 +42,14 @@
     outline: none;
     background: transparent;
 }
+
+.slick-prev:before, .slick-prev {
+    left: 20px;
+}
+.slick-next:before, .slick-next {
+    right: 20px;
+}
+
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
@@ -63,56 +72,22 @@
     opacity: .25;
 }
 
-.slick-prev:before,
-.slick-next:before
-{
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
-
-    opacity: .75;
-    color: white;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.slick-prev:before, .slick-next:before { 
+    font-family: FontAwesome; 
+    font-size: 40px; 
+    line-height: 1; 
+    color: #4263AB; 
+    opacity: 0.75; 
+    -webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;
 }
 
-.slick-prev
-{
-    left: -25px;
-}
-[dir='rtl'] .slick-prev
-{
-    right: -25px;
-    left: auto;
-}
-.slick-prev:before
-{
-    content: '←';
-}
-[dir='rtl'] .slick-prev:before
-{
-    content: '→';
-}
+.slick-prev:before { content: "\f053"; }
+[dir="rtl"] .slick-prev:before { content: "\f054"; }
 
-.slick-next
-{
-    right: -25px;
-}
-[dir='rtl'] .slick-next
-{
-    right: auto;
-    left: -25px;
-}
-.slick-next:before
-{
-    content: '→';
-}
-[dir='rtl'] .slick-next:before
-{
-    content: '←';
-}
-
+[dir="rtl"] .slick-next { 
+    left: -10px; top: 70px; right: auto; }
+.slick-next:before { content: "\f054"; }
+[dir="rtl"] .slick-next:before { content: "\f053"; }
 /* Dots */
 .slick-dotted.slick-slider
 {
@@ -121,8 +96,8 @@
 
 .slick-dots
 {
-    position: static;
-    bottom: -25px;
+    position: absolute;
+    bottom: 20px;
 
     display: block;
 
@@ -151,19 +126,17 @@
 {
     font-size: 0;
     line-height: 0;
-
+    background: #4263AB; 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     padding: 5px;
 
     cursor: pointer;
-
     color: transparent;
     border: 0;
     outline: none;
-    background: transparent;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
@@ -188,11 +161,11 @@
     width: 20px;
     height: 20px;
 
-    content: '•';
+    content: '';
     text-align: center;
 
     opacity: .75;
-    color: black;
+    color: #7392D9;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -200,5 +173,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: #7392D9;
 }

@@ -1296,6 +1296,10 @@ object {
     height: 700px;
     width: 90vw; } }
 
+.nyc-slide {
+  background-size: cover;
+  background-position: top; }
+
 .logo-carousel {
   margin: 0 auto;
   height: 300px;
@@ -1305,10 +1309,6 @@ object {
   margin: auto auto; }
   .partner img {
     margin: auto auto; }
-
-.nyc-slide {
-  background-size: cover;
-  background-position: top; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -2344,6 +2344,9 @@ section.pre-footer {
     .single-program .program-body .program-activities {
       -ms-flex-preferred-size: 48%;
           flex-basis: 48%; } }
+
+.single-program .image-carousel {
+  width: 100%; }
 
 /* Get Involved page */
 @media (min-width: 800px) {

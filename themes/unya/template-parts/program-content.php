@@ -15,7 +15,8 @@
 				$args = array(
 					'post_type' => 'program',
 					'program-type' => 'education',
-					'order' => 'DESC'
+					'order' => 'DESC',
+					'posts_per_page' => 10
 				);
 				$programs = get_posts( $args );
 				foreach ( $programs as $post ) : setup_postdata( $post );
@@ -43,7 +44,8 @@
 				$args = array(
 					'post_type' => 'program',
 					'program-type' => 'personal-support',
-					'order' => 'DESC'
+					'order' => 'DESC',
+					'posts_per_page' => 10
 				);
 				$programs = get_posts( $args );
 				foreach ( $programs as $post ) : setup_postdata( $post );
@@ -71,7 +73,8 @@
 				$args = array(
 					'post_type' => 'program',
 					'program-type' => 'live-in',
-					'order' => 'DESC'
+					'order' => 'DESC',
+					'posts_per_page' => 10
 				);
 				$programs = get_posts( $args );
 				foreach ( $programs as $post ) : setup_postdata( $post );
@@ -99,7 +102,8 @@
 				$args = array(
 					'post_type' => 'program',
 					'program-type' => 'sports',
-					'order' => 'DESC'
+					'order' => 'DESC',
+					'posts_per_page' => 10
 				);
 				$programs = get_posts( $args );
 				foreach ( $programs as $post ) : setup_postdata( $post );
