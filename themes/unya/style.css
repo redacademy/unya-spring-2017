@@ -753,7 +753,7 @@ a {
   right: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 70vh;
+  height: 65%;
   z-index: 299; }
   .site-header.expanded .site-branding {
     background: url("../../assets/images/Logo-White.png") no-repeat center;
@@ -799,7 +799,7 @@ a {
 
 .site-footer.expanded {
   position: absolute;
-  height: auto;
+  height: 35%;
   bottom: 0;
   left: 0;
   right: 0;
