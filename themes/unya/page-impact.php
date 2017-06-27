@@ -23,16 +23,16 @@ get_header(); ?>
 		<?php /* Start the Loop */ ?>
 	  <section class="success-stories" id="success-stories">
 	  	<div class="content-wrapper">
-				<h2>Success Stories</h2>
-				<p>Learn more about the talented youth at UNYA, and the successes we celebrate.</p>
+				<span class="success-head"><h2>Success Stories</h2>
+				<p>Learn more about the talented youth at UNYA, and the successes we celebrate.</p></span>
 		 	 	<?php foreach ( $success_story as $post ) : setup_postdata( $post ); ?>
 			<section class="single-story">
 				<a href="<?php the_permalink() ?>"><img class="success-image" src="<?php echo CFS()->get( 'photo' ); ?>" cover></a>
 				<div class="success-content">
 				  <h3 class="hidden-mobile">Youth Feature - <?php the_title(); ?></h3>
 					<p class="hidden-mobile"><?php echo wp_kses(CFS()->get( 'first_half_of_story' ),array('br') ); ?></p>
-					<a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>"><p class="hidden-mobile">Read more about <?php the_title(); ?><i class="fa fa-arrow-right" aria-hidden="true">
-						</i></p></a>
+					<div><p class="hidden-mobile"><a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>">Read more about <?php the_title(); ?><i class="fa fa-arrow-right" aria-hidden="true">
+						</i></a></p></div>
 	      </div>
 			</section>
 		  <?php endforeach; wp_reset_postdata(); ?>

@@ -1479,8 +1479,18 @@ object {
         .success-stories .content-wrapper .single-story a {
           width: 30%; } }
 
+.success-head {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
 .impact-read-more {
-  display: block; }
+  text-decoration: none;
+  width: 100%; }
+  .impact-read-more p {
+    color: #4263AB;
+    text-decoration: none; }
 
 .success-content {
   width: 70%; }

@@ -200,23 +200,33 @@
 .success-stories{
   .content-wrapper{
     display:flex;
-    flex-flow:row wrap;
-.single-story{
-  width:48%;
-  @include desktop{
-  margin-top: 30px;
-  width:100%;
-	display:flex;
-  flex-direction: row;
-  a{
-    width:30%;
+    flex-flow: row wrap;
+    .single-story{     
+      width:48%;
+      @include desktop{
+        margin-top: 30px;
+        width:100%;
+	      display:flex;
+        flex-direction: row;
+        a{
+          width:30%;
+        }
+      }
     }
   }
 }
-}}
-
+.success-head{
+  display:flex;
+  flex-direction: column;
+}
 .impact-read-more{
-  display:block;
+  text-decoration: none;
+  width:100%;
+  p{
+    color:#4263AB;
+    text-decoration: none;  
+  }
+
 }
 
 .success-content{
