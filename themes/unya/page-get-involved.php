@@ -104,6 +104,7 @@ get_header(); ?>
 		<section class="opportunity-cta">
 			<h5>Please email <span="capitalize">info@unya.bc.ca</span> for additional job opportunities, or to be added to our email list.</h5>
 		</section>
+		<?php get_template_part( 'template-parts/prefooter', 'donation' ); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
