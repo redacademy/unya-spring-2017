@@ -35,7 +35,7 @@
 		</div>
 	</div>
 
-	<div class="image-carousel hidden-mobile">
+	<div class="image-carousel hidden-mobile sidebar-stop">
     <?php $program_images = CFS()->get( 'program_image_slider' ); ?>
     <?php foreach ( $program_images as $program_image ) : ?>
 	  <div class="nyc-slide" style="background-image: url(<?php echo $program_image['program_image']; ?>)";>
