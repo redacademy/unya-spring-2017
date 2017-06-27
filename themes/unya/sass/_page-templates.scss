@@ -574,7 +574,7 @@ section.pre-footer{
 }
 
 //single program pre-footer//
-section.pre-footer-program{
+section.pre-footer-program {
   background-color:#00277E;
   height:456px;
   color:white;
@@ -586,6 +586,12 @@ section.pre-footer-program{
     height:54px;
     text-transform:uppercase;
     margin:0;
+  }
+  p.pre-footer-body{
+    font-size:$heading__h3;
+    line-height: 32px;
+    padding-right: 29px;
+    padding-bottom:14px;
   }
   h5{
     font-size:1rem;
@@ -621,23 +627,6 @@ section.pre-footer-program{
     height: 89.37px;
     width: 229.08px;
     padding-left:15px;
-  }
-}
-
-.prefooter-contact-info{
-  display:flex;
-  flex-direction: column;
-  justify-content: space-between;
-  @include desktop{
-    flex-direction: row;
-  }
-}
-
-.prefooter-contact, .prefooter-address{
-  display: flex;
-  flex-direction: column;
-  @include desktop{
-    padding-right:12rem;
   }
 }
 

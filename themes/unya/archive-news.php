@@ -20,19 +20,21 @@ get_header();  ?>
 		      <?php endwhile; ?>
 		    </ul>
 			</div>
-		<div class="prefooter">
-			<div class="content-wrapper">
-			  <h2 class="prefooter-heading">Media Inquiries</h2>
-			  <p class="prefooter-body">News of upcoming press conferences or other timely events of interest to the media will be posted here.
-				   If you are interested in featuring UNYA in the news, please contact us at:
-        <div class="prefooter-contact-info">
-		      <p class="prefooter-address">
-				    <span class="prefooter-unya"><i class="fa fa-map-marker" aria-hidden="true"></i> Urban Native Youth Association</span>
-				    <span class="prefooter-location">    1630 Hastings Street East</p></span>
-			    <p class="prefooter-contact">
-			      <span class="prefooter-phone"><i class="fa fa-phone" aria-hidden="true"></i>   891-924-6416</span>
-            <span class="prefooter-email"><i class="fa fa-envelope-o" aria-hidden="true"></i>  unya@unya.bc.ca</span>
-	        </div>
+<section class="pre-footer-program">
+			<h4 class="prefooter-heading">Media Inquiries</h4>
+			<p class="pre-footer-body"> News of upcoming press conferences or other timely events of interest to the media will be posted here.
+				   If you are interested in featuring UNYA in the news, please contact us at:</p>
+			<div class="contact-wrapper">
+				<p><span class="fa fa-map-marker" aria-hidden="true"></span>Urban Native Youth</p>
+				<p class="city">Association</p>
+				<p class="city">1630 Hastings Street East</p>
+			</div>
+			<div class="contact-wrapper">
+				<p><span class="fa fa-phone" aria-hidden="true"></span>891-924-6416</p>
+				<p><span class="fa fa-envelope-o" aria-hidden="true"></span>unya@unya.bc.ca</p>
+			</div>
+		</section>
+
         </div>
       </div>
     </main><!-- #main -->
