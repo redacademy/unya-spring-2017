@@ -87,11 +87,11 @@ object {
 	display: block;
 }
 
-
 .sbi_photo{
 	border-radius: 10%;
 }
 
+// home page banners
 .about, .nyc, .programs{
   background-position: center;
 	background-size: cover;
@@ -141,17 +141,38 @@ object {
 	background-position: center;
 }
 
-
-
-
-//Image Carousel Stuff
+// Image Carousels
 
 .image-carousel, .nyc-slide {
-	@include desktop{
+	@include desktop {
 	margin:0 auto;
 	height:700px;
-	width:90vw;
+	width:100%;
   }
+}
+
+.nyc-content .image-carousel {
+
+	.slick-list {
+		height: 100%;
+	}
+
+	@include desktop {
+		display: flex;
+	}
+
+	.slick-prev:before, .slick-next:before {
+		color: #FFF;
+	}
+
+	.slick-dots {
+		display: flex;
+    justify-content: center;
+
+		li button {
+			background: #FFF;
+		}
+	}
 }
 
 .nyc-slide {
@@ -164,6 +185,7 @@ object {
 	height:300px;
 	padding:0;
 }
+
 .partner{
 	margin: auto auto;
 	img{

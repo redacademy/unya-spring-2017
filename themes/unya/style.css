@@ -1306,7 +1306,26 @@ object {
   .image-carousel, .nyc-slide {
     margin: 0 auto;
     height: 700px;
-    width: 90vw; } }
+    width: 100%; } }
+
+.nyc-content .image-carousel .slick-list {
+  height: 100%; }
+
+@media (min-width: 800px) {
+  .nyc-content .image-carousel {
+    display: -ms-flexbox;
+    display: flex; } }
+
+.nyc-content .image-carousel .slick-prev:before, .nyc-content .image-carousel .slick-next:before {
+  color: #FFF; }
+
+.nyc-content .image-carousel .slick-dots {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .nyc-content .image-carousel .slick-dots li button {
+    background: #FFF; }
 
 .nyc-slide {
   background-size: cover;
@@ -1870,8 +1889,7 @@ section.pre-footer-program {
   min-width: 320px;
   max-height: 300px;
   position: relative;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
   background: #4263AB;
@@ -1887,6 +1905,8 @@ section.pre-footer-program {
       padding: 0 7.0714285714rem;
       width: 100%;
       height: 500px;
+      display: -ms-flexbox;
+      display: flex;
       -ms-flex-pack: justify;
           justify-content: space-between;
       background-color: #fff;

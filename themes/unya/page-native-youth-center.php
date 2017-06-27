@@ -17,15 +17,15 @@ get_header(); ?>
 				<p class="header-subtext">We have a goal of $10 Million. Help us get a little closer today.</p>
 			</div>
 
-  <div class="image-carousel hidden-mobile">
-    <?php $images = CFS()->get( 'nyc_image_slider' ); ?>
-    <?php foreach ( $images as $image ) : ?>
-	  <div class="nyc-slide sidebar-start"
-		  style='background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
-		  url(<?php echo $image['image']; ?>)';>
-		</div>
-	  <?php endforeach; ?>
-</div>
+			<div class="image-carousel hidden-mobile">
+				<?php $images = CFS()->get( 'nyc_image_slider' ); ?>
+				<?php foreach ( $images as $image ) : ?>
+				<div class="nyc-slide sidebar-start"
+					style='background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
+					url(<?php echo $image['image']; ?>)';><p>Suncor Energy Invests $9.5 Million Plot of Land in Native Youth Centre</p>
+				</div>
+				<?php endforeach; ?>
+			</div>
 
 			<section class="container">
 			<div class="accordion" id="accordion">
