@@ -55,7 +55,7 @@ get_header(); ?>
 
 		<section class="testimonials" id="testimonials">
 				<h2 class="content-wrapper">Testimonials</h2>
-				<p class="content-wrapper">What do youth say about us?</p>
+				<p class="content-wrapper testimonial-body">What do youth say about us?</p>
 
 			    <div class="impact-polygon">
 				    <p class="content-wrapper"><?php echo wp_kses(CFS()->get( 'testimonial_1' ),array('br')); ?></p>

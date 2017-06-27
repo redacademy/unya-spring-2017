@@ -1611,6 +1611,9 @@ object {
     padding: 20px 29px;
     margin: 0px; }
 
+.testimonial-body {
+  font-size: 24px; }
+
 .infographics {
   display: -ms-flexbox;
   display: flex;
