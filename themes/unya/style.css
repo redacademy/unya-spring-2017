@@ -1801,6 +1801,7 @@ object {
 
 .news-details {
   border-bottom: 2px solid lightgray;
+  border-top: 1px solid lightgray;
   height: 100px;
   -ms-flex-order: 2;
       order: 2; }
@@ -1885,7 +1886,7 @@ object {
           flex-flow: row nowrap; }
       .news-articles .news-single:nth-child(even) .news-details {
         border-right: 1px solid lightgray;
-        border-radius: 0 0 20px 0; }
+        border-radius: 0 20px 20px 0; }
       .news-articles .news-single:nth-child(even) img {
         border-radius: 0 0 0 40px; }
     .news-articles .news-single:nth-child(odd) {
@@ -1895,7 +1896,7 @@ object {
           flex-flow: row-reverse nowrap; }
       .news-articles .news-single:nth-child(odd) .news-details {
         border-left: 1px solid lightgray;
-        border-radius: 0 0 0 20px; }
+        border-radius: 20px 0 0 20px; }
       .news-articles .news-single:nth-child(odd) img {
         border-radius: 0 0 40px 0; } }
 
