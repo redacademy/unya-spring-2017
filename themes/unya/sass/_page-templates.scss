@@ -574,16 +574,19 @@ section.pre-footer{
    font-size:$heading__h3;
    font-style:normal;
    font-weight:normal;
-   margin:25px 29px;
+   margin:13px 29px;
    text-align:center;
    padding: 0 25px;
+   line-height:24px;
   }
   h2 a{
-    padding:15px 60px;
+    padding:15px 50px;
     border-radius:10px;
     text-decoration: none;
     text-transform:uppercase;
     color:white;
+    font-weight:normal;
+    font-size:20px;
   }
 }
 

@@ -1802,15 +1802,18 @@ section.pre-footer {
     font-size: 1.14286rem;
     font-style: normal;
     font-weight: normal;
-    margin: 25px 29px;
+    margin: 13px 29px;
     text-align: center;
-    padding: 0 25px; }
+    padding: 0 25px;
+    line-height: 24px; }
   section.pre-footer h2 a {
-    padding: 15px 60px;
+    padding: 15px 50px;
     border-radius: 10px;
     text-decoration: none;
     text-transform: uppercase;
-    color: white; }
+    color: white;
+    font-weight: normal;
+    font-size: 20px; }
 
 section.pre-footer-program {
   background-color: #00277E;
