@@ -381,6 +381,9 @@ a {
 }
 
 .ways-to-help {
+	h4 {
+		font-size: $desktop__h4;
+	}
 	h5 {
 		font-size: $desktop__main;
 		&::before {
