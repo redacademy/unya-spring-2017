@@ -4,23 +4,21 @@
 /* List of Pages: Home page, About page, Impact page, Native Youth Center, News archive */
 
 /* All pages */
-.header-wrapper {
+.header-wrapper{
   height: 4.2142857143rem;
   background-image: none;
   background-color:$color__heading-blue;
   display: flex;
   align-items: center;
-
-@include desktop {
-  display:flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 25rem;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-
-    h1 {
+  @include desktop{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 25rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    h1{
       margin-bottom:0;
       padding-left: 8.7142857143rem;;
       width: 100%;
@@ -36,8 +34,7 @@
   h3 {
     text-transform: uppercase;
     color: white;
-
-    @include desktop {
+    @include desktop{
       padding: 1rem 2.5rem;
       display: inline-block;
       background: $color__red-medium;
@@ -45,8 +42,7 @@
       box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
       font-weight: 400;
       font-size: 1.2857142857rem;
-
-      &:hover {
+      &:hover{
         background: $color__red-dark;
       }
     }
@@ -55,91 +51,83 @@
   .fa-angle-right {
     font-weight: bold;
     font-size: 1.5rem;
-
-    @include desktop {
+    @include desktop{
       display: none;
     }
   }
 }
 
-.nyc {
+.nyc{
   text-align: right;
-
-  h2 {
-			margin:0px;
-			text-align: right;
+  h2{
+		margin:0px;
+		text-align: right;
 	}
-  p {
-  margin-left:50px;
-  text-align: right;
+  p{
+    margin-left:50px;
+    text-align: right;
   }
-  a {
-  text-align: right;
+  a{
+    text-align: right;
   }
 }
 
-.about, .nyc, .programs {
+.about, .nyc, .programs{
   display: flex;
   justify-content: center;
 
-  .content-wrapper {
+  .content-wrapper{
     padding-top: 4.9285714286rem;
   }
-
-  h2 {
+  h2{
 		margin:0px;
     color: #FFF;
     text-transform: uppercase;
   }
-
-  p {
+  p{
     color:white;
   }
 
-  @include desktop {
-    p {
+  @include desktop{
+    p{
       font-size: 1.1428571429rem;
     }
   }
-
 }
 
 .programs{
 	.content-wrapper{
-		h2 {
+		h2{
 			margin: 0;
 		 }
      h3{
        font-family:$font__main;
-     }
-	}
+    }
+  }
 }
 
-@include desktop {
-  .about, .programs {
-    .content-wrapper {
+@include desktop{
+  .about, .programs{
+    .content-wrapper{
       padding: 17.785714286rem 44.285714286rem 0 8.7142857143rem;
     }
   }
 
-  .nyc {
-    .content-wrapper {
+  .nyc{
+    .content-wrapper{
       padding: 17.785714286rem 8.7142857143rem 0 44.285714286rem;
     }
   }
 }
 
 /* About page */
-.about-content {
-
-  .vision {
-
-    h3 {
+.about-content{
+  .vision{
+    h3{
       color: $color__grey-dark;
     }
   }
-
-  .mission {
+  .mission{
     height:350px;
     width:100%;
     color: #FFF;
@@ -147,57 +135,48 @@
       padding-top:75px;
       color:#FFF;
     }
-
     p{
       width:100%;
       margin:0;
 	  }
   }
-
-  .content-area {
-    ul {
+  .content-area{
+    ul{
         margin: 0;
         padding: 1.8571428571rem 0;
         list-style: none;
     }
   }
 
-  .leader {
+  .leader{
     margin: 0.6428571429rem 0;
     display: flex;
     justify-content: space-around;
-
-    .image-wrapper {
+    .image-wrapper{
       height: 5.7rem;
       width: 5.7rem;
       overflow: hidden;
       border-radius: 50%;
-
-      img {
+      img{
         max-height: 100%;
         height: auto;
         max-width: 100%;
         width: auto;
       }
     }
-
-    .text-wrapper {
+    .text-wrapper{
       flex-basis: 60%;
       font-size: 0.8571428571rem;
-
-      p {
+      p{
         margin: 0.5rem 0;
       }
     }
-
-    .leader-name {
+    .leader-name{
       color: $color__grey-dark;
       font-size: 1.1428571429rem;
       font-weight: bold;
     }
-
   }
-
 }
 
 /* Impact page */
