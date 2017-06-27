@@ -2277,7 +2277,7 @@ object {
 
 @media (min-width: 800px) {
   .single-program .program-content p {
-    font-size: 1.4285714286rem;
+    font-size: 1.14286rem;
     line-height: 2.2857142857rem; } }
 
 .single-program .program-content a {
@@ -2285,7 +2285,7 @@ object {
   text-decoration: none; }
   @media (min-width: 800px) {
     .single-program .program-content a {
-      font-size: 1.4285714286rem; } }
+      font-size: 1.14286rem; } }
 
 .single-program .program-body {
   display: -ms-flexbox;

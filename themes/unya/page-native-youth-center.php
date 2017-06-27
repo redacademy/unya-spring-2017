@@ -18,7 +18,6 @@ get_header(); ?>
 			</div>			
 
   <div class="image-carousel hidden-mobile">
-
     <?php $images = CFS()->get( 'nyc_image_slider' ); ?>
     <?php foreach ( $images as $image ) : ?>
 	  <div class="nyc-slide sidebar-start" 

@@ -340,7 +340,7 @@
 
     p {
       @include desktop {
-        font-size: 1.4285714286rem;
+        font-size: $desktop__main;
         line-height: 2.2857142857rem;
       }
     }
@@ -350,7 +350,7 @@
       text-decoration: none;
 
       @include desktop {
-        font-size: 1.4285714286rem;
+        font-size: $desktop__main;
       }
     }
   }
