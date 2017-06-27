@@ -426,7 +426,15 @@
 .news-title-block{
   display:flex;
   flex-direction: row;
-  order:1;
+  .news-headline{
+    order:2;
+  }
+  .news-image{
+    order:1;
+    @include desktop{
+      order:3;
+    }
+  }
   @include desktop{
     width:50%;
     flex-flow:row wrap;

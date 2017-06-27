@@ -1766,9 +1766,17 @@ object {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-order: 1;
-      order: 1; }
+      flex-direction: row; }
+  .news-title-block .news-headline {
+    -ms-flex-order: 2;
+        order: 2; }
+  .news-title-block .news-image {
+    -ms-flex-order: 1;
+        order: 1; }
+    @media (min-width: 800px) {
+      .news-title-block .news-image {
+        -ms-flex-order: 3;
+            order: 3; } }
   @media (min-width: 800px) {
     .news-title-block {
       width: 50%;
