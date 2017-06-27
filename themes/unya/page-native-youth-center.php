@@ -32,7 +32,7 @@ get_header(); ?>
 			<div class="accordion" id="accordion">
 				<h2 class="accordion-label"  id="vision">Vision</h2>
 				<section class="vision">
-					<header class="section-heading">
+					<header class="section-heading hidden-mobile">
 						<h2>Vision</h2>
 					</header>
 					<div class="content-wrapper">
