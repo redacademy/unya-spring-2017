@@ -172,30 +172,47 @@ object {
 	}
 
 }
-// .slick-frame.slick-initialized {
-//   visibility: visible;
-// }
-
-	// <div class="nyc-slide sidebar-start"
-	// 				style='background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
-	// 				url(<?php echo $image['image']; ?>)';></div>
 
 .nyc-content .image-carousel {
 
-	.slick-list {
-		height: 100%;
+	@include desktop {
+		display: flex;
+	}
+
+	.image-container {
+		position: relative;
+		height: 750px;
+		width: 100%;
 	}
 
 	.gradient {
+		height: 100%;
+		width: 100%;
+		top: 0;
+		position: absolute;
 		background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%);
+		z-index: 4;
 	}
 
-	// @include desktop {
-	// 	display: flex;
-	// }
+	.image-quote {
+		padding: 2rem;
+		position: absolute;
+		top: 0;
+		color: #FFF;
+		font-family: $font__heading;
+		font-size: $desktop__h4;
+		z-index: 5;
+	}
+
+	img {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		height: auto;
+	}
 
 	.slick-prev {
-		z-index: 3;
+		z-index: 10;
 	}
 
 	.slick-prev:before, .slick-next:before {
@@ -216,10 +233,10 @@ object {
 	}
 }
 
-.nyc-slide {
-	background-size: cover;
-	background-position:top;
-}
+// .nyc-slide {
+// 	background-size: cover;
+// 	background-position:top;
+// }
 
 .logo-carousel{
 	margin:0 auto;

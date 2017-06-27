@@ -20,10 +20,10 @@ get_header(); ?>
 			<div class="image-carousel hidden-mobile">
 				<?php $images = CFS()->get( 'nyc_image_slider' ); ?>
 				<?php foreach ( $images as $image ) : ?>
-				<li class="partner">
-					<div class="gradient"></div>
-					<p><span class="hide">Quote:</span><?php echo $image['image_text']; ?></p>
+				<li class="image-container">
 					<img src="<?php echo $image['image']; ?>">
+					<div class="gradient"></div>
+					<p class="image-quote"><?php echo $image['image_text']; ?></p>
 				</li>
 				<?php endforeach; ?>
 			</div>
@@ -88,8 +88,8 @@ get_header(); ?>
 						<h4>The Need</h4>
 						<p><?php echo wp_kses( CFS()->get( 'the_need' ),array('br') ); ?></p>
 					</div>
-						<div class="nyc-banner">
-				    </div>
+					<div class="nyc-banner">
+				  </div>
 					<div class="content-wrapper">
 						<h4>We Need Your Help</h4>
 						<p><?php echo wp_kses( CFS()->get( 'we_need_your_help' ),array('br') ); ?></p>
