@@ -1745,23 +1745,23 @@ object {
       .news-articles .news-single:nth-child(odd) img {
         border-radius: 0 0 40px 0; } }
 
-.prefooter {
-  height: 395px;
-  margin-top: 50px;
+section.pre-footer {
+  height: 175px;
   background: #00277E; }
-  .prefooter h2 {
+  section.pre-footer p {
     color: white;
-    padding-top: 30px; }
-  .prefooter p {
-    color: white;
-    font-size: 20px; }
+    font-style: normal;
+    font-weight: normal;
+    margin: 25px 29px;
+    text-align: center;
+    padding: 0 25px; }
 
 .pre-footer button {
   background-color: #4263AB; }
 
 .fit-button {
   height: 50px;
-  width: 150px;
+  width: 200px;
   font-family: "poppins", sans-serif;
   font-size: 1.14286rem;
   font-weight: normal;
