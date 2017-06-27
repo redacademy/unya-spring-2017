@@ -371,7 +371,25 @@ a {
 	background: $color__red-medium !important;
 }
 
+.nyc-content {
+	#accordion {
+		.accordion-label {
+			background: $color__red-medium !important;
+		}
+	}
+}
+
 .ways-to-help {
+	h5 {
+		font-size: $desktop__main;
+		&::before {
+			content: "\f105";
+			font-family: "FontAwesome";
+			color: #fff;
+			position: relative;
+			right: 0.7rem;
+		}
+	}
 	.section-heading {
 		background: $color__red-dark;
 		h2 {
@@ -406,6 +424,9 @@ a {
 	ul {
 		display: flex;
 		flex-wrap: wrap;
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+		-webkit-padding-start: 0;
 		li {
 			flex-basis: 100%;
 			@include desktop {
@@ -426,11 +447,19 @@ a {
 		display: flex;
 		flex-wrap: wrap;
 		list-style: none;
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+		-webkit-padding-start: 0;
 		i {
 			font-size: 2.3rem;
 		}
 		.image-wrapper {
 			padding-top: 2rem;
+		}
+		.text-wrapper {
+			p {
+				margin-bottom: 0.25rem;
+			}
 		}
 		li {
 			display: flex;
@@ -469,3 +498,5 @@ a {
 		}
 	}
 }
+
+

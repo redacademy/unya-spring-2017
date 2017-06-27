@@ -878,9 +878,20 @@ a {
 #accordion #donate {
   background: #D13434 !important; }
 
+.nyc-content #accordion .accordion-label {
+  background: #D13434 !important; }
+
 .ways-to-help {
   background: #D13434;
   color: #fff; }
+  .ways-to-help h5 {
+    font-size: 1.14286rem; }
+    .ways-to-help h5::before {
+      content: "\f105";
+      font-family: "FontAwesome";
+      color: #fff;
+      position: relative;
+      right: 0.7rem; }
   .ways-to-help .section-heading {
     background: #A70000; }
     .ways-to-help .section-heading h2 {
@@ -908,7 +919,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0; }
   .leadership ul li {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%; }
@@ -927,11 +941,16 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  list-style: none; }
+  list-style: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0; }
   .reports ul i {
     font-size: 2.3rem; }
   .reports ul .image-wrapper {
     padding-top: 2rem; }
+  .reports ul .text-wrapper p {
+    margin-bottom: 0.25rem; }
   .reports ul li {
     display: -ms-flexbox;
     display: flex;
