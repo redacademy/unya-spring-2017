@@ -1530,6 +1530,8 @@ object {
       flex-flow: row wrap; }
   .success-stories .content-wrapper .single-story {
     width: 48%; }
+    .success-stories .content-wrapper .single-story a {
+      text-decoration: none; }
     @media (min-width: 800px) {
       .success-stories .content-wrapper .single-story {
         margin-top: 30px;

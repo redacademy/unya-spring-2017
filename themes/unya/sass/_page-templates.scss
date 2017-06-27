@@ -207,6 +207,9 @@
     flex-flow: row wrap;
     .single-story{
       width:48%;
+      a{         
+        text-decoration: none;
+      }
       @include desktop{
         margin-top: 30px;
         width:100%;

@@ -26,19 +26,19 @@ get_header(); ?>
 				<span class="success-head"><h2>Success Stories</h2>
 				<p>Learn more about the talented youth at UNYA, and the successes we celebrate.</p></span>
 		 	 	<?php foreach ( $success_story as $post ) : setup_postdata( $post ); ?>
-		 <a href="<?php the_permalink() ?>">
-			 <div class="single-story-mobile hidden-desktop success-image" style="background-image: linear-gradient(180deg, rgba(87,87,87,0) 0%, rgba(67,67,67,0.4) 52.31%, rgba(44,44,44,0.7) 100%),
-		     url(<?php echo CFS()->get( 'photo' ); ?>)";>
-				 <h3><?php the_title() ?></h5>
-	  	 </div>	
-		 </a>
-			<section class="single-story hidden-mobile">
+		  <section class="single-story hidden-mobile">
+		    <a href="<?php the_permalink() ?>">
+			    <div class="single-story-mobile hidden-desktop success-image" style="background-image: linear-gradient(180deg, rgba(87,87,87,0) 0%, rgba(67,67,67,0.4) 52.31%, rgba(44,44,44,0.7) 100%),
+		        url(<?php echo CFS()->get( 'photo' ); ?>)";>
+				    <h3><?php the_title() ?></h3>
+	  	    </div>	
+		    </a>			
 				<a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>" cover></a>
-				<div class="success-content">
-				  <h3 class="hidden-mobile">Youth Feature - <?php the_title(); ?></h3>
-					<p class="hidden-mobile"><?php echo wp_kses(CFS()->get( 'first_half_of_story' ),array('br') ); ?></p>
-					<div><p class="hidden-mobile"><a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>">Read more about <?php the_title(); ?><i class="fa fa-arrow-right" aria-hidden="true">
-						</i></a></p></div>
+				  <div class="success-content">
+				    <h3 class="hidden-mobile">Youth Feature - <?php the_title(); ?></h3>
+					  <p class="hidden-mobile"><?php echo wp_kses(CFS()->get( 'first_half_of_story' ),array('br') ); ?></p>
+					  <div><p class="hidden-mobile"><a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>">Read more about <?php the_title(); ?><i class="fa fa-arrow-right" aria-hidden="true">
+					</i></a></p></div>
 	      </div>
 			</section>
 		  <?php endforeach; wp_reset_postdata(); ?>
