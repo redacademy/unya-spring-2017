@@ -188,6 +188,10 @@
       width:48%;
       a{         
         text-decoration: none;
+        @include desktop{
+          position:relative;
+          right:5rem;
+        }
       }
       @include desktop{
         margin-top: 30px;
@@ -212,8 +216,13 @@
     color:#4263AB;
     text-decoration: none;
   }
-
+  @include desktop{
+    display:relative;
+    left:1rem;
+  }
 }
+
+
 
 .success-content{
   width:70%;
@@ -283,8 +292,7 @@
 .impact-polygon{
   height:350px;
   width:100%;
-
-  p {
+  p{
     text-align:right;
     width:70%;
     margin: 175px 20%;
@@ -298,8 +306,7 @@
 .rectangle-container{
   height:350px;
   width:100%;
-
-  p {
+  p{
 		width:70%;
 		margin: 175px 10%;
 		color:white;
@@ -313,7 +320,6 @@
 
 .single-success-banner{
   background-position: center;
-
 }
 
 .success-image-mobile{
@@ -327,9 +333,11 @@
     display:none;
   }
 }
+
 .single-success-image{
   width:40%;
 }
+
 .success-exerpt{
   color:white;
   font-size:16px;
@@ -350,9 +358,7 @@
 
 /* Native Youth Centre */
 .header-wrapper-nyc {
-
   @include desktop {
-
     p{
       padding-left:3.5714285714rem;
       color:white;
@@ -363,11 +369,9 @@
 }
 
 .nyc-content {
-
   .nyc-banner {
     height:23.214285714rem;
     width:100%;
-
     p {
       text-align: right;
       width:80%;
@@ -375,7 +379,6 @@
       color:white;
     }
   }
-
   .planning {
     ul {
       margin: 0;
@@ -383,23 +386,18 @@
       list-style: none;
     }
   }
-
   .timeline-item {
     display: flex;
   }
-
   .year-wrapper {
     flex-basis: 20%;
   }
-
   .timeline-year {
     font-family: $font__heading;
   }
-
   .description-wrapper {
     flex-basis: 80%;
   }
-
 }
 
 /* News archive */
@@ -408,6 +406,7 @@
     background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url('../../assets/images/jack-min.png');
 }
+
 .news-single{
   width:100vw;
   display:flex;
@@ -421,6 +420,7 @@
     margin-top:40px;
   }
 }
+
 .news-title-block{
   display:flex;
   flex-direction: row;
@@ -478,7 +478,6 @@
      display: flex;
      align-items: center;
      padding: 1rem;
-
      a{
        margin:auto auto;
        color:white;
@@ -488,7 +487,6 @@
 
 .news-date{
   display:none;
-
   @include desktop{
   display:flex;
   height:100px;
@@ -526,25 +524,22 @@
       display:flex;
       flex-flow:row nowrap;
       .news-details{
-          border-right: 1px solid lightgray;
-          border-radius:0 0 20px 0;
-      }
+        border-right: 1px solid lightgray;
+        border-radius:0 0 20px 0;
+       }
       img{
         border-radius:0 0 0 40px;
       }
     }
-
-
       .news-single:nth-child(odd) {
       display:flex;
       flex-flow:row-reverse nowrap;
-      .news-details{
+        .news-details{
           border-left: 1px solid lightgray;
           border-radius:0 0 0 20px;
-      }
+        }
       img{
         border-radius:0 0 40px 0;
-
       }
     }
   }

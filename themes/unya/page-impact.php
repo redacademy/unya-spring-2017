@@ -54,24 +54,21 @@ get_header(); ?>
 		<section class="statistics" id="statistics">
 			<span class="content-wrapper">
 			  <h2 class="impact-head content-wrapper">Impacts</h2>
-		  <span class="infographics">
-			  <img class="infographic-1" src="<?php echo esc_url( CFS()->get( 'infographic_2' ) ); ?>">
-			  <img class="infographic-2 hidden-mobile" src="<?php echo esc_url( CFS()->get( 'infographic_1' ) ); ?>">
-		  </span>
+		    <span class="infographics">
+			    <img class="infographic-1" src="<?php echo esc_url( CFS()->get( 'infographic_2' ) ); ?>">
+			    <img class="infographic-2 hidden-mobile" src="<?php echo esc_url( CFS()->get( 'infographic_1' ) ); ?>">
+		    </span>
 			</span>
 		</section>
 
 		<section class="testimonials" id="testimonials">
-				<h2 class="content-wrapper">Testimonials</h2>
-				<p class="content-wrapper testimonial-body">What do youth say about us?</p>
+			<h2 class="content-wrapper">Testimonials</h2>
+			<p class="content-wrapper testimonial-body">What do youth say about us?</p>
 
-			    <div class="impact-polygon">
-				    <p class="content-wrapper"><?php echo wp_kses(CFS()->get( 'testimonial_1' ),array('br')); ?></p>
-				  </div>
-
-
-			<div class="rectangle-container">	<p class="content-wrapper"><?php echo CFS()->get( 'testimonial_2' ); ?></p></div>
-
+			<div class="impact-polygon">
+			  <p class="content-wrapper"><?php echo wp_kses(CFS()->get( 'testimonial_1' ),array('br')); ?></p>
+			</div>
+  		<div class="rectangle-container">	<p class="content-wrapper"><?php echo CFS()->get( 'testimonial_2' ); ?></p></div>
 		</section>
 
 		<?php get_template_part( 'template-parts/prefooter', 'fit' ); ?>
