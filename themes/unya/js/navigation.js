@@ -65,12 +65,14 @@
     var $menuItem = $('.sidebar-menu-container .menu-item a');
     var $menuHeight = $sidebarMenu.height() + $('.site-header').height();
 
-    $sidebarMenu.css('top', $bottomOfHeader);
+    $sidebarMenu.css('top', $('.site-header').height() + $bottomOfHeader);
+    $('.site-content').css('padding-top', $('.site-header').height());
 
     //on window resize moves sidebar
     $(window).resize(function() {
       $bottomOfHeader = $('.sidebar-start').offset().top + $('.sidebar-start').height();
       $sidebarMenu.removeAttr('style').css('top', $bottomOfHeader);
+      $('.site-content').css('padding-top', $('.site-header').height());
     });
 
     function fixSidebar(position) {

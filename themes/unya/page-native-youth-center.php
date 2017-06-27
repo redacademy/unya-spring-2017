@@ -17,7 +17,7 @@ get_header(); ?>
 				<p class="header-subtext">We have a goal of $10 Million. Help us get a little closer today.</p>
 			</div>
 
-			<div class="image-carousel hidden-mobile">
+			<div class="image-carousel hidden-mobile sidebar-start">
 				<?php $images = CFS()->get( 'nyc_image_slider' ); ?>
 				<?php foreach ( $images as $image ) : ?>
 				<li class="image-container">

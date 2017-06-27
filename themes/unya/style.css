@@ -1348,6 +1348,9 @@ object {
     display: -ms-flexbox;
     display: flex; } }
 
+.nyc-content .image-carousel .slick-list {
+  height: 100%; }
+
 .nyc-content .image-carousel .image-container {
   position: relative;
   height: 750px;
