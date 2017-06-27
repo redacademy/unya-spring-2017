@@ -1327,16 +1327,31 @@ object {
     height: 700px;
     width: 100%; } }
 
+.slick-frame {
+  visibility: hidden;
+  background: #fff url("../../build/lib/ajax-loader.gif") center center no-repeat;
+  height: 300px;
+  overflow: hidden; }
+  .slick-frame > .generic-item-wrap-class {
+    visibility: hidden; }
+  .slick-frame.slick-initialized {
+    background: none;
+    height: auto;
+    overflow: auto; }
+    .slick-frame.slick-initialized > .generic-item-wrap-class {
+      visibility: visible; }
+
 .nyc-content .image-carousel .slick-list {
   height: 100%; }
 
-@media (min-width: 800px) {
-  .nyc-content .image-carousel {
-    display: -ms-flexbox;
-    display: flex; } }
+.nyc-content .image-carousel .slick-prev {
+  z-index: 3; }
 
 .nyc-content .image-carousel .slick-prev:before, .nyc-content .image-carousel .slick-next:before {
   color: #FFF; }
+
+.nyc-content .image-carousel .hide {
+  color: transparent; }
 
 .nyc-content .image-carousel .slick-dots {
   display: -ms-flexbox;

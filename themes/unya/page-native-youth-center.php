@@ -20,10 +20,11 @@ get_header(); ?>
 			<div class="image-carousel hidden-mobile">
 				<?php $images = CFS()->get( 'nyc_image_slider' ); ?>
 				<?php foreach ( $images as $image ) : ?>
-				<div class="nyc-slide sidebar-start"
-					style='background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
-					url(<?php echo $image['image']; ?>)';><p>Suncor Energy Invests $9.5 Million Plot of Land in Native Youth Centre</p>
-				</div>
+				<li class="partner">
+					<div class="gradient"></div>
+					<p><span class="hide">Quote:</span><?php echo $image['image_text']; ?></p>
+					<img src="<?php echo $image['image']; ?>">
+				</li>
 				<?php endforeach; ?>
 			</div>
 
