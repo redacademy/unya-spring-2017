@@ -2,7 +2,7 @@
   min-width:320px;
   max-height:300px;
   position: relative;
-  display: flex;
+  display: none;
   align-content: stretch;
   background: $color__blue-medium;
   color: #FFF;
@@ -16,6 +16,7 @@
     padding:0 7.0714285714rem;
     width:100%;
     height:500px;
+    display: flex;
     justify-content: space-between;
     background-color:$color__background-body;
     flex-direction:row;
