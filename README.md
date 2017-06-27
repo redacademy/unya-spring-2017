@@ -15,7 +15,7 @@ This custom theme was built for the Urban Native Youth Assocation website.
 - Jessica Dieuique (https://github.com/jesstice)
 - Cory Hall (https://github.com/Coryjh85)
 - Jennifer Ta (https://github.comJenniferta)
-- George Tetty (https://github.com/selikem)
+- George Tettey (https://github.com/selikem)
 
 ### Designers
 

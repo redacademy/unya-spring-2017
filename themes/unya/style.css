@@ -1396,6 +1396,10 @@ object {
   .nyc-content .image-carousel .slick-dots li button {
     background: #FFF; }
 
+.nyc-slide {
+  background-size: cover;
+  background-position: top; }
+
 .logo-carousel {
   margin: 0 auto;
   height: 300px;
