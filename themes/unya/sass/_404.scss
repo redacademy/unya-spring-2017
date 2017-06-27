@@ -6,12 +6,13 @@
   display:flex;
   flex-direction:column;
   justify-content:space-between;
-    .error-message-wrap {
-      padding:200px 41px;
-      @include desktop{
-        padding: 385px 41px;
-      }
-    }
+  @include desktop {
+    justify-content:center;
+  }
+  .error-message-wrap {
+    padding-top:200px;
+    padding-left:41px;
+  }
   h2.page-title {
     padding:0;
     font-size:20px;
@@ -19,6 +20,11 @@
     font-weight:normal;
     color:#fff;
     width:218px;
+    @include desktop {
+      font-size:48px;
+      width:100%;
+      margin:0;
+    }
   }
   p {
     color:#fff;
@@ -28,6 +34,9 @@
     font-family:$font__main;
     font-style:normal;
     font-weight:normal;
+    @include desktop{
+      font-size:16px;
+    }
   }
   .button-container {
     height:90px;
@@ -36,6 +45,11 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    @include desktop{
+      background-color:transparent;
+      justify-content:flex-start;
+      margin-left:41px;
+    }
   }
   a.link {
     background-color:$color__red-medium;
@@ -53,6 +67,8 @@
     padding:22px 18px;
     border-radius:10px;
     font-size:18px;
+    width:337px;
+    height:61px;
     }
   }//closing a.links
 }//closing error-404

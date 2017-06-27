@@ -2509,19 +2509,25 @@ object {
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+  @media (min-width: 800px) {
+    .site-main .error-404 {
+      -ms-flex-pack: center;
+          justify-content: center; } }
   .site-main .error-404 .error-message-wrap {
-    padding: 200px 41px; }
-    @media (min-width: 800px) {
-      .site-main .error-404 .error-message-wrap {
-        padding: 385px 41px; } }
+    padding-top: 200px;
+    padding-left: 41px; }
   .site-main .error-404 h2.page-title {
     padding: 0;
     font-size: 20px;
     font-family: "worksans", sans-serif;
     font-weight: normal;
     color: #fff;
-<<<<<<< HEAD
     width: 218px; }
+    @media (min-width: 800px) {
+      .site-main .error-404 h2.page-title {
+        font-size: 48px;
+        width: 100%;
+        margin: 0; } }
   .site-main .error-404 p {
     color: #fff;
     margin-top: 0px;
@@ -2530,6 +2536,9 @@ object {
     font-family: "worksans", sans-serif;
     font-style: normal;
     font-weight: normal; }
+    @media (min-width: 800px) {
+      .site-main .error-404 p {
+        font-size: 16px; } }
   .site-main .error-404 .button-container {
     height: 90px;
     background-color: #A70000;
@@ -2540,6 +2549,12 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
+    @media (min-width: 800px) {
+      .site-main .error-404 .button-container {
+        background-color: transparent;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+        margin-left: 41px; } }
   .site-main .error-404 a.link {
     background-color: #D13434;
     text-decoration: none;
@@ -2556,22 +2571,6 @@ object {
       .site-main .error-404 a.link {
         padding: 22px 18px;
         border-radius: 10px;
-        font-size: 18px; } }
-=======
-    margin-top: 0px;
-    margin-bottom: 45px;
-    font-size: 16px;
-    font-family: "worksans", sans-serif;
-    font-style: normal;
-    font-weight: normal; }
-
-.error404 a.button {
-  background-color: #D13434;
-  text-decoration: none;
-  color: #fff;
-  font-family: "poppins", sans-serif;
-  padding: 22px 18px;
-  border-radius: 10px;
-  text-transform: uppercase;
-  font-size: 18px; }
->>>>>>> 19554394897d3c52bafca1f69a0daf2c7081d95c
+        font-size: 18px;
+        width: 337px;
+        height: 61px; } }
