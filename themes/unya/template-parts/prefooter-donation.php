@@ -1,5 +1,5 @@
 
-	<section class="pre-footer donation">
-		<p>Like what you see? Make your donation online today</p>
-		<h2><a href="https://www.canadahelps.org/en/charities/urban-native-youth-association/">Donate</a></h2>
+	<section class="pre-footer donation-button">
+		<p>Like what you see? <span class="line-break">Support us to help us grow.</span></p>
+		<h2><a href="https://www.canadahelps.org/en/charities/urban-native-youth-association/">Donate <span class="hidden-mobile">Today</span></a></h2>
 	</section>
