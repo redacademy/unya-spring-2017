@@ -52,11 +52,13 @@ get_header(); ?>
   </section>
 
 		<section class="statistics" id="statistics">
-			<h2 class="impact-head content-wrapper">Impacts</h2>
-		  <span class="infographics content-wrapper">
+			<span class="content-wrapper">
+			  <h2 class="impact-head content-wrapper">Impacts</h2>
+		  <span class="infographics">
 			  <img class="infographic-1" src="<?php echo esc_url( CFS()->get( 'infographic_2' ) ); ?>">
 			  <img class="infographic-2 hidden-mobile" src="<?php echo esc_url( CFS()->get( 'infographic_1' ) ); ?>">
 		  </span>
+			</span>
 		</section>
 
 		<section class="testimonials" id="testimonials">
