@@ -6,7 +6,7 @@
  */
  $args= array(
      'post_type'=> 'success_story',
-     'posts_per_page'=> 8
+     'posts_per_page'=> 6
  );
 
  $success_story = get_posts($args);

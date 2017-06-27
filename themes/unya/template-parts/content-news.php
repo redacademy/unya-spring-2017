@@ -6,7 +6,7 @@
  */
  $args= array(
      'post_type'=> 'news',
-     'posts_per_page'=> 8
+     'posts_per_page'=> 6
  );
 
  $news = get_posts($args);
