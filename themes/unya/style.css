@@ -721,7 +721,8 @@ a {
   width: 100vw;
   position: fixed;
   background: #fff;
-  z-index: 50; }
+  z-index: 50;
+  transition: all 0.4s linear; }
   .site-header .site-branding {
     padding: 1rem;
     background: url("../../assets/images/RED_UNYA_UI_LogoDesign_Assets_V1-1.png") no-repeat center;
@@ -878,20 +879,9 @@ a {
 #accordion #donate {
   background: #D13434 !important; }
 
-.nyc-content #accordion .accordion-label {
-  background: #D13434 !important; }
-
 .ways-to-help {
   background: #D13434;
   color: #fff; }
-  .ways-to-help h5 {
-    font-size: 1.14286rem; }
-    .ways-to-help h5::before {
-      content: "\f105";
-      font-family: "FontAwesome";
-      color: #fff;
-      position: relative;
-      right: 0.7rem; }
   .ways-to-help .section-heading {
     background: #A70000; }
     .ways-to-help .section-heading h2 {
@@ -919,10 +909,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-padding-start: 0; }
+      flex-wrap: wrap; }
   .leadership ul li {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%; }
@@ -941,16 +928,11 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  list-style: none;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-padding-start: 0; }
+  list-style: none; }
   .reports ul i {
     font-size: 2.3rem; }
   .reports ul .image-wrapper {
     padding-top: 2rem; }
-  .reports ul .text-wrapper p {
-    margin-bottom: 0.25rem; }
   .reports ul li {
     display: -ms-flexbox;
     display: flex;
