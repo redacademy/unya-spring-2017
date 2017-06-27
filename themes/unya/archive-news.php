@@ -10,7 +10,6 @@ get_header();  ?>
 		<main id="main" class="site-main" role="main">
     <div class="news-header news-title header-wrapper sidebar-start">
 			<h1>UNYA In The News</h1>
-			<?php echo CFS()->get( 'title_banner_news' ); ?>
     </div>
 			<div class="content-wrapper">
 			<?php /* Start the Loop */ ?>
