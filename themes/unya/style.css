@@ -753,7 +753,7 @@ a {
   right: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 70vh;
+  height: 65vh;
   z-index: 299; }
   .site-header.expanded .site-branding {
     background: url("../../assets/images/Logo-White.png") no-repeat center;
