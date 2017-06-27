@@ -2710,7 +2710,7 @@ section.pre-footer {
           justify-content: space-between;
       -ms-flex-direction: row;
           flex-direction: row;
-      padding: 45px 120px; } }
+      padding: 45px 90px; } }
   section.pre-footer p {
     font-size: 1.14286rem;
     font-style: normal;
@@ -2746,12 +2746,34 @@ section.pre-footer-program {
   color: white;
   font-family: "worksans", sans-serif;
   padding: 30px 0 30px 30px; }
+  @media (min-width: 800px) {
+    section.pre-footer-program {
+      padding-left: 244px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      section.pre-footer-program .prefooter-heading {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
+      section.pre-footer-program .pre-footer-program-container {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
+      section.pre-footer-program .pre-footer-program-logo-container {
+        width: 450px; } }
   section.pre-footer-program h4 {
     font-size: 20px;
     width: 262px;
     height: 54px;
     text-transform: uppercase;
     margin: 0; }
+    @media (min-width: 800px) {
+      section.pre-footer-program h4 {
+        font-size: 48px;
+        font-family: "poppins", sans-serif;
+        width: 100%; } }
   section.pre-footer-program p.pre-footer-body {
     font-size: 1.14286rem;
     line-height: 32px;
@@ -2760,6 +2782,9 @@ section.pre-footer-program {
   section.pre-footer-program h5 {
     font-size: 1rem;
     font-weight: bold; }
+    @media (min-width: 800px) {
+      section.pre-footer-program h5 {
+        font-size: 1.428571428rem; } }
   section.pre-footer-program span {
     padding-right: 10px; }
   section.pre-footer-program p {
@@ -2768,11 +2793,21 @@ section.pre-footer-program {
     padding-left: 10px; }
   section.pre-footer-program .contact-wrapper {
     margin-bottom: 20px; }
+    section.pre-footer-program .contact-wrapper p {
+      font-size: 1rem; }
+      @media (min-width: 800px) {
+        section.pre-footer-program .contact-wrapper p {
+          font-size: 1.14286rem;
+          line-height: 32px; } }
     section.pre-footer-program .contact-wrapper p.city {
       margin-left: 20px; }
   section.pre-footer-program p.pre-footer-logo-header {
     font-weight: bold;
     padding: 5px; }
+    @media (min-width: 800px) {
+      section.pre-footer-program p.pre-footer-logo-header {
+        font-size: 1.428571428rem;
+        margin: 33.4px 0px; } }
   section.pre-footer-program .logo-wrapper {
     height: 102.22px;
     width: 100%;

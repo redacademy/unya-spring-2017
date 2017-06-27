@@ -25,7 +25,7 @@ section.pre-footer{
   @include desktop{
   justify-content:space-between;
   flex-direction:row;
-  padding:45px 120px;
+  padding:45px 90px;
   }
   p{
    font-size:$heading__h3;
@@ -67,12 +67,32 @@ section.pre-footer-program {
   color:white;
   font-family:$font__main;
   padding: 30px 0 30px 30px;
+  @include desktop{
+    padding-left:244px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    .prefooter-heading{
+      flex-basis:100%;
+    }
+    .pre-footer-program-container{
+      flex-basis:50%;
+    }
+    .pre-footer-program-logo-container{
+      width:450px;
+    }
+  }
   h4{
     font-size:20px;
     width:262px;
     height:54px;
     text-transform:uppercase;
     margin:0;
+    @include desktop{
+      font-size:48px;
+      font-family:$font__heading;
+      width:100%;
+    }
   }
   p.pre-footer-body{
     font-size:$heading__h3;
@@ -83,6 +103,9 @@ section.pre-footer-program {
   h5{
     font-size:1rem;
     font-weight:bold;
+    @include desktop{
+      font-size:1.428571428rem;
+    }
   }
   span{
     padding-right:10px;
@@ -94,6 +117,13 @@ section.pre-footer-program {
    }
  .contact-wrapper{
    margin-bottom:20px;
+   p{
+     font-size:1rem;
+     @include desktop{
+      font-size:$desktop__h5;
+      line-height:32px;
+     }
+   }
    p.city{
      margin-left:20px;
    }
@@ -101,6 +131,10 @@ section.pre-footer-program {
  p.pre-footer-logo-header{
    font-weight:bold;
    padding:5px;
+   @include desktop{
+     font-size:1.428571428rem;
+     margin:33.4px 0px;
+   }
  }
  .logo-wrapper{
    height: 102.22px;
