@@ -237,9 +237,19 @@
   width:70%;
 }
 .success-image{
+  background-repeat: no-repeat;
+  background-size: cover;
 	width:38vw;
 	height:38vw;
 	border-radius: 50%;
+  h3{
+    color:white;
+    text-align: center;
+    position:relative;
+    top:60%;
+    font-size:14px;
+    font-weight:bold;
+  }
 	@include desktop{
 		border-radius:50%;
 		height:250px;
@@ -323,9 +333,7 @@
   background-position: center;
 
 }
-.single-success-image{
 
-}
 .success-image-mobile{
   display:flex;
   height:200px;

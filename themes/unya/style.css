@@ -1558,9 +1558,18 @@ object {
   width: 70%; }
 
 .success-image {
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 38vw;
   height: 38vw;
   border-radius: 50%; }
+  .success-image h3 {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 60%;
+    font-size: 14px;
+    font-weight: bold; }
   @media (min-width: 800px) {
     .success-image {
       border-radius: 50%;

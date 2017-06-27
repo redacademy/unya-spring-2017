@@ -54,6 +54,7 @@ function unya_hero_banners() {
 	    $third = CFS()->get( 'third_banner_pic' ); 
 		$impactpolygon = CFS()->get( 'impact_angled_banner' );
 		$rectangle = CFS()->get( 'rectangular_banner' );
+        $singlestorypic = CFS()->get( 'photo' );
         $aboutpolygon = CFS()->get( 'about_angled_banner' );
         $getinvolvedpolygon = CFS()->get( 'get_involved_angled_banner' );
         $nativeyouthcenterbanner = CFS()->get( 'nyc_rectangle_banner' );
@@ -63,7 +64,7 @@ function unya_hero_banners() {
         $getinvolvedtitle = CFS()->get( 'title_banner_get_involved' );
         $programtitle = CFS()->get( 'title_banner_programs' );
         $newstitle = CFS()->get( 'title_banner_news' );
-
+        
         $custom_css = "
                 			
 .about{
@@ -121,6 +122,9 @@ function unya_hero_banners() {
  .news-title{
     background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url('$newstitle');
+}
+ .success-image-mobile{
+     background-image: url('$singlestorypic');
 }";
 
     wp_add_inline_style( 'custom-style', $custom_css );
