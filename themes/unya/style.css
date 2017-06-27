@@ -1798,9 +1798,12 @@ section.pre-footer-program {
     padding-right: 10px; }
   section.pre-footer-program p {
     margin-top: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-left: 10px; }
   section.pre-footer-program .contact-wrapper {
     margin-bottom: 20px; }
+    section.pre-footer-program .contact-wrapper p.city {
+      margin-left: 20px; }
   section.pre-footer-program p.pre-footer-logo-header {
     font-weight: bold;
     padding: 5px; }

@@ -584,12 +584,14 @@ section.pre-footer-program{
  p{
    margin-top:0;
    margin-bottom:0;
- }
-
+   padding-left:10px;
+   }
  .contact-wrapper{
    margin-bottom:20px;
+   p.city{
+     margin-left:20px;
+   }
  }
-
  p.pre-footer-logo-header{
    font-weight:bold;
    padding:5px;
@@ -625,8 +627,6 @@ section.pre-footer-program{
     padding-right:12rem;
   }
 }
-
-
 
 #sb_instagram{
   margin-right:0;

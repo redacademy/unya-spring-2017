@@ -31,7 +31,7 @@ get_header(); ?>
 
 			<div class="contact-wrapper">
 				<p><span class="fa fa-map-marker" aria-hidden="true"></span>1618 East Hastings Street,</p>
-				<p>Vancouver, BC, V5L 1S6</p>
+				<p class="city">Vancouver, BC, V5L 1S6</p>
 			</div>
 
 			<div class="contact-wrapper">
