@@ -4,7 +4,6 @@
  *
  * @package UNYA_Theme
  */
-
 /**
  * Adds custom classes to the array of body classes.
  *
@@ -12,6 +11,47 @@
  * @return array
  */
 
+// Order admin menu
+function custom_menu_order($menu_ord) {
+    if (!$menu_ord) return true;
+     
+    return array(
+        'index.php', // Dashboard
+        'separator1', // First separator
+        'edit.php?post_type=page', // Pages
+        'edit.php?post_type=leaders', // Leaders
+        'edit.php?post_type=program', // Program Archive
+        'edit.php?post_type=success_story', // Impact page stories
+        'edit.php?post_type=news', // News stories
+        'edit.php?post_type=opportunities', // Get involved page opportunities
+        'separator2', // Second separator
+        'upload.php', // Media
+        'plugins.php', // Plugins
+        'edit.php?post_type=calendar', // Event calendar plugin
+        'edit.php?post_type=ctct_forms', // Constant Contact plugin
+        'edit.php?post_type=instagram-feed.php', // Constant Contact plugin
+        'edit.php?post_type=cfs', // Constant Contact plugin
+        'admin.php?page=sb-instagram-feed', // Instagram plugin
+        'separator3', // Second separator
+        'users.php', // Users
+        'themes.php', // Appearance
+        'tools.php', // Tools
+        'options-general.php', // Settings
+        'separator-last', // Last separator
+    );
+}
+add_filter('custom_menu_order', 'custom_menu_order'); // Activate custom_menu_order
+add_filter('menu_order', 'custom_menu_order');
+
+// Edit Admin menu
+function edit_admin_menus() {
+    global $menu;
+
+    remove_menu_page('edit-comments.php');
+    remove_menu_page('edit.php');
+
+}
+add_action( 'admin_menu', 'edit_admin_menus' );
 
 function unya_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
@@ -43,85 +83,78 @@ add_filter( 'get_the_archive_title', function ( $title ) {
 });
 
 // CFS for Hero Banners //
-
 function unya_hero_banners() {
-    wp_enqueue_style(
-        'custom-style',
-        get_template_directory_uri() . '/build/css/style.min.css'
-    );
-        $first = CFS()->get( 'first_banner_pic' );
-		$second = CFS()->get( 'second_banner_pic' );
-	    $third = CFS()->get( 'third_banner_pic' ); 
-		$impactpolygon = CFS()->get( 'impact_angled_banner' );
-		$rectangle = CFS()->get( 'rectangular_banner' );
-        $singlestorypic = CFS()->get( 'photo' );
-        $aboutpolygon = CFS()->get( 'about_angled_banner' );
-        $getinvolvedpolygon = CFS()->get( 'get_involved_angled_banner' );
-        $nativeyouthcenterbanner = CFS()->get( 'nyc_rectangle_banner' );
-        $abouttitle = CFS()->get( 'title_banner_about' );
-        $impacttitle = CFS()->get( 'title_banner_impact' );
-        $nyctitle = CFS()->get( 'title_banner_nyc' );
-        $getinvolvedtitle = CFS()->get( 'title_banner_get_involved' );
-        $programtitle = CFS()->get( 'title_banner_programs' );
-        $newstitle = CFS()->get( 'title_banner_news' );
-        
-        $custom_css = "
-                			
-.about{
-	background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
-    url('$first');
-}
-.nyc{	
-	background-image: linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
-    url('$second');
-}
-.programs{
-	background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
-    url('$third');
-}
-.impact-polygon{ 
-    background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
-    url('$impactpolygon');
-}
-.rectangle-container{
-    background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
-    url('$rectangle');
-}
-.nyc-banner{ 
-    background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
-    url('$nativeyouthcenterbanner');
-}
-.mission{
-    background-image: linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
-    url('$aboutpolygon');
-}
-.donation-registration{
-    background-image: linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
-    url('$getinvolvedpolygon');
-}
-.about-title{
-    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
-    url('$abouttitle');
-}  
-.impact-title{
-    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
-    url('$impacttitle');
-}   
-.nyc-title{
-    background-image:  linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
-    url('$nyctitle');
-} 
-.get-involved-title{
-    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
-    url('$getinvolvedtitle');
-}";
+    $first = CFS()->get( 'first_banner_pic' );
+    $second = CFS()->get( 'second_banner_pic' );
+    $third = CFS()->get( 'third_banner_pic' ); 
+    $impactpolygon = CFS()->get( 'impact_angled_banner' );
+    $rectangle = CFS()->get( 'rectangular_banner' );
+    $singlestorypic = CFS()->get( 'photo' );
+    $aboutpolygon = CFS()->get( 'about_angled_banner' );
+    $getinvolvedpolygon = CFS()->get( 'get_involved_angled_banner' );
+    $nativeyouthcenterbanner = CFS()->get( 'nyc_rectangle_banner' );
+    $abouttitle = CFS()->get( 'title_banner_about' );
+    $impacttitle = CFS()->get( 'title_banner_impact' );
+    $nyctitle = CFS()->get( 'title_banner_nyc' );
+    $getinvolvedtitle = CFS()->get( 'title_banner_get_involved' );
+    $programtitle = CFS()->get( 'title_banner_programs' );
+    $newstitle = CFS()->get( 'title_banner_news' );
+    
+    $custom_css = "
+        .about{
+            background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
+            url('$first');
+        }
+        .nyc{	
+            background-image: linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
+            url('$second');
+        }
+        .programs{
+            background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+            url('$third');
+        }
+        .impact-polygon{ 
+            background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
+            url('$impactpolygon');
+        }
+        .rectangle-container{
+            background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
+            url('$rectangle');
+        }
+        .nyc-banner{ 
+            background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
+            url('$nativeyouthcenterbanner');
+        }
+        .mission{
+            background-image: linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+            url('$aboutpolygon');
+        }
+        .donation-registration{
+            background-image: linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
+            url('$getinvolvedpolygon');
+        }
+        .about-title{
+            background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+            url('$abouttitle');
+        }  
+        .impact-title{
+            background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+            url('$impacttitle');
+        }   
+        .nyc-title{
+            background-image:  linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
+            url('$nyctitle');
+        } 
+        .get-involved-title{
+            background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+            url('$getinvolvedtitle');
+        }";
 
-    wp_add_inline_style( 'custom-style', $custom_css );
+    wp_add_inline_style( 'unya-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'unya_hero_banners' );
 
 //Custom Login Logo//
-
 function unya_login() {
      echo '<style type="text/css">                                                                   
         #login h1 a { background:url('.get_stylesheet_directory_uri().'/assets/images/RED_UNYA_UI_LogoDesign_Assets_V1-1.png) no-repeat;
@@ -139,7 +172,6 @@ function unya_login_title(){
 add_filter('login_headertitle', 'unya_login_title');
 
 // filter menu items for sidebar
-
 function unya_filter_nav_menu_list($sorted_menu_objects, $args) {
 
     if ( $args->menu_id == 'primary-menu' ) {
