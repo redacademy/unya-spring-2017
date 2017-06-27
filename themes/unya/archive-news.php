@@ -19,7 +19,7 @@ get_header();  ?>
 		      <?php endwhile; ?>
 		    </ul>
 			</div>
-<section class="pre-footer-program">
+<section class="pre-footer-program media-pre-footer-container">
 			<h4 class="prefooter-heading">Media Inquiries</h4>
 			<p class="pre-footer-body"> News of upcoming press conferences or other timely events of interest to the media will be posted here.
 				   If you are interested in featuring UNYA in the news, please contact us at:</p>

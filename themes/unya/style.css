@@ -2780,6 +2780,9 @@ section.pre-footer-program {
     line-height: 32px;
     padding-right: 29px;
     padding-bottom: 14px; }
+    @media (min-width: 800px) {
+      section.pre-footer-program p.pre-footer-body {
+        font-size: 1.42857rem; } }
   section.pre-footer-program h5 {
     font-size: 1rem;
     font-weight: bold; }
@@ -2826,3 +2829,10 @@ section.pre-footer-program {
     @media (min-width: 800px) {
       section.pre-footer-program img {
         height: 130px; } }
+
+@media (min-width: 800px) {
+  .post-type-archive-news section.pre-footer-program {
+    padding-right: 240px; } }
+
+.post-type-archive-news section.pre-footer-program p {
+  font-size: 20px; }
