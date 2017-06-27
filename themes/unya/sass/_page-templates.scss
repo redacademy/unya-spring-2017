@@ -64,7 +64,7 @@
 
 .nyc {
   text-align: right;
-  
+
   h2 {
 			margin:0px;
 			text-align: right;
@@ -302,7 +302,7 @@
 
 .single-success-banner{
   background-position: center;
-  
+
 }
 .single-success-image{
 
@@ -525,26 +525,26 @@
     }
   }
 }
-.prefooter{
-  height:395px;
-  margin-top: 50px;
+section.pre-footer{
+  height:175px;
   background:#00277E;
-  h2{
-   color:white;
-   padding-top:30px;
-  }
   p{
    color:white;
-   font-size:20px;
+   font-style:normal;
+   font-weight:normal;
+   margin:25px 29px;
+   text-align:center;
+   padding: 0 25px;
   }
 }
+
 .pre-footer button{
   background-color:#4263AB;
 }
 
 .fit-button{
   height: 50px;
-  width: 150px;
+  width: 200px;
   font-family: $font__heading;
   font-size: $heading__h3;
   font-weight: normal;

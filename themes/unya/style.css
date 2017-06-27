@@ -1745,23 +1745,23 @@ object {
       .news-articles .news-single:nth-child(odd) img {
         border-radius: 0 0 40px 0; } }
 
-.prefooter {
-  height: 395px;
-  margin-top: 50px;
+section.pre-footer {
+  height: 175px;
   background: #00277E; }
-  .prefooter h2 {
+  section.pre-footer p {
     color: white;
-    padding-top: 30px; }
-  .prefooter p {
-    color: white;
-    font-size: 20px; }
+    font-style: normal;
+    font-weight: normal;
+    margin: 25px 29px;
+    text-align: center;
+    padding: 0 25px; }
 
 .pre-footer button {
   background-color: #4263AB; }
 
 .fit-button {
   height: 50px;
-  width: 150px;
+  width: 200px;
   font-family: "poppins", sans-serif;
   font-size: 1.14286rem;
   font-weight: normal;
@@ -2508,11 +2508,13 @@ object {
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+  @media (min-width: 800px) {
+    .site-main .error-404 {
+      -ms-flex-pack: center;
+          justify-content: center; } }
   .site-main .error-404 .error-message-wrap {
-    padding: 200px 41px; }
-    @media (min-width: 800px) {
-      .site-main .error-404 .error-message-wrap {
-        padding: 385px 41px; } }
+    padding-top: 200px;
+    padding-left: 41px; }
   .site-main .error-404 h2.page-title {
     padding: 0;
     font-size: 20px;
@@ -2520,6 +2522,11 @@ object {
     font-weight: normal;
     color: #fff;
     width: 218px; }
+    @media (min-width: 800px) {
+      .site-main .error-404 h2.page-title {
+        font-size: 48px;
+        width: 100%;
+        margin: 0; } }
   .site-main .error-404 p {
     color: #fff;
     margin-top: 0px;
@@ -2528,6 +2535,9 @@ object {
     font-family: "worksans", sans-serif;
     font-style: normal;
     font-weight: normal; }
+    @media (min-width: 800px) {
+      .site-main .error-404 p {
+        font-size: 16px; } }
   .site-main .error-404 .button-container {
     height: 90px;
     background-color: #A70000;
@@ -2538,6 +2548,12 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
+    @media (min-width: 800px) {
+      .site-main .error-404 .button-container {
+        background-color: transparent;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+        margin-left: 41px; } }
   .site-main .error-404 a.link {
     background-color: #D13434;
     text-decoration: none;
@@ -2554,4 +2570,6 @@ object {
       .site-main .error-404 a.link {
         padding: 22px 18px;
         border-radius: 10px;
-        font-size: 18px; } }
+        font-size: 18px;
+        width: 337px;
+        height: 61px; } }

@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying the impact page.
- * 
+ *
  * @package UNYA_Theme
  */
  $args= array(
@@ -26,8 +26,8 @@ get_header(); ?>
 				<h2>Success Stories</h2>
 				<p>Learn more about the talented youth at UNYA, and the successes we celebrate.</p>
 		 	 	<?php foreach ( $success_story as $post ) : setup_postdata( $post ); ?>
-			<section class="single-story">  
-				<a href="<?php the_permalink() ?>"><img class="success-image" src="<?php echo CFS()->get( 'photo' ); ?>" cover></a>			
+			<section class="single-story">
+				<a href="<?php the_permalink() ?>"><img class="success-image" src="<?php echo CFS()->get( 'photo' ); ?>" cover></a>
 				<div class="success-content">
 				  <h3 class="hidden-mobile">Youth Feature - <?php the_title(); ?></h3>
 					<p class="hidden-mobile"><?php echo wp_kses(CFS()->get( 'first_half_of_story' ),array('br') ); ?></p>
@@ -35,29 +35,29 @@ get_header(); ?>
 						</i></p></a>
 	      </div>
 			</section>
-		  <?php endforeach; wp_reset_postdata(); ?> 
+		  <?php endforeach; wp_reset_postdata(); ?>
     </div>
   </section>
-	
+
 		<section class="statistics" id="statistics">
 			<h2 class="impact-head content-wrapper">Impacts</h2>
 		  <span class="infographics content-wrapper">
 			  <img class="infographic-1" src="<?php echo esc_url( CFS()->get( 'infographic_2' ) ); ?>">
 			  <img class="infographic-2 hidden-mobile" src="<?php echo esc_url( CFS()->get( 'infographic_1' ) ); ?>">
-		  </span>	
+		  </span>
 		</section>
-  
+
 		<section class="testimonials" id="testimonials">
 				<h2 class="content-wrapper">Testimonials</h2>
 				<p class="content-wrapper">What do youth say about us?</p>
-			  
+
 			    <div class="impact-polygon">
 				    <p class="content-wrapper"><?php echo wp_kses(CFS()->get( 'testimonial_1' ),array('br')); ?></p>
 				  </div>
-       
 
-			<div class="rectangle-container">	<p class="content-wrapper"><?php echo CFS()->get( 'testimonial_2' ); ?></p></div>	
-			
+
+			<div class="rectangle-container">	<p class="content-wrapper"><?php echo CFS()->get( 'testimonial_2' ); ?></p></div>
+
 		</section>
 
 		<section class="pre-footer">
