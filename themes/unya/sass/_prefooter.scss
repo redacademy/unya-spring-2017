@@ -68,6 +68,7 @@ section.pre-footer-program {
   font-family:$font__main;
   padding: 30px 0 30px 30px;
   @include desktop{
+    height:423px;
     padding-left:244px;
     display:flex;
     flex-wrap:wrap;
@@ -143,10 +144,16 @@ section.pre-footer-program {
    opacity:0.9;
    border-bottom-left-radius: 23px;
    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+   @include desktop{
+     height:150px;
+   }
  }
   img{
     height: 89.37px;
     width: 229.08px;
     padding-left:15px;
+    @include desktop{
+      height:130px;
+    }
   }
 }

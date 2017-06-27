@@ -2748,6 +2748,7 @@ section.pre-footer-program {
   padding: 30px 0 30px 30px; }
   @media (min-width: 800px) {
     section.pre-footer-program {
+      height: 423px;
       padding-left: 244px;
       display: -ms-flexbox;
       display: flex;
@@ -2815,7 +2816,13 @@ section.pre-footer-program {
     opacity: 0.9;
     border-bottom-left-radius: 23px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3); }
+    @media (min-width: 800px) {
+      section.pre-footer-program .logo-wrapper {
+        height: 150px; } }
   section.pre-footer-program img {
     height: 89.37px;
     width: 229.08px;
     padding-left: 15px; }
+    @media (min-width: 800px) {
+      section.pre-footer-program img {
+        height: 130px; } }
