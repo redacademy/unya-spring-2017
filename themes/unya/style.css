@@ -1424,9 +1424,12 @@ object {
   height: 350px;
   width: 100%;
   color: #FFF; }
+  .about-content .mission h3 {
+    padding-top: 75px;
+    color: #FFF; }
   .about-content .mission p {
-    width: 80%;
-    margin: 70px auto; }
+    width: 100%;
+    margin: 0; }
 
 .about-content .content-area ul {
   margin: 0;
