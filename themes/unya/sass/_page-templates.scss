@@ -109,6 +109,9 @@
 		h2 {
 			margin: 0;
 		 }
+     h3{
+       font-family:$font__main;
+     }
 	}
 }
 
@@ -529,16 +532,28 @@
 }
 
 //Pre-footers//
+.fit{
+  background:#00277E;
+  a{
+    background-color:#4263AB;
+  }
+}
+.donation{
+  background:#A70000;
+  a{
+    background-color:#D13434;
+  }
+}
 
 section.pre-footer{
   height:175px;
-  background:#00277E;
+  width:100%;
   display:flex;
   justify-content:center;
   align-items:center;
   flex-direction:column;
+  color:white;
   p{
-   color:white;
    font-size:$heading__h3;
    font-style:normal;
    font-weight:normal;
@@ -546,21 +561,17 @@ section.pre-footer{
    text-align:center;
    padding: 0 25px;
   }
-}
-.pre-footer button{
-  background-color:#4263AB;
+  h2 a{
+    padding:15px 60px;
+    border-radius:10px;
+    text-decoration: none;
+    text-transform:uppercase;
+    color:white;
+  }
 }
 
-.fit-button{
-  height: 50px;
-  width: 200px;
-  font-family: $font__heading;
-  font-size: $heading__h3;
-  font-weight: normal;
-  font-style: normal;
-  text-transform: uppercase;
-}
 //single program pre-footer//
+
 section.pre-footer-program{
   background-color:#00277E;
   height:456px;

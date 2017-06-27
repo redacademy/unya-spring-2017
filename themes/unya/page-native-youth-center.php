@@ -15,13 +15,13 @@ get_header(); ?>
 			</header>
 			<div>
 				<p class="header-subtext">We have a goal of $10 Million. Help us get a little closer today.</p>
-			</div>			
+			</div>
 
   <div class="image-carousel hidden-mobile">
     <?php $images = CFS()->get( 'nyc_image_slider' ); ?>
     <?php foreach ( $images as $image ) : ?>
-	  <div class="nyc-slide sidebar-start" 
-		  style='background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%), 
+	  <div class="nyc-slide sidebar-start"
+		  style='background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
 		  url(<?php echo $image['image']; ?>)';>
 		</div>
 	  <?php endforeach; ?>
@@ -43,7 +43,7 @@ get_header(); ?>
 				<section class="planning">
 					<header class="section-heading">
 						<h2>Planning and Development</h2>
-						<h4 class="planning-timeline hidden-mobile">Timeline of the development of the Native Youth Center.</h4>					
+						<h4 class="planning-timeline hidden-mobile">Timeline of the development of the Native Youth Center.</h4>
 					</header>
 					<div class="content-wrapper">
 						<ul>
@@ -57,8 +57,8 @@ get_header(); ?>
 										<p><?php echo wp_kses( $timeline_item['description'],array('br') ); ?></p>
 									</div>
 								</li>
-							<?php endforeach; ?> 	
-						</ul>	
+							<?php endforeach; ?>
+						</ul>
 					</div>
 					<div><?php echo $GLOBALS['wp_embed']->autoembed(esc_html(CFS()->get('featured_video'))) ?></div>
 				</section>
@@ -74,8 +74,8 @@ get_header(); ?>
 								<li class="partner">
 									<img src="<?php echo ( $partner['partner_logo'] ); ?>">
 								</li>
-							<?php endforeach; ?> 	
-						</ul>	
+							<?php endforeach; ?>
+						</ul>
 					</div>
 				</section>
 				<h2 class="accordion-label" id="ways-to-help">How to Help</h2>
@@ -104,10 +104,7 @@ get_header(); ?>
 					</div>
 				</section>
 			</div>
-			<div class="pre-footer">
-				<p class="pre-footer-text">Like what you see? Make your donation online today</p>
-				<a href="https://www.canadahelps.org/en/charities/urban-native-youth-association/">
-				  <button class="donate">Donate Today</button></a>
+				<?php get_template_part( 'template-parts/prefooter', 'donation' ); ?>
 			</div>
 
 
