@@ -7,7 +7,7 @@
 
 ?>
 		</div><!-- #content -->
-			<footer id="colophon" class="site-footer hidden-mobile" role="contentinfo">
+			<footer id="colophon" class="site-footer hidden-mobile sidebar-stop" role="contentinfo">
 				<div class="newsletter-sign-up footer-flex">
 					<h4 class="hidden-mobile">Sign up for our updates!</h4>
 					<button class="hidden-desktop sign-up-btn"><h4>Sign up for updates</h4></button>

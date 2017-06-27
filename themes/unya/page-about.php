@@ -88,7 +88,7 @@ get_header(); ?>
 					</ul>
 				</div>
 			</section>
-			<h2 class="accordion-label" id="find-us">Find Us</h2>
+			<h2 class="accordion-label sidebar-stop" id="find-us">Find Us</h2>
 			<section class="find-us">
 					<header class="section-heading hidden-mobile">
 						<h2>Find Us</h2>
