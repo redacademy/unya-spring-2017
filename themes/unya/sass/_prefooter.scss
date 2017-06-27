@@ -169,3 +169,15 @@ section.pre-footer-program {
     font-size:20px;
   }
 }
+
+section.opportunities-pre-footer{
+  @include desktop{
+    height:100px;
+    margin:0 auto;
+  }
+  p{
+    font-size:20px;
+    text-align:center;
+    width:100%;
+  }
+}

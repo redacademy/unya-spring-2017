@@ -7,7 +7,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main opportunity-content" role="main">
 
 		<header class="header-wrapper get-involved-title sidebar-start">
 			<h1>Get Involved</h1>
@@ -101,8 +101,8 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<section class="pre-footer fit">
-		<p>Please email info@unya.bc.ca for additional job opportunities.</p>
+	<section class="pre-footer fit-button opportunities-pre-footer">
+		<p>Please email info@unya.bc.ca for additional job opportunities, <span class="hidden-mobile">or to be added to our email list. </span></p>
 	</section>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

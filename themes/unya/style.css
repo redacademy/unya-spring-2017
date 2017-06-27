@@ -2842,3 +2842,13 @@ section.pre-footer-program {
 
 .post-type-archive-news section.pre-footer-program p {
   font-size: 20px; }
+
+@media (min-width: 800px) {
+  section.opportunities-pre-footer {
+    height: 100px;
+    margin: 0 auto; } }
+
+section.opportunities-pre-footer p {
+  font-size: 20px;
+  text-align: center;
+  width: 100%; }
