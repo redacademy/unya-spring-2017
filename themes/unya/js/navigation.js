@@ -24,7 +24,28 @@
       $('.site-footer').toggleClass('expanded');
       $('.site-content').toggleClass('collapsed');
       $('.site-footer').toggleClass('hidden-mobile');
-    })
+
+      var btn = $('.sign-up-btn');
+      var subscribeArea = $('.subscription-form');
+
+      // displays form when sign up button clicked
+      btn.on('click', function(event) {
+        event.preventDefault();
+        btn.css('display', 'none');
+        $('.newsletter-sign-up').addClass('open-form');
+        subscribeArea.removeClass('hidden-mobile').addClass('display-form');
+        $('.close-form').prepend('<i class="fa fa-times" aria-hidden="true"></i>');
+      });
+
+      // hides form when close button is clicked
+      $('.close-form').on('click', function() {
+        btn.css('display', 'initial');
+        $('.newsletter-sign-up').removeClass('open-form');
+        subscribeArea.removeClass('display-form').addClass('hidden-mobile');
+        $('.close-form').empty();
+      });
+
+    });
     
     $('.menu-gradient').hide();
     if (window.innerWidth <= 800) {
@@ -110,32 +131,7 @@
 
     });
 
-    var btn = $('.sign-up-btn');
-    var subscribeArea = $('.subscription-form');
-    var form = $('.wpcf7-submit');
 
-    // displays form when sign up button clicked
-    btn.on('click', function(event) {
-      event.preventDefault();
-      btn.css('display', 'none');
-      $('.newsletter-sign-up').addClass('open-form');
-      subscribeArea.removeClass('hidden-mobile').addClass('display-form');
-      $('.close-form').prepend('<i class="fa fa-times" aria-hidden="true"></i>');
-    });
-
-    // hides form when close button is clicked
-    $('.close-form').on('click', function() {
-      btn.css('display', 'initial');
-      $('.newsletter-sign-up').removeClass('open-form');
-      subscribeArea.removeClass('display-form').addClass('hidden-mobile');
-      $('.close-form').empty();
-      form.prop('value', 'sign up');
-    });
-
-    // changes button message on submit if successful
-    form.on('click', function() {
-      form.prop('value', 'signed up');
-    });
 
 
   });
