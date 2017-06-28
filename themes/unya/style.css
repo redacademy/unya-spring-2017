@@ -2034,7 +2034,6 @@ object {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
   .site-footer .open-form {
-    display: none;
     position: absolute;
     height: 100%; }
   .site-footer .ctct-form-wrapper .success {

@@ -34,7 +34,7 @@
         btn.css('display', 'none');
         $('.newsletter-sign-up').addClass('open-form');
         subscribeArea.removeClass('hidden-mobile').addClass('display-form');
-        $('.close-form').css('display', 'static');
+        $('.close-form').css('display', 'initial');
       });
 
       // hides form when close button is clicked
