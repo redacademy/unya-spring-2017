@@ -34,7 +34,7 @@
         btn.css('display', 'none');
         $('.newsletter-sign-up').addClass('open-form');
         subscribeArea.removeClass('hidden-mobile').addClass('display-form');
-        $('.close-form').prepend('<i class="fa fa-times" aria-hidden="true"></i>');
+        $('.close-form').css('display', 'static');
       });
 
       // hides form when close button is clicked
@@ -42,7 +42,7 @@
         btn.css('display', 'initial');
         $('.newsletter-sign-up').removeClass('open-form');
         subscribeArea.removeClass('display-form').addClass('hidden-mobile');
-        $('.close-form').empty();
+        $('.close-form').css('display', 'none');
       });
 
     });
