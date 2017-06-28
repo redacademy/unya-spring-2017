@@ -279,7 +279,7 @@ a {
 		text-decoration: none;
 	}
 	.subscription-form.display-form{
-		height: 30vh;
+		height: 100%;
 	}
 }
 
@@ -492,13 +492,24 @@ a {
 }
 
 .planning {
+
+	@include desktop {
+		margin-top: 4rem;
+	}
+	
 	.section-heading {
 		display: flex;
-		flex-direction: column;
+
+		@include desktop {
+			flex-direction: column;
+		}
+
 		h2 {
-			width:600px;
 			text-align: left;
 			margin-bottom: 0;
+			@include desktop {
+				margin: 0;
+			}
 		}
 		h4 {
 			padding: $content-wrapper-desktop;

@@ -118,7 +118,7 @@
     btn.on('click', function(event) {
       event.preventDefault();
       btn.css('display', 'none');
-      $('.newsletter-sign-up').css('position', 'absolute');
+      $('.newsletter-sign-up').addClass('open-form');
       subscribeArea.removeClass('hidden-mobile').addClass('display-form');
       $('.close-form').prepend('<i class="fa fa-times" aria-hidden="true"></i>');
     });
@@ -126,7 +126,7 @@
     // hides form when close button is clicked
     $('.close-form').on('click', function() {
       btn.css('display', 'initial');
-      $('.newsletter-sign-up').css('position', 'static');
+      $('.newsletter-sign-up').removeClass('open-form');
       subscribeArea.removeClass('display-form').addClass('hidden-mobile');
       $('.close-form').empty();
       form.prop('value', 'sign up');

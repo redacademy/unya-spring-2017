@@ -97,7 +97,7 @@
       text-align: right;
       position: absolute;
       top:0;
-      right:0;
+      right: -40px;
 
       i.fa.fa-times:before {
         padding-right: 50px;
@@ -116,6 +116,22 @@
       flex-wrap:wrap;
       } // close desktop
     } //close newsletter sign nav-up:
+
+.open-form {
+  position: absolute;
+  height: 100%;
+}
+
+.ctct-form-wrapper .success {
+  border-color: #1b7926;
+  border-radius: 10px;
+  height: 3.5rem;
+
+  @include desktop {
+    height: 4.5rem;
+    text-align: center;
+  }
+}
 
 //social media links section
   .social-links {

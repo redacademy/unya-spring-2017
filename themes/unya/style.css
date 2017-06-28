@@ -807,7 +807,7 @@ a {
   .site-footer.expanded a {
     text-decoration: none; }
   .site-footer.expanded .subscription-form.display-form {
-    height: 30vh; }
+    height: 100%; }
 
 .menu-gradient {
   background: rgba(255, 255, 255, 0.6);
@@ -976,15 +976,23 @@ a {
 .brief-history {
   padding: 4rem 0 4rem 0; }
 
+@media (min-width: 800px) {
+  .planning {
+    margin-top: 4rem; } }
+
 .planning .section-heading {
   display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
+  display: flex; }
+  @media (min-width: 800px) {
+    .planning .section-heading {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
   .planning .section-heading h2 {
-    width: 600px;
     text-align: left;
     margin-bottom: 0; }
+    @media (min-width: 800px) {
+      .planning .section-heading h2 {
+        margin: 0; } }
   .planning .section-heading h4 {
     padding: 0 15.71429rem 0 17.42857rem;
     margin-top: 0; }
@@ -1562,6 +1570,7 @@ object {
       text-decoration: none; }
       @media (min-width: 800px) {
         .success-stories .content-wrapper .single-story a {
+          width: 75%;
           padding: 0 2rem 0 1rem;
           position: relative; } }
       @media (min-width: 800px) {
@@ -2006,7 +2015,7 @@ object {
       text-align: right;
       position: absolute;
       top: 0;
-      right: 0; }
+      right: -40px; }
       .site-footer .newsletter-sign-up .close-form i.fa.fa-times:before {
         padding-right: 50px;
         font-size: 25px; }
@@ -2024,6 +2033,17 @@ object {
             flex-direction: row;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
+  .site-footer .open-form {
+    position: absolute;
+    height: 100%; }
+  .site-footer .ctct-form-wrapper .success {
+    border-color: #1b7926;
+    border-radius: 10px;
+    height: 3.5rem; }
+    @media (min-width: 800px) {
+      .site-footer .ctct-form-wrapper .success {
+        height: 4.5rem;
+        text-align: center; } }
   .site-footer .social-links {
     -ms-flex-order: 3;
         order: 3;
@@ -2452,7 +2472,11 @@ object {
           flex-basis: 48%; } }
 
 .single-program .image-carousel {
+  display: none;
   width: 100%; }
+  @media (min-width: 800px) {
+    .single-program .image-carousel {
+      display: block; } }
 
 /* Get Involved page */
 section.donation {
