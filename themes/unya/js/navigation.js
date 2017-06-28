@@ -59,82 +59,83 @@
     });
 
      // sidebar positioning on scroll
-    var $bottomOfHeader = $('.sidebar-start').offset().top + $('.sidebar-start').height();
-    var $sidebarMenu = $('#secondary .menu-primary-menu-container');
-    var $sidebarArea = $('.sidebar-nav-menu');
-    var $menuItem = $('.sidebar-menu-container .menu-item a');
-    var $menuHeight = $sidebarMenu.height() + $('.site-header').height();
+    var bottomOfHeader = $('.sidebar-start').offset().top + $('.sidebar-start').height();
+    var sidebarMenu = $('#secondary .menu-primary-menu-container');
+    var sidebarArea = $('.sidebar-nav-menu');
+    var menuItem = $('.sidebar-menu-container .menu-item a');
+    var menuHeight = sidebarMenu.height() + $('.site-header').height();
 
-    $sidebarMenu.css('top', $('.site-header').height() + $bottomOfHeader);
+    sidebarMenu.css('top', $('.site-header').height() + bottomOfHeader);
     $('.site-content').css('padding-top', $('.site-header').height());
 
     //on window resize moves sidebar
     $(window).resize(function() {
-      $bottomOfHeader = $('.sidebar-start').offset().top + $('.sidebar-start').height();
-      $sidebarMenu.removeAttr('style').css('top', $bottomOfHeader);
+     bottomOfHeader = $('.sidebar-start').offset().top + $('.sidebar-start').height();
+      sidebarMenu.removeAttr('style').css('top',bottomOfHeader);
       $('.site-content').css('padding-top', $('.site-header').height());
     });
 
     function fixSidebar(position) {
-      $bottomOfHeader = $('.sidebar-start').offset().top + $('.sidebar-start').height();
-      if ( position > $bottomOfHeader && position + $menuHeight < $('.sidebar-stop').offset().top ) {
-        $sidebarMenu.css('position', 'fixed');
-        $sidebarMenu.css('top', $('.site-header').height());
-      } else if ( $menuHeight + position > $('.sidebar-stop').offset().top ) {
-        $sidebarMenu.css('position', 'absolute');
+     bottomOfHeader = $('.sidebar-start').offset().top + $('.sidebar-start').height();
+      if ( position >bottomOfHeader && position + menuHeight < $('.sidebar-stop').offset().top ) {
+        sidebarMenu.css('position', 'fixed');
+        sidebarMenu.css('top', $('.site-header').height());
+      } else if ( menuHeight + position > $('.sidebar-stop').offset().top ) {
+        sidebarMenu.css('position', 'absolute');
       } else {
-        $sidebarMenu.css('position', 'absolute');
-        $sidebarMenu.css('top', $bottomOfHeader);
+        sidebarMenu.css('position', 'absolute');
+        sidebarMenu.css('top',bottomOfHeader);
       }
     }
 
     $(document).scroll(function() {
       var $position = $(this).scrollTop();
-      if ($sidebarArea.length) {
+      if (sidebarArea.length) {
         fixSidebar($position);
       }
     });
 
     // Smooth scrolling to anchors on the page
-      $menuItem.on('click', function(event) {
+    menuItem.on('click', function(event) {
+    event.preventDefault();
+
+      var $menuLink = $(this.hash);
+      menuItem = $menuLink.length ? $menuLink : $('[name=' + this.hash.slice(1) +']');
+      if (menuItem.length) {
+        $('html, body').animate({
+          scrollTop: $menuLink.offset().top
+        }, 500);
+        return false;
+      }
+
+    });
+
+    var btn = $('.sign-up-btn');
+    var subscribeArea = $('.subscription-form');
+    var form = $('.wpcf7-submit');
+
+    // displays form when sign up button clicked
+    btn.on('click', function(event) {
       event.preventDefault();
+      btn.css('display', 'none');
+      $('.newsletter-sign-up').css('position', 'absolute');
+      subscribeArea.removeClass('hidden-mobile').addClass('display-form');
+      $('.close-form').prepend('<i class="fa fa-times" aria-hidden="true"></i>');
+    });
 
-        var $menuLink = $(this.hash);
-        $menuItem = $menuLink.length ? $menuLink : $('[name=' + this.hash.slice(1) +']');
-        if ($menuItem.length) {
-          $('html, body').animate({
-            scrollTop: $menuLink.offset().top
-          }, 500);
-          return false;
-        }
+    // hides form when close button is clicked
+    $('.close-form').on('click', function() {
+      btn.css('display', 'initial');
+      $('.newsletter-sign-up').css('position', 'static');
+      subscribeArea.removeClass('display-form').addClass('hidden-mobile');
+      $('.close-form').empty();
+      form.prop('value', 'sign up');
+    });
 
-      });
-      var $btn = $('.sign-up-btn');
-      var $subscribeArea = $('.subscription-form');
-      var $form = $('.wpcf7-submit');
-
-      // displays form when sign up button clicked
-      $btn.on('click', function(event) {
-        event.preventDefault();
-        $btn.css('display', 'none');
-        $('.newsletter-sign-up').css('position', 'absolute');
-        $subscribeArea.removeClass('hidden-mobile').addClass('display-form');
-        $('.close-form').prepend('<i class="fa fa-times" aria-hidden="true"></i>');
-      });
-
-      // hides form when close button is clicked
-      $('.close-form').on('click', function() {
-        $btn.css('display', 'initial');
-        $('.newsletter-sign-up').css('position', 'static');
-        $subscribeArea.removeClass('display-form').addClass('hidden-mobile');
-        $('.close-form').empty();
-        $form.prop('value', 'sign up');
-      });
-
-      // changes button message on submit if successful
-      $form.on('click', function() {
-        $form.prop('value', 'signed up');
-      });
+    // changes button message on submit if successful
+    form.on('click', function() {
+      form.prop('value', 'signed up');
+    });
 
 
   });
