@@ -849,7 +849,7 @@ a {
     border: none !important; }
 
 .ui-accordion .ui-accordion-content {
-  padding: 0; }
+  padding: 0 !important; }
 
 .menu-item-has-children .sub-menu .menu-item {
   width: 100vw; }
@@ -917,7 +917,7 @@ a {
     color: #fff;
     margin-bottom: 0; }
   .leadership .section-heading h4 {
-    margin-left: 0 15.71429rem 0 17.42857rem;
+    margin-left: 15.7rem;
     margin-top: 0; }
 
 .leadership ul {
@@ -1346,55 +1346,50 @@ object {
     .slick-frame.slick-initialized > .generic-item-wrap-class {
       visibility: visible; }
 
-@media (min-width: 800px) {
-  .nyc-content .image-carousel {
+.nyc-content .image-carousel {
+  display: none; }
+  @media (min-width: 800px) {
+    .nyc-content .image-carousel {
+      display: -ms-flexbox;
+      display: flex; } }
+  .nyc-content .image-carousel .image-container {
+    position: relative;
+    height: 750px;
+    width: 100%; }
+  .nyc-content .image-carousel .gradient {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(74, 74, 74, 0.7) 0%, rgba(74, 74, 74, 0.7) 100%);
+    z-index: 4; }
+  .nyc-content .image-carousel .image-quote {
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    color: #FFF;
+    font-family: "poppins", sans-serif;
+    font-size: 1.28571rem;
+    z-index: 5; }
+  .nyc-content .image-carousel img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto; }
+  .nyc-content .image-carousel .slick-prev:before, .nyc-content .image-carousel .slick-next:before {
+    color: #FFF; }
+  .nyc-content .image-carousel .hide {
+    color: transparent; }
+  .nyc-content .image-carousel .slick-dots {
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .nyc-content .image-carousel .slick-dots li button {
+      background: #FFF; }
 
-.nyc-content .image-carousel .image-container {
-  position: relative;
-  height: 750px;
-  width: 100%; }
-
-.nyc-content .image-carousel .gradient {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  position: absolute;
-  background-image: linear-gradient(to bottom, rgba(74, 74, 74, 0.7) 0%, rgba(74, 74, 74, 0.7) 100%);
-  z-index: 4; }
-
-.nyc-content .image-carousel .image-quote {
-  padding: 2rem;
-  position: absolute;
-  top: 0;
-  color: #FFF;
-  font-family: "poppins", sans-serif;
-  font-size: 1.28571rem;
-  z-index: 5; }
-
-.nyc-content .image-carousel img {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: auto; }
-
-.nyc-content .image-carousel .slick-prev {
+.slick-prev {
   z-index: 10; }
-
-.nyc-content .image-carousel .slick-prev:before, .nyc-content .image-carousel .slick-next:before {
-  color: #FFF; }
-
-.nyc-content .image-carousel .hide {
-  color: transparent; }
-
-.nyc-content .image-carousel .slick-dots {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .nyc-content .image-carousel .slick-dots li button {
-    background: #FFF; }
 
 .single-program .slick-track {
   height: 750px; }
@@ -2387,7 +2382,7 @@ object {
   @media (min-width: 800px) {
     .single-program .header-wrapper {
       padding: 0;
-      background: linear-gradient(to bottom, rgba(66, 99, 171, 0.7) 0%, rgba(66, 99, 171, 0.7) 100%), url("../../assets/images/julie.png") center/cover no-repeat; } }
+      background: linear-gradient(to bottom, rgba(66, 99, 171, 0.7) 0%, rgba(66, 99, 171, 0.7) 100%), url("../../assets/images/Julie.png") center/cover no-repeat; } }
 
 .single-program article {
   display: -ms-flexbox;

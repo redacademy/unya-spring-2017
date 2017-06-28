@@ -331,7 +331,7 @@ a {
 
 //remove extra padding from content
 .ui-accordion .ui-accordion-content {
-	padding:  0;
+	padding:  0 !important;
 }
 .menu-item-has-children {
 	.sub-menu {
