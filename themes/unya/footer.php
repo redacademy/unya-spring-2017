@@ -13,7 +13,7 @@
 					<button class="hidden-desktop sign-up-btn"><h4>Sign up for updates</h4></button>
 					<div class="subscription-form hidden-mobile">
 						<?php echo do_shortcode( '	[ctct form="273"]' ); ?>
-						<div class="close-form"></div>
+						<div class="close-form"><i class="fa fa-times" aria-hidden="true"></i></div>
 					</div>
 				</div><!-- newsletter -->
 				<div class="social-links footer-flex">
