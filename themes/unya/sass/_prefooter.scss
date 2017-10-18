@@ -140,6 +140,7 @@ section.pre-footer-program {
      margin:33.4px 0px;
    }
  }
+ 
  .logo-wrapper{
    height: 102.22px;
    width: 100%;
@@ -151,12 +152,15 @@ section.pre-footer-program {
      height:150px;
    }
  }
+
   img{
     height: 89.37px;
-    width: 229.08px;
+    width: auto;
     padding-left:15px;
+
     @include desktop{
       height:130px;
+      width: auto;
     }
   }
 }
