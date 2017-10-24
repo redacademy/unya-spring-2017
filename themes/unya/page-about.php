@@ -80,7 +80,7 @@ get_header(); ?>
 								<div class="image-wrapper"><i class="fa fa-file-o" aria-hidden="true"></i></div>
 								<div class="text-wrapper">
 									<p class="report-title"><?php echo esc_html( $report['report_title'] ); ?></p>
-									<p><?php echo esc_html( $report['report_description'] ); ?></p>
+									<p class="report-description"><?php echo esc_html( $report['report_description'] ); ?></p>
 									<a class="report-link" href="<?php echo esc_html( $report['report_file_link'] ); ?>">Download report (PDF) &rarr;</a>
 								</div>
 							</li>
