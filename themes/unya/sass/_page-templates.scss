@@ -179,6 +179,73 @@
   }
 }
 
+.reports {
+	.section-heading {
+		background: $color__grey-dark;
+		h2 {
+			color: #fff;
+		}
+	}
+	ul {
+    margin: 0;
+    padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+    list-style: none;
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+
+    i {
+      font-size: 2.3rem;
+		}
+
+    .image-wrapper {
+      display: none;
+			padding-top: 2rem;
+    }
+
+		.text-wrapper {
+      width: 100%;
+      padding: 0.5rem;
+
+			p {
+        margin: 0;
+        font-size: $heading__h4;
+      }
+      
+      p, .report-link {
+        padding: 0.1rem 0;
+      }
+
+      .report-title {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      .report-link {
+        color: $color__heading-red;
+        display: block;
+        font-size: $heading__h4;
+        font-weight: bold;
+        text-align: right;
+      }
+    }
+    
+		li {
+			display: flex;
+			justify-content: space-around;
+      flex-basis: 100%;
+      box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.2);
+      border-radius: 8px 8px 8px 20px;
+      
+			@include desktop {
+				flex-basis: 50%;
+			}
+		}
+	}
+}
+
 /* Impact page */
 .success-stories{
   .content-wrapper{
