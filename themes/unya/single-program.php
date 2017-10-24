@@ -25,25 +25,25 @@ get_header(); ?>
 		<?php endwhile; // End of the loop. ?>
 
 
-		<section class="pre-footer-program">
-			<h4 class="prefooter-heading">Get involved with Kinnections</h4>
+		<section class="pre-footer-program sidebar-stop">
+			<h4 class="prefooter-heading">Get involved with <?php echo CFS()->get( 'program_name' ); ?></h4>
 			<div class="pre-footer-program-container">
-				<h5 class="prefooter-subheading"> Contact Kinnections at:</h5>
+				<h5 class="prefooter-subheading"> Contact <?php echo CFS()->get( 'program_name' ); ?> at:</h5>
 				<div class="contact-wrapper">
-					<p><span class="fa fa-map-marker" aria-hidden="true"></span>1618 East Hastings Street,</p>
-					<p class="city">Vancouver, BC, V5L 1S6</p>
+					<p><span class="fa fa-map-marker" aria-hidden="true"></span><?php echo CFS()->get( 'program_address' ); ?></p>
+					<p class="city"><?php echo CFS()->get( 'program_address2' ); ?></p>
 				</div>
 				<div class="contact-wrapper">
-					<p><span class="fa fa-phone" aria-hidden="true"></span>604-254-7732</p>
-					<p><span class="fa fa-fax" aria-hidden="true"></span>604-254-7811</p>
-					<p><span class="fa fa-envelope-o" aria-hidden="true"></span>Kinnections@unya.bc.ca</p>
+					<p><span class="fa fa-phone" aria-hidden="true"></span><?php echo CFS()->get( 'program_phone_number' ); ?></p>
+					<p><span class="fa fa-fax" aria-hidden="true"></span><?php echo CFS()->get( 'program_fax_number' ); ?></p>
+					<p><span class="fa fa-envelope-o" aria-hidden="true"></span><?php echo CFS()->get( 'program_email' ); ?></p>
 				</div>
 			</div>
 
 			<div class="pre-footer-program-logo-container">
 				<p class="pre-footer-logo-header">Program kindly funded by:</p>
 				<div class="logo-wrapper">
-					<img src="<?php echo get_stylesheet_directory_uri()?>/assets/images/britishcolumbia_logo.png" alt="british columbia logo">
+					<img src="<?php echo CFS()->get( 'funder_logo' ); ?>">
 				</div>
 			</div>
 		</section>
