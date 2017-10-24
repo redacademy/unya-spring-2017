@@ -443,42 +443,6 @@ a {
 	}
 }
 
-.reports {
-	.section-heading {
-		background: $color__grey-dark;
-		h2 {
-			color: #fff;
-		}
-	}
-	ul {
-		display: flex;
-		flex-wrap: wrap;
-		list-style: none;
-		-webkit-margin-before: 0;
-		-webkit-margin-after: 0;
-		-webkit-padding-start: 0;
-		i {
-			font-size: 2.3rem;
-		}
-		.image-wrapper {
-			padding-top: 2rem;
-		}
-		.text-wrapper {
-			p {
-				margin-bottom: 0.25rem;
-			}
-		}
-		li {
-			display: flex;
-			justify-content: space-around;
-			flex-basis: 100%;
-			@include desktop {
-				flex-basis: 50%;
-			}
-		}
-	}
-}
-
 .find-us {
 	.section-heading {
 		background: $color__red-medium;

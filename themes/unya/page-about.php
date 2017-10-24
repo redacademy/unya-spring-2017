@@ -69,9 +69,9 @@ get_header(); ?>
 			</section>
 			<h2 class="accordion-label" id="reports">Reports</h2>
 			<section class="reports">
-					<header class="section-heading hidden-mobile">
-						<h2>Reports</h2>
-					</header>
+				<header class="section-heading hidden-mobile">
+					<h2>Reports</h2>
+				</header>
 				<div class="content-wrapper">
 					<?php $reports = CFS()->get( 'reports' ); ?>
 					<ul>
@@ -79,9 +79,9 @@ get_header(); ?>
 							<li class="report-item">
 								<div class="image-wrapper"><i class="fa fa-file-o" aria-hidden="true"></i></div>
 								<div class="text-wrapper">
-									<p><?php echo esc_html( $report['report_title'] ); ?></p>
-									<p><?php echo esc_html( $report['report_description'] ); ?></p>
-									<a href="<?php echo esc_html( $report['report_file_link'] ); ?>">Download report [PDF] &rarr;</a>
+									<p class="report-title"><?php echo esc_html( $report['report_title'] ); ?></p>
+									<p class="report-description"><?php echo esc_html( $report['report_description'] ); ?></p>
+									<a class="report-link" href="<?php echo esc_html( $report['report_file_link'] ); ?>">Download report (PDF) &rarr;</a>
 								</div>
 							</li>
 						<?php endforeach; ?>
