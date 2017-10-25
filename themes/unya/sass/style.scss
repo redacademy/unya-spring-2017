@@ -57,7 +57,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "typography";
 @import "elements";
 @import "forms";
-@import "page-templates";
 @import "navigation";
 @import "modules";
 @import "widgets";
@@ -65,7 +64,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media";
 @import "footer";
 @import "calendar";
-@import "programs";
-@import "get-involved";
+@import "page-about";
+@import "page-programs";
+@import "page-impact";
+@import "page-nyc";
+@import "page-news";
+@import "page-get-involved";
 @import "404";
-@import "prefooter";

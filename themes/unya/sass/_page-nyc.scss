@@ -1,0 +1,101 @@
+/* Native Youth Centre */
+.header-wrapper-nyc {
+  @include desktop {
+    p{
+      padding-left:3.5714285714rem;
+      color:white;
+      margin-top:0;
+      font-size:2.1428571429rem;
+    }
+  }
+}
+
+.nyc-content {
+  .nyc-banner {
+    height:23.214285714rem;
+    width:100%;
+    p {
+      text-align: right;
+      width:80%;
+      margin: 30px 15%;
+      color:white;
+    }
+  }
+  .planning {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+  .timeline-item {
+    display: flex;
+  }
+  .year-wrapper {
+    flex-basis: 20%;
+  }
+  .timeline-year {
+    font-family: $font__heading;
+  }
+  .description-wrapper {
+    flex-basis: 80%;
+  }
+}
+
+.ways-to-help {
+	h4 {
+		font-size: $desktop__h4;
+	}
+	h5 {
+		font-size: $desktop__main;
+		&::before {
+			content: "\f105";
+			font-family: "FontAwesome";
+			color: #fff;
+			position: relative;
+			right: 0.7rem;
+		}
+	}
+	.section-heading {
+		background: $color__red-dark;
+		h2 {
+			color: #fff;
+		}
+	}
+	background: $color__red-medium;
+	color: #fff;
+}
+
+.timeline-item {
+	.timeline-year {
+		font-size: 2.3rem;
+		padding-right: 1rem;
+	}
+}
+
+.planning {
+  
+    @include desktop {
+      margin-top: 4rem;
+    }
+    
+    .section-heading {
+      display: flex;
+  
+      @include desktop {
+        flex-direction: column;
+      }
+  
+      h2 {
+        text-align: left;
+        margin-bottom: 0;
+        @include desktop {
+          margin: 0;
+        }
+      }
+      h4 {
+        padding: $content-wrapper-desktop;
+        margin-top: 0;
+      }
+    }
+  }
