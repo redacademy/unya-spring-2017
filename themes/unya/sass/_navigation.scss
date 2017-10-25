@@ -413,36 +413,6 @@ a {
 	}
 }
 
-.leadership {
-	.section-heading {
-		background: $color__blue-dark;
-		color: #fff;
-		display: flex;
-		flex-direction: column;
-		h2 {
-			color: #fff;
-			margin-bottom: 0;
-		}
-		h4 {
-			margin-left: 17.4rem;
-			margin-top: 0;
-		}
-	}
-	ul {
-		display: flex;
-		flex-wrap: wrap;
-		-webkit-margin-before: 0;
-		-webkit-margin-after: 0;
-		-webkit-padding-start: 0;
-		li {
-			flex-basis: 100%;
-			@include desktop {
-				flex-basis: 50%;
-			}
-		}
-	}
-}
-
 .find-us {
 	.section-heading {
 		background: $color__red-medium;
@@ -451,9 +421,7 @@ a {
 		} 
 	}
 }
-.brief-history {
-	padding: 4rem 0 4rem 0;
-}
+
 
 .planning {
 

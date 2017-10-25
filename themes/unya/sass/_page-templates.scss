@@ -122,17 +122,29 @@
 
 /* About page */
 .about-content{
-  .vision{
+  
+  @include desktop {
+    .vision, .philosophy, .brief-history {
+      height: 350px;
+  
+      h2 {
+        margin-top: 0;
+        padding-top: 50px;
+      }
+    }
+  }
+  
+  .vision {
     h3{
       color: $color__grey-dark;
     }
   }
-  .mission{
-    height:350px;
+
+  .philosophy {
     width:100%;
     color: #FFF;
-    h3{
-      padding-top:75px;
+    
+    h2{
       color:#FFF;
     }
     p{
@@ -140,11 +152,55 @@
       margin:0;
 	  }
   }
+
+  .brief-history {
+    padding: 4rem 0 4rem 0;
+  }
+
   .content-area{
     ul{
         margin: 0;
         padding: 1.8571428571rem 0;
         list-style: none;
+    }
+  }
+
+  .leadership {
+    .section-heading {
+      background: $color__blue-dark;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        margin-top: 50px;
+        margin-bottom: 0;
+        color: #fff;
+      }
+      h4 {
+        margin-left: 17.4rem;
+        margin-top: 0;
+      }
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0;
+      -webkit-padding-start: 0;
+      li {
+        flex-basis: 100%;
+        @include desktop {
+          flex-basis: 50%;
+        }
+      }
+    }
+  }
+
+  .leadership ul {
+    
+    @include desktop {
+      margin: 0;
+      padding: 20px 0;
     }
   }
 

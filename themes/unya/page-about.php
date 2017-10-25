@@ -23,14 +23,14 @@ get_header(); ?>
 			<div>
 				<section class="vision">
 					<div class="content-wrapper">
-						<h3>Vision</h3>
+						<h2>Vision &amp; Mission</h2>
 						<p><?php echo wp_kses( CFS()->get( 'vision' ),array('br') ); ?></p>
 					</div>
 				</section>
-				<section class="mission" id="mission">
+				<section class="philosophy" id="philosophy">
 					<div class="content-wrapper">
-						<h3>Mission</h3>
-						<p><?php echo wp_kses( CFS()->get( 'mission' ),array('br') ); ?></p>
+						<h2>Philosophy of Care</h2>
+						<p><?php echo wp_kses( CFS()->get( 'philosophy' ),array('br') ); ?></p>
 					</div>
 				</section>
 			</div>
