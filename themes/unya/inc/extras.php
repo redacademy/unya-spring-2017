@@ -125,7 +125,7 @@ function unya_hero_banners() {
             background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
             url('$nativeyouthcenterbanner');
         }
-        .mission{
+        .philosophy{
             background-image: linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
             url('$aboutpolygon');
         }

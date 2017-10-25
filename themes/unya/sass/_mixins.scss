@@ -13,7 +13,13 @@
 
 @mixin desktop {
 	@media (min-width: $desktop__min-width) {
-		@content
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: $mobile__min-width) {
+		@content;
 	}
 }
 

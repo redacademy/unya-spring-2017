@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+// Note: Styles that span multiple pages, and home page styles.
 
 // To center the content on the page
 .page-id-37, .page-id-76, .page-id-171, .page-id-99 {
@@ -50,12 +51,102 @@
   justify-content: center;
 
 	h2 {
+		margin-top: 50px;
 		width: 85%;
 
 		@include desktop {
-			margin-left: 17.428571429rem;
+			width: 100%;
+			padding-left: 17.428571429rem;
 		}
 	}
+}
+
+
+/* All pages */
+.header-wrapper{
+  height: 4.2142857143rem;
+  background-image: none;
+  background-color:$color__heading-blue;
+  display: flex;
+  align-items: center;
+  @include desktop{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 25rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    h1{
+      margin-bottom:0;
+      padding-left: 8.7142857143rem;;
+      width: 100%;
+      font-weight: 600;
+    }
+  }
+}
+
+.nyc{
+  text-align: right;
+  h2{
+		margin:0px;
+		text-align: right;
+	}
+  p{
+    margin-left:50px;
+    text-align: right;
+  }
+  a{
+    text-align: right;
+  }
+}
+
+.about, .nyc, .programs{
+  display: flex;
+  justify-content: center;
+
+  .content-wrapper{
+    padding-top: 4.9285714286rem;
+  }
+  h2{
+		margin:0px;
+    color: #FFF;
+    text-transform: uppercase;
+  }
+  p{
+    color:white;
+  }
+
+  @include desktop{
+    p{
+      font-size: 1.1428571429rem;
+    }
+  }
+}
+
+.programs{
+	.content-wrapper{
+		h2{
+			margin: 0;
+		 }
+     h3{
+       font-family:$font__main;
+    }
+  }
+}
+
+@include desktop{
+  .about, .programs{
+    .content-wrapper {
+      padding: 17.785714286rem 44.285714286rem 0 8.7142857143rem;
+    }
+  }
+
+  .nyc{
+    .content-wrapper{
+      padding: 17.785714286rem 8.7142857143rem 0 44.285714286rem;
+    }
+  }
 }
 
 .sticky {
@@ -100,4 +191,41 @@
 }
 .bypostauthor {
 	display: block;
+}
+
+/* Front Page */
+.homepage-links {
+  text-decoration: none;
+
+  h3 {
+    text-transform: uppercase;
+    color: white;
+    @include desktop{
+      padding: 1rem 2.5rem;
+      display: inline-block;
+      background: $color__red-medium;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+      font-weight: 400;
+      font-size: 1.2857142857rem;
+      &:hover{
+        background: $color__red-dark;
+      }
+    }
+  }
+
+  .fa-angle-right {
+    font-weight: bold;
+    font-size: 1.5rem;
+    @include desktop{
+      display: none;
+    }
+  }
+}
+
+#sb_instagram {
+  margin-right:0;
+  @include desktop{
+    margin: 0 auto;
+  }
 }
