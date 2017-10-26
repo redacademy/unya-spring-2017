@@ -86,6 +86,38 @@ get_header(); ?>
 			</span>
 		</section>
 
+<?php /* Start the Loop */ ?>
+	  <section class="success-stories" id="volunteers">
+	  	<div class="content-wrapper">
+				<span class="success-head"><h2>Volunteers</h2>
+				<p>Learn more about the amazing volunteers at UNYA, and the impact they have had.</p></span>
+		 	 	<?php foreach ( $volunteer-2 as $post ) : setup_postdata( $post ); ?>
+          <section class="single-story hidden-mobile">
+		        <a href="<?php the_permalink() ?>">
+			        <div class="single-story-mobile hidden-desktop success-image" style="background-image: linear-gradient(180deg, rgba(87,87,87,0) 0%, rgba(67,67,67,0.4) 52.31%, rgba(44,44,44,0.7) 100%),
+		            url(<?php echo CFS()->get( 'volunteer_photo' ); ?>)";>
+				        <h3><?php the_title() ?></h3>
+	  	        </div>	
+		        </a>			
+			    	<a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>" cover></a>
+				      <div class="success-content">
+				        <h3 class="hidden-mobile">Volunteer Feature - <?php the_title(); ?></h3>
+					      <p class="hidden-mobile"><?php echo wp_kses(CFS()->get( '1st_half_volunteer_story' ),array('br') ); ?></p>
+					    <div> 
+							<p class="hidden-mobile">
+						    <a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>">Read more about <?php the_title(); ?>
+								  <i class="fa fa-arrow-right" aria-hidden="true">
+					        </i>
+								</a>
+							</p>
+					  </div>
+	        </div>
+		  	</section>
+		  <?php endforeach; wp_reset_postdata(); ?>
+    </div>
+  </section>
+
+
 		<section class="testimonials" id="testimonials">
 			<h2 class="content-wrapper">Testimonials</h2>
 			<p class="content-wrapper testimonial-body">What do youth say about us?</p>
