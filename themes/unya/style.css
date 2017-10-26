@@ -2335,18 +2335,34 @@ section.opportunities-pre-footer p {
           width: 0; } }
     @media (min-width: 800px) {
       .success-stories .content-wrapper .single-story {
-        margin-top: 30px;
+        margin: 30px 0;
         width: 100%;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: row;
             flex-direction: row; } }
 
-.success-head {
+@media (min-width: 800px) {
+  .how-we-work {
+    height: 350px; }
+    .how-we-work h2 {
+      margin-top: 0;
+      padding-top: 50px; } }
+
+.success-stories .section-heading, .volunteers .section-heading {
+  background: #00277E;
+  color: #fff;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
+  .success-stories .section-heading h2, .volunteers .section-heading h2 {
+    margin-top: 50px;
+    margin-bottom: 0;
+    color: #fff; }
+  .success-stories .section-heading h4, .volunteers .section-heading h4 {
+    margin-left: 17.4rem;
+    margin-top: 0; }
 
 .single-story .success-content .hidden-mobile .impact-read-more {
   text-decoration: none;

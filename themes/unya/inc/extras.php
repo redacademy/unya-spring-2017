@@ -209,15 +209,15 @@ add_filter('wp_nav_menu_objects', 'unya_filter_nav_menu_list', 10, 2);
 
 // filter exerpt length for news archive
 
-function custom_field_excerpt() {
+function custom_field_excerpt($field) {
 	global $post;
-	$text = CFS()->get('article_text'); 
+	$text = CFS()->get($field); 
 	if ( '' != $text ) {
 		$text = strip_shortcodes( $text );
 		$text = apply_filters('the_content', $text);
 		$text = str_replace(']]&gt;', ']]&gt;', $text);
-		$excerpt_length = 10;
-		$excerpt_more = apply_filters('excerpt_more', ' ' . '[...]');
+		$excerpt_length = 50;
+		$excerpt_more = apply_filters('excerpt_more', ' ' . '...');
 		$text = wp_trim_words( $text, $excerpt_length, $excerpt_more );
 	}
 	return apply_filters('the_excerpt', $text);
