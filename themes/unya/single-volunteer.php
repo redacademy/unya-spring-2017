@@ -11,16 +11,16 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<header class="header-wrapper impact-title sidebar-start single-success-banner" style="background-image: linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
-    url(<?php echo CFS()->get( 'volunteer_photo' ); ?>)";>
+    url(<?php echo CFS()->get( 'photo' ); ?>)";>
 			<h1>Success Stories</h1>
 		</header>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 		  <div class="content-wrapper">
         <h2 class="single-success-title">Featured Volunteer - <?php the_title(); ?></h3>
-			 	<p class="first-half"><?php echo CFS()->get( '1st_half_volunteer_story' ); ?></p>
+			 	<p class="first-half"><?php echo CFS()->get( 'first_half_volunteer_story' ); ?></p>
 				<span class="success-image-exerpt">
-				  <img class="single-success-image hidden-mobile" src="<?php echo CFS()->get( 'volunteer_photo' ); ?>">
+				  <img class="single-success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>">
 				  <h3 class="success-exerpt hidden-mobile"><?php echo CFS()->get( 'exerpt' ); ?></h5>
 			  </span>
 			</div>
@@ -29,7 +29,7 @@ get_header(); ?>
 				<h3 class="success-exerpt"><?php echo CFS()->get( 'exerpt' ); ?></h5>
 				</div>
 			  <div class="content-wrapper">
-          <p class="second-half"><?php echo CFS()->get( '2nd_half_volunteer_story' ); ?></p>
+          <p class="second-half"><?php echo CFS()->get( 'second_half_volunteer_story' ); ?></p>
         </div>
 		  <?php endwhile; // End of the loop. ?>
 			<?php get_template_part( 'template-parts/prefooter', 'fit' ); ?>
@@ -37,5 +37,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar('success'); ?>
 <?php get_footer(); ?>
