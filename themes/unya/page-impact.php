@@ -11,6 +11,13 @@
 
  $success_story = get_posts($args);
 
+ $args= array(
+     'post_type'=> 'volunteer',
+     'posts_per_page'=> 6
+ );
+
+ $volunteer = get_posts($args);
+
 get_header(); ?>
 
 	<div id="primary" class="content-area">

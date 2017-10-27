@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<header class="header-wrapper impact-title sidebar-start single-success-banner" style="background-image: linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url(<?php echo CFS()->get( 'photo' ); ?>)";>
-			<h1>Success Stories</h1>
+			<h1>Volunteers</h1>
 		</header>
 
 		<?php while ( have_posts() ) : the_post(); ?>
