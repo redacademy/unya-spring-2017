@@ -39,7 +39,7 @@ get_header(); ?>
 				<h2 class="accordion-label" id="planning">Planning</h2>
 				<section class="planning">
 					<header class="section-heading">
-						<h2 class="content-wrapper">Planning and Development</h2>
+						<h2 class="content-wrapper hidden-mobile">Planning and Development</h2>
 						<h4 class="planning-timeline hidden-mobile">Timeline of the development of the Native Youth Center.</h4>
 					</header>
 					<div class="content-wrapper">
@@ -47,12 +47,8 @@ get_header(); ?>
 							<?php $timeline = CFS()->get( 'timeline' ); ?>
 							<?php foreach ( $timeline as $timeline_item ) : ?>
 								<li class="timeline-item">
-									<div class="year-wrapper">
-										<p class="timeline-year"><?php echo esc_html( $timeline_item['year']); ?></p>
-									</div>
-									<div class="description-wrapper">
-										<p><?php echo wp_kses( $timeline_item['description'],array('br') ); ?></p>
-									</div>
+									<p class="timeline-year"><?php echo esc_html( $timeline_item['year']); ?></p>
+									<p class="timeline-description"><?php echo wp_kses( $timeline_item['description'],array('br') ); ?></p>
 								</li>
 							<?php endforeach; ?>
 						</ul>
@@ -73,20 +69,20 @@ get_header(); ?>
 						<p><?php echo wp_kses( CFS()->get( 'we_need_your_help' ),array('br') ); ?></p>
 						<ul>
 							<li>
-								<h5>Donate Funds</h5>
-								<p><?php echo wp_kses( CFS()->get( 'donate_funds' ),array('br') ); ?></p>
+								<h5><i class="fa fa-angle-right" aria-hidden="true"></i><span class="nyc-help-text">Donate Funds</span></h5>
+								<p><span class="nyc-help-spacing">&nbsp;</span><span class="nyc-help-text"><?php echo wp_kses( CFS()->get( 'donate_funds' ),array('br') ); ?></span></p>
 							</li>
 							<li>
-								<h5>Donate Materials and Supplies</h5>
-								<p><?php echo wp_kses( CFS()->get( 'donate_materials_and_supplies' ),array('br') ); ?></p>
+								<h5><i class="fa fa-angle-right" aria-hidden="true"></i><span class="nyc-help-text">Donate Materials and Supplies</span></h5>
+								<p><span class="nyc-help-spacing">&nbsp;</span><span class="nyc-help-text"><?php echo wp_kses( CFS()->get( 'donate_materials_and_supplies' ),array('br') ); ?></span></p>
 							</li>
 							<li>
-								<h5>Other Ways to Help</h5>
-								<p><?php echo wp_kses( CFS()->get( 'other_ways_to_help' ),array('br') ); ?></p>
+								<h5><i class="fa fa-angle-right" aria-hidden="true"></i><span class="nyc-help-text">Other Ways to Help</span></h5>
+								<p><span class="nyc-help-spacing">&nbsp;</span><span class="nyc-help-text"><?php echo wp_kses( CFS()->get( 'other_ways_to_help' ),array('br') ); ?></span></p>
 							</li>
 							<li>
-								<h5>How Will Your Donations be Recognized?</h5>
-								<p><?php echo wp_kses( CFS()->get( 'how_will_your_donations_be_recognized' ),array('br') ); ?></p>
+								<h5><i class="fa fa-angle-right" aria-hidden="true"></i><span class="nyc-help-text">How Will Your Donations be Recognized?</span></h5>
+								<p><span class="nyc-help-spacing">&nbsp;</span><span class="nyc-help-text"><?php echo wp_kses( CFS()->get( 'how_will_your_donations_be_recognized' ),array('br') ); ?></span></p>
 							</li>
 						</ul>
 					</div>
@@ -97,7 +93,7 @@ get_header(); ?>
 						<h2 class="content-wrapper">Partners</h2>
 					</header>
 					<div class="content-wrapper">
-						<ul class="content-wrapper logo-carousel">
+						<ul class="content-wrapper nyc-partners">
 							<?php $partners = CFS()->get( 'partners' ); ?>
 							<?php foreach ( $partners as $partner ) : ?>
 								<li class="partner">
@@ -106,7 +102,7 @@ get_header(); ?>
 							<?php endforeach; ?>
 						</ul>
 					</div>
-				</section>	<h2 class="accordion-label" id="partners">Partners</h2>
+				</section>
 			</div>
 				<?php get_template_part( 'template-parts/prefooter', 'donation' ); ?>
 			</div>
