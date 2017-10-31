@@ -1113,7 +1113,10 @@ a {
         margin-bottom: 0;
         padding-left: 8.7142857143rem;
         width: 100%;
-        font-weight: 600; } }
+        font-weight: 600; }
+      .header-wrapper p {
+        padding-left: 8.7142857143rem;
+        width: 100%; } }
 
 .nyc {
   text-align: right; }
@@ -1417,6 +1420,14 @@ object {
   background: #A70000; }
   .donation-button a {
     background-color: #D13434; }
+  .donation-button h2 a {
+    padding: 15px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: normal;
+    font-size: 20px; }
 
 section.pre-footer {
   height: 175px;
@@ -2508,10 +2519,46 @@ section.opportunities-pre-footer p {
 /* Native Youth Centre */
 @media (min-width: 800px) {
   .header-wrapper-nyc p {
-    padding-left: 3.5714285714rem;
     color: white;
     margin-top: 0;
     font-size: 2.1428571429rem; } }
+
+@media (min-width: 800px) {
+  .donation-banner {
+    height: 12.4285714286rem;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    color: white; }
+    .donation-banner p, .donation-banner h2 {
+      margin: 0;
+      width: 100%;
+      font-family: "poppins", sans-serif; }
+    .donation-banner p {
+      padding-left: 8.7142857143rem;
+      font-size: 2.28571rem;
+      line-height: 3.28571rem; }
+    .donation-banner h2 {
+      padding-right: 8.7142857143rem;
+      text-align: right; } }
+
+a.nyc-download {
+  margin-bottom: 1.5rem;
+  display: block;
+  color: #D13434;
+  text-decoration: none; }
+
+.nyc-line {
+  box-sizing: border-box;
+  height: 1px;
+  width: 100%;
+  border: 1px solid #D13434; }
 
 .nyc-content .nyc-banner {
   height: 23.214285714rem;
@@ -2547,6 +2594,8 @@ section.opportunities-pre-footer p {
   color: #fff; }
   .ways-to-help h4 {
     font-size: 1.28571rem; }
+  .ways-to-help ul {
+    list-style: none; }
   .ways-to-help h5 {
     font-size: 1.14286rem; }
     .ways-to-help h5::before {
@@ -2583,7 +2632,8 @@ section.opportunities-pre-footer p {
         margin: 0; } }
   .planning .section-heading h4 {
     padding: 0 15.71429rem 0 17.42857rem;
-    margin-top: 0; }
+    margin-top: 0;
+    font-weight: normal; }
 
 /* News archive */
 .news-title {
