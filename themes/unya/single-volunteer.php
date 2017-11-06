@@ -4,6 +4,10 @@
  *
  * @package UNYA_Theme
  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8c9d4e80fdec6ff6afada5e11c116258669c9bfc
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -36,4 +40,8 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+<<<<<<< HEAD
 <?php get_footer(); ?>
+=======
+<?php get_footer(); ?>
+>>>>>>> 8c9d4e80fdec6ff6afada5e11c116258669c9bfc

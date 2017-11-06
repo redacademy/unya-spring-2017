@@ -225,6 +225,63 @@ function unya_register_success_story_post_type() {
 }
 add_action( 'init', 'unya_register_volunteer_post_type', 0 );
 
+
+function unya_register_volunteer_post_type() {
+
+	$labels = array(
+		'name'                  => 'Volunteers',
+		'singular_name'         => 'Volunteer',
+		'menu_name'             => 'Volunteers',
+		'name_admin_bar'        => 'Volunteer Type',
+		'archives'              => 'Volunteer Archives',
+		'attributes'            => 'Volunteer Attributes',
+		'parent_item_colon'     => 'Volunteer Parent Item:',
+		'all_items'             => 'All Volunteers',
+		'add_new_item'          => 'Add New Volunteer',
+		'add_new'               => 'Add Volunteer',
+		'new_item'              => 'New Volunteer',
+		'edit_item'             => 'Edit Volunteer',
+		'update_item'           => 'Update Volunteer',
+		'view_item'             => 'View Volunteer',
+		'view_items'            => 'View Volunteers',
+		'search_items'          => 'Search Volunteer',
+		'not_found'             => 'Volunteer Not found',
+		'not_found_in_trash'    => 'Volunteer Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into Volunteer',
+		'uploaded_to_this_item' => 'Uploaded to this Volunteer',
+		'items_list'            => 'Volunteer list',
+		'items_list_navigation' => 'Volunteer list navigation',
+		'filter_items_list'     => 'Filter Volunteer list',
+	);
+	$args = array(
+		'label'                 => 'Volunteer',
+		'description'           => 'Post type for Volunteers of Unya',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 20,
+		'menu_icon'             => 'dashicons-thumbs-up',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+	);
+	register_post_type( 'volunteer', $args );
+
+}
+add_action( 'init', 'unya_register_volunteer_post_type', 0 );
+
+
 // Register Custom Post Type
 function unya_register_leader_post_type() {
 
