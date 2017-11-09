@@ -1063,6 +1063,15 @@ a {
   .hidden-desktop {
     display: none; } }
 
+.hidden-tablet {
+  display: initial; }
+  @media (min-width: 540px) {
+    .hidden-tablet {
+      display: none; } }
+  @media (min-width: 800px) {
+    .hidden-tablet {
+      display: initial; } }
+
 .tablet-only {
   display: none; }
   @media (min-width: 540px) {
@@ -1070,6 +1079,18 @@ a {
       display: initial; } }
   @media (min-width: 800px) {
     .tablet-only {
+      display: none; } }
+
+.desktop-only {
+  display: none; }
+  @media (min-width: 800px) {
+    .desktop-only {
+      display: initial; } }
+
+.mobile-only {
+  display: initial; }
+  @media (min-width: 540px) {
+    .mobile-only {
       display: none; } }
 
 .capitalize {
