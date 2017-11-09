@@ -16,7 +16,7 @@
      'posts_per_page'=> 6
  );
 
- $volunteer = get_posts($args);
+ $success_story = get_posts($args);
 
 get_header(); ?>
 
@@ -79,7 +79,7 @@ get_header(); ?>
 		</header>
 		<h4 class="hidden-desktop">Learn more about some of our hardworking volunteers.</h4>
 	
-		<!-- volunteer posts go here! -->
+<!-- volunteer posts go here! -->
 <div class="content-wrapper">
 	<?php /* Start the Loop */ ?>
 	  <?php foreach ( $volunteer as $post ) : setup_postdata( $post ); ?>
@@ -105,7 +105,6 @@ get_header(); ?>
 	      </div>
 		  </section>
 		<?php endforeach; wp_reset_postdata(); ?>
-
 
 	</section>
 	</div> <!-- # accordion -->

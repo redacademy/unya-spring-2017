@@ -1143,7 +1143,10 @@ a {
         margin-bottom: 0;
         padding-left: 8.7142857143rem;
         width: 100%;
-        font-weight: 600; } }
+        font-weight: 600; }
+      .header-wrapper p {
+        padding-left: 8.7142857143rem;
+        width: 100%; } }
 
 .nyc {
   text-align: right; }
@@ -1369,67 +1372,16 @@ object {
     .slick-frame.slick-initialized > .generic-item-wrap-class {
       visibility: visible; }
 
-.nyc-content .image-carousel {
-  display: none; }
-  @media (min-width: 800px) {
-    .nyc-content .image-carousel {
-      display: -ms-flexbox;
-      display: flex; } }
-  .nyc-content .image-carousel .image-container {
-    position: relative;
-    height: 750px;
-    width: 100%; }
-  .nyc-content .image-carousel .gradient {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    position: absolute;
-    background-image: linear-gradient(to bottom, rgba(74, 74, 74, 0.7) 0%, rgba(74, 74, 74, 0.7) 100%);
-    z-index: 4; }
-  .nyc-content .image-carousel .image-quote {
-    padding: 2rem;
-    position: absolute;
-    top: 0;
-    color: #FFF;
-    font-family: "poppins", sans-serif;
-    font-size: 1.28571rem;
-    z-index: 5; }
-  .nyc-content .image-carousel img {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: auto; }
-  .nyc-content .image-carousel .slick-prev:before, .nyc-content .image-carousel .slick-next:before {
-    color: #FFF; }
-  .nyc-content .image-carousel .hide {
-    color: transparent; }
-  .nyc-content .image-carousel .slick-dots {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center; }
-    .nyc-content .image-carousel .slick-dots li button {
-      background: #FFF; }
-
 .slick-prev {
   z-index: 10; }
 
 .single-program .slick-track {
   height: 750px; }
 
-.nyc-slide {
-  background-size: cover;
-  background-position: top; }
-
 .logo-carousel {
   margin: 0 auto;
   height: 300px;
   padding: 0; }
-
-.partner {
-  margin: auto auto; }
-  .partner img {
-    margin: auto auto; }
 
 /**************/
 /* PRE-FOOTER */
@@ -1447,6 +1399,14 @@ object {
   background: #A70000; }
   .donation-button a {
     background-color: #D13434; }
+  .donation-button h2 a {
+    padding: 15px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: normal;
+    font-size: 20px; }
 
 section.pre-footer {
   height: 175px;
@@ -2538,10 +2498,56 @@ section.opportunities-pre-footer p {
 /* Native Youth Centre */
 @media (min-width: 800px) {
   .header-wrapper-nyc p {
-    padding-left: 3.5714285714rem;
     color: white;
     margin-top: 0;
     font-size: 2.1428571429rem; } }
+
+@media (min-width: 800px) {
+  .donation-banner {
+    height: 12.4285714286rem;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    color: white; }
+    .donation-banner p, .donation-banner h2 {
+      margin: 0;
+      width: 100%;
+      font-family: "poppins", sans-serif; }
+    .donation-banner p {
+      padding-left: 8.7142857143rem;
+      font-size: 2.28571rem;
+      line-height: 3.28571rem; }
+    .donation-banner h2 {
+      padding-right: 8.7142857143rem;
+      text-align: right; } }
+
+.vision .content-wrapper a.nyc-download {
+  margin-bottom: 1.5rem;
+  display: block;
+  color: #D13434;
+  text-decoration: none; }
+
+.nyc-line {
+  border: 0px solid #FFF; }
+  @media (min-width: 800px) {
+    .nyc-line {
+      height: 1px;
+      width: 100%;
+      display: block;
+      border: 1px solid #D13434; } }
+
+.vision .section-heading {
+  display: none; }
+  @media (min-width: 800px) {
+    .vision .section-heading {
+      display: -ms-flexbox;
+      display: flex; } }
 
 .nyc-content .nyc-banner {
   height: 23.214285714rem;
@@ -2558,41 +2564,38 @@ section.opportunities-pre-footer p {
   list-style: none; }
 
 .nyc-content .timeline-item {
+  padding: 1rem 0;
   display: -ms-flexbox;
-  display: flex; }
-
-.nyc-content .year-wrapper {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%; }
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  @media (min-width: 800px) {
+    .nyc-content .timeline-item {
+      padding: 0 0 2.5rem 6rem; } }
 
 .nyc-content .timeline-year {
-  font-family: "poppins", sans-serif; }
+  margin: 0;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  font-family: "poppins", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem; }
+  @media (min-width: 800px) {
+    .nyc-content .timeline-year {
+      -ms-flex-preferred-size: 15%;
+          flex-basis: 15%;
+      font-size: 2.3rem;
+      font-weight: bold;
+      line-height: 2.3rem; } }
 
-.nyc-content .description-wrapper {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%; }
-
-.ways-to-help {
-  background: #D13434;
-  color: #fff; }
-  .ways-to-help h4 {
-    font-size: 1.28571rem; }
-  .ways-to-help h5 {
-    font-size: 1.14286rem; }
-    .ways-to-help h5::before {
-      content: "\f105";
-      font-family: "FontAwesome";
-      color: #fff;
-      position: relative;
-      right: 0.7rem; }
-  .ways-to-help .section-heading {
-    background: #A70000; }
-    .ways-to-help .section-heading h2 {
-      color: #fff; }
-
-.timeline-item .timeline-year {
-  font-size: 2.3rem;
-  padding-right: 1rem; }
+.nyc-content .timeline-description {
+  margin: 0;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%; }
+  @media (min-width: 800px) {
+    .nyc-content .timeline-description {
+      -ms-flex-preferred-size: 80%;
+          flex-basis: 80%; } }
 
 @media (min-width: 800px) {
   .planning {
@@ -2613,7 +2616,77 @@ section.opportunities-pre-footer p {
         margin: 0; } }
   .planning .section-heading h4 {
     padding: 0 15.71429rem 0 17.42857rem;
-    margin-top: 0; }
+    margin-top: 0;
+    font-weight: normal; }
+
+.ways-to-help {
+  background: #D13434;
+  color: #fff; }
+  .ways-to-help h4 {
+    font-size: 1.28571rem; }
+  .ways-to-help ul {
+    margin: 0;
+    padding: 0 1rem;
+    list-style: none; }
+    @media (min-width: 800px) {
+      .ways-to-help ul {
+        padding: 0 0 1rem 6rem; } }
+  .ways-to-help h5 {
+    font-size: 1.14286rem; }
+  .ways-to-help .fa-angle-right {
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 1.25rem;
+    width: 5%; }
+  .ways-to-help .nyc-help-spacing {
+    width: 5%;
+    display: inline-block; }
+  .ways-to-help .nyc-help-text {
+    width: 95%;
+    display: inline-block; }
+  .ways-to-help .section-heading {
+    display: none; }
+    @media (min-width: 800px) {
+      .ways-to-help .section-heading {
+        display: -ms-flexbox;
+        display: flex;
+        background: #A70000; }
+        .ways-to-help .section-heading h2 {
+          color: #fff; } }
+
+.partners .section-heading {
+  display: none; }
+  @media (min-width: 800px) {
+    .partners .section-heading {
+      display: -ms-flexbox;
+      display: flex; } }
+
+ul.nyc-partners {
+  margin: 0;
+  padding: 2rem 0;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none; }
+  @media (min-width: 800px) {
+    ul.nyc-partners {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
+  ul.nyc-partners .partner {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%; }
+    @media (min-width: 800px) {
+      ul.nyc-partners .partner {
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%; } }
 
 /* News archive */
 .news-title {
