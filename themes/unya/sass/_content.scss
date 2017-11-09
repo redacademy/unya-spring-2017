@@ -19,16 +19,28 @@
 	@include desktop {
 		display: initial;
 	}
-
 }
 
 // Hidden on desktop view
 .hidden-desktop {
-
 	@include desktop {
 		display: none;
 	}
 }
+
+ //visible on tablet only
+.tablet-only { 
+  display:none;
+
+    @include tablet{
+    display:initial;
+  }
+
+    @include desktop {
+    display:none;
+  }
+}
+
 
 .capitalize {
 	text-transform: uppercase;

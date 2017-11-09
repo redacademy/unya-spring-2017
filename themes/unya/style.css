@@ -1063,6 +1063,15 @@ a {
   .hidden-desktop {
     display: none; } }
 
+.tablet-only {
+  display: none; }
+  @media (min-width: 540px) {
+    .tablet-only {
+      display: initial; } }
+  @media (min-width: 800px) {
+    .tablet-only {
+      display: none; } }
+
 .capitalize {
   text-transform: uppercase; }
 
