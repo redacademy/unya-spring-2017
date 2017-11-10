@@ -4,19 +4,18 @@
  *
  * @package UNYA_Theme
  */
+ $success_story = get_posts($args);
  $args= array(
      'post_type'=> 'success_story',
      'posts_per_page'=> 6
  );
 
- $success_story = get_posts($args);
+ $volunteer = get_posts($args);
 
  $args= array(
      'post_type'=> 'volunteer',
      'posts_per_page'=> 6
  );
-
- $success_story = get_posts($args);
 
 get_header(); ?>
 
@@ -104,7 +103,6 @@ get_header(); ?>
 	        </div>
 		  	</section>
 		  <?php endforeach; wp_reset_postdata(); ?>
-		<!-- volunteer posts go here! -->
 	
 	</section>
 	</div> <!-- # accordion -->
