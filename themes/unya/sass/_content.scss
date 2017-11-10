@@ -19,16 +19,52 @@
 	@include desktop {
 		display: initial;
 	}
-
 }
 
 // Hidden on desktop view
+
 .hidden-desktop {
 
 	@include desktop {
 		display: none;
 	}
 }
+.hidden-tablet {
+  display:initial;
+
+  @include tablet{
+    display:none;
+  }
+  @include desktop{
+    display:initial;
+  }
+}
+ //visible on tablet only
+.tablet-only { 
+  display:none;
+
+    @include tablet{
+    display: initial;
+  }
+
+    @include desktop {
+    display: none;
+  }
+}
+.desktop-only{
+  display:none;
+  @include desktop{
+    display:initial;
+  }
+}
+
+.mobile-only{
+  display:initial;
+  @include tablet{
+    display:none;
+  }
+}
+
 
 .capitalize {
 	text-transform: uppercase;
@@ -82,6 +118,10 @@
       padding-left: 8.7142857143rem;;
       width: 100%;
       font-weight: 600;
+    }
+    p{
+      padding-left: 8.7142857143rem;
+      width: 100%;
     }
   }
 }

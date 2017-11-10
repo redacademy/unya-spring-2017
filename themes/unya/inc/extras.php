@@ -22,6 +22,7 @@ function custom_menu_order($menu_ord) {
         'edit.php?post_type=leaders', // Leaders
         'edit.php?post_type=program', // Program Archive
         'edit.php?post_type=success_story', // Impact page stories
+        'edit.php?post_type=volunteer', // Impact page volunteers
         'edit.php?post_type=news', // News stories
         'edit.php?post_type=opportunities', // Get involved page opportunities
         'separator2', // Second separator

@@ -1,12 +1,69 @@
 /* Native Youth Centre */
 .header-wrapper-nyc {
   @include desktop {
-    p{
-      padding-left:3.5714285714rem;
+    h1, p {
+
+    }
+    p {
       color:white;
       margin-top:0;
       font-size:2.1428571429rem;
     }
+  }
+}
+
+.donation-banner {
+  @include desktop {
+    height: 12.4285714286rem;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:row;
+    color:white;
+    
+    p, h2 {
+      margin: 0;
+      width: 100%;
+      font-family: $font__heading;
+    }
+    
+    p {
+      padding-left: 8.7142857143rem;
+      font-size: $desktop__h2;
+      line-height: $desktop__h2 + 1rem;
+    }
+
+    h2 {
+      padding-right: 8.7142857143rem;
+      text-align: right;
+    }
+  }
+}
+
+.vision .content-wrapper a.nyc-download {
+  margin-bottom: 1.5rem;
+  display: block;
+  color: $color__red-medium;
+  text-decoration: none;
+}
+
+.nyc-line {
+  border: 0px solid #FFF;
+
+  @include desktop {
+    height: 1px;
+    width: 100%;
+    display: block;
+    border: 1px solid #D13434;
+  }
+}
+
+.vision .section-heading {
+  display: none;
+
+  @include desktop {
+    display: flex;
   }
 }
 
@@ -29,52 +86,39 @@
     }
   }
   .timeline-item {
+    padding: 1rem 0;
     display: flex;
-  }
-  .year-wrapper {
-    flex-basis: 20%;
+    justify-content: space-between;
+
+    @include desktop {
+      padding: 0 0 2.5rem 6rem;
+    }
   }
   .timeline-year {
+    margin: 0;
+    flex-basis: 20%;
     font-family: $font__heading;
+    font-size: 2rem;
+    line-height: 2rem;
+    
+    @include desktop {
+      flex-basis: 15%;
+      font-size: 2.3rem;
+      font-weight: bold;
+      line-height: 2.3rem;
+    }
   }
-  .description-wrapper {
-    flex-basis: 80%;
+  .timeline-description {
+    margin: 0;
+    flex-basis: 70%;
+
+    @include desktop {
+      flex-basis: 80%;
+    }
   }
-}
-
-.ways-to-help {
-	h4 {
-		font-size: $desktop__h4;
-	}
-	h5 {
-		font-size: $desktop__main;
-		&::before {
-			content: "\f105";
-			font-family: "FontAwesome";
-			color: #fff;
-			position: relative;
-			right: 0.7rem;
-		}
-	}
-	.section-heading {
-		background: $color__red-dark;
-		h2 {
-			color: #fff;
-		}
-	}
-	background: $color__red-medium;
-	color: #fff;
-}
-
-.timeline-item {
-	.timeline-year {
-		font-size: 2.3rem;
-		padding-right: 1rem;
-	}
 }
 
 .planning {
-  
     @include desktop {
       margin-top: 4rem;
     }
@@ -96,6 +140,85 @@
       h4 {
         padding: $content-wrapper-desktop;
         margin-top: 0;
+        font-weight: normal;
       }
     }
   }
+
+.ways-to-help {
+  h4 {
+    font-size: $desktop__h4;
+  }
+  ul {
+    margin: 0;
+    padding: 0 1rem;
+    list-style: none;
+
+    @include desktop {
+      padding: 0 0 1rem 6rem;
+    }
+  }
+  h5 {
+    font-size: $desktop__main;
+  }
+  .fa-angle-right {
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 1.25rem;
+    width: 5%;
+  }
+  .nyc-help-spacing {
+    width: 5%;
+    display: inline-block;
+  }
+  .nyc-help-text {
+    width: 95%;
+    display: inline-block;
+  }
+
+  .section-heading {
+    display: none;
+
+    @include desktop {
+      display: flex;
+      background: $color__red-dark;
+      h2 {
+        color: #fff;
+      }
+    }
+  }
+  background: $color__red-medium;
+  color: #fff;
+}
+
+.partners .section-heading {
+  display: none;
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+ul.nyc-partners {
+  margin: 0;
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .partner {
+    flex-basis: 90%;
+
+    @include desktop {
+      flex-basis: 48%;
+    }
+  }
+}
