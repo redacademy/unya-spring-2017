@@ -4,19 +4,17 @@
  *
  * @package UNYA_Theme
  */
- $success_story = get_posts($args);
  $args= array(
      'post_type'=> 'success_story',
      'posts_per_page'=> 6
  );
-
- $volunteer = get_posts($args);
-
+ $success_story = get_posts($args);
+ 
  $args= array(
      'post_type'=> 'volunteer',
      'posts_per_page'=> 6
  );
-
+ $volunteer = get_posts($args);
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -55,7 +53,7 @@ get_header(); ?>
 					<a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>" cover></a>
 					<div class="success-content">
 						<h3 class="hidden-mobile">Youth Feature - <?php the_title(); ?></h3>
-						<p class="hidden-mobile"><?php echo wp_kses(custom_field_excerpt('first_half_of_story'), array('br') ); ?></p>
+						<p class="hidden-mobile"><?php echo CFS()->get( 'first_half_of_story' ),array('br'); ?></p>
 						<div>
 							<p class="hidden-mobile">
 								<a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>">Read more about <?php the_title(); ?>
@@ -95,7 +93,7 @@ get_header(); ?>
 			    	<a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>" cover></a>
 				      <div class="success-content">
 				        <h3 class="hidden-mobile">Volunteer Feature - <?php the_title(); ?></h3>
-					      <p class="hidden-mobile"><?php echo wp_kses(CFS()->get( 'first_half_volunteer_story' ),array('br') ); ?></p>
+					      <p class="hidden-mobile"><?php echo CFS()->get( 'first_half_volunteer_story' ),array('br'); ?></p>
 					    <div> 
 							<p class="hidden-mobile">
 						    <a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>">Read more about <?php the_title(); ?>
