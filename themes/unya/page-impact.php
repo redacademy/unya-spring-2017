@@ -54,7 +54,7 @@ get_header(); ?>
 					<a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>" cover></a>
 					<div class="success-content">
 						<h3 class="hidden-mobile">Youth Feature - <?php the_title(); ?></h3>
-						<p class="hidden-mobile"><?php echo CFS()->get( 'first_half_of_story' ),array('br'); ?></p>
+						<p class="hidden-mobile"><?php echo CFS()->get( 'first_half_of_story' ); ?></p>
 						<div>
 							<p class="hidden-mobile">
 								<a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>">Read more about <?php the_title(); ?>
@@ -94,7 +94,7 @@ get_header(); ?>
 			    	<a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>" cover></a>
 				      <div class="success-content">
 				        <h3 class="hidden-mobile">Volunteer Feature - <?php the_title(); ?></h3>
-					      <p class="hidden-mobile"><?php echo CFS()->get( 'first_half_volunteer_story' ),array('br'); ?></p>
+					      <p class="hidden-mobile"><?php echo CFS()->get( 'first_half_volunteer_story' ); ?></p>
 					    <div> 
 							<p class="hidden-mobile">
 						    <a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>">Read more about <?php the_title(); ?>
@@ -113,9 +113,15 @@ get_header(); ?>
 			<span class="content-wrapper">
 			  <h2 class="impact-head content-wrapper">Impacts</h2>
 		    <span class="infographics">
-			    <img class="infographic-1" src="<?php echo esc_url( CFS()->get( 'infographic_2' ) ); ?>">
-			    <img class="infographic-2 hidden-mobile" src="<?php echo esc_url( CFS()->get( 'infographic_1' ) ); ?>">
-		    </span>
+			    <ul class="image-carousel content-wrapper">
+            <?php $infographics = CFS()->get( 'infographics' ); ?>
+            <?php foreach ( $infographics as $infographic ) : ?>
+					    <li class="infographic image-container">
+					      <img src="<?php echo ( $infographic['infographic'] ); ?>">
+              </li>
+						<?php endforeach; ?>
+		      </ul>
+				</span>
 			</span>
 		</section>
 
