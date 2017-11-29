@@ -421,12 +421,8 @@
   } // end program body
 
   .image-carousel {
-    display: none;
     width: 100%;
 
-    @include desktop {
-      display: block;
-    }
   }
 
 }

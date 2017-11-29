@@ -101,7 +101,7 @@ function unya_scripts() {
 	wp_enqueue_script( 'unya-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	wp_enqueue_script( 'navigation-toggle', get_template_directory_uri() . '/build/js/navigation.min.js' , array('jquery', 'jquery-ui-accordion'), false, true );
   
-	if ( is_page( 'native-youth-center' ) || is_single()){
+	if ( is_page( 'impact' ) || is_single()){
     wp_enqueue_style( 'slick', get_template_directory_uri() . '/build/lib/slick.css');
 	  wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/build/lib/slick-theme.css');
     wp_enqueue_script( 'slick', get_template_directory_uri() . '/build/lib/slick.js' , array('jquery'), false, true );

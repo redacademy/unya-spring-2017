@@ -145,7 +145,7 @@ object {
 .image-carousel, .nyc-slide {
 	@include desktop {
 	margin:0 auto;
-	height:700px;
+	height:auto;
 	width:100%;
   }
 }
