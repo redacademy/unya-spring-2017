@@ -54,7 +54,7 @@ get_header(); ?>
 					<a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>" cover></a>
 					<div class="success-content">
 						<h3 class="hidden-mobile">Youth Feature - <?php the_title(); ?></h3>
-						<p class="hidden-mobile"><?php echo CFS()->get( 'first_half_of_story' ),array('br'); ?></p>
+						<p class="hidden-mobile"><?php echo CFS()->get( 'first_half_of_story' ); ?></p>
 						<div>
 							<p class="hidden-mobile">
 								<a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>">Read more about <?php the_title(); ?>
@@ -69,55 +69,57 @@ get_header(); ?>
 	</section>
 
 
-	<h2 class="accordion-label" id="volunteers">Volunteers</h2>
-	<section class="volunteers">
-		<header class="section-heading hidden-mobile">
-			<h2 class="hidden-mobile">Volunteers</h2>
-			<h4 class="hidden-mobile">Learn more about some of our hardworking volunteers.</h4>
-		</header>
-		<h4 class="hidden-desktop">Learn more about some of our hardworking volunteers.</h4>
-	
-<!-- volunteer posts go here! -->
-<div class="content-wrapper">
-	<?php /* Start the Loop */ ?>
-
+		<?php /* Start the Loop */ ?>
+		<h2 class="accordion-label" id="success-stories">Volunteers</h2>
 	  <section class="success-stories">
-	  	<div class="content-wrapper">
-		 	 	<?php foreach ( $volunteer as $post ) : setup_postdata( $post ); ?>
-          <section class="single-story hidden-mobile">
-		        <a href="<?php the_permalink() ?>">
-			        <div class="single-story-mobile hidden-desktop success-image" style="background-image: linear-gradient(180deg, rgba(87,87,87,0) 0%, rgba(67,67,67,0.4) 52.31%, rgba(44,44,44,0.7) 100%),
-		            url(<?php echo CFS()->get( 'photo' ); ?>)";>
-				        <h3><?php the_title() ?></h3>
-	  	        </div>	
-		        </a>			
-			    	<a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>" cover></a>
-				      <div class="success-content">
-				        <h3 class="hidden-mobile">Volunteer Feature - <?php the_title(); ?></h3>
-					      <p class="hidden-mobile"><?php echo CFS()->get( 'first_half_volunteer_story' ),array('br'); ?></p>
-					    <div> 
+			<header class="section-heading hidden-mobile">
+				<h2 class="hidden-mobile">Volunteers</h2>
+				<h4 class="hidden-mobile">Learn more about some of our hardworking volunteers.</h4>
+			</header>
+			
+			<div class="content-wrapper">
+				<h4 class="hidden-desktop">Learn more about some of our hardworking volunteers.</h4>
+				<?php foreach ( $volunteer as $post ) : setup_postdata( $post );?>
+				<section class="single-story hidden-mobile">
+					<a href="<?php the_permalink() ?>">
+						<div class="single-story-mobile hidden-desktop success-image" style="background-image: linear-gradient(180deg, rgba(87,87,87,0) 0%, rgba(67,67,67,0.4) 52.31%, rgba(44,44,44,0.7) 100%),
+							url(<?php echo CFS()->get( 'photo' ); ?>)";>
+							<h3><?php the_title() ?></h3>
+						</div>
+					</a>
+					<a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>" cover></a>
+					<div class="success-content content-wrapper">
+						<h3 class="hidden-mobile">Volunteer Feature - <?php the_title(); ?></h3>
+						<p class="hidden-mobile"><?php echo CFS()->get( 'first_half_volunteer_story' ); ?></p>
+						<div>
 							<p class="hidden-mobile">
-						    <a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>">Read more about <?php the_title(); ?>
-								  <i class="fa fa-arrow-right" aria-hidden="true">
-					        </i>
+								<a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>">Read more about <?php the_title(); ?>
+									<i class="fa fa-arrow-right" aria-hidden="true"></i>
 								</a>
 							</p>
-					  </div>
-	        </div>
-		  	</section>
+						</div>
+					</div>
+				</section>
 		  <?php endforeach; wp_reset_postdata(); ?>
-  	</section>
-	</div> <!-- # accordion -->
+    </div>
+	</section>
+</div>
+
 
 		<section class="statistics" id="statistics">
-			<span class="content-wrapper">
+			
 			  <h2 class="impact-head content-wrapper">Impacts</h2>
-		    <span class="infographics">
-			    <img class="infographic-1" src="<?php echo esc_url( CFS()->get( 'infographic_2' ) ); ?>">
-			    <img class="infographic-2 hidden-mobile" src="<?php echo esc_url( CFS()->get( 'infographic_1' ) ); ?>">
-		    </span>
-			</span>
-		</section>
+		    
+          <div class="image-carousel content-wrapper">
+            <?php $stats_slider = CFS()->get( 'statistics_slider' ); ?>
+              <?php foreach ( $stats_slider as $stats_slide ) : ?>
+ 	              <div class="stats-slide" style="background-image: url(<?php echo $stats_slide['stats_image']; ?>)";>
+ 		            </div>
+ 		          <?php endforeach; ?>
+        	</div>	    
+				  
+			 
+		  </section>
 
 		<section class="testimonials" id="testimonials">
 			<h2 class="content-wrapper">Testimonials</h2>
