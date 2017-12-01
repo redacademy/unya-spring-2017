@@ -66,10 +66,23 @@
       -webkit-padding-start: 0;
       li {
         flex-basis: 100%;
-        @include desktop {
+        @include tablet {
           flex-basis: 50%;
         }
       }
+    }
+  }
+
+  .leadership-image-wrapper {
+    height: 5.7rem;
+    width: 5.7rem;
+    overflow: hidden;
+    border-radius: 50%;
+    img {
+      max-height: 100%;
+      height: auto;
+      max-width: 100%;
+      width: auto;
     }
   }
 
@@ -90,11 +103,13 @@
       width: 5.7rem;
       overflow: hidden;
       border-radius: 50%;
+      @include desktop {
+        height: 10rem;
+        width: 10rem;
+      }
       img{
-        max-height: 100%;
-        height: auto;
-        max-width: 100%;
-        width: auto;
+        min-height: 100%;
+        min-width: 100%;
       }
     }
     .text-wrapper{
@@ -126,8 +141,6 @@
     }
 
     .image-wrapper {
-      display: none;
-      padding-top: 2rem;
       
       @include desktop {
         display: flex;
@@ -190,14 +203,12 @@
     
 		li {
 			display: flex;
-			justify-content: space-around;
+      justify-content: center;
+      align-items: center;
       flex-basis: 100%;
-      box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.2);
-      border-radius: 8px 8px 8px 20px;
 
       @include desktop {
         margin: 40px auto;
-        border-radius: 8px 8px 8px 40px;
       }
 		}
 	}

@@ -58,6 +58,15 @@
   }
 }
 
+.display-tablet-desktop{
+  @include tablet {
+    display: initial;
+  }
+  @include desktop {
+    display: initial;
+  }
+}
+
 .mobile-only{
   display:initial;
   @include tablet{
