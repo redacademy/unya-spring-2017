@@ -1,7 +1,4 @@
 /* Impact page */
-.stats-slide{
-  z-index: 9999;
-}
 
 .success-stories {
   .content-wrapper {
@@ -118,11 +115,14 @@
   height:auto;
   margin:0 auto;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .statistics{
   background-color: #00277E;
   display:flex;
+  justify-content: space-around;
   height: auto;
   width:100%;
   h2{
@@ -132,30 +132,7 @@
 .testimonial-body{
   font-size:24px;
 }
-.infographics{
-  display:flex;
-  flex-flow: row nowrap;
-}
 
-.infographic-1{
-  width:auto;
-  max-width: 100%;
-  max-height:100%;
-  height:auto;
-  @include desktop{
-    align-items: left;
-    max-width:50%;
-    max-height:100%;
-    height:auto;
-  }
-}
-
-.infographic-2{
-  align-items: right;
-  max-width:50%;
-  max-height:100%;
-  height:auto;
-}
 
 .impact-head{
   color:white;
