@@ -249,7 +249,7 @@
   h3 {
     text-transform: uppercase;
     color: white;
-    @include desktop{
+    @include tablet {
       padding: 1rem 2.5rem;
       display: inline-block;
       background: $color__red-medium;
