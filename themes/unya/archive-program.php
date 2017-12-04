@@ -20,7 +20,7 @@ get_header(); ?>
 
 			<section id="calendar">
 				<h2>Calendar</h2>
-				<div class="hidden-desktop mobile-calendar">
+				<div class="hidden-desktop hidden-tablet mobile-calendar">
 					<?php echo do_shortcode("[calendar id=274]"); ?>
 				</div>
 				<div class="hidden-mobile content-wrapper desktop-calendar">
