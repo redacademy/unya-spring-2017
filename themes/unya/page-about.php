@@ -59,7 +59,7 @@ get_header(); ?>
 								<div class="text-wrapper">
 									<p class="leader-name"><?php echo esc_html( CFS()->get( 'name' ) ); ?></p>
 									<p><?php echo esc_html( CFS()->get( 'title' ) ); ?></p>
-									<p class="hidden-mobile"><?php echo wp_kses( CFS()->get( 'bio' ),array('br') ); ?></p>
+									<p class="display-tablet-desktop hidden-mobile"><?php echo wp_kses( CFS()->get( 'bio' ),array('br') ); ?></p>
 								</div>
 							</li>
 						<?php endforeach; wp_reset_postdata(); ?>
