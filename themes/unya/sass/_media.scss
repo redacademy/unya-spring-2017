@@ -92,14 +92,18 @@ object {
 }
 
 // home page banners
-.about, .nyc, .programs{
+.about, .nyc, .programs {
   background-position: center;
 	background-size: cover;
 	background-repeat:no-repeat;
 	height:350px;
-
-	@include desktop{
+	@include tablet {
+		height: 500px;
+		padding-top: 15%;
+	}
+	@include desktop {
 		height:700px;
+		padding: 0;
 		}
 }
 

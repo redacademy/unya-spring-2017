@@ -1232,7 +1232,7 @@ a {
   .homepage-links h3 {
     text-transform: uppercase;
     color: white; }
-    @media (min-width: 800px) {
+    @media (min-width: 540px) {
       .homepage-links h3 {
         padding: 1rem 2.5rem;
         display: inline-block;
@@ -1324,9 +1324,14 @@ object {
   background-size: cover;
   background-repeat: no-repeat;
   height: 350px; }
+  @media (min-width: 540px) {
+    .about, .nyc, .programs {
+      height: 500px;
+      padding-top: 15%; } }
   @media (min-width: 800px) {
     .about, .nyc, .programs {
-      height: 700px; } }
+      height: 700px;
+      padding: 0; } }
 
 .impact-polygon {
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
