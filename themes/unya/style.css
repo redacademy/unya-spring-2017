@@ -1058,6 +1058,13 @@ a {
   @media (min-width: 800px) {
     .hidden-mobile {
       display: initial; } }
+  @media (min-width: 540px) {
+    .hidden-mobile {
+      display: initial; } }
+
+@media (min-width: 540px) {
+  .hidden-desktop {
+    display: initial; } }
 
 @media (min-width: 800px) {
   .hidden-desktop {

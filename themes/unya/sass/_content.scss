@@ -19,12 +19,18 @@
 	@include desktop {
 		display: initial;
 	}
+  @include tablet{
+    display:initial
+  }
 }
 
 // Hidden on desktop view
 
 .hidden-desktop {
-
+ 
+  @include tablet{
+    display:initial;
+  }
 	@include desktop {
 		display: none;
 	}
