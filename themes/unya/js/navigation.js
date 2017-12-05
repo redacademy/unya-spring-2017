@@ -23,7 +23,7 @@
       $('.site-header').toggleClass('expanded');
       $('.site-footer').toggleClass('expanded');
       $('.site-content').toggleClass('collapsed');
-      $('.site-footer').toggleClass('hidden-mobile');
+      $('.site-footer').toggleClass('hidden-mobile tablet-only');
 
       var btn = $('.sign-up-btn');
       var subscribeArea = $('.subscription-form');

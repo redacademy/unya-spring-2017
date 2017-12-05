@@ -4,73 +4,66 @@
   .content-wrapper {
     display:flex;
     flex-flow: row wrap;
+    
     .single-story{
       width:48%;
       a {
-        text-decoration: none;
-        
-        @include desktop {
-          width: 75%;
-          padding: 0 2rem 0 1rem;
-          position:relative;
-        }
-
-        &:first-child {
-          @include desktop {
-            width: 0;
-          }
-        }
+        text-decoration: none;      
       }
-      @include desktop{
+      @include tablet{
         margin: 30px 0;
         width:100%;
 	      display:flex;
         flex-direction: row;
+        flex-wrap: nowrap;
+      }
+      @include desktop{
+        width:100%;
       }
     }
   }
 }
 
 
-
-.how-we-work {
-  @include desktop {
-    height: 350px;
-
-    h2 {
-      margin-top: 0;
-      padding-top: 50px;
-    }
-  }
-}
-
-.success-stories, .volunteers {
+.success-stories{
   .section-heading {
     background: $color__blue-dark;
     color: #fff;
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between;
+      @include tablet{
+        display:none;
+      }
+      @include desktop{
+        display:initial;
+      }
     h2 {
       margin-top: 50px;
       margin-bottom: 0;
       color: #fff;
     }
     h4 {
-      margin-left: 17.4rem;
+      
       margin-top: 0;
     }
   }
 }
 
-.single-story .success-content .hidden-mobile .impact-read-more{
+.single-story-mobile{
+  @include tablet{
+    display:none;
+  }
+}
+
+.single-story .impact-read-more{
   text-decoration: none;
   width:100%;
   p{
     color:#4263AB;
     text-decoration: none;
   }
-  @include desktop{
+  @include tablet{
     padding: 0;
     display:relative;
     left:0rem;
@@ -79,11 +72,9 @@
 
 .success-content{
   width:70%;
-
-  @include desktop {
-    width: 150%;
-    p {
-      display: block;
+    p{
+      @include tablet{
+        display: block;
     }
   }
 }
@@ -93,6 +84,7 @@
 	width:34vw;
 	height:34vw;
 	border-radius: 50%;
+  padding:10px;
   
   h3{
     color:white;
@@ -103,12 +95,19 @@
     font-weight:bold;
   }
 	
-  @include desktop{
+  @include tablet{
     max-height: none;
     max-width: none;
     height: 25vw;
     width: 25vw;
 	}
+}
+
+.mobile-success-image{
+  @include tablet{
+    width:0px;
+    display:none;    
+  }
 }
 
 .stats-slide{
@@ -164,6 +163,18 @@
 	height:550px;
   }
 }
+
+.how-we-work {
+  @include desktop {
+    height: 350px;
+
+    h2 {
+      margin-top: 0;
+      padding-top: 50px;
+    }
+  }
+}
+
 
 // single success story
 

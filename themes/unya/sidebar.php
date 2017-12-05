@@ -7,7 +7,7 @@
 
 ?>
 
-<div id="secondary" class="widget-area hidden-mobile hidden-tablet sidebar-nav-menu" role="complementary">
+<div id="secondary" class="widget-area desktop-only sidebar-nav-menu" role="complementary">
 	<?php
 
 		wp_nav_menu( array( 
