@@ -1051,7 +1051,7 @@ a {
 
 .hidden-mobile {
   display: none; }
-  @media (min-width: 800px) {
+  @media (min-width: 540px) {
     .hidden-mobile {
       display: initial; } }
 
@@ -1069,13 +1069,13 @@ a {
       display: initial; } }
 
 .tablet-only {
-  display: none; }
+  display: inherit; }
   @media (min-width: 540px) {
     .tablet-only {
       display: initial; } }
   @media (min-width: 800px) {
     .tablet-only {
-      display: none; } }
+      display: inherit; } }
 
 .desktop-only {
   display: none; }
@@ -2298,71 +2298,71 @@ section.opportunities-pre-footer p {
     width: 48%; }
     .success-stories .content-wrapper .single-story a {
       text-decoration: none; }
-      @media (min-width: 800px) {
-        .success-stories .content-wrapper .single-story a {
-          width: 75%;
-          padding: 0 2rem 0 1rem;
-          position: relative; } }
-      @media (min-width: 800px) {
-        .success-stories .content-wrapper .single-story a:first-child {
-          width: 0; } }
-    @media (min-width: 800px) {
+    @media (min-width: 540px) {
       .success-stories .content-wrapper .single-story {
         margin: 30px 0;
         width: 100%;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: row;
-            flex-direction: row; } }
+            flex-direction: row;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; } }
+    @media (min-width: 800px) {
+      .success-stories .content-wrapper .single-story {
+        width: 100%; } }
 
-@media (min-width: 800px) {
-  .how-we-work {
-    height: 350px; }
-    .how-we-work h2 {
-      margin-top: 0;
-      padding-top: 50px; } }
-
-.success-stories .section-heading, .volunteers .section-heading {
+.success-stories .section-heading {
   background: #00277E;
   color: #fff;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column; }
-  .success-stories .section-heading h2, .volunteers .section-heading h2 {
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  @media (min-width: 540px) {
+    .success-stories .section-heading {
+      display: none; } }
+  @media (min-width: 800px) {
+    .success-stories .section-heading {
+      display: initial; } }
+  .success-stories .section-heading h2 {
     margin-top: 50px;
     margin-bottom: 0;
     color: #fff; }
-  .success-stories .section-heading h4, .volunteers .section-heading h4 {
-    margin-left: 17.4rem;
+  .success-stories .section-heading h4 {
     margin-top: 0; }
 
-.single-story .success-content .hidden-mobile .impact-read-more {
+@media (min-width: 540px) {
+  .single-story-mobile {
+    display: none; } }
+
+.single-story .impact-read-more {
   text-decoration: none;
   width: 100%; }
-  .single-story .success-content .hidden-mobile .impact-read-more p {
+  .single-story .impact-read-more p {
     color: #4263AB;
     text-decoration: none; }
-  @media (min-width: 800px) {
-    .single-story .success-content .hidden-mobile .impact-read-more {
+  @media (min-width: 540px) {
+    .single-story .impact-read-more {
       padding: 0;
       display: relative;
       left: 0rem; } }
 
 .success-content {
   width: 70%; }
-  @media (min-width: 800px) {
-    .success-content {
-      width: 150%; }
-      .success-content p {
-        display: block; } }
+  @media (min-width: 540px) {
+    .success-content p {
+      display: block; } }
 
 .success-image {
   background-repeat: no-repeat;
   background-size: cover;
   width: 34vw;
   height: 34vw;
-  border-radius: 50%; }
+  border-radius: 50%;
+  padding: 10px; }
   .success-image h3 {
     color: white;
     text-align: center;
@@ -2370,12 +2370,17 @@ section.opportunities-pre-footer p {
     top: 60%;
     font-size: 14px;
     font-weight: bold; }
-  @media (min-width: 800px) {
+  @media (min-width: 540px) {
     .success-image {
       max-height: none;
       max-width: none;
       height: 25vw;
       width: 25vw; } }
+
+@media (min-width: 540px) {
+  .mobile-success-image {
+    width: 0px;
+    display: none; } }
 
 .stats-slide {
   height: auto;
@@ -2423,6 +2428,13 @@ section.opportunities-pre-footer p {
   @media (min-width: 800px) {
     .rectangle-container {
       height: 550px; } }
+
+@media (min-width: 800px) {
+  .how-we-work {
+    height: 350px; }
+    .how-we-work h2 {
+      margin-top: 0;
+      padding-top: 50px; } }
 
 .single-success-banner {
   background-position: center; }
