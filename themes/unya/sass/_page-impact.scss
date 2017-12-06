@@ -1,6 +1,6 @@
 /* Impact page */
 
-.success-stories {
+.success-stories, .volunteers{
   .content-wrapper {
     display:flex;
     flex-flow: row wrap;
@@ -25,7 +25,7 @@
 }
 
 
-.success-stories{
+.success-stories, .volunteers{
   .section-heading {
     background: $color__blue-dark;
     color: #fff;
