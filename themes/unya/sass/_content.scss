@@ -21,6 +21,13 @@
 	}
 }
 
+.display-all-but-mobile {
+  display: none;
+  @include tablet {
+    display: initial;
+  }
+}
+
 // Hidden on desktop view
 
 .hidden-desktop {
