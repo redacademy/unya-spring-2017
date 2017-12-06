@@ -2105,18 +2105,23 @@ section.opportunities-pre-footer p {
       z-index: 2; }
       @media (min-width: 540px) {
         .programs-list li .program-name {
-          height: 91px;
+          height: 70px;
           margin: 0;
           padding-top: 1rem;
-          width: 73%;
+          width: 80%;
           font-size: 1rem; } }
       @media (min-width: 800px) {
         .programs-list li .program-name {
+          height: 91px;
           font-size: 1.4rem;
           width: 80%; } }
     .programs-list li .program-logo {
+      height: 70px;
       position: absolute;
       z-index: 3; }
+      @media (min-width: 800px) {
+        .programs-list li .program-logo {
+          height: 91px; } }
 
 .education-heading h3 {
   background: #4263AB; }
@@ -2213,6 +2218,12 @@ section.opportunities-pre-footer p {
 .sports-list .program-logo {
   bottom: 0;
   right: 0; }
+  @media (min-width: 540px) {
+    .sports-list .program-logo {
+      right: 3.5px; } }
+  @media (min-width: 800px) {
+    .sports-list .program-logo {
+      right: 0; } }
 
 @media (min-width: 540px) {
   .sports-list li .program-name {
