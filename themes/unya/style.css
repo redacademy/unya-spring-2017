@@ -1055,6 +1055,12 @@ a {
     .hidden-mobile {
       display: initial; } }
 
+.display-all-but-mobile {
+  display: none; }
+  @media (min-width: 540px) {
+    .display-all-but-mobile {
+      display: initial; } }
+
 @media (min-width: 800px) {
   .hidden-desktop {
     display: none; } }
@@ -2034,17 +2040,20 @@ section.opportunities-pre-footer p {
 
 .programs-list {
   margin: 0.5rem 0 0 0;
-  padding: 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  list-style: none; }
-  @media (min-width: 800px) {
+  list-style: none;
+  padding: 0px; }
+  @media (min-width: 540px) {
     .programs-list {
       width: 100%;
+      padding: 50px; } }
+  @media (min-width: 800px) {
+    .programs-list {
       padding: 0 15.71429rem 0 17.42857rem; } }
   .programs-list li {
     height: 7.8571428571rem;
@@ -2056,16 +2065,20 @@ section.opportunities-pre-footer p {
     text-align: center; }
     @media (min-width: 800px) {
       .programs-list li {
-        height: 23.357142857rem;
+        height: 23.357142857rem !important;
         margin-bottom: 1.7142857143rem;
         -ms-flex-preferred-size: 48.5%;
             flex-basis: 48.5%; } }
+    @media (min-width: 540px) {
+      .programs-list li {
+        height: 18rem;
+        -ms-flex-preferred-size: 48.5%;
+            flex-basis: 48.5%;
+        margin-bottom: 1.7142857143rem; } }
     .programs-list li a {
       position: relative;
-      display: block; }
-      @media (min-width: 800px) {
-        .programs-list li a {
-          height: 100%; } }
+      display: block;
+      height: 100%; }
     .programs-list li .gradient {
       position: absolute;
       width: 100%;
@@ -2073,29 +2086,30 @@ section.opportunities-pre-footer p {
       z-index: 1; }
     .programs-list li .wp-post-image {
       position: relative;
-      max-width: 150%;
-      width: auto;
-      height: auto; }
+      width: 100%;
+      height: 100%; }
       @media (min-width: 800px) {
         .programs-list li .wp-post-image {
           min-height: 100%; } }
     .programs-list li .program-name {
       right: 15%;
       top: 0;
-      padding-top: 1rem;
       position: absolute;
       width: 70%;
       color: #FFF;
       font-family: "worksans", sans-serif;
-      font-size: 1rem;
       z-index: 2; }
-      @media (min-width: 800px) {
+      @media (min-width: 540px) {
         .programs-list li .program-name {
           height: 91px;
           margin: 0;
-          padding: 1rem;
-          width: 80%;
-          font-size: 1.4285714286rem; } }
+          padding-top: 1rem;
+          width: 73%;
+          font-size: 1rem; } }
+      @media (min-width: 800px) {
+        .programs-list li .program-name {
+          font-size: 1.4rem;
+          width: 80%; } }
     .programs-list li .program-logo {
       position: absolute;
       z-index: 3; }
@@ -2103,7 +2117,7 @@ section.opportunities-pre-footer p {
 .education-heading h3 {
   background: #4263AB; }
 
-@media (min-width: 800px) {
+@media (min-width: 540px) {
   .education-list li {
     border-radius: 0 0 0 90px; } }
 
@@ -2119,23 +2133,23 @@ section.opportunities-pre-footer p {
   bottom: 0;
   left: 0; }
 
-@media (min-width: 800px) {
+@media (min-width: 540px) {
   .education-list li .program-name {
     top: auto;
-    bottom: 0;
+    bottom: 0 !important;
     right: 0;
     background: #00277E; } }
 
 .personal-heading h3 {
   background: #D13434; }
 
-@media (min-width: 800px) {
+@media (min-width: 540px) {
   .personal-list li {
     border-radius: 0 90px 0 0; } }
 
 .personal-list .gradient {
   background: linear-gradient(to bottom, rgba(167, 0, 0, 0.7) 0%, rgba(167, 0, 0, 0.7) 100%); }
-  @media (min-width: 800px) {
+  @media (min-width: 540px) {
     .personal-list .gradient {
       background: rgba(234, 153, 152, 0.7); }
       .personal-list .gradient:hover {
@@ -2145,7 +2159,7 @@ section.opportunities-pre-footer p {
   top: 0;
   right: 0; }
 
-@media (min-width: 800px) {
+@media (min-width: 540px) {
   .personal-list li .program-name {
     top: 0;
     left: 0;
@@ -2155,13 +2169,13 @@ section.opportunities-pre-footer p {
 .live-in-heading h3 {
   background: #2C2C2C; }
 
-@media (min-width: 800px) {
+@media (min-width: 540px) {
   .live-in-list li {
     border-radius: 90px 0 0 0; } }
 
 .live-in-list .gradient {
   background: linear-gradient(to bottom, rgba(74, 74, 74, 0.7) 0%, rgba(74, 74, 74, 0.7) 100%); }
-  @media (min-width: 800px) {
+  @media (min-width: 540px) {
     .live-in-list .gradient {
       background: rgba(198, 194, 200, 0.7); }
       .live-in-list .gradient:hover {
@@ -2171,21 +2185,22 @@ section.opportunities-pre-footer p {
   top: 0;
   left: 0; }
 
-@media (min-width: 800px) {
+@media (min-width: 540px) {
   .live-in-list li .program-name {
     right: 0;
+    top: 0;
     background: #000; } }
 
 .sports-heading h3 {
   background: #E1CE01; }
 
-@media (min-width: 800px) {
+@media (min-width: 540px) {
   .sports-list li {
     border-radius: 0 0 90px 0; } }
 
 .sports-list .gradient {
   background: linear-gradient(to bottom, rgba(181, 167, 0, 0.7) 0%, rgba(181, 167, 0, 0.7) 100%); }
-  @media (min-width: 800px) {
+  @media (min-width: 540px) {
     .sports-list .gradient {
       background: rgba(255, 249, 214, 0.7); }
       .sports-list .gradient:hover {
@@ -2195,7 +2210,7 @@ section.opportunities-pre-footer p {
   bottom: 0;
   right: 0; }
 
-@media (min-width: 800px) {
+@media (min-width: 540px) {
   .sports-list li .program-name {
     left: 0;
     bottom: 0;
