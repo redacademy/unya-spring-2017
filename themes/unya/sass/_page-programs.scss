@@ -127,21 +127,26 @@
       z-index: 2;
 
       @include tablet {
-        height: 91px;
+        height: 70px;
         margin: 0;
         padding-top: 1rem;
-        width: 73%;
+        width: 80%;
         font-size: 1rem;
       }
       @include desktop {
+        height: 91px;        
         font-size: 1.4rem;
         width: 80%;
       }
     }
 
     .program-logo {
+      height: 70px;      
       position: absolute;
       z-index: 3;
+      @include desktop {
+        height: 91px;
+      }
     }
   }
 }
@@ -296,6 +301,12 @@
   .program-logo {
     bottom: 0;
     right: 0;
+    @include tablet {
+      right: 3.5px;
+    }
+    @include desktop {
+      right: 0;
+    }
   }
 
   li {
