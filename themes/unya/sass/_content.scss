@@ -113,23 +113,32 @@
   background-color:$color__heading-blue;
   display: flex;
   align-items: center;
-  @include desktop{
+  @include tablet{
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 25rem;
+    height: 10rem;
     width: 100%;
     background-size: cover;
     background-position: center;
     h1{
       margin-bottom:0;
-      padding-left: 8.7142857143rem;;
+      padding-left: 48px;
       width: 100%;
       font-weight: 600;
     }
     p{
-      padding-left: 8.7142857143rem;
+      padding-left: 48px;
       width: 100%;
+    }
+  }
+  @include desktop {
+    height: 25rem;
+    h1 {
+      padding-left: 8.7142857143rem;;      
+    }
+    p {
+      padding-left: 8.7142857143rem;;            
     }
   }
 }
