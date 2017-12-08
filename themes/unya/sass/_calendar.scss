@@ -48,7 +48,7 @@
     display: none;
   }
 
-  @include desktop {
+  @include tablet {
     display: flex;
   }
 
@@ -76,4 +76,13 @@
     }
   }
 
+}
+
+.calendar-tab-spacer {
+  @include tablet {
+    margin-left: 48px;
+  }
+  @include desktop {
+    margin-left: 0px;
+  }
 }

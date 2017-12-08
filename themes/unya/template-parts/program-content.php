@@ -2,7 +2,7 @@
 <section class="program-section" >
 	<header class="program-checkout">
 		<h2>Check out our programming</h2>
-		<p class="hidden-mobile">Click on any program to learn more</p>
+		<p class="desktop-only">Click on any program to learn more</p>
 	</header>
 	<div class="accordion" id="accordion">
 		<h2 class="accordion-label" id="education">Education &amp; Training</h2>
@@ -28,7 +28,7 @@
 					  	<?php the_post_thumbnail( 'medium' ); ?>
 					  <?php endif; ?>
 					  <h4 class="program-name"><?php the_title(); ?></h4>
-					  <img class="display-all-but-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/education-program.svg">
+					  <img class="hidden-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/education-program.svg">
 					</a>
 				</li>
 				<?php endforeach; ?>
@@ -57,7 +57,7 @@
 						<?php the_post_thumbnail( 'medium' ); ?>
 					<?php endif; ?>
 					<h4 class="program-name"><?php the_title(); ?></h4>
-					<img class="display-all-but-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/support-program.svg">
+					<img class="hidden-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/support-program.svg">
 					</a>
 				</li>
 				<?php endforeach; ?>
@@ -86,7 +86,7 @@
 						<?php the_post_thumbnail( 'medium' ); ?>
 					<?php endif; ?>
 					<h4 class="program-name"><?php the_title(); ?></h4>
-					<img class="display-all-but-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/live-in-program.svg">
+					<img class="hidden-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/live-in-program.svg">
 					</a>
 				</li>
 				<?php endforeach; ?>
@@ -115,7 +115,7 @@
 						<?php the_post_thumbnail( 'medium' ); ?>
 					<?php endif; ?>
 					<h4 class="program-name"><?php the_title(); ?></h4>
-					<img class="display-all-but-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/sports-program.svg">
+					<img class="hidden-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/sports-program.svg">
 					</a>
 				</li>
 				<?php endforeach; ?>

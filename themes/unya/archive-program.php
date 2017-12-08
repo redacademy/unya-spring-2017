@@ -19,11 +19,13 @@ get_header(); ?>
 			</div><!-- .page-header -->
 
 			<section id="calendar">
-				<h2>Calendar</h2>
-				<div class="hidden-desktop hidden-tablet mobile-calendar">
+				<div class="calendar-header">
+					<h2>Calendar</h2>
+        </div>	
+				<div class="mobile-only mobile-calendar">
 					<?php echo do_shortcode("[calendar id=274]"); ?>
 				</div>
-				<div class="hidden-mobile content-wrapper desktop-calendar">
+				<div class="hidden-mobile content-wrapper desktop-calendar calendar-tab-spacer">
 					<?php echo do_shortcode("[calendar id=268]"); ?>
 				</div>
 			</section>
