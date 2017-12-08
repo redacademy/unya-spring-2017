@@ -1,8 +1,23 @@
-#calendar h2 {
+.calendar-header {
+  display: none;
+  text-align: left;
+  @include tablet {
+    display: flex;
+    margin-left: 48px;
+  }
   @include desktop {
-    margin-left: 17.428571429rem;
+    margin-left: 237px;
   }
 }
+
+// #calendar h2 {
+//   @include desktop {
+//     margin-left: 237px;
+//   }
+//   @include tablet {
+//     margin-left: 48px;
+//   }
+// }
 .programs-title{
     background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
     url('../../assets/images/jack-min.png');
