@@ -1131,7 +1131,7 @@ a {
   display: flex;
   -ms-flex-align: center;
       align-items: center; }
-  @media (min-width: 800px) {
+  @media (min-width: 540px) {
     .header-wrapper {
       display: -ms-flexbox;
       display: flex;
@@ -1139,18 +1139,25 @@ a {
           flex-direction: column;
       -ms-flex-pack: end;
           justify-content: flex-end;
-      height: 25rem;
+      height: 10rem;
       width: 100%;
       background-size: cover;
       background-position: center; }
       .header-wrapper h1 {
         margin-bottom: 0;
-        padding-left: 8.7142857143rem;
+        padding-left: 48px;
         width: 100%;
         font-weight: 600; }
       .header-wrapper p {
-        padding-left: 8.7142857143rem;
+        padding-left: 48px;
         width: 100%; } }
+  @media (min-width: 800px) {
+    .header-wrapper {
+      height: 25rem; }
+      .header-wrapper h1 {
+        padding-left: 8.7142857143rem; }
+      .header-wrapper p {
+        padding-left: 8.7142857143rem; } }
 
 .nyc {
   text-align: right; }
