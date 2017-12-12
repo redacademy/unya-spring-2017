@@ -12,26 +12,15 @@ $('.image-carousel').slick({
 }),
 
 
-$('.logo-carousel').slick({
+$('.front-carousel').slick({
   infinite: true,
-  dots:true,
+  arrows: false,
+  dots:false,
   autoplay: true,
   speed: 300,
-  slidesToShow: 2,
+  slidesToShow: 1,
   slidesToScroll: 1,
   adaptiveHeight: true,
-  
-  responsive: [
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true,
-      }
-    }
-  ]
 });
 	
 

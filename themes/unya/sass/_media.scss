@@ -92,6 +92,38 @@ object {
 }
 
 // home page banners
+.front-carousel{
+	width:100vw;
+	position:absolute !important;
+	height:350px;
+	  @include tablet{
+			height:500px;
+		}
+		@include desktop {
+			height:700px;
+		}
+}
+
+.front-image-container{
+	img{
+			background-size: cover;
+			overflow:hidden;
+			height:350px;
+			width:100%;
+			@include tablet{
+				height:500px;
+				width:100%;
+			}
+			@include desktop{
+				height:700px;
+				width:100%;
+			}
+		}
+}
+
+.about{
+	padding-top:0px !important;
+}
 .about, .nyc, .programs {
   background-position: center;
 	background-size: cover;
@@ -188,14 +220,21 @@ object {
 // 		width: 100%;
 // 	}
 
-// 	.gradient {
-// 		height: 100%;
-// 		width: 100%;
-// 		top: 0;
-// 		position: absolute;
-// 		background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%);
-// 		z-index: 4;
-// 	}
+	.gradient {
+		height: 100%;
+		width: 100%;
+		top: 0;
+		position: absolute;
+		background-image: linear-gradient(to bottom,rgba(74,74,74,0.4) 0%, rgba(74,74,74,0.4) 100%);
+		z-index: 4;
+		height:350px;
+	    @include tablet{
+			  height:500px;
+		}
+		  @include desktop {
+			  height:700px;
+		}
+	}
 
 // 	.image-quote {
 // 		padding: 2rem;
