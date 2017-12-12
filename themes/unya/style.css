@@ -1073,13 +1073,13 @@ a {
       display: initial; } }
 
 .tablet-only {
-  display: inherit; }
+  display: none; }
   @media (min-width: 540px) {
     .tablet-only {
       display: initial; } }
   @media (min-width: 800px) {
     .tablet-only {
-      display: inherit; } }
+      display: none; } }
 
 .desktop-only {
   display: none; }
@@ -1349,11 +1349,11 @@ object {
   width: 100%; }
   @media (min-width: 540px) {
     .front-image-container img {
-      height: 500px;
+      height: auto;
       width: 100%; } }
   @media (min-width: 800px) {
     .front-image-container img {
-      height: 700px;
+      height: auto;
       width: 100%; } }
 
 .about {
