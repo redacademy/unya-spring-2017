@@ -13,12 +13,21 @@ get_header(); ?>
     <h1 class="hidden-mobile hidden-desktop">UNYA</h1>
 
     <section class="about">
-      <div class="content-wrapper">
-        <h2>UNYA: Where Youth lead </h2>
-        <p>The talented youth at UNYA are making an impact in our community. Learn about their successes.</p>
-        <a class="homepage-links" href="about"><h3>Learn more <span class="fa fa-angle-right" aria-hidden="true"></span></h3></a>
+      <div class="front-carousel">
+  			<?php $images = CFS()->get( 'front_slider' ); ?>
+  			<?php foreach ( $images as $image ) : ?>
+ 				  <li class="front-image-container">
+  					<img src="<?php echo $image['front_slide']; ?>" size:"cover">
+ 					  <div class="gradient"></div>
+   				</li>
+  			<?php endforeach; ?>
       </div>
-    </section>
+        <div class="content-wrapper ">
+          <h2>UNYA: Where Youth lead </h2>
+          <p>The talented youth at UNYA are making an impact in our community. Learn about their successes.</p>
+          <a class="homepage-links" href="about"><h3>Learn more <span class="fa fa-angle-right" aria-hidden="true"></span></h3></a>     
+  			</div>
+      </section>
     <section class="nyc">
       <div class="content-wrapper">
         <h2>Join us in making history</h2>
