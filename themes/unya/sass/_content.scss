@@ -40,14 +40,14 @@
 }
  //visible on tablet only
 .tablet-only { 
-  display:inherit;
+  display:none;
 
     @include tablet{
     display: initial;
   }
 
     @include desktop {
-    display: inherit;
+    display: none;
   }
 }
 .desktop-only{
@@ -164,6 +164,7 @@
 
   .content-wrapper{
     padding-top: 4.9285714286rem;
+    z-index: 999;
   }
   h2{
 		margin:0px;

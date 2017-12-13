@@ -546,6 +546,10 @@ textarea {
       .ctct-form-field-email input[type=email] {
         width: 100%; } }
 
+::-webkit-input-placeholder {
+  padding-left: 10px;
+  color: black; }
+
 :-ms-input-placeholder {
   padding-left: 10px;
   color: black; }
@@ -1069,13 +1073,13 @@ a {
       display: initial; } }
 
 .tablet-only {
-  display: inherit; }
+  display: none; }
   @media (min-width: 540px) {
     .tablet-only {
       display: initial; } }
   @media (min-width: 800px) {
     .tablet-only {
-      display: inherit; } }
+      display: none; } }
 
 .desktop-only {
   display: none; }
@@ -1176,7 +1180,8 @@ a {
   -ms-flex-pack: center;
       justify-content: center; }
   .about .content-wrapper, .nyc .content-wrapper, .programs .content-wrapper {
-    padding-top: 4.9285714286rem; }
+    padding-top: 4.9285714286rem;
+    z-index: 999; }
   .about h2, .nyc h2, .programs h2 {
     margin: 0px;
     color: #FFF;
@@ -1326,6 +1331,34 @@ object {
 .sbi_photo {
   border-radius: 10%; }
 
+.front-carousel {
+  width: 100vw;
+  position: absolute !important;
+  height: 350px; }
+  @media (min-width: 540px) {
+    .front-carousel {
+      height: 500px; } }
+  @media (min-width: 800px) {
+    .front-carousel {
+      height: 700px; } }
+
+.front-image-container img {
+  background-size: cover;
+  overflow: hidden;
+  height: 350px;
+  width: 100%; }
+  @media (min-width: 540px) {
+    .front-image-container img {
+      height: auto;
+      width: 100%; } }
+  @media (min-width: 800px) {
+    .front-image-container img {
+      height: auto;
+      width: 100%; } }
+
+.about {
+  padding-top: 0px !important; }
+
 .about, .nyc, .programs {
   background-position: center;
   background-size: cover;
@@ -1367,6 +1400,21 @@ object {
 .nyc-banner {
   background-size: cover;
   background-position: center; }
+
+.gradient {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(74, 74, 74, 0.4) 0%, rgba(74, 74, 74, 0.4) 100%);
+  z-index: 4;
+  height: 350px; }
+  @media (min-width: 540px) {
+    .gradient {
+      height: 500px; } }
+  @media (min-width: 800px) {
+    .gradient {
+      height: 700px; } }
 
 .logo-carousel {
   margin: 0 auto;
@@ -2442,6 +2490,8 @@ section.opportunities-pre-footer p {
   width: 100%; }
   .statistics h2 {
     padding: 0 29px; }
+  .statistics .ui-widget-content {
+    background-color: #00277E !important; }
 
 .testimonial-body {
   font-size: 24px; }

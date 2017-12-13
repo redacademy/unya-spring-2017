@@ -88,7 +88,7 @@ get_header(); ?>
 					  <a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>" cover>
 					  </a>
 					  <div class="success-content">
-						  <h3 class="hidden-mobile">Youth Feature - <?php the_title(); ?></h3>
+						  <h3 class="hidden-mobile">Volunteer - <?php the_title(); ?></h3>
 						  <p class="hidden-mobile"><?php echo CFS()->get( 'first_half_volunteer_story' ); ?></p>
 							<p class="hidden-mobile">
 								<a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>">Read more about <?php the_title(); ?>
@@ -101,7 +101,8 @@ get_header(); ?>
 				</div>
 	</section>
 
-		<section class="statistics" id="statistics">
+	<h2 class="accordion-label" id="statistics">Statistics</h2>
+		<div class="statistics">
 			<div class="image-carousel content-wrapper">
         <?php $stats_slider = CFS()->get( 'statistics_slider' ); ?>
         <?php foreach ( $stats_slider as $stats_slide ) : ?>
@@ -109,8 +110,9 @@ get_header(); ?>
  		      </div>
  		    <?php endforeach; ?>
       </div>	     
-		</section>
+		</div>
 
+	<h2 class="accordion-label" id="testimonials">Testimonials</h2>
 		<section class="testimonials" id="testimonials">
 			<h2 class="content-wrapper">Testimonials</h2>
 			<p class="content-wrapper testimonial-body">What do youth say about us?</p>
@@ -120,7 +122,7 @@ get_header(); ?>
 			</div>
   		<div class="rectangle-container">	<p class="content-wrapper"><?php echo CFS()->get( 'testimonial_2' ); ?></p></div>
 		</section>
-
+</div>
 		<?php get_template_part( 'template-parts/prefooter', 'fit' ); ?>
 
 		</main><!-- #main -->

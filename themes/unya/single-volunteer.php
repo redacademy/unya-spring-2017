@@ -19,7 +19,7 @@ get_header(); ?>
         <h2 class="single-success-title">Featured Volunteer - <?php the_title(); ?></h3>
 			 	<p class="first-half"><?php echo CFS()->get( 'first_half_volunteer_story' ); ?></p>
 				<span class="success-image-exerpt">
-				  <img class="single-success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>">
+				  <img class="single-success-image desktop-only" src="<?php echo CFS()->get( 'photo' ); ?>">
 				  <h3 class="success-exerpt hidden-mobile"><?php echo CFS()->get( 'exerpt' ); ?></h5>
 			  </span>
 			</div>

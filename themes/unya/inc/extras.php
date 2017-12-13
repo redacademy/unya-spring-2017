@@ -85,7 +85,7 @@ add_filter( 'get_the_archive_title', function ( $title ) {
 
 // CFS for Hero Banners //
 function unya_hero_banners() {
-    $first = CFS()->get( 'first_banner_pic' );
+   
     $second = CFS()->get( 'second_banner_pic' );
     $third = CFS()->get( 'third_banner_pic' ); 
     $impactpolygon = CFS()->get( 'impact_angled_banner' );
@@ -102,10 +102,6 @@ function unya_hero_banners() {
     $newstitle = CFS()->get( 'title_banner_news' );
     
     $custom_css = "
-        .about{
-            background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
-            url('$first');
-        }
         .nyc{	
             background-image: linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
             url('$second');
