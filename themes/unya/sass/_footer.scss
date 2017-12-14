@@ -215,8 +215,12 @@ section.opportunities-pre-footer{
   margin:0;
   width:100%;
   text-align:center;
+  @include tablet{
+    color:$color__blue-dark
+  }
 
   @include desktop {
+    color:white;
     padding:0 7.0714285714rem;
     width:100%;
     height:500px;
@@ -349,9 +353,8 @@ section.opportunities-pre-footer{
       color:#FFF;
       font-size:3.5rem;
     }
-    @include desktop {
-      border-left: 2px solid $color__blue-dark;
-      border-right:2px solid $color__blue-dark;
+    @include tablet {
+      
       .social-media-links-wrapper {
         display: flex;
         padding-top:2rem;
@@ -365,7 +368,11 @@ section.opportunities-pre-footer{
         order:2;
         height: 100px;
       }
-    } //closes desktop
+    }
+    @include desktop{
+      border-left: 2px solid $color__blue-dark;
+      border-right:2px solid $color__blue-dark;
+      } //closes desktop
   } // close .social-links
 
 // business contact information
@@ -381,7 +388,13 @@ section.opportunities-pre-footer{
       font-style: normal;
       font-weight: normal;
       font-size:$heading__h4;
-    }
+       @include tablet{
+           color:$color__blue-dark!important;
+          }
+          @include desktop{
+            color:black!important;
+            }
+    }   
       @include desktop {
       order: 3;
       display: flex;
@@ -399,7 +412,14 @@ section.opportunities-pre-footer{
         width:100%;
         padding: 1rem 0;
         text-align: left;
+         
         a, p{
+          @include tablet{
+           color:$color__blue-dark!important;
+          }
+          @include desktop{
+            color:black!important;
+          }
           order: 3;
           color:black;
           font-size: 1rem;

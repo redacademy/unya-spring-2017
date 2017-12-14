@@ -8,7 +8,7 @@
 ?>
 		</div><!-- #content -->
 			<footer id="colophon" class="site-footer hidden-mobile sidebar-stop" role="contentinfo">
-				<div class="newsletter-sign-up footer-flex">
+				<div class="newsletter-sign-up footer-flex hidden-tablet">
 					<h4 class="hidden-mobile">Sign up for our updates!</h4>
 					<button class="hidden-desktop sign-up-btn"><h4>Sign up for updates</h4></button>
 					<div class="subscription-form hidden-mobile">
@@ -17,7 +17,7 @@
 					</div>
 				</div><!-- newsletter -->
 				<div class="social-links footer-flex">
-					<h4 class="hidden-mobile">Get Social </h4>
+					<h4 class="desktop-only">Get Social </h4>
 					<div class="social-media-links-wrapper">
 						<a class="social-media-links facebook" href="https://www.facebook.com/urbannativeyouthassociation/" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
 						<a class="social-media-links twitter" href="https://twitter.com/unyanews?lang=en" target="_blank"><span class="fa fa-twitter-square" aria-hidden="true"></span></a>
