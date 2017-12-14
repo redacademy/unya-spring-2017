@@ -546,6 +546,10 @@ textarea {
       .ctct-form-field-email input[type=email] {
         width: 100%; } }
 
+::-webkit-input-placeholder {
+  padding-left: 10px;
+  color: black; }
+
 :-ms-input-placeholder {
   padding-left: 10px;
   color: black; }
@@ -625,6 +629,9 @@ input[type=submit] {
   text-decoration: none;
   color: #BABABA !important;
   padding-left: 5px; }
+
+.search-field::-webkit-input-placeholder {
+  color: #BABABA; }
 
 .search-field:-ms-input-placeholder {
   color: #BABABA; }

@@ -33,7 +33,7 @@
         event.preventDefault();
         btn.css('display', 'none');
         $('.newsletter-sign-up').addClass('open-form');
-        subscribeArea.removeClass('hidden-mobile').addClass('display-form');
+        subscribeArea.removeClass('desktop-only').addClass('display-form');
         $('.close-form').css('display', 'initial');
       });
 
@@ -41,7 +41,7 @@
       $('.close-form').on('click', function() {
         btn.css('display', 'initial');
         $('.newsletter-sign-up').removeClass('open-form');
-        subscribeArea.removeClass('display-form').addClass('hidden-mobile');
+        subscribeArea.removeClass('display-form').addClass('desktop-only');
         $('.close-form').css('display', 'none');
       });
 

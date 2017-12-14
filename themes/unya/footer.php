@@ -9,9 +9,9 @@
 		</div><!-- #content -->
 			<footer id="colophon" class="site-footer hidden-mobile sidebar-stop" role="contentinfo">
 				<div class="newsletter-sign-up footer-flex hidden-tablet">
-					<h4 class="hidden-mobile">Sign up for our updates!</h4>
+					<h4 class="desktop-only">Sign up for our updates!</h4>
 					<button class="hidden-desktop sign-up-btn"><h4>Sign up for updates</h4></button>
-					<div class="subscription-form hidden-mobile">
+					<div class="subscription-form desktop-only">
 						<?php echo do_shortcode( '	[ctct form="273"]' ); ?>
 						<div class="close-form"><i class="fa fa-times" aria-hidden="true"></i></div>
 					</div>
