@@ -546,6 +546,10 @@ textarea {
       .ctct-form-field-email input[type=email] {
         width: 100%; } }
 
+::-webkit-input-placeholder {
+  padding-left: 10px;
+  color: black; }
+
 :-ms-input-placeholder {
   padding-left: 10px;
   color: black; }
@@ -625,6 +629,9 @@ input[type=submit] {
   text-decoration: none;
   color: #BABABA !important;
   padding-left: 5px; }
+
+.search-field::-webkit-input-placeholder {
+  color: #BABABA; }
 
 .search-field:-ms-input-placeholder {
   color: #BABABA; }
@@ -853,7 +860,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 298; }
+  z-index: 998; }
   .site-footer.expanded a {
     text-decoration: none; }
   .site-footer.expanded .subscription-form.display-form {
@@ -1399,11 +1406,11 @@ object {
   width: 100%; }
   @media (min-width: 540px) {
     .front-image-container img {
-      height: auto;
+      height: 500px;
       width: 100%; } }
   @media (min-width: 800px) {
     .front-image-container img {
-      height: auto;
+      height: 700px;
       width: 100%; } }
 
 .about {
@@ -1669,8 +1676,12 @@ section.opportunities-pre-footer p {
   margin: 0;
   width: 100%;
   text-align: center; }
+  @media (min-width: 540px) {
+    .site-footer {
+      color: #00277E; } }
   @media (min-width: 800px) {
     .site-footer {
+      color: white;
       padding: 0 7.0714285714rem;
       width: 100%;
       height: 500px;
@@ -1793,24 +1804,25 @@ section.opportunities-pre-footer p {
       padding: 0 1.2rem;
       color: #FFF;
       font-size: 3.5rem; }
+    @media (min-width: 540px) {
+      .site-footer .social-links .social-media-links-wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        padding-top: 2rem;
+        width: 100%;
+        -ms-flex-pack: center;
+            justify-content: center; }
+      .site-footer .social-links a {
+        display: block;
+        font-size: 5rem;
+        color: #00277E;
+        -ms-flex-order: 2;
+            order: 2;
+        height: 100px; } }
     @media (min-width: 800px) {
       .site-footer .social-links {
         border-left: 2px solid #00277E;
-        border-right: 2px solid #00277E; }
-        .site-footer .social-links .social-media-links-wrapper {
-          display: -ms-flexbox;
-          display: flex;
-          padding-top: 2rem;
-          width: 100%;
-          -ms-flex-pack: center;
-              justify-content: center; }
-        .site-footer .social-links a {
-          display: block;
-          font-size: 5rem;
-          color: #00277E;
-          -ms-flex-order: 2;
-              order: 2;
-          height: 100px; } }
+        border-right: 2px solid #00277E; } }
   .site-footer .contact-us {
     -ms-flex-order: 2;
         order: 2;
@@ -1824,6 +1836,12 @@ section.opportunities-pre-footer p {
       font-style: normal;
       font-weight: normal;
       font-size: 0.85714rem; }
+      @media (min-width: 540px) {
+        .site-footer .contact-us p {
+          color: #00277E !important; } }
+      @media (min-width: 800px) {
+        .site-footer .contact-us p {
+          color: black !important; } }
     @media (min-width: 800px) {
       .site-footer .contact-us {
         -ms-flex-order: 3;
@@ -1848,6 +1866,12 @@ section.opportunities-pre-footer p {
                 order: 3;
             color: black;
             font-size: 1rem; } }
+      @media (min-width: 800px) and (min-width: 540px) {
+        .site-footer .contact-us .contact-details a, .site-footer .contact-us .contact-details p {
+          color: #00277E !important; } }
+      @media (min-width: 800px) and (min-width: 800px) {
+        .site-footer .contact-us .contact-details a, .site-footer .contact-us .contact-details p {
+          color: black !important; } }
 
 .mobile-calendar .simcal-calendar-head {
   padding: 0.7142857143rem .5em .5em .7em;
@@ -2540,6 +2564,10 @@ section.opportunities-pre-footer p {
   width: 100%; }
   .statistics h2 {
     padding: 0 29px; }
+  .statistics .image-carousel {
+    height: 700px; }
+  .statistics .stats-slide {
+    height: 700px; }
   .statistics .ui-widget-content {
     background-color: #00277E !important; }
 
