@@ -13,7 +13,7 @@
     </div>
   	<div class="search-result-header-wrapper">
 			<?php the_title( sprintf( '<h3 class="entry-title"><a class="search-result-url" href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
-			<p><?php get_post_type(); ?></p>
+			
     </div>
   	<div class="entry-summary">
   		<?php custom_field_excerpt('article_text'); ?>

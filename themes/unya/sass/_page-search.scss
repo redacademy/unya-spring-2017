@@ -5,6 +5,9 @@
   flex-flow: column nowrap;
   min-height: 40rem;
   padding-top: 6rem;
+  @include desktop {
+    flex-flow: row nowrap;
+  }
 }
 
 .search-single {
@@ -53,13 +56,52 @@
   }
 }
 
+.search-results-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  @include desktop {
+    width: 60%;
+    align-self: flex-start;
+  }
+}
+
 .search-result-image-wrapper {
   display: flex;
   width: 30%;
+  @include tablet {
+    width: 25%;
+  }
 }
 
 .search-result-header-wrapper {
   display: flex;
   width: 70%;
   padding: 3px;
+  @include tablet {
+    with: 75%;
+  }
+}
+
+.search-result-categories-wrapper {
+  @include tablet {
+    width: 85%;
+  }
+  @include desktop {
+    width: 30%;
+    height: 100%;
+    align-self: flex-start;
+  }
+  .search-categories-header {
+    @include tablet {
+      width: 100%;
+    }
+  }
+}
+
+.search-title {
+  background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+  url('../../assets/images/jack-min.png');
+  width: 100%;
 }
