@@ -3399,3 +3399,70 @@ section.donation {
         font-size: 18px;
         width: 337px;
         height: 61px; } }
+
+.search-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  min-height: 40rem;
+  padding-top: 6rem; }
+
+.search-single {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  width: 85%;
+  background: white;
+  overflow: hidden; }
+  .search-single article {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    width: 100%;
+    height: 100%; }
+
+.search-header {
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 3px solid #C7C1C8;
+  text-align: left;
+  width: 85%;
+  height: auto;
+  margin-bottom: 1rem; }
+  .search-header h3 {
+    color: #C7C1C8;
+    font-family: "poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400; }
+
+.search-result-url {
+  text-decoration: none;
+  color: black !important; }
+
+.no-results {
+  margin-top: 10rem; }
+  @media (min-width: 540px) {
+    .no-results {
+      margin: 10rem 0rem 10rem 0rem; } }
+  .no-results h2 {
+    color: black;
+    font-family: "poppins", sans-serif;
+    font-size: 14px; }
+
+.search-result-image-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%; }
+
+.search-result-header-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  padding: 3px; }

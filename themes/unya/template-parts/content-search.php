@@ -6,19 +6,17 @@
  */
 
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-</article><!-- #post-## -->
+<div class="news-single search-single">
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	  <div class="search-result-image-wrapper">
+			<img src="<?php echo get_template_directory_uri() . '/assets/images/Dustin.png' ?>" />
+    </div>
+  	<div class="search-result-header-wrapper">
+			<?php the_title( sprintf( '<h3 class="entry-title"><a class="search-result-url" href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+			<p><?php get_post_type(); ?></p>
+    </div>
+  	<div class="entry-summary">
+  		<?php custom_field_excerpt('article_text'); ?>
+  	</div><!-- .entry-summary -->
+  </article><!-- #post-## -->
+</div>
