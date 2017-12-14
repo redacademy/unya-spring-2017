@@ -623,7 +623,8 @@ input[type=submit] {
   font-family: "worksans", sans-serif;
   outline: none;
   text-decoration: none;
-  color: #BABABA !important; }
+  color: #BABABA !important;
+  padding-left: 5px; }
 
 .search-field:-ms-input-placeholder {
   color: #BABABA; }
@@ -632,12 +633,16 @@ input[type=submit] {
   color: #BABABA; }
 
 .search-form-wrapper {
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 14rem;
-  height: 2.25rem;
-  overflow: hidden;
-  margin-top: 0.75rem; }
+  display: none; }
+  @media (min-width: 800px) {
+    .search-form-wrapper {
+      display: initial;
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 14rem;
+      height: 2.25rem;
+      overflow: hidden;
+      margin-top: 0.75rem; } }
 
 #nav-search-button {
   font-size: 1rem; }

@@ -3,7 +3,7 @@
 	<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
   	<div class="search-fieldset">
   		<label>
-  			<input type="search" class="search-field" placeholder="Search ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+  			<input type="search" class="search-field" placeholder="Search" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
   		</label>
   		<button class="search-submit">
   			<span class="icon-search" aria-hidden="true">

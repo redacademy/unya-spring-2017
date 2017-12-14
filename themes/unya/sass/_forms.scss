@@ -163,6 +163,7 @@ input[type=submit]{
 	outline: none;
 	text-decoration: none;
 	color: #BABABA !important;
+	padding-left: 5px;
 }
 
 .search-field::placeholder {
@@ -171,12 +172,17 @@ input[type=submit]{
 
 
 .search-form-wrapper {
-	border: 1px solid black;
-	border-radius: 5px;
-	width: 14rem;
-	height: 2.25rem;
-	overflow: hidden;
-	margin-top: 0.75rem;
+	display: none;
+	@include desktop {
+		display: initial;
+		border: 1px solid black;
+		border-radius: 5px;
+		width: 14rem;
+		height: 2.25rem;
+		overflow: hidden;
+		margin-top: 0.75rem;
+	}
+
 }
 
 #nav-search-button {
