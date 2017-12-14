@@ -18,25 +18,26 @@ get_header(); ?>
 		<div class="header-wrapper about-title sidebar-start">
 			<h1>About UNYA</h1>
 		</div>
-		<div class="accordion" id="accordion">
-			<h2 class="accordion-label" id="vision">Vision &amp; Mission</h2>
-			<div>
-				<section class="vision">
+		<section class="vision">
 					<div class="content-wrapper">
 						<h2>Vision &amp; Mission</h2>
 						<p><?php echo wp_kses( CFS()->get( 'vision' ),array('br') ); ?></p>
 					</div>
 				</section>
+		<div class="accordion" id="accordion">
+			<h2 class="accordion-label" id="vision">Philosophy of Care</h2>
+			<div>
+
 				<section class="philosophy" id="philosophy">
-					<div class="content-wrapper">
-						<h2>Philosophy of Care</h2>
+					<div class="content-wrapper philosophy-content-wrapper">
+						<h2 class="philosophy-header-desktop">Philosophy of Care</h2>
 						<p><?php echo wp_kses( CFS()->get( 'philosophy' ),array('br') ); ?></p>
 					</div>
 				</section>
 			</div>
 			<h2 class="accordion-label" id="brief-history">History</h2>
 			<section class="brief-history">
-				<div class="content-wrapper">
+				<div class="content-wrapper" id="about-history-wrapper">
 					<h2 class="hidden-mobile">Brief History</h2>
 					<p><?php echo wp_kses( CFS()->get( 'brief_history' ),array('br') ); ?></p>
 				</div>
@@ -77,7 +78,7 @@ get_header(); ?>
 					<ul>
 						<?php foreach ( $reports as $report ): ?>
 							<li class="report-item">
-								<div class="image-wrapper"><i class="fa fa-file-o" aria-hidden="true"></i></div>
+								<div class="image-wrapper hidden-mobile"><i class="fa fa-file-o" aria-hidden="true"></i></div>
 								<div class="text-wrapper">
 									<p class="report-title"><?php echo esc_html( $report['report_title'] ); ?></p>
 									<p class="report-description"><?php echo esc_html( $report['report_description'] ); ?></p>

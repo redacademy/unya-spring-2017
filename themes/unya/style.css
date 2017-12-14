@@ -546,10 +546,6 @@ textarea {
       .ctct-form-field-email input[type=email] {
         width: 100%; } }
 
-::-webkit-input-placeholder {
-  padding-left: 10px;
-  color: black; }
-
 :-ms-input-placeholder {
   padding-left: 10px;
   color: black; }
@@ -629,9 +625,6 @@ input[type=submit] {
   text-decoration: none;
   color: #BABABA !important;
   padding-left: 5px; }
-
-.search-field::-webkit-input-placeholder {
-  color: #BABABA; }
 
 .search-field:-ms-input-placeholder {
   color: #BABABA; }
@@ -852,7 +845,8 @@ a {
   .site-header.expanded #main-nav-toggle {
     background: url("../../assets/images/menu-close.svg") no-repeat center;
     background-size: contain;
-    height: 3.5rem; }
+    height: 3.5rem;
+    margin-right: 1rem; }
 
 .site-footer.expanded {
   position: absolute;
@@ -879,7 +873,8 @@ a {
   background-size: contain;
   box-shadow: none;
   outline: none;
-  border: none; }
+  border: none;
+  margin-right: 1rem; }
   @media (min-width: 800px) {
     #main-nav-toggle {
       display: none; } }
@@ -1314,7 +1309,7 @@ a {
           background: #A70000; } }
   .homepage-links .fa-angle-right {
     font-weight: bold;
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
     @media (min-width: 800px) {
       .homepage-links .fa-angle-right {
         display: none; } }
@@ -1324,6 +1319,12 @@ a {
   @media (min-width: 800px) {
     #sb_instagram {
       margin: 0 auto; } }
+
+#front-page-slider-header {
+  margin-top: 5rem; }
+  @media (min-width: 800px) {
+    #front-page-slider-header {
+      margin-top: 0; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -2053,16 +2054,27 @@ section.opportunities-pre-footer p {
   @media (min-width: 800px) {
     .about-content ul {
       display: initial; } }
-  @media (min-width: 800px) {
+  @media (min-width: 540px) {
     .about-content ul .image-wrapper {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-align: center;
           align-items: center;
-      border-radius: 8px 0 0 40px; } }
+      border-radius: 10px 0px 0px 50px;
+      background: #2C2C2C;
+      width: 20%;
+      height: 100%;
+      -ms-flex-pack: center;
+          justify-content: center; } }
+  @media (min-width: 800px) {
+    .about-content ul .image-wrapper {
+      min-height: 10rem; } }
   .about-content ul i {
     color: #FFF;
     font-size: 4.5rem; }
+    @media (min-width: 800px) {
+      .about-content ul i {
+        font-size: 6rem; } }
   .about-content ul .text-wrapper {
     width: 100%;
     padding: 0.5rem; }
@@ -2121,6 +2133,33 @@ section.opportunities-pre-footer p {
 .reports .section-heading {
   background: #2C2C2C; }
 
+.report-item {
+  min-height: 7rem;
+  border: 1px solid lightgrey;
+  border-radius: 10px 10px 10px 25px;
+  box-shadow: 0px 4px 4px 0px lightgrey;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  @media (min-width: 540px) {
+    .report-item {
+      border-radius: 10px 10px 10px 50px; } }
+
+#about-history-wrapper {
+  padding-top: 1rem; }
+  @media (min-width: 800px) {
+    #about-history-wrapper {
+      padding-top: none; } }
+
+.philosophy-header-desktop {
+  display: none; }
+  @media (min-width: 800px) {
+    .philosophy-header-desktop {
+      display: initial; } }
+
+@media (min-width: 800px) {
+  .philosophy-content-wrapper {
+    margin-top: 4rem; } }
+
 .calendar-header {
   display: none;
   text-align: left; }
@@ -2161,9 +2200,12 @@ section.opportunities-pre-footer p {
   .program-checkout h2 {
     padding-left: 2.2em;
     color: white;
-    font-size: 1.4285714286rem;
+    font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase; }
+    @media (min-width: 540px) {
+      .program-checkout h2 {
+        font-size: 1.5rem; } }
     @media (min-width: 800px) {
       .program-checkout h2 {
         margin: 0;

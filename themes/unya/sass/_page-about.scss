@@ -142,16 +142,26 @@
 
     .image-wrapper {
       
-      @include desktop {
+      @include tablet {
         display: flex;
         align-items: center;
-        border-radius: 8px 0 0 40px;
+        border-radius: 10px 0px 0px 50px;
+        background: #2C2C2C;
+        width: 20%;
+        height: 100%;
+        justify-content: center;
+      }
+      @include desktop {
+        min-height: 10rem;
       }
     }
 
     i {
       color: #FFF;
       font-size: 4.5rem;
+      @include desktop {
+        font-size: 6rem;
+      }
 		}
 
 		.text-wrapper {
@@ -234,4 +244,36 @@
 
 .reports .section-heading {
   background: $color__grey-dark;
+}
+
+.report-item {
+  min-height: 7rem;
+  border: 1px solid lightgrey;
+  border-radius: 10px 10px 10px 25px;
+  box-shadow: 0px 4px 4px 0px lightgrey;  
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  @include tablet {
+    border-radius: 10px 10px 10px 50px;    
+  }
+}
+
+#about-history-wrapper {
+  padding-top: 1rem;
+  @include desktop {
+    padding-top: none;
+  }
+}
+
+.philosophy-header-desktop {
+  display: none;
+  @include desktop {
+    display: initial;
+  }
+}
+
+.philosophy-content-wrapper {
+  @include desktop {
+    margin-top: 4rem;    
+  }
 }
