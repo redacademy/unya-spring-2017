@@ -3509,3 +3509,9 @@ section.donation {
 .search-title {
   background-image: linear-gradient(to bottom, rgba(66, 99, 171, 0.7) 0%, rgba(66, 99, 171, 0.7) 100%), url("../../assets/images/jack-min.png");
   width: 100%; }
+
+.search-tax-terms-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }

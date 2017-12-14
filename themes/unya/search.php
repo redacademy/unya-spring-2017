@@ -31,8 +31,22 @@ get_header(); ?>
 			</div>
 			<div class="search-result-categories-wrapper hidden-mobile">
 			  <div class="search-header search-categories-header">
-          <h3>Categories</h3>
-			  </div>
+					<h3>Categories</h3>
+					
+				</div>
+				<div class="search-tax-terms-wrapper">
+			    <?php
+			    	$args=array(
+              'taxonomy' => 'news_category'
+            );
+            $taxonomies=get_terms($args); 
+            if  ($taxonomies) {
+              foreach ($taxonomies as $taxonomy ) {
+                echo '<div class="news-tax-term-box"><p>' . $taxonomy->name . '</p></div>';
+              }
+            }
+					?>
+				</div>	
       </div>	
 		</main><!-- #main -->
 	</section><!-- #primary -->
