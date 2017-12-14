@@ -593,6 +593,60 @@ input[type=submit] {
   height: 50px;
   margin: 20px 0px; }
 
+.search-form {
+  border: none; }
+  .search-form .search-fieldset {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    border: none;
+    padding-top: 3px; }
+    .search-form .search-fieldset .search-submit {
+      padding: 0;
+      padding-bottom: 5px;
+      width: 2rem;
+      height: 2rem;
+      background: white;
+      color: black;
+      border: none;
+      box-shadow: none; }
+
+.search-field {
+  border: none !important;
+  width: auto !important;
+  height: auto !important;
+  font-family: "worksans", sans-serif;
+  outline: none;
+  text-decoration: none;
+  color: #BABABA !important;
+  padding-left: 5px; }
+
+.search-field:-ms-input-placeholder {
+  color: #BABABA; }
+
+.search-field::placeholder {
+  color: #BABABA; }
+
+.search-form-wrapper {
+  display: none; }
+  @media (min-width: 800px) {
+    .search-form-wrapper {
+      display: initial;
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 14rem;
+      height: 2.25rem;
+      overflow: hidden;
+      margin-top: 0.75rem; } }
+
+#nav-search-button {
+  font-size: 1rem; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -717,7 +771,7 @@ a {
   width: 100vw;
   position: fixed;
   background: #fff;
-  z-index: 50;
+  z-index: 9999;
   transition: all 0.4s linear; }
   .site-header .site-branding {
     padding: 1rem;
@@ -3345,3 +3399,119 @@ section.donation {
         font-size: 18px;
         width: 337px;
         height: 61px; } }
+
+.search-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  min-height: 40rem;
+  padding-top: 6rem; }
+  @media (min-width: 800px) {
+    .search-main {
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap; } }
+
+.search-single {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  width: 85%;
+  background: white;
+  overflow: hidden; }
+  .search-single article {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    width: 100%;
+    height: 100%; }
+
+.search-header {
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 3px solid #C7C1C8;
+  text-align: left;
+  width: 85%;
+  height: auto;
+  margin-bottom: 1rem; }
+  .search-header h3 {
+    color: #C7C1C8;
+    font-family: "poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400; }
+
+.search-result-url {
+  text-decoration: none;
+  color: black !important; }
+
+.no-results {
+  margin-top: 10rem; }
+  @media (min-width: 540px) {
+    .no-results {
+      margin: 10rem 0rem 10rem 0rem; } }
+  .no-results h2 {
+    color: black;
+    font-family: "poppins", sans-serif;
+    font-size: 14px; }
+
+.search-results-wrapper {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; }
+  @media (min-width: 800px) {
+    .search-results-wrapper {
+      width: 60%;
+      -ms-flex-item-align: start;
+          align-self: flex-start; } }
+
+.search-result-image-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%; }
+  @media (min-width: 540px) {
+    .search-result-image-wrapper {
+      width: 25%; } }
+
+.search-result-header-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  padding: 3px; }
+  @media (min-width: 540px) {
+    .search-result-header-wrapper {
+      with: 75%; } }
+
+@media (min-width: 540px) {
+  .search-result-categories-wrapper {
+    width: 85%; } }
+
+@media (min-width: 800px) {
+  .search-result-categories-wrapper {
+    width: 30%;
+    height: 100%;
+    -ms-flex-item-align: start;
+        align-self: flex-start; } }
+
+@media (min-width: 540px) {
+  .search-result-categories-wrapper .search-categories-header {
+    width: 100%; } }
+
+.search-title {
+  background-image: linear-gradient(to bottom, rgba(66, 99, 171, 0.7) 0%, rgba(66, 99, 171, 0.7) 100%), url("../../assets/images/jack-min.png");
+  width: 100%; }
+
+.search-tax-terms-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }

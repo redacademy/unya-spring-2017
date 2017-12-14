@@ -110,7 +110,7 @@
     }
 
     $(document).scroll(function() {
-      var $position = $(this).scrollTop() + $('.site-header').height();
+      var $position = $(this).scrollTop();
       if (sidebarArea.length) {
         fixSidebar($position);
       }
