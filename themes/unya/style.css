@@ -2618,29 +2618,44 @@ section.opportunities-pre-footer p {
   max-height: 500px; }
 
 /* Native Youth Centre */
-@media (min-width: 800px) {
+@media (min-width: 540px) {
   .header-wrapper-nyc p {
+    font-size: 1rem;
     color: white;
     margin-top: 0;
-    font-size: 2.1428571429rem; } }
+    text-transform: uppercase;
+    font-weight: light; } }
 
 @media (min-width: 800px) {
+  .header-wrapper-nyc p {
+    font-size: 2.1428571429rem; } }
+
+@media (min-width: 540px) {
   .donation-banner {
     height: 12.4285714286rem;
-    width: 100%;
+    width: auto;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
         align-items: center;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-direction: row;
         flex-direction: row;
     color: white; }
     .donation-banner p, .donation-banner h2 {
+      width: auto;
       margin: 0;
-      width: 100%;
-      font-family: "poppins", sans-serif; }
+      font-size: 1rem;
+      font-family: "poppins", sans-serif; } }
+
+@media (min-width: 800px) {
+  .donation-banner {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    width: 100%; }
+    .donation-banner p, .donation-banner h2 {
+      font-size: 1.5rem; }
     .donation-banner p {
       padding-left: 8.7142857143rem;
       font-size: 2.28571rem;
@@ -2725,11 +2740,17 @@ section.opportunities-pre-footer p {
 
 .planning .section-heading {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; }
+  @media (min-width: 540px) {
+    .planning .section-heading {
+      padding-left: 1rem; } }
   @media (min-width: 800px) {
     .planning .section-heading {
       -ms-flex-direction: column;
-          flex-direction: column; } }
+          flex-direction: column;
+      padding-left: 0; } }
   .planning .section-heading h2 {
     text-align: left;
     margin-bottom: 0; }
@@ -2740,6 +2761,12 @@ section.opportunities-pre-footer p {
     padding: 0 15.71429rem 0 17.42857rem;
     margin-top: 0;
     font-weight: normal; }
+    @media (min-width: 540px) {
+      .planning .section-heading h4 {
+        padding: 0; } }
+    @media (min-width: 800px) {
+      .planning .section-heading h4 {
+        padding: 0 15.71429rem 0 17.42857rem; } }
 
 .ways-to-help {
   background: #D13434;
