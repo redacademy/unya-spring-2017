@@ -274,7 +274,8 @@
 
   .fa-angle-right {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    
     @include desktop{
       display: none;
     }
@@ -285,5 +286,12 @@
   margin-right:0;
   @include desktop{
     margin: 0 auto;
+  }
+}
+
+#front-page-slider-header {
+  margin-top: 5rem;
+  @include desktop {
+    margin-top: 0;
   }
 }

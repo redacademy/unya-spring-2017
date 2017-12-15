@@ -265,6 +265,7 @@ a {
 		background: url('../../assets/images/menu-close.svg') no-repeat center;
 		background-size: contain;
 		height: 3.5rem;
+		margin-right: 1rem;
 	}
 }
 
@@ -298,6 +299,7 @@ a {
 	box-shadow: none;
 	outline: none;
 	border: none;
+	margin-right: 1rem;
 	@include desktop {
 		display: none;
 	}

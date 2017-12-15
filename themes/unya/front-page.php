@@ -23,7 +23,7 @@ get_header(); ?>
   			<?php endforeach; ?>
       </div>
         <div class="content-wrapper ">
-          <h2>UNYA: Where Youth lead </h2>
+          <h2 id="front-page-slider-header">UNYA: Where Youth lead </h2>
           <p>The talented youth at UNYA are making an impact in our community. Learn about their successes.</p>
           <a class="homepage-links" href="about"><h3>Learn more <span class="fa fa-angle-right" aria-hidden="true"></span></h3></a>     
   			</div>
