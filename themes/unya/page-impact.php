@@ -27,7 +27,7 @@ get_header(); ?>
 	  <section class="success-stories">
 			<header class="section-heading hidden-mobile">
 				<h2 class="hidden-mobile">Success Stories</h2>
-				<h4 class="hidden-mobile">Learn more about the talented youth at UNYA, and the successes we celebrate.</h4>
+				<h4 class="hidden-mobile desktop-about-heading-sub">Learn more about the talented youth at UNYA, and the successes we celebrate.</h4>
 			</header>
 			
 			<div class="content-wrapper">
@@ -66,7 +66,7 @@ get_header(); ?>
 	<section class="volunteers">
 		<header class="section-heading hidden-mobile">
 			<h2 class="hidden-mobile">Volunteers</h2>
-			<h4 class="hidden-mobile">Learn more about some of our hardworking volunteers.</h4>
+			<h4 class="hidden-mobile desktop-about-heading-sub">Learn more about some of our hardworking volunteers.</h4>
 		</header>
 		<h4 class="hidden-desktop">Learn more about some of our hardworking volunteers.</h4>
 	
@@ -94,7 +94,7 @@ get_header(); ?>
 								<a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>">Read more about <?php the_title(); ?>
 									<i class="fa fa-arrow-right" aria-hidden="true"></i>
 								</a>
-							</p>  			
+							</p>
 				    </div>
 				  </section>
 		    <?php endforeach; wp_reset_postdata(); ?>
@@ -112,17 +112,18 @@ get_header(); ?>
       </div>	     
 		</div>
 
-	<h2 class="accordion-label" id="testimonials">Testimonials</h2>
+	  <h2 class="accordion-label" id="testimonials">Testimonials</h2>
 		<section class="testimonials" id="testimonials">
-			<h2 class="content-wrapper">Testimonials</h2>
-			<p class="content-wrapper testimonial-body">What do youth say about us?</p>
 
 			<div class="impact-polygon">
+			  <h2 class="content-wrapper">Testimonials</h2>
 			  <p class="content-wrapper"><?php echo wp_kses(CFS()->get( 'testimonial_1' ),array('br')); ?></p>
 			</div>
-  		<div class="rectangle-container">	<p class="content-wrapper"><?php echo CFS()->get( 'testimonial_2' ); ?></p></div>
+  		<div class="rectangle-container">	
+				<p class="content-wrapper"><?php echo CFS()->get( 'testimonial_2' ); ?></p>
+			</div>
 		</section>
-</div>
+  </div>
 		<?php get_template_part( 'template-parts/prefooter', 'fit' ); ?>
 
 		</main><!-- #main -->

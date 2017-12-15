@@ -85,13 +85,13 @@
 	height:34vw;
 	border-radius: 50%;
   padding:10px;
-  
+  margin-bottom: 1rem;
   h3{
     color:white;
     text-align: center;
     position:relative;
     top:60%;
-    font-size:14px;
+    font-size:12px;
     font-weight:bold;
   }
 	
@@ -129,6 +129,9 @@
   }
 .image-carousel{
   height:700px;
+  .slick-dots {
+    right: 1px;
+  }
 }
 .stats-slide{
   height:700px;
@@ -137,10 +140,6 @@
   background-color: #00277E !important;
 }
 }
-.testimonial-body{
-  font-size:24px;
-}
-
 
 .impact-head{
   color:white;
@@ -154,7 +153,18 @@
     width:70%;
     margin: 175px 20%;
     color:white;
-	}
+    line-height: 1.2;
+  }
+  h2 {
+    color: white;
+    font-family: $font__heading;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-left: 2rem;
+    @include desktop {
+      margin-left: 0;
+    }
+  }
   @include desktop{
 	height:550px;
   }
@@ -166,7 +176,8 @@
   p{
 		width:70%;
 		margin: 175px 10%;
-		color:white;
+    color:white;
+    line-height: 1.2;
 	}
   @include desktop{
 	height:550px;
@@ -224,4 +235,8 @@
   display:flex;
   flex-flow:row nowrap;
   max-height:500px;
+}
+
+.desktop-about-heading-sub {
+  margin-left: 2rem;
 }
