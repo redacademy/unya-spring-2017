@@ -131,6 +131,10 @@
   height:700px;
   .slick-dots {
     right: 1px;
+    @include desktop {
+      width: auto;
+      right: 50%;
+    }
   }
 }
 .stats-slide{

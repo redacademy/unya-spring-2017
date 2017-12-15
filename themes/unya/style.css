@@ -2620,6 +2620,10 @@ section.opportunities-pre-footer p {
     height: 700px; }
     .statistics .image-carousel .slick-dots {
       right: 1px; }
+      @media (min-width: 800px) {
+        .statistics .image-carousel .slick-dots {
+          width: auto;
+          right: 50%; } }
   .statistics .stats-slide {
     height: 700px; }
   .statistics .ui-widget-content {
