@@ -45,7 +45,7 @@ get_header(); ?>
 			<h2 class="accordion-label" id="leadership">Leadership</h2>
 			<section class="leadership">
 				<header class="section-heading hidden-mobile">
-					<h2 class="hidden-mobile">Leadership</h2>
+					<h2 class="hidden-mobile about-leadership-heading">Leadership</h2>
 					<h4 class="hidden-mobile">The UNYA Board exmplifies the leadership of our youth.</h4>
 				</header>
 				<div class="content-wrapper">

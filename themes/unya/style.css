@@ -1976,8 +1976,11 @@ section.opportunities-pre-footer p {
     margin-bottom: 0;
     color: #fff; }
   .about-content .leadership .section-heading h4 {
-    margin-left: 17.4rem;
+    margin-left: 2rem;
     margin-top: 0; }
+    @media (min-width: 800px) {
+      .about-content .leadership .section-heading h4 {
+        margin-left: 17.4rem; } }
 
 .about-content .leadership ul {
   display: -ms-flexbox;
@@ -2159,6 +2162,12 @@ section.opportunities-pre-footer p {
 @media (min-width: 800px) {
   .philosophy-content-wrapper {
     margin-top: 4rem; } }
+
+.about-leadership-heading {
+  padding-left: 2rem; }
+  @media (min-width: 800px) {
+    .about-leadership-heading {
+      padding-left: initial; } }
 
 .calendar-header {
   display: none;
@@ -2569,13 +2578,14 @@ section.opportunities-pre-footer p {
   width: 34vw;
   height: 34vw;
   border-radius: 50%;
-  padding: 10px; }
+  padding: 10px;
+  margin-bottom: 1rem; }
   .success-image h3 {
     color: white;
     text-align: center;
     position: relative;
     top: 60%;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold; }
   @media (min-width: 540px) {
     .success-image {
@@ -2608,13 +2618,12 @@ section.opportunities-pre-footer p {
     padding: 0 29px; }
   .statistics .image-carousel {
     height: 700px; }
+    .statistics .image-carousel .slick-dots {
+      right: 1px; }
   .statistics .stats-slide {
     height: 700px; }
   .statistics .ui-widget-content {
     background-color: #00277E !important; }
-
-.testimonial-body {
-  font-size: 24px; }
 
 .impact-head {
   color: white; }
@@ -2626,7 +2635,17 @@ section.opportunities-pre-footer p {
     text-align: right;
     width: 70%;
     margin: 175px 20%;
-    color: white; }
+    color: white;
+    line-height: 1.2; }
+  .impact-polygon h2 {
+    color: white;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-left: 2rem; }
+    @media (min-width: 800px) {
+      .impact-polygon h2 {
+        margin-left: 0; } }
   @media (min-width: 800px) {
     .impact-polygon {
       height: 550px; } }
@@ -2637,7 +2656,8 @@ section.opportunities-pre-footer p {
   .rectangle-container p {
     width: 70%;
     margin: 175px 10%;
-    color: white; }
+    color: white;
+    line-height: 1.2; }
   @media (min-width: 800px) {
     .rectangle-container {
       height: 550px; } }
@@ -2686,6 +2706,9 @@ section.opportunities-pre-footer p {
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
   max-height: 500px; }
+
+.desktop-about-heading-sub {
+  margin-left: 2rem; }
 
 /* Native Youth Centre */
 @media (min-width: 540px) {

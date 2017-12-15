@@ -54,8 +54,11 @@
         color: #fff;
       }
       h4 {
-        margin-left: 17.4rem;
+        margin-left: 2rem;
         margin-top: 0;
+        @include desktop {
+          margin-left: 17.4rem;          
+        }
       }
     }
     ul {
@@ -275,5 +278,12 @@
 .philosophy-content-wrapper {
   @include desktop {
     margin-top: 4rem;    
+  }
+}
+
+.about-leadership-heading {
+  padding-left: 2rem;
+  @include desktop {
+    padding-left: initial;
   }
 }
