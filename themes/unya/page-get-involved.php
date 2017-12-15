@@ -16,7 +16,7 @@ get_header(); ?>
 			<h2 class="accordion-label" id="donate">Donate</h2>
 			<section class="donation">
 				<header class="section-heading">
-					<h2 class="hidden-mobile">Donate</h2>
+					<h2 class="hidden-mobile donate-header">Donate</h2>
 				</header>
 				<div class="content-wrapper">
 					<p><?php echo wp_kses(CFS()->get( 'donation_intro_paragraph' ),array('br') ); ?></p>
@@ -64,10 +64,10 @@ get_header(); ?>
 					<?php foreach ( $employment_opportunities as $post ) : setup_postdata( $post ); ?>
 					<li class="single-opportunity">
 						<h3><?php the_title(); ?></h3>
-						<a href="<?php echo CFS()->get( 'link' ); ?>" target="_blank">
-							<span class="hidden-mobile">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span><span class="hidden-desktop"><i class="fa fa-angle-right"></i></span>
-						</a>
 						<p class="hidden-mobile"><?php echo CFS()->get( 'description' ); ?></p>
+						<a class="get-involved-link" href="<?php echo CFS()->get( 'link' ); ?>" target="_blank">
+							<span class="hidden-mobile">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span><span class="mobile-only"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+						</a>
 					</li>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</ul>
@@ -88,17 +88,13 @@ get_header(); ?>
 				<?php foreach ( $volunteer_opportunities as $post ) : setup_postdata( $post ); ?>
 					<li class="single-opportunity">
 						<h3><?php the_title(); ?></h3>
-						<a href="<?php echo CFS()->get( 'link' ); ?>" target="_blank"><span class="hidden-mobile">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span><span class="hidden-desktop"><i class="fa fa-angle-right"></i></span></a>
 						<p class="hidden-mobile"><?php echo CFS()->get( 'description' ); ?></p>
+						<a class="get-involved-link" href="<?php echo CFS()->get( 'link' ); ?>" target="_blank"><span class="hidden-mobile">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></span><span class="mobile-only"><i class="fa fa-angle-right"></i></span></a>
 				</li>
 				<?php endforeach; wp_reset_postdata(); ?>
 
 			</section>
 		</div>
-		<section class="hidden-mobile opportunity-cta">
-			<h5 class="hidden-mobile">Please email <span="capitalize">info@unya.bc.ca</span> for additional job opportunities, or to be added to our email list.</h5>
-		</section>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<section class="pre-footer fit-button opportunities-pre-footer">
