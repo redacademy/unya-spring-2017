@@ -92,7 +92,6 @@ get_header(); ?>
 						<a class="get-involved-link" href="<?php echo CFS()->get( 'link' ); ?>" target="_blank"><span class="hidden-mobile">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></span><span class="mobile-only"><i class="fa fa-angle-right"></i></span></a>
 				</li>
 				<?php endforeach; wp_reset_postdata(); ?>
-
 			</section>
 		</div>
 		</main><!-- #main -->
