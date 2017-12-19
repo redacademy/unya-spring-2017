@@ -1672,7 +1672,7 @@ section.opportunities-pre-footer p {
 /************/
 .site-footer {
   min-width: 320px;
-  max-height: 300px;
+  max-height: 325px;
   position: relative;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
@@ -1684,9 +1684,6 @@ section.opportunities-pre-footer p {
   margin: 0;
   width: 100%;
   text-align: center; }
-  @media (min-width: 540px) {
-    .site-footer {
-      color: #00277E; } }
   @media (min-width: 800px) {
     .site-footer {
       color: white;
@@ -1823,7 +1820,6 @@ section.opportunities-pre-footer p {
       .site-footer .social-links a {
         display: block;
         font-size: 5rem;
-        color: #00277E;
         -ms-flex-order: 2;
             order: 2;
         height: 100px; } }
@@ -1844,9 +1840,6 @@ section.opportunities-pre-footer p {
       font-style: normal;
       font-weight: normal;
       font-size: 0.85714rem; }
-      @media (min-width: 540px) {
-        .site-footer .contact-us p {
-          color: #00277E !important; } }
       @media (min-width: 800px) {
         .site-footer .contact-us p {
           color: black !important; } }
@@ -1874,9 +1867,6 @@ section.opportunities-pre-footer p {
                 order: 3;
             color: black;
             font-size: 1rem; } }
-      @media (min-width: 800px) and (min-width: 540px) {
-        .site-footer .contact-us .contact-details a, .site-footer .contact-us .contact-details p {
-          color: #00277E !important; } }
       @media (min-width: 800px) and (min-width: 800px) {
         .site-footer .contact-us .contact-details a, .site-footer .contact-us .contact-details p {
           color: black !important; } }

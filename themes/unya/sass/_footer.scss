@@ -205,7 +205,7 @@ section.opportunities-pre-footer{
 
 .site-footer {
   min-width:320px;
-  max-height:300px;
+  max-height:325px;
   position: relative;
   align-content: stretch;
   background: $color__blue-medium;
@@ -215,9 +215,7 @@ section.opportunities-pre-footer{
   margin:0;
   width:100%;
   text-align:center;
-  @include tablet{
-    color:$color__blue-dark
-  }
+ 
 
   @include desktop {
     color:white;
@@ -364,7 +362,6 @@ section.opportunities-pre-footer{
       a {
         display:block;
         font-size:5rem;
-        color:$color__blue-dark;
         order:2;
         height: 100px;
       }
@@ -388,9 +385,6 @@ section.opportunities-pre-footer{
       font-style: normal;
       font-weight: normal;
       font-size:$heading__h4;
-       @include tablet{
-           color:$color__blue-dark!important;
-          }
           @include desktop{
             color:black!important;
             }
@@ -414,9 +408,6 @@ section.opportunities-pre-footer{
         text-align: left;
          
         a, p{
-          @include tablet{
-           color:$color__blue-dark!important;
-          }
           @include desktop{
             color:black!important;
           }
