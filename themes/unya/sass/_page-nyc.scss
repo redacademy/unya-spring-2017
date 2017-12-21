@@ -245,3 +245,14 @@ ul.nyc-partners {
     }
   }
 }
+
+#nyc-resource-carousel-wrapper {
+  width: 100%;
+  display: flex;
+  background: $color__red-medium !important;
+  @include tablet {
+    background: white !important;
+    align-self: center;
+    padding: 1rem 3rem 1rem 3rem;
+  }
+}

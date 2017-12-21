@@ -112,6 +112,7 @@ function unya_register_news_post_type() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
+		'taxonomies'            => array('post_tag')
 	);
 	register_post_type( 'news', $args );
 

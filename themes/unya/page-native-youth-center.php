@@ -14,9 +14,34 @@ get_header(); ?>
 				<p class="hidden-mobile">Building a hub for confidence, leadership and reconciliation.</p>
 			</header>
 
-			<section>
-				<p>Resources go here!</p>
-			</section>
+			<div class="top-news-carousel-wrapper" id="nyc-resource-carousel-wrapper">
+
+			<?php
+          $args = array(
+			  		'post_type'      => 'news',
+						'posts_per_page' => 3,
+						'tag'            => 'nyc-resource'
+					);
+					$trimmed_excerpt = wp_trim_words( custom_field_excerpt('article_text'), 10 );
+			  	query_posts($args);
+			  ?>
+				<?php if( have_posts() ): while ( have_posts() ) : the_post(); ?>
+				<div class="top-news-carousel-item">
+ 				  <div class="top-news-item-image">
+  					<img class="news-carousel-image" src="<?php echo the_post_thumbnail('large'); ?>">
+					</div>
+					<div class="top-news-item-footer">
+						<h3 class="news-headline"><a href="<?php echo CFS()->get( 'article_url' ); ?>"><?php the_title();?></a></h3>	
+						<?php  $trimmed_excerpt = wp_trim_words( custom_field_excerpt('article_text'), 20 ); ?>	
+						<a class="news-link" href="<?php echo CFS()->get( 'article_url' ); ?>">Read More
+						  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+					  </a>
+					</div>	
+				</div>	
+				<?php endwhile; ?>
+				<?php endif; ?>
+
+			</div>
 
 			<div class="hidden-mobile donation-banner donation-button sidebar-start">
 				<p><?php echo esc_html( CFS()->get( 'banner_text' ) ); ?></p>
