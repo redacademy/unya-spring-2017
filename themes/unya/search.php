@@ -36,16 +36,14 @@ get_header(); ?>
 				</div>
 				<div class="search-tax-terms-wrapper">
 			    <?php
-			    	$args=array(
-              'taxonomy' => 'news_category'
-            );
-            $taxonomies=get_terms($args); 
-            if  ($taxonomies) {
-              foreach ($taxonomies as $taxonomy ) {
-                echo '<div class="news-tax-term-box"><p>' . $taxonomy->name . '</p></div>';
-              }
-            }
-					?>
+            $tags = get_tags(); 
+						if  ($tags) : foreach ($tags as $tag ) : 
+							$new_str = str_replace(' ', '+', $tag->name);
+							$root = get_site_url();
+						?>
+              <a href="<?php echo $root . '/?s=' . $new_str ?>"><div class="news-tax-term-box"><p><?php echo $tag->name ?></p></div></a>
+						<?php endforeach; ?>
+						<?php endif; ?>		
 				</div>	
       </div>	
 		</main><!-- #main -->
