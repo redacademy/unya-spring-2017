@@ -20,27 +20,27 @@ get_header(); ?>
           $args = array(
 			  		'post_type'      => 'news',
 						'posts_per_page' => 3,
-						'tag'            => 'nyc-resource'
+						'tag'            => 'nyc-resource', 
 					);
-					$trimmed_excerpt = wp_trim_words( custom_field_excerpt('article_text'), 10 );
-			  	query_posts($args);
+			  	$nyc_resource_query = new WP_Query($args);
 			  ?>
-				<?php if( have_posts() ): while ( have_posts() ) : the_post(); ?>
+				<?php if( $nyc_resource_query->have_posts() ): while ( $nyc_resource_query->have_posts() ) : $nyc_resource_query->the_post(); ?>
 				<div class="top-news-carousel-item">
  				  <div class="top-news-item-image">
-  					<img class="news-carousel-image" src="<?php echo the_post_thumbnail('large'); ?>">
+  					<img class="news-carousel-image" src="<?php echo esc_url( the_post_thumbnail('large') ); ?>">
 					</div>
 					<div class="top-news-item-footer">
-						<h3 class="news-headline"><a href="<?php echo CFS()->get( 'article_url' ); ?>"><?php the_title();?></a></h3>	
-						<?php  $trimmed_excerpt = wp_trim_words( custom_field_excerpt('article_text'), 20 ); ?>	
-						<a class="news-link" href="<?php echo CFS()->get( 'article_url' ); ?>">Read More
+						<h3 class="news-headline"><a href="<?php echo esc_url( CFS()->get( 'article_url' ) ); ?>"><?php the_title();?></a></h3>	
+						<a class="news-link" href="<?php echo esc_url( CFS()->get( 'article_url' ) ); ?>">Read More
 						  <i class="fa fa-arrow-right" aria-hidden="true"></i>
 					  </a>
 					</div>	
 				</div>	
 				<?php endwhile; ?>
-				<?php endif; ?>
-
+				<?php endif; 
+				  wp_reset_query();
+				?>
+        
 			</div>
 
 			<div class="hidden-mobile donation-banner donation-button sidebar-start">

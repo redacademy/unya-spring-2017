@@ -20,9 +20,9 @@ get_header();  ?>
 			  		'post_type'=> 'news',
 						'posts_per_page'=> 3,
 			  	);
-			  	query_posts($args);
+			  	$top_query = new WP_Query($args);
 			  ?>
-				<?php if( have_posts() ): while ( have_posts() ) : the_post(); ?>
+				<?php if( $top_query->have_posts() ): while ( $top_query->have_posts() ) : $top_query->the_post(); ?>
 				<div class="top-news-carousel-item">
  				  <div class="top-news-item-image">
   					<img class="news-carousel-image" src="<?php echo CFS()->get( 'article_photo' ); ?>">
@@ -48,14 +48,16 @@ get_header();  ?>
 						</div>
 						<?php
               $newArgs = array(
-								'post_type'=> 'news',
-								'posts_per_page'=> -1,
+								'post_type'      => 'news',
+								'posts_per_page' => 9999,
+								'offset'         => '3',
 							);
-							query_posts($newArgs);
+							$news_query = new WP_Query($newArgs);
 						?>
-			      <?php while ( have_posts() ) : the_post(); ?>
+			      <?php if ( $news_query->have_posts() ) : while ( $news_query->have_posts() ) : $news_query->the_post(); ?>
 			  	    <?php get_template_part( 'template-parts/content-news' );?>
-		        <?php endwhile; ?>
+						<?php endwhile; ?>
+						<?php endif; ?>
 					</ul>
 					<div class="categories-desktop">
 						<div class="categories-header">
