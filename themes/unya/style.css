@@ -1326,6 +1326,11 @@ a {
     #front-page-slider-header {
       margin-top: 0; } }
 
+.resource-wrapper {
+  width: 100%;
+  height: 80vh;
+  background: #D13434; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -2933,6 +2938,19 @@ ul.nyc-partners {
       ul.nyc-partners .partner {
         -ms-flex-preferred-size: 48%;
             flex-basis: 48%; } }
+
+#nyc-resource-carousel-wrapper {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  background: #D13434 !important; }
+  @media (min-width: 540px) {
+    #nyc-resource-carousel-wrapper {
+      background: white !important;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      padding: 1rem 3rem 1rem 3rem; } }
 
 /* News archive */
 .news-main {

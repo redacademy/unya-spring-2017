@@ -112,6 +112,7 @@ function unya_register_news_post_type() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
+		'taxonomies'            => array('post_tag')
 	);
 	register_post_type( 'news', $args );
 
@@ -345,58 +346,3 @@ function unya_register_opportunities_post_type() {
 
 }
 add_action( 'init', 'unya_register_opportunities_post_type', 0 );
-
-function unya_register_resources_post_type() {
-
-	$labels = array(
-		'name'                  => 'Resources',
-		'singular_name'         => 'Resource',
-		'menu_name'             => 'Resources',
-		'name_admin_bar'        => 'Resource Type',
-		'archives'              => 'Resource Archives',
-		'attributes'            => 'Resource Attributes',
-		'parent_item_colon'     => 'Resource Parent Item:',
-		'all_items'             => 'All Resources',
-		'add_new_item'          => 'Add New Resource',
-		'add_new'               => 'Add Resource',
-		'new_item'              => 'New Resource',
-		'edit_item'             => 'Edit Resource',
-		'update_item'           => 'Update Resource',
-		'view_item'             => 'View Resource',
-		'view_items'            => 'View Resources',
-		'search_items'          => 'Search Resource',
-		'not_found'             => 'Resource Not found',
-		'not_found_in_trash'    => 'Resource Not found in Trash',
-		'featured_image'        => 'Featured Resource Image',
-		'set_featured_image'    => 'Set featured Resource image',
-		'remove_featured_image' => 'Remove featured Resource image',
-		'use_featured_image'    => 'Use as featured Resource image',
-		'insert_into_item'      => 'Insert into Resource',
-		'uploaded_to_this_item' => 'Uploaded to this Resource',
-		'items_list'            => 'Resources list',
-		'items_list_navigation' => 'Resources list navigation',
-		'filter_items_list'     => 'Filter Resources list',
-	);
-	$args = array(
-		'label'                 => 'Resources',
-		'description'           => 'Post type for Resources available through UNYA',
-		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', ),
-		'hierarchical'          => false,
-		'public'                => true,
-		'show_ui'               => true,
-		'show_in_menu'          => true,
-		'menu_position'         => 8,
-		'menu_icon'             => 'dashicons-universal-access-alt',
-		'show_in_admin_bar'     => true,
-		'show_in_nav_menus'     => true,
-		'can_export'            => true,
-		'has_archive'           => true,
-		'exclude_from_search'   => false,
-		'publicly_queryable'    => true,
-		'capability_type'       => 'post',
-	);
-	register_post_type( 'resources', $args );
-
-}
-add_action( 'init', 'unya_register_resources_post_type', 0 );
