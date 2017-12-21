@@ -5,6 +5,7 @@
   flex-flow: column nowrap;
   min-height: 40rem;
   padding-top: 6rem;
+  margin-bottom: 2rem;
   @include desktop {
     flex-flow: row nowrap;
   }
@@ -109,4 +110,8 @@
 .search-tax-terms-wrapper {
   display: flex;
   flex-flow: row wrap;
+  a {
+    color: black;
+    text-decoration: none;
+  }
 }

@@ -255,6 +255,10 @@ display:none;
   padding: 1rem;
   justify-content: center;
   align-items: center;
+  a {
+    color: black;
+    text-decoration: none;
+  }
   @include tablet {
     width: 85%;
     margin-left: 69px;
@@ -273,6 +277,10 @@ display:none;
     justify-content: flex-start;
     align-items: start;
     width: 25rem;
+    a {
+      color: black;
+      text-decoration: none;
+    }
   }
 }
 

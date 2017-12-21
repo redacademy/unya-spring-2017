@@ -17,8 +17,8 @@ get_header();  ?>
 			<div class="top-news-carousel-wrapper">
 			  <?php
           $args = array(
-			  		'post_type'=> 'news',
-						'posts_per_page'=> 3,
+			  		'post_type'      => 'news',
+						'posts_per_page' => 3,
 			  	);
 			  	$top_query = new WP_Query($args);
 			  ?>
@@ -64,16 +64,13 @@ get_header();  ?>
               <h3>Categories</h3>
 						</div>
 					  <?php 
-              $args=array(
-                'taxonomy' => 'news_category'
-              );
-              $taxonomies=get_terms($args); 
-              if  ($taxonomies) {
-                foreach ($taxonomies as $taxonomy ) {
-                  echo '<div class="news-tax-term-box"><p>' . $taxonomy->name . '</p></div>';
-                }
-              }  
-            ?>
+              $tags = get_tags(); 
+              if  ($tags) : foreach ($tags as $tag) :
+									$new_str = str_replace(' ', '+', $tag->name);
+									$root = get_site_url(); ?>
+                  <a href="<?php echo $root . '/?s=' . $new_str ?>"><div class="news-tax-term-box"><p><?php echo $tag->name ?></p></div></a>
+							<?php endforeach; ?>
+							<?php endif; ?>
 					</div>	
 				</div>
 				
@@ -81,13 +78,11 @@ get_header();  ?>
 				<div>
 				  <div class="categories-wrapper">
 				    <?php 
-              if  ($taxonomies) {
-                foreach ($taxonomies as $taxonomy ) {
-                  echo '<div class="news-tax-term-box"><p>' . $taxonomy->name . '</p></div>';
-                }
-              }  
-            ?>
-			    </div>
+              if ($tags) : foreach ($tags as $tag ) : ?>
+            <a href="<?php echo $root . '/?s=' . $new_str ?>"><div class="news-tax-term-box"><p><?php echo $tag->name ?></p></div></a>
+						<?php endforeach; ?>
+						<?php endif; ?>
+					</div>
 			  </div>
 			</div><!-- accordion -->
 			
