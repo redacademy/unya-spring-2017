@@ -128,14 +128,13 @@
         }, 500);
         return false;
       }
-
     });
 
+    // Alter search bar display based on expanded nav
+    $('.menu-toggle').click(function(){
+      $('.search-form-wrapper').toggleClass('mobile-search-controller')
+    })
 
-
-
-  });
-    
-    
+  });    
 
 })(jQuery);
