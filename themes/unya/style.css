@@ -1450,11 +1450,6 @@ object {
   background-size: cover;
   background-position: center; }
 
-.donation-registration {
-  -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 25%);
-  background-size: cover;
-  background-position: center; }
-
 .nyc-banner {
   background-size: cover;
   background-position: center; }
@@ -3303,22 +3298,10 @@ section.donation {
     line-height: 2.5714285714rem; } }
 
 .donation .section-heading h2 {
-  padding-top: 2rem;
   width: 100%; }
-
-.donation-registration {
-  height: 25rem;
-  width: 100%; }
-  .donation-registration p {
-    margin: 12.5rem auto;
-    color: white;
-    line-height: 2.5714285714rem; }
-    @media (min-width: 800px) {
-      .donation-registration p {
-        height: 100%;
-        margin: 0;
-        padding-left: 52.428571429rem;
-        padding-top: 7rem; } }
+  @media (min-width: 800px) {
+    .donation .section-heading h2 {
+      padding-top: 2rem; } }
 
 .donation-call {
   width: 100%;
@@ -3464,10 +3447,110 @@ section.donation {
         font-size: 1.14286rem; } }
 
 .donate-header {
-  padding-left: 4rem; }
+  padding-left: 2rem; }
+  @media (min-width: 540px) {
+    .donate-header {
+      padding-left: 4rem; } }
 
 .get-involved-link {
   justify-self: flex-end; }
+
+.donate-section-banner {
+  display: none;
+  width: 100%;
+  height: 20rem;
+  background-size: cover;
+  background-position: center;
+  margin: 1rem 0rem 2rem 0rem; }
+  @media (min-width: 540px) {
+    .donate-section-banner {
+      display: -ms-flexbox;
+      display: flex; } }
+  @media (min-width: 800px) {
+    .donate-section-banner {
+      width: 60%;
+      border-radius: 0px 0px 0px 50px; } }
+
+.get-involved-footer-button {
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  height: 6rem;
+  border-radius: 10px;
+  background: #4263AB;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  font-weight: lighter; }
+  @media (min-width: 540px) {
+    .get-involved-footer-button {
+      width: 12rem;
+      height: 3rem;
+      margin-right: 2rem;
+      margin-top: 1rem; }
+      .get-involved-footer-button p {
+        font-size: 1rem !important;
+        padding: 0 !important; } }
+    @media (min-width: 540px) and (min-width: 800px) {
+      .get-involved-footer-button p {
+        font-size: 1.5rem !important;
+        text-align: center !important; } }
+  @media (min-width: 800px) {
+    .get-involved-footer-button {
+      height: 5rem;
+      width: 15rem; } }
+
+.get-involved-footer-button:hover {
+  background: #7392D9;
+  cursor: pointer; }
+
+.donate-footer-sub-wrapper {
+  width: 85%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-left: 3rem; }
+
+.donate-footer-sub {
+  font-size: 0.75rem;
+  text-align: center; }
+
+@media (min-width: 540px) {
+  #get-involved-footer-section {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    #get-involved-footer-section p {
+      width: 50%; } }
+
+@media (min-width: 800px) {
+  #get-involved-footer-section {
+    height: 12rem; }
+    #get-involved-footer-section p {
+      width: 70%;
+      font-size: 2rem;
+      text-align: left;
+      font-weight: 200; } }
+
+@media (min-width: 540px) {
+  .donate-control-span {
+    width: 100%; } }
+
+@media (min-width: 800px) {
+  .donate-control-span {
+    width: 66%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    border-bottom: 2px solid #00277E; } }
 
 .site-main .error-404 {
   background: linear-gradient(to bottom, rgba(66, 99, 171, 0.7) 0%, rgba(66, 99, 171, 0.7) 100%), url("../../assets/images/404_page_background.jpg") center center/100% 100% no-repeat;

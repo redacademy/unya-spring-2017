@@ -12,27 +12,32 @@ get_header(); ?>
 		<header class="header-wrapper get-involved-title sidebar-start">
 			<h1>Get Involved</h1>
 		</header>
-		<div class="accordion" id="accordion">
-			<h2 class="accordion-label" id="donate">Donate</h2>
-			<section class="donation">
-				<header class="section-heading">
-					<h2 class="hidden-mobile donate-header">Donate</h2>
-				</header>
-				<div class="content-wrapper">
-					<p><?php echo wp_kses(CFS()->get( 'donation_intro_paragraph' ),array('br') ); ?></p>
-				</div>
-				<div class="donation-registration">
-					<p class="content-wrapper"><?php echo wp_kses(CFS()->get( 'donation_registration' ),array('br') ); ?></p>
-				</div>
-				<div class="donation-call">
-					<?php get_template_part( 'template-parts/prefooter', 'donation' ); ?>
-				</div>
-			</section>
 
+		<section class="donation">
+			<header class="section-heading">
+				<h2 class="donate-header">Join Us</h2>
+			</header>
+			<div class="content-wrapper">
+				<p><?php echo wp_kses(CFS()->get( 'donation_intro_paragraph' ),array('br') ); ?></p>
+			</div>
+      <span class="donate-control-span">
+			  <div class="donate-section-banner" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/images/cedarwalk-banner.png' ?>)">
+				</div>
+				<div class="donate-footer-sub-wrapper">
+			    <p class="donate-footer-sub hidden-mobile">UNYA is a not-for-profit society registered with the Province of BC
+			    	and a charitable organization 129836292 RRO001 registered with the 
+			    	Government of Canada	 
+					</p>
+        </div>	
+      </span>	
+
+		</section>
+
+		<div class="accordion" id="accordion">
 			<h2 class="accordion-label" id="employment">Employment</h2>
 			<section class="opportunities">
 				<div class="content-wrapper">
-					<h2 class="hidden-mobile">Employment Opportunities</h2>
+					<h2 class="desktop-only">Employment Opportunities</h2>
 					<p><?php echo wp_kses(CFS()->get( 'employment_intro_paragraph' ),array('br') ); ?></p>
 				</div>
 				<div class="hidden-mobile content-wrapper">
@@ -96,8 +101,9 @@ get_header(); ?>
 		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<section class="pre-footer fit-button opportunities-pre-footer">
-		<p>Please email info@unya.bc.ca for additional job opportunities, <span class="hidden-mobile">or to be added to our email list. </span></p>
+	<section id="get-involved-footer-section" class="pre-footer fit-button opportunities-pre-footer">
+		<p>Please email info@unya.bc.ca for additional job opportunities</p>
+		<div class="get-involved-footer-button"><p>email us</p></div>
 	</section>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

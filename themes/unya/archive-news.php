@@ -63,8 +63,8 @@ get_header();  ?>
 						<div class="categories-header">
               <h3>Categories</h3>
 						</div>
-					  <?php 
-              $tags = get_tags(); 
+					  <?php
+              $tags = get_tags();
               if  ($tags) : foreach ($tags as $tag) :
 									$new_str = str_replace(' ', '+', $tag->name);
 									$root = get_site_url(); ?>
