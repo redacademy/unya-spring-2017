@@ -13,27 +13,10 @@ section.donation{
 }
 
 .donation .section-heading h2 {
-  padding-top: 2rem;
   width: 100%;
-}
-
-.donation-registration {
-  height: 25rem;
-  width: 100%;
-
-	p {
-		margin: 12.5rem auto;
-		color:white;
-    line-height: 2.5714285714rem;
-
-    @include desktop {
-      height: 100%;
-      margin: 0;
-      padding-left: 52.428571429rem;
-      padding-top: 7rem;
-    }
-
-	}
+  @include desktop {
+    padding-top: 2rem;
+  }
 }
 
 .donation-call {
@@ -204,9 +187,109 @@ section.donation{
 }
 
 .donate-header {
-  padding-left: 4rem;
+  padding-left: 2rem;
+  @include tablet {
+    padding-left: 4rem;
+  }
 }
 
 .get-involved-link {
   justify-self: flex-end;
+}
+
+.donate-section-banner {
+  display: none;
+  width: 100%;
+  height: 20rem;
+  background-size: cover;
+  background-position: center;
+  margin: 1rem 0rem 2rem 0rem;
+  @include tablet {
+    display: flex;
+  }
+  @include desktop {
+    width: 60%;
+    border-radius: 0px 0px 0px 50px;
+  }
+}
+
+.get-involved-footer-button {
+  display: flex;
+  width: 85%;
+  height: 6rem;
+  border-radius: 10px;
+  background: $color__blue_medium;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  font-weight: lighter;
+  @include tablet {
+    width: 12rem;
+    height: 3rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    p {
+      font-size: 1rem !important;
+      padding: 0 !important;
+      @include desktop {
+        font-size: 1.5rem !important;
+        text-align: center !important;
+      }
+    }
+  }
+  @include desktop {
+    height: 5rem;
+    width: 15rem;
+  }
+}
+
+.get-involved-footer-button:hover {
+  background: $color__blue_light;
+  cursor: pointer;
+}
+
+.donate-footer-sub-wrapper {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  margin-left: 3rem;
+}
+
+.donate-footer-sub {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+#get-involved-footer-section {
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    p {
+      width: 50%;
+    }
+  }
+  @include desktop {
+    height: 12rem;
+    p {
+      width: 70%;
+      font-size: 2rem;
+      text-align: left;
+      font-weight: 200;
+    }
+  }
+}
+
+.donate-control-span {
+  @include tablet {
+    width: 100%;
+  }
+  @include desktop {
+    width: 66%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid $color__blue-dark;
+  }
 }
