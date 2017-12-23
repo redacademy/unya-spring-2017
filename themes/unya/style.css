@@ -2643,35 +2643,54 @@ section.opportunities-pre-footer p {
   color: white; }
 
 .impact-polygon {
-  height: 350px;
+  height: 300px;
   width: 100%; }
   .impact-polygon p {
-    text-align: right;
+    text-align: left;
     width: 70%;
-    margin: 175px 20%;
+    margin: 70px 4rem;
     color: white;
-    line-height: 1.2; }
+    line-height: 1.5; }
+    @media (min-width: 540px) {
+      .impact-polygon p {
+        width: 55%;
+        margin: 70px 11rem; } }
+    @media (min-width: 800px) {
+      .impact-polygon p {
+        width: 75%;
+        margin: 150px 11rem; } }
   .impact-polygon h2 {
     color: white;
     font-family: "poppins", sans-serif;
     font-weight: 400;
-    font-size: 3rem;
-    margin-left: 2rem; }
+    font-size: 2rem;
+    margin-left: 4rem; }
     @media (min-width: 800px) {
       .impact-polygon h2 {
-        margin-left: 0; } }
+        margin-left: 0;
+        font-weight: 500;
+        font-size: 2.5rem;
+        width: 75%; } }
   @media (min-width: 800px) {
     .impact-polygon {
       height: 550px; } }
 
 .rectangle-container {
-  height: 350px;
+  height: 300px;
   width: 100%; }
   .rectangle-container p {
     width: 70%;
-    margin: 175px 10%;
+    margin: 90px 4rem;
     color: white;
-    line-height: 1.2; }
+    line-height: 1.5; }
+    @media (min-width: 540px) {
+      .rectangle-container p {
+        margin: 70px 11rem;
+        width: 55%; } }
+    @media (min-width: 800px) {
+      .rectangle-container p {
+        width: 75%;
+        margin: 175px 11rem; } }
   @media (min-width: 800px) {
     .rectangle-container {
       height: 550px; } }

@@ -111,8 +111,7 @@ get_header(); ?>
  		    <?php endforeach; ?>
       </div>	     
 		</div>
-
-	  <h2 class="accordion-label" id="testimonials">Testimonials</h2>
+	</div>
 		<section class="testimonials" id="testimonials">
 
 			<div class="impact-polygon">
@@ -123,7 +122,7 @@ get_header(); ?>
 				<p class="content-wrapper"><?php echo CFS()->get( 'testimonial_2' ); ?></p>
 			</div>
 		</section>
-  </div>
+
 		<?php get_template_part( 'template-parts/prefooter', 'fit' ); ?>
 
 		</main><!-- #main -->
