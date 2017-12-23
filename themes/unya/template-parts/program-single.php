@@ -33,6 +33,38 @@
 			<h3>How To Get Involved</h3>
 			<p class="content-wrapper"><?php echo wpautop( esc_html( CFS()->get( 'get_involved' ) ) ); ?></p>
 		</div>
+
+    <div class="program-resource-wrapper content-wrapper">
+			<h2 class="program-resources-box-header">Resources</h2>
+			<?php
+				$prog_str = trim(wp_title('', false));
+			  $args = array(
+					'post_type'      => 'news',
+					'posts_per_page' => 3,
+					'tag_slug__in'            => $prog_str,
+				);
+				$prog_resources = new WP_Query($args);
+				if( $prog_resources->have_posts() ) : while( $prog_resources->have_posts() ) : $prog_resources->the_post();
+					$trimmed_excerpt = wp_trim_words( custom_field_excerpt('article_text'), 12 );
+			?>
+			  <div class="prog-resource-item">
+					<div class="prog-resource-image hidden-mobile">
+						<img src="<?php echo (the_post_thumbnail('large')); ?>"/>
+					</div>
+					<div class="prog-resource-info">
+						<h3 class="prog-headline"><a href="<?php echo CFS()->get( 'article_url' ); ?>"><?php the_title();?></a></h3>			
+						<p><?php echo $trimmed_excerpt; ?></p>
+						<div class="news-url" id="prog-url">
+					  	<a class="news-link" href="<?php echo CFS()->get( 'article_url' ); ?>">Read More
+					  	  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+					    </a>
+            </div>		
+				  </div>		
+				</div>	
+		  <?php endwhile; ?>
+			<?php endif; ?>	
+    </div>
+
 	</div>
 
 </article><!-- #post-## -->
