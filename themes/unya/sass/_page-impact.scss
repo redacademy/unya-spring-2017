@@ -152,23 +152,36 @@
 }
 
 .impact-polygon{
-  height:350px;
+  height:300px;
   width:100%;
   p{
-    text-align:right;
+    text-align: left;
     width:70%;
-    margin: 175px 20%;
+    margin: 70px 4rem;
     color:white;
-    line-height: 1.2;
+    line-height: 1.5;
+    @include tablet {
+      width: 55%;
+      margin: 70px 11rem;
+    }
+    @include desktop {
+      width: 75%;
+      margin: 150px 11rem;
+    }
   }
   h2 {
     color: white;
     font-family: $font__heading;
     font-weight: 400;
-    font-size: 3rem;
-    margin-left: 2rem;
+    font-size: 2rem;
+    margin-left: 4rem;
     @include desktop {
       margin-left: 0;
+      font-weight: 500;
+      font-size: 2.5rem;
+      width: 75%;
+
+
     }
   }
   @include desktop{
@@ -177,16 +190,25 @@
 }
 
 .rectangle-container{
-  height:350px;
+  height:300px;
   width:100%;
   p{
 		width:70%;
-		margin: 175px 10%;
+		margin: 90px 4rem;
     color:white;
-    line-height: 1.2;
+    line-height: 1.5;
+    @include tablet {
+      margin: 70px 11rem;
+      width: 55%;
+    }
+    @include desktop {
+      width: 75%;
+      margin: 175px 11rem;
+    }
 	}
   @include desktop{
-	height:550px;
+  height:550px;
+
   }
 }
 
