@@ -1,13 +1,14 @@
 .search-main {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: column nowrap;
   min-height: 40rem;
-  padding-top: 6rem;
+  padding-top: 3rem;
   margin-bottom: 2rem;
   @include desktop {
     flex-flow: row nowrap;
+    justify-content: center;
   }
 }
 
