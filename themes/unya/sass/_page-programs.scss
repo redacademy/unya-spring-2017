@@ -344,12 +344,12 @@
 
 .single-program {
   .header-wrapper {
-    padding-top: 0.714286rem;
     background: $color__blue-dark;
 
     h1 {
-      font-size: 1.7142857143rem;
-      width: 85%;
+      text-align: left;
+      font-size: 1.5rem;
+      width: 100%;
       margin: 0 auto;
 
       @include desktop {
@@ -416,13 +416,18 @@
     }
 
     .program-image {
-      background: rgba(74,74,74,0.7);
       overflow: hidden;
       height: 12.071428571rem;
+      margin: 2rem 0 2rem 0;
+      width: 100%;
 
       img {
         z-index: -1;
         position: relative;
+        width: 100%;
+      }
+      @include tablet {
+        height: 15rem;
       }
 
       @include desktop {
