@@ -5,6 +5,10 @@
 #secondary .menu-primary-menu-container {
 	position: absolute;
 	left: 0;
+	display: none;	
+	@include desktop {
+	  display: initial;
+	}
 }
 
 .sidebar-menu-container {

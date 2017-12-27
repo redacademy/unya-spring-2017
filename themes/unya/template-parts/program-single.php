@@ -28,6 +28,9 @@
 				<?php endforeach; ?>
 			</ul>
 		</div>
+		<?php if ( has_post_thumbnail() ) : ?>
+			<div class="program-image hidden-desktop"><?php the_post_thumbnail( 'large' ); ?></div>
+		<?php endif; ?>
 
 		<div class="program-involvement content-wrapper">
 			<h3>How To Get Involved</h3>

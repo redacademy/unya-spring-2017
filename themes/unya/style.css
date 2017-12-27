@@ -1022,7 +1022,11 @@ a {
 /* Sidebar nav menu */
 #secondary .menu-primary-menu-container {
   position: absolute;
-  left: 0; }
+  left: 0;
+  display: none; }
+  @media (min-width: 800px) {
+    #secondary .menu-primary-menu-container {
+      display: initial; } }
 
 .sidebar-menu-container {
   margin: 0;
@@ -2428,11 +2432,11 @@ section.opportunities-pre-footer p {
 
 /* Single Program page */
 .single-program .header-wrapper {
-  padding-top: 0.714286rem;
   background: #00277E; }
   .single-program .header-wrapper h1 {
-    font-size: 1.7142857143rem;
-    width: 85%;
+    text-align: left;
+    font-size: 1.5rem;
+    width: 100%;
     margin: 0 auto; }
     @media (min-width: 800px) {
       .single-program .header-wrapper h1 {
@@ -2488,12 +2492,17 @@ section.opportunities-pre-footer p {
   .single-program .program-body h3 {
     color: #2C2C2C; }
   .single-program .program-body .program-image {
-    background: rgba(74, 74, 74, 0.7);
     overflow: hidden;
-    height: 12.071428571rem; }
+    height: 12.071428571rem;
+    margin: 2rem 0 2rem 0;
+    width: 100%; }
     .single-program .program-body .program-image img {
       z-index: -1;
-      position: relative; }
+      position: relative;
+      width: 100%; }
+    @media (min-width: 540px) {
+      .single-program .program-body .program-image {
+        height: 15rem; } }
     @media (min-width: 800px) {
       .single-program .program-body .program-image {
         height: 100%;
