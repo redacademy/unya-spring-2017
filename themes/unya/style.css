@@ -3790,19 +3790,21 @@ section.donation {
 .search-main {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
   min-height: 40rem;
-  padding-top: 6rem;
+  padding-top: 3rem;
   margin-bottom: 2rem; }
   @media (min-width: 800px) {
     .search-main {
       -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap; } }
+          flex-flow: row nowrap;
+      -ms-flex-pack: center;
+          justify-content: center; } }
 
 .search-single {
   display: -ms-flexbox;
