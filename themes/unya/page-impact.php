@@ -41,11 +41,11 @@ get_header(); ?>
 				  <section class="single-story hidden-mobile">
 				  	<a class="single-story-mobile" href="<?php the_permalink() ?>">
               <div class="hidden-desktop success-image" style="background-image: linear-gradient(180deg, rgba(87,87,87,0) 0%, rgba(67,67,67,0.4) 52.31%, rgba(44,44,44,0.7) 100%),
-						  url(<?php echo CFS()->get( 'photo' ); ?>)";>
+						  url(<?php the_post_thumbnail('large'); ?>)";>
                 <h3><?php the_title() ?></h3>
 					  	</div>
 					  </a>
-					  <a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>" cover>
+					  <a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php the_post_thumbnail('large'); ?>" cover>
 					  </a>
 					  <div class="success-content">
 						  <h3 class="hidden-mobile">Youth Feature - <?php the_title(); ?></h3>
@@ -81,11 +81,11 @@ get_header(); ?>
 				  <section class="single-story hidden-mobile">
 				  	<a class="single-story-mobile" href="<?php the_permalink() ?>">
               <div class="hidden-desktop success-image" style="background-image: linear-gradient(180deg, rgba(87,87,87,0) 0%, rgba(67,67,67,0.4) 52.31%, rgba(44,44,44,0.7) 100%),
-						  url(<?php echo CFS()->get( 'photo' ); ?>)";>
+						  url(<?php the_post_thumbnail('large'); ?>)";>
                 <h3><?php the_title() ?></h3>
 					  	</div>
 					  </a>
-					  <a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>" cover>
+					  <a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php the_post_thumbnail('large'); ?>" cover>
 					  </a>
 					  <div class="success-content">
 						  <h3 class="hidden-mobile">Volunteer - <?php the_title(); ?></h3>
