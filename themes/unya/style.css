@@ -3455,6 +3455,94 @@ ul.nyc-partners {
   .desktop-news-header-wrapper {
     width: 70%; } }
 
+.single-news-main {
+  margin: 1rem 0rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  height: auto;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.single-news-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; }
+  .single-news-wrapper p {
+    margin: 1rem 2rem; }
+  @media (min-width: 540px) {
+    .single-news-wrapper p {
+      margin: 1rem 5rem; } }
+  @media (min-width: 800px) {
+    .single-news-wrapper {
+      width: 100%; }
+      .single-news-wrapper p {
+        margin: 3rem 9rem; } }
+
+#single-news-title {
+  margin-left: 2rem; }
+  @media (min-width: 540px) {
+    #single-news-title {
+      margin-left: 5rem; } }
+  @media (min-width: 800px) {
+    #single-news-title {
+      margin-left: 9rem; } }
+
+.single-news-cat-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 5rem;
+  border-top: 2px solid #00277E;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  margin: 2rem; }
+  @media (min-width: 540px) {
+    .single-news-cat-wrapper {
+      margin: 5rem; } }
+  @media (min-width: 800px) {
+    .single-news-cat-wrapper {
+      width: 85%;
+      margin: 3rem 0rem 3rem 0rem;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; } }
+
+.single-news-cat-sub-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
+  .single-news-cat-sub-wrapper a {
+    text-decoration: none; }
+
+.single-news-tax {
+  padding: 0; }
+  .single-news-tax p {
+    margin: 5px;
+    color: black; }
+
+.single-news-image-wrapper {
+  width: 100%;
+  height: 12rem;
+  overflow: hidden;
+  position: relative; }
+  @media (min-width: 540px) {
+    .single-news-image-wrapper {
+      height: 30rem; }
+      .single-news-image-wrapper img {
+        min-width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; } }
+  @media (min-width: 800px) {
+    .single-news-image-wrapper {
+      width: 100%;
+      height: 50rem; } }
+
 /* Get Involved page */
 section.donation {
   background-color: white; }

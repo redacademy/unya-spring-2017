@@ -116,11 +116,7 @@ add_action( 'wp_enqueue_scripts', 'unya_scripts' );
 
 function unya_page_template_redirect()
 {
-    if( is_singular('news') )
-    {
-        wp_redirect( home_url('/news') );
-        exit();
-    } else if( is_singular('opportunities') )
+    if( is_singular('opportunities') )
     {
         wp_redirect( home_url('/get-involved') );
         exit();
