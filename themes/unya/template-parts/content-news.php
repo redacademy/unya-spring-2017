@@ -14,7 +14,7 @@
 ?>
 			<li class="news-single">
         <div class="news-title-block">	
-				  <img class="news-image" src="<?php echo CFS()->get( 'article_photo' ); ?>">					 
+				  <img class="news-image" src="<?php the_post_thumbnail('large'); ?>">					 
         </div>
         <div class="news-details">
 			  	<h3 class="news-headline"><a href="<?php echo CFS()->get( 'article_url' ); ?>"><?php the_title();?></a></h3>						
