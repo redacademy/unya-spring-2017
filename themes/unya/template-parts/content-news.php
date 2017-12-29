@@ -17,7 +17,17 @@
 				  <img class="news-image" src="<?php the_post_thumbnail('large'); ?>">					 
         </div>
         <div class="news-details">
-			  	<h3 class="news-headline"><a href="<?php echo CFS()->get( 'article_url' ); ?>"><?php the_title();?></a></h3>						
+			  	<h3 class="news-headline">
+						<?php $internal = CFS()->get( 'internal_news_post' );
+						?>
+						<?php if ($internal) : ?>
+						<a href="<?php the_permalink(); ?>">
+						<?php else : ?>
+						<a href="<?php echo CFS()->get( 'article_url' ); ?>">
+            <?php endif; ?>
+						<?php the_title();?>
+						</a>
+					</h3>						
 			 		<div class="hidden-mobile"><?php echo $trimmed_excerpt; ?></div>
 			  	<div class="news-url">
 						<a class="news-link" href="<?php echo CFS()->get( 'article_url' ); ?>">Read More
