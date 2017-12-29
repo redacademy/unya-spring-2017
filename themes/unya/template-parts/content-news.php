@@ -30,8 +30,16 @@
 					</h3>						
 			 		<div class="hidden-mobile"><?php echo $trimmed_excerpt; ?></div>
 			  	<div class="news-url">
-						<a class="news-link" href="<?php echo CFS()->get( 'article_url' ); ?>">Read More
+					<?php $internal = CFS()->get( 'internal_news_post' );
+						  ?>
+						  <?php if ($internal) : ?>
+						<a class="news-link" href="<?php the_permalink(); ?>">
+						<?php else : ?>
+						<a class="news-link" href="<?php echo CFS()->get( 'article_url' ); ?>">
+            <?php endif; ?>
+						Read More
 						  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+					  </a>
 					  </a>
           </div>
         </div>
