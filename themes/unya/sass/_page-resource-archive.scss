@@ -1,0 +1,145 @@
+.resource-archive-main {
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 2rem 1rem;
+  color: black;
+  @include tablet {
+    margin-left: 7.5%;
+    width: 85%;
+  }
+  @include desktop {
+    width: 67.5%;
+    margin-left: 16.25%;
+  }
+}
+
+.resource-archive-section {
+  height: auto;
+  min-height: 6rem;
+  @include tablet {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+
+.resource-archive-section-header-mobile {
+  min-width: 100%;    
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.3);
+  @include tablet {
+    display: none;
+  }
+}
+
+.resource-archive-section-header {
+  min-width: 100%;    
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.3);
+  @include tablet {
+    margin: 3rem 0rem;
+    overflow: hidden;
+    position: relative;
+    height: 6rem;
+    padding: 0;
+    display: block;
+    img {
+      position: absolute;
+      bottom: 0;
+      top: -120%;
+      left: 0;
+      right: 0;
+      height: 20rem;
+      width: 100%;
+    }
+    h3 {
+      position: absolute;
+      top: 25%;
+      left: 2%;
+      color: white;
+      z-index: 3;
+      font-weight: 300;
+      font-family: $font__heading;
+    }
+  }
+  @include desktop {
+    h3 {
+      top: 5%;
+    }
+  }
+}
+
+.gradient-wrapper {
+  background: linear-gradient(to bottom,rgba(74,74,74,0.6) 0%, rgba(74,74,74,0.6) 100%);
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.resource-archive-item {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden; 
+  width: 100%;
+  margin: 2rem 0rem;
+  height: 8rem;
+  border-radius: 10px 10px 10px 20px;
+  box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.3);
+  @include tablet {
+    flex-flow: column nowrap;
+    width: 31%;
+    height: 20rem;
+    margin: 0;
+    margin-top: 1rem;
+  }  
+  @include desktop {
+    height: 25rem;
+  }
+}
+
+.resource-archive-item-image {
+ display: flex;
+ width: 33%;
+ height: 100%;
+ @include tablet {
+   width: 100%;
+   height: 70%;
+ }
+}
+
+.resource-archive-item-info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  width: 67%;
+  height: 100%;
+  padding: 10px;
+  @include tablet {
+    width: 100%;
+    height: 30%;
+  }
+}
+
+.resource-archive-item-info-title {
+  margin-top: 0;
+  @include tablet {
+    font-size: 1rem;
+  }
+}
+
+.resource-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 4px;
+  text-decoration: none;
+}
