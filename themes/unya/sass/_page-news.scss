@@ -148,6 +148,15 @@
   display:flex;
   flex-direction: row;
   min-width: 30%;
+  img {
+    width:100px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 25px;
+    @include tablet {
+      height: 12rem;
+      width: 12rem;
+    }
+  }
   .news-headline{
     order:2;
   }
@@ -166,16 +175,6 @@
   @include tablet {
     justify-content: space-between;
     padding-left: 0.5rem;
-  }
-}
-
-.news-image{
-  width:100px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 25px;
-  @include tablet {
-    height: 12rem;
-    width: 12rem;
   }
 }
 

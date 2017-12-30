@@ -14,7 +14,7 @@
 ?>
 			<li class="news-single">
         <div class="news-title-block">	
-				  <img class="news-image" src="<?php the_post_thumbnail('large'); ?>">					 
+				  <?php the_post_thumbnail('large'); ?>					 
         </div>
         <div class="news-details">
 			  	<h3 class="news-headline">
