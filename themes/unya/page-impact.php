@@ -45,7 +45,7 @@ get_header(); ?>
                 <h3><?php the_title() ?></h3>
 					  	</div>
 					  </a>
-					  <a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php the_post_thumbnail('large'); ?>" cover>
+					  <a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php the_post_thumbnail('large'); ?>" />
 					  </a>
 					  <div class="success-content">
 						  <h3 class="hidden-mobile">Youth Feature - <?php the_title(); ?></h3>
@@ -85,7 +85,7 @@ get_header(); ?>
                 <h3><?php the_title() ?></h3>
 					  	</div>
 					  </a>
-					  <a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php the_post_thumbnail('large'); ?>" cover>
+					  <a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php the_post_thumbnail('large'); ?>" />
 					  </a>
 					  <div class="success-content">
 						  <h3 class="hidden-mobile">Volunteer - <?php the_title(); ?></h3>

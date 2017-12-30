@@ -546,10 +546,6 @@ textarea {
       .ctct-form-field-email input[type=email] {
         width: 100%; } }
 
-::-webkit-input-placeholder {
-  padding-left: 10px;
-  color: black; }
-
 :-ms-input-placeholder {
   padding-left: 10px;
   color: black; }
@@ -645,9 +641,6 @@ input[type=submit] {
 
 #search-label {
   width: 75%; }
-
-.search-field::-webkit-input-placeholder {
-  color: #BABABA; }
 
 .search-field:-ms-input-placeholder {
   color: #BABABA; }
@@ -3252,6 +3245,14 @@ ul.nyc-partners {
   -ms-flex-direction: row;
       flex-direction: row;
   min-width: 30%; }
+  .news-title-block img {
+    width: 100px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 25px; }
+    @media (min-width: 540px) {
+      .news-title-block img {
+        height: 12rem;
+        width: 12rem; } }
   .news-title-block .news-headline {
     -ms-flex-order: 2;
         order: 2; }
@@ -3273,15 +3274,6 @@ ul.nyc-partners {
       -ms-flex-pack: justify;
           justify-content: space-between;
       padding-left: 0.5rem; } }
-
-.news-image {
-  width: 100px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 25px; }
-  @media (min-width: 540px) {
-    .news-image {
-      height: 12rem;
-      width: 12rem; } }
 
 .news-headline {
   font-size: 14px;
