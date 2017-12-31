@@ -24,6 +24,11 @@
     color:white;
     font-weight:normal;
     font-size:20px;
+
+    @include tablet {
+      padding:15px 25px;
+      font-size:18px;
+    }
   }
 }
 

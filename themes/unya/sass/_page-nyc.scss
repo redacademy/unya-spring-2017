@@ -26,10 +26,12 @@
     justify-content: space-around;
     flex-direction: row;
     color: white;
+    p {
+      width: 50%;
+      font-size: 1.5rem;
+    }
     p, h2 {
-      // width: auto;
       margin: 0;
-      font-size: 1rem;
       font-family: $font__heading;
     }
   }
