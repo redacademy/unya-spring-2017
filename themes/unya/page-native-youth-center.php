@@ -30,10 +30,27 @@ get_header(); ?>
   					<img class="news-carousel-image" src="<?php echo esc_url( the_post_thumbnail('large') ); ?>">
 					</div>
 					<div class="top-news-item-footer">
-						<h3 class="news-headline"><a href="<?php echo esc_url( CFS()->get( 'article_url' ) ); ?>"><?php the_title();?></a></h3>	
-						<a class="news-link" href="<?php echo esc_url( CFS()->get( 'article_url' ) ); ?>">Read More
-						  <i class="fa fa-arrow-right" aria-hidden="true"></i>
-					  </a>
+					<h3 class="news-headline">
+						<?php $internal = CFS()->get( 'internal_news_post' );
+						?>
+						<?php if ($internal) : ?>
+						<a href="<?php the_permalink(); ?>">
+						<?php else : ?>
+						<a href="<?php echo CFS()->get( 'article_url' ); ?>">
+            <?php endif; ?>
+						<?php the_title();?>
+						</a>
+					</h3>		
+						<?php $internal = CFS()->get( 'internal_news_post' );
+						?>
+						<?php if ($internal) : ?>
+					<a class="news-link" href="<?php the_permalink(); ?>">
+					<?php else : ?>
+					<a class="news-link" href="<?php echo CFS()->get( 'article_url' ); ?>">
+					<?php endif; ?>
+					Read More
+						<i class="fa fa-arrow-right" aria-hidden="true"></i>
+					</a>
 					</div>	
 				</div>	
 				<?php endwhile; ?>
