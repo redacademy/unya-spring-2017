@@ -78,14 +78,16 @@
     }
   }
 }
-.success-image{
+.success-image {
   background-repeat: no-repeat;
   background-size: cover;
 	width:34vw;
 	height:34vw;
-	border-radius: 50%;
   padding:10px;
   margin-bottom: 1rem;
+  img {
+    border-radius: 50%;
+  }
   h3{
     color:white;
     text-align: center;
@@ -106,7 +108,7 @@
 .mobile-success-image{
   @include tablet{
     width:0px;
-    display:none;    
+    display:none;
   }
 }
 

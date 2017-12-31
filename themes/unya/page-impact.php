@@ -45,16 +45,17 @@ get_header(); ?>
                 <h3><?php the_title() ?></h3>
 					  	</div>
 					  </a>
-					  <a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php the_post_thumbnail('large'); ?>" />
+					  <a href="<?php the_permalink() ?>" class="hidden-mobile">
+							<div class="success-image"><?php the_post_thumbnail('large'); ?></div>
 					  </a>
 					  <div class="success-content">
 						  <h3 class="hidden-mobile">Youth Feature - <?php the_title(); ?></h3>
-						  <p class="hidden-mobile"><?php echo CFS()->get( 'first_half_of_story' ); ?></p>
+						  <p class="hidden-mobile"><?php echo wp_kses(custom_field_excerpt('first_half_of_story'), array('br') ); ?></p>
 							<p class="hidden-mobile">
 								<a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>">Read more about <?php the_title(); ?>
 									<i class="fa fa-arrow-right" aria-hidden="true"></i>
 								</a>
-							</p>  			
+							</p>
 				    </div>
 				  </section>
 		    <?php endforeach; wp_reset_postdata(); ?>
@@ -85,11 +86,12 @@ get_header(); ?>
                 <h3><?php the_title() ?></h3>
 					  	</div>
 					  </a>
-					  <a href="<?php the_permalink() ?>"><img class="success-image hidden-mobile" src="<?php the_post_thumbnail('large'); ?>" />
+						<a href="<?php the_permalink() ?>" class="hidden-mobile">
+							<div class="success-image"><?php the_post_thumbnail('large'); ?></div>
 					  </a>
 					  <div class="success-content">
 						  <h3 class="hidden-mobile">Volunteer - <?php the_title(); ?></h3>
-						  <p class="hidden-mobile"><?php echo CFS()->get( 'first_half_volunteer_story' ); ?></p>
+						  <p class="hidden-mobile"><?php echo wp_kses(custom_field_excerpt('first_half_volunteer_story'), array('br') ); ?></p>
 							<p class="hidden-mobile">
 								<a class="hidden-mobile impact-read-more" href="<?php the_permalink() ?>">Read more about <?php the_title(); ?>
 									<i class="fa fa-arrow-right" aria-hidden="true"></i>
