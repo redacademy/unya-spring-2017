@@ -34,7 +34,7 @@
 				</li>
 			<?php endforeach;
 
-		echo '<li class="menu-item-archive"><a href="' . get_site_url() . '/programs/#calendar"><p>Back to Programs</p></a></li>';
+		echo '<li class="menu-item-archive"><a href="' . get_site_url() . '/programs"><p>Back to Programs</p></a></li>';
 		?>
 		</ul>
 	</div>

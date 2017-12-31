@@ -3,7 +3,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-flow: column nowrap;
-  min-height: 40rem;
+  min-height: 10rem;
   padding-top: 3rem;
   margin-bottom: 2rem;
   @include desktop {
@@ -38,7 +38,7 @@
     font-family: $font__heading;
     text-transform: uppercase;
     font-weight: 400;
-  }
+  }     
 }
 
 .search-result-url {
@@ -47,14 +47,17 @@
 }
 
 .no-results {
-  margin-top: 10rem;
-  @include tablet {
-    margin: 10rem 0rem 10rem 0rem;    
-  }
+  height: 10rem;
   h2 {
     color: black;
     font-family: $font__heading;
     font-size: 14px;
+  }
+  @include tablet {
+    margin: 5rem 0rem 2rem 0rem;   
+    h2 {
+      font-size: 25px;
+    } 
   }
 }
 
@@ -97,7 +100,8 @@
   }
   .search-categories-header {
     @include tablet {
-      width: 100%;
+      width: 85%;
+      margin-left: 7.5%;
     }
   }
 }
@@ -114,5 +118,10 @@
   a {
     color: black;
     text-decoration: none;
+  }
+  @include tablet {
+    width: 85%;
+    margin-left: 7.5%;
+    margin-bottom: 4rem;
   }
 }

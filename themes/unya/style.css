@@ -3908,7 +3908,7 @@ section.donation {
       align-items: center;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
-  min-height: 40rem;
+  min-height: 10rem;
   padding-top: 3rem;
   margin-bottom: 2rem; }
   @media (min-width: 800px) {
@@ -3953,14 +3953,16 @@ section.donation {
   color: black !important; }
 
 .no-results {
-  margin-top: 10rem; }
-  @media (min-width: 540px) {
-    .no-results {
-      margin: 10rem 0rem 10rem 0rem; } }
+  height: 10rem; }
   .no-results h2 {
     color: black;
     font-family: "poppins", sans-serif;
     font-size: 14px; }
+  @media (min-width: 540px) {
+    .no-results {
+      margin: 5rem 0rem 2rem 0rem; }
+      .no-results h2 {
+        font-size: 25px; } }
 
 .search-results-wrapper {
   width: 100%;
@@ -4006,7 +4008,8 @@ section.donation {
 
 @media (min-width: 540px) {
   .search-result-categories-wrapper .search-categories-header {
-    width: 100%; } }
+    width: 85%;
+    margin-left: 7.5%; } }
 
 .search-title {
   background-image: linear-gradient(to bottom, rgba(66, 99, 171, 0.7) 0%, rgba(66, 99, 171, 0.7) 100%), url("../../assets/images/jack-min.png");
@@ -4020,6 +4023,11 @@ section.donation {
   .search-tax-terms-wrapper a {
     color: black;
     text-decoration: none; }
+  @media (min-width: 540px) {
+    .search-tax-terms-wrapper {
+      width: 85%;
+      margin-left: 7.5%;
+      margin-bottom: 4rem; } }
 
 .resource-archive-main {
   height: auto;
