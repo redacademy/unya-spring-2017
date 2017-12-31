@@ -85,8 +85,10 @@
 	height:34vw;
   padding:10px;
   margin-bottom: 1rem;
+  border-radius: 50%;
   img {
     border-radius: 50%;
+    background-size: cover;
   }
   h3{
     color:white;
