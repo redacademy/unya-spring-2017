@@ -14,7 +14,7 @@ get_header(); ?>
 			<h1>Impact</h1>
 		</header>
 
-		<section class="how-we-work">
+		<section class="how-we-work" id="how-we-work">
 			<div class="content-wrapper">
 				<h2>How We Work</h2>
 				<p><?php echo wp_kses( CFS()->get( 'how_we_work' ),array('br') ); ?></p>
