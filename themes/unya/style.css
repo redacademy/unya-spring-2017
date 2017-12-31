@@ -546,6 +546,10 @@ textarea {
       .ctct-form-field-email input[type=email] {
         width: 100%; } }
 
+::-webkit-input-placeholder {
+  padding-left: 10px;
+  color: black; }
+
 :-ms-input-placeholder {
   padding-left: 10px;
   color: black; }
@@ -641,6 +645,9 @@ input[type=submit] {
 
 #search-label {
   width: 75%; }
+
+.search-field::-webkit-input-placeholder {
+  color: #BABABA; }
 
 .search-field:-ms-input-placeholder {
   color: #BABABA; }
@@ -1525,6 +1532,10 @@ object {
     color: white;
     font-weight: normal;
     font-size: 20px; }
+    @media (min-width: 540px) {
+      .donation-button h2 a {
+        padding: 15px 25px;
+        font-size: 18px; } }
 
 section.pre-footer {
   height: 175px;
@@ -2711,9 +2722,12 @@ section.opportunities-pre-footer p {
   background-size: cover;
   width: 34vw;
   height: 34vw;
-  border-radius: 50%;
   padding: 10px;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  border-radius: 50%; }
+  .success-image img {
+    border-radius: 50%;
+    background-size: cover; }
   .success-image h3 {
     color: white;
     text-align: center;
@@ -2895,10 +2909,11 @@ section.opportunities-pre-footer p {
     -ms-flex-direction: row;
         flex-direction: row;
     color: white; }
+    .donation-banner p {
+      width: 50%;
+      font-size: 1.5rem; }
     .donation-banner p, .donation-banner h2 {
-      width: auto;
       margin: 0;
-      font-size: 1rem;
       font-family: "poppins", sans-serif; } }
 
 @media (min-width: 800px) {
@@ -2909,6 +2924,7 @@ section.opportunities-pre-footer p {
     .donation-banner p, .donation-banner h2 {
       font-size: 1.5rem; }
     .donation-banner p {
+      width: 50%;
       padding-left: 8.7142857143rem;
       font-size: 2.28571rem;
       line-height: 3.28571rem; }

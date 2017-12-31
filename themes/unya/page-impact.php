@@ -41,7 +41,7 @@ get_header(); ?>
 				  <section class="single-story hidden-mobile">
 				  	<a class="single-story-mobile" href="<?php the_permalink() ?>">
               <div class="hidden-desktop success-image" style="background-image: linear-gradient(180deg, rgba(87,87,87,0) 0%, rgba(67,67,67,0.4) 52.31%, rgba(44,44,44,0.7) 100%),
-						  url(<?php the_post_thumbnail('large'); ?>)";>
+						  url(<?php echo CFS()->get( 'photo' ); ?>)";>
                 <h3><?php the_title() ?></h3>
 					  	</div>
 					  </a>
@@ -82,7 +82,7 @@ get_header(); ?>
 				  <section class="single-story hidden-mobile">
 				  	<a class="single-story-mobile" href="<?php the_permalink() ?>">
               <div class="hidden-desktop success-image" style="background-image: linear-gradient(180deg, rgba(87,87,87,0) 0%, rgba(67,67,67,0.4) 52.31%, rgba(44,44,44,0.7) 100%),
-						  url(<?php the_post_thumbnail('large'); ?>)";>
+						  url(<?php echo CFS()->get( 'photo' ); ?>)";>
                 <h3><?php the_title() ?></h3>
 					  	</div>
 					  </a>
