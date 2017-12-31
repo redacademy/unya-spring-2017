@@ -134,6 +134,9 @@
   @include tablet {
     font-size: 1rem;
   }
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .resource-link {

@@ -4158,6 +4158,9 @@ section.donation {
   @media (min-width: 540px) {
     .resource-archive-item-info-title {
       font-size: 1rem; } }
+  @media (min-width: 800px) {
+    .resource-archive-item-info-title {
+      margin-bottom: 0; } }
 
 .resource-link {
   position: absolute;

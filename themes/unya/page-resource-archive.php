@@ -34,6 +34,12 @@ get_header();  ?>
               </div>
               <div class="resource-archive-item-info">
                 <h3 class="resource-archive-item-info-title"><?php the_title(); ?></h3>
+                <?php 
+                $article = CFS()->get('article_text');
+                $excerpt = wp_trim_words( custom_field_excerpt('article_text'), 10 );
+                if ($article) : ?>
+                  <p class="desktop-only"><?php echo $excerpt; ?></p>
+                <?php endif; ?>
                 <a class="resource-link" href="<?php the_permalink(); ?>">
                   Read More
 						      <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -66,6 +72,12 @@ get_header();  ?>
               </div>
               <div class="resource-archive-item-info">
                 <h3 class="resource-archive-item-info-title"><?php the_title(); ?></h3>
+                <?php 
+                $article = CFS()->get('article_text');
+                $excerpt = wp_trim_words( custom_field_excerpt('article_text'), 10 );
+                if ($article) : ?>
+                  <p class="desktop-only"><?php echo $excerpt; ?></p>
+                <?php endif; ?>
                 <a class="resource-link" href="<?php the_permalink(); ?>">
                   Read More
 						      <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -98,6 +110,12 @@ get_header();  ?>
               </div>
               <div class="resource-archive-item-info">
                 <h3 class="resource-archive-item-info-title"><?php the_title(); ?></h3>
+                <?php 
+                $article = CFS()->get('article_text');
+                $excerpt = wp_trim_words( custom_field_excerpt('article_text'), 10 );
+                if ($article) : ?>
+                  <p class="desktop-only"><?php echo $excerpt; ?></p>
+                <?php endif; ?>
                 <a class="resource-link" href="<?php the_permalink(); ?>">
                   Read More
 						      <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -130,6 +148,12 @@ get_header();  ?>
               </div>
               <div class="resource-archive-item-info">
                 <h3 class="resource-archive-item-info-title"><?php the_title(); ?></h3>
+                <?php 
+                $article = CFS()->get('article_text');
+                $excerpt = wp_trim_words( custom_field_excerpt('article_text'), 10 );
+                if ($article) : ?>
+                  <p class="desktop-only"><?php echo $excerpt; ?></p>
+                <?php endif; ?>
                 <a class="resource-link" href="<?php the_permalink(); ?>">
                   Read More
 						      <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -162,6 +186,12 @@ get_header();  ?>
               </div>
               <div class="resource-archive-item-info">
                 <h3 class="resource-archive-item-info-title"><?php the_title(); ?></h3>
+                <?php 
+                $article = CFS()->get('article_text');
+                $excerpt = wp_trim_words( custom_field_excerpt('article_text'), 10 );
+                if ($article) : ?>
+                  <p class="desktop-only"><?php echo $excerpt; ?></p>
+                <?php endif; ?>
                 <a class="resource-link" href="<?php the_permalink(); ?>">
                   Read More
 						      <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -194,7 +224,12 @@ get_header();  ?>
               </div>
               <div class="resource-archive-item-info">
                 <h3 class="resource-archive-item-info-title"><?php the_title(); ?></h3>
-                <p class="resource-body desktop-only"><?php  ?></p>
+                <?php 
+                $article = CFS()->get('article_text');
+                $excerpt = wp_trim_words( custom_field_excerpt('article_text'), 10 );
+                if ($article) : ?>
+                  <p class="desktop-only"><?php echo $excerpt; ?></p>
+                <?php endif; ?>
                 <a class="resource-link" href="<?php the_permalink(); ?>">
                   Read More
 						      <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -227,6 +262,12 @@ get_header();  ?>
               </div>
               <div class="resource-archive-item-info">
                 <h3 class="resource-archive-item-info-title"><?php the_title(); ?></h3>
+                <?php 
+                $article = CFS()->get('article_text');
+                $excerpt = wp_trim_words( custom_field_excerpt('article_text'), 10 );
+                if ($article) : ?>
+                  <p class="desktop-only"><?php echo $excerpt; ?></p>
+                <?php endif; ?>
                 <a class="resource-link" href="<?php the_permalink(); ?>">
                   Read More
 						      <i class="fa fa-arrow-right" aria-hidden="true"></i>
