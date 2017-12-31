@@ -27,7 +27,7 @@
     flex-direction: row;
     color: white;
     p, h2 {
-      width: auto;
+      // width: auto;
       margin: 0;
       font-size: 1rem;
       font-family: $font__heading;
@@ -41,6 +41,7 @@
     }
     
     p {
+      width: 50%;
       padding-left: 8.7142857143rem;
       font-size: $desktop__h2;
       line-height: $desktop__h2 + 1rem;
