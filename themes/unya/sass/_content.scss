@@ -85,7 +85,7 @@
 
 	@include desktop {
 		width: 100%;
-    padding: 0 11rem 0 17.428571429rem;
+    padding: 0 9rem 0 17.428571429rem;
 	}
 }
 
@@ -196,13 +196,13 @@
 @include desktop{
   .about, .programs{
     .content-wrapper {
-      padding: 17.785714286rem 44.285714286rem 0 8.7142857143rem;
+      padding: 17.785714286rem 24.285714286rem 0 8.7142857143rem;
     }
   }
 
   .nyc{
     .content-wrapper{
-      padding: 17.785714286rem 8.7142857143rem 0 44.285714286rem;
+      padding: 17.785714286rem 8.7142857143rem 0 24.285714286rem;
     }
   }
 }
