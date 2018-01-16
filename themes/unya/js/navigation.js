@@ -24,6 +24,7 @@
       $('.site-footer').toggleClass('expanded');
       $('.site-content').toggleClass('collapsed');
       $('.site-footer').toggleClass('desktop-only');
+      $('.search-form-wrapper').toggleClass('mobile-search-controller')
 
       var btn = $('.sign-up-btn');
       var subscribeArea = $('.subscription-form');
@@ -129,11 +130,6 @@
         return false;
       }
     });
-
-    // Alter search bar display based on expanded nav
-    $('.menu-toggle').click(function(){
-      $('.search-form-wrapper').toggleClass('mobile-search-controller')
-    })
 
   });    
 
