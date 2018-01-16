@@ -546,6 +546,10 @@ textarea {
       .ctct-form-field-email input[type=email] {
         width: 100%; } }
 
+::-webkit-input-placeholder {
+  padding-left: 10px;
+  color: black; }
+
 :-ms-input-placeholder {
   padding-left: 10px;
   color: black; }
@@ -641,6 +645,9 @@ input[type=submit] {
 
 #search-label {
   width: 75%; }
+
+.search-field::-webkit-input-placeholder {
+  color: #BABABA; }
 
 .search-field:-ms-input-placeholder {
   color: #BABABA; }
@@ -852,12 +859,14 @@ a {
           color: #fff; }
           .site-header.expanded .main-navigation .menu-primary-menu-container .menu .menu-item-has-children.expanded a:visited {
             color: #fff; }
-        .site-header.expanded .main-navigation .menu-primary-menu-container .menu .menu-item-has-children.expanded .sub-menu .menu-item {
-          width: 100vw; }
-        .site-header.expanded .main-navigation .menu-primary-menu-container .menu .menu-item-has-children.expanded .sub-menu a {
-          color: #00277E; }
-          .site-header.expanded .main-navigation .menu-primary-menu-container .menu .menu-item-has-children.expanded .sub-menu a:visited {
+        .site-header.expanded .main-navigation .menu-primary-menu-container .menu .menu-item-has-children.expanded .sub-menu {
+          z-index: 999999; }
+          .site-header.expanded .main-navigation .menu-primary-menu-container .menu .menu-item-has-children.expanded .sub-menu .menu-item {
+            width: 100vw; }
+          .site-header.expanded .main-navigation .menu-primary-menu-container .menu .menu-item-has-children.expanded .sub-menu a {
             color: #00277E; }
+            .site-header.expanded .main-navigation .menu-primary-menu-container .menu .menu-item-has-children.expanded .sub-menu a:visited {
+              color: #00277E; }
       .site-header.expanded .main-navigation .menu-primary-menu-container .menu li {
         display: -ms-flexbox;
         display: flex;
@@ -876,8 +885,7 @@ a {
   height: 40%;
   bottom: 0;
   left: 0;
-  right: 0;
-  z-index: 998; }
+  right: 0; }
   .site-footer.expanded a {
     text-decoration: none; }
   .site-footer.expanded .subscription-form.display-form {
@@ -1189,7 +1197,7 @@ a {
   @media (min-width: 800px) {
     .content-wrapper {
       width: 100%;
-      padding: 0 15.714285714rem 0 17.428571429rem; } }
+      padding: 0 11rem 0 17.428571429rem; } }
 
 .section-heading {
   width: 100%;
@@ -3662,7 +3670,7 @@ section.donation {
 
 .opportunity-list {
   padding: 0;
-  margin: 0 0 1rem 0;
+  margin: 0 0 4rem 0;
   list-style: none; }
   @media (min-width: 800px) {
     .opportunity-list {
@@ -3738,26 +3746,26 @@ section.donation {
       width: 60%;
       border-radius: 0px 0px 0px 50px; } }
 
+.donation .donation-button {
+  background: white; }
+
 .get-involved-footer-button {
+  text-decoration: none;
   display: -ms-flexbox;
   display: flex;
-  width: 85%;
   height: 6rem;
   border-radius: 10px;
   background: #4263AB;
   text-transform: uppercase;
-  margin-bottom: 2rem;
   font-size: 1.25rem;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
   font-weight: lighter; }
   @media (min-width: 540px) {
     .get-involved-footer-button {
       width: 12rem;
-      height: 3rem;
       margin-right: 2rem;
       margin-top: 1rem; }
       .get-involved-footer-button p {
@@ -3767,26 +3775,24 @@ section.donation {
       .get-involved-footer-button p {
         font-size: 1.5rem !important;
         text-align: center !important; } }
-  @media (min-width: 800px) {
-    .get-involved-footer-button {
-      height: 5rem;
-      width: 15rem; } }
+
+.involved-button-text {
+  color: white;
+  line-height: 25px !important; }
 
 .get-involved-footer-button:hover {
   background: #7392D9;
   cursor: pointer; }
 
 .donate-footer-sub-wrapper {
-  width: 85%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center;
-  margin-left: 3rem; }
+      justify-content: center; }
 
 .donate-footer-sub {
   font-size: 0.75rem;
-  text-align: center; }
+  text-align: left; }
 
 @media (min-width: 540px) {
   #get-involved-footer-section {
@@ -3802,7 +3808,7 @@ section.donation {
     height: 12rem; }
     #get-involved-footer-section p {
       width: 70%;
-      font-size: 2rem;
+      font-size: 1.25rem;
       text-align: left;
       font-weight: 200; } }
 

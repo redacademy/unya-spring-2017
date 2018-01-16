@@ -129,7 +129,7 @@ section.donation{
 
 .opportunity-list {
   padding: 0;
-  margin: 0 0 1rem 0;
+  margin: 0 0 4rem 0;
   list-style: none;
 
   @include desktop {
@@ -211,24 +211,27 @@ section.donation{
     width: 60%;
     border-radius: 0px 0px 0px 50px;
   }
+} 
+.donation{
+  .donation-button{
+    background:white;
+  }
 }
 
 .get-involved-footer-button {
+  text-decoration: none;
   display: flex;
-  width: 85%;
   height: 6rem;
   border-radius: 10px;
   background: $color__blue_medium;
   text-transform: uppercase;
-  margin-bottom: 2rem;
   font-size: 1.25rem;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
   font-weight: lighter;
   @include tablet {
     width: 12rem;
-    height: 3rem;
+    
     margin-right: 2rem;
     margin-top: 1rem;
     p {
@@ -240,10 +243,12 @@ section.donation{
       }
     }
   }
-  @include desktop {
-    height: 5rem;
-    width: 15rem;
-  }
+ 
+}
+
+.involved-button-text{
+  color:white;
+  line-height: 25px !important;
 }
 
 .get-involved-footer-button:hover {
@@ -252,15 +257,13 @@ section.donation{
 }
 
 .donate-footer-sub-wrapper {
-  width: 85%;
   display: flex;
   justify-content: center;
-  margin-left: 3rem;
 }
 
 .donate-footer-sub {
   font-size: 0.75rem;
-  text-align: center;
+  text-align: left;
 }
 
 #get-involved-footer-section {
@@ -275,7 +278,7 @@ section.donation{
     height: 12rem;
     p {
       width: 70%;
-      font-size: 2rem;
+      font-size: 1.25rem;
       text-align: left;
       font-weight: 200;
     }

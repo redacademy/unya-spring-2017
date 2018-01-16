@@ -15,21 +15,21 @@ get_header(); ?>
 
 		<section class="donation">
 			<header class="section-heading">
-				<h2 class="donate-header">Join Us</h2>
+				<h2 class="donate-header">Donate</h2>
 			</header>
 			<div class="content-wrapper">
 				<p><?php echo wp_kses(CFS()->get( 'donation_intro_paragraph' ),array('br') ); ?></p>
 			</div>
-      <span class="donate-control-span">
-			  <div class="donate-section-banner" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/images/cedarwalk-banner.png' ?>)">
-				</div>
-				<div class="donate-footer-sub-wrapper">
-			    <p class="donate-footer-sub hidden-mobile">UNYA is a not-for-profit society registered with the Province of BC
+     <section class="donation-button">
+	
+		<h2><a href="https://www.canadahelps.org/en/charities/urban-native-youth-association/">Donate <span class="hidden-mobile">Today</span></a></h2>
+	</section>
+				<div class="donate-footer-sub-wrapper content-wrapper">
+			    <p class="donate-footer-sub">UNYA is a not-for-profit society registered with the Province of BC
 			    	and a charitable organization 129836292 RRO001 registered with the 
 			    	Government of Canada	 
 					</p>
-        </div>	
-      </span>	
+        </div>		
 
 		</section>
 
@@ -51,12 +51,12 @@ get_header(); ?>
 						<?php endforeach; ?>
 					</ul>
 				</div><!--End Why work for UNYA section -->
-				<div class="important-note-container hidden-mobile content-wrapper">
+				<div class="important-note-container  content-wrapper">
 					<div class="important-note-paragraph">
 						<span class="fa fa-info fa-3x" aria-hidden="true"></span>
 						<p><span class="bold-subheading">Important Note:</span> UNYA accepts complete applications for advertised positions only. You must state clearly on your cover letter which position you are applying for. All applications must be sent in electronic form, to the email address specified on the posting. Hard copies and unsolicited applications/resumes will not be reviewed, but immediately destroyed.</p>
 					</div>
-				</div><!-- Section hidden in mobile -->
+				</div>
 
 				<?php $args = array(
 									'post_per_page' => 10,
@@ -71,7 +71,7 @@ get_header(); ?>
 						<h3><?php the_title(); ?></h3>
 						<p class="hidden-mobile"><?php echo CFS()->get( 'description' ); ?></p>
 						<a class="get-involved-link" href="<?php echo CFS()->get( 'link' ); ?>" target="_blank">
-							<span class="hidden-mobile">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span><span class="mobile-only"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+							(.pdf)
 						</a>
 					</li>
 					<?php endforeach; wp_reset_postdata(); ?>
@@ -94,7 +94,7 @@ get_header(); ?>
 					<li class="single-opportunity">
 						<h3><?php the_title(); ?></h3>
 						<p class="hidden-mobile"><?php echo CFS()->get( 'description' ); ?></p>
-						<a class="get-involved-link" href="<?php echo CFS()->get( 'link' ); ?>" target="_blank"><span class="hidden-mobile">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></span><span class="mobile-only"><i class="fa fa-angle-right"></i></span></a>
+						<a class="get-involved-link" href="<?php echo CFS()->get( 'link' ); ?>" target="_blank">(.pdf)</a>
 				</li>
 				<?php endforeach; wp_reset_postdata(); ?>
 			</section>
@@ -102,8 +102,8 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<section id="get-involved-footer-section" class="pre-footer fit-button opportunities-pre-footer">
-		<p>Please email info@unya.bc.ca for additional job opportunities</p>
-		<div class="get-involved-footer-button"><p>email us</p></div>
+		<p>Interested in partnering with one of our programs? Get in touch with our program staff to talk about how you can be involved.</p>
+		<a class="get-involved-footer-button" href="programs"><p class="involved-button-text">Explore Programs</p></a>
 	</section>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
