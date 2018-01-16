@@ -192,10 +192,12 @@ input[type=submit]{
 .mobile-search-controller {
 	display: initial !important;
 	position: absolute;
-	top: 10%;
+	top: 15%;
 	left: 15%;
 	width: 85%;
-
+  @include tablet {
+		top: 9%;
+	}
 }
 
 .search-form-wrapper {
