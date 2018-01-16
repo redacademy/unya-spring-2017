@@ -213,8 +213,11 @@ a {
 	left: 0;
 	right: 0;
 	flex-wrap: wrap;
-	height: 80%;
+	height: 61%;
 	z-index: 299;
+	@include tablet {
+		height: 70%;
+	}
 	.site-branding {
 		background: url('../../assets/images/Logo-White.png') no-repeat center;
 		background-size: contain;
@@ -224,7 +227,10 @@ a {
 		display: block;
 		flex-basis: 100%;
 		background: #fff;
-		height: 75%;
+		height: 60%;
+		@include tablet {
+			height: 80%;
+		}
 		.menu-primary-menu-container{
 			.menu {
 				display: flex;

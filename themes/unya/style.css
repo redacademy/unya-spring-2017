@@ -546,10 +546,6 @@ textarea {
       .ctct-form-field-email input[type=email] {
         width: 100%; } }
 
-::-webkit-input-placeholder {
-  padding-left: 10px;
-  color: black; }
-
 :-ms-input-placeholder {
   padding-left: 10px;
   color: black; }
@@ -648,9 +644,6 @@ input[type=submit] {
 #search-label {
   width: 75%; }
 
-.search-field::-webkit-input-placeholder {
-  color: #BABABA; }
-
 .search-field:-ms-input-placeholder {
   color: #BABABA; }
 
@@ -660,9 +653,12 @@ input[type=submit] {
 .mobile-search-controller {
   display: initial !important;
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 15%;
   width: 85%; }
+  @media (min-width: 540px) {
+    .mobile-search-controller {
+      top: 9%; } }
 
 .search-form-wrapper {
   display: none; }
@@ -835,8 +831,11 @@ a {
   right: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 80%;
+  height: 61%;
   z-index: 299; }
+  @media (min-width: 540px) {
+    .site-header.expanded {
+      height: 70%; } }
   .site-header.expanded .site-branding {
     background: url("../../assets/images/Logo-White.png") no-repeat center;
     background-size: contain;
@@ -846,7 +845,10 @@ a {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     background: #fff;
-    height: 75%; }
+    height: 60%; }
+    @media (min-width: 540px) {
+      .site-header.expanded .main-navigation {
+        height: 80%; } }
     .site-header.expanded .main-navigation .menu-primary-menu-container .menu {
       display: -ms-flexbox;
       display: flex;
