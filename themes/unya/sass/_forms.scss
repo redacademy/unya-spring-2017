@@ -166,15 +166,17 @@ input[type=submit]{
 
 .search-field {
 	border: none !important;
-	height: auto !important;
+	height: 56px;
 	font-family: $font__main;
+	font-size: 16px;
 	outline: none;
 	text-decoration: none;
-	color: #BABABA !important;
-	padding-left: 2rem;
+	color: black;
+	padding-left: 3rem;
 	width: 100% !important;
 	@include desktop {
-		width: auto !important;
+		height: 100% !important;
+		width: 90% !important;
 		padding-left: 1rem;
 	}
 }
@@ -190,9 +192,9 @@ input[type=submit]{
 .mobile-search-controller {
 	display: initial !important;
 	position: absolute;
-	top: 12%;
-	left: 25%;
-	width: 70%;
+	top: 10%;
+	left: 15%;
+	width: 85%;
 
 }
 
