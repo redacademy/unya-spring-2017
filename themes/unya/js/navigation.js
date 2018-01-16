@@ -68,6 +68,7 @@
       $('.site-footer').removeClass('expanded');
       $('.site-content').removeClass('collapsed');
       $('.site-footer').addClass('hidden-mobile');
+      $('.search-form-wrapper').removeClass('mobile-search-controller')  
       var target = $(this.hash);
       target = target.length ? target : $('[id=' + this.hash.slice(1) +']');
       target.click();
