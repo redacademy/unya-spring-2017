@@ -11,6 +11,7 @@ get_header(); ?>
 		  <div class="news-header news-title header-wrapper sidebar-start">
 	    	<h1>unya news</h1>
 			</div>
+			<a class="back-link" href='news'><p> Back to News</p> </a>
 			<h2 id="single-news-title"><?php the_title(); ?></h2>
 			<div class="single-news-main">
 			  <div class="single-news-wrapper">

@@ -13,7 +13,7 @@ get_header(); ?>
     url(<?php echo CFS()->get( 'photo' ); ?>)";>
 			<h1>Volunteers</h1>
 		</header>
-
+    <a class="back-link" href='impact'><p> Back to Impact</p> </a>
 		<?php while ( have_posts() ) : the_post(); ?>
 		  <div class="content-wrapper">
         <h2 class="single-success-title">Featured Volunteer - <?php the_title(); ?></h3>

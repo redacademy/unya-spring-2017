@@ -546,6 +546,10 @@ textarea {
       .ctct-form-field-email input[type=email] {
         width: 100%; } }
 
+::-webkit-input-placeholder {
+  padding-left: 10px;
+  color: black; }
+
 :-ms-input-placeholder {
   padding-left: 10px;
   color: black; }
@@ -644,6 +648,9 @@ input[type=submit] {
 #search-label {
   width: 75%; }
 
+.search-field::-webkit-input-placeholder {
+  color: #BABABA; }
+
 .search-field:-ms-input-placeholder {
   color: #BABABA; }
 
@@ -679,6 +686,15 @@ input[type=submit] {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
+.back-link p {
+  font-family: "worksans", sans-serif; }
+
+@media (min-width: 800px) {
+  .back-link {
+    text-align: right; }
+    .back-link p {
+      margin-right: 3rem; } }
+
 a {
   color: #4263AB; }
   a:visited {
