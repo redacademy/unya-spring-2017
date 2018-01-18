@@ -3,7 +3,18 @@
 --------------------------------------------------------------*/
 
 /* Links */
-
+.back-link{
+	p{
+		font-family: $font__main;
+	}
+	@include desktop{
+	text-align: right;
+	p{
+		margin-right:3rem;
+		
+}
+}
+}
 a {
 	color: $color__link;
 

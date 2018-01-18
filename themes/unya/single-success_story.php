@@ -14,13 +14,13 @@ get_header(); ?>
     url(<?php echo CFS()->get( 'photo' ); ?>)";>
 			<h1>Success Stories</h1>
 		</header>
-
+<a class="back-link" href='impact'><p> Back to Impact</p> </a>
 		<?php while ( have_posts() ) : the_post(); ?>
 		  <div class="content-wrapper">
         <h2 class="single-success-title">Youth Feature - <?php the_title(); ?></h3>
 			 	<p class="first-half"><?php echo CFS()->get( 'first_half_of_story' ); ?></p>
 				<span class="success-image-exerpt">
-				  <img class="single-success-image hidden-mobile" src="<?php echo CFS()->get( 'photo' ); ?>">
+				  <img class="single-success-image desktop-only" src="<?php echo CFS()->get( 'photo' ); ?>">
 				  <h3 class="success-exerpt hidden-mobile"><?php echo CFS()->get( 'exerpt' ); ?></h5>
 			  </span>
 			</div>
