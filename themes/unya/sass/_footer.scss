@@ -40,7 +40,7 @@ section.pre-footer{
   align-items:center;
   flex-direction:column;
   color:white;
-  @include desktop{
+  @include tablet{
   justify-content:space-between;
   flex-direction:row;
   padding:45px 90px;

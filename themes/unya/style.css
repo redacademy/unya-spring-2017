@@ -1584,7 +1584,7 @@ section.pre-footer {
   -ms-flex-direction: column;
       flex-direction: column;
   color: white; }
-  @media (min-width: 800px) {
+  @media (min-width: 540px) {
     section.pre-footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2717,15 +2717,18 @@ section.opportunities-pre-footer p {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
+      flex-direction: column; }
   @media (min-width: 540px) {
     .success-stories .section-heading, .volunteers .section-heading {
       display: none; } }
   @media (min-width: 800px) {
     .success-stories .section-heading, .volunteers .section-heading {
-      display: initial; } }
+      display: -ms-flexbox;
+      display: flex;
+      height: 200px; }
+      .success-stories .section-heading h4, .volunteers .section-heading h4 {
+        padding-left: 244px;
+        margin-left: 0px; } }
   .success-stories .section-heading h2, .volunteers .section-heading h2 {
     margin-top: 50px;
     margin-bottom: 0;
@@ -2770,7 +2773,7 @@ section.opportunities-pre-footer p {
     color: white;
     text-align: center;
     position: relative;
-    top: 60%;
+    top: 40%;
     font-size: 12px;
     font-weight: bold; }
   @media (min-width: 540px) {
@@ -2796,12 +2799,15 @@ section.opportunities-pre-footer p {
   background-color: #00277E !important;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: auto;
   width: 100%; }
   .statistics h2 {
-    padding: 0 29px; }
+    color: white;
+    margin-top: 40px; }
   .statistics .image-carousel {
     width: 100%;
     height: 700px;
@@ -2810,6 +2816,7 @@ section.opportunities-pre-footer p {
       right: 1px; }
       @media (min-width: 800px) {
         .statistics .image-carousel .slick-dots {
+          padding-top: 20px;
           width: auto;
           right: 50%; } }
   .statistics .stats-slide {
@@ -2822,27 +2829,36 @@ section.opportunities-pre-footer p {
 
 .impact-polygon {
   height: 300px;
-  width: 100%; }
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
   .impact-polygon p {
     text-align: left;
     width: 70%;
-    margin: 70px 4rem;
+    margin-left: 4rem;
     color: white;
     line-height: 1.5; }
     @media (min-width: 540px) {
       .impact-polygon p {
         width: 55%;
-        margin: 70px 11rem; } }
+        margin-left: 11rem;
+        font-weight: 300; } }
     @media (min-width: 800px) {
       .impact-polygon p {
         width: 75%;
-        margin: 150px 11rem; } }
+        margin-left: 0;
+        font-weight: 300; } }
   .impact-polygon h2 {
     color: white;
     font-family: "poppins", sans-serif;
     font-weight: 400;
     font-size: 2rem;
-    margin-left: 4rem; }
+    margin-left: 4rem;
+    padding-top: 25px; }
     @media (min-width: 800px) {
       .impact-polygon h2 {
         margin-left: 0;
@@ -2855,20 +2871,26 @@ section.opportunities-pre-footer p {
 
 .rectangle-container {
   height: 300px;
-  width: 100%; }
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
   .rectangle-container p {
     width: 70%;
-    margin: 90px 4rem;
+    margin-left: 4rem;
     color: white;
     line-height: 1.5; }
     @media (min-width: 540px) {
       .rectangle-container p {
-        margin: 70px 11rem;
+        margin-left: 11rem;
         width: 55%; } }
     @media (min-width: 800px) {
       .rectangle-container p {
         width: 75%;
-        margin: 175px 11rem; } }
+        margin-left: 11rem; } }
   @media (min-width: 800px) {
     .rectangle-container {
       height: 550px; } }
@@ -2898,7 +2920,9 @@ section.opportunities-pre-footer p {
       display: none; } }
 
 .single-success-image {
-  width: 40%; }
+  width: 350px; }
+  .single-success-image img {
+    background-size: cover; }
 
 .success-exerpt {
   color: white;
@@ -2920,6 +2944,12 @@ section.opportunities-pre-footer p {
 
 .desktop-about-heading-sub {
   margin-left: 2rem; }
+
+.single-success-title, .first-half, .second-half {
+  margin-left: 25px; }
+  @media (min-width: 800px) {
+    .single-success-title, .first-half, .second-half {
+      margin-left: 0px; } }
 
 /* Native Youth Centre */
 @media (min-width: 540px) {

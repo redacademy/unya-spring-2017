@@ -12,12 +12,12 @@
 	<?php
 
 	$query = new WP_Query(array(
-    'post_type' => 'success_story',
+    'post_type' => 'volunteer',
     'post_status' => 'publish'
 	));
 
 		echo '<ul class="sidebar-menu-container">';
-		echo '<li class="menu-item-archive menu-title-archive"><a href="impact"><p>Success Stories</p></a></li>';
+		echo '<li class="menu-item-archive menu-title-archive"><a href="impact"><p>Volunteers</p></a></li>';
 
 		while ( $query->have_posts() ) {
 			$query->the_post();
