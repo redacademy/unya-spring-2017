@@ -31,12 +31,16 @@
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
       @include tablet{
         display:none;
       }
       @include desktop{
-        display:initial;
+        display:flex;
+        height:200px;
+        h4{
+          padding-left:244px;
+          margin-left:0px;
+        }
       }
     h2 {
       margin-top: 50px;
@@ -94,7 +98,7 @@
     color:white;
     text-align: center;
     position:relative;
-    top:60%;
+    top:40%;
     font-size:12px;
     font-weight:bold;
   }
@@ -115,6 +119,7 @@
 }
 
 .stats-slide{
+ 
   height:auto;
   margin:0 auto;
   background-repeat: no-repeat;
@@ -125,11 +130,13 @@
 .statistics{
   background-color: #00277E !important;
   display:flex;
+  flex-direction: column;
   justify-content: space-around;
   height: auto;
   width:100%;
   h2{
-    padding:0 29px;
+    color:white;
+    margin-top:40px;
   }
 .image-carousel{
   width:100%;
@@ -138,6 +145,7 @@
   .slick-dots {
     right: 1px;
     @include desktop {
+       padding-top:20px;
       width: auto;
       right: 50%;
     }
@@ -158,19 +166,24 @@
 .impact-polygon{
   height:300px;
   width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
   p{
     text-align: left;
     width:70%;
-    margin: 70px 4rem;
+    margin-left: 4rem;
     color:white;
     line-height: 1.5;
     @include tablet {
       width: 55%;
-      margin: 70px 11rem;
+      margin-left: 11rem;
+      font-weight: 300;
     }
     @include desktop {
       width: 75%;
-      margin: 150px 11rem;
+      margin-left: 0;
+      font-weight: 300;
     }
   }
   h2 {
@@ -179,6 +192,7 @@
     font-weight: 400;
     font-size: 2rem;
     margin-left: 4rem;
+    padding-top:25px;
     @include desktop {
       margin-left: 0;
       font-weight: 500;
@@ -196,18 +210,21 @@
 .rectangle-container{
   height:300px;
   width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
   p{
 		width:70%;
-		margin: 90px 4rem;
+		margin-left: 4rem;
     color:white;
     line-height: 1.5;
     @include tablet {
-      margin: 70px 11rem;
+      margin-left: 11rem;
       width: 55%;
     }
     @include desktop {
       width: 75%;
-      margin: 175px 11rem;
+      margin-left: 11rem;
     }
 	}
   @include desktop{
@@ -248,7 +265,10 @@
 }
 
 .single-success-image{
-  width:40%;
+  width:350px;
+    img{
+    background-size: cover;
+  }
 }
 
 .success-exerpt{
@@ -271,4 +291,10 @@
 
 .desktop-about-heading-sub {
   margin-left: 2rem;
+}
+.single-success-title, .first-half, .second-half{
+  margin-left:25px;
+  @include desktop{
+    margin-left:0px;
+  }
 }

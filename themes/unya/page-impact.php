@@ -105,6 +105,7 @@ get_header(); ?>
 
 	<h2 class="accordion-label" id="statistics">Statistics</h2>
 		<div class="statistics">
+			<h2 class="desktop-only content-wrapper">Statistics</h2>
 			<div class="image-carousel content-wrapper">
         <?php $stats_slider = CFS()->get( 'statistics_slider' ); ?>
         <?php foreach ( $stats_slider as $stats_slide ) : ?>
@@ -119,9 +120,11 @@ get_header(); ?>
 			<div class="impact-polygon">
 			  <h2 class="content-wrapper">Testimonials</h2>
 			  <p class="content-wrapper"><?php echo wp_kses(CFS()->get( 'testimonial_1' ),array('br')); ?></p>
+				<p class="content-wrapper"><?php echo wp_kses(CFS()->get( 'name_of_person_being_quoted_1' ),array('br')); ?></p>
 			</div>
   		<div class="rectangle-container">	
 				<p class="content-wrapper"><?php echo CFS()->get( 'testimonial_2' ); ?></p>
+				<p class="content-wrapper"><?php echo wp_kses(CFS()->get( 'name_of_person_being_quoted_2' ),array('br')); ?></p>
 			</div>
 		</section>
 

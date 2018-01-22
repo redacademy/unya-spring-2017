@@ -1,7 +1,8 @@
 (function($) {
 $('.image-carousel').slick({
-  arrows: false,
-  dots: true,
+  arrows: true,
+  dots: false,
+  text:false,
   autoplay: true,
   infinite: true,
   speed: 300,

@@ -10,11 +10,10 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<header class="header-wrapper impact-title sidebar-start single-success-banner" style="background-image: linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
-    url(<?php echo CFS()->get( 'photo' ); ?>)";>
+		<header class="header-wrapper impact-title sidebar-start single-success-banner" style="background-image: linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%)";>
 			<h1>Success Stories</h1>
 		</header>
-<a class="back-link" href='impact'><p> Back to Impact</p> </a>
+<a class="back-link hidden-desktop" href='impact'><p> Back to Impact</p> </a>
 		<?php while ( have_posts() ) : the_post(); ?>
 		  <div class="content-wrapper">
         <h2 class="single-success-title">Youth Feature - <?php the_title(); ?></h3>
