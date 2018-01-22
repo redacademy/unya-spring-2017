@@ -27,6 +27,11 @@
     flex-flow: row nowrap;
     padding: 0;
   }
+  @include desktop {
+    width: 100%;
+    padding: 0 9rem 0 17.428571429rem;
+    justify-content: space-between;
+  }
   .slick-dots {
     position: relative;
     display: flex;
@@ -36,9 +41,31 @@
     align-items: center;
     li {
       button {
-        background: white;        
+        background-color:rgba(255, 255, 255, 0.5);
+        height: 12px;
+        width: 12px;
       }
     }
+    .slick-active {
+      button {
+        background-color: white;
+      }
+    }
+  }
+  .slick-arrow {
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+  }
+  .slick-arrow:before {
+    color: white;
+    font-size: 40px;
+  }
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
   }
 
   .top-news-carousel-item {
@@ -59,8 +86,9 @@
     }
     @include desktop {
       height: 25rem;
-      width: 25%;
-      margin: 1rem;
+      width: 32%;
+      margin: 0rem;
+      margin-bottom: 1rem;
     }
 
     .top-news-item-image {
@@ -118,8 +146,11 @@
 }
 
 .news-title{
-  background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
-  url('../../assets/images/jack-min.png');
+  @include desktop {
+    background-image:  linear-gradient(to bottom,rgba(66,99,171,0.7) 0%, rgba(66,99,171,0.7) 100%),
+    url('../../assets/images/jack-min.png');
+  }
+
 }
 
 .news-single{
@@ -148,13 +179,14 @@
   display:flex;
   flex-direction: row;
   min-width: 30%;
+  max-width: 30%;
   img {
     width:100px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 25px;
     @include tablet {
       height: 12rem;
-      width: 12rem;
+      width: 100%;
     }
   }
   .news-headline{
@@ -237,14 +269,16 @@ display:none;
   display: flex;
   flex-flow: column nowrap;
   margin: 0;
-  padding: 0;
   justify-content: center;
   align-items: center;
   padding: 1rem;
   width: 100%;
   @include desktop {
-    width: 65%;
+    min-width: 66%;
+    max-width: 66%;
     align-self: left;
+    padding: 0;
+    padding-top: 1rem;
   }
 }
 
@@ -268,14 +302,16 @@ display:none;
 }
 
 .categories-desktop {
-  display: none;
+  display: none !important;
   @include desktop {
-    display: flex;
+    display: flex !important;
     flex-flow: row wrap;
-    padding: 1rem;
+    padding: 0rem;
+    padding-top: 1rem;
     justify-content: flex-start;
     align-items: start;
-    width: 25rem;
+    min-width: 28%;
+    max-width: 28%;
     a {
       color: black;
       text-decoration: none;
@@ -308,7 +344,7 @@ display:none;
 
 .article-main-wrapper {
   @include desktop {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -319,7 +355,14 @@ display:none;
 .news-accordion {
   @include desktop {
     display: flex;    
-    justify-content: center;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 9rem 0 17.428571429rem;
+  }
+  .accordion-label {
+    @include desktop {
+      display: none;
+    }
   }
 }
 
@@ -349,7 +392,8 @@ display:none;
     margin-top: 5rem;
   }
   @include desktop {
-    width: 70%;
+    width: 100%;
+    padding: 0 9rem 0 17.428571429rem;
   }
 }
 
@@ -443,3 +487,58 @@ display:none;
     height: 50rem;
   }
 }
+
+.single-news-excerpt {
+  font-size: 0.8rem;
+}
+
+.news-pre-wrapper {
+  height: auto !important;
+  @include tablet {
+    height: 22rem !important;
+    padding: 3rem 65px 3rem 65px !important;
+  }
+  @include desktop {
+    padding: 3rem 9rem 3rem 17.428571429rem !important;
+  }
+}
+
+.contact-wrapper-desktop {
+  @include tablet {
+    display: flex;
+    flex-flow: row nowrap;
+    .contact-wrapper {
+      width: 50% !important;
+    }
+  }
+}
+
+.news-prefooter-body {
+  padding-left: 0 !important;
+  font-size: 18px !important;
+}
+
+.news-contact {
+  @include tablet {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  p {
+    margin-top: 0.3rem !important;
+    margin-bottom: 0.3rem !important;
+    font-size: 16px !important;
+  }
+}
+
+#prefooter-association {
+  @include tablet {
+    margin-left: 0;
+  }
+}
+
+#tester {
+  @include desktop {
+    width: 35% !important;
+  }
+}
+

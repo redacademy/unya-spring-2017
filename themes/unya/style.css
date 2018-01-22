@@ -3175,6 +3175,12 @@ ul.nyc-partners {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
       padding: 0; } }
+  @media (min-width: 800px) {
+    .top-news-carousel-wrapper {
+      width: 100%;
+      padding: 0 9rem 0 17.428571429rem;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
   .top-news-carousel-wrapper .slick-dots {
     position: relative;
     display: -ms-flexbox;
@@ -3187,7 +3193,22 @@ ul.nyc-partners {
     -ms-flex-align: center;
         align-items: center; }
     .top-news-carousel-wrapper .slick-dots li button {
-      background: white; }
+      background-color: rgba(255, 255, 255, 0.5);
+      height: 12px;
+      width: 12px; }
+    .top-news-carousel-wrapper .slick-dots .slick-active button {
+      background-color: white; }
+  .top-news-carousel-wrapper .slick-arrow {
+    height: 40px;
+    width: 40px;
+    z-index: 1; }
+  .top-news-carousel-wrapper .slick-arrow:before {
+    color: white;
+    font-size: 40px; }
+  .top-news-carousel-wrapper .slick-prev {
+    left: 0; }
+  .top-news-carousel-wrapper .slick-next {
+    right: 0; }
   .top-news-carousel-wrapper .top-news-carousel-item {
     width: 86%;
     height: 25rem;
@@ -3210,8 +3231,9 @@ ul.nyc-partners {
     @media (min-width: 800px) {
       .top-news-carousel-wrapper .top-news-carousel-item {
         height: 25rem;
-        width: 25%;
-        margin: 1rem; } }
+        width: 32%;
+        margin: 0rem;
+        margin-bottom: 1rem; } }
     .top-news-carousel-wrapper .top-news-carousel-item .top-news-item-image {
       height: 19rem; }
       @media (min-width: 540px) {
@@ -3282,7 +3304,8 @@ ul.nyc-partners {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  min-width: 30%; }
+  min-width: 30%;
+  max-width: 30%; }
   .news-title-block img {
     width: 100px;
     border-top-left-radius: 15px;
@@ -3290,7 +3313,7 @@ ul.nyc-partners {
     @media (min-width: 540px) {
       .news-title-block img {
         height: 12rem;
-        width: 12rem; } }
+        width: 100%; } }
   .news-title-block .news-headline {
     -ms-flex-order: 2;
         order: 2; }
@@ -3368,7 +3391,6 @@ ul.nyc-partners {
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
   margin: 0;
-  padding: 0;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -3377,10 +3399,13 @@ ul.nyc-partners {
   width: 100%; }
   @media (min-width: 800px) {
     .news-articles {
-      width: 65%;
+      min-width: 66%;
+      max-width: 66%;
       -ms-flex-item-align: left;
           -ms-grid-row-align: left;
-          align-self: left; } }
+          align-self: left;
+      padding: 0;
+      padding-top: 1rem; } }
 
 .categories-wrapper {
   display: -ms-flexbox;
@@ -3404,19 +3429,21 @@ ul.nyc-partners {
       display: none; } }
 
 .categories-desktop {
-  display: none; }
+  display: none !important; }
   @media (min-width: 800px) {
     .categories-desktop {
-      display: -ms-flexbox;
-      display: flex;
+      display: -ms-flexbox !important;
+      display: flex !important;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-      padding: 1rem;
+      padding: 0rem;
+      padding-top: 1rem;
       -ms-flex-pack: start;
           justify-content: flex-start;
       -ms-flex-align: start;
           align-items: start;
-      width: 25rem; }
+      min-width: 28%;
+      max-width: 28%; }
       .categories-desktop a {
         color: black;
         text-decoration: none; } }
@@ -3447,7 +3474,7 @@ ul.nyc-partners {
 
 @media (min-width: 800px) {
   .article-main-wrapper {
-    width: 70%;
+    width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row nowrap;
@@ -3461,8 +3488,15 @@ ul.nyc-partners {
   .news-accordion {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center; } }
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: start;
+        align-items: start;
+    padding: 0 9rem 0 17.428571429rem; } }
+
+@media (min-width: 800px) {
+  .news-accordion .accordion-label {
+    display: none; } }
 
 .categories-header {
   display: none; }
@@ -3490,7 +3524,8 @@ ul.nyc-partners {
 
 @media (min-width: 800px) {
   .desktop-news-header-wrapper {
-    width: 70%; } }
+    width: 100%;
+    padding: 0 9rem 0 17.428571429rem; } }
 
 .single-news-main {
   margin: 1rem 0rem;
@@ -3579,6 +3614,52 @@ ul.nyc-partners {
     .single-news-image-wrapper {
       width: 100%;
       height: 50rem; } }
+
+.single-news-excerpt {
+  font-size: 0.8rem; }
+
+.news-pre-wrapper {
+  height: auto !important; }
+  @media (min-width: 540px) {
+    .news-pre-wrapper {
+      height: 22rem !important;
+      padding: 3rem 65px 3rem 65px !important; } }
+  @media (min-width: 800px) {
+    .news-pre-wrapper {
+      padding: 3rem 9rem 3rem 17.428571429rem !important; } }
+
+@media (min-width: 540px) {
+  .contact-wrapper-desktop {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap; }
+    .contact-wrapper-desktop .contact-wrapper {
+      width: 50% !important; } }
+
+.news-prefooter-body {
+  padding-left: 0 !important;
+  font-size: 18px !important; }
+
+@media (min-width: 540px) {
+  .news-contact {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap; } }
+
+.news-contact p {
+  margin-top: 0.3rem !important;
+  margin-bottom: 0.3rem !important;
+  font-size: 16px !important; }
+
+@media (min-width: 540px) {
+  #prefooter-association {
+    margin-left: 0; } }
+
+@media (min-width: 800px) {
+  #tester {
+    width: 35% !important; } }
 
 /* Get Involved page */
 section.donation {
