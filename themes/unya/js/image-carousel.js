@@ -28,9 +28,9 @@ $(document).ready(function() {
   if ($(window).width() < 540) {
     $('.top-news-carousel-wrapper').slick({
       infinite: true,
-      arrows: false,
+      arrows: true,
       dots: true,
-      autoplay: true,
+      autoplay: false,
       speed: 300,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -44,10 +44,9 @@ $(window).resize(function() {
   if ($(window).width() < 540) {
     $('.top-news-carousel-wrapper').slick({
       infinite: true,
-      arrows: false,
+      arrows: true,
       dots: true,
-      autoplay: true,
-      speed: 300,
+      autoplay: false,
       slidesToShow: 1,
       slidesToScroll: 1,
     });

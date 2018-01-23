@@ -9,7 +9,7 @@ get_header();  ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main news-main" role="main">
       <div class="news-header news-title header-wrapper sidebar-start">
-		  	<h1>News</h1>
+		  	<h1 id="news">News</h1>
 			</div>
 			<div class="desktop-news-header-wrapper">
 				<h2 class="hidden-mobile news-extra-header">Latest News</h2>
@@ -34,7 +34,7 @@ get_header();  ?>
 						  <?php if ($internal) : ?>
 						  <a href="<?php the_permalink(); ?>">
 						  <?php else : ?>
-						  <a href="<?php echo CFS()->get( 'article_url' ); ?>">
+						  <a target="_blank" href="<?php echo CFS()->get( 'article_url' ); ?>">
               <?php endif; ?>
 							<?php the_title(); ?>
 							</a>
@@ -44,7 +44,7 @@ get_header();  ?>
 						  <?php if ($internal) : ?>
 						<a class="news-link" href="<?php the_permalink(); ?>">
 						<?php else : ?>
-						<a class="news-link" href="<?php echo CFS()->get( 'article_url' ); ?>">
+						<a target="_blank" class="news-link" href="<?php echo CFS()->get( 'article_url' ); ?>">
             <?php endif; ?>
 						Read More
 						  <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -56,40 +56,40 @@ get_header();  ?>
 
         </div><!-- top-news-carousel-wrapper -->
 				<div class="accordion news-accordion" id="accordion">
-			  <h2 class="accordion-label" id="vision">Other News</h2>
-			  <div class="article-main-wrapper">
-			  <?php /* Start the Loop */ ?>
-		      <ul class="news-articles">
-					  <div class="categories-header">
-              <h3>Other News</h3>
-						</div>
-						<?php
-              $newArgs = array(
-								'post_type'      => 'news',
-								'posts_per_page' => 9999,
-								'offset'         => '3',
-							);
-							$news_query = new WP_Query($newArgs);
-						?>
-			      <?php if ( $news_query->have_posts() ) : while ( $news_query->have_posts() ) : $news_query->the_post(); ?>
-			  	    <?php get_template_part( 'template-parts/content-news' );?>
-						<?php endwhile; ?>
-						<?php endif; ?>
-					</ul>
-					<div class="categories-desktop">
-						<div class="categories-header">
-              <h3>Categories</h3>
-						</div>
-					  <?php
-              $tags = get_tags();
-              if  ($tags) : foreach ($tags as $tag) :
+			    <h2 class="accordion-label" id="vision">More News</h2>
+			    <div class="article-main-wrapper">
+			    <?php /* Start the Loop */ ?>
+		        <ul class="news-articles">
+					    <div class="categories-header">
+              <h3>More News</h3>
+						  </div>
+						  <?php
+                $newArgs = array(
+							  	'post_type'      => 'news',
+							  	'posts_per_page' => 9999,
+							  	'offset'         => '3',
+							  );
+							  $news_query = new WP_Query($newArgs);
+						  ?>
+			        <?php if ( $news_query->have_posts() ) : while ( $news_query->have_posts() ) : $news_query->the_post(); ?>
+			  	      <?php get_template_part( 'template-parts/content-news' );?>
+						  <?php endwhile; ?>
+						  <?php endif; ?>
+					  </ul>
+					  <div class="categories-desktop">
+						  <div class="categories-header">
+                <h3>Categories</h3>
+						  </div>
+					    <?php
+                $tags = get_tags();
+                if  ($tags) : foreach ($tags as $tag) :
 									$new_str = str_replace(' ', '+', $tag->name);
 									$root = get_site_url(); ?>
                   <a href="<?php echo $root . '/?s=' . $new_str ?>"><div class="news-tax-term-box"><p><?php echo $tag->name ?></p></div></a>
 							<?php endforeach; ?>
 							<?php endif; ?>
-					</div>	
-				</div>
+						</div>
+				  </div><!--article-main-wrapper-->
 				
 				<h2 class="accordion-label" id="vision">Categories</h2>
 				<div>
@@ -103,19 +103,21 @@ get_header();  ?>
 			  </div>
 			</div><!-- accordion -->
 			
-			<section class="pre-footer-program media-pre-footer-container">
-			  <h4 class="prefooter-heading">Media Inquiries</h4>
-			  <p class="pre-footer-body"> News of upcoming press conferences or other timely events of interest to the media will be posted here.
-			  	   If you are interested in featuring UNYA in the news, please contact us at:</p>
-			  <div class="contact-wrapper">
-			  	<p><span class="fa fa-map-marker" aria-hidden="true"></span>Urban Native Youth</p>
-			  	<p class="city">Association</p>
-			  	<p class="city">1630 Hastings Street East</p>
-			  </div>
-			  <div class="contact-wrapper">
-			  	<p><span class="fa fa-phone" aria-hidden="true"></span>891-924-6416</p>
-			  	<p><span class="fa fa-envelope-o" aria-hidden="true"></span>unya@unya.bc.ca</p>
-			  </div>
+			<section id="media-inquiries" class="pre-footer-program media-pre-footer-container news-pre-wrapper">
+			  <h4 class="prefooter-heading news-prefooter-heading">Media Inquiries</h4>
+			  <p class="pre-footer-body news-prefooter-body"> News of upcoming press conferences or other timely events of interest to the media will be posted here.
+						 If you are interested in featuring UNYA in the news, please contact us at:</p>
+				<span class="contact-wrapper-desktop">		 
+			    <div class="contact-wrapper news-contact">
+			    	<p><span class="fa fa-map-marker" aria-hidden="true"></span>Urban Native Youth</p>
+			    	<p class="city" id="prefooter-association">Association</p>
+			    	<p class="city">1630 Hastings Street East</p>
+			    </div>
+			    <div class="contact-wrapper news-contact" id="tester">
+			    	<p><span class="fa fa-phone" aria-hidden="true"></span>891-924-6416</p>
+			    	<p><span class="fa fa-envelope-o" aria-hidden="true"></span>unya@unya.bc.ca</p>
+				  </div>
+				</span>
 			</section>
     </main><!-- #main -->
   </div><!-- #primary -->
