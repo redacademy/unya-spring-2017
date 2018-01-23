@@ -11,34 +11,42 @@ get_header(); ?>
 		  <div class="news-header news-title header-wrapper sidebar-start">
 	    	<h1>unya news</h1>
 			</div>
-			<a class="back-link" href='news'><p> Back to News</p> </a>
+			<a class="back-link news-back" href='news'><i class="fa fa-arrow-left" aria-hidden="true"></i>Back to News</a>
 			<h2 id="single-news-title"><?php the_title(); ?></h2>
+			<p class="single-news-datestamp"><?php echo get_the_date(); ?></p>
+			<div class="single-news-tag-wrapper">
+			  <?php
+          $tags = get_tags();
+          if($tags) : foreach ($tags as $tag) :
+						$new_str = str_replace(' ', '+', $tag->name);
+						$root = get_site_url(); ?>
+            <a href="<?php echo $root . '/?s=' . $new_str ?>"><div class="news-tax-term-box single-news-tax"><p class="single-news-tag-title"><?php echo $tag->name ?></p></div></a>
+				<?php endforeach; ?>
+				<?php endif; ?>
+			</div>
 			<div class="single-news-main">
 			  <div class="single-news-wrapper">
-					<p><?php echo CFS()->get('article_text') ?></p>
-					<div class="single-news-image-wrapper">
-			    	<?php the_post_thumbnail('large'); ?>
-          </div>
-					<div class="single-news-cat-wrapper">
-						<h2>Categories</h2>
-						<div class="single-news-cat-sub-wrapper">
-							<?php
-							  global $post;
-                $tags = wp_get_post_tags($post->ID);
-                if  ($tags) : foreach ($tags as $tag) :
-						  			$new_str = str_replace(' ', '+', $tag->name);
-						  			$root = get_site_url(); ?>
-                    <a href="<?php echo $root . '/?s=' . $new_str ?>"><div class="news-tax-term-box single-news-tax"><p><?php echo $tag->name ?></p></div></a>
-						  <?php endforeach; ?>
-							<?php endif; ?>
-						</div>	
-				  </div>
+					<p><?php echo CFS()->get('first_half_of_news_story') ?></p>
+					<span class="single-news-desktop-controller">
+					  <div class="single-news-image-wrapper">
+					  	<div class="news-gradient hidden-desktop"></div>
+					  	<?php 
+					  		$quote = CFS()->get('news_story_quote');
+					  		if($quote) :
+					  	?>
+					  		<h2 class="news-story-quote hidden-desktop"><?php echo '"' . $quote . '"' ?></h2>
+					  	<?php else : null ?>	
+					  		<?php endif; ?>
+			      	<?php the_post_thumbnail('large'); ?>
+					  </div>
+					  <div class="news-quote-desktop-wrapper">
+					  	<h2><?php echo '"' . $quote . '"' ?></h2>
+					  </div>	
+					</span>
+					<p><?php echo CFS()->get('second_half_of_news_story') ?></p>				
 				</div>
-
-
-		
       </div><!--single-news-main-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
