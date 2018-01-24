@@ -30,14 +30,13 @@
 					</h3>						
 			 		<div class="single-news-excerpt hidden-mobile"><?php echo $trimmed_excerpt; ?></div>
 			  	<div class="news-url">
-					<?php $internal = CFS()->get( 'internal_news_post' );
-						  ?>
-						  <?php if ($internal) : ?>
-						<a class="news-link" href="<?php the_permalink(); ?>">
+					  <?php $internal = CFS()->get( 'internal_news_post' );?>
+						<?php if ($internal) : ?>
+						  <a class="news-link" href="<?php the_permalink(); ?>">
 						<?php else : ?>
-						<a target="_blank" class="news-link" href="<?php echo CFS()->get( 'article_url' ); ?>">
+						  <a target="_blank" class="news-link" href="<?php echo CFS()->get( 'article_url' ); ?>">
             <?php endif; ?>
-						Read More
+						  Read More
 						  <i class="fa fa-arrow-right" aria-hidden="true"></i>
 					  </a>
 					  </a>

@@ -15,8 +15,9 @@ get_header(); ?>
 			<h2 id="single-news-title"><?php the_title(); ?></h2>
 			<p class="single-news-datestamp"><?php echo get_the_date(); ?></p>
 			<div class="single-news-tag-wrapper">
-			  <?php
-          $tags = get_tags();
+				<?php
+				  $id = get_the_ID();
+          $tags = wp_get_post_tags($id);
           if($tags) : foreach ($tags as $tag) :
 						$new_str = str_replace(' ', '+', $tag->name);
 						$root = get_site_url(); ?>
