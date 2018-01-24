@@ -105,8 +105,6 @@ get_header();  ?>
 			
 			<section id="media-inquiries" class="pre-footer-program media-pre-footer-container news-pre-wrapper">
 			  <h4 class="prefooter-heading news-prefooter-heading">Media Inquiries</h4>
-			  <p class="pre-footer-body news-prefooter-body"> News of upcoming press conferences or other timely events of interest to the media will be posted here.
-						 If you are interested in featuring UNYA in the news, please contact us at:</p>
 				<span class="contact-wrapper-desktop">		 
 			    <div class="contact-wrapper news-contact">
 			    	<p><span class="fa fa-map-marker" aria-hidden="true"></span>Urban Native Youth</p>

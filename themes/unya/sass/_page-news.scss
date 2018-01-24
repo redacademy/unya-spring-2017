@@ -403,6 +403,9 @@ display:none;
   flex-flow: column nowrap;
   height: auto;
   justify-content: space-between;
+  @include desktop {
+    margin-bottom: 3rem;
+  }
 }
 
 .single-news-wrapper {
@@ -419,18 +422,20 @@ display:none;
   @include desktop {
     width: 100%;
     p {
-      margin: 3rem 9rem;
+      margin: 0 9rem 0 17.428571429rem;
     }
   }
 }
 
 #single-news-title {
-  margin-left: 2rem;
+  margin: 1rem 2rem 0 2rem;
+  font-family: $font__heading;
   @include tablet {
     margin-left: 5rem;
   }
   @include desktop {
-    margin-left: 9rem;
+    margin-left: 17.428571429rem;
+    margin-top: 3rem;
   }
 }
 
@@ -472,7 +477,8 @@ display:none;
   overflow: hidden;
   position: relative;
   @include tablet {
-    height: 30rem;
+    height: 20rem;
+    margin: 2rem 0 2rem 0;
     img {
       min-width: 100%;
       position: absolute;
@@ -483,8 +489,13 @@ display:none;
     }
   }
   @include desktop {
-    width: 100%;
-    height: 50rem;
+    width: 30rem;
+    min-height: 100%;
+    border-radius: 0 0 0 40px;
+    margin-left: 0;
+    img {
+      min-height: 100%;
+    }
   }
 }
 
@@ -494,8 +505,8 @@ display:none;
 
 .news-pre-wrapper {
   height: auto !important;
+  width: 100%;
   @include tablet {
-    height: 22rem !important;
     padding: 3rem 65px 3rem 65px !important;
   }
   @include desktop {
@@ -536,9 +547,134 @@ display:none;
   }
 }
 
+.news-prefooter-heading {
+  @include desktop {
+    margin-bottom: 2rem !important;
+  }
+}
+
 #tester {
+  @include tablet {
+    flex-flow: column;
+  }
   @include desktop {
     width: 35% !important;
   }
 }
 
+.news-back {
+  display: block;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  font-family: $font__main;
+  text-decoration: none;
+  @include tablet {
+    margin-left: 5rem;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.news-story-quote {
+  position: absolute;
+  color: white;
+  z-index: 4;
+  font-family: $font__main;
+  font-weight: 100;
+  padding: 2rem;
+  font-size: 1.25rem;
+  @include tablet {
+    padding: 4rem;
+    line-height: 3;
+    font-size: 1.5rem;
+  }
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.news-gradient {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background-image: linear-gradient(to bottom,rgba(74,74,74,0.6) 0%, rgba(74,74,74,0.6) 100%);
+  z-index: 4;
+  height:350px;
+    @include tablet{
+      height:500px;
+  }
+    @include desktop {
+      height:700px;
+  }
+}
+
+.news-quote-desktop-wrapper {
+  display: none;
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 1rem;
+    h2 {
+      color: $color__heading-blue;
+      font-size: 1.75rem;
+      font-weight: 300;
+    }
+  }
+}
+
+.single-news-desktop-controller {
+  @include desktop {
+    display: flex;
+    padding: 0 9rem 0 17.428571429rem;
+    justify-content: space-between;
+  }
+}
+
+.single-news-tag-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+  @include tablet {
+    padding: 1rem 5rem;
+  }
+  @include desktop {
+    padding: 0 9rem 0 17.428571429rem;  
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.single-news-tag-title {
+  font-size: 0.8rem;
+  @include tablet {
+    font-size: 1rem;
+  }
+}
+
+.single-news-datestamp {
+  text-align: left;
+  padding: 1rem 2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  @include tablet {
+    padding: 1rem 5rem;
+  }
+  @include desktop {
+    padding: 0 9rem 0 17.428571429rem;   
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.single-news-tax {
+  margin-left: 0;
+}
