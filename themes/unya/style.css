@@ -3647,17 +3647,16 @@ ul.nyc-partners {
   height: 12rem;
   overflow: hidden;
   position: relative; }
+  .single-news-image-wrapper img {
+    position: absolute;
+    top: -30%; }
   @media (min-width: 540px) {
     .single-news-image-wrapper {
       height: 20rem;
       margin: 2rem 0 2rem 0; }
       .single-news-image-wrapper img {
         min-width: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0; } }
+        top: -50%; } }
   @media (min-width: 800px) {
     .single-news-image-wrapper {
       width: 30rem;
@@ -3665,7 +3664,9 @@ ul.nyc-partners {
       border-radius: 0 0 0 40px;
       margin-left: 0; }
       .single-news-image-wrapper img {
-        min-height: 100%; } }
+        height: auto;
+        position: relative;
+        top: 0; } }
 
 .single-news-excerpt {
   font-size: 0.8rem; }
