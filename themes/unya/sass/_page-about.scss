@@ -13,8 +13,9 @@
   }
   
   .vision {
-    h3{
+    h2{
       color: $color__grey-dark;
+      font-family: $font__heading;
     }
   }
 
@@ -57,7 +58,8 @@
         margin-left: 2rem;
         margin-top: 0;
         @include desktop {
-          margin-left: 17.4rem;          
+          margin-left: 17.4rem;   
+          font-weight: 300;       
         }
       }
     }
@@ -106,6 +108,8 @@
       width: 5.7rem;
       overflow: hidden;
       border-radius: 50%;
+      align-self: start;
+      margin-top: 1rem;
       @include desktop {
         height: 10rem;
         width: 10rem;
@@ -118,14 +122,36 @@
     .text-wrapper{
       flex-basis: 60%;
       font-size: 0.8571428571rem;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      @include tablet {
+        justify-content: flex-start;
+      }
       p{
         margin: 0.5rem 0;
       }
     }
     .leader-name{
       color: $color__grey-dark;
-      font-size: 1.1428571429rem;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin: 0 !important;
+      @include tablet {
+        font-weight: 500;
+        font-size: 1.75rem;
+        font-family: $font__heading;
+      }   
+    }
+    .leader-title {
+      color: $color__grey-dark;
+      margin: 0 !important;
+      font-weight: 500;  
+      @include tablet {
+        font-size: 1.25rem;
+        font-family: $font__heading;
+      }    
     }
   }
 
@@ -170,6 +196,7 @@
 		.text-wrapper {
       width: 100%;
       padding: 0.5rem;
+      align-self: flex-start;
 
       @include desktop {
         padding: 1rem;
@@ -234,6 +261,7 @@
       display: initial;
       h2 {
         color: #fff;
+        font-family: $font__heading;
       }
     }
   }
@@ -263,6 +291,11 @@
 
 #about-history-wrapper {
   padding-top: 1rem;
+  h2 {
+    font-family: $font__heading;
+    font-weight: 600;
+  }
+
   @include desktop {
     padding-top: none;
   }
@@ -272,6 +305,8 @@
   display: none;
   @include desktop {
     display: initial;
+    font-family: $font__heading;
+    font-weight: 500;
   }
 }
 
@@ -283,6 +318,8 @@
 
 .about-leadership-heading {
   padding-left: 2rem;
+  font-family: $font__heading;
+  font-weight: 500;
   @include desktop {
     padding-left: initial;
   }
