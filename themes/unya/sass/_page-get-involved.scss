@@ -50,9 +50,11 @@ section.donation{
     margin: 1rem 0;
     font-weight: 400;
     color: #FFF;
-
+    @include tablet {
+      font-size: 20px;
+    }
     @include desktop {
-      font-size: 2.1428571429rem;
+      font-size: 32px;
       font-weight: 600;
     }
   }
@@ -65,7 +67,7 @@ section.donation{
     height: 3.5714285714rem;
     margin: 1rem 0;
     padding: 1rem 3rem;
-
+    font-size: 16px;
     background-color: $color__red-medium;
     border-radius: 10px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
@@ -77,7 +79,8 @@ section.donation{
 
     @include desktop {
       padding: 1rem 1.5rem 3.1rem 1.5rem;
-      font-size: 1.5714285714rem;
+      font-size: 24px;
+      width: 18rem;
     }
   }
 
