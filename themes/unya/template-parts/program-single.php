@@ -4,7 +4,6 @@
  *
  * @package UNYA_Theme
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -59,10 +58,24 @@
 						<img src="<?php echo (the_post_thumbnail('large')); ?>"/>
 					</div>
 					<div class="prog-resource-info">
-						<h3 class="prog-headline"><a href="<?php echo CFS()->get( 'article_url' ); ?>"><?php the_title();?></a></h3>			
+						<h3 class="prog-headline">
+							<a href="<?php 
+							  $internal = CFS()->get('internal_news_post');
+								if ($internal) :
+									echo the_permalink();
+								else :
+									echo CFS()->get( 'article_url' ); 								
+								endif;	
+							?>"><?php the_title();?></a></h3>			
 						<p><?php echo $trimmed_excerpt; ?></p>
 						<div class="news-url" id="prog-url">
-					  	<a class="news-link" href="<?php echo CFS()->get( 'article_url' ); ?>">Read More
+							<a class="news-link" href="<?php 
+								if ($internal) :
+									echo the_permalink();
+								else :
+									echo CFS()->get( 'article_url' ); 								
+								endif;	
+							?>">Read More
 					  	  <i class="fa fa-arrow-right" aria-hidden="true"></i>
 					    </a>
             </div>		
