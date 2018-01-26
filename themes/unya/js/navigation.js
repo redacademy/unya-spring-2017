@@ -62,8 +62,7 @@
       });
     }
   
-    $('.current-menu-item .sub-menu .menu-item a').click(function(event) {
-      event.preventDefault();
+    $('.current-menu-item .sub-menu .menu-item a').click(function() {
       $('.site-header').removeClass('expanded');
       $('.site-footer').removeClass('expanded');
       $('.site-content').removeClass('collapsed');
@@ -119,8 +118,7 @@
     });
 
     // Smooth scrolling to anchors on the page
-    menuItem.on('click', function(event) {
-    event.preventDefault();
+    menuItem.on('click', function() {
 
       var $menuLink = $(this.hash);
       menuItem = $menuLink.length ? $menuLink : $('[name=' + this.hash.slice(1) +']');
