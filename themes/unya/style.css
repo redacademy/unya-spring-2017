@@ -3885,9 +3885,12 @@ section.donation {
     margin: 1rem 0;
     font-weight: 400;
     color: #FFF; }
+    @media (min-width: 540px) {
+      .donation-call h3 {
+        font-size: 20px; } }
     @media (min-width: 800px) {
       .donation-call h3 {
-        font-size: 2.1428571429rem;
+        font-size: 32px;
         font-weight: 600; } }
   .donation-call a {
     text-decoration: none; }
@@ -3895,6 +3898,7 @@ section.donation {
     height: 3.5714285714rem;
     margin: 1rem 0;
     padding: 1rem 3rem;
+    font-size: 16px;
     background-color: #D13434;
     border-radius: 10px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
@@ -3904,7 +3908,8 @@ section.donation {
     @media (min-width: 800px) {
       .donation-call .donate-button {
         padding: 1rem 1.5rem 3.1rem 1.5rem;
-        font-size: 1.5714285714rem; } }
+        font-size: 24px;
+        width: 18rem; } }
 
 @media (min-width: 800px) {
   .opportunities {

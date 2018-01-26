@@ -22,7 +22,7 @@ get_header(); ?>
 			</div>
      <section class="donation-button">
 	
-		<h2><a href="https://www.canadahelps.org/en/charities/urban-native-youth-association/">Donate <span class="hidden-mobile">Today</span></a></h2>
+		<h2><a target="_blank" href="https://www.canadahelps.org/en/charities/urban-native-youth-association/">Donate <span class="hidden-mobile">Today</span></a></h2>
 	</section>
 				<div class="donate-footer-sub-wrapper content-wrapper">
 			    <p class="donate-footer-sub">UNYA is a not-for-profit society registered with the Province of BC
