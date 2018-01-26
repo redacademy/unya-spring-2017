@@ -2001,8 +2001,9 @@ section.opportunities-pre-footer p {
       margin-top: 0;
       padding-top: 50px; } }
 
-.about-content .vision h3 {
-  color: #2C2C2C; }
+.about-content .vision h2 {
+  color: #2C2C2C;
+  font-family: "poppins", sans-serif; }
 
 .about-content .philosophy {
   width: 100%;
@@ -2036,7 +2037,8 @@ section.opportunities-pre-footer p {
     margin-top: 0; }
     @media (min-width: 800px) {
       .about-content .leadership .section-heading h4 {
-        margin-left: 17.4rem; } }
+        margin-left: 17.4rem;
+        font-weight: 300; } }
 
 .about-content .leadership ul {
   display: -ms-flexbox;
@@ -2080,7 +2082,11 @@ section.opportunities-pre-footer p {
     height: 5.7rem;
     width: 5.7rem;
     overflow: hidden;
-    border-radius: 50%; }
+    border-radius: 50%;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    margin-top: 1rem; }
     @media (min-width: 800px) {
       .about-content .leader .image-wrapper {
         height: 10rem;
@@ -2091,13 +2097,38 @@ section.opportunities-pre-footer p {
   .about-content .leader .text-wrapper {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
-    font-size: 0.8571428571rem; }
+    font-size: 0.8571428571rem;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+        flex-flow: column;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    @media (min-width: 540px) {
+      .about-content .leader .text-wrapper {
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
     .about-content .leader .text-wrapper p {
       margin: 0.5rem 0; }
   .about-content .leader .leader-name {
     color: #2C2C2C;
-    font-size: 1.1428571429rem;
-    font-weight: bold; }
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0 !important; }
+    @media (min-width: 540px) {
+      .about-content .leader .leader-name {
+        font-weight: 500;
+        font-size: 1.75rem;
+        font-family: "poppins", sans-serif; } }
+  .about-content .leader .leader-title {
+    color: #2C2C2C;
+    margin: 0 !important;
+    font-weight: 500; }
+    @media (min-width: 540px) {
+      .about-content .leader .leader-title {
+        font-size: 1.25rem;
+        font-family: "poppins", sans-serif; } }
 
 .about-content ul {
   margin: 0;
@@ -2136,7 +2167,9 @@ section.opportunities-pre-footer p {
         font-size: 6rem; } }
   .about-content ul .text-wrapper {
     width: 100%;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
     @media (min-width: 800px) {
       .about-content ul .text-wrapper {
         padding: 1rem; }
@@ -2184,7 +2217,8 @@ section.opportunities-pre-footer p {
     .reports .section-heading, .find-us .section-heading {
       display: initial; }
       .reports .section-heading h2, .find-us .section-heading h2 {
-        color: #fff; } }
+        color: #fff;
+        font-family: "poppins", sans-serif; } }
 
 .find-us .section-heading {
   background: #D13434; }
@@ -2205,6 +2239,9 @@ section.opportunities-pre-footer p {
 
 #about-history-wrapper {
   padding-top: 1rem; }
+  #about-history-wrapper h2 {
+    font-family: "poppins", sans-serif;
+    font-weight: 600; }
   @media (min-width: 800px) {
     #about-history-wrapper {
       padding-top: none; } }
@@ -2213,14 +2250,18 @@ section.opportunities-pre-footer p {
   display: none; }
   @media (min-width: 800px) {
     .philosophy-header-desktop {
-      display: initial; } }
+      display: initial;
+      font-family: "poppins", sans-serif;
+      font-weight: 500; } }
 
 @media (min-width: 800px) {
   .philosophy-content-wrapper {
     margin-top: 4rem; } }
 
 .about-leadership-heading {
-  padding-left: 2rem; }
+  padding-left: 2rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 500; }
   @media (min-width: 800px) {
     .about-leadership-heading {
       padding-left: initial; } }

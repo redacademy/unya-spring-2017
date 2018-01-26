@@ -18,14 +18,14 @@ get_header(); ?>
 		<div class="header-wrapper about-title sidebar-start">
 			<h1>About UNYA</h1>
 		</div>
-		<section class="vision">
+		<section class="vision" id="vision">
 					<div class="content-wrapper">
 						<h2>Vision &amp; Mission</h2>
 						<p><?php echo wp_kses( CFS()->get( 'vision' ),array('br') ); ?></p>
 					</div>
 				</section>
 		<div class="accordion" id="accordion">
-			<h2 class="accordion-label" id="vision">Philosophy of Care</h2>
+			<h2 class="accordion-label">Philosophy of Care</h2>
 			<div>
 
 				<section class="philosophy" id="philosophy">
@@ -38,7 +38,7 @@ get_header(); ?>
 			<h2 class="accordion-label" id="brief-history">History</h2>
 			<section class="brief-history">
 				<div class="content-wrapper" id="about-history-wrapper">
-					<h2 class="hidden-mobile">Brief History</h2>
+					<h2 class="hidden-mobile">History</h2>
 					<p><?php echo wp_kses( CFS()->get( 'brief_history' ),array('br') ); ?></p>
 				</div>
 			</section>
@@ -46,7 +46,7 @@ get_header(); ?>
 			<section class="leadership">
 				<header class="section-heading hidden-mobile">
 					<h2 class="hidden-mobile about-leadership-heading">Leadership</h2>
-					<h4 class="hidden-mobile">The UNYA Board exmplifies the leadership of our youth.</h4>
+					<h4 class="hidden-mobile">The UNYA Board exemplifies the leadership of our youth.</h4>
 				</header>
 				<div class="content-wrapper">
 					<ul>
@@ -59,7 +59,7 @@ get_header(); ?>
 								</div>
 								<div class="text-wrapper">
 									<p class="leader-name"><?php echo esc_html( CFS()->get( 'name' ) ); ?></p>
-									<p><?php echo esc_html( CFS()->get( 'title' ) ); ?></p>
+									<p class="leader-title"><?php echo esc_html( CFS()->get( 'title' ) ); ?></p>
 									<p class="display-tablet-desktop hidden-mobile"><?php echo wp_kses( CFS()->get( 'bio' ),array('br') ); ?></p>
 								</div>
 							</li>
@@ -82,7 +82,7 @@ get_header(); ?>
 								<div class="text-wrapper">
 									<p class="report-title"><?php echo esc_html( $report['report_title'] ); ?></p>
 									<p class="report-description"><?php echo esc_html( $report['report_description'] ); ?></p>
-									<a class="report-link" href="<?php echo esc_html( $report['report_file_link'] ); ?>">Download report (PDF) &rarr;</a>
+									<a target="_blank" class="report-link" href="<?php echo esc_html( $report['report_file_link'] ); ?>">Download report (PDF) &rarr;</a>
 								</div>
 							</li>
 						<?php endforeach; ?>
