@@ -85,7 +85,10 @@
   width: 70%;
   padding: 3px;
   @include tablet {
-    with: 75%;
+    width: 75%;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 1rem;
   }
 }
 
@@ -124,4 +127,12 @@
     margin-left: 7.5%;
     margin-bottom: 4rem;
   }
+}
+
+.search-result-text {
+  margin: 0;
+}
+
+.search-details {
+  width: 70% !important;
 }

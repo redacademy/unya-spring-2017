@@ -18,7 +18,7 @@ get_header(); ?>
 
 			<div class="search-results-wrapper">
 			  <div class="search-header">
-          <h3>Results</h3>
+          <h3>Results for: <?php echo get_search_query(); ?></h3>
 			  </div>
 		    	<?php /* Start the Loop */ ?>
 		    	<?php while ( have_posts() ) : the_post(); ?>

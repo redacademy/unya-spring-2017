@@ -4269,7 +4269,12 @@ section.donation {
   padding: 3px; }
   @media (min-width: 540px) {
     .search-result-header-wrapper {
-      with: 75%; } }
+      width: 75%;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      padding: 1rem; } }
 
 @media (min-width: 540px) {
   .search-result-categories-wrapper {
@@ -4304,6 +4309,12 @@ section.donation {
       width: 85%;
       margin-left: 7.5%;
       margin-bottom: 4rem; } }
+
+.search-result-text {
+  margin: 0; }
+
+.search-details {
+  width: 70% !important; }
 
 .resource-archive-main {
   height: auto;
@@ -4451,3 +4462,72 @@ section.donation {
   right: 0;
   margin-right: 4px;
   text-decoration: none; }
+
+.categories-archive-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 1rem 0rem; }
+  .categories-archive-main a {
+    text-decoration: none;
+    width: 80%;
+    color: black; }
+  @media (min-width: 540px) {
+    .categories-archive-main {
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+      padding: 1rem 4rem; }
+      .categories-archive-main a {
+        min-width: 29%;
+        max-width: 29%;
+        margin: 0 1rem; } }
+  @media (min-width: 800px) {
+    .categories-archive-main {
+      padding: 3rem 9rem 3rem 17.428571429rem; } }
+
+.news-cat-box {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.3);
+  height: 2rem;
+  text-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%; }
+
+@media (min-width: 540px) {
+  .cat-archive-header {
+    min-width: 100%;
+    margin: 1rem 0.5rem;
+    padding: 0 1rem; }
+    .cat-archive-header h3 {
+      position: relative;
+      top: 0;
+      left: 0;
+      text-align: center; } }
+
+@media (min-width: 800px) {
+  .cat-archive-header {
+    height: 8rem; } }
+
+.cat-back-link {
+  background-color: white !important;
+  border-top: none !important; }
+  .cat-back-link p {
+    color: #4263ab !important; }
+
+.cat-back-link:hover {
+  background-color: #4263ab !important; }
+  .cat-back-link:hover p {
+    color: white !important; }
