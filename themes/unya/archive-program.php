@@ -33,7 +33,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/program', 'content' ); ?>
 
 		<?php endif; ?>
-
+		<?php get_template_part( 'template-parts/prefooter', 'fit' ); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
