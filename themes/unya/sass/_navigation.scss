@@ -325,6 +325,7 @@ a {
 #accordion {
 	width: 100%;
 	.accordion-label {
+		position: relative;
 		background: $color__blue-medium !important;
 		color: #fff !important;
 		margin: 0 !important;

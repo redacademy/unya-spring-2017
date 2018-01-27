@@ -15,6 +15,7 @@ get_header(); ?>
 
 		<section class="donation">
 			<header class="section-heading">
+			  <span class="anchor" id="donate"></span>
 				<h2 class="donate-header">Donate</h2>
 			</header>
 			<div class="content-wrapper">
@@ -34,7 +35,7 @@ get_header(); ?>
 		</section>
 
 		<div class="accordion" id="accordion">
-			<h2 class="accordion-label" id="employment">Employment</h2>
+			<h2 class="accordion-label"><span class="anchor" id="employment"></span>Employment</h2>
 			<section class="opportunities">
 				<div class="content-wrapper">
 					<h2 class="desktop-only">Employment Opportunities</h2>
