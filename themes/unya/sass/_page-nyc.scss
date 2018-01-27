@@ -18,21 +18,32 @@
 }
 
 .donation-banner {
+  height: 16rem;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  color: white;
+  h2 {
+    width: 18rem;
+  }
+  p {
+    width: 70%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  p, h2 {
+    margin: 0;
+    font-family: $font__heading;
+  }
   @include tablet {
     height: 12.4285714286rem;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     flex-direction: row;
-    color: white;
+    padding: 1rem;
     p {
       width: 50%;
-      font-size: 1.5rem;
-    }
-    p, h2 {
-      margin: 0;
-      font-family: $font__heading;
     }
   }
   @include desktop {
@@ -103,10 +114,10 @@
   .timeline-item {
     padding: 1rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     @include desktop {
-      padding: 0 0 2.5rem 6rem;
+      padding: 0 0 2.5rem 0;
     }
   }
   .timeline-year {
@@ -115,6 +126,7 @@
     font-family: $font__heading;
     font-size: 2rem;
     line-height: 2rem;
+    text-align: right;
     
     @include desktop {
       flex-basis: 15%;
@@ -142,7 +154,7 @@
       display: flex;
       flex-flow: column nowrap;
       @include tablet {
-        padding-left: 1rem;
+        padding-left: 5rem;
       }
   
       @include desktop {
@@ -234,17 +246,24 @@ ul.nyc-partners {
   flex-direction: column;
   flex-wrap: wrap;
   list-style: none;
-
+  @include tablet {
+    flex-flow: row wrap;
+  }
   @include desktop {
-    flex-direction: row;
     justify-content: space-between;
   }
 
   .partner {
     flex-basis: 90%;
-
+    margin: 2rem 0;
+    @include tablet {
+      margin: 2rem;
+      max-width: 40%;
+    }
     @include desktop {
       flex-basis: 48%;
+      max-width: 40%;
+      margin: 2rem;
     }
   }
 }
@@ -258,4 +277,8 @@ ul.nyc-partners {
     align-self: center;
     padding: 1rem 3rem 1rem 3rem;
   }
+}
+
+.video-wrapper {
+  margin: 3rem 0;
 }

@@ -60,7 +60,7 @@ get_header(); ?>
         
 			</div>
 
-			<div class="hidden-mobile donation-banner donation-button sidebar-start">
+			<div class="donation-banner donation-button sidebar-start">
 				<p><?php echo esc_html( CFS()->get( 'banner_text' ) ); ?></p>
 				<h2><a href="<?php echo esc_url( CFS()->get( 'banner_button_link' ) ); ?>"><?php echo esc_html( CFS()->get( 'banner_button' ) ); ?></a></h2>
 			</div>
@@ -81,7 +81,7 @@ get_header(); ?>
 				<h2 class="accordion-label" id="planning">Planning</h2>
 				<section class="planning">
 					<header class="section-heading">
-						<h2 class="content-wrapper hidden-mobile">Planning and Development</h2>
+						<h2 class="content-wrapper desktop-only">Planning and Development</h2>
 						<h4 class="planning-timeline hidden-mobile">Timeline of the development of the Native Youth Center.</h4>
 					</header>
 					<div class="content-wrapper">
@@ -95,7 +95,7 @@ get_header(); ?>
 							<?php endforeach; ?>
 						</ul>
 					</div>
-					<div><?php echo $GLOBALS['wp_embed']->autoembed(esc_html(CFS()->get('featured_video'))) ?></div>
+					<div class="video-wrapper"><?php echo $GLOBALS['wp_embed']->autoembed(esc_html(CFS()->get('featured_video'))) ?></div>
 				</section>
 				<h2 class="accordion-label" id="ways-to-help">How to Help</h2>
 				<section class="ways-to-help">
