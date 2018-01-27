@@ -1568,7 +1568,7 @@ object {
         font-size: 18px; } }
 
 section.pre-footer {
-  height: 175px;
+  height: auto;
   width: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -1596,8 +1596,8 @@ section.pre-footer {
     line-height: 24px; }
     @media (min-width: 800px) {
       section.pre-footer p {
-        font-size: 2.57142857142rem;
-        font-weight: bold;
+        font-size: 2.25rem;
+        font-weight: 500;
         text-transform: uppercase;
         font-family: "poppins", sans-serif;
         text-align: left;
@@ -1929,6 +1929,12 @@ section.opportunities-pre-footer p {
       @media (min-width: 800px) and (min-width: 800px) {
         .site-footer .contact-us .contact-details a, .site-footer .contact-us .contact-details p {
           color: black !important; } }
+
+.prefooter-donation-button {
+  min-width: auto; }
+  @media (min-width: 540px) {
+    .prefooter-donation-button {
+      min-width: 18rem; } }
 
 .mobile-calendar .simcal-calendar-head {
   padding: 0.7142857143rem .5em .5em .7em;
@@ -2959,41 +2965,51 @@ section.opportunities-pre-footer p {
   .header-wrapper-nyc p {
     font-size: 2.1428571429rem; } }
 
-@media (min-width: 540px) {
-  .donation-banner {
-    height: 12.4285714286rem;
-    width: auto;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    color: white; }
-    .donation-banner p {
-      width: 50%;
-      font-size: 1.5rem; }
-    .donation-banner p, .donation-banner h2 {
-      margin: 0;
-      font-family: "poppins", sans-serif; } }
-
-@media (min-width: 800px) {
-  .donation-banner {
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    width: 100%; }
-    .donation-banner p, .donation-banner h2 {
-      font-size: 1.5rem; }
-    .donation-banner p {
-      width: 50%;
-      padding-left: 8.7142857143rem;
-      font-size: 2.28571rem;
-      line-height: 3.28571rem; }
-    .donation-banner h2 {
-      padding-right: 2rem;
-      text-align: right; } }
+.donation-banner {
+  height: 16rem;
+  width: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  color: white; }
+  .donation-banner h2 {
+    width: 18rem; }
+  .donation-banner p {
+    width: 70%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5; }
+  .donation-banner p, .donation-banner h2 {
+    margin: 0;
+    font-family: "poppins", sans-serif; }
+  @media (min-width: 540px) {
+    .donation-banner {
+      height: 12.4285714286rem;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      padding: 1rem; }
+      .donation-banner p {
+        width: 50%; } }
+  @media (min-width: 800px) {
+    .donation-banner {
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      width: 100%; }
+      .donation-banner p, .donation-banner h2 {
+        font-size: 1.5rem; }
+      .donation-banner p {
+        width: 50%;
+        padding-left: 8.7142857143rem;
+        font-size: 2.28571rem;
+        line-height: 3.28571rem; }
+      .donation-banner h2 {
+        padding-right: 2rem;
+        text-align: right; } }
 
 .vision .content-wrapper a.nyc-download {
   margin-bottom: 1.5rem;
@@ -3035,11 +3051,11 @@ section.opportunities-pre-footer p {
   padding: 1rem 0;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
   @media (min-width: 800px) {
     .nyc-content .timeline-item {
-      padding: 0 0 2.5rem 6rem; } }
+      padding: 0 0 2.5rem 0; } }
 
 .nyc-content .timeline-year {
   margin: 0;
@@ -3047,7 +3063,8 @@ section.opportunities-pre-footer p {
       flex-basis: 20%;
   font-family: "poppins", sans-serif;
   font-size: 2rem;
-  line-height: 2rem; }
+  line-height: 2rem;
+  text-align: right; }
   @media (min-width: 800px) {
     .nyc-content .timeline-year {
       -ms-flex-preferred-size: 15%;
@@ -3076,7 +3093,7 @@ section.opportunities-pre-footer p {
       flex-flow: column nowrap; }
   @media (min-width: 540px) {
     .planning .section-heading {
-      padding-left: 1rem; } }
+      padding-left: 5rem; } }
   @media (min-width: 800px) {
     .planning .section-heading {
       -ms-flex-direction: column;
@@ -3154,19 +3171,28 @@ ul.nyc-partners {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none; }
+  @media (min-width: 540px) {
+    ul.nyc-partners {
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; } }
   @media (min-width: 800px) {
     ul.nyc-partners {
-      -ms-flex-direction: row;
-          flex-direction: row;
       -ms-flex-pack: justify;
           justify-content: space-between; } }
   ul.nyc-partners .partner {
     -ms-flex-preferred-size: 90%;
-        flex-basis: 90%; }
+        flex-basis: 90%;
+    margin: 2rem 0; }
+    @media (min-width: 540px) {
+      ul.nyc-partners .partner {
+        margin: 2rem;
+        max-width: 40%; } }
     @media (min-width: 800px) {
       ul.nyc-partners .partner {
         -ms-flex-preferred-size: 48%;
-            flex-basis: 48%; } }
+            flex-basis: 48%;
+        max-width: 40%;
+        margin: 2rem; } }
 
 #nyc-resource-carousel-wrapper {
   width: 100%;
@@ -3180,6 +3206,9 @@ ul.nyc-partners {
           -ms-grid-row-align: center;
           align-self: center;
       padding: 1rem 3rem 1rem 3rem; } }
+
+.video-wrapper {
+  margin: 3rem 0; }
 
 /* News archive */
 .news-main {
@@ -4098,6 +4127,9 @@ section.donation {
     -ms-flex-direction: row;
         flex-direction: row;
     border-bottom: 2px solid #00277E; } }
+
+.planning {
+  margin-top: 2rem !important; }
 
 .site-main .error-404 {
   background: linear-gradient(to bottom, rgba(66, 99, 171, 0.7) 0%, rgba(66, 99, 171, 0.7) 100%), url("../../assets/images/404_page_background.jpg") center center/100% 100% no-repeat;
