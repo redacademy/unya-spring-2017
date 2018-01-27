@@ -3,6 +3,10 @@
 // style for main text
 section.donation{
   background-color:white;
+  .section-heading {
+    position: relative;
+  }
+
 }
 .donation p {
   @include desktop {

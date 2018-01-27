@@ -23,7 +23,7 @@ get_header(); ?>
 
 		<div class="accordion" id="accordion">
 		<?php /* Start the Loop */ ?>
-		<h2 class="accordion-label" id="success-stories">Success Stories</h2>
+		<h2 class="accordion-label"><span class="anchor" id="success-stories"></span>Success Stories</h2>
 	  <section class="success-stories">
 			<header class="section-heading hidden-mobile">
 				<h2 class="hidden-mobile">Success Stories</h2>
@@ -103,7 +103,7 @@ get_header(); ?>
 				</div>
 	</section>
 
-	<h2 class="accordion-label" id="statistics">Statistics</h2>
+	<h2 class="accordion-label"><span class="anchor" id="statistics"></span>Statistics</h2>
 		<div class="statistics">
 			<h2 class="desktop-only content-wrapper">Statistics</h2>
 			<div class="image-carousel content-wrapper">

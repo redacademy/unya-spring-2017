@@ -928,6 +928,7 @@ a {
 #accordion {
   width: 100%; }
   #accordion .accordion-label {
+    position: relative;
     background: #4263AB !important;
     color: #fff !important;
     margin: 0 !important;
@@ -1389,6 +1390,10 @@ a {
   @media (min-width: 800px) {
     #front-page-slider-header {
       margin-top: 0; } }
+
+.anchor {
+  position: absolute;
+  top: -49px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -3627,17 +3632,18 @@ ul.nyc-partners {
         text-transform: uppercase;
         font-weight: 400; } }
 
-@media (min-width: 540px) {
-  .desktop-news-header-wrapper {
-    width: 85%;
-    text-align: left;
-    padding-left: 1rem;
-    margin-top: 5rem; } }
-
-@media (min-width: 800px) {
-  .desktop-news-header-wrapper {
-    width: 100%;
-    padding: 0 9rem 0 17.428571429rem; } }
+.desktop-news-header-wrapper {
+  position: relative; }
+  @media (min-width: 540px) {
+    .desktop-news-header-wrapper {
+      width: 85%;
+      text-align: left;
+      padding-left: 1rem;
+      margin-top: 5rem; } }
+  @media (min-width: 800px) {
+    .desktop-news-header-wrapper {
+      width: 100%;
+      padding: 0 9rem 0 17.428571429rem; } }
 
 .single-news-main {
   margin: 1rem 0rem;
@@ -3742,6 +3748,7 @@ ul.nyc-partners {
   font-size: 0.8rem; }
 
 .news-pre-wrapper {
+  position: relative;
   height: auto !important;
   width: 100%; }
   @media (min-width: 540px) {
@@ -3909,6 +3916,8 @@ ul.nyc-partners {
 /* Get Involved page */
 section.donation {
   background-color: white; }
+  section.donation .section-heading {
+    position: relative; }
 
 @media (min-width: 800px) {
   .donation p {

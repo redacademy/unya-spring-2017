@@ -385,6 +385,7 @@ display:none;
 }
 
 .desktop-news-header-wrapper {
+  position: relative;
   @include tablet {
     width: 85%;
     text-align: left;
@@ -506,6 +507,7 @@ display:none;
 }
 
 .news-pre-wrapper {
+  position: relative;
   height: auto !important;
   width: 100%;
   @include tablet {

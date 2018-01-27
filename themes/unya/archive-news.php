@@ -9,10 +9,10 @@ get_header();  ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main news-main" role="main">
       <div class="news-header news-title header-wrapper sidebar-start">
-		  	<h1 id="news">News</h1>
+		  	<h1>News</h1>
 			</div>
 			<div class="desktop-news-header-wrapper">
-				<h2 class="hidden-mobile news-extra-header">Latest News</h2>
+				<h2 class="hidden-mobile news-extra-header"><span class="anchor" id="news"></span>Latest News</h2>
       </div>	
 			<div class="top-news-carousel-wrapper">
 			  <?php
@@ -103,7 +103,8 @@ get_header();  ?>
 			  </div>
 			</div><!-- accordion -->
 			
-			<section id="media-inquiries" class="pre-footer-program media-pre-footer-container news-pre-wrapper">
+			<section class="pre-footer-program media-pre-footer-container news-pre-wrapper">
+			  <span class="anchor" id="media-inquiries"></span>
 			  <h4 class="prefooter-heading news-prefooter-heading">Media Inquiries</h4>
 				<span class="contact-wrapper-desktop">		 
 			    <div class="contact-wrapper news-contact">
