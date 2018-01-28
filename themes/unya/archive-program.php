@@ -17,10 +17,10 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</div><!-- .page-header -->
-      <span id="calendar" class="anchor-shim"></span>
-			<section id="calendar">
+			<section>
 				<div class="calendar-header">
 					<h2>Calendar</h2>
+					<span id="calendar" class="anchor"></span>
         </div>	
 				<div class="mobile-only mobile-calendar">
 					<?php echo do_shortcode("[calendar id=274]"); ?>

@@ -26,7 +26,6 @@ get_header(); ?>
 
 
 		<section class="pre-footer-program sidebar-stop">
-			<h4 class="prefooter-heading">Get involved with <?php echo CFS()->get( 'program_name' ); ?></h4>
 			<div class="pre-footer-program-container">
 				<h5 class="prefooter-subheading"> Contact <?php echo CFS()->get( 'program_name' ); ?> at:</h5>
 				<div class="contact-wrapper">
@@ -41,7 +40,6 @@ get_header(); ?>
 			</div>
 
 			<div class="pre-footer-program-logo-container">
-				<p class="pre-footer-logo-header">Program kindly funded by:</p>
 				<div class="logo-wrapper">
 					<img src="<?php echo CFS()->get( 'funder_logo' ); ?>">
 				</div>

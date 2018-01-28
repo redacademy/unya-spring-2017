@@ -1628,7 +1628,7 @@ section.pre-footer-program {
   padding: 30px 0 30px 30px; }
   @media (min-width: 800px) {
     section.pre-footer-program {
-      height: 423px;
+      height: auto;
       padding-left: 244px;
       display: -ms-flexbox;
       display: flex;
@@ -1668,7 +1668,8 @@ section.pre-footer-program {
     font-weight: bold; }
     @media (min-width: 800px) {
       section.pre-footer-program h5 {
-        font-size: 1.428571428rem; } }
+        font-size: 1.428571428rem;
+        margin-top: 0; } }
   section.pre-footer-program span {
     padding-right: 10px; }
   section.pre-footer-program p {
@@ -1940,6 +1941,9 @@ section.opportunities-pre-footer p {
   @media (min-width: 540px) {
     .prefooter-donation-button {
       min-width: 18rem; } }
+
+.fit-prefooter-button {
+  min-width: 18rem; }
 
 .mobile-calendar .simcal-calendar-head {
   padding: 0.7142857143rem .5em .5em .7em;
@@ -2278,6 +2282,7 @@ section.opportunities-pre-footer p {
       padding-left: initial; } }
 
 .calendar-header {
+  position: relative;
   display: none;
   text-align: left; }
   @media (min-width: 540px) {

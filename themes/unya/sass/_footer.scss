@@ -86,7 +86,7 @@ section.pre-footer-program {
   font-family:$font__main;
   padding: 30px 0 30px 30px;
   @include desktop{
-    height:423px;
+    height: auto;
     padding-left:244px;
     display:flex;
     flex-wrap:wrap;
@@ -127,6 +127,7 @@ section.pre-footer-program {
     font-weight:bold;
     @include desktop{
       font-size:1.428571428rem;
+      margin-top: 0;
     }
   }
   span{
@@ -433,4 +434,8 @@ section.opportunities-pre-footer{
   @include tablet {
     min-width: 18rem;
   }
+}
+
+.fit-prefooter-button {
+  min-width: 18rem;
 }
