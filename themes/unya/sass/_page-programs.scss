@@ -97,7 +97,6 @@
     height: 7.8571428571rem;
     margin-bottom: 0.5rem;
     flex-basis: 49%;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
     overflow: hidden;
     text-align: center;
 
@@ -116,6 +115,7 @@
       position: relative;
       display: block;
       height: 100%;
+      width: 100%;
     }
 
     .gradient {
@@ -136,10 +136,7 @@
     }
 
     .program-name {
-      right: 15%;
-      top: 0;
-      position: absolute;
-      width: 70%;
+      width: 100%;
       color: #FFF;
       font-family: $font__main;
       z-index: 2;
@@ -154,13 +151,12 @@
       @include desktop {
         height: 91px;        
         font-size: 1.4rem;
-        width: 80%;
+        width: 100%;
       }
     }
 
     .program-logo {
       height: 70px;      
-      position: absolute;
       z-index: 3;
       @include desktop {
         height: 91px;
@@ -581,4 +577,36 @@
     right: 0;
     margin-right: 1rem;
   }
+}
+
+.program-archive-item {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.program-item-footer-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  position: absolute;
+  @include desktop {
+    height: 91px;
+  }
+}
+
+.education-title {
+  bottom: 0;
+}
+
+.personal-support-title {
+  top: 0;
+}
+
+.housing-title {
+  top: 0;
+}
+
+.community-title {
+  bottom: 0;
 }
