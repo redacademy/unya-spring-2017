@@ -69,14 +69,26 @@
       $('.site-footer').addClass('hidden-mobile');
       $('.search-form-wrapper').removeClass('mobile-search-controller')  
       var target = $(this.hash);
+      var windowWidth = $(window).width();
       target = target.length ? target : $('[id=' + this.hash.slice(1) +']');
       target.click();
+      if (windowWidth < 800) {
+        if (target.length) {
+          setTimeout(function() {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 500);
+            return false;
+          }, 500)
+        }
+      }
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 500);
         return false;
       }
+
       
     });
 
