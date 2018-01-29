@@ -45,7 +45,7 @@ get_header(); ?>
     </section>
     <section class="instagram-images">
       <div class="content-wrapper">
-        <h2 class="instagram-heading"><span class="capitalize">Get social with</span> #UNYAwhat</h2>
+        <h2 class="instagram-heading"><span class="capitalize">Get social with UNYA</span></h2>
         <div class="mobile-only"><?php echo do_shortcode("[instagram-feed num=6 cols=2]"); ?></div>
         <div class="tablet-only"><?php echo do_shortcode("[instagram-feed num=9 cols=3]"); ?></div>
         <div class="desktop-only"><?php echo do_shortcode("[instagram-feed num=12 cols=4]"); ?></div>
