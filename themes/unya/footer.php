@@ -21,23 +21,25 @@
 					<div class="social-media-links-wrapper">
 						<a class="social-media-links facebook" href="https://www.facebook.com/urbannativeyouthassociation/" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
 						<a class="social-media-links twitter" href="https://twitter.com/unyanews?lang=en" target="_blank"><span class="fa fa-twitter-square" aria-hidden="true"></span></a>
-						<a class="social-media-links instagram" href="https://www.instagram.com/explore/locations/296509320/" target="_blank"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+						<a class="social-media-links instagram" href="https://www.instagram.com/unyayouth/" target="_blank"><span class="fa fa-instagram" aria-hidden="true"></span></a>
 					</div>
 				</div><!-- End social links -->
 				<div class="contact-us footer-flex">
 					<h4 class="hidden-mobile">Contact Us</h4>
 					<div class="contact-details">
 						<p class="hidden-mobile">Urban Native Youth Association</p>
-						<p>1630 Hastings Street East</p>
+						<a target="_blank" href="http://maps.google.com/maps?q=1630+Hastings+Street+East,+Vancouver,+BC"><p>1630 Hastings Street East</p></a>
+				    
 					</div>
 					<div class="contact-details">
-						<p>604-254-7732</p>
+						<a href="tel:+16042547732"><p>604-254-7732</p></a>
 						<a href="mailto:info@unya.bc.ca"><p>info@unya.bc.ca</p></a>
+						<a href="privacy-policy"><p>Our Privacy Policy</p></a>
 					</div>
 				</div><!-- End contact us -->
 
 			</div><!-- .site-info -->
-		</footer><!-- #colophon -->
+		</footer><!-- #colophon --> 
 	</div><!-- #page -->
 	<?php wp_footer(); ?>
 
