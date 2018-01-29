@@ -81,10 +81,15 @@ section.pre-footer{
 //single program pre-footer//
 section.pre-footer-program {
   background-color:#00277E;
-  height:456px;
+  height:auto;
   color:white;
   font-family:$font__main;
   padding: 30px 0 30px 30px;
+  @include tablet {
+    display: flex;
+    padding: 30px 0 30px 5rem;
+    justify-content: space-between;
+  }
   @include desktop{
     height: auto;
     padding-left:244px;
@@ -98,7 +103,7 @@ section.pre-footer-program {
       flex-basis:50%;
     }
     .pre-footer-program-logo-container{
-      width:450px;
+      width: 50%;
     }
   }
   h4{
@@ -167,20 +172,17 @@ section.pre-footer-program {
    opacity:0.9;
    border-bottom-left-radius: 23px;
    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+   padding: 1rem;
+   display: flex;
+   justify-content: center;
    @include desktop{
      height:150px;
    }
  }
 
   img{
-    height: 89.37px;
+    height: 100%;
     width: auto;
-    padding-left:15px;
-
-    @include desktop{
-      height:130px;
-      width: auto;
-    }
   }
 }
 
@@ -436,6 +438,40 @@ section.opportunities-pre-footer{
   }
 }
 
+.prefooter-subheading {
+  font-size: 16px;
+  color: white;
+  @include tablet {
+    font-size: 20px;
+  }
+  @include desktop {
+    font-size: 32px;
+  }
+}
+
 .fit-prefooter-button {
   min-width: 18rem;
+}
+
+.pre-footer-program-logo-container {
+  @include tablet {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    flex-flow: column;
+  }
+}
+
+#contact-bottom {
+  @include tablet {
+    margin-bottom: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+  }
+}
+
+.program-footer-url {
+  text-decoration: none !important;
+  color: white !important;
 }

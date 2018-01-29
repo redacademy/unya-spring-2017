@@ -27,10 +27,6 @@
 				<?php endforeach; ?>
 			</ul>
 		</div>
-		<?php if ( has_post_thumbnail() ) : ?>
-			<div class="program-image hidden-desktop"><?php the_post_thumbnail( 'large' ); ?></div>
-		<?php endif; ?>
-
 		<div class="program-involvement content-wrapper">
 			<h3>How To Get Involved</h3>
 			<p class="content-wrapper"><?php echo wpautop( esc_html( CFS()->get( 'get_involved' ) ) ); ?></p>
@@ -54,9 +50,6 @@
 					$trimmed_excerpt = wp_trim_words( custom_field_excerpt('article_text'), 12 );
 			?>
 			  <div class="prog-resource-item">
-					<div class="prog-resource-image hidden-mobile">
-						<img src="<?php echo (the_post_thumbnail('large')); ?>"/>
-					</div>
 					<div class="prog-resource-info">
 						<h3 class="prog-headline">
 							<a href="<?php 

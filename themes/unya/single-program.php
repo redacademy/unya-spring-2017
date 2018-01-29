@@ -27,15 +27,26 @@ get_header(); ?>
 
 		<section class="pre-footer-program sidebar-stop">
 			<div class="pre-footer-program-container">
-				<h5 class="prefooter-subheading"> Contact <?php echo CFS()->get( 'program_name' ); ?> at:</h5>
+				<h2 class="prefooter-subheading"> Contact <?php echo CFS()->get( 'program_name' ); ?> at:</h2>
 				<div class="contact-wrapper">
-					<p><span class="fa fa-map-marker" aria-hidden="true"></span><?php echo CFS()->get( 'program_address' ); ?></p>
-					<p class="city"><?php echo CFS()->get( 'program_address2' ); ?></p>
+				  <?php 
+						$address = CFS()->get('program_address');
+						$cityPostal = CFS()->get('program_address2');
+						$tel = CFS()->get('program_phone_number');
+						$fax = CFS()->get( 'program_fax_number' );
+						$email = CFS()->get( 'program_email' );
+						$urlTel = str_replace(' ', '-', $tel);
+						$urlAddress = str_replace(' ', '+', $address);
+						$urlCityPostal = str_replace(' ', '+', $cityPostal);
+						$mapUrl = "http://maps.google.com/maps?q=" . $urlAddress . '+' . $urlCityPostal;
+					?>
+					<a class="program-footer-url" target="_blank" href="<?php echo $mapUrl; ?>"><p><span class="fa fa-map-marker" aria-hidden="true"></span><?php echo $address; ?></p>
+					<p class="city"><?php echo $cityPostal ?></p></a>
 				</div>
-				<div class="contact-wrapper">
-					<p><span class="fa fa-phone" aria-hidden="true"></span><?php echo CFS()->get( 'program_phone_number' ); ?></p>
-					<p><span class="fa fa-fax" aria-hidden="true"></span><?php echo CFS()->get( 'program_fax_number' ); ?></p>
-					<p><span class="fa fa-envelope-o" aria-hidden="true"></span><?php echo CFS()->get( 'program_email' ); ?></p>
+				<div class="contact-wrapper" id="contact-bottom">
+					<a class="program-footer-url" href="tel:+<?php echo $urlTel; ?>"><p><span class="fa fa-phone" aria-hidden="true"></span><?php echo $tel; ?></p></a>
+					<p><span class="fa fa-fax" aria-hidden="true"></span><?php echo $fax; ?></p>
+					<a class="program-footer-url" href="mailto:<?php echo $email ?>"><p><span class="fa fa-envelope-o" aria-hidden="true"></span><?php echo $email; ?></p></a>
 				</div>
 			</div>
 
