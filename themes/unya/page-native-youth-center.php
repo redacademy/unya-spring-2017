@@ -12,10 +12,9 @@ get_header(); ?>
 			<header class="header-wrapper header-wrapper-nyc nyc-title">
 				<h1>Native Youth Centre <span class="hidden-mobile">| Capital Campaign</span></h1>
 				<p class="hidden-mobile">Building a hub for confidence, leadership and reconciliation.</p>
+				<span id="youth-center-resources" class="nyc-anchor"></span>
 			</header>
-
-			<div class="top-news-carousel-wrapper" id="nyc-resource-carousel-wrapper">
-
+			<div class="top-news-carousel-wrapper" id="youth-center-resources-carousel">
 			<?php
           $args = array(
 			  		'post_type'      => 'news',

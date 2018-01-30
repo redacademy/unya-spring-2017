@@ -268,7 +268,7 @@ ul.nyc-partners {
   }
 }
 
-#nyc-resource-carousel-wrapper {
+#youth-center-resources-carousel {
   width: 100%;
   display: flex;
   background: $color__red-medium !important;
@@ -287,4 +287,9 @@ ul.nyc-partners {
   #nyc-sidebar-start {
     margin-top: 5px;
   }
+}
+
+.nyc-anchor {
+  margin-top: -54px;        /* Size of fixed header */
+  padding-bottom: 54px;
 }
