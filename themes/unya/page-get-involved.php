@@ -54,7 +54,7 @@ get_header(); ?>
 				</div><!--End Why work for UNYA section -->
 				<div class="important-note-container  content-wrapper">
 					<div class="important-note-paragraph">
-						<span class="fa fa-info fa-3x" aria-hidden="true"></span>
+						<span id="important-note-icon" class="fa fa-info fa-3x" aria-hidden="true"></span>
 						<p><span class="bold-subheading">Important Note:</span> UNYA accepts complete applications for advertised positions only. You must state clearly on your cover letter which position you are applying for. All applications must be sent in electronic form, to the email address specified on the posting. Hard copies and unsolicited applications/resumes will not be reviewed, but immediately destroyed.</p>
 					</div>
 				</div>

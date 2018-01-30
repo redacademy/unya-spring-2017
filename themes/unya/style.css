@@ -4267,6 +4267,9 @@ section.donation {
 .planning {
   margin-top: 2rem !important; }
 
+#important-note-icon {
+  margin-right: 1rem; }
+
 .site-main .error-404 {
   background: linear-gradient(to bottom, rgba(66, 99, 171, 0.7) 0%, rgba(66, 99, 171, 0.7) 100%), url("../../assets/images/404_page_background.jpg") center center/100% 100% no-repeat;
   height: 961px;
