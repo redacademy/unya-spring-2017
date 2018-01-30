@@ -60,11 +60,11 @@ get_header(); ?>
         
 			</div>
 
-			<div class="donation-banner donation-button sidebar-start">
+			<div class="donation-banner donation-button">
 				<p><?php echo esc_html( CFS()->get( 'banner_text' ) ); ?></p>
 				<h2><a href="<?php echo esc_url( CFS()->get( 'banner_button_link' ) ); ?>"><?php echo esc_html( CFS()->get( 'banner_button' ) ); ?></a></h2>
 			</div>
-
+      <span class="sidebar-start"></span>
 			<section class="container">
 			<div class="accordion" id="accordion">
 				<h2 class="accordion-label"  id="vision">Vision</h2>
