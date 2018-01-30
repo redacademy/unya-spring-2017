@@ -282,3 +282,9 @@ ul.nyc-partners {
 .video-wrapper {
   margin: 3rem 0;
 }
+
+@-moz-document url-prefix() { 
+  #nyc-sidebar-start {
+    margin-top: 5px;
+  }
+}
