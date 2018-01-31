@@ -7,7 +7,8 @@
 $internal = CFS()->get('internal_news_post');
 $classes = get_post_class();
 $id = get_the_ID();
-if (!in_array('type-page', $classes) && !in_array('type-calendar', $classes)) :
+$perm = get_permalink();
+if (!in_array('type-page', $classes) && !in_array('type-calendar', $classes) && !strpos($perm, '_') ):
 ?>
 <div class="news-single search-single">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
