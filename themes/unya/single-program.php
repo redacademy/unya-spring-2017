@@ -50,11 +50,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="pre-footer-program-logo-container">
-				<div class="logo-wrapper">
-					<img src="<?php echo CFS()->get( 'funder_logo' ); ?>">
-				</div>
-			</div>
+
 		</section>
 
 		</main><!-- #main -->
