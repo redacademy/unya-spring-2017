@@ -51,7 +51,7 @@
 			?>
 			  <div class="prog-resource-item">
           <div class="prog-resource-image hidden-mobile">
-          	<img src="<?php echo (the_post_thumbnail('large')); ?>"/>
+          	<?php echo (the_post_thumbnail('large')); ?>
           </div>
 					<div class="prog-resource-info">
 						<h3 class="prog-headline">
