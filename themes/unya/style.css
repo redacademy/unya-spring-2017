@@ -2647,7 +2647,9 @@ section.opportunities-pre-footer p {
         height: auto;
         -ms-flex-preferred-size: 48%;
             flex-basis: 48%;
-        background: none; }
+        background: none;
+        -ms-flex-item-align: start;
+            align-self: flex-start; }
         .single-program .program-body .program-image img {
           border-radius: 0 0 0 90px; } }
   .single-program .program-body .program-activities ul {
