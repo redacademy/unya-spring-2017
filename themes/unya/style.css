@@ -2715,6 +2715,7 @@ section.opportunities-pre-footer p {
       height: 27rem; } }
 
 .prog-resource-info {
+  position: relative;
   padding: 1rem;
   display: -ms-flexbox;
   display: flex;
@@ -2728,21 +2729,24 @@ section.opportunities-pre-footer p {
       height: 35%;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-      padding-top: 0px; }
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
       .prog-resource-info p {
         display: none; }
       .prog-resource-info h3 {
-        font-size: 1rem;
-        line-height: 1.25; } }
+        font-size: 0.75rem;
+        line-height: 1.25;
+        margin: 0; } }
   @media (min-width: 800px) {
     .prog-resource-info {
       height: 35%;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
       position: relative;
-      padding-bottom: 2rem; }
+      padding: 1rem; }
       .prog-resource-info h3 {
-        margin: 0; }
+        margin: 0 0 0.5rem 0;
+        font-size: 1rem; }
       .prog-resource-info p {
         display: initial;
         margin: 0px;
@@ -2764,12 +2768,14 @@ section.opportunities-pre-footer p {
       height: 65%; } }
 
 #prog-url {
-  position: relative; }
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 0.5rem; }
   @media (min-width: 540px) {
     #prog-url {
       text-align: right;
-      width: 100%;
-      padding-right: 0px; } }
+      width: 100%; } }
   @media (min-width: 800px) {
     #prog-url {
       position: absolute;

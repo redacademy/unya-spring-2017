@@ -47,9 +47,12 @@
 
 			<?php	
 				if( $prog_resources->have_posts() ) : while( $prog_resources->have_posts() ) : $prog_resources->the_post();
-					$trimmed_excerpt = wp_trim_words( custom_field_excerpt('article_text'), 12 );
+					$trimmed_excerpt = wp_trim_words( custom_field_excerpt('article_text'), 8 );
 			?>
 			  <div class="prog-resource-item">
+          <div class="prog-resource-image hidden-mobile">
+          	<img src="<?php echo (the_post_thumbnail('large')); ?>"/>
+          </div>
 					<div class="prog-resource-info">
 						<h3 class="prog-headline">
 							<a href="<?php 
