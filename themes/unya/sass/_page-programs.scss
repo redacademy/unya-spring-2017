@@ -515,6 +515,7 @@
 }
 
 .prog-resource-info {
+  position: relative;
   padding: 1rem;
   display: flex;
   flex-flow: column nowrap;
@@ -525,22 +526,24 @@
   @include tablet {
     height: 35%;
     flex-flow: column nowrap;
-    padding-top: 0px;
+    justify-content: flex-start;
     p {
       display: none;
     }
     h3 {
-      font-size: 1rem;
+      font-size: 0.75rem;
       line-height: 1.25;
+      margin: 0;
     }
   }
   @include desktop {
     height: 35%;
-    justify-content: space-around;
+    justify-content: flex-start;
     position: relative;
-    padding-bottom: 2rem;
+    padding: 1rem;
     h3 {
-      margin: 0;
+      margin: 0 0 0.5rem 0;
+      font-size: 1rem;
     }
     p {
       display: initial;
@@ -567,11 +570,13 @@
 }
 
 #prog-url {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 0.5rem;
   @include tablet {
     text-align: right;
     width: 100%;
-    padding-right: 0px;
   }
   @include desktop {
     position: absolute;
