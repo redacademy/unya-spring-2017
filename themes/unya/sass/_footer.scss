@@ -80,10 +80,10 @@ section.pre-footer{
 
 //single program pre-footer//
 section.pre-footer-program {
-  background-color:#00277E;
-  height:auto;
-  color:white;
-  font-family:$font__main;
+  background-color: #00277E;
+  height: auto;
+  color: white;
+  font-family: $font__main;
   padding: 30px 0 30px 30px;
   @include tablet {
     display: flex;
@@ -101,9 +101,7 @@ section.pre-footer-program {
     }
     .pre-footer-program-container{
       flex-basis:50%;
-    }
-    .pre-footer-program-logo-container{
-      width: 50%;
+      width: 100%;
     }
   }
   h4{
@@ -468,10 +466,29 @@ section.opportunities-pre-footer{
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
+    margin-left: 4rem;
   }
 }
 
 .program-footer-url {
   text-decoration: none !important;
   color: white !important;
+}
+
+.contact-sub-wrapper {
+  @include tablet {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 100%;
+  }
+
+}
+
+#pre-footer-prog-wrapper {
+  @include tablet {
+    width: 90%;
+  }
+  @include desktop {
+    min-width: 100%;
+  }
 }

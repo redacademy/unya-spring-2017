@@ -1649,9 +1649,8 @@ section.pre-footer-program {
             flex-basis: 100%; }
       section.pre-footer-program .pre-footer-program-container {
         -ms-flex-preferred-size: 50%;
-            flex-basis: 50%; }
-      section.pre-footer-program .pre-footer-program-logo-container {
-        width: 50%; } }
+            flex-basis: 50%;
+        width: 100%; } }
   section.pre-footer-program h4 {
     font-size: 20px;
     width: 262px;
@@ -1981,11 +1980,28 @@ section.opportunities-pre-footer p {
     -ms-flex-flow: column;
         flex-flow: column;
     -ms-flex-pack: end;
-        justify-content: flex-end; } }
+        justify-content: flex-end;
+    margin-left: 4rem; } }
 
 .program-footer-url {
   text-decoration: none !important;
   color: white !important; }
+
+@media (min-width: 540px) {
+  .contact-sub-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    min-width: 100%; } }
+
+@media (min-width: 540px) {
+  #pre-footer-prog-wrapper {
+    width: 90%; } }
+
+@media (min-width: 800px) {
+  #pre-footer-prog-wrapper {
+    min-width: 100%; } }
 
 .mobile-calendar .simcal-calendar-head {
   padding: 0.7142857143rem .5em .5em .7em;
