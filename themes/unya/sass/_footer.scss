@@ -24,6 +24,7 @@
     color:white;
     font-weight:normal;
     font-size:20px;
+    box-shadow: 3px 4px 13px 1px rgba(0,0,0,0.4);
 
     @include tablet {
       padding:15px 25px;
@@ -41,10 +42,20 @@ section.pre-footer{
   flex-direction:column;
   color:white;
   padding: 1rem;
-  @include tablet{
-  justify-content:space-between;
-  flex-direction:row;
-  padding:45px 90px;
+  h2 {
+    text-align: center;
+    padding:15px 25px;
+    border-radius:10px;
+    text-decoration: none;
+    text-transform:uppercase;
+    color:white;
+    font-weight:normal;
+    font-size:20px;
+    a {
+      color: white;
+      text-decoration: none;
+      box-shadow: 3px 4px 13px 1px rgba(0,0,0,0.4);
+    }
   }
   p {
     font-family: $font__heading;
@@ -58,7 +69,6 @@ section.pre-footer{
     @include desktop{
       font-size:2.25rem;
       font-weight:500;
-      text-transform:uppercase;
       font-family:$font__heading;
       text-align:left;
       line-height:54px;
@@ -67,20 +77,12 @@ section.pre-footer{
         display:block;
         width:100%;
       }
-      p {
-        font-size: 2.28571rem !important;
-      }
     }
   }
-  h2 {
-    text-align: center;
-    padding:15px 25px;
-    border-radius:10px;
-    text-decoration: none;
-    text-transform:uppercase;
-    color:white;
-    font-weight:normal;
-    font-size:20px;
+  @include tablet{
+  justify-content:space-between;
+  flex-direction:row;
+  padding:45px 90px;
   }
 }
 
@@ -456,7 +458,22 @@ section.opportunities-pre-footer{
 }
 
 .fit-prefooter-button {
+  border-radius: 10px;
   min-width: 18rem;
+  background-color: #4263ab;
+  text-align: center;
+  padding: 0 !important;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  a {
+    border-radius: 10px;
+    padding: 15px 25px;
+    font-size: 18px;
+  }
 }
 
 .pre-footer-program-logo-container {
