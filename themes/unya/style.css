@@ -2731,7 +2731,9 @@ section.opportunities-pre-footer p {
           left: 0; } }
     @media (min-width: 800px) {
       .single-program .program-body .program-resource-wrapper {
-        width: 100%; } }
+        width: 100%;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
 .prog-resource-item {
   display: -ms-flexbox;
@@ -2754,7 +2756,16 @@ section.opportunities-pre-footer p {
   @media (min-width: 800px) {
     .prog-resource-item {
       margin-top: 5rem;
-      height: 27rem; } }
+      height: 27rem;
+      min-width: 200px; } }
+
+@media (min-width: 800px) {
+  .prog-resource-item:nth-child(2) {
+    margin-right: 0.5rem; } }
+
+@media (min-width: 800px) {
+  .prog-resource-item:nth-child(4) {
+    margin-left: 0.5rem; } }
 
 .prog-resource-info {
   position: relative;
@@ -2788,11 +2799,7 @@ section.opportunities-pre-footer p {
       padding: 1rem; }
       .prog-resource-info h3 {
         margin: 0 0 0.5rem 0;
-        font-size: 1rem; }
-      .prog-resource-info p {
-        display: initial;
-        margin: 0px;
-        line-height: 1; } }
+        font-size: 1rem; } }
 
 .prog-resource-image {
   display: none; }
