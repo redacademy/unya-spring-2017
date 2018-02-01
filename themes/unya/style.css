@@ -1584,7 +1584,8 @@ section.pre-footer {
       align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  color: white; }
+  color: white;
+  padding: 1rem; }
   @media (min-width: 540px) {
     section.pre-footer {
       -ms-flex-pack: justify;
@@ -1593,13 +1594,14 @@ section.pre-footer {
           flex-direction: row;
       padding: 45px 90px; } }
   section.pre-footer p {
-    font-size: 1.14286rem;
+    font-family: "poppins", sans-serif;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: normal;
     margin: 13px 29px;
     text-align: center;
     padding: 0 25px;
-    line-height: 24px; }
+    line-height: 1.5; }
     @media (min-width: 800px) {
       section.pre-footer p {
         font-size: 2.25rem;
@@ -1611,9 +1613,12 @@ section.pre-footer {
         width: 70%; }
         section.pre-footer p span.line-break {
           display: block;
-          width: 100%; } }
-  section.pre-footer h2 a {
-    padding: 15px 50px;
+          width: 100%; }
+        section.pre-footer p p {
+          font-size: 2.28571rem !important; } }
+  section.pre-footer h2 {
+    text-align: center;
+    padding: 15px 25px;
     border-radius: 10px;
     text-decoration: none;
     text-transform: uppercase;
@@ -1944,7 +1949,9 @@ section.opportunities-pre-footer p {
           color: black !important; } }
 
 .prefooter-donation-button {
-  min-width: auto; }
+  min-width: auto;
+  padding: 15px 25px;
+  border-radius: 10px; }
   @media (min-width: 540px) {
     .prefooter-donation-button {
       min-width: 18rem; } }
@@ -3109,7 +3116,7 @@ section.opportunities-pre-footer p {
     font-size: 2.1428571429rem; } }
 
 .donation-banner {
-  height: 16rem;
+  height: 18rem;
   width: auto;
   display: -ms-flexbox;
   display: flex;
@@ -3120,8 +3127,6 @@ section.opportunities-pre-footer p {
   -ms-flex-direction: column;
       flex-direction: column;
   color: white; }
-  .donation-banner h2 {
-    width: 18rem; }
   .donation-banner p {
     width: 70%;
     text-align: center;
@@ -3135,18 +3140,19 @@ section.opportunities-pre-footer p {
       height: 12.4285714286rem;
       -ms-flex-direction: row;
           flex-direction: row;
-      padding: 1rem; }
+      padding: 0 90px; }
       .donation-banner p {
         width: 50%; } }
   @media (min-width: 800px) {
     .donation-banner {
       -ms-flex-pack: justify;
           justify-content: space-between;
-      width: 100%; }
+      width: 100%;
+      padding: 0; }
       .donation-banner p, .donation-banner h2 {
         font-size: 1.5rem; }
       .donation-banner p {
-        width: 50%;
+        width: 60%;
         padding-left: 8.7142857143rem;
         font-size: 2.28571rem;
         line-height: 3.28571rem; }
@@ -3353,13 +3359,8 @@ ul.nyc-partners {
 .video-wrapper {
   margin: 3rem 0; }
 
-@-moz-document url-prefix() {
-  #nyc-sidebar-start {
-    margin-top: 5px; } }
-
 .nyc-anchor {
   margin-top: -54px;
-  /* Size of fixed header */
   padding-bottom: 54px; }
 
 /* News archive */

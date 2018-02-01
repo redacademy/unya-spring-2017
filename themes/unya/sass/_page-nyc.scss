@@ -18,16 +18,14 @@
 }
 
 .donation-banner {
-  height: 16rem;
+  height: 18rem;
   width: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
   color: white;
-  h2 {
-    width: 18rem;
-  }
+
   p {
     width: 70%;
     text-align: center;
@@ -41,7 +39,7 @@
   @include tablet {
     height: 12.4285714286rem;
     flex-direction: row;
-    padding: 1rem;
+    padding: 0 90px;
     p {
       width: 50%;
     }
@@ -49,12 +47,13 @@
   @include desktop {
     justify-content: space-between;
     width: 100%;
+    padding: 0;
     p, h2 {
       font-size: 1.5rem;
     }
     
     p {
-      width: 50%;
+      width: 60%;
       padding-left: 8.7142857143rem;
       font-size: $desktop__h2;
       line-height: $desktop__h2 + 1rem;
@@ -283,13 +282,7 @@ ul.nyc-partners {
   margin: 3rem 0;
 }
 
-@-moz-document url-prefix() { 
-  #nyc-sidebar-start {
-    margin-top: 5px;
-  }
-}
-
 .nyc-anchor {
-  margin-top: -54px;        /* Size of fixed header */
+  margin-top: -54px;
   padding-bottom: 54px;
 }

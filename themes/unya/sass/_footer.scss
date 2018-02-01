@@ -40,35 +40,41 @@ section.pre-footer{
   align-items:center;
   flex-direction:column;
   color:white;
+  padding: 1rem;
   @include tablet{
   justify-content:space-between;
   flex-direction:row;
   padding:45px 90px;
   }
-  p{
-   font-size:$heading__h3;
-   font-style:normal;
-   font-weight:normal;
-   margin:13px 29px;
-   text-align:center;
-   padding: 0 25px;
-   line-height:24px;
-   @include desktop{
-    font-size:2.25rem;
-    font-weight:500;
-    text-transform:uppercase;
-    font-family:$font__heading;
-    text-align:left;
-    line-height:54px;
-    width:70%;
+  p {
+    font-family: $font__heading;
+    font-size: 1.5rem;
+    font-style:normal;
+    font-weight:normal;
+    margin:13px 29px;
+    text-align:center;
+    padding: 0 25px;
+    line-height: 1.5;
+    @include desktop{
+      font-size:2.25rem;
+      font-weight:500;
+      text-transform:uppercase;
+      font-family:$font__heading;
+      text-align:left;
+      line-height:54px;
+      width:70%;
       span.line-break{
         display:block;
         width:100%;
       }
-   }
+      p {
+        font-size: 2.28571rem !important;
+      }
+    }
   }
-  h2 a{
-    padding:15px 50px;
+  h2 {
+    text-align: center;
+    padding:15px 25px;
     border-radius:10px;
     text-decoration: none;
     text-transform:uppercase;
@@ -431,6 +437,8 @@ section.opportunities-pre-footer{
 
 .prefooter-donation-button {
   min-width: auto;
+  padding: 15px 25px;
+  border-radius: 10px;
   @include tablet {
     min-width: 18rem;
   }
