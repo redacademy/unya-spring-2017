@@ -4725,6 +4725,8 @@ section.donation {
   -ms-flex-pack: center;
       justify-content: center;
   width: 100%; }
+  .news-cat-box p {
+    margin: 0; }
 
 @media (min-width: 540px) {
   .cat-archive-header {
