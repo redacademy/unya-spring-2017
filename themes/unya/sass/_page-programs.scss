@@ -482,6 +482,7 @@
       }
       @include desktop {
         width: 100%;
+        justify-content: space-between;
       }
     }
 
@@ -512,6 +513,19 @@
   @include desktop {
     margin-top: 5rem;
     height: 27rem;
+    min-width: 200px;
+  }
+}
+
+.prog-resource-item:nth-child(2) {
+  @include desktop {
+    margin-right: 0.5rem;
+  }
+}
+
+.prog-resource-item:nth-child(4) {
+  @include desktop {
+    margin-left: 0.5rem; 
   }
 }
 
@@ -545,11 +559,6 @@
     h3 {
       margin: 0 0 0.5rem 0;
       font-size: 1rem;
-    }
-    p {
-      display: initial;
-      margin: 0px;
-      line-height: 1;
     }
   }
 
