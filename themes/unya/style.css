@@ -1567,7 +1567,8 @@ object {
     text-transform: uppercase;
     color: white;
     font-weight: normal;
-    font-size: 20px; }
+    font-size: 20px;
+    box-shadow: 3px 4px 13px 1px rgba(0, 0, 0, 0.4); }
     @media (min-width: 540px) {
       .donation-button h2 a {
         padding: 15px 25px;
@@ -1586,13 +1587,19 @@ section.pre-footer {
       flex-direction: column;
   color: white;
   padding: 1rem; }
-  @media (min-width: 540px) {
-    section.pre-footer {
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      -ms-flex-direction: row;
-          flex-direction: row;
-      padding: 45px 90px; } }
+  section.pre-footer h2 {
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: normal;
+    font-size: 20px; }
+    section.pre-footer h2 a {
+      color: white;
+      text-decoration: none;
+      box-shadow: 3px 4px 13px 1px rgba(0, 0, 0, 0.4); }
   section.pre-footer p {
     font-family: "poppins", sans-serif;
     font-size: 1.5rem;
@@ -1606,25 +1613,20 @@ section.pre-footer {
       section.pre-footer p {
         font-size: 2.25rem;
         font-weight: 500;
-        text-transform: uppercase;
         font-family: "poppins", sans-serif;
         text-align: left;
         line-height: 54px;
         width: 70%; }
         section.pre-footer p span.line-break {
           display: block;
-          width: 100%; }
-        section.pre-footer p p {
-          font-size: 2.28571rem !important; } }
-  section.pre-footer h2 {
-    text-align: center;
-    padding: 15px 25px;
-    border-radius: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-weight: normal;
-    font-size: 20px; }
+          width: 100%; } }
+  @media (min-width: 540px) {
+    section.pre-footer {
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      padding: 45px 90px; } }
 
 section.pre-footer-program {
   background-color: #00277E;
@@ -1967,7 +1969,21 @@ section.opportunities-pre-footer p {
       font-size: 32px; } }
 
 .fit-prefooter-button {
-  min-width: 18rem; }
+  border-radius: 10px;
+  min-width: 18rem;
+  background-color: #4263ab;
+  text-align: center;
+  padding: 0 !important;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px; }
+  .fit-prefooter-button a {
+    border-radius: 10px;
+    padding: 15px 25px;
+    font-size: 18px; }
 
 @media (min-width: 540px) {
   .pre-footer-program-logo-container {
