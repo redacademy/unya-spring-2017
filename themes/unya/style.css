@@ -3229,7 +3229,7 @@ section.opportunities-pre-footer p {
       display: flex; } }
 
 @media (min-width: 800px) {
-  .nyc-content .content-wrapper {
+  .nyc-content .realizing .content-wrapper, .nyc-content .ways-to-help-inner .content-wrapper, .nyc-content .need .content-wrapper:nth-child(2), .nyc-content .nyc-banner .content-wrapper:nth-child(2) {
     padding-bottom: 1rem; } }
 
 .nyc-content .vision {

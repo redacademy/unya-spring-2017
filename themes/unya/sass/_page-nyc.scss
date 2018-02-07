@@ -116,7 +116,7 @@
     // }
   }
 
-  .content-wrapper {
+  .realizing .content-wrapper, .ways-to-help-inner .content-wrapper, .need .content-wrapper:nth-child(2), .nyc-banner .content-wrapper:nth-child(2) {
     @include desktop {
       padding-bottom: 1rem;
     }
