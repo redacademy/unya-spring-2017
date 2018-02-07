@@ -11,14 +11,13 @@
   }
   @include desktop {
     p {
-
       font-size:2.1428571429rem;
     }
   }
 }
 
 .donation-banner {
-  height: 18rem;
+  height: 11rem;
   width: auto;
   display: flex;
   align-items: center;
@@ -27,31 +26,39 @@
   color: white;
 
   p {
-    width: 70%;
+    margin: 0;
+    width: 100%;
     text-align: center;
-    font-size: 1.5rem;
-    line-height: 1.5;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-family: $font__main;
   }
-  p, h2 {
+  h2 {
     margin: 0;
     font-family: $font__heading;
+    padding-bottom: 1rem;
   }
   @include tablet {
-    height: 12.4285714286rem;
+    height: 6.8rem;
     flex-direction: row;
-    padding: 0 90px;
+    justify-content: space-between;
+    padding: 0 7.5%;
     p {
       width: 50%;
+      text-align: left;
+    }
+    h2 {
+      padding: 0;
     }
   }
   @include desktop {
     justify-content: space-between;
     width: 100%;
+    height: 10.8571428571rem;
     padding: 0;
     p, h2 {
       font-size: 1.5rem;
     }
-    
     p {
       width: 60%;
       padding-left: 8.7142857143rem;
@@ -60,13 +67,13 @@
     }
 
     h2 {
-      padding-right: 2rem;
+      padding-right: 8.7142857143rem;
       text-align: right;
     }
   }
 }
 
-.vision .content-wrapper a.nyc-download {
+.need .content-wrapper a.nyc-download {
   margin-bottom: 1.5rem;
   display: block;
   color: $color__red-medium;
@@ -84,7 +91,7 @@
   }
 }
 
-.vision .section-heading {
+.need .section-heading {
   display: none;
 
   @include desktop {
@@ -94,15 +101,39 @@
 
 .nyc-content {
   .nyc-banner {
-    height:23.214285714rem;
-    width:100%;
-    p {
-      text-align: right;
-      width:80%;
-      margin: 30px 15%;
-      color:white;
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
+    // height:23.214285714rem;
+    // width:100%;
+    // p {
+    //   text-align: right;
+    //   width:80%;
+    //   margin: 30px 15%;
+    //   color:white;
+    // }
+  }
+
+  .content-wrapper {
+    @include desktop {
+      padding-bottom: 1rem;
     }
   }
+
+  .vision {
+    background-color: #d43e3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      color: white;
+    }
+  }
+
   .planning {
     ul {
       margin: 0;
@@ -140,6 +171,19 @@
 
     @include desktop {
       flex-basis: 80%;
+    }
+  }
+  section.pre-footer {
+    @include tablet {
+      padding: 0;
+    }
+    @include desktop {
+      height: 10.8571428571rem;
+      padding-right: 8.7142857143rem;
+      padding-left: 8.7142857143rem;
+      p {
+        text-transform: uppercase;
+      }
     }
   }
 }
@@ -182,31 +226,111 @@
     }
   }
 
-.ways-to-help {
+.ways-to-help-inner {
+  background-color: $color__red-medium!important;
+  display: flex;
+  justify-content: center;
+
+  @include desktop {
+    flex-direction: column;
+  }
+
   h4 {
+    color: white;
+    font-family: $font__heading;
     font-size: $desktop__h4;
+    font-weight: 500;
+    @include desktop {
+      font-size: $desktop__h3;
+    }
   }
   ul {
     margin: 0;
-    padding: 0 1rem;
+    padding: 0;
     list-style: none;
-
-    @include desktop {
-      padding: 0 0 1rem 6rem;
-    }
   }
   h5 {
     font-size: $desktop__main;
+    color: white;
+  }
+  .help-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    @include tablet {
+      width: 95%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+  .help-box {
+    @include tablet {
+      display: flex;
+      width: 95%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+  .donation-button {
+    padding: 1rem;
+    background: none;
+    display: flex;
+    justify-content: center;
+    a {
+      background-color: $color__red-dark;
+    }
+    @include tablet {
+      flex-basis: 40%;
+    }
+    @include desktop {
+      padding: 0;
+      h2 {
+        padding: 0;
+        line-height: 0;
+      }
+    }
+  }
+  .help-points{
+    @include tablet {
+      display: flex;
+      width: 60%;
+    }
+    .line-break {
+      display: block;
+    }
+    p {
+      padding-left: 1rem;
+      border-left: solid 2px #ffffff;
+      line-height: $desktop__h5;
+
+      @include tablet {
+        width: 95%;
+      }
+    }
+  }
+  .help-bold{
+    font-weight: bold;
   }
   .fa-angle-right {
-    vertical-align: top;
-    font-weight: bold;
-    font-size: 1.25rem;
-    width: 5%;
+    display: none;
+
+    @include tablet {
+      display: inline-block;
+      vertical-align: top;
+      font-weight: bold;
+      font-size: 1.25rem;
+      width: 5%;
+    }
+    @include desktop {
+      font-size: 2.35rem;
+    }
   }
   .nyc-help-spacing {
-    width: 5%;
-    display: inline-block;
+    display: none;
+
+    @include tablet {
+      width: 5%;
+      display: inline-block;
+    }
   }
   .nyc-help-text {
     width: 95%;
@@ -228,59 +352,59 @@
   color: #fff;
 }
 
-.partners .section-heading {
-  display: none;
+// .partners .section-heading {
+//   display: none;
 
-  @include desktop {
-    display: flex;
-  }
-}
+//   @include desktop {
+//     display: flex;
+//   }
+// }
 
-ul.nyc-partners {
-  margin: 0;
-  padding: 2rem 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  list-style: none;
-  @include tablet {
-    flex-flow: row wrap;
-  }
-  @include desktop {
-    justify-content: space-between;
-  }
+// ul.nyc-partners {
+//   margin: 0;
+//   padding: 2rem 0;
+//   width: 100%;
+//   display: flex;
+//   align-items: center;
+//   flex-direction: column;
+//   flex-wrap: wrap;
+//   list-style: none;
+//   @include tablet {
+//     flex-flow: row wrap;
+//   }
+//   @include desktop {
+//     justify-content: space-between;
+//   }
 
-  .partner {
-    flex-basis: 90%;
-    margin: 2rem 0;
-    @include tablet {
-      margin: 2rem;
-      max-width: 40%;
-    }
-    @include desktop {
-      flex-basis: 48%;
-      max-width: 40%;
-      margin: 2rem;
-    }
-  }
-}
+//   .partner {
+//     flex-basis: 90%;
+//     margin: 2rem 0;
+//     @include tablet {
+//       margin: 2rem;
+//       max-width: 40%;
+//     }
+//     @include desktop {
+//       flex-basis: 48%;
+//       max-width: 40%;
+//       margin: 2rem;
+//     }
+//   }
+// }
 
-#youth-center-resources-carousel {
-  width: 100%;
-  display: flex;
-  background: $color__red-medium !important;
-  @include tablet {
-    background: white !important;
-    align-self: center;
-    padding: 1rem 3rem 1rem 3rem;
-  }
-}
+// #youth-center-resources-carousel {
+//   width: 100%;
+//   display: flex;
+//   background: $color__red-medium !important;
+//   @include tablet {
+//     background: white !important;
+//     align-self: center;
+//     padding: 1rem 3rem 1rem 3rem;
+//   }
+// }
 
-.video-wrapper {
-  margin: 3rem 0;
-}
+// .video-wrapper {
+//   margin: 3rem 0;
+// }
 
 .nyc-anchor {
   margin-top: -54px;

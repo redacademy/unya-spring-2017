@@ -546,6 +546,10 @@ textarea {
       .ctct-form-field-email input[type=email] {
         width: 100%; } }
 
+::-webkit-input-placeholder {
+  padding-left: 10px;
+  color: black; }
+
 :-ms-input-placeholder {
   padding-left: 10px;
   color: black; }
@@ -643,6 +647,9 @@ input[type=submit] {
 
 #search-label {
   width: 75%; }
+
+.search-field::-webkit-input-placeholder {
+  color: #BABABA; }
 
 .search-field:-ms-input-placeholder {
   color: #BABABA; }
@@ -2091,13 +2098,13 @@ section.opportunities-pre-footer p {
 
 /* About page */
 @media (min-width: 800px) {
-  .about-content .vision, .about-content .philosophy, .about-content .brief-history {
+  .about-content .need, .about-content .philosophy, .about-content .brief-history {
     height: 350px; }
-    .about-content .vision h2, .about-content .philosophy h2, .about-content .brief-history h2 {
+    .about-content .need h2, .about-content .philosophy h2, .about-content .brief-history h2 {
       margin-top: 0;
       padding-top: 50px; } }
 
-.about-content .vision h2 {
+.about-content .need h2 {
   color: #2C2C2C;
   font-family: "poppins", sans-serif; }
 
@@ -3139,7 +3146,7 @@ section.opportunities-pre-footer p {
     font-size: 2.1428571429rem; } }
 
 .donation-banner {
-  height: 18rem;
+  height: 11rem;
   width: auto;
   display: -ms-flexbox;
   display: flex;
@@ -3151,26 +3158,35 @@ section.opportunities-pre-footer p {
       flex-direction: column;
   color: white; }
   .donation-banner p {
-    width: 70%;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 1.5; }
-  .donation-banner p, .donation-banner h2 {
     margin: 0;
-    font-family: "poppins", sans-serif; }
+    width: 100%;
+    text-align: center;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-family: "worksans", sans-serif; }
+  .donation-banner h2 {
+    margin: 0;
+    font-family: "poppins", sans-serif;
+    padding-bottom: 1rem; }
   @media (min-width: 540px) {
     .donation-banner {
-      height: 12.4285714286rem;
+      height: 6.8rem;
       -ms-flex-direction: row;
           flex-direction: row;
-      padding: 0 90px; }
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      padding: 0 7.5%; }
       .donation-banner p {
-        width: 50%; } }
+        width: 50%;
+        text-align: left; }
+      .donation-banner h2 {
+        padding: 0; } }
   @media (min-width: 800px) {
     .donation-banner {
       -ms-flex-pack: justify;
           justify-content: space-between;
       width: 100%;
+      height: 10.8571428571rem;
       padding: 0; }
       .donation-banner p, .donation-banner h2 {
         font-size: 1.5rem; }
@@ -3180,10 +3196,10 @@ section.opportunities-pre-footer p {
         font-size: 2.28571rem;
         line-height: 3.28571rem; }
       .donation-banner h2 {
-        padding-right: 2rem;
+        padding-right: 8.7142857143rem;
         text-align: right; } }
 
-.vision .content-wrapper a.nyc-download {
+.need .content-wrapper a.nyc-download {
   margin-bottom: 1.5rem;
   display: block;
   color: #D13434;
@@ -3198,20 +3214,34 @@ section.opportunities-pre-footer p {
       display: block;
       border: 1px solid #D13434; } }
 
-.vision .section-heading {
+.need .section-heading {
   display: none; }
   @media (min-width: 800px) {
-    .vision .section-heading {
+    .need .section-heading {
       display: -ms-flexbox;
       display: flex; } }
 
 .nyc-content .nyc-banner {
-  height: 23.214285714rem;
-  width: 100%; }
-  .nyc-content .nyc-banner p {
-    text-align: right;
-    width: 80%;
-    margin: 30px 15%;
+  display: none; }
+  @media (min-width: 540px) {
+    .nyc-content .nyc-banner {
+      display: -ms-flexbox;
+      display: flex; } }
+
+@media (min-width: 800px) {
+  .nyc-content .content-wrapper {
+    padding-bottom: 1rem; } }
+
+.nyc-content .vision {
+  background-color: #d43e3e;
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .nyc-content .vision h2 {
     color: white; }
 
 .nyc-content .planning ul {
@@ -3254,6 +3284,18 @@ section.opportunities-pre-footer p {
       -ms-flex-preferred-size: 80%;
           flex-basis: 80%; } }
 
+@media (min-width: 540px) {
+  .nyc-content section.pre-footer {
+    padding: 0; } }
+
+@media (min-width: 800px) {
+  .nyc-content section.pre-footer {
+    height: 10.8571428571rem;
+    padding-right: 8.7142857143rem;
+    padding-left: 8.7142857143rem; }
+    .nyc-content section.pre-footer p {
+      text-transform: uppercase; } }
+
 @media (min-width: 800px) {
   .planning {
     margin-top: 4rem; } }
@@ -3288,99 +3330,115 @@ section.opportunities-pre-footer p {
       .planning .section-heading h4 {
         padding: 0 15.71429rem 0 17.42857rem; } }
 
-.ways-to-help {
+.ways-to-help-inner {
+  background-color: #D13434 !important;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
   background: #D13434;
   color: #fff; }
-  .ways-to-help h4 {
-    font-size: 1.28571rem; }
-  .ways-to-help ul {
-    margin: 0;
-    padding: 0 1rem;
-    list-style: none; }
+  @media (min-width: 800px) {
+    .ways-to-help-inner {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
+  .ways-to-help-inner h4 {
+    color: white;
+    font-family: "poppins", sans-serif;
+    font-size: 1.28571rem;
+    font-weight: 500; }
     @media (min-width: 800px) {
-      .ways-to-help ul {
-        padding: 0 0 1rem 6rem; } }
-  .ways-to-help h5 {
-    font-size: 1.14286rem; }
-  .ways-to-help .fa-angle-right {
-    vertical-align: top;
-    font-weight: bold;
-    font-size: 1.25rem;
-    width: 5%; }
-  .ways-to-help .nyc-help-spacing {
-    width: 5%;
-    display: inline-block; }
-  .ways-to-help .nyc-help-text {
+      .ways-to-help-inner h4 {
+        font-size: 1.71429rem; } }
+  .ways-to-help-inner ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .ways-to-help-inner h5 {
+    font-size: 1.14286rem;
+    color: white; }
+  .ways-to-help-inner .help-boxes {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    @media (min-width: 540px) {
+      .ways-to-help-inner .help-boxes {
+        width: 95%;
+        margin-left: auto;
+        margin-right: 0; } }
+  @media (min-width: 540px) {
+    .ways-to-help-inner .help-box {
+      display: -ms-flexbox;
+      display: flex;
+      width: 95%;
+      margin-left: auto;
+      margin-right: 0; } }
+  .ways-to-help-inner .donation-button {
+    padding: 1rem;
+    background: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .ways-to-help-inner .donation-button a {
+      background-color: #A70000; }
+    @media (min-width: 540px) {
+      .ways-to-help-inner .donation-button {
+        -ms-flex-preferred-size: 40%;
+            flex-basis: 40%; } }
+    @media (min-width: 800px) {
+      .ways-to-help-inner .donation-button {
+        padding: 0; }
+        .ways-to-help-inner .donation-button h2 {
+          padding: 0;
+          line-height: 0; } }
+  @media (min-width: 540px) {
+    .ways-to-help-inner .help-points {
+      display: -ms-flexbox;
+      display: flex;
+      width: 60%; } }
+  .ways-to-help-inner .help-points .line-break {
+    display: block; }
+  .ways-to-help-inner .help-points p {
+    padding-left: 1rem;
+    border-left: solid 2px #ffffff;
+    line-height: 1.14286rem; }
+    @media (min-width: 540px) {
+      .ways-to-help-inner .help-points p {
+        width: 95%; } }
+  .ways-to-help-inner .help-bold {
+    font-weight: bold; }
+  .ways-to-help-inner .fa-angle-right {
+    display: none; }
+    @media (min-width: 540px) {
+      .ways-to-help-inner .fa-angle-right {
+        display: inline-block;
+        vertical-align: top;
+        font-weight: bold;
+        font-size: 1.25rem;
+        width: 5%; } }
+    @media (min-width: 800px) {
+      .ways-to-help-inner .fa-angle-right {
+        font-size: 2.35rem; } }
+  .ways-to-help-inner .nyc-help-spacing {
+    display: none; }
+    @media (min-width: 540px) {
+      .ways-to-help-inner .nyc-help-spacing {
+        width: 5%;
+        display: inline-block; } }
+  .ways-to-help-inner .nyc-help-text {
     width: 95%;
     display: inline-block; }
-  .ways-to-help .section-heading {
+  .ways-to-help-inner .section-heading {
     display: none; }
     @media (min-width: 800px) {
-      .ways-to-help .section-heading {
+      .ways-to-help-inner .section-heading {
         display: -ms-flexbox;
         display: flex;
         background: #A70000; }
-        .ways-to-help .section-heading h2 {
+        .ways-to-help-inner .section-heading h2 {
           color: #fff; } }
-
-.partners .section-heading {
-  display: none; }
-  @media (min-width: 800px) {
-    .partners .section-heading {
-      display: -ms-flexbox;
-      display: flex; } }
-
-ul.nyc-partners {
-  margin: 0;
-  padding: 2rem 0;
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style: none; }
-  @media (min-width: 540px) {
-    ul.nyc-partners {
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap; } }
-  @media (min-width: 800px) {
-    ul.nyc-partners {
-      -ms-flex-pack: justify;
-          justify-content: space-between; } }
-  ul.nyc-partners .partner {
-    -ms-flex-preferred-size: 90%;
-        flex-basis: 90%;
-    margin: 2rem 0; }
-    @media (min-width: 540px) {
-      ul.nyc-partners .partner {
-        margin: 2rem;
-        max-width: 40%; } }
-    @media (min-width: 800px) {
-      ul.nyc-partners .partner {
-        -ms-flex-preferred-size: 48%;
-            flex-basis: 48%;
-        max-width: 40%;
-        margin: 2rem; } }
-
-#youth-center-resources-carousel {
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  background: #D13434 !important; }
-  @media (min-width: 540px) {
-    #youth-center-resources-carousel {
-      background: white !important;
-      -ms-flex-item-align: center;
-          -ms-grid-row-align: center;
-          align-self: center;
-      padding: 1rem 3rem 1rem 3rem; } }
-
-.video-wrapper {
-  margin: 3rem 0; }
 
 .nyc-anchor {
   margin-top: -54px;

@@ -45,3 +45,4 @@ themes/unya/node_modules/*
 themes/unya/gulpfile.js
 themes/unya/build/*
 !lib/
+package-lock.json

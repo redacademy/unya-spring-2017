@@ -2,7 +2,7 @@
 .about-content {
   
   @include desktop {
-    .vision, .philosophy, .brief-history {
+    .need, .philosophy, .brief-history {
       height: 350px;
   
       h2 {
@@ -12,7 +12,7 @@
     }
   }
   
-  .vision {
+  .need {
     h2{
       color: $color__grey-dark;
       font-family: $font__heading;

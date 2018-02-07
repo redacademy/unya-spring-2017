@@ -124,7 +124,7 @@ function unya_hero_banners() {
             url('$rectangle');
         }
         .nyc-banner{ 
-            background-image: linear-gradient(to bottom,rgba(74,74,74,0.7) 0%, rgba(74,74,74,0.7) 100%),
+            background-image: linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
             url('$nativeyouthcenterbanner');
         }
         .philosophy{
@@ -144,7 +144,7 @@ function unya_hero_banners() {
             url('$impacttitle');
         }   
         .nyc-title{
-            background-image:  linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
+            background-image: linear-gradient(to bottom,rgba(209,52,52,0.7) 0%, rgba(209,52,52,0.7) 100%),
             url('$nyctitle');
         } 
         .get-involved-title{
