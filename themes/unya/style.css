@@ -2837,6 +2837,12 @@ section.opportunities-pre-footer p {
   display: flex;
   position: relative;
   height: 100%; }
+  @media (min-width: 540px) {
+    .program-archive-item .program-thumb {
+      min-width: 25rem; } }
+  @media (min-width: 800px) {
+    .program-archive-item .program-thumb {
+      min-width: 33rem; } }
 
 .program-item-footer-wrapper {
   display: -ms-flexbox;
