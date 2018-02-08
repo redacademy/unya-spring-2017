@@ -87,6 +87,65 @@ get_header(); ?>
 						</div>
 					</div>
 				</section>
+				<h2 class="accordion-label" id="partners">Partners</h2>
+				<section class="partners">
+					<header class="section-heading">
+						<h2 class="content-wrapper">Partners</h2>
+					</header>
+					<div class="content-wrapper">
+						<ul class="content-wrapper nyc-partners">
+							<?php $partners = CFS()->get( 'partners' ); ?>
+							<?php foreach ( $partners as $partner ) : ?>
+								<li class="partner">
+									<img src="<?php echo ( $partner['partner_logo'] ); ?>">
+								</li>
+							<?php endforeach; ?>
+						</ul>
+					</div>
+				</section>
+				<div class="top-news-carousel-wrapper" id="youth-center-resources-carousel">
+				<?php
+						$args = array(
+							'post_type'      => 'news',
+							'posts_per_page' => 3,
+							'tag'            => 'nyc-resource', 
+						);
+						$nyc_resource_query = new WP_Query($args);
+					?>
+					<?php if( $nyc_resource_query->have_posts() ): while ( $nyc_resource_query->have_posts() ) : $nyc_resource_query->the_post(); ?>
+					<div class="top-news-carousel-item">
+						<div class="top-news-item-image">
+							<img class="news-carousel-image" src="<?php echo esc_url( the_post_thumbnail('large') ); ?>">
+						</div>
+						<div class="top-news-item-footer">
+						<h3 class="news-headline">
+							<?php $internal = CFS()->get( 'internal_news_post' );
+							?>
+							<?php if ($internal) : ?>
+							<a href="<?php the_permalink(); ?>">
+							<?php else : ?>
+							<a href="<?php echo CFS()->get( 'article_url' ); ?>">
+							<?php endif; ?>
+							<?php the_title();?>
+							</a>
+						</h3>		
+							<?php $internal = CFS()->get( 'internal_news_post' );
+							?>
+							<?php if ($internal) : ?>
+						<a class="news-link" href="<?php the_permalink(); ?>">
+						<?php else : ?>
+						<a class="news-link" href="<?php echo CFS()->get( 'article_url' ); ?>">
+						<?php endif; ?>
+						Read More
+							<i class="fa fa-arrow-right" aria-hidden="true"></i>
+						</a>
+						</div>	
+					</div>	
+					<?php endwhile; ?>
+					<?php endif; 
+						wp_reset_query();
+					?>
+				</div>
 			</div>
 				<?php get_template_part( 'template-parts/prefooter', 'nycdonate' ); ?>
 			</div>

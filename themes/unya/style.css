@@ -3229,7 +3229,7 @@ section.opportunities-pre-footer p {
       display: flex; } }
 
 @media (min-width: 800px) {
-  .nyc-content .realizing .content-wrapper, .nyc-content .ways-to-help-inner .content-wrapper, .nyc-content .need .content-wrapper:nth-child(2), .nyc-content .nyc-banner .content-wrapper:nth-child(2) {
+  .nyc-content .partners .content-wrapper:nth-child(2), .nyc-content .realizing .content-wrapper, .nyc-content .ways-to-help-inner .content-wrapper, .nyc-content .need .content-wrapper:nth-child(2), .nyc-content .nyc-banner .content-wrapper:nth-child(2) {
     padding-bottom: 1rem; } }
 
 .nyc-content .vision {
@@ -3301,8 +3301,7 @@ section.opportunities-pre-footer p {
     margin-top: 4rem; } }
 
 .planning .section-heading {
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap; }
   @media (min-width: 540px) {
@@ -3439,6 +3438,65 @@ section.opportunities-pre-footer p {
         background: #A70000; }
         .ways-to-help-inner .section-heading h2 {
           color: #fff; } }
+
+.partners .section-heading {
+  display: none; }
+  @media (min-width: 800px) {
+    .partners .section-heading {
+      display: -ms-flexbox;
+      display: flex; } }
+
+ul.nyc-partners {
+  margin: 0;
+  padding: 2rem 0;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none; }
+  @media (min-width: 540px) {
+    ul.nyc-partners {
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; } }
+  @media (min-width: 800px) {
+    ul.nyc-partners {
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
+  ul.nyc-partners .partner {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+    margin: 2rem 0; }
+    @media (min-width: 540px) {
+      ul.nyc-partners .partner {
+        margin: 2rem;
+        max-width: 40%; } }
+    @media (min-width: 800px) {
+      ul.nyc-partners .partner {
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%;
+        max-width: 40%;
+        margin: 2rem; } }
+
+#youth-center-resources-carousel {
+  padding: 1rem 9rem 0 17.42857rem !important;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  background: #D13434 !important; }
+  @media (min-width: 540px) {
+    #youth-center-resources-carousel {
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      padding: 1rem 3rem 1rem 3rem; } }
+  @media (min-width: 800px) {
+    #youth-center-resources-carousel {
+      padding: 0 10% 0 17.428571429rem; } }
 
 .nyc-anchor {
   margin-top: -54px;
