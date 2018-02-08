@@ -25,7 +25,7 @@ get_header();  ?>
 				<?php if( $top_query->have_posts() ): while ( $top_query->have_posts() ) : $top_query->the_post(); ?>
 				<div class="top-news-carousel-item">
  				  <div class="top-news-item-image">
-  					<img class="news-carousel-image" src="<?php the_post_thumbnail('large'); ?>">
+  					<?php the_post_thumbnail('large'); ?>
 					</div>
 					<div class="top-news-item-footer">
 						<h3 class="news-headline">
