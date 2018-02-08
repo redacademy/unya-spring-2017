@@ -10,10 +10,10 @@
  );
 
  $news = get_posts($args);
- $trimmed_excerpt = wp_trim_words( custom_field_excerpt('article_text'), 20 );
+ $trimmed_excerpt = wp_trim_words( custom_field_excerpt('article_text'), 12 );
 ?>
 			<li class="news-single">
-        <div class="news-title-block">	
+        <div class="news-title-block">
 				  <?php the_post_thumbnail('large'); ?>					 
         </div>
         <div class="news-details">
