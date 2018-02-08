@@ -26,7 +26,7 @@
 					  <a href="<?php the_permalink() ?>">
 					    <div class="gradient"></div>
 					    <?php if ( has_post_thumbnail() ) : ?>
-					    	<?php the_post_thumbnail( 'medium' ); ?>
+					    	<?php the_post_thumbnail( 'medium', array('class' => 'program-thumb')); ?>
 					  	<?php endif; ?>
 					  	<div class="program-item-footer-wrapper education-title">
 							  <img class="hidden-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/education-program.svg">
@@ -59,7 +59,7 @@
 					  <a href="<?php the_permalink() ?>">
 					  <div class="gradient"></div>
 					  <?php if ( has_post_thumbnail() ) : ?>
-					  	<?php the_post_thumbnail( 'medium' ); ?>
+					  	<?php the_post_thumbnail( 'medium', array('class' => 'program-thumb') ); ?>
 						<?php endif; ?>
 						  <div class="program-item-footer-wrapper personal-support-title">
 					      <h4 class="program-name"><?php the_title(); ?></h4>
@@ -92,7 +92,7 @@
 					  <a href="<?php the_permalink() ?>">
 					  <div class="gradient"></div>
 					  <?php if ( has_post_thumbnail() ) : ?>
-					  	<?php the_post_thumbnail( 'medium' ); ?>
+					  	<?php the_post_thumbnail( 'medium', array('class' => 'program-thumb') ); ?>
 						<?php endif; ?>
 						  <div class="program-item-footer-wrapper housing-title">
 								<img class="hidden-mobile program-logo" src="<?php echo get_stylesheet_directory_uri()?>/assets/images/live-in-program.svg">
@@ -125,7 +125,7 @@
 					  <a href="<?php the_permalink() ?>">
 					  <div class="gradient"></div>
 					  <?php if ( has_post_thumbnail() ) : ?>
-					  	<?php the_post_thumbnail( 'medium' ); ?>
+					  	<?php the_post_thumbnail( 'medium', array('class' => 'program-thumb') ); ?>
 						<?php endif; ?>
 						  <div class="program-item-footer-wrapper community-title">						
 								<h4 class="program-name"><?php the_title(); ?></h4>
