@@ -28,7 +28,7 @@
 					<h4 class="hidden-mobile">Contact Us</h4>
 					<div class="contact-details">
 						<p class="hidden-mobile">Urban Native Youth Association</p>
-						<a target="_blank" href="http://maps.google.com/maps?q=1630+Hastings+Street+East,+Vancouver,+BC"><p>1630 Hastings Street East</p></a>
+						<a target="_blank" href="http://maps.google.com/maps?q=1618+East+Hastings+Street+East,+Vancouver,+BC"><p>1618 East Hastings Street East</p></a>
 					</div>
 					<div class="contact-details">
 						<a href="tel:+16042547732"><p>604-254-7732</p></a>
