@@ -4149,7 +4149,8 @@ ul.nyc-partners {
       padding: 1rem 5rem; } }
   @media (min-width: 800px) {
     .single-news-tag-wrapper {
-      padding: 0 9rem 0 17.428571429rem; } }
+      padding: 0 9rem 0 17.428571429rem;
+      margin-bottom: 2rem; } }
   .single-news-tag-wrapper a {
     text-decoration: none;
     color: black; }
