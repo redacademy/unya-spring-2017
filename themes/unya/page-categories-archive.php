@@ -22,7 +22,7 @@ get_header();  ?>
         <a class="hidden-mobile" href="<?php echo $root . '/?s=' . $new_str ?>">
           <div class="resource-archive-section-header cat-archive-header hidden-mobile ">
             <div class="gradient-wrapper"></div>
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/cedarwalk-banner.png' ?>" />
+            <img src="<?php echo the_post_thumbnail('large') ?>" />
             <h3><?php echo $tag->name; ?></h3>
           </div>
         </a>  
