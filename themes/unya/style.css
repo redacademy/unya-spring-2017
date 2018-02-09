@@ -2254,7 +2254,7 @@ section.opportunities-pre-footer p {
           justify-content: center; } }
   @media (min-width: 800px) {
     .about-content ul .image-wrapper {
-      min-height: 10rem; } }
+      min-height: 12rem; } }
   .about-content ul i {
     color: #FFF;
     font-size: 4.5rem; }
