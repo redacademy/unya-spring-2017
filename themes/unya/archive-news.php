@@ -113,7 +113,7 @@ get_header();  ?>
 			    	<p class="city">1618 East Hastings Street</p>
 			    </div>
 			    <div class="contact-wrapper news-contact" id="tester">
-			    		<a href="tel:+16043795068"><p><span class="fa fa-phone" aria-hidden="true"></span>604-379-5068</p></a>
+			    		<p><span class="fa fa-phone" aria-hidden="true"></span><a href="tel:+16043795068">604-379-5068</a></p>
 			    	<p><span class="fa fa-envelope-o" aria-hidden="true"></span>communications@unya.bc.ca</p>
 				  </div>
 				</span>
