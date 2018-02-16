@@ -110,11 +110,11 @@ get_header();  ?>
 			    <div class="contact-wrapper news-contact">
 			    	<p><span class="fa fa-map-marker" aria-hidden="true"></span>Urban Native Youth</p>
 			    	<p class="city" id="prefooter-association">Association</p>
-			    	<p class="city">1630 Hastings Street East</p>
+			    	<p class="city">1618 East Hastings Street</p>
 			    </div>
 			    <div class="contact-wrapper news-contact" id="tester">
-			    	<p><span class="fa fa-phone" aria-hidden="true"></span>891-924-6416</p>
-			    	<p><span class="fa fa-envelope-o" aria-hidden="true"></span>unya@unya.bc.ca</p>
+			    		<p><span class="fa fa-phone" aria-hidden="true"></span><a href="tel:+16043795068">604-379-5068</a></p>
+			    	<p><span class="fa fa-envelope-o" aria-hidden="true"></span>communications@unya.bc.ca</p>
 				  </div>
 				</span>
 			</section>
