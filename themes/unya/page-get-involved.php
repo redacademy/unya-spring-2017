@@ -102,7 +102,7 @@ get_header(); ?>
 		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<section id="get-involved-footer-section" class="pre-footer fit-button opportunities-pre-footer">
+	<section id="get-involved-footer-section" class="pre-footer fit-button opportunities-pre-footer sidebar-stop">
 		<p>Interested in partnering with one of our programs? Get in touch with our program staff to talk about how you can be involved.</p>
 		<a class="get-involved-footer-button" href="programs"><p class="involved-button-text">Explore Programs</p></a>
 	</section>

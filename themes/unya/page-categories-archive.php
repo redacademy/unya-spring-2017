@@ -25,7 +25,7 @@ get_header();  ?>
             <img src="<?php echo the_post_thumbnail('large') ?>" />
             <h3><?php echo $tag->name; ?></h3>
           </div>
-        </a>  
+        </a>
         <?php endforeach; endif; ?>
       </div><!-- resource-archive-main -->
     </main><!-- #main -->
