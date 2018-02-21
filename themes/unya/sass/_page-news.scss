@@ -435,17 +435,17 @@ display:none;
 .single-news-wrapper {
   display: flex;
   flex-flow: column nowrap;
-  p {
+  p, h1, h2, h3, h4, h5, h6 {
     margin: 1rem 2rem;
   }
   @include tablet {
-    p {
+    p, h1, h2, h3, h4, h5, h6 {
       margin: 1rem 5rem;
     }
   }
   @include desktop {
     width: 100%;
-    p {
+    p, h1, h2, h3, h4, h5, h6 {
       margin: 0 9rem 0 17.428571429rem;
     }
   }
