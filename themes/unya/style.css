@@ -546,10 +546,6 @@ textarea {
       .ctct-form-field-email input[type=email] {
         width: 100%; } }
 
-::-webkit-input-placeholder {
-  padding-left: 10px;
-  color: black; }
-
 :-ms-input-placeholder {
   padding-left: 10px;
   color: black; }
@@ -647,9 +643,6 @@ input[type=submit] {
 
 #search-label {
   width: 75%; }
-
-.search-field::-webkit-input-placeholder {
-  color: #BABABA; }
 
 .search-field:-ms-input-placeholder {
   color: #BABABA; }
@@ -3936,15 +3929,15 @@ ul.nyc-partners {
   display: flex;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap; }
-  .single-news-wrapper p {
+  .single-news-wrapper p, .single-news-wrapper h1, .single-news-wrapper h2, .single-news-wrapper h3, .single-news-wrapper h4, .single-news-wrapper h5, .single-news-wrapper h6 {
     margin: 1rem 2rem; }
   @media (min-width: 540px) {
-    .single-news-wrapper p {
+    .single-news-wrapper p, .single-news-wrapper h1, .single-news-wrapper h2, .single-news-wrapper h3, .single-news-wrapper h4, .single-news-wrapper h5, .single-news-wrapper h6 {
       margin: 1rem 5rem; } }
   @media (min-width: 800px) {
     .single-news-wrapper {
       width: 100%; }
-      .single-news-wrapper p {
+      .single-news-wrapper p, .single-news-wrapper h1, .single-news-wrapper h2, .single-news-wrapper h3, .single-news-wrapper h4, .single-news-wrapper h5, .single-news-wrapper h6 {
         margin: 0 9rem 0 17.428571429rem; } }
 
 #single-news-title {

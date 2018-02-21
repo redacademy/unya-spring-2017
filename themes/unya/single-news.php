@@ -24,7 +24,7 @@ get_header(); ?>
 					  		$quote = CFS()->get('news_story_quote');
 					  		if($quote) :
 					  	?>
-					  		<h2 class="news-story-quote hidden-desktop"><?php echo '"' . $quote . '"' ?></h2>
+					  		<h2 class="news-story-quote hidden-desktop"><?php echo $quote; ?></h2>
 					  	<?php else : null ?>	
 					  		<?php endif; ?>
 			      	<?php the_post_thumbnail('large'); ?>
