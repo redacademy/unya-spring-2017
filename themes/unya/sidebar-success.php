@@ -29,6 +29,7 @@
 		wp_reset_query();
 		echo '<li class="menu-item-archive"><a href="' . get_site_url() . '/impact/#statistics">Statistics</a></li>';
 		echo '<li class="menu-item-archive"><a href="' . get_site_url() . '/impact/#testimonials">Testimonials</a></li>';
+		echo '<li class="menu-item-archive"><a href="' . get_site_url() . '/impact/">Back to Impact</a></li>';
 		echo '</ul>';
 	?>
 	</div>
