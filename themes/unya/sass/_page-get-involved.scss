@@ -23,6 +23,7 @@ section.donation{
   }
 }
 
+// actually donation banner on home page
 .donation-call {
   width: 100%;
   padding: 1rem;
@@ -34,6 +35,7 @@ section.donation{
   text-align: center;
 
   @include desktop {
+    // text-align: left;
     padding: 2.285714rem 0;
   }
 
@@ -44,14 +46,14 @@ section.donation{
     justify-content: space-around;
 
     @include desktop {
-      padding: 0 8.6428571429rem 0 17.428571429rem;
+      padding: 0 8.6428571429rem;
       flex-direction: row;
       justify-content: space-between;
     }
   }
 
   h3 {
-    margin: 1rem 0;
+    margin: 1rem;
     font-weight: 400;
     color: #FFF;
     @include tablet {
