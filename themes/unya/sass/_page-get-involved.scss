@@ -9,10 +9,11 @@ section.donation{
 
 }
 .donation p {
+  font-family: $font__main;
   @include desktop {
-    font-family: $font__heading;
-    font-size: $desktop__main;
-    line-height: 2.5714285714rem;
+    // font-family: $font__heading;
+    // font-size: $desktop__main;
+    // line-height: 2.5714285714rem;
   }
 }
 
@@ -20,76 +21,17 @@ section.donation{
   width: 100%;
   @include desktop {
     padding-top: 2rem;
+    margin-top: 0;
   }
 }
-
-// actually donation banner on home page
-.donation-call {
-  width: 100%;
-  padding: 1rem;
+.donate-footer-sub-wrapper {
   display: flex;
-
   justify-content: center;
-  background-color: $color__red-dark;
-  color: #FFF;
-  text-align: center;
+}
 
-  @include desktop {
-    // text-align: left;
-    padding: 2.285714rem 0;
-  }
-
-  .content-wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-
-    @include desktop {
-      padding: 0 8.6428571429rem;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
-
-  h3 {
-    margin: 1rem;
-    font-weight: 400;
-    color: #FFF;
-    @include tablet {
-      font-size: 20px;
-    }
-    @include desktop {
-      font-size: 32px;
-      font-weight: 600;
-    }
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .donate-button {
-    height: 3.5714285714rem;
-    margin: 1rem 0;
-    padding: 1rem 3rem;
-    font-size: 16px;
-    background-color: $color__red-medium;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
-    font-weight: normal;
-
-    &:hover {
-      background-color: $color__red-dark;
-    }
-
-    @include desktop {
-      padding: 1rem 1.5rem 3.1rem 1.5rem;
-      font-size: 24px;
-      width: 18rem;
-    }
-  }
-
+.donate-footer-sub {
+  font-size: 1rem;
+  text-align: left;
 }
 
 .opportunities {
@@ -98,15 +40,15 @@ section.donation{
   }
 
   p {
-    font-size: $desktop__main;
-    line-height: 2.2857142857rem;
+    // font-size: $desktop__main;
+    // line-height: 2.2857142857rem;
   }
 }
 
 .employment-list-container {
   margin: 0;
   padding-left: 1.5rem;
-  font-size: $desktop__main;
+  // font-size: $desktop__main;
   line-height: 2.2857142857rem;
 }
 
@@ -264,15 +206,7 @@ section.donation{
   cursor: pointer;
 }
 
-.donate-footer-sub-wrapper {
-  display: flex;
-  justify-content: center;
-}
 
-.donate-footer-sub {
-  font-size: 0.75rem;
-  text-align: left;
-}
 
 #get-involved-footer-section {
   @include tablet {
@@ -316,4 +250,73 @@ section.donation{
 
 #important-note-icon {
   margin-right: 1rem;
+}
+
+// actually donation banner on home page
+.donation-call {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+
+  justify-content: center;
+  background-color: $color__red-dark;
+  color: #FFF;
+  text-align: center;
+
+  @include desktop {
+    // text-align: left;
+    padding: 2.285714rem 0;
+  }
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include desktop {
+      padding: 0 8.6428571429rem;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  h3 {
+    margin: 1rem;
+    font-weight: 400;
+    color: #FFF;
+    @include tablet {
+      font-size: 20px;
+    }
+    @include desktop {
+      font-size: 32px;
+      font-weight: 600;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .donate-button {
+    height: 3.5714285714rem;
+    margin: 1rem 0;
+    padding: 1rem 3rem;
+    font-size: 16px;
+    background-color: $color__red-medium;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+    font-weight: normal;
+
+    &:hover {
+      background-color: $color__red-dark;
+    }
+
+    @include desktop {
+      padding: 1rem 1.5rem 3.1rem 1.5rem;
+      font-size: 24px;
+      width: 18rem;
+    }
+  }
+
 }
