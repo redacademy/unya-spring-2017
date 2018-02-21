@@ -4203,15 +4203,39 @@ section.donation {
       padding-top: 2rem;
       margin-top: 0; } }
 
+.donation-section-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center; }
+  @media (min-width: 540px) {
+    .donation-section-wrapper {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
+
+.donation .donation-button {
+  background: white; }
+  @media (min-width: 540px) {
+    .donation .donation-button {
+      width: 70%; } }
+
 .donate-footer-sub-wrapper {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  width: 100%; }
+  @media (min-width: 800px) {
+    .donate-footer-sub-wrapper {
+      padding: 0; } }
 
 .donate-footer-sub {
-  font-size: 1rem;
-  text-align: left; }
+  text-align: center;
+  font-size: 0.8rem; }
+  @media (min-width: 540px) {
+    .donate-footer-sub {
+      text-align: left; } }
 
 @media (min-width: 800px) {
   .opportunities {
@@ -4219,8 +4243,11 @@ section.donation {
 
 .employment-list-container {
   margin: 0;
-  padding-left: 1.5rem;
-  line-height: 2.2857142857rem; }
+  padding-left: 2.5rem;
+  line-height: 2rem; }
+
+.employment-list {
+  font-size: 1rem; }
 
 .bold-subheading {
   font-weight: 600; }
@@ -4321,9 +4348,6 @@ section.donation {
     .donate-section-banner {
       width: 60%;
       border-radius: 0px 0px 0px 50px; } }
-
-.donation .donation-button {
-  background: white; }
 
 .get-involved-footer-button {
   text-decoration: none;

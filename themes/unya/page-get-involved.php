@@ -21,17 +21,17 @@ get_header(); ?>
 			<div class="content-wrapper">
 				<p><?php echo wp_kses(CFS()->get( 'donation_intro_paragraph' ),array('br') ); ?></p>
 			</div>
-     <section class="donation-button">
-	
-		<h2><a target="_blank" href="https://www.canadahelps.org/en/charities/urban-native-youth-association/">Donate <span class="hidden-mobile">Today</span></a></h2>
-		</section>
-			<div class="donate-footer-sub-wrapper content-wrapper">
-				<p class="donate-footer-sub">UNYA is a not-for-profit society registered with the Province of BC
-					and a charitable organization 129836292 RRO001 registered with the 
-					Government of Canada
-				</p>
+     	<div class="content-wrapper donation-section-wrapper">
+				<section class="donation-button">
+					<h2><a target="_blank" href="https://www.canadahelps.org/en/charities/urban-native-youth-association/">Donate <span class="hidden-mobile">Today</span></a></h2>
+				</section>
+				<div class="content-wrapper donate-footer-sub-wrapper">
+					<p class="donate-footer-sub">UNYA is a not-for-profit society registered with the Province of BC
+						and a charitable organization 129836292 RRO001 registered with the 
+						Government of Canada
+					</p>
+				</div>
 			</div>
-
 		</section>
 
 		<div class="accordion" id="accordion">

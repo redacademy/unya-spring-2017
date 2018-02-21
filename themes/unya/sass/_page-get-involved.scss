@@ -24,32 +24,61 @@ section.donation{
     margin-top: 0;
   }
 }
+
+.donation-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @include tablet {
+    flex-direction: row;
+  }
+}
+
+.donation{
+  .donation-button{
+    background:white;
+
+    @include tablet {
+      width: 70%;
+    }
+  }
+}
+
 .donate-footer-sub-wrapper {
   display: flex;
   justify-content: center;
+  width: 100%;
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .donate-footer-sub {
-  font-size: 1rem;
-  text-align: left;
+  text-align: center;
+  font-size: 0.8rem;
+
+  @include tablet {
+    text-align: left;
+  }
 }
 
 .opportunities {
   @include desktop {
     margin-top: 5.3571428571rem;
   }
-
-  p {
-    // font-size: $desktop__main;
-    // line-height: 2.2857142857rem;
-  }
 }
 
 .employment-list-container {
   margin: 0;
-  padding-left: 1.5rem;
+  padding-left: 2.5rem;
   // font-size: $desktop__main;
-  line-height: 2.2857142857rem;
+  line-height: 2rem;
+}
+
+.employment-list {
+  font-size: 1rem;
 }
 
 .bold-subheading {
@@ -163,11 +192,6 @@ section.donation{
     border-radius: 0px 0px 0px 50px;
   }
 } 
-.donation{
-  .donation-button{
-    background:white;
-  }
-}
 
 .get-involved-footer-button {
   text-decoration: none;
