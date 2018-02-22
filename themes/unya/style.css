@@ -2362,6 +2362,12 @@ section.opportunities-pre-footer p {
     .about-leadership-heading {
       padding-left: initial; } }
 
+@media (min-width: 800px) {
+  .about-header {
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 2.28571rem; } }
+
 .calendar-header {
   position: relative;
   display: none;
