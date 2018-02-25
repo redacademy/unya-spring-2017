@@ -19,15 +19,14 @@ get_header(); ?>
 			<h1>About UNYA</h1>
 		</div>
 		<section class="vision" id="vision">
-					<div class="content-wrapper">
-						<h2 class="about-header">Vision &amp; Mission</h2>
-						<p><?php echo wp_kses( CFS()->get( 'vision' ),array('br') ); ?></p>
-					</div>
-				</section>
+			<div class="content-wrapper">
+				<h2 class="about-header">Vision &amp; Mission</h2>
+				<p><?php echo wp_kses( CFS()->get( 'vision' ),array('br') ); ?></p>
+			</div>
+		</section>
 		<div class="accordion" id="accordion">
 			<h2 class="accordion-label">Philosophy of Care</h2>
 			<div>
-
 				<section class="philosophy" id="philosophy">
 					<div class="content-wrapper philosophy-content-wrapper">
 						<h2 class="philosophy-header-desktop">Philosophy of Care</h2>

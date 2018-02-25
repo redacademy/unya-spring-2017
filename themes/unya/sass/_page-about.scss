@@ -305,8 +305,8 @@
   display: none;
   @include desktop {
     display: initial;
-    font-family: $font__heading;
-    font-weight: 500;
+    font-family: $font__main;
+    font-weight: bold;
   }
 }
 
@@ -318,19 +318,18 @@
 
 .about-leadership-heading {
   padding-left: 2rem;
-  font-family: $font__heading;
-  font-weight: 500;
+  font-family: $font__main;
+  font-weight: bold;
   @include desktop {
     padding-left: initial;
   }
 }
 
 .about-header {
-
   @include desktop {
     font-style: normal;
-    font-weight: 500 !important;
-    font-size: 2.28571rem;
+    font-weight: bold;
+    font-size: $desktop__h2;
   }
 
 }
