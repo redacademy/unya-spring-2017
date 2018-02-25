@@ -1,0 +1,15 @@
+.page-template-page-custom {
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .custom-wrapper {
+    padding: 0 7.5%;
+
+    @include desktop {
+      width: 100%;
+      padding: 0 15.714285714rem 0 17.428571429rem;
+    }
+  }
+}
