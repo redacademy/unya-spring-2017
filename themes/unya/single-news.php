@@ -14,7 +14,7 @@ get_header(); ?>
 			<a class="back-link news-back" href='news'><i class="fa fa-arrow-left" aria-hidden="true"></i>Back to News</a>
 			<h2 id="single-news-title"><?php the_title(); ?></h2>
 			<p class="single-news-datestamp"><?php echo get_the_date(); ?></p>
-			<div class="single-news-main">
+			<div class="single-news-main content-wrapper">
 			  <div class="single-news-wrapper">
 					<p><?php echo CFS()->get('first_half_of_news_story') ?></p>
 					<span class="single-news-desktop-controller">
