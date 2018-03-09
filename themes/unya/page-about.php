@@ -18,9 +18,9 @@ get_header(); ?>
 		<div class="header-wrapper about-title sidebar-start">
 			<h1>About UNYA</h1>
 		</div>
-		<section class="vision" id="vision">
+		<section class="vision" id="what-we-do">
 			<div class="content-wrapper">
-				<h2 class="about-header">Vision &amp; Mission</h2>
+				<h2 class="about-header">What We Do</h2>
 				<p><?php echo wp_kses( CFS()->get( 'vision' ),array('br') ); ?></p>
 			</div>
 		</section>
