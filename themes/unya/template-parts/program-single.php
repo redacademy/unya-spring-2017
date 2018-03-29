@@ -37,7 +37,7 @@
 		  $args = array(
 				'post_type'      => 'news',
 				'posts_per_page' => 3,
-				'tag_slug__in'            => $prog_str,
+				'tag_slug__in'   => $prog_str,
 			);
 			$prog_resources = new WP_Query($args);
 		?>
@@ -45,42 +45,41 @@
     <div class="program-resource-wrapper content-wrapper">
 			<h2 class="program-resources-box-header">Resources</h2>
 
-			<?php	
-				if( $prog_resources->have_posts() ) : while( $prog_resources->have_posts() ) : $prog_resources->the_post();
-					$trimmed_excerpt = wp_trim_words( custom_field_excerpt('article_text'), 8 );
-			?>
-			  <div class="prog-resource-item">
-          <div class="prog-resource-image hidden-mobile">
-          	<?php echo (the_post_thumbnail('large')); ?>
-          </div>
-					<div class="prog-resource-info">
-						<h3 class="prog-headline">
-							<a href="<?php 
-							  $internal = CFS()->get('internal_news_post');
-								if ($internal) :
-									echo the_permalink();
-								else :
-									echo CFS()->get( 'article_url' ); 								
-								endif;	
-							?>"><?php the_title();?></a></h3>			
-						<p><?php echo $trimmed_excerpt; ?></p>
-						<div class="news-url" id="prog-url">
-							<a class="news-link" href="<?php 
-								if ($internal) :
-									echo the_permalink();
-								else :
-									echo CFS()->get( 'article_url' ); 								
-								endif;	
-							?>">Read More
-					  	  <i class="fa fa-arrow-right" aria-hidden="true"></i>
-					    </a>
-            </div>		
-				  </div>		
-				</div>	
-		  <?php endwhile; ?>
-			<?php endif; ?>	
+			<?php	if ( $prog_resources->have_posts() ) : while ( $prog_resources->have_posts() ) : $prog_resources->the_post(); ?>
+			<?php $trimmed_excerpt = wp_trim_words( custom_field_excerpt('article_text'), 8 ); ?>
+			<div class="prog-resource-item">
+				<div class="prog-resource-image hidden-mobile">
+					<?php echo the_post_thumbnail('large'); ?>
+				</div>
+				<div class="prog-resource-info">
+					<h3 class="prog-headline">
+						<a href="<?php
+							$internal = CFS()->get('internal_news_post');
+							if ($internal) :
+								echo the_permalink();
+							else :
+								echo CFS()->get( 'article_url' );
+							endif;	
+						?>"><?php the_title();?></a></h3>
+					<p><?php echo $trimmed_excerpt; ?></p>
+					<div class="news-url" id="prog-url">
+						<a class="news-link" href="<?php 
+							if ($internal) :
+								echo the_permalink();
+							else :
+								echo CFS()->get( 'article_url' );
+							endif;	
+						?>">Read More
+							<i class="fa fa-arrow-right" aria-hidden="true"></i>
+						</a>
+					</div>		
+				</div>		
+				</div>
+			<?php endwhile; else : ?>
+			<?php endif; ?>
 		</div>
 		<?php endif; ?>
+		<?php wp_reset_postdata(); ?>
 
 	</div>
 
