@@ -610,6 +610,9 @@ input[type=submit] {
         justify-content: space-between;
     border: none;
     padding-top: 3px; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+      .search-form .search-fieldset {
+        padding-top: 0; } }
     .search-form .search-fieldset .search-submit {
       position: absolute;
       left: 3%;
@@ -852,6 +855,9 @@ a {
       flex-wrap: wrap;
   height: 61%;
   z-index: 299; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .site-header.expanded {
+      height: 63%; } }
   @media (min-width: 540px) {
     .site-header.expanded {
       height: 70%; } }
@@ -865,6 +871,9 @@ a {
         flex-basis: 100%;
     background: #fff;
     height: 60%; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+      .site-header.expanded .main-navigation {
+        height: 65%; } }
     @media (min-width: 540px) {
       .site-header.expanded .main-navigation {
         height: 80%; } }
@@ -913,6 +922,9 @@ a {
     text-decoration: none; }
   .site-footer.expanded .subscription-form.display-form {
     height: 100%; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .site-footer.expanded {
+      height: 34%; } }
 
 .menu-gradient {
   background: rgba(255, 255, 255, 0.6);
@@ -1823,6 +1835,11 @@ section.opportunities-pre-footer p {
       width: 230px;
       height: 50px;
       margin: 15px 0px; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+        .site-footer .newsletter-sign-up button.sign-up-btn {
+          height: 40px;
+          margin: 0;
+          margin-top: 9%; } }
       @media (min-width: 800px) {
         .site-footer .newsletter-sign-up button.sign-up-btn {
           display: none !important; } }
@@ -1892,6 +1909,9 @@ section.opportunities-pre-footer p {
       padding: 0 1.2rem;
       color: #FFF;
       font-size: 3.5rem; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+        .site-footer .social-links a {
+          font-size: 2rem; } }
       @media (min-width: 800px) {
         .site-footer .social-links a {
           color: #00277E; } }
