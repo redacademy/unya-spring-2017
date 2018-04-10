@@ -2,7 +2,7 @@
 /**
  * Template part for displaying posts.
  *
- * @package RED_Starter_Theme
+ * @package UNYA teme
  */
  $args= array(
      'post_type'=> 'news',
@@ -14,7 +14,7 @@
 ?>
 			<li class="news-single">
         <div class="news-title-block">
-				  <?php the_post_thumbnail('large'); ?>					 
+				  <?php the_post_thumbnail('large'); ?>
         </div>
         <div class="news-details">
 			  	<h3 class="news-headline">

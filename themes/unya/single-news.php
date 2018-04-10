@@ -12,9 +12,11 @@ get_header(); ?>
 	    	<h1>unya news</h1>
 			</div>
 			<a class="back-link news-back" href='news'><i class="fa fa-arrow-left" aria-hidden="true"></i>Back to News</a>
-			<h2 id="single-news-title"><?php the_title(); ?></h2>
-			<p class="single-news-datestamp"><?php echo get_the_date(); ?></p>
-			<div class="single-news-main content-wrapper">
+			<div>
+				<h2 id="single-news-title"><?php the_title(); ?></h2>
+				<p class="single-news-datestamp"><?php echo get_the_date(); ?></p>
+			</div>
+			<div class="single-news-main">
 			  <div class="single-news-wrapper">
 					<p><?php echo CFS()->get('first_half_of_news_story') ?></p>
 					<span class="single-news-desktop-controller">
@@ -33,7 +35,7 @@ get_header(); ?>
 					  	<h2><?php echo $quote; ?></h2>
 					  </div>	
 					</span>
-					<p><?php echo CFS()->get('second_half_of_news_story') ?></p>				
+					<p><?php echo CFS()->get('second_half_of_news_story') ?></p>
 				</div>
 			</div><!--single-news-main-->
 			<div class="single-news-tag-wrapper">

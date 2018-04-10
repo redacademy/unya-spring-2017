@@ -3926,13 +3926,16 @@ ul.nyc-partners {
 
 .single-news-main {
   margin: 1rem 0rem;
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
   height: auto;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
   @media (min-width: 800px) {
     .single-news-main {
       margin-bottom: 3rem; } }
@@ -3943,18 +3946,19 @@ ul.nyc-partners {
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap; }
   .single-news-wrapper p, .single-news-wrapper h1, .single-news-wrapper h2, .single-news-wrapper h3, .single-news-wrapper h4, .single-news-wrapper h5, .single-news-wrapper h6 {
-    margin: 1rem 2rem; }
+    width: 85%;
+    margin: auto; }
   @media (min-width: 540px) {
     .single-news-wrapper p, .single-news-wrapper h1, .single-news-wrapper h2, .single-news-wrapper h3, .single-news-wrapper h4, .single-news-wrapper h5, .single-news-wrapper h6 {
       margin: 1rem 5rem; } }
   @media (min-width: 800px) {
     .single-news-wrapper {
-      width: 100%; }
-      .single-news-wrapper p, .single-news-wrapper h1, .single-news-wrapper h2, .single-news-wrapper h3, .single-news-wrapper h4, .single-news-wrapper h5, .single-news-wrapper h6 {
-        margin: 0 9rem 0 17.428571429rem; } }
+      width: 100%; } }
 
 #single-news-title {
-  margin: 1rem 2rem 0 2rem;
+  width: 85%;
+  margin: auto;
+  padding: .5rem 0;
   font-family: "poppins", sans-serif; }
   @media (min-width: 540px) {
     #single-news-title {
@@ -3996,6 +4000,9 @@ ul.nyc-partners {
   .single-news-tax p {
     margin: 5px;
     color: black; }
+
+.single-news-desktop-controller {
+  padding: 1rem 0; }
 
 .single-news-image-wrapper {
   width: 100%;
@@ -4098,8 +4105,12 @@ ul.nyc-partners {
   z-index: 4;
   font-family: "worksans", sans-serif;
   font-weight: 100;
-  padding: 2rem;
-  font-size: 1.25rem; }
+  font-size: 1.15rem;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 25%;
+  width: 80%; }
   @media (min-width: 540px) {
     .news-story-quote {
       padding: 4rem;
@@ -4178,9 +4189,8 @@ ul.nyc-partners {
 
 .single-news-datestamp {
   text-align: left;
-  padding: 1rem 2rem;
-  margin-bottom: 0;
-  margin-top: 0; }
+  margin: auto;
+  width: 85%; }
   @media (min-width: 540px) {
     .single-news-datestamp {
       padding: 1rem 5rem; } }
