@@ -3953,7 +3953,10 @@ ul.nyc-partners {
       margin: 0 5rem; } }
   @media (min-width: 800px) {
     .single-news-wrapper {
-      width: 100%; } }
+      width: 100%; }
+      .single-news-wrapper p, .single-news-wrapper h1, .single-news-wrapper h2, .single-news-wrapper h3, .single-news-wrapper h4, .single-news-wrapper h5, .single-news-wrapper h6 {
+        margin: 0;
+        padding-left: 17.428571429rem; } }
 
 #single-news-title {
   width: 85%;
@@ -3965,7 +3968,8 @@ ul.nyc-partners {
       margin-left: 5rem; } }
   @media (min-width: 800px) {
     #single-news-title {
-      margin-left: 17.428571429rem;
+      margin: 0;
+      padding-left: 17.428571429rem;
       margin-top: 3rem; } }
 
 .single-news-cat-wrapper {
@@ -4021,11 +4025,12 @@ ul.nyc-partners {
         top: -50%; } }
   @media (min-width: 800px) {
     .single-news-image-wrapper {
-      width: 30rem;
-      min-height: 100%;
-      border-radius: 0 0 0 40px;
-      margin-left: 0; }
+      height: 100%;
+      margin-left: 0;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
       .single-news-image-wrapper img {
+        border-radius: 0 0 0 40px;
         height: auto;
         position: relative;
         top: 0; } }
@@ -4140,22 +4145,25 @@ ul.nyc-partners {
     .news-quote-desktop-wrapper {
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
       -ms-flex-align: center;
           align-items: center;
-      width: 50%;
-      padding: 1rem; }
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
       .news-quote-desktop-wrapper h2 {
         color: #00277E;
         font-size: 1.75rem;
-        font-weight: 300; } }
+        font-weight: 300;
+        padding: 0;
+        padding-left: 0; } }
 
 @media (min-width: 800px) {
   .single-news-desktop-controller {
     display: -ms-flexbox;
     display: flex;
-    padding: 0 9rem 0 17.428571429rem;
+    width: 85%;
+    padding-left: 17.428571429rem;
     -ms-flex-pack: justify;
         justify-content: space-between; } }
 
@@ -4195,7 +4203,8 @@ ul.nyc-partners {
       margin-left: 5rem; } }
   @media (min-width: 800px) {
     .single-news-datestamp {
-      padding: 0 9rem 0 17.428571429rem;
+      margin: 0;
+      padding-left: 17.428571429rem;
       margin-top: 1rem;
       margin-bottom: 1rem; } }
 
