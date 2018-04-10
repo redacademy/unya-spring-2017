@@ -876,7 +876,7 @@ a {
         height: 65%; } }
     @media (min-width: 540px) {
       .site-header.expanded .main-navigation {
-        height: 80%; } }
+        height: 75%; } }
     .site-header.expanded .main-navigation .menu-primary-menu-container .menu {
       display: -ms-flexbox;
       display: flex;
