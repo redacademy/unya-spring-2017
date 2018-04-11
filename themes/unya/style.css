@@ -823,6 +823,8 @@ a {
   background: #fff;
   z-index: 9999;
   transition: all 0.4s linear; }
+  .site-header .header-background {
+    display: none; }
   .site-header .site-branding {
     padding: 1rem;
     background: url("../../assets/images/RED_UNYA_UI_LogoDesign_Assets_V1-1.png") no-repeat center;
@@ -847,20 +849,27 @@ a {
         display: block; } }
 
 .site-header.expanded {
-  background: #4263AB;
   position: absolute;
   left: 0;
   right: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 61%;
+  width: 100vw;
   z-index: 299; }
+  .site-header.expanded .header-background {
+    position: absolute;
+    z-index: -1;
+    background: #4263AB;
+    height: 50vh;
+    width: 100vw;
+    display: block; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .site-header.expanded {
       height: 63%; } }
   @media (min-width: 540px) {
     .site-header.expanded {
-      height: 70%; } }
+      height: 65%; } }
   .site-header.expanded .site-branding {
     background: url("../../assets/images/Logo-White.png") no-repeat center;
     background-size: contain;
@@ -914,7 +923,7 @@ a {
 
 .site-footer.expanded {
   position: absolute;
-  height: 40%;
+  height: 35%;
   bottom: 0;
   left: 0;
   right: 0; }
@@ -1567,18 +1576,18 @@ object {
 /* PRE-FOOTER */
 /**************/
 .fit-button {
-  background: #00277E; }
+  background: #00277e; }
   .fit-button a {
-    background-color: #4263AB;
+    background-color: #4263ab;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
 
 .donation-button {
-  background: #A70000; }
+  background: #a70000; }
   .donation-button a {
-    background-color: #D13434; }
+    background-color: #d13434; }
   .donation-button h2 a {
     padding: 15px 50px;
     border-radius: 10px;
@@ -1648,7 +1657,7 @@ section.pre-footer {
       padding: 45px 90px; } }
 
 section.pre-footer-program {
-  background-color: #00277E;
+  background-color: #00277e;
   height: auto;
   color: white;
   font-family: "worksans", sans-serif;
@@ -1772,13 +1781,30 @@ section.opportunities-pre-footer p {
   -ms-flex-line-pack: stretch;
       align-content: stretch;
   background: #4263AB;
-  color: #FFF;
+  color: #fff;
   -ms-flex-direction: column;
       flex-direction: column;
   padding: 0rem;
   margin: 0;
   width: 100%;
   text-align: center; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .site-footer .contact-controller {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      .site-footer .contact-controller .contact-email,
+      .site-footer .contact-controller .contact-phone {
+        -ms-flex-preferred-size: 35%;
+            flex-basis: 35%; }
+      .site-footer .contact-controller .contact-privacy {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; } }
   @media (min-width: 800px) {
     .site-footer {
       color: #00277E;
@@ -1826,6 +1852,13 @@ section.opportunities-pre-footer p {
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+      .site-footer .newsletter-sign-up {
+        padding-top: 14%;
+        padding-bottom: 1%; } }
+    @media (min-width: 540px) {
+      .site-footer .newsletter-sign-up {
+        padding-top: 5%; } }
     .site-footer .newsletter-sign-up .subscription-form {
       width: 100%;
       background-color: #fff; }
@@ -1838,8 +1871,7 @@ section.opportunities-pre-footer p {
       @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
         .site-footer .newsletter-sign-up button.sign-up-btn {
           height: 40px;
-          margin: 0;
-          margin-top: 9%; } }
+          margin: 0; } }
       @media (min-width: 800px) {
         .site-footer .newsletter-sign-up button.sign-up-btn {
           display: none !important; } }
@@ -1905,9 +1937,9 @@ section.opportunities-pre-footer p {
     -ms-flex-pack: center;
         justify-content: center; }
     .site-footer .social-links a {
-      color: #FFF;
+      color: #fff;
       padding: 0 1.2rem;
-      color: #FFF;
+      color: #fff;
       font-size: 3.5rem; }
       @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
         .site-footer .social-links a {
@@ -1919,16 +1951,14 @@ section.opportunities-pre-footer p {
       .site-footer .social-links .social-media-links-wrapper {
         display: -ms-flexbox;
         display: flex;
-        padding-top: 2rem;
         width: 100%;
         -ms-flex-pack: center;
             justify-content: center; }
       .site-footer .social-links a {
         display: block;
-        font-size: 5rem;
+        font-size: 3rem;
         -ms-flex-order: 2;
-            order: 2;
-        height: 100px; } }
+            order: 2; } }
     @media (min-width: 800px) {
       .site-footer .social-links {
         border-left: 2px solid #00277E;
@@ -1939,7 +1969,7 @@ section.opportunities-pre-footer p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     .site-footer .contact-us p {
-      color: #FFF;
+      color: #fff;
       padding: 0;
       margin: 0;
       font-family: "worksans", sans-serif;
@@ -1968,13 +1998,15 @@ section.opportunities-pre-footer p {
           width: 100%;
           padding: 1rem 0;
           text-align: left; }
-          .site-footer .contact-us .contact-details a, .site-footer .contact-us .contact-details p {
+          .site-footer .contact-us .contact-details a,
+          .site-footer .contact-us .contact-details p {
             -ms-flex-order: 3;
                 order: 3;
             color: black;
             font-size: 1rem; } }
       @media (min-width: 800px) and (min-width: 800px) {
-        .site-footer .contact-us .contact-details a, .site-footer .contact-us .contact-details p {
+        .site-footer .contact-us .contact-details a,
+        .site-footer .contact-us .contact-details p {
           color: black !important; } }
 
 .prefooter-donation-button {

@@ -21,6 +21,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
+				<div class="header-background"></div>
 				<div class="site-branding">
 					<div class="logo"><a href=<?php echo esc_url( home_url()) ?> rel="home"></a></div>
 				</div><!-- .site-branding -->

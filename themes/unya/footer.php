@@ -30,10 +30,10 @@
 						<p class="hidden-mobile">Urban Native Youth Association</p>
 						<a target="_blank" href="http://maps.google.com/maps?q=1618+East+Hastings+Street+East,+Vancouver,+BC"><p>1618 East Hastings Street East</p></a>
 					</div>
-					<div class="contact-details">
-						<a href="tel:+16042547732"><p>604-254-7732</p></a>
-						<a href="mailto:info@unya.bc.ca"><p>info@unya.bc.ca</p></a>
-						<a href="privacy-policy"><p>Our Privacy Policy</p></a>
+					<div class="contact-details contact-controller">
+						<a class="contact-phone" href="tel:+16042547732"><p>604-254-7732</p></a>
+						<a class="contact-email" href="mailto:info@unya.bc.ca"><p>info@unya.bc.ca</p></a>
+						<a class="contact-privacy" href="privacy-policy"><p>Our Privacy Policy</p></a>
 					</div>
 				</div><!-- End contact us -->
 

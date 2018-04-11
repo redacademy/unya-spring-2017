@@ -192,6 +192,11 @@ a {
 	background: #fff;
 	z-index: 9999;
 	transition: all 0.4s linear;
+
+	.header-background {
+		display: none;
+	}
+
 	.site-branding {
 		padding: 1rem;
 		background: url('../../assets/images/RED_UNYA_UI_LogoDesign_Assets_V1-1.png') no-repeat center;
@@ -200,6 +205,7 @@ a {
 			padding: 1rem 4rem;
 		}
 	}
+
 	.donate {
 		display: none;
 		margin-right: 1rem;
@@ -220,20 +226,30 @@ a {
 }
 
 .site-header.expanded {
-	background: $color__blue-medium;
+	// background: $color__blue-medium;
 	position: absolute;
 	left: 0;
 	right: 0;
 	flex-wrap: wrap;
 	height: 61%;
+	width: 100vw;
 	z-index: 299;
+
+	.header-background {
+		position: absolute;
+		z-index: -1;
+		background: $color__blue-medium;
+		height: 50vh;
+		width: 100vw;
+		display: block;
+	}
 
 	@include iphone {
 		height: 63%;
 	}
 
 	@include tablet {
-		height: 70%;
+		height: 65%;
 	}
 	.site-branding {
 		background: url('../../assets/images/Logo-White.png') no-repeat center;
@@ -300,7 +316,7 @@ a {
 
 .site-footer.expanded {
 	position: absolute;
-	height: 40%;
+	height: 35%;
 	bottom: 0;
 	left: 0;
 	right: 0;
