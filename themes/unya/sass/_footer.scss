@@ -10,8 +10,10 @@
     justify-content: center;
   }
 }
+
 .donation-button {
   background: #a70000;
+
   a {
     background-color: #d13434;
   }
@@ -42,6 +44,7 @@ section.pre-footer {
   flex-direction: column;
   color: white;
   padding: 1rem;
+
   h2 {
     text-align: center;
     padding: 15px 25px;
@@ -51,12 +54,14 @@ section.pre-footer {
     color: white;
     font-weight: normal;
     font-size: 20px;
+
     a {
       color: white;
       text-decoration: none;
       box-shadow: 3px 4px 13px 1px rgba(0, 0, 0, 0.4);
     }
   }
+
   p {
     font-family: $font__heading;
     font-size: 1.5rem;
@@ -66,6 +71,7 @@ section.pre-footer {
     text-align: center;
     padding: 0 25px;
     line-height: 1.5;
+
     @include desktop {
       font-size: 2.25rem;
       font-weight: 500;
@@ -73,12 +79,15 @@ section.pre-footer {
       text-align: left;
       line-height: 54px;
       width: 70%;
+
       span.line-break {
         display: block;
         width: 100%;
       }
     }
   }
+
+  // section.pre-footer
   @include tablet {
     justify-content: space-between;
     flex-direction: row;
@@ -93,78 +102,96 @@ section.pre-footer-program {
   color: white;
   font-family: $font__main;
   padding: 30px 0 30px 30px;
+
   @include tablet {
     display: flex;
     padding: 30px 0 30px 5rem;
     justify-content: space-between;
   }
+
   @include desktop {
     height: auto;
     padding-left: 244px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     .prefooter-heading {
       flex-basis: 100%;
     }
+
     .pre-footer-program-container {
       flex-basis: 50%;
       width: 100%;
     }
   }
+
   h4 {
     font-size: 20px;
     width: 262px;
     height: 54px;
     text-transform: uppercase;
     margin: 0;
+
     @include desktop {
       font-size: 48px;
       font-family: $font__heading;
       width: 100%;
     }
   }
+
   p.pre-footer-body {
     font-size: $heading__h3;
     line-height: 32px;
     padding-right: 29px;
     padding-bottom: 14px;
+
     @include desktop {
       font-size: $heading__h2;
     }
   }
+
   h5 {
     font-size: 1rem;
     font-weight: bold;
+
     @include desktop {
       font-size: 1.428571428rem;
       margin-top: 0;
     }
   }
+
   span {
     padding-right: 10px;
   }
+
   p {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 10px;
   }
+
   .contact-wrapper {
     margin-bottom: 20px;
+
     p {
       font-size: 1rem;
+
       @include desktop {
         font-size: $desktop__h5;
         line-height: 32px;
       }
     }
+
     p.city {
       margin-left: 20px;
     }
   }
+
   p.pre-footer-logo-header {
     font-weight: bold;
     padding: 5px;
+
     @include desktop {
       font-size: 1.428571428rem;
       margin: 33.4px 0px;
@@ -181,6 +208,7 @@ section.pre-footer-program {
     padding: 1rem;
     display: flex;
     justify-content: center;
+
     @include desktop {
       height: 150px;
     }
@@ -190,7 +218,7 @@ section.pre-footer-program {
     height: 100%;
     width: auto;
   }
-}
+} // single program pre-footer
 
 .post-type-archive-news section.pre-footer-program {
   @include desktop {
@@ -293,6 +321,7 @@ section.opportunities-pre-footer {
     text-align: center;
     display: flex;
     justify-content: center;
+    padding-top: 3%;
 
     @include iphone {
       padding-top: 3%;
@@ -314,7 +343,7 @@ section.opportunities-pre-footer {
     button.sign-up-btn {
       width: 230px;
       height: 50px;
-      margin: 15px 0px;
+      // margin: 15px 0px;
 
       @include iphone {
         height: 40px;
@@ -399,7 +428,7 @@ section.opportunities-pre-footer {
       color: #fff;
       padding: 0 1.2rem;
       color: #fff;
-      font-size: 3.5rem;
+      font-size: 2rem;
 
       @include iphone {
         font-size: 2rem;

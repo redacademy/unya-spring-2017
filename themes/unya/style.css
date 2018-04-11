@@ -610,7 +610,7 @@ input[type=submit] {
         justify-content: space-between;
     border: none;
     padding-top: 3px; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
       .search-form .search-fieldset {
         padding-top: 0; } }
     .search-form .search-fieldset .search-submit {
@@ -864,7 +864,7 @@ a {
     height: 50vh;
     width: 100vw;
     display: block; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .site-header.expanded {
       height: 60vh; } }
   @media (min-width: 540px) {
@@ -880,7 +880,7 @@ a {
         flex-basis: 100%;
     background: #fff;
     height: 60%; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
       .site-header.expanded .main-navigation {
         height: 65%; } }
     @media (min-width: 540px) {
@@ -931,7 +931,7 @@ a {
     text-decoration: none; }
   .site-footer.expanded .subscription-form.display-form {
     height: 100%; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .site-footer.expanded {
       padding-top: 5%;
       height: 34vh; } }
@@ -1789,7 +1789,7 @@ section.opportunities-pre-footer p {
   margin: 0;
   width: 100%;
   text-align: center; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .site-footer .contact-controller {
       display: -ms-flexbox;
       display: flex;
@@ -1852,8 +1852,9 @@ section.opportunities-pre-footer p {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
-        justify-content: center; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+        justify-content: center;
+    padding-top: 3%; }
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
       .site-footer .newsletter-sign-up {
         padding-top: 3%;
         padding-bottom: 1%; } }
@@ -1867,9 +1868,8 @@ section.opportunities-pre-footer p {
       display: none; }
     .site-footer .newsletter-sign-up button.sign-up-btn {
       width: 230px;
-      height: 50px;
-      margin: 15px 0px; }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+      height: 50px; }
+      @media screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
         .site-footer .newsletter-sign-up button.sign-up-btn {
           height: 40px;
           margin: 0; } }
@@ -1941,8 +1941,8 @@ section.opportunities-pre-footer p {
       color: #fff;
       padding: 0 1.2rem;
       color: #fff;
-      font-size: 3.5rem; }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+      font-size: 2rem; }
+      @media screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
         .site-footer .social-links a {
           font-size: 2rem; } }
       @media (min-width: 800px) {
