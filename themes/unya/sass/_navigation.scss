@@ -231,7 +231,7 @@ a {
 	left: 0;
 	right: 0;
 	flex-wrap: wrap;
-	height: 61%;
+	height: 61vh;
 	width: 100vw;
 	z-index: 299;
 
@@ -245,11 +245,11 @@ a {
 	}
 
 	@include iphone {
-		height: 63%;
+		height: 63vh;
 	}
 
 	@include tablet {
-		height: 65%;
+		height: 65vh;
 	}
 	.site-branding {
 		background: url('../../assets/images/Logo-White.png') no-repeat center;
@@ -316,7 +316,7 @@ a {
 
 .site-footer.expanded {
 	position: absolute;
-	height: 35%;
+	height: 35vh;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -328,7 +328,7 @@ a {
 	}
 
 	@include iphone {
-		height: 34%;
+		height: 34vh;
 	}
 }
 

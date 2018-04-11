@@ -854,7 +854,7 @@ a {
   right: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 61%;
+  height: 61vh;
   width: 100vw;
   z-index: 299; }
   .site-header.expanded .header-background {
@@ -866,10 +866,10 @@ a {
     display: block; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .site-header.expanded {
-      height: 63%; } }
+      height: 63vh; } }
   @media (min-width: 540px) {
     .site-header.expanded {
-      height: 65%; } }
+      height: 65vh; } }
   .site-header.expanded .site-branding {
     background: url("../../assets/images/Logo-White.png") no-repeat center;
     background-size: contain;
@@ -923,7 +923,7 @@ a {
 
 .site-footer.expanded {
   position: absolute;
-  height: 35%;
+  height: 35vh;
   bottom: 0;
   left: 0;
   right: 0; }
@@ -933,7 +933,7 @@ a {
     height: 100%; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .site-footer.expanded {
-      height: 34%; } }
+      height: 34vh; } }
 
 .menu-gradient {
   background: rgba(255, 255, 255, 0.6);
