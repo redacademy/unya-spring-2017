@@ -854,7 +854,7 @@ a {
   right: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 61vh;
+  height: 60vh;
   width: 100vw;
   z-index: 299; }
   .site-header.expanded .header-background {
@@ -866,7 +866,7 @@ a {
     display: block; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .site-header.expanded {
-      height: 63vh; } }
+      height: 60vh; } }
   @media (min-width: 540px) {
     .site-header.expanded {
       height: 65vh; } }
@@ -933,6 +933,7 @@ a {
     height: 100%; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .site-footer.expanded {
+      padding-top: 5%;
       height: 34vh; } }
 
 .menu-gradient {
@@ -1854,7 +1855,7 @@ section.opportunities-pre-footer p {
         justify-content: center; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
       .site-footer .newsletter-sign-up {
-        padding-top: 14%;
+        padding-top: 3%;
         padding-bottom: 1%; } }
     @media (min-width: 540px) {
       .site-footer .newsletter-sign-up {

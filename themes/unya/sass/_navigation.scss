@@ -231,7 +231,7 @@ a {
 	left: 0;
 	right: 0;
 	flex-wrap: wrap;
-	height: 61vh;
+	height: 60vh;
 	width: 100vw;
 	z-index: 299;
 
@@ -245,7 +245,7 @@ a {
 	}
 
 	@include iphone {
-		height: 63vh;
+		height: 60vh;
 	}
 
 	@include tablet {
@@ -328,6 +328,7 @@ a {
 	}
 
 	@include iphone {
+		padding-top: 5%;
 		height: 34vh;
 	}
 }
