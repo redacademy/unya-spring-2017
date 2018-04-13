@@ -2540,6 +2540,9 @@ section.opportunities-pre-footer p {
       width: 100%;
       height: auto;
       min-height: 100%; }
+      @media (min-width: 800px) {
+        .programs-list li .wp-post-image {
+          top: calc(50% + 11.6785714285rem); } }
     .programs-list li .program-name {
       width: 100%;
       color: #FFF;

@@ -109,7 +109,7 @@
     @include tablet {
       height: 18rem;
       flex-basis: 48.5%;
-      margin-bottom: 1.7142857143rem;      
+      margin-bottom: 1.7142857143rem;
     }
 
     a {
@@ -133,10 +133,9 @@
       height: auto;
       min-height: 100%;
 
-      // @include desktop {
-      //   height: auto;
-      //   min-height: 100%;
-      // }
+      @include desktop {
+        top: calc(50% + 11.6785714285rem);
+      }
     }
 
     .program-name {
