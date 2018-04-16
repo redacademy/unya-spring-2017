@@ -546,10 +546,6 @@ textarea {
       .ctct-form-field-email input[type=email] {
         width: 100%; } }
 
-::-webkit-input-placeholder {
-  padding-left: 10px;
-  color: black; }
-
 :-ms-input-placeholder {
   padding-left: 10px;
   color: black; }
@@ -650,9 +646,6 @@ input[type=submit] {
 
 #search-label {
   width: 75%; }
-
-.search-field::-webkit-input-placeholder {
-  color: #BABABA; }
 
 .search-field:-ms-input-placeholder {
   color: #BABABA; }
@@ -1889,7 +1882,8 @@ section.opportunities-pre-footer p {
         margin: 0; }
     @media (min-width: 800px) {
       .site-footer .newsletter-sign-up {
-        text-align: left; }
+        text-align: left;
+        padding-top: 20px !important; }
         .site-footer .newsletter-sign-up .subscription-form {
           display: -ms-flexbox;
           display: flex;
