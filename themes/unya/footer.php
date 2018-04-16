@@ -33,7 +33,7 @@
 					<div class="contact-details contact-controller">
 						<a class="contact-phone" href="tel:+16042547732"><p>604-254-7732</p></a>
 						<a class="contact-email" href="mailto:info@unya.bc.ca"><p>info@unya.bc.ca</p></a>
-						<a class="contact-privacy" href="privacy-policy"><p>Our Privacy Policy</p></a>
+						<a class="contact-privacy" href="<?php echo get_site_url() ?>/privacy-policy"><p>Our Privacy Policy</p></a>
 					</div>
 				</div><!-- End contact us -->
 
