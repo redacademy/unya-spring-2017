@@ -103,6 +103,8 @@ get_header(); ?>
 						</ul>
 					</div>
 				</section>
+
+				<h2 class="accordion-label" id="resources">Resources</h2>
 				<div class="top-news-carousel-wrapper" id="youth-center-resources-carousel">
 				<?php
 						$args = array(

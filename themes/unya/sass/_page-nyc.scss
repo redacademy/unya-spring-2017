@@ -393,17 +393,17 @@ ul.nyc-partners {
 }
 
 #youth-center-resources-carousel {
-  padding: 1rem 9rem 0 17.428571429rem!important;
+  padding: 2rem 4rem !important;
   width: 100%;
   display: flex;
   background: $color__red-medium !important;
   @include tablet {
     // background: white !important;
     align-self: center;
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1rem 3rem 1rem 3rem!important;
   }
   @include desktop {
-    padding: 0 10% 0 17.428571429rem;
+    padding: 2rem 10% 1rem 17.428571429rem!important;
   }
 }
 

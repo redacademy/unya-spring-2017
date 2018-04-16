@@ -546,10 +546,6 @@ textarea {
       .ctct-form-field-email input[type=email] {
         width: 100%; } }
 
-::-webkit-input-placeholder {
-  padding-left: 10px;
-  color: black; }
-
 :-ms-input-placeholder {
   padding-left: 10px;
   color: black; }
@@ -650,9 +646,6 @@ input[type=submit] {
 
 #search-label {
   width: 75%; }
-
-.search-field::-webkit-input-placeholder {
-  color: #BABABA; }
 
 .search-field:-ms-input-placeholder {
   color: #BABABA; }
@@ -3549,7 +3542,7 @@ ul.nyc-partners {
         margin: 2rem; } }
 
 #youth-center-resources-carousel {
-  padding: 1rem 9rem 0 17.42857rem !important;
+  padding: 2rem 4rem !important;
   width: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -3559,10 +3552,10 @@ ul.nyc-partners {
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center;
-      padding: 1rem 3rem 1rem 3rem; } }
+      padding: 1rem 3rem 1rem 3rem !important; } }
   @media (min-width: 800px) {
     #youth-center-resources-carousel {
-      padding: 0 10% 0 17.428571429rem; } }
+      padding: 2rem 10% 1rem 17.42857rem !important; } }
 
 .nyc-anchor {
   margin-top: -54px;
@@ -3667,7 +3660,8 @@ ul.nyc-partners {
       height: 19rem; }
       .top-news-carousel-wrapper .top-news-carousel-item .top-news-item-image img {
         min-height: 100%;
-        width: 100%; }
+        width: 100%;
+        min-width: 15rem; }
       @media (min-width: 540px) {
         .top-news-carousel-wrapper .top-news-carousel-item .top-news-item-image {
           height: 70%; } }
