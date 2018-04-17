@@ -27,7 +27,7 @@ get_header(); ?>
 	  <section class="success-stories">
 			<header class="section-heading hidden-mobile">
 				<h2 class="hidden-mobile">Success Stories</h2>
-				<h4 class="hidden-mobile desktop-about-heading-sub">Learn more about the talented youth at UNYA, and the successes we celebrate.</h4>
+				<p class="hidden-mobile content-wrapper">Learn more about the talented youth at UNYA, and the successes we celebrate.</p>
 			</header>
 			
 			<div class="content-wrapper">
@@ -67,7 +67,7 @@ get_header(); ?>
 	<section class="volunteers">
 		<header class="section-heading hidden-mobile">
 			<h2 class="hidden-mobile">Volunteers</h2>
-			<h4 class="hidden-mobile desktop-about-heading-sub">Learn more about some of our hardworking volunteers.</h4>
+			<p class="hidden-mobile content-wrapper">Learn more about some of our hardworking volunteers.</p>
 		</header>
 		<h4 class="hidden-desktop">Learn more about some of our hardworking volunteers.</h4>
 	
