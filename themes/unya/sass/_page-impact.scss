@@ -85,8 +85,8 @@
 .success-image {
   background-repeat: no-repeat;
   background-size: cover;
-	width:34vw;
-	height:34vw;
+	width:10rem;
+	height:10rem;
   padding:10px;
   margin-bottom: 1rem;
   border-radius: 50%;
@@ -109,6 +109,10 @@
     height: 25vw;
     width: 25vw;
 	}
+  @include desktop{
+    width:15rem;
+	height:15rem;
+  }
 }
 
 .mobile-success-image{
