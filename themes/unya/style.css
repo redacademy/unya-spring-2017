@@ -2313,9 +2313,6 @@ section.opportunities-pre-footer p {
       height: 100%;
       -ms-flex-pack: center;
           justify-content: center; } }
-  @media (min-width: 800px) {
-    .about-content ul .image-wrapper {
-      min-height: 12rem; } }
   .about-content ul i {
     color: #FFF;
     font-size: 4.5rem; }
@@ -3009,8 +3006,8 @@ section.opportunities-pre-footer p {
 .success-image {
   background-repeat: no-repeat;
   background-size: cover;
-  width: 34vw;
-  height: 34vw;
+  width: 10rem;
+  height: 10rem;
   padding: 10px;
   margin-bottom: 1rem;
   border-radius: 50%; }
@@ -3030,6 +3027,10 @@ section.opportunities-pre-footer p {
       max-width: none;
       height: 25vw;
       width: 25vw; } }
+  @media (min-width: 800px) {
+    .success-image {
+      width: 15rem;
+      height: 15rem; } }
 
 @media (min-width: 540px) {
   .mobile-success-image {
