@@ -310,6 +310,10 @@ section.opportunities-pre-footer {
       &.social-links {
         justify-content: stretch;
         align-items: left;
+
+        @include desktop {
+          padding-top: 5%;
+        }
       }
     } //footer-flex
   } //closes include desktop
@@ -332,6 +336,19 @@ section.opportunities-pre-footer {
       padding-top: 5%;
     }
 
+    @include desktop {
+      text-align: left;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .subscription-form {
+        display: flex;
+        justify-content: left;
+      }
+    } // close desktop
+
     .subscription-form {
       width: 100%;
       background-color: #fff;
@@ -348,8 +365,6 @@ section.opportunities-pre-footer {
       @include iphone {
         height: 40px;
         margin: 0;
-        // margin-top: 9%;
-        // z-index: 300;
       }
 
       @include desktop {
@@ -368,16 +383,6 @@ section.opportunities-pre-footer {
       }
     } //closes button.sign-up-btn
 
-    @include desktop {
-      text-align: left;
-      padding-top: 20px !important;
-
-      .subscription-form {
-        display: flex;
-        justify-content: left;
-      }
-    } //closes desktop
-
     .close-form {
       background-color: #fff;
       color: $color__blue-dark;
@@ -394,14 +399,6 @@ section.opportunities-pre-footer {
         display: none;
       }
     } // close .close-form
-
-    @include desktop {
-      text-align: left;
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: row;
-      flex-wrap: wrap;
-    } // close desktop
   } //close newsletter sign nav-up:
 
   .open-form {
@@ -477,6 +474,7 @@ section.opportunities-pre-footer {
       }
     }
     @include desktop {
+      padding-top: 5%;
       order: 3;
       display: flex;
       flex-direction: column;

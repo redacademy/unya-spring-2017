@@ -546,6 +546,10 @@ textarea {
       .ctct-form-field-email input[type=email] {
         width: 100%; } }
 
+::-webkit-input-placeholder {
+  padding-left: 10px;
+  color: black; }
+
 :-ms-input-placeholder {
   padding-left: 10px;
   color: black; }
@@ -646,6 +650,9 @@ input[type=submit] {
 
 #search-label {
   width: 75%; }
+
+.search-field::-webkit-input-placeholder {
+  color: #BABABA; }
 
 .search-field:-ms-input-placeholder {
   color: #BABABA; }
@@ -1837,6 +1844,9 @@ section.opportunities-pre-footer p {
               justify-content: stretch;
           -ms-flex-align: left;
               align-items: left; } }
+      @media (min-width: 800px) and (min-width: 800px) {
+        .site-footer .footer-flex.social-links {
+          padding-top: 5%; } }
   .site-footer .newsletter-sign-up {
     -ms-flex-order: 1;
         order: 1;
@@ -1854,6 +1864,22 @@ section.opportunities-pre-footer p {
     @media (min-width: 540px) {
       .site-footer .newsletter-sign-up {
         padding-top: 5%; } }
+    @media (min-width: 800px) {
+      .site-footer .newsletter-sign-up {
+        text-align: left;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .site-footer .newsletter-sign-up .subscription-form {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: left;
+              justify-content: left; } }
     .site-footer .newsletter-sign-up .subscription-form {
       width: 100%;
       background-color: #fff; }
@@ -1880,15 +1906,6 @@ section.opportunities-pre-footer p {
         -ms-flex-align: center;
             align-items: center;
         margin: 0; }
-    @media (min-width: 800px) {
-      .site-footer .newsletter-sign-up {
-        text-align: left;
-        padding-top: 20px !important; }
-        .site-footer .newsletter-sign-up .subscription-form {
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: left;
-              justify-content: left; } }
     .site-footer .newsletter-sign-up .close-form {
       background-color: #fff;
       color: #00277E;
@@ -1902,17 +1919,6 @@ section.opportunities-pre-footer p {
       @media (min-width: 800px) {
         .site-footer .newsletter-sign-up .close-form {
           display: none; } }
-    @media (min-width: 800px) {
-      .site-footer .newsletter-sign-up {
-        text-align: left;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-        -ms-flex-direction: row;
-            flex-direction: row;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; } }
   .site-footer .open-form {
     position: absolute;
     height: 100%; }
@@ -1976,6 +1982,7 @@ section.opportunities-pre-footer p {
           color: black !important; } }
     @media (min-width: 800px) {
       .site-footer .contact-us {
+        padding-top: 5%;
         -ms-flex-order: 3;
             order: 3;
         display: -ms-flexbox;
